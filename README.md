@@ -161,3 +161,4 @@ The goal of this repo is to create a luxury real-estate styled frontend with:
 - refined gold/cream/navy palette
 - premium section layouts
 - close visual parity with the referenced live site
+-----------------------------------------------------------------------------------
