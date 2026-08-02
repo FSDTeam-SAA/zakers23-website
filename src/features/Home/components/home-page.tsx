@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { heroSlides } from "@/src/features/Home/HeroSection/data/hero-section.data";
 import { featuredProjects } from "@/src/features/Home/FeaturedProject/data/featured-project.data";
 import { projectNames } from "@/src/features/Home/DiscoveryEngine/data/discovery-engine.data";
@@ -14,9 +15,13 @@ import { TestimonialsSection } from "@/src/features/Home/Testimonials/components
 import { NewsletterSection } from "@/src/features/Home/components/newsletter-section";
 import { SubscriberSection } from "@/src/features/Home/components/subscriber-section";
 import { SiteFooter } from "@/src/features/Home/components/site-footer";
+import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyProjectModal";
+import { Ht } from "@/src/data/neighborhoods";
 
 export function HomePage() {
+  const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMatcherOpen, setIsMatcherOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,11 +49,39 @@ export function HomePage() {
         </a>
         <nav className="nav-links" aria-label="Primary">
           <a href="/map">Explore Map</a>
-          <a href="#contact">Find My Project</a>
-          <button type="button" className="nav-dropdown">
-            Neighborhoods
-            <span aria-hidden="true">⌄</span>
-          </button>
+          <a
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMatcherOpen(true);
+            }}
+          >
+            Find My Project
+          </a>
+          <div className="relative group">
+            <button
+              type="button"
+              className="nav-dropdown flex items-center gap-1"
+              onClick={() => router.push("/neighborhood")}
+            >
+              Neighborhoods
+              <span aria-hidden="true">⌄</span>
+            </button>
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-80 bg-[#0C1523]/95 backdrop-blur-md border border-white/10 p-4 rounded shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 grid grid-cols-2 gap-x-4 gap-y-2 text-left z-50">
+              {Object.entries(Ht).map(([slug, data]) => (
+                <button
+                  key={slug}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    router.push(`/neighborhood/${slug}`);
+                  }}
+                  className="text-left text-gray-300 hover:text-[#C9A84C] transition-colors text-[10px] py-1 tracking-[0.1em] uppercase"
+                >
+                  {data.name}
+                </button>
+              ))}
+            </div>
+          </div>
           <a href="#advisor">Waterfront Estates</a>
           <a href="#reputation">Insights</a>
           <span className="nav-divider" aria-hidden="true">
@@ -70,6 +103,17 @@ export function HomePage() {
 
       <SubscriberSection />
       <SiteFooter />
+
+      {isMatcherOpen && (
+        <FindMyProjectModal
+          onClose={() => setIsMatcherOpen(false)}
+          onDone={(results) => {
+            setIsMatcherOpen(false);
+            localStorage.setItem("map-matcher-prefs", JSON.stringify(results.prefs));
+            router.push("/map");
+          }}
+        />
+      )}
     </main>
   );
 }
