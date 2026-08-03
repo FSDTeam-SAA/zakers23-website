@@ -38,17 +38,19 @@ export function InsightsPage() {
           <span className="insights-wordmark-subtitle">New Construction Intelligence</span>
         </Link>
         <nav className="nav-links" aria-label="Primary">
-          <Link href="/map">Explore Map</Link>
-          <button type="button" className="hover:text-[#C9A84C] transition-colors" onClick={() => setIsMatcherOpen(true)}>
-            Find My Project
+          <Link href="/map">
+            <span className="insights-nav-link-label">Explore Map</span>
+          </Link>
+          <button type="button" className="insights-nav-button" onClick={() => setIsMatcherOpen(true)}>
+            <span className="insights-nav-link-label">Find My Project</span>
           </button>
           <div className="relative group">
             <button
               type="button"
-              className="nav-dropdown flex items-center gap-1"
+              className="nav-dropdown insights-nav-button flex items-center gap-1"
               onClick={() => router.push("/neighborhood")}
             >
-              Neighborhoods
+              <span className="insights-nav-link-label">Neighborhoods</span>
               <span aria-hidden="true">⌄</span>
             </button>
             <div className="absolute top-full left-1/2 z-50 mt-2 grid w-80 -translate-x-1/2 grid-cols-2 gap-x-4 gap-y-2 rounded border border-white/10 bg-[#0C1523]/95 p-4 text-left opacity-0 invisible shadow-2xl backdrop-blur-md transition-all duration-300 group-hover:visible group-hover:opacity-100">
@@ -66,14 +68,16 @@ export function InsightsPage() {
               ))}
             </div>
           </div>
-          <Link href="/waterfront">Waterfront Estates</Link>
+          <Link href="/waterfront">
+            <span className="insights-nav-link-label">Waterfront Estates</span>
+          </Link>
           <Link href="/insights" className="insights-nav-active">
-            Insights
+            <span className="insights-nav-link-label">Insights</span>
           </Link>
         </nav>
         <div className="insights-header-tools">
           <a href="#insights-briefing" className="insights-header-inquire">
-            Inquire
+            <span className="insights-nav-link-label">Inquire</span>
           </a>
           <div className="insights-weather-widget" aria-label="Miami weather">
             <span className="insights-weather-icon" aria-hidden="true">
