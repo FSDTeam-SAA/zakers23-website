@@ -1,10 +1,11 @@
-import NeighborhoodListPage from "@/src/features/Neighborhood/components/NeighborhoodListPage";
+import { redirect } from "next/navigation";
 
 export const metadata = {
-  title: "Miami Neighborhoods | Pre-Construction & New Developments",
-  description: "Browse Miami's most exclusive luxury real estate neighborhoods. Explore active pre-construction condos, project pipelines, pricing, and availability.",
+  title: "Brickell Pre-Construction Condos | New Development Miami",
+  description:
+    "Browse all active pre-construction condos in Brickell, Miami. Branded residences, pricing, floor plans, and construction updates.",
 };
 
 export default function Page() {
-  return <NeighborhoodListPage />;
+  redirect("/neighborhood/brickell");
 }

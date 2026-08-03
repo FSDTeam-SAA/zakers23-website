@@ -1,0 +1,179 @@
+"use client";
+
+import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
+import { Ht } from "@/src/data/neighborhoods";
+import { InsightCategory, insightArticles, insightCategories } from "@/src/data/insights";
+import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyProjectModal";
+import { SiteFooter } from "@/src/features/Home/components/site-footer";
+
+export function InsightsPage() {
+  const router = useRouter();
+  const [activeCategory, setActiveCategory] = useState<InsightCategory>("All");
+  const [isMatcherOpen, setIsMatcherOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 18);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const filteredArticles = useMemo(() => {
+    if (activeCategory === "All") return insightArticles;
+    return insightArticles.filter((article) => article.category === activeCategory);
+  }, [activeCategory]);
+
+  return (
+    <main className="insights-page">
+      <header className={isScrolled ? "site-header insights-header insights-header-scrolled" : "site-header insights-header"}>
+        <Link href="/" className="insights-wordmark" aria-label="Miami New Development home">
+          <span className="insights-wordmark-title">Miami New Development</span>
+          <span className="insights-wordmark-subtitle">New Construction Intelligence</span>
+        </Link>
+        <nav className="nav-links" aria-label="Primary">
+          <Link href="/map">Explore Map</Link>
+          <button type="button" className="hover:text-[#C9A84C] transition-colors" onClick={() => setIsMatcherOpen(true)}>
+            Find My Project
+          </button>
+          <div className="relative group">
+            <button
+              type="button"
+              className="nav-dropdown flex items-center gap-1"
+              onClick={() => router.push("/neighborhood")}
+            >
+              Neighborhoods
+              <span aria-hidden="true">⌄</span>
+            </button>
+            <div className="absolute top-full left-1/2 z-50 mt-2 grid w-80 -translate-x-1/2 grid-cols-2 gap-x-4 gap-y-2 rounded border border-white/10 bg-[#0C1523]/95 p-4 text-left opacity-0 invisible shadow-2xl backdrop-blur-md transition-all duration-300 group-hover:visible group-hover:opacity-100">
+              {Object.entries(Ht).map(([slug, data]) => (
+                <button
+                  key={slug}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    router.push(`/neighborhood/${slug}`);
+                  }}
+                  className="py-1 text-left text-[10px] uppercase tracking-[0.1em] text-gray-300 transition-colors hover:text-[#C9A84C]"
+                >
+                  {data.name}
+                </button>
+              ))}
+            </div>
+          </div>
+          <Link href="/waterfront">Waterfront Estates</Link>
+          <Link href="/insights" className="insights-nav-active">
+            Insights
+          </Link>
+        </nav>
+        <div className="insights-header-tools">
+          <a href="#insights-briefing" className="insights-header-inquire">
+            Inquire
+          </a>
+          <div className="insights-weather-widget" aria-label="Miami weather">
+            <span className="insights-weather-icon" aria-hidden="true">
+              ☁
+            </span>
+            <span className="insights-weather-temp">81°</span>
+          </div>
+        </div>
+      </header>
+
+      <section className="insights-hero">
+        <div className="insights-shell">
+          <div className="insights-kicker">Market Intelligence · Miami New Development</div>
+          <h1>
+            New Construction
+            <br />
+            <em>Intelligence</em>
+          </h1>
+          <p>
+            Pre-construction analysis, neighborhood intelligence, and buyer guides updated
+            regularly.
+          </p>
+        </div>
+      </section>
+
+      <section className="insights-filter-row">
+        <div className="insights-shell">
+          <div className="insights-filter-tabs" role="tablist" aria-label="Filter by category">
+            {insightCategories.map((category) => {
+              const active = category === activeCategory;
+              return (
+                <button
+                  key={category}
+                  type="button"
+                  role="tab"
+                  aria-selected={active}
+                  className={active ? "insights-filter-tab is-active" : "insights-filter-tab"}
+                  onClick={() => setActiveCategory(category)}
+                >
+                  {category}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="insights-grid-section">
+        <div className="insights-shell insights-editorial-grid">
+          {filteredArticles.map((article, index) => (
+            <article key={article.slug} className="insights-editorial-card" tabIndex={0}>
+              <div className="insights-editorial-img-wrap">
+                <img
+                  className="insights-editorial-img"
+                  src={article.heroImage}
+                  alt={article.title}
+                  loading={index === 0 ? "eager" : "lazy"}
+                />
+              </div>
+              <div className="insights-editorial-card-body">
+                <div className="insights-editorial-category">{article.category}</div>
+                <h2 className="insights-editorial-title">{article.title}</h2>
+                <p className="insights-editorial-excerpt">{article.excerpt}</p>
+                <div className="insights-editorial-meta">
+                  <span>{article.date}</span>
+                  <span>{article.readTime}</span>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="insights-briefing" id="insights-briefing">
+        <div className="insights-shell insights-briefing-inner">
+          <div className="insights-briefing-kicker">Exclusive Briefings</div>
+          <h2>Receive Miami Market Intelligence</h2>
+          <p>
+            Brett Fraser&apos;s exclusive list receives pre-launch pricing, off-market inventory, and
+            monthly market updates before anything reaches public channels.
+          </p>
+          <form className="insights-briefing-form">
+            <input type="email" placeholder="Your email address" aria-label="Email address" />
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </section>
+
+      <SiteFooter />
+
+      {isMatcherOpen && (
+        <FindMyProjectModal
+          onClose={() => setIsMatcherOpen(false)}
+          onDone={(results) => {
+            setIsMatcherOpen(false);
+            localStorage.setItem("map-matcher-prefs", JSON.stringify(results.prefs));
+            router.push("/map");
+          }}
+        />
+      )}
+    </main>
+  );
+}

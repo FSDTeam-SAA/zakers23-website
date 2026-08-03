@@ -364,8 +364,8 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
               ))}
             </div>
           </div>
-          <a href="/#advisor">Waterfront Estates</a>
-          <a href="/#reputation">Insights</a>
+          <a href="/waterfront">Waterfront Estates</a>
+          <a href="/insights">Insights</a>
           <span className="nav-divider" aria-hidden="true">
             ·
           </span>

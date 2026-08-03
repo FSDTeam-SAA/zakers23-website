@@ -699,8 +699,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               ))}
             </div>
           </div>
-          <Link href="/#advisor">Waterfront Estates</Link>
-          <Link href="/#reputation">Insights</Link>
+          <Link href="/waterfront">Waterfront Estates</Link>
+          <Link href="/insights">Insights</Link>
           <span className="nav-divider" aria-hidden="true">
             ·
           </span>
