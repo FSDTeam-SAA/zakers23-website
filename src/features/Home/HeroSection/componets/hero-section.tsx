@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import type { HeroSlide } from "@/src/features/Home/HeroSection/types/hero-section.types";
 import { useHeroSlider } from "@/src/features/Home/HeroSection/hooks/use-hero-slider";
 
@@ -30,16 +31,22 @@ export function HeroSection({ slides }: HeroSectionProps) {
             <div className="hero-gradient hero-gradient-top" />
             <div className="hero-gradient hero-gradient-bottom" />
             <div className="hero-copy">
-              <p className="hero-eyebrow">{slide.eyebrow}</p>
-              <h1>{slide.title}</h1>
-              <p className="hero-supporting">{slide.supporting}</p>
-            </div>
-            <div className="hero-actions">
-              <a className="cta-primary" href="#featured-projects">
-                View project
-              </a>
-              <p className="hero-credit">{slide.credit}</p>
-            </div>
+               <p className="hero-eyebrow">{slide.eyebrow}</p>
+               <h1>{slide.title}</h1>
+               <p className="hero-supporting">{slide.supporting}</p>
+             </div>
+             <div className="hero-actions">
+               {slide.slug ? (
+                 <Link className="cta-primary" href={`/property/${slide.slug}`}>
+                   View project
+                 </Link>
+               ) : (
+                 <a className="cta-primary" href="#featured-projects">
+                   View project
+                 </a>
+               )}
+               <p className="hero-credit">{slide.credit}</p>
+             </div>
           </div>
         ))}
         <div className="hero-nav-cluster" aria-label="Hero navigation">

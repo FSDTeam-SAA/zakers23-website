@@ -1777,3 +1777,132 @@ input[type="range"] {
 @media (max-width: 1100px) { .insights-header { padding-inline: 24px; } .insights-wordmark-title { font-size: 13px; } .insights-header .nav-links { gap: 18px; } }
 @media (max-width: 900px) { .insights-page { padding-top: 112px; } .insights-header { flex-wrap: wrap; align-items: center; min-height: unset; padding: max(16px, env(safe-area-inset-top)) 24px 14px; } .insights-header .nav-links { order: 3; width: 100%; margin-left: 0; overflow-x: auto; padding-top: 2px; } .insights-header-tools { margin-left: auto; padding-left: 0; } .insights-nav-active .insights-nav-link-label::after { bottom: -10px; } }
 @media (max-width: 768px) { .insights-page { padding-top: 108px; } .insights-header { padding: max(14px, env(safe-area-inset-top)) 16px 12px; gap: 14px; } .insights-wordmark-title { font-size: 11px; letter-spacing: 0.18em; } .insights-wordmark-subtitle { font-size: 7px; letter-spacing: 0.24em; } .insights-header .nav-links { gap: 12px; width: 100%; order: 3; padding-top: 8px; } .insights-header .nav-links a, .insights-header .nav-links button, .insights-header .nav-dropdown { flex: 0 0 auto; font-size: 8px; letter-spacing: .16em; } .insights-header-tools { gap: 8px; } .insights-header-inquire { min-height: 32px; padding: 8px 12px; font-size: 8px; } .insights-weather-widget { font-size: 11px; } .insights-nav-active .insights-nav-link-label::after { bottom: -8px; } .insights-hero { padding: 56px 0 32px; } .insights-editorial-grid { grid-template-columns: 1fr; gap: 48px 0; padding: 20px 0 72px; } .insights-briefing { padding: 72px 0; margin-top: 56px; } .insights-briefing-form { flex-direction: column; align-items: stretch; } .insights-briefing-form button { width: 100%; min-height: 44px; border: 1px solid rgba(187,145,80,0.4); } }
+
+/* Property Details Page Styles */
+.property-page {
+  background: #FAF8F3;
+  color: #1c1f26;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+.property-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Info Dashboard Stats */
+.ps-item {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  padding-left: 16px;
+}
+
+.ps-label {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.ps-value {
+  font-family: var(--font-mono), monospace;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .ps-value {
+    font-size: 19px;
+  }
+}
+
+/* Map Wrapper on Property Detail Page */
+.property-map-wrap {
+  position: relative;
+  height: 420px;
+  background: #10131a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  isolation: isolate;
+  z-index: 0;
+}
+
+.property-map-wrap .leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.property-map-wrap .leaflet-control-container,
+.property-map-wrap .leaflet-pane,
+.property-map-wrap .leaflet-top,
+.property-map-wrap .leaflet-bottom {
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .property-map-wrap {
+    height: 320px;
+  }
+}
+
+/* Lightbox Modal Animation */
+.property-lightbox {
+  animation: lightboxFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes lightboxFadeIn {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(12px);
+  }
+}
+
+/* Custom Form Styling on Property Detail Page */
+.form-input-custom {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ddd8cd;
+  border-radius: 0;
+  background: transparent;
+  padding: 0 0 12px;
+  color: #1c1f26;
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color .2s ease;
+}
+.form-input-custom:focus {
+  border-bottom-color: #B38E36;
+}
+.form-input-custom::placeholder {
+  color: #a5aab5;
+}
+.form-submit-btn-custom {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: #1c1f26;
+  color: #FAF8F3;
+  padding: 0 20px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+.form-submit-btn-custom:hover {
+  background: #2d323e;
+}

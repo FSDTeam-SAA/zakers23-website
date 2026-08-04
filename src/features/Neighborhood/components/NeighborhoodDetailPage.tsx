@@ -267,7 +267,7 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
       });
 
       marker.on("click", () => {
-        router.push(`/map?project=${proj.slug}`);
+        router.push(`/property/${proj.slug}`);
       });
 
       coords.push([proj.lat, proj.lng]);
@@ -494,7 +494,7 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
                         return (
                           <div
                             key={proj.slug}
-                            onClick={() => router.push(`/map?project=${proj.slug}`)}
+                            onClick={() => router.push(`/property/${proj.slug}`)}
                             className="neighborhood-property-card"
                           >
                             <div className="npc-image-wrap">
@@ -550,7 +550,7 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
                     return (
                       <div
                         key={proj.slug}
-                        onClick={() => router.push(`/map?project=${proj.slug}`)}
+                        onClick={() => router.push(`/property/${proj.slug}`)}
                         className="neighborhood-property-card"
                       >
                         <div className="npc-image-wrap">

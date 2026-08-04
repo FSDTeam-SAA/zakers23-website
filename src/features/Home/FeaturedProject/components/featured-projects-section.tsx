@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import type { Project } from "@/src/features/Home/FeaturedProject/types/featured-project.types";
 type FeaturedProjectsSectionProps = { projects: Project[] };
@@ -36,9 +37,9 @@ export function FeaturedProjectsSection({ projects }: FeaturedProjectsSectionPro
               className="translate-y-[18px] animate-[featuredFadeUp_0.72s_cubic-bezier(0.22,1,0.36,1)_forwards] opacity-0"
               style={{ animationDelay: `${index * 70}ms` }}
             >
-              <a
+              <Link
                 className="block overflow-hidden rounded-[3px] border border-[#cec7ba] bg-[#f3efe6] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#bbb19f] hover:shadow-[0_12px_24px_rgba(28,31,38,0.08)] focus:outline-none"
-                href={project.slug ? `#${project.slug}` : "#contact"}
+                href={project.slug ? `/property/${project.slug}` : "#contact"}
               >
                 <div className="relative aspect-[0.765/1] overflow-hidden bg-[#d8d2c4]">
                   <Image
@@ -68,7 +69,7 @@ export function FeaturedProjectsSection({ projects }: FeaturedProjectsSectionPro
                     {project.price}
                   </p>
                 </div>
-              </a>
+              </Link>
             </article>
           ))}
         </div>
