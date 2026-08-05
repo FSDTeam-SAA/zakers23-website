@@ -4,7 +4,7 @@ import React, { useState, useEffect, useMemo, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import L from "leaflet";
+import mapboxgl from "mapbox-gl";
 import projectsRaw from "@/src/data/miami-projects.json";
 import { SiteFooter } from "@/src/features/Home/components/site-footer";
 import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyProjectModal";
@@ -104,7 +104,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
 
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const mapRef = useRef<L.Map | null>(null);
+  const mapRef = useRef<mapboxgl.Map | null>(null);
 
   // Find current project
   const project = useMemo(() => {
@@ -124,9 +124,9 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
     const list = (projectsRaw as MapProject[])
       .filter((p) => p.slug !== project.slug)
       .filter((p) => p.neighborhood === project.neighborhood || p.neighborhood.includes(project.neighborhood));
-    
+
     if (list.length >= 4) return list.slice(0, 4);
-    
+
     const remaining = (projectsRaw as MapProject[])
       .filter((p) => p.slug !== project.slug && !list.some((item) => item.slug === p.slug));
     return [...list, ...remaining].slice(0, 4);
@@ -154,54 +154,83 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
   useEffect(() => {
     if (!mapContainerRef.current || !project) return;
 
+    const token = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
+    if (!token) {
+      mapContainerRef.current.innerHTML = `
+        <div style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          background: #f6f4f0;
+          color: #1c1f26;
+          padding: 20px;
+          text-align: center;
+          font-family: var(--font-sans), sans-serif;
+        ">
+          <p style="font-family: var(--font-serif), serif; font-size: 18px; margin-bottom: 8px;">Map Preview</p>
+          <p style="font-size: 11px; color: #8c8376; max-width: 320px; line-height: 1.5; letter-spacing: 0.05em; text-transform: uppercase;">
+            Please add your Mapbox Access Token to <code>.env.local</code> to activate the interactive map.
+          </p>
+          <div style="margin-top: 16px; font-size: 10px; color: #c9a84c; font-weight: 500; letter-spacing: 0.1em;">
+            [ NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN ]
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    mapboxgl.accessToken = token;
+
     if (mapRef.current) {
       mapRef.current.remove();
       mapRef.current = null;
     }
 
-    const map = L.map(mapContainerRef.current, {
-      center: [project.lat, project.lng],
-      zoom: 15,
-      scrollWheelZoom: false,
-      zoomControl: true,
-      attributionControl: true,
+    const map = new mapboxgl.Map({
+      container: mapContainerRef.current,
+      style: "mapbox://styles/mapbox/light-v11",
+      center: [project.lng, project.lat],
+      zoom: 14.5,
+      scrollZoom: false,
+      attributionControl: true
     });
 
     mapRef.current = map;
 
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: "abcd",
-      maxZoom: 20,
-    }).addTo(map);
+    map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "bottom-right");
 
-    const marker = L.circleMarker([project.lat, project.lng], {
-      radius: 10,
-      fill: true,
-      fillColor: "#B38E36",
-      fillOpacity: 0.5,
-      color: "#B38E36",
-      weight: 2,
-      opacity: 0.9,
-    }).addTo(map);
+    // Custom marker elements
+    const markerEl = document.createElement("div");
+    markerEl.style.width = "20px";
+    markerEl.style.height = "20px";
+    markerEl.style.background = "rgba(179, 142, 54, 0.4)";
+    markerEl.style.border = "2px solid #B38E36";
+    markerEl.style.borderRadius = "50%";
+    markerEl.style.display = "flex";
+    markerEl.style.alignItems = "center";
+    markerEl.style.justifyContent = "center";
 
-    marker.bindTooltip(project.name, {
-      direction: "top",
-      offset: [0, -2],
-      opacity: 1,
-      className: "nb-map-tip"
-    });
+    const innerDot = document.createElement("div");
+    innerDot.style.width = "8px";
+    innerDot.style.height = "8px";
+    innerDot.style.background = "#B38E36";
+    innerDot.style.borderRadius = "50%";
+    markerEl.appendChild(innerDot);
 
-    // Bypass default wheel scrolling behavior
-    const handleWheel = (e: WheelEvent) => {
-      window.scrollBy({ top: e.deltaY, left: e.deltaX, behavior: "auto" });
-    };
+    const popup = new mapboxgl.Popup({ offset: 15, closeButton: false })
+      .setHTML(`<div class="font-sans text-[11px] tracking-[0.05em] uppercase font-semibold text-[#1c1f26] p-1">${project.name}</div>`);
 
-    const container = map.getContainer();
-    container.addEventListener("wheel", handleWheel, { passive: true });
+    const marker = new mapboxgl.Marker(markerEl)
+      .setLngLat([project.lng, project.lat])
+      .setPopup(popup)
+      .addTo(map);
+
+    // Auto open popup
+    popup.addTo(map);
 
     return () => {
-      container.removeEventListener("wheel", handleWheel);
       map.remove();
       mapRef.current = null;
     };
@@ -372,7 +401,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
                 alt={project.name}
                 className="object-cover transition-transform duration-700 hover:scale-[1.02]"
               />
-              
+
               {/* Topped Off / Status Badge */}
               <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-full flex items-center gap-2 z-20">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6366f1]" />
@@ -381,7 +410,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
                 </span>
               </div>
             </div>
-            
+
             <div className="hidden md:grid grid-rows-2 gap-[4px] h-full relative">
               <div className="relative h-full w-full overflow-hidden cursor-pointer" onClick={() => setActiveImgIdx(1)}>
                 <Image
@@ -444,7 +473,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
               {formatPriceStr(project.minPrice)}
             </strong>
           </div>
-          
+
           <div className="bg-white border border-[#e8e4db] rounded-[4px] p-6 shadow-sm">
             <span className="text-[9px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-2">Delivery</span>
             <strong className="text-3xl md:text-4xl font-serif font-normal text-[#1c1f26]">
@@ -459,7 +488,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
             Building
           </h4>
           <div className="border-b border-[#ddd8cd] mt-2 mb-6" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0">
             <div>
               <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
@@ -533,11 +562,10 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
                 return (
                   <div key={step.key} className="flex flex-col items-center w-[20%] text-center">
                     <span
-                      className={`w-3.5 h-3.5 rounded-full border-2 flex items-center justify-center transition-colors duration-300 ${
-                        isActive
-                          ? "bg-[#1c1f26] border-[#1c1f26]"
-                          : "bg-white border-[#d9d3c5]"
-                      }`}
+                      className={`w-3.5 h-3.5 rounded-full border-2 flex items-center justify-center transition-colors duration-300 ${isActive
+                        ? "bg-[#1c1f26] border-[#1c1f26]"
+                        : "bg-white border-[#d9d3c5]"
+                        }`}
                     />
                     <span className={`mt-3 text-[9px] tracking-[0.05em] uppercase font-mono ${isActive ? "text-[#1c1f26] font-medium" : "text-[#8f96ab] font-light"}`}>
                       {step.label}
@@ -559,7 +587,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
         <div className="flex flex-col sm:flex-row gap-4 justify-start mt-10">
           <a
             href="#contact-section"
-            className="px-8 py-4 bg-[#1c1f26] hover:bg-[#2d323e] text-white text-[10px] uppercase tracking-[0.25em] font-semibold text-center transition-colors rounded-[2px]"
+            className="px-8 py-4 bg-[#1c1f26] text-[#b79255] text-[10px] uppercase tracking-[0.25em] font-semibold text-center transition-colors rounded-[2px] "
           >
             INQUIRE ABOUT THIS PROJECT
           </a>
@@ -1006,7 +1034,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
           <p className="contact-info-desc text-[#5f6575] mb-8 font-light text-sm max-w-[540px] mx-auto">
             Schedule a private virtual presentation or receive unit-level availability, floor plans, and incentives for {project.name}.
           </p>
-          
+
           <div className="max-w-[640px] mx-auto text-left mt-10">
             {formStatus === "done" ? (
               <div className="p-8 bg-green-500/5 border border-green-500/20 rounded text-center">
@@ -1027,7 +1055,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
                       className="form-input-custom"
                     />
                   </div>
-                  
+
                   <div className="form-group-custom">
                     <input
                       type="email"
@@ -1042,7 +1070,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
                     )}
                   </div>
                 </div>
-                
+
                 <div className="form-group-custom">
                   <textarea
                     placeholder={`Interested in ${project.name}. Please send unit-level pricing, floor plans, and current incentives.`}
@@ -1106,7 +1134,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
                       <span className="npc-badge">{proj.badge}</span>
                     )}
                   </div>
-                  
+
                   <div className="npc-details p-5">
                     <div className="npc-header pb-4 border-b border-[#FAF8F3] mb-4">
                       <div className="npc-title-row flex justify-between items-center mb-1">
@@ -1115,7 +1143,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
                       </div>
                       <span className="npc-meta text-[10px] text-[#8f96ab] font-light block">{displayMeta}</span>
                     </div>
-                    
+
                     <div className="npc-footer flex justify-between items-center mt-auto">
                       <div className="npc-price-block">
                         <span className="npc-label text-[8px] uppercase text-[#8f96ab]">Price From</span>

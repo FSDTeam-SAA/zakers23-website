@@ -4,7 +4,7 @@ import React, { useState, useEffect, useMemo, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import L from "leaflet";
+import mapboxgl from "mapbox-gl";
 import { Ht, getNeighborhoodNames, getNeighborhoodSlug } from "@/src/data/neighborhoods";
 import projectsRaw from "@/src/data/miami-projects.json";
 import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyProjectModal";
@@ -133,7 +133,7 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
 
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const mapRef = useRef<L.Map | null>(null);
+  const mapRef = useRef<mapboxgl.Map | null>(null);
 
   // Retrieve neighborhood metadata
   const hood = Ht[slug];
@@ -191,9 +191,38 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
     }
   };
 
-  // Setup Leaflet map
+  // Setup Mapbox map
   useEffect(() => {
     if (!mapContainerRef.current || allHoodProjects.length === 0) return;
+
+    const token = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
+    if (!token) {
+      mapContainerRef.current.innerHTML = `
+        <div style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          background: #10131a;
+          color: #ffffff;
+          padding: 20px;
+          text-align: center;
+          font-family: var(--font-sans), sans-serif;
+        ">
+          <p style="font-family: var(--font-serif), serif; font-size: 18px; margin-bottom: 8px; color: #f3e7c4;">Map Preview</p>
+          <p style="font-size: 11px; color: rgba(250, 250, 248, 0.44); max-width: 320px; line-height: 1.5; letter-spacing: 0.05em; text-transform: uppercase;">
+            Please add your Mapbox Access Token to <code>.env.local</code> to activate the interactive map.
+          </p>
+          <div style="margin-top: 16px; font-size: 10px; color: #c9a84c; font-weight: 500; letter-spacing: 0.1em;">
+            [ NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN ]
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    mapboxgl.accessToken = token;
 
     // Remove existing map if it was initialized
     if (mapRef.current) {
@@ -202,94 +231,107 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
     }
 
     // Determine center
-    let center: L.LatLngExpression = [25.761681, -80.19179]; // Brickell fallback
-    if (slug === "south-of-fifth") center = [25.767, -80.134];
+    let center: [number, number] = [-80.19179, 25.761681]; // Brickell fallback
+    if (slug === "south-of-fifth") center = [-80.134, 25.767];
     
     if (allHoodProjects.length > 0) {
       const lats = allHoodProjects.map(p => p.lat);
       const lngs = allHoodProjects.map(p => p.lng);
       center = [
-        lats.reduce((a, b) => a + b, 0) / lats.length,
-        lngs.reduce((a, b) => a + b, 0) / lngs.length
+        lngs.reduce((a, b) => a + b, 0) / lngs.length,
+        lats.reduce((a, b) => a + b, 0) / lats.length
       ];
     }
 
-    const map = L.map(mapContainerRef.current, {
-      center,
-      zoom: 13,
-      scrollWheelZoom: false,
-      zoomControl: true,
-      attributionControl: true,
+    const map = new mapboxgl.Map({
+      container: mapContainerRef.current,
+      style: "mapbox://styles/mapbox/dark-v11",
+      center: center,
+      zoom: 12.5,
+      scrollZoom: false,
+      attributionControl: true
     });
 
     mapRef.current = map;
 
-    // CartoDB Dark Matter tile layer
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: "abcd",
-      maxZoom: 20,
-    }).addTo(map);
+    map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "bottom-right");
 
     // Circle markers setup
     const prices = allHoodProjects.map((p) => p.maxPrice ?? p.minPrice).filter((v): v is number => v != null && v > 0);
     const minP = prices.length ? Math.min(...prices) : null;
     const maxP = prices.length ? Math.max(...prices) : null;
 
-    const coords: L.LatLngExpression[] = [];
+    const bounds = new mapboxgl.LngLatBounds();
 
     allHoodProjects.forEach((proj) => {
       const priceVal = proj.maxPrice ?? proj.minPrice;
       
-      // Radius calculation mapping between 6px and 16px
-      let radius = 10;
+      // Radius calculation mapping between 12px and 28px (diameter)
+      let diameter = 18;
       if (priceVal && minP && maxP && minP !== maxP) {
-        radius = 6 + Math.min(1, Math.max(0, (priceVal - minP) / (maxP - minP))) * 10;
+        diameter = 12 + Math.min(1, Math.max(0, (priceVal - minP) / (maxP - minP))) * 16;
       }
 
       const isTrophy = priceVal != null && maxP != null && priceVal >= maxP * 0.85;
 
-      const marker = L.circleMarker([proj.lat, proj.lng], {
-        radius,
-        fill: true,
-        fillColor: "#C9A84C",
-        fillOpacity: isTrophy ? 0.5 : 0.1,
-        color: "#C9A84C",
-        weight: isTrophy ? 1.5 : 2,
-        opacity: isTrophy ? 0.95 : 0.85,
-      }).addTo(map);
+      const markerEl = document.createElement("div");
+      markerEl.className = "cursor-pointer group relative";
+      markerEl.style.width = `${diameter}px`;
+      markerEl.style.height = `${diameter}px`;
+      markerEl.style.borderRadius = "50%";
+      markerEl.style.backgroundColor = isTrophy ? "rgba(201, 168, 76, 0.45)" : "rgba(201, 168, 76, 0.15)";
+      markerEl.style.border = "2.5px solid #C9A84C";
+      markerEl.style.display = "flex";
+      markerEl.style.alignItems = "center";
+      markerEl.style.justifyContent = "center";
+      markerEl.style.transition = "transform 0.2s ease, background-color 0.2s ease";
 
-      marker.bindTooltip(proj.name, {
-        direction: "top",
-        offset: [0, -2],
-        opacity: 1,
-        className: "nb-map-tip"
-      });
+      if (isTrophy) {
+        const dot = document.createElement("div");
+        dot.style.width = "6px";
+        dot.style.height = "6px";
+        dot.style.backgroundColor = "#C9A84C";
+        dot.style.borderRadius = "50%";
+        markerEl.appendChild(dot);
+      }
 
-      marker.on("click", () => {
+      const popup = new mapboxgl.Popup({ offset: diameter / 2 + 5, closeButton: false })
+        .setHTML(`<div class="font-sans text-[11px] tracking-[0.05em] uppercase font-semibold text-[#1c1f26] p-1">${proj.name}</div>`);
+
+      const marker = new mapboxgl.Marker(markerEl)
+        .setLngLat([proj.lng, proj.lat])
+        .setPopup(popup)
+        .addTo(map);
+
+      // Interactivity
+      markerEl.addEventListener("click", () => {
         router.push(`/property/${proj.slug}`);
       });
 
-      coords.push([proj.lat, proj.lng]);
+      markerEl.addEventListener("mouseenter", () => {
+        markerEl.style.transform = "scale(1.15)";
+        markerEl.style.backgroundColor = "rgba(201, 168, 76, 0.75)";
+        popup.addTo(map);
+      });
+
+      markerEl.addEventListener("mouseleave", () => {
+        markerEl.style.transform = "scale(1)";
+        markerEl.style.backgroundColor = isTrophy ? "rgba(201, 168, 76, 0.45)" : "rgba(201, 168, 76, 0.15)";
+        popup.remove();
+      });
+
+      bounds.extend([proj.lng, proj.lat]);
     });
 
     // Fit map bounds to encompass all project locations
-    if (coords.length > 1) {
-      map.fitBounds(L.latLngBounds(coords), { padding: [48, 48], maxZoom: 15 });
-    } else if (coords.length === 1) {
-      map.setView(coords[0], 14);
+    if (allHoodProjects.length > 1) {
+      map.fitBounds(bounds, { padding: 48, maxZoom: 15 });
+    } else if (allHoodProjects.length === 1) {
+      map.setCenter([allHoodProjects[0].lng, allHoodProjects[0].lat]);
+      map.setZoom(14);
     }
 
-    // Bypass default wheel scrolling behavior so scrolling works correctly over the map
-    const handleWheel = (e: WheelEvent) => {
-      window.scrollBy({ top: e.deltaY, left: e.deltaX, behavior: "auto" });
-    };
-
-    const container = map.getContainer();
-    container.addEventListener("wheel", handleWheel, { passive: true });
-
     return () => {
-      container.removeEventListener("wheel", handleWheel);
       map.remove();
       mapRef.current = null;
     };

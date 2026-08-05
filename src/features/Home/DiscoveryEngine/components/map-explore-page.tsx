@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef, useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import L from "leaflet";
+import mapboxgl from "mapbox-gl";
 import projectsRaw from "@/src/data/miami-projects.json";
 import FindMyProjectModal, { Vt, MatcherPrefs } from "@/src/features/FindMyProject/components/FindMyProjectModal";
 import { Ht } from "@/src/data/neighborhoods";
@@ -203,7 +203,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
   const [searchFocused, setSearchFocused] = useState<boolean>(false);
   const [searchHoverIndex, setSearchHoverIndex] = useState<number>(0);
   const [mobileSearchOpen, setMobileSearchOpen] = useState<boolean>(false);
-  const [mapBounds, setMapBounds] = useState<L.LatLngBounds | null>(null);
+  const [mapBounds, setMapBounds] = useState<mapboxgl.LngLatBounds | null>(null);
 
   // Dropdown States
   const [stageDropdownOpen, setStageDropdownOpen] = useState<boolean>(false);
@@ -237,8 +237,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
 
   // Refs
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const mapRef = useRef<L.Map | null>(null);
-  const markersRef = useRef<Record<number, L.Marker>>({});
+  const mapRef = useRef<mapboxgl.Map | null>(null);
+  const markersRef = useRef<Record<number, mapboxgl.Marker>>({});
   const sidebarListRef = useRef<HTMLDivElement>(null);
   const searchContainerRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -253,11 +253,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
     if (!mapRef.current) return;
     const map = mapRef.current;
     const isMobile = window.innerWidth <= 768;
-    const zoom = Math.max(map.getZoom(), 14);
+    const zoom = Math.max(map.getZoom(), 14.5);
 
-    const latlng = L.latLng(project.lat, project.lng);
-    const containerPoint = map.project(latlng, zoom);
-    
     let offsetX = 0;
     let offsetY = 0;
 
@@ -265,22 +262,20 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
       // Y offset to push marker to the top half of the screen
       const popupEl = document.querySelector(".map-popup-container");
       const popupHeight = popupEl ? popupEl.clientHeight : window.innerHeight * 0.48;
-      const mapHeight = map.getSize().y;
+      const mapHeight = map.getContainer().clientHeight;
       const remainingHeight = Math.max(96, mapHeight - popupHeight);
-      offsetY = mapHeight / 2 - remainingHeight / 2;
+      offsetY = -(mapHeight / 2 - remainingHeight / 2);
     } else {
       // X offset to shift project to the right (away from the 380px left sidebar)
-      const mapWidth = map.getSize().x;
       const sidebarWidth = 380;
-      offsetX = -(sidebarWidth / 2);
+      offsetX = sidebarWidth / 2;
     }
 
-    const offsetPoint = L.point(containerPoint.x + offsetX, containerPoint.y + offsetY);
-    const offsetLatLng = map.unproject(offsetPoint, zoom);
-
-    map.flyTo(offsetLatLng, zoom, {
-      duration: 0.85,
-      easeLinearity: 0.25
+    map.flyTo({
+      center: [project.lng, project.lat],
+      zoom: zoom,
+      offset: [offsetX, offsetY],
+      duration: 1000
     });
   };
 
@@ -302,49 +297,73 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
 
   // Setup Map instance
   useEffect(() => {
-    if (!mapContainerRef.current || mapRef.current) return;
+    if (!mapContainerRef.current) return;
 
-    const map = L.map(mapContainerRef.current, {
-      center: [25.82, -80.185],
+    const token = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
+    if (!token) {
+      mapContainerRef.current.innerHTML = `
+        <div style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          background: #fafaf8;
+          color: #1c1f26;
+          padding: 20px;
+          text-align: center;
+          font-family: var(--font-sans), sans-serif;
+        ">
+          <p style="font-family: var(--font-serif), serif; font-size: 18px; margin-bottom: 8px;">Map Preview</p>
+          <p style="font-size: 11px; color: #8c8376; max-width: 320px; line-height: 1.5; letter-spacing: 0.05em; text-transform: uppercase;">
+            Please add your Mapbox Access Token to <code>.env.local</code> to activate the interactive map.
+          </p>
+          <div style="margin-top: 16px; font-size: 10px; color: #b89354; font-weight: 500; letter-spacing: 0.1em;">
+            [ NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN ]
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    mapboxgl.accessToken = token;
+
+    if (mapRef.current) {
+      mapRef.current.remove();
+      mapRef.current = null;
+    }
+
+    const map = new mapboxgl.Map({
+      container: mapContainerRef.current,
+      style: "mapbox://styles/mapbox/light-v11",
+      center: [-80.185, 25.82],
       zoom: 12,
-      zoomControl: false,
-      attributionControl: false,
-      inertia: true,
-      inertiaDeceleration: 3400,
-      inertiaMaxSpeed: 2800,
-      easeLinearity: 0.28,
-      zoomAnimation: true,
-      fadeAnimation: true,
-      tapTolerance: 15
+      attributionControl: true
     });
 
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
-      subdomains: "abcd",
-      maxZoom: 19
-    }).addTo(map);
+    mapRef.current = map;
 
-    L.control.zoom({ position: "bottomright" }).addTo(map);
-    L.control.attribution({ position: "bottomleft", prefix: "© CartoDB" }).addTo(map);
+    map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "bottom-right");
 
     // Initial markers creation
     allProjects.forEach((proj) => {
       if (typeof proj.lat !== "number" || typeof proj.lng !== "number") return;
       const m = getStageConfig(proj);
-      const customIcon = L.divIcon({
-        html: `<div class="map-marker" style="
+
+      const markerEl = document.createElement("div");
+      markerEl.style.width = "16px";
+      markerEl.style.height = "16px";
+      markerEl.style.cursor = "pointer";
+      markerEl.innerHTML = `
+        <div class="map-marker" style="
           width: 16px; height: 16px; border-radius: 50%;
           background: ${m.dot}; border: 2.5px solid ${m.border};
           box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
           cursor: pointer; transition: transform 0.2s;
-        "></div>`,
-        className: "",
-        iconSize: [16, 16],
-        iconAnchor: [8, 8]
-      });
+        "></div>
+      `;
 
-      const marker = L.marker([proj.lat, proj.lng], { icon: customIcon }).addTo(map);
-
-      marker.bindTooltip(`
+      const tooltipContent = `
         <div style="
           font-family: 'DM Sans', sans-serif;
           font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
@@ -357,24 +376,33 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
         ">
           <span style="color: ${m.dot}; margin-right: 6px;">●</span>${proj.name}
         </div>
-      `, {
-        permanent: false,
-        direction: "top",
-        offset: [0, -10],
-        opacity: 1,
-        className: "map-tooltip-clean"
-      });
+      `;
 
-      marker.on("click", (e) => {
-        e.originalEvent?.stopPropagation();
+      const popup = new mapboxgl.Popup({ offset: 12, closeButton: false })
+        .setHTML(tooltipContent);
+
+      const marker = new mapboxgl.Marker({ element: markerEl })
+        .setLngLat([proj.lng, proj.lat])
+        .setPopup(popup)
+        .addTo(map);
+
+      markerEl.addEventListener("click", (e) => {
+        e.stopPropagation();
         setSelected(proj);
         flyToProject(proj);
+      });
+
+      markerEl.addEventListener("mouseenter", () => {
+        popup.addTo(map);
+      });
+
+      markerEl.addEventListener("mouseleave", () => {
+        popup.remove();
       });
 
       markersRef.current[proj.id] = marker;
     });
 
-    mapRef.current = map;
     setMapBounds(map.getBounds());
 
     const handleMoveEnd = () => {
@@ -382,16 +410,13 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
     };
 
     map.on("moveend", handleMoveEnd);
-    map.on("zoomend", handleMoveEnd);
 
-    // Initial ref invalidated size to draw properly
+    // Initial resize trigger to draw properly
     setTimeout(() => {
-      map.invalidateSize();
+      map.resize();
     }, 150);
 
     return () => {
-      map.off("moveend", handleMoveEnd);
-      map.off("zoomend", handleMoveEnd);
       map.remove();
       mapRef.current = null;
       markersRef.current = {};
@@ -402,7 +427,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
   useEffect(() => {
     if (viewMode === "map" && mapRef.current) {
       setTimeout(() => {
-        mapRef.current?.invalidateSize();
+        mapRef.current?.resize();
         if (mapRef.current) setMapBounds(mapRef.current.getBounds());
       }, 100);
     }
@@ -416,34 +441,33 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
 
       const m = getStageConfig(proj);
       const isSelected = selected?.id === proj.id;
+      const el = marker.getElement();
 
-      if (isSelected) {
-        marker.setIcon(L.divIcon({
-          html: `<div class="map-marker-beacon" style="width: 32px; height: 32px; position: relative; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">
-            <div style="position: relative; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center;">
-              <div class="ring1" style="position: absolute; left: 50%; top: 50%; width: 16px; height: 16px; margin-left: -8px; margin-top: -8px; border-radius: 50%; background: ${m.dot}; opacity: 0.7; transform-origin: center center;"></div>
-              <div class="ring2" style="position: absolute; left: 50%; top: 50%; width: 16px; height: 16px; margin-left: -8px; margin-top: -8px; border-radius: 50%; background: ${m.dot}; opacity: 0.7; transform-origin: center center;"></div>
-              <div style="position: relative; width: 10px; height: 10px; border-radius: 50%; background: ${m.dot}; border: 2px solid ${m.border}; box-shadow: 0 0 8px ${m.dot}, 0 2px 12px rgba(0, 0, 0, 0.4); z-index: 1; flex-shrink: 0;"></div>
+      if (el) {
+        if (isSelected) {
+          el.innerHTML = `
+            <div class="map-marker-beacon" style="width: 32px; height: 32px; position: relative; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">
+              <div style="position: relative; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center;">
+                <div class="ring1" style="position: absolute; left: 50%; top: 50%; width: 16px; height: 16px; margin-left: -8px; margin-top: -8px; border-radius: 50%; background: ${m.dot}; opacity: 0.7; transform-origin: center center;"></div>
+                <div class="ring2" style="position: absolute; left: 50%; top: 50%; width: 16px; height: 16px; margin-left: -8px; margin-top: -8px; border-radius: 50%; background: ${m.dot}; opacity: 0.7; transform-origin: center center;"></div>
+                <div style="position: relative; width: 10px; height: 10px; border-radius: 50%; background: ${m.dot}; border: 2px solid ${m.border}; box-shadow: 0 0 8px ${m.dot}, 0 2px 12px rgba(0, 0, 0, 0.4); z-index: 1; flex-shrink: 0;"></div>
+              </div>
             </div>
-          </div>`,
-          className: "",
-          iconSize: [32, 32],
-          iconAnchor: [16, 16]
-        }));
-        marker.setZIndexOffset(1000);
-      } else {
-        marker.setIcon(L.divIcon({
-          html: `<div class="map-marker" style="
-            width: 16px; height: 16px; border-radius: 50%;
-            background: ${m.dot}; border: 2.5px solid ${m.border};
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
-            cursor: pointer; transition: transform 0.2s;
-          "></div>`,
-          className: "",
-          iconSize: [16, 16],
-          iconAnchor: [8, 8]
-        }));
-        marker.setZIndexOffset(0);
+          `;
+          el.style.width = "32px";
+          el.style.height = "32px";
+        } else {
+          el.innerHTML = `
+            <div class="map-marker" style="
+              width: 16px; height: 16px; border-radius: 50%;
+              background: ${m.dot}; border: 2.5px solid ${m.border};
+              box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+              cursor: pointer; transition: transform 0.2s;
+            "></div>
+          `;
+          el.style.width = "16px";
+          el.style.height = "16px";
+        }
       }
     });
   }, [selected]);
@@ -458,10 +482,15 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
       const passesStage = stageFilter === "all" || proj.stage === stageFilter;
       const passesMatcher = !matcherPrefs || matchedIds.has(proj.id);
 
-      if (passesStage && passesMatcher) {
-        marker.setOpacity(1);
-      } else {
-        marker.setOpacity(0.1); // Dim non-matching markers
+      const el = marker.getElement();
+      if (el) {
+        if (passesStage && passesMatcher) {
+          el.style.opacity = "1";
+          el.style.pointerEvents = "auto";
+        } else {
+          el.style.opacity = "0.15";
+          el.style.pointerEvents = "none";
+        }
       }
     });
   }, [stageFilter, matchedProjectsList, matcherPrefs]);
@@ -520,7 +549,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
   // Filter projects by bounds (only on map view)
   const isWithinMapBounds = (proj: MapProject) => {
     if (!mapBounds) return true;
-    return mapBounds.contains([proj.lat, proj.lng]);
+    return mapBounds.contains([proj.lng, proj.lat]);
   };
 
   // Filtered List
@@ -1737,7 +1766,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     ✦ Request Pricing
                   </button>
                   <button 
-                    onClick={() => { setModalProject(selected); setModal("inquiry"); }}
+                    onClick={() => router.push(`/property/${selected.slug}`)}
                     style={{
                       flex: 1, padding: "12px", background: "transparent", border: `1px solid ${theme.dune}`,
                       color: theme.ink, fontFamily: "'DM Sans', sans-serif", fontSize: 9, letterSpacing: "0.16em",

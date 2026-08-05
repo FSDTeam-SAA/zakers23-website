@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import L from "leaflet";
+import mapboxgl from "mapbox-gl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AdvisorSection } from "@/src/features/Home/components/advisor-section";
 import { SiteFooter } from "@/src/features/Home/components/site-footer";
@@ -499,8 +499,8 @@ function WaterfrontInquiryModal({ isOpen, onClose }: WaterfrontInquiryModalProps
 
 export default function WaterfrontPage() {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
-  const mapRef = useRef<L.Map | null>(null);
-  const markersRef = useRef<Record<string, L.CircleMarker>>({});
+  const mapRef = useRef<mapboxgl.Map | null>(null);
+  const markersRef = useRef<Record<string, mapboxgl.Marker>>({});
   const [selectedSale, setSelectedSale] = useState<Sale | null>(sales[0]);
   const [hoveredSaleId, setHoveredSaleId] = useState<string | null>(null);
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
@@ -517,47 +517,98 @@ export default function WaterfrontPage() {
   );
 
   useEffect(() => {
-    if (!mapContainerRef.current || mapRef.current) return;
+    if (!mapContainerRef.current) return;
 
-    const map = L.map(mapContainerRef.current, {
-      center: [25.81, -80.16],
+    const token = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
+    if (!token) {
+      mapContainerRef.current.innerHTML = `
+        <div style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          background: #10131a;
+          color: #ffffff;
+          padding: 20px;
+          text-align: center;
+          font-family: var(--font-sans), sans-serif;
+        ">
+          <p style="font-family: var(--font-serif), serif; font-size: 18px; margin-bottom: 8px; color: #f3e7c4;">Map Preview</p>
+          <p style="font-size: 11px; color: rgba(250, 250, 248, 0.44); max-width: 320px; line-height: 1.5; letter-spacing: 0.05em; text-transform: uppercase;">
+            Please add your Mapbox Access Token to <code>.env.local</code> to activate the interactive map.
+          </p>
+          <div style="margin-top: 16px; font-size: 10px; color: #c9a84c; font-weight: 500; letter-spacing: 0.1em;">
+            [ NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN ]
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    mapboxgl.accessToken = token;
+
+    if (mapRef.current) {
+      mapRef.current.remove();
+      mapRef.current = null;
+    }
+
+    const map = new mapboxgl.Map({
+      container: mapContainerRef.current,
+      style: "mapbox://styles/mapbox/dark-v11",
+      center: [-80.16, 25.81],
       zoom: 11,
-      zoomControl: true,
-      scrollWheelZoom: false,
-    });
-
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-      subdomains: "abcd",
-      maxZoom: 20,
-      attribution: "&copy; OpenStreetMap &copy; CARTO",
-    }).addTo(map);
-
-    sales.forEach((sale) => {
-      const marker = L.circleMarker([sale.lat, sale.lng], {
-        radius: markerRadius(sale.price),
-        color: bronze,
-        fillColor: bronze,
-        fillOpacity: sale.price >= 50_000_000 ? 0.46 : 0.04,
-        weight: sale.price >= 50_000_000 ? 1.5 : 2,
-      }).addTo(map);
-
-      marker.bindTooltip(sale.displayPrice, {
-        direction: "top",
-        className: "waterfront-price-tooltip",
-        offset: [0, -4],
-      });
-      marker.on("click", () => setSelectedSale(sale));
-      marker.on("mouseover", () => setHoveredSaleId(sale.id));
-      marker.on("mouseout", () => setHoveredSaleId((current) => (current === sale.id ? null : current)));
-      markersRef.current[sale.id] = marker;
-    });
-
-    map.fitBounds(L.latLngBounds(sales.map((sale) => [sale.lat, sale.lng])), {
-      padding: [36, 36],
-      maxZoom: 12,
+      attributionControl: true
     });
 
     mapRef.current = map;
+
+    map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "bottom-right");
+
+    const bounds = new mapboxgl.LngLatBounds();
+
+    sales.forEach((sale) => {
+      const diameter = markerRadius(sale.price) * 2;
+
+      const markerEl = document.createElement("div");
+      markerEl.style.width = `${diameter}px`;
+      markerEl.style.height = `${diameter}px`;
+      markerEl.style.borderRadius = "50%";
+      markerEl.style.border = `2px solid ${bronze}`;
+      markerEl.style.backgroundColor = sale.price >= 50_000_000 ? "rgba(201, 168, 76, 0.46)" : "rgba(201, 168, 76, 0.08)";
+      markerEl.style.cursor = "pointer";
+      markerEl.style.transition = "transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease";
+
+      const popup = new mapboxgl.Popup({ offset: diameter / 2 + 5, closeButton: false })
+        .setHTML(`<div class="font-sans text-[11px] tracking-[0.05em] uppercase font-semibold text-[#1c1f26] p-1">${sale.address} <span class="text-[#B38E36] font-mono">${sale.displayPrice}</span></div>`);
+
+      const marker = new mapboxgl.Marker(markerEl)
+        .setLngLat([sale.lng, sale.lat])
+        .setPopup(popup)
+        .addTo(map);
+
+      markerEl.addEventListener("click", () => {
+        setSelectedSale(sale);
+      });
+
+      markerEl.addEventListener("mouseenter", () => {
+        setHoveredSaleId(sale.id);
+        popup.addTo(map);
+      });
+
+      markerEl.addEventListener("mouseleave", () => {
+        setHoveredSaleId((current) => (current === sale.id ? null : current));
+        popup.remove();
+      });
+
+      markersRef.current[sale.id] = marker;
+      bounds.extend([sale.lng, sale.lat]);
+    });
+
+    map.fitBounds(bounds, {
+      padding: 36,
+      maxZoom: 12,
+    });
 
     return () => {
       map.remove();
@@ -572,17 +623,27 @@ export default function WaterfrontPage() {
       if (!sale) return;
       const isSelected = sale.id === selectedSale?.id;
       const isHovered = sale.id === hoveredSaleId;
-      marker.setStyle({
-        fillOpacity: isSelected ? 1 : isHovered ? 0.7 : sale.price >= 50_000_000 ? 0.46 : 0.04,
-        color: isSelected ? "#ffffff" : bronze,
-        weight: isSelected ? 3 : isHovered ? 2.4 : sale.price >= 50_000_000 ? 1.5 : 2,
-      });
+      
+      const el = marker.getElement();
+      if (el) {
+        el.style.borderColor = isSelected ? "#ffffff" : bronze;
+        el.style.borderWidth = isSelected ? "3px" : isHovered ? "2.5px" : "2px";
+        el.style.backgroundColor = isSelected 
+          ? bronze 
+          : isHovered 
+            ? "rgba(201, 168, 76, 0.7)" 
+            : sale.price >= 50_000_000 
+              ? "rgba(201, 168, 76, 0.46)" 
+              : "rgba(201, 168, 76, 0.08)";
+        el.style.transform = isSelected ? "scale(1.2)" : isHovered ? "scale(1.15)" : "scale(1)";
+        el.style.zIndex = isSelected ? "10" : isHovered ? "5" : "1";
+      }
     });
   }, [hoveredSaleId, selectedSale]);
 
   const focusSale = (sale: Sale) => {
     setSelectedSale(sale);
-    mapRef.current?.flyTo([sale.lat, sale.lng], 14, { duration: 0.85 });
+    mapRef.current?.flyTo({ center: [sale.lng, sale.lat], zoom: 13.5, duration: 1200 });
   };
 
   return (
