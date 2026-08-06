@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "frasermiami.s3.us-east-2.amazonaws.com"
+      },
+      {
+        protocol: "https",
         hostname: "newdev.miami"
       },
       {

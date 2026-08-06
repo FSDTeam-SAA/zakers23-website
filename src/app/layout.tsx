@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { CompareFloatingBar } from "@/src/components/CompareFloatingBar";
+import LenisProvider from "@/src/components/LenisProvider";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./globals.css";
 
@@ -11,7 +13,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <LenisProvider>
+          {children}
+        </LenisProvider>
+        <CompareFloatingBar />
+      </body>
     </html>
   );
 }

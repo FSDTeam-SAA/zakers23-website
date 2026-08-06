@@ -97,19 +97,63 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
   const [isMatcherOpen, setIsMatcherOpen] = useState(false);
   const [activeImgIdx, setActiveImgIdx] = useState<number | null>(null);
 
+  // Find current project
+  const project = useMemo(() => {
+    return (projectsRaw as MapProject[]).find((p) => p.slug === slug);
+  }, [slug]);
+
   // Form intake state
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");
   const [formMessage, setFormMessage] = useState("");
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
 
+  // Compare state
+  const [isCompared, setIsCompared] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && project) {
+      const stored = localStorage.getItem("zakers23-compare-projects");
+      if (stored) {
+        try {
+          const list = JSON.parse(stored) as number[];
+          setIsCompared(list.includes(project.id));
+        } catch (e) {
+          console.error(e);
+        }
+      }
+    }
+  }, [project]);
+
+  const handleToggleCompare = () => {
+    if (!project || typeof window === "undefined") return;
+    const stored = localStorage.getItem("zakers23-compare-projects");
+    let list: number[] = [];
+    if (stored) {
+      try {
+        list = JSON.parse(stored) as number[];
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    if (list.includes(project.id)) {
+      list = list.filter((id) => id !== project.id);
+      setIsCompared(false);
+    } else {
+      if (list.length >= 2) {
+        list.shift(); // remove oldest
+      }
+      list.push(project.id);
+      setIsCompared(true);
+    }
+
+    localStorage.setItem("zakers23-compare-projects", JSON.stringify(list));
+    window.dispatchEvent(new Event("compare-changed"));
+  };
+
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
-
-  // Find current project
-  const project = useMemo(() => {
-    return (projectsRaw as MapProject[]).find((p) => p.slug === slug);
-  }, [slug]);
 
   // Gallery images array
   const galleryImgs = useMemo(() => {
@@ -446,13 +490,26 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
 
       {/* Main content metadata & Spec layout */}
       <section className="max-w-[1140px] mx-auto px-6 pb-20">
-        {/* Back Button */}
-        <button
-          onClick={() => router.back()}
-          className="text-[#8f96ab] hover:text-[#1c1f26] text-[10px] tracking-[0.2em] uppercase transition-colors mb-6 flex items-center gap-1"
-        >
-          &larr; Back
-        </button>
+        {/* Back Button & Compare trigger */}
+        <div className="flex justify-between items-center mb-6">
+          <button
+            onClick={() => router.back()}
+            className="text-[#8f96ab] hover:text-[#1c1f26] text-[10px] tracking-[0.2em] uppercase transition-colors flex items-center gap-1"
+          >
+            &larr; Back
+          </button>
+          
+          <button
+            onClick={handleToggleCompare}
+            className={`text-[9px] tracking-[0.25em] uppercase transition-all px-4 py-2.5 border flex items-center gap-2 font-semibold ${
+              isCompared
+                ? "bg-[#B38E36] border-[#B38E36] text-white"
+                : "border-[#1c1f26] text-[#1c1f26] hover:bg-[#1c1f26] hover:text-white"
+            }`}
+          >
+            {isCompared ? "✓ Compared" : "+ Compare Development"}
+          </button>
+        </div>
 
         {/* Kicker & Title */}
         <span className="text-[10px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">

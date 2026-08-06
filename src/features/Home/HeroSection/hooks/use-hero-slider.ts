@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useLenis } from "lenis/react";
 
 type UseHeroSliderOptions = {
   slideCount: number;
 };
 
 export function useHeroSlider({ slideCount }: UseHeroSliderOptions) {
+  const lenis = useLenis();
   const [activeSlide, setActiveSlide] = useState(0);
   const heroRef = useRef<HTMLElement | null>(null);
   const isAnimatingRef = useRef(false);
@@ -41,18 +43,24 @@ export function useHeroSlider({ slideCount }: UseHeroSliderOptions) {
     const rect = heroRef.current.getBoundingClientRect();
     const viewportHeight = window.innerHeight;
     const inHeroWindow = rect.top <= 1 && rect.bottom >= viewportHeight - 1;
-    wheelDeltaRef.current += event.deltaY;
-
-    const tryingToAdvance = wheelDeltaRef.current > 0 && activeSlide < slideCount - 1;
-    const tryingToReverse = wheelDeltaRef.current < 0 && activeSlide > 0;
-
+    
     if (!inHeroWindow) {
+      lenis?.start();
       return;
     }
 
+    const tryingToAdvance = event.deltaY > 0 && activeSlide < slideCount - 1;
+    const tryingToReverse = event.deltaY < 0 && activeSlide > 0;
+
     if (tryingToAdvance || tryingToReverse) {
+      lenis?.stop();
       event.preventDefault();
+    } else {
+      lenis?.start();
+      return;
     }
+
+    wheelDeltaRef.current += event.deltaY;
 
     if (isAnimatingRef.current || Math.abs(wheelDeltaRef.current) < 22) {
       return;
@@ -78,19 +86,22 @@ export function useHeroSlider({ slideCount }: UseHeroSliderOptions) {
       const inHeroWindow = rect.top <= 1 && rect.bottom >= viewportHeight - 1;
 
       if (!inHeroWindow) {
+        lenis?.start();
+        return;
+      }
+
+      const tryingToAdvance = event.deltaY > 0 && activeSlide < slideCount - 1;
+      const tryingToReverse = event.deltaY < 0 && activeSlide > 0;
+
+      if (tryingToAdvance || tryingToReverse) {
+        lenis?.stop();
+        event.preventDefault();
+      } else {
+        lenis?.start();
         return;
       }
 
       wheelDeltaRef.current += event.deltaY;
-
-      const tryingToAdvance = wheelDeltaRef.current > 0 && activeSlide < slideCount - 1;
-      const tryingToReverse = wheelDeltaRef.current < 0 && activeSlide > 0;
-
-      if (!tryingToAdvance && !tryingToReverse) {
-        return;
-      }
-
-      event.preventDefault();
 
       if (isAnimatingRef.current || Math.abs(wheelDeltaRef.current) < 22) {
         return;
@@ -109,8 +120,9 @@ export function useHeroSlider({ slideCount }: UseHeroSliderOptions) {
 
     return () => {
       window.removeEventListener("wheel", onWindowWheel);
+      lenis?.start();
     };
-  }, [activeSlide, slideCount]);
+  }, [activeSlide, slideCount, lenis]);
 
   return {
     heroRef,
