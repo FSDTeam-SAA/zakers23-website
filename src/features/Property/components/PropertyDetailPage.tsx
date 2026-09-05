@@ -1037,7 +1037,7 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
         </div>
       </section>
 
-      {/* 13. BROKER ADVISOR PROFILE ("Brett Fraser") */}
+      {/* 13. BROKER ADVISOR PROFILE */}
       <section className="property-broker py-20 bg-[#FAF8F3] border-b border-[#ddd8cd] text-[#1c1f26]">
         <div className="property-container max-w-[1140px] mx-auto px-6">
           <div className="bg-white border border-[#ddd8cd] rounded-[4px] shadow-xl p-8 md:p-12">
@@ -1045,8 +1045,9 @@ export default function PropertyDetailPage({ slug }: { slug: string }) {
               <div className="relative aspect-[0.82/1] w-full max-w-[280px] mx-auto rounded-[3px] overflow-hidden bg-[#d9d1c5] border border-[#e2e8f0]">
                 <Image
                   fill
-                  src="https://frasermiami.s3.amazonaws.com/brett-fraser-headshot.jpg"
-                  alt="Brett Fraser"
+                  src="/images/imagereader.webp"
+                  alt="Zachary Akers"
+                  sizes="280px"
                   className="object-cover"
                 />
               </div>
@@ -1063,7 +1064,7 @@ Zachary Akers
                     MR LUXURY GROUP &middot; ONE SOTHEBY&apos;S INTERNATIONAL REALTY
                   </p>
                   <p className="text-xs md:text-sm font-light leading-relaxed text-[#535862] max-w-[580px] mb-8">
-                    Born and raised in the Cayman Islands, Brett advises a global clientele on South Florida's prime new construction market. Specializing in off-market options and pre-launch pricing, he coordinates unit-level presentations for developments before they hit the general public.
+                    Zach, is a veteran of 14 years in the real estate industry working both in sales, as well as luxury new-construction and development. Zach is adept at understanding the relationship between investment and emotional connection to your property. With vast experience working with homeowners from all walks of life and backgrounds, he understands that no home buyer or seller is the same, but they all want results. Zach will help you purchase or sell your property seamlessly and with integrity.
                   </p>
                 </div>
 
