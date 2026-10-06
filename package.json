@@ -7,9 +7,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "idx:sync": "node src/scripts/sync-idx.mjs"
   },
   "dependencies": {
+    "env-secret": "^1.0.1",
     "leaflet": "^1.9.4",
     "lenis": "^1.3.26",
     "mapbox-gl": "^3.28.0",

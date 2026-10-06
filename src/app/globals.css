@@ -696,6 +696,132 @@ input {
   color: var(--bronze);
 }
 
+.discovery-index a span {
+  color: rgba(255, 255, 255, 0.24);
+}
+
+.discovery-index-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.discovery-index-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px 28px;
+}
+
+@media (max-width: 1024px) {
+  .discovery-index-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .discovery-index-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.discovery-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.discovery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+  text-decoration: none;
+}
+
+.discovery-item:hover {
+  background: rgba(187, 151, 81, 0.08);
+  border-color: rgba(187, 151, 81, 0.35);
+  transform: translateX(3px);
+}
+
+.discovery-item-num {
+  font-family: var(--font-mono, monospace);
+  font-size: 11px;
+  color: #bb9751;
+  opacity: 0.65;
+  width: 22px;
+  flex-shrink: 0;
+}
+
+.discovery-item-name {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.88);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  margin-right: 10px;
+  transition: color 0.2s ease;
+}
+
+.discovery-item:hover .discovery-item-name {
+  color: #e5c583;
+}
+
+.discovery-item-meta {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.42);
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.discovery-item-price {
+  font-family: var(--font-mono, monospace);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.discovery-pill {
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.discovery-pill:hover {
+  border-color: rgba(187, 151, 81, 0.5);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.discovery-pill.is-active {
+  border-color: #bb9751;
+  background: #bb9751;
+  color: #0c1523;
+  font-weight: 600;
+}
+
+.discovery-empty {
+  margin: 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.42);
+}
+
 .discovery-layout {
   max-width: 1280px;
   margin: 0 auto;
@@ -751,6 +877,12 @@ input[type="range"] {
   box-shadow: none;
 }
 
+.budget-presets button.is-active {
+  background: var(--bronze);
+  border-color: var(--bronze);
+  color: var(--ink);
+}
+
 .match-panel {
   display: flex;
   flex-direction: column;
@@ -791,6 +923,19 @@ input[type="range"] {
   width: 56px;
   height: 56px;
   overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.match-thumb-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.match-card:hover .match-thumb-image {
+  transform: scale(1.06);
 }
 
 .match-copy strong {
@@ -2113,3 +2258,56 @@ input[type="range"] {
 .consultation-select-option[aria-selected="true"] { color: #896932; font-weight: 500; }
 .consultation-select-option svg { flex-shrink: 0; }
 @media (max-width: 480px) { .consultation-select-trigger { font-size: 16px; } .consultation-select-option { min-height: 44px; font-size: 13px; } }
+
+/* ==========================================================================
+   Luxury Skeleton & Loading Animation
+   ========================================================================== */
+@keyframes luxury-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.luxury-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(230, 226, 218, 0.5) 0%,
+    rgba(248, 246, 242, 0.95) 50%,
+    rgba(230, 226, 218, 0.5) 100%
+  );
+  background-size: 200% 100%;
+  animation: luxury-shimmer 1.8s ease-in-out infinite;
+}
+
+.luxury-shimmer-dark {
+  background: linear-gradient(
+    90deg,
+    rgba(28, 31, 38, 0.6) 0%,
+    rgba(45, 50, 60, 0.85) 50%,
+    rgba(28, 31, 38, 0.6) 100%
+  );
+  background-size: 200% 100%;
+  animation: luxury-shimmer 1.8s ease-in-out infinite;
+}
+
+@keyframes luxury-pulse-beacon {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(184, 147, 84, 0.55);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(184, 147, 84, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(184, 147, 84, 0);
+  }
+}
+
+.luxury-pulse-badge {
+  animation: luxury-pulse-beacon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

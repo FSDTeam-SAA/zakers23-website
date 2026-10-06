@@ -18,7 +18,6 @@ export function HeroSection({ slides }: HeroSectionProps) {
       ref={heroRef}
       className="hero hero-scroll-lock"
       id="top"
-      onWheel={handleHeroWheel}
     >
       <div className="hero-sticky-frame">
         {slides.map((slide, index) => (

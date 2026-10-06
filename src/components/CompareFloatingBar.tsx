@@ -56,7 +56,7 @@ export function CompareFloatingBar() {
   };
 
   const getImageUrl = (path: string | null | undefined): string => {
-    if (!path) return "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&auto=format&fit=crop&q=60";
+    if (!path || path.includes("api.cotality.com")) return "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp";
     if (path.startsWith("http://") || path.startsWith("https://")) {
       return path;
     }

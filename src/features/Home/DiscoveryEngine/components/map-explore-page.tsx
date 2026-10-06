@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import mapboxgl from "mapbox-gl";
-import projectsRaw from "@/src/data/miami-projects.json";
 import FindMyProjectModal, { Vt, MatcherPrefs } from "@/src/features/FindMyProject/components/FindMyProjectModal";
 import { Ht } from "@/src/data/neighborhoods";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
@@ -29,14 +28,14 @@ export interface MapProject {
   units: string | number;
   unitsLeft?: number;
   percentSold?: number;
-  pricePerSqft?: number;
+  pricePerSqft?: number | null;
   comingSoon?: boolean;
   statusRemark?: string;
   badge?: string;
   img: string;
   imgs: string[];
   logo?: string;
-  wellnessScore?: number;
+  wellnessScore?: number | null;
   minBed: number | null;
   maxBed: number | null;
   projectedAppreciation?: number;
@@ -82,8 +81,65 @@ function parsePrice(priceStr: string | null | undefined): number | null {
   return isNaN(num) ? null : num;
 }
 
-function getImageUrl(path: string | null | undefined): string {
-  if (!path) return "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&auto=format&fit=crop&q=60";
+const LUXURY_FALLBACKS: Record<string, string[]> = {
+  brickell: [
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp",
+    "https://frasermiami.s3.amazonaws.com/baccarat/exterior-hummingbird-sunrise.webp",
+    "https://frasermiami.s3.amazonaws.com/baccarat/tower-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/baccarat/brickell-panorama.webp",
+  ],
+  "miami-beach": [
+    "https://frasermiami.s3.amazonaws.com/perigon/pool2.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/hero-beach-view.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/pool-sunrise.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/hero.webp",
+  ],
+  "south-of-fifth": [
+    "https://frasermiami.s3.amazonaws.com/baccarat/lobby-front-desk.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/lobby.webp",
+  ],
+  "bal-harbour": [
+    "https://frasermiami.s3.amazonaws.com/rivage/hummingbird.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/hero.webp",
+  ],
+  surfside: [
+    "https://frasermiami.s3.amazonaws.com/surf-house/surf-house-miami-beach-10.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-house/hero.webp",
+  ],
+  "sunny-isles-beach": [
+    "https://frasermiami.s3.amazonaws.com/bentley/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/stregis-sib/hero.webp",
+  ],
+  "coconut-grove": [
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/hero-aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/hero.webp",
+  ],
+  "downtown-miami": [
+    "https://frasermiami.s3.amazonaws.com/waldorf/waldorf-astoria-hero-twilight.webp",
+    "https://frasermiami.s3.amazonaws.com/astonmartin/hero.webp",
+  ],
+  edgewater: [
+    "https://frasermiami.s3.amazonaws.com/villamiami/hero-villa.webp",
+    "https://frasermiami.s3.amazonaws.com/ariareserve/aria-reserve-exterior-day.webp",
+  ],
+  "fisher-island": [
+    "https://frasermiami.s3.amazonaws.com/sixfisher/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/pool.webp",
+  ],
+  "key-biscayne": [
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/01-Mansions-on-Fisher-Island-Featured.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/hero.webp",
+  ],
+};
+
+function getLuxuryFallbackImage(neighborhood?: string, seed: number = 0): string {
+  const slug = (neighborhood || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  const pool = LUXURY_FALLBACKS[slug] || LUXURY_FALLBACKS["miami-beach"];
+  return pool[Math.abs(seed) % pool.length];
+}
+
+function getImageUrl(path: string | null | undefined, neighborhood?: string, seed: number = 0): string {
+  if (!path || path.includes("api.cotality.com")) return getLuxuryFallbackImage(neighborhood, seed);
   if (path.startsWith("http://") || path.startsWith("https://")) {
     return path;
   }
@@ -142,12 +198,12 @@ function highlightMatch(text: string, query: string) {
 function searchProjects(projects: MapProject[], query: string) {
   const trimmed = query.trim().toLowerCase();
   if (!trimmed) return [];
-  
+
   const results = projects.map((p) => {
     const name = (p.name || "").toLowerCase();
     const neighborhood = (p.neighborhood || "").toLowerCase();
     let score = 0;
-    
+
     if (name === trimmed) score = 100;
     else if (name.startsWith(trimmed)) score = 90;
     else {
@@ -157,14 +213,14 @@ function searchProjects(projects: MapProject[], query: string) {
         score = isWordStart ? 80 : 70;
       }
     }
-    
+
     if (neighborhood.includes(trimmed)) {
       score = Math.max(score, 40);
     }
-    
+
     return { project: p, score };
   });
-  
+
   return results
     .filter((r) => r.score > 0)
     .sort((a, b) => b.score - a.score || a.project.name.localeCompare(b.project.name))
@@ -194,7 +250,11 @@ type MapExplorePageProps = {
 export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePageProps) {
   const router = useRouter();
   const { openInquiry } = useInquiry();
-  const allProjects = projectsRaw as MapProject[];
+  const [allProjects, setAllProjects] = useState<MapProject[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [idxError, setIdxError] = useState<string | null>(null);
+
+  const isDataLoading = isLoading || (allProjects.length === 0 && !idxError);
 
   // States
   const [selected, setSelected] = useState<MapProject | null>(null);
@@ -206,6 +266,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
   const [searchHoverIndex, setSearchHoverIndex] = useState<number>(0);
   const [mobileSearchOpen, setMobileSearchOpen] = useState<boolean>(false);
   const [mapBounds, setMapBounds] = useState<mapboxgl.LngLatBounds | null>(null);
+  const [mapReady, setMapReady] = useState<boolean>(false);
 
   // Dropdown States
   const [stageDropdownOpen, setStageDropdownOpen] = useState<boolean>(false);
@@ -218,6 +279,33 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
   // Matcher wizard modal states
   const [isMatcherOpen, setIsMatcherOpen] = useState<boolean>(false);
   const [matcherPrefs, setMatcherPrefs] = useState<MatcherPrefs | null>(null);
+
+  useEffect(() => {
+    let isSubscribed = true;
+    setIsLoading(true);
+    const controller = new AbortController();
+    fetch("/api/idx/properties?fresh=true", { cache: "no-store", signal: controller.signal })
+      .then(async (response) => {
+        const body = await response.json();
+        if (!response.ok) throw new Error(body.error || "Could not load live IDX listings.");
+        if (isSubscribed) {
+          console.log(`🌐 [Explore Map] Loaded ${body.projects?.length} listings. Data source: ${body.source || "live_api"}`);
+          setAllProjects(Array.isArray(body.projects) ? body.projects : []);
+          setIsLoading(false);
+        }
+      })
+      .catch((error: unknown) => {
+        if (!isSubscribed) return;
+        if ((error as { name?: string }).name !== "AbortError") {
+          setIdxError(error instanceof Error ? error.message : "Could not load live IDX listings.");
+        }
+        setIsLoading(false);
+      });
+    return () => {
+      isSubscribed = false;
+      controller.abort();
+    };
+  }, []);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -347,40 +435,81 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
 
     map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "bottom-right");
 
-    // Initial markers creation
+    const handleMoveEnd = () => {
+      setMapBounds(map.getBounds());
+    };
+
+    map.on("moveend", handleMoveEnd);
+
+    map.on("load", () => {
+      setMapReady(true);
+      setMapBounds(map.getBounds());
+    });
+
+    const readyTimer = setTimeout(() => {
+      setMapReady(true);
+      map.resize();
+      setMapBounds(map.getBounds());
+    }, 200);
+
+    return () => {
+      clearTimeout(readyTimer);
+      map.remove();
+      mapRef.current = null;
+      markersRef.current = {};
+      setMapReady(false);
+    };
+  }, []);
+
+  // Synchronize and render map markers whenever allProjects or mapReady updates
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady || allProjects.length === 0) return;
+
+    // Clean up previous markers if any
+    Object.values(markersRef.current).forEach((marker) => marker.remove());
+    markersRef.current = {};
+
     allProjects.forEach((proj) => {
       if (typeof proj.lat !== "number" || typeof proj.lng !== "number") return;
+      if (isNaN(proj.lat) || isNaN(proj.lng)) return;
+
       const m = getStageConfig(proj);
 
       const markerEl = document.createElement("div");
-      markerEl.style.width = "16px";
-      markerEl.style.height = "16px";
+      markerEl.className = "custom-map-marker";
+      markerEl.style.width = "18px";
+      markerEl.style.height = "18px";
       markerEl.style.cursor = "pointer";
+      markerEl.style.display = "flex";
+      markerEl.style.alignItems = "center";
+      markerEl.style.justifyContent = "center";
       markerEl.innerHTML = `
         <div class="map-marker" style="
-          width: 16px; height: 16px; border-radius: 50%;
-          background: ${m.dot}; border: 2.5px solid ${m.border};
-          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+          width: 14px; height: 14px; border-radius: 50%;
+          background: ${m.dot}; border: 2px solid ${m.border};
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
           cursor: pointer; transition: transform 0.2s;
         "></div>
       `;
 
+      const priceText = proj.priceFrom || (proj.minPrice ? `$${proj.minPrice.toLocaleString()}` : "");
       const tooltipContent = `
         <div style="
           font-family: 'DM Sans', sans-serif;
-          font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+          font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
           color: ${theme.ink}; padding: 6px 12px;
-          background: rgba(250, 250, 248, 0.97);
+          background: rgba(250, 250, 248, 0.98);
           border: 1px solid ${theme.dune};
-          box-shadow: 0 4px 16px rgba(28, 31, 38, 0.14);
-          white-space: nowrap; border-radius: 0;
-          font-weight: 400;
+          box-shadow: 0 4px 16px rgba(28, 31, 38, 0.16);
+          white-space: nowrap; border-radius: 2px;
+          font-weight: 500;
         ">
-          <span style="color: ${m.dot}; margin-right: 6px;">●</span>${proj.name}
+          <span style="color: ${m.dot}; margin-right: 6px;">●</span><strong>${proj.name}</strong>${priceText ? ` · <span style="color: #b89354;">${priceText}</span>` : ""}
         </div>
       `;
 
-      const popup = new mapboxgl.Popup({ offset: 12, closeButton: false })
+      const popup = new mapboxgl.Popup({ offset: 14, closeButton: false })
         .setHTML(tooltipContent);
 
       const marker = new mapboxgl.Marker({ element: markerEl })
@@ -406,24 +535,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
     });
 
     setMapBounds(map.getBounds());
-
-    const handleMoveEnd = () => {
-      setMapBounds(map.getBounds());
-    };
-
-    map.on("moveend", handleMoveEnd);
-
-    // Initial resize trigger to draw properly
-    setTimeout(() => {
-      map.resize();
-    }, 150);
-
-    return () => {
-      map.remove();
-      mapRef.current = null;
-      markersRef.current = {};
-    };
-  }, []);
+  }, [allProjects, mapReady]);
 
   // Update bounds on view mode toggles
   useEffect(() => {
@@ -472,30 +584,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
         }
       }
     });
-  }, [selected]);
-
-  // Handle stage and matcher filter changes and hide/show markers
-  useEffect(() => {
-    const matchedIds = new Set(matchedProjectsList.map((p) => p.id));
-    allProjects.forEach((proj) => {
-      const marker = markersRef.current[proj.id];
-      if (!marker) return;
-
-      const passesStage = stageFilter === "all" || proj.stage === stageFilter;
-      const passesMatcher = !matcherPrefs || matchedIds.has(proj.id);
-
-      const el = marker.getElement();
-      if (el) {
-        if (passesStage && passesMatcher) {
-          el.style.opacity = "1";
-          el.style.pointerEvents = "auto";
-        } else {
-          el.style.opacity = "0.15";
-          el.style.pointerEvents = "none";
-        }
-      }
-    });
-  }, [stageFilter, matchedProjectsList, matcherPrefs]);
+  }, [selected, allProjects]);
 
   // Click outside listener for search and dropdowns
   useEffect(() => {
@@ -554,10 +643,21 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
     return mapBounds.contains([proj.lng, proj.lat]);
   };
 
+  const normalizedSearch = searchQuery.trim().toLowerCase();
+
+  // Every control begins with the same matcher + text-search result set.
+  const searchFilteredProjects = useMemo(() => {
+    if (!normalizedSearch) return matchedProjectsList;
+    return matchedProjectsList.filter((project) =>
+      project.name.toLowerCase().includes(normalizedSearch) ||
+      project.neighborhood.toLowerCase().includes(normalizedSearch)
+    );
+  }, [matchedProjectsList, normalizedSearch]);
+
   // Filtered List
   const stageFilteredProjects = useMemo(() => {
-    return matchedProjectsList.filter((p) => stageFilter === "all" || p.stage === stageFilter);
-  }, [matchedProjectsList, stageFilter]);
+    return searchFilteredProjects.filter((p) => stageFilter === "all" || p.stage === stageFilter);
+  }, [searchFilteredProjects, stageFilter]);
 
   const boundsFilteredProjects = useMemo(() => {
     if (viewMode !== "map" || !mapBounds) return stageFilteredProjects;
@@ -569,70 +669,76 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
     const list = [...boundsFilteredProjects];
 
     if (sortBy === "featured") {
-      if (matcherPrefs) {
-        list.sort((a, b) => {
-          const scoreA = (a as any).score ?? 0;
-          const scoreB = (b as any).score ?? 0;
-          if (scoreB !== scoreA) return scoreB - scoreA;
-          return (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0);
-        });
-      }
+      list.sort((a, b) => {
+        const scoreA = (a as any).score ?? 0;
+        const scoreB = (b as any).score ?? 0;
+        if (scoreB !== scoreA) return scoreB - scoreA;
+        if (a.isFeatured !== b.isFeatured) return a.isFeatured ? -1 : 1;
+        return (a.minPrice ?? Infinity) - (b.minPrice ?? Infinity);
+      });
     } else if (sortBy === "price_low") {
-      list.sort((a, b) => {
-        const valA = parsePrice(a.priceFrom) ?? Infinity;
-        const valB = parsePrice(b.priceFrom) ?? Infinity;
-        return valA - valB;
-      });
+      list.sort((a, b) => (a.minPrice ?? parsePrice(a.priceFrom) ?? Infinity) - (b.minPrice ?? parsePrice(b.priceFrom) ?? Infinity));
     } else if (sortBy === "price_high") {
-      list.sort((a, b) => {
-        const valA = parsePrice(a.priceFrom) ?? -Infinity;
-        const valB = parsePrice(b.priceFrom) ?? -Infinity;
-        return valB - valA;
-      });
+      list.sort((a, b) => (b.maxPrice ?? parsePrice(b.priceFrom) ?? -Infinity) - (a.maxPrice ?? parsePrice(a.priceFrom) ?? -Infinity));
     } else if (sortBy === "stage") {
       const order = ["move_in_ready", "topped_off", "under_construction", "preconstruction"];
       list.sort((a, b) => order.indexOf(a.stage) - order.indexOf(b.stage));
     }
 
     return list;
-  }, [boundsFilteredProjects, sortBy, matcherPrefs]);
+  }, [boundsFilteredProjects, sortBy]);
 
   // Final List rendering order: if a project is selected, pin it to the top of the sidebar list
   const finalSidebarProjects = useMemo(() => {
     if (!selected) return processedProjects;
     const exists = processedProjects.some((p) => p.id === selected.id);
     if (!exists) return [selected, ...processedProjects];
-    
+
     const remaining = processedProjects.filter((p) => p.id !== selected.id);
     return [selected, ...remaining];
   }, [processedProjects, selected]);
 
   // Auto-complete Search Results
   const searchResults = useMemo(() => {
-    return searchQuery ? searchProjects(allProjects, searchQuery) : [];
-  }, [allProjects, searchQuery]);
+    return searchQuery ? searchProjects(matchedProjectsList, searchQuery) : [];
+  }, [matchedProjectsList, searchQuery]);
 
   // Stage Count helper
   const stageCounts = useMemo(() => {
-    const counts: Record<string, number> = { all: matchedProjectsList.length };
+    const counts: Record<string, number> = { all: searchFilteredProjects.length };
     Object.keys(STAGES).forEach((key) => {
-      counts[key] = matchedProjectsList.filter((p) => p.stage === key).length;
+      counts[key] = searchFilteredProjects.filter((p) => p.stage === key).length;
     });
     return counts;
-  }, [matchedProjectsList]);
+  }, [searchFilteredProjects]);
+
+  // Keep the map markers in sync with the visible search, matcher and stage filters.
+  useEffect(() => {
+    const visibleIds = new Set(stageFilteredProjects.map((project) => project.id));
+    allProjects.forEach((project) => {
+      const marker = markersRef.current[project.id];
+      const element = marker?.getElement();
+      if (!element) return;
+      const isVisible = visibleIds.has(project.id);
+      element.style.opacity = isVisible ? "1" : "0.15";
+      element.style.pointerEvents = isVisible ? "auto" : "none";
+    });
+    if (selected && !visibleIds.has(selected.id)) setSelected(null);
+  }, [allProjects, selected, stageFilteredProjects]);
 
   // Actions
   const handleSelectSearchResult = (proj: MapProject) => {
+    if (stageFilter !== "all" && proj.stage !== stageFilter) setStageFilter("all");
     setSearchQuery("");
     setSearchFocused(false);
     setSelected(proj);
     setMobileSearchOpen(false);
-    
+
     // Switch to map mode automatically on mobile
     if (viewMode !== "map" && window.innerWidth <= 1100) {
       setViewMode("map");
     }
-    
+
     // Pan to marker
     setTimeout(() => {
       flyToProject(proj);
@@ -675,13 +781,13 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
     if (!selected) return [];
     const rawImgs = selected.imgs && selected.imgs.length > 0 ? selected.imgs : [selected.img];
     // Filter out video files
-    return rawImgs.map(getImageUrl).filter((url) => !url.toLowerCase().endsWith(".mp4"));
+    return rawImgs.map((img) => getImageUrl(img, selected?.neighborhood, selected?.id)).filter((url) => !url.toLowerCase().endsWith(".mp4"));
   }, [selected]);
 
   return (
-    <div 
-      className={`nav-bar-offset map-view-page ${viewMode === "list" ? "map-view-page--list" : ""}`} 
-      style={{ display: "flex", flexDirection: "column", height: "100vh" }}
+    <div
+      className={`nav-bar-offset map-view-page ${viewMode === "list" ? "map-view-page--list" : ""}`}
+      style={{ display: "flex", flexDirection: "column", height: "100dvh", minHeight: 0, overflow: "hidden" }}
     >
       {/* Site Header Navbar */}
       <header className="site-header site-header-scrolled map-site-header">
@@ -748,8 +854,14 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
         </nav>
       </header>
 
+      {idxError && (
+        <div role="alert" style={{ position: "relative", zIndex: 1200, padding: "10px 18px", background: "#fff4e5", borderBottom: "1px solid #e6c994", color: theme.ink, fontSize: 12 }}>
+          Live IDX listings are unavailable: {idxError}
+        </div>
+      )}
+
       {/* Search Header and Bar */}
-      <div 
+      <div
         className={`map-controls-bar ${viewMode === "map" ? "map-controls-bar--map-active" : "map-controls-bar--list-active"}`}
         style={{
           position: "relative",
@@ -761,14 +873,14 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
         }}
       >
         <div style={{ padding: "0 16px", boxSizing: "border-box" }}>
-          <div 
-            className="map-controls-bar-inner" 
+          <div
+            className="map-controls-bar-inner"
             style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: 50, gap: 12 }}
           >
             {/* View Mode Toggle & Filters */}
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
               {/* Map/List Switch */}
-              <div 
+              <div
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
@@ -904,7 +1016,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     whiteSpace: "nowrap"
                   }}
                 >
-                  All <span style={{ fontSize: 8.5, color: stageFilter === "all" ? theme.bronze : theme.fog }}>{stageCounts.all}</span>
+                  All <span style={{ fontSize: 8.5, color: stageFilter === "all" ? theme.bronze : theme.fog }}>{isDataLoading ? "···" : stageCounts.all}</span>
                 </button>
                 {Object.entries(STAGES).map(([key, config]) => (
                   <button
@@ -930,7 +1042,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   >
                     <span style={{ display: "inline-block", width: 6, height: 6, borderRadius: "50%", background: config.dot }} />
                     {config.label}
-                    <span style={{ fontSize: 8.5, color: stageFilter === key ? theme.bronze : theme.fog }}>{stageCounts[key]}</span>
+                    <span style={{ fontSize: 8.5, color: stageFilter === key ? theme.bronze : theme.fog }}>{isDataLoading ? "···" : stageCounts[key]}</span>
                   </button>
                 ))}
               </div>
@@ -969,7 +1081,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                 </button>
 
                 {stageDropdownOpen && (
-                  <div 
+                  <div
                     style={{
                       position: "absolute",
                       top: 30,
@@ -992,7 +1104,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                         color: stageFilter === "all" ? theme.ink : theme.mist, fontWeight: stageFilter === "all" ? 500 : 300
                       }}
                     >
-                      All Stages ({stageCounts.all})
+                      All Stages ({isDataLoading ? "···" : stageCounts.all})
                     </button>
                     {Object.entries(STAGES).map(([key, config]) => (
                       <button
@@ -1006,7 +1118,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                         }}
                       >
                         <span style={{ width: 6, height: 6, borderRadius: "50%", background: config.dot }} />
-                        {config.label} ({stageCounts[key]})
+                        {config.label} ({isDataLoading ? "···" : stageCounts[key]})
                       </button>
                     ))}
                   </div>
@@ -1054,7 +1166,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                 </button>
 
                 {sortDropdownOpen && (
-                  <div 
+                  <div
                     style={{
                       position: "absolute",
                       top: 30,
@@ -1092,12 +1204,12 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               </div>
 
               {/* Inline Search Bar (Desktop) */}
-              <div 
+              <div
                 ref={searchContainerRef}
-                className="map-controls-search-inline" 
+                className="map-controls-search-inline"
                 style={{ position: "relative", flex: "0 1 240px", minWidth: 160, maxWidth: 320 }}
               >
-                <div 
+                <div
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -1140,7 +1252,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
 
                 {/* Desktop Search Results Dropdown */}
                 {searchFocused && searchQuery.trim().length > 0 && (
-                  <div 
+                  <div
                     ref={searchResultsRef}
                     style={{
                       position: "absolute",
@@ -1168,7 +1280,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                             background: idx === searchHoverIndex ? theme.bronzA(0.2) : "transparent"
                           }}
                         >
-                          <div 
+                          <div
                             style={{ fontFamily: "'Playfair Display', serif", fontSize: 13, color: theme.ink, marginBottom: 2 }}
                             dangerouslySetInnerHTML={{ __html: highlightMatch(proj.name, searchQuery) }}
                           />
@@ -1208,7 +1320,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                 </button>
               </div>
 
-              {/* speak with Brett Action */}
+              {/* speak with Zachary Action */}
               <div className="map-bar-cta" style={{ display: "flex", alignItems: "center" }}>
                 <div style={{ width: 1, height: 14, background: theme.dune, margin: "0 8px 0 2px" }} />
                 <button
@@ -1229,7 +1341,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     whiteSpace: "nowrap"
                   }}
                 >
-                  Speak with Brett
+                  Speak with Zachary
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                     <line x1="4" y1="12" x2="20" y2="12" />
                     <polyline points="13 5 20 12 13 19" />
@@ -1243,7 +1355,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
 
       {/* Mobile Search Overlay Full Screen Takeover */}
       {mobileSearchOpen && (
-        <div 
+        <div
           ref={mobileSearchContainerRef}
           style={{
             position: "fixed",
@@ -1269,14 +1381,14 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               style={{ flex: 1, border: "none", outline: "none", fontSize: 14, color: theme.ink }}
             />
             {searchQuery && (
-              <button 
+              <button
                 onClick={() => setSearchQuery("")}
                 style={{ border: "none", background: "transparent", fontSize: 18, color: theme.mist, padding: 4 }}
               >
                 ×
               </button>
             )}
-            <button 
+            <button
               onClick={() => { setMobileSearchOpen(false); setSearchQuery(""); }}
               style={{
                 border: "none", background: "transparent", cursor: "pointer",
@@ -1297,7 +1409,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     onClick={() => handleSelectSearchResult(proj)}
                     style={{ padding: "14px 20px", borderBottom: `1px solid ${theme.dune}` }}
                   >
-                    <div 
+                    <div
                       style={{ fontFamily: "'Playfair Display', serif", fontSize: 15, color: theme.ink, marginBottom: 4 }}
                       dangerouslySetInnerHTML={{ __html: highlightMatch(proj.name, searchQuery) }}
                     />
@@ -1320,20 +1432,45 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
       {/* Main View Area */}
 
       {/* List Mode View */}
-      <div 
-        className="map-page-list-view" 
+      <div
+        className="map-page-list-view"
         style={{
           flex: 1,
           display: viewMode === "list" ? "flex" : "none",
           flexDirection: "column",
+          minHeight: 0,
           overflow: "hidden",
           background: theme.cream
         }}
       >
-        <div style={{ flex: 1, overflowY: "auto", width: "100%", padding: "24px 0" }}>
+        <div data-lenis-prevent style={{ flex: 1, minHeight: 0, overflowY: "auto", overscrollBehavior: "contain", width: "100%", padding: "24px 0" }}>
           <div className="map-list-grid-shell" style={{ maxWidth: 1400, margin: "0 auto", padding: "0 24px" }}>
             {/* Recommendations Header if any matches logic */}
-            {processedProjects.length === 0 ? (
+            {isDataLoading ? (
+              <div className="map-list-card-grid">
+                {Array.from({ length: 6 }).map((_, idx) => (
+                  <div
+                    key={`grid-skel-${idx}`}
+                    style={{
+                      background: theme.white,
+                      border: `1px solid ${theme.dune}`,
+                      borderRadius: 4,
+                      overflow: "hidden"
+                    }}
+                  >
+                    <div className="luxury-shimmer" style={{ width: "100%", aspectRatio: "3/2" }} />
+                    <div style={{ padding: "16px 18px", display: "flex", flexDirection: "column", gap: 10 }}>
+                      <div className="luxury-shimmer" style={{ width: "35%", height: 10, borderRadius: 2 }} />
+                      <div className="luxury-shimmer" style={{ width: "85%", height: 18, borderRadius: 2 }} />
+                      <div style={{ display: "flex", justifyContent: "space-between", marginTop: 4 }}>
+                        <div className="luxury-shimmer" style={{ width: "35%", height: 14, borderRadius: 2 }} />
+                        <div className="luxury-shimmer" style={{ width: "40%", height: 12, borderRadius: 2 }} />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : processedProjects.length === 0 ? (
               <div style={{ padding: "64px 24px", textAlign: "center" }}>
                 <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 300, color: theme.ink, margin: "0 0 8px" }}>
                   No projects match this filter
@@ -1349,31 +1486,35 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     textTransform: "uppercase", cursor: "pointer"
                   }}
                 >
-                  Speak with Brett
+                  Speak with Zachary
                 </button>
               </div>
             ) : (
               <div className="map-list-card-grid">
                 {processedProjects.map((proj) => {
                   const m = getStageConfig(proj);
-                  const bedsStr = formatBeds(proj.minPrice, proj.maxPrice); // Wait, beds fields minBed/maxBed
-                  // Let's resolve the beds range if any, or default to stats bed
-                  // In our database we have minPrice, maxPrice, but let's check beds info. 
-                  // If it has bed fields, format them
-                  const bedsLabel = proj.wellnessScore ? `${proj.wellnessScore} / 100` : ""; // We can display wellness or beds
-                  
+
                   return (
-                    <div 
+                    <div
                       key={proj.id}
                       data-list-project-id={proj.id}
                       className={`map-list-card ${selected?.id === proj.id ? "map-list-card--selected" : ""}`}
-                      onClick={() => handleSelectProject(proj)}
+                      role="link"
+                      tabIndex={0}
+                      aria-label={`View details for ${proj.name}`}
+                      onClick={() => router.push(`/property/${proj.slug}`)}
+                      onKeyDown={(event) => {
+                        if (event.key === "Enter" || event.key === " ") {
+                          event.preventDefault();
+                          router.push(`/property/${proj.slug}`);
+                        }
+                      }}
                       style={{
                         background: theme.white,
                         cursor: "pointer",
                         transition: "transform 0.2s ease, box-shadow 0.2s ease",
-                        boxShadow: selected?.id === proj.id 
-                          ? `0 0 0 1px ${theme.bronze}, 0 6px 16px rgba(184,147,84,0.2)` 
+                        boxShadow: selected?.id === proj.id
+                          ? `0 0 0 1px ${theme.bronze}, 0 6px 16px rgba(184,147,84,0.2)`
                           : "0 1px 2px rgba(28,31,38,0.04)",
                         border: selected?.id === proj.id ? `1px solid ${theme.bronze}` : "1px solid transparent",
                         borderRadius: 4,
@@ -1382,33 +1523,40 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     >
                       {/* Image Hero */}
                       <div className="map-list-card-hero" style={{ overflow: "hidden", position: "relative", aspectRatio: "3/2", background: theme.ink }}>
-                        <img 
-                          src={getImageUrl(proj.img)} 
-                          alt={proj.name} 
-                          loading="lazy" 
-                          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} 
+                        <img
+                          src={getImageUrl(proj.img, proj.neighborhood, proj.id)}
+                          alt={proj.name}
+                          loading="lazy"
+                          referrerPolicy="no-referrer"
+                          onError={(e) => {
+                            const fallback = getLuxuryFallbackImage(proj.neighborhood, proj.id);
+                            if (e.currentTarget.src !== fallback) {
+                              e.currentTarget.src = fallback;
+                            }
+                          }}
+                          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                         />
                         <div className="map-list-image-gradient" />
-                        <div 
-                          style={{ 
-                            position: "absolute", top: 12, left: 12, width: 10, height: 10, 
-                            borderRadius: "50%", background: m.dot, boxShadow: "0 0 0 1px rgba(255,255,255,0.6)", zIndex: 4 
-                          }} 
+                        <div
+                          style={{
+                            position: "absolute", top: 12, left: 12, width: 10, height: 10,
+                            borderRadius: "50%", background: m.dot, boxShadow: "0 0 0 1px rgba(255,255,255,0.6)", zIndex: 4
+                          }}
                         />
-                        <div 
-                          className="map-list-stage-label" 
-                          style={{ 
-                            position: "absolute", top: 28, left: 12, color: theme.white, fontWeight: 500, 
-                            letterSpacing: "0.14em", fontFamily: "'DM Sans', sans-serif", textTransform: "uppercase", zIndex: 4 
+                        <div
+                          className="map-list-stage-label"
+                          style={{
+                            position: "absolute", top: 28, left: 12, color: theme.white, fontWeight: 500,
+                            letterSpacing: "0.14em", fontFamily: "'DM Sans', sans-serif", textTransform: "uppercase", zIndex: 4
                           }}
                         >
                           {m.label}
                         </div>
                         {proj.logo && (
-                          <img 
+                          <img
                             className="map-list-card-logo"
-                            src={getImageUrl(proj.logo)} 
-                            alt="" 
+                            src={getImageUrl(proj.logo)}
+                            alt=""
                             style={{
                               position: "absolute", left: "50%", top: "50%", transform: "translate(-50%, -50%)", zIndex: 4,
                               maxHeight: 48, maxWidth: "60%", objectFit: "contain", filter: "brightness(0) invert(1)", opacity: 0.95
@@ -1419,8 +1567,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
 
                       {/* Card Body */}
                       <div className="map-list-card-body" style={{ padding: "12px 14px 14px", background: theme.white }}>
-                        <div 
-                          className="map-list-card-title" 
+                        <div
+                          className="map-list-card-title"
                           style={{ fontFamily: "'Playfair Display', serif", fontSize: 15, color: theme.ink, lineHeight: 1.25, marginBottom: 4 }}
                         >
                           {proj.name}
@@ -1442,8 +1590,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
       </div>
 
       {/* Map Mode View */}
-      <div 
-        className="map-view-container" 
+      <div
+        className="map-view-container"
         style={{
           flex: 1,
           display: viewMode === "map" ? "flex" : "none",
@@ -1454,8 +1602,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
         }}
       >
         {/* Left Sidebar */}
-        <div 
-          className="map-sidebar" 
+        <div
+          className="map-sidebar"
           style={{
             width: 380,
             minWidth: 380,
@@ -1468,19 +1616,60 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
           }}
         >
           {/* Properties Count */}
-          <div style={{ padding: "10px 18px 4px", borderBottom: `1px solid ${theme.dune}`, flexShrink: 0 }}>
-            <span style={{ fontSize: 9, letterSpacing: "0.22em", color: theme.fog, textTransform: "uppercase" }}>
-              {processedProjects.length} Properties in View
-            </span>
+          <div style={{ padding: "10px 18px 6px", borderBottom: `1px solid ${theme.dune}`, flexShrink: 0 }}>
+            {isDataLoading ? (
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <span style={{ fontSize: 9, letterSpacing: "0.2em", color: theme.bronze, textTransform: "uppercase", display: "flex", alignItems: "center", gap: 6 }}>
+                  <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#10b981", display: "inline-block" }} className="luxury-pulse-badge" />
+                  Connecting to Live MLS Feed...
+                </span>
+                <span style={{ fontSize: 8.5, letterSpacing: "0.14em", color: theme.fog, textTransform: "uppercase" }}>
+                  Real MLS Data
+                </span>
+              </div>
+            ) : (
+              <span style={{ fontSize: 9, letterSpacing: "0.22em", color: theme.fog, textTransform: "uppercase" }}>
+                {processedProjects.length} Properties in View
+              </span>
+            )}
           </div>
 
           {/* Sidebar List Scroll */}
-          <div 
+          <div
             ref={sidebarListRef}
-            className="map-sidebar-scroll" 
-            style={{ flex: 1, overflowY: "auto", overflowX: "hidden", minHeight: 0 }}
+            className="map-sidebar-scroll"
+            data-lenis-prevent
+            style={{ flex: 1, overflowY: "auto", overflowX: "hidden", overscrollBehavior: "contain", minHeight: 0 }}
           >
-            {finalSidebarProjects.length === 0 ? (
+            {isDataLoading ? (
+              <div style={{ padding: "4px 0" }}>
+                {Array.from({ length: 7 }).map((_, idx) => (
+                  <div
+                    key={`sidebar-skel-${idx}`}
+                    style={{
+                      padding: "12px 18px",
+                      borderBottom: `1px solid ${theme.dune}`,
+                      display: "flex",
+                      gap: 12,
+                      alignItems: "center"
+                    }}
+                  >
+                    <div
+                      className="luxury-shimmer"
+                      style={{ width: 72, height: 72, flexShrink: 0, borderRadius: 2 }}
+                    />
+                    <div style={{ flex: 1, minWidth: 0, display: "flex", flexDirection: "column", gap: 8 }}>
+                      <div className="luxury-shimmer" style={{ width: "85%", height: 13, borderRadius: 2 }} />
+                      <div style={{ display: "flex", justifyContent: "space-between", gap: 8 }}>
+                        <div className="luxury-shimmer" style={{ width: "45%", height: 11, borderRadius: 2 }} />
+                        <div className="luxury-shimmer" style={{ width: "35%", height: 11, borderRadius: 2 }} />
+                      </div>
+                      <div className="luxury-shimmer" style={{ width: "65%", height: 9, borderRadius: 2 }} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : finalSidebarProjects.length === 0 ? (
               <div style={{ padding: "24px 18px", fontSize: 12, lineHeight: 1.55, color: theme.mist, fontWeight: 300 }}>
                 No properties in this map area. Pan or zoom the map to explore Miami.
                 <button
@@ -1519,27 +1708,35 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     <div style={{ display: "flex", gap: 12 }}>
                       {/* Thumbnail */}
                       <div className="map-proj-row-thumb" style={{ position: "relative", width: 72, height: 72, flexShrink: 0, background: theme.ink }}>
-                        <img 
-                          src={getImageUrl(proj.img)} 
-                          alt="" 
-                          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} 
+                        <img
+                          src={getImageUrl(proj.img, proj.neighborhood, proj.id)}
+                          alt=""
+                          loading="lazy"
+                          referrerPolicy="no-referrer"
+                          onError={(e) => {
+                            const fallback = getLuxuryFallbackImage(proj.neighborhood, proj.id);
+                            if (e.currentTarget.src !== fallback) {
+                              e.currentTarget.src = fallback;
+                            }
+                          }}
+                          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                         />
-                        <span 
-                          className="map-proj-row-thumb-dot" 
-                          style={{ 
-                            position: "absolute", bottom: -2, right: -2, width: 10, height: 10, 
-                            borderRadius: "50%", background: m.dot, border: "1.5px solid #fff" 
-                          }} 
+                        <span
+                          className="map-proj-row-thumb-dot"
+                          style={{
+                            position: "absolute", bottom: -2, right: -2, width: 10, height: 10,
+                            borderRadius: "50%", background: m.dot, border: "1.5px solid #fff"
+                          }}
                         />
                       </div>
 
                       {/* Content */}
                       <div style={{ flex: 1, minWidth: 0, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                         <div>
-                          <div 
-                            style={{ 
-                              fontFamily: "'Playfair Display', serif", fontSize: 13.5, fontWeight: 400, 
-                              color: theme.ink, lineHeight: 1.25, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" 
+                          <div
+                            style={{
+                              fontFamily: "'Playfair Display', serif", fontSize: 13.5, fontWeight: 400,
+                              color: theme.ink, lineHeight: 1.25, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap"
                             }}
                           >
                             {proj.name}
@@ -1554,10 +1751,10 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                           </div>
                         </div>
                         {showBadge && (
-                          <div 
-                            className="status-badge-text" 
+                          <div
+                            className="status-badge-text"
                             style={{
-                              fontSize: 8.5, letterSpacing: "0.08em", color: m.dot, textTransform: "uppercase", 
+                              fontSize: 8.5, letterSpacing: "0.08em", color: m.dot, textTransform: "uppercase",
                               overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", marginTop: 4
                             }}
                           >
@@ -1592,7 +1789,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               flexShrink: 0
             }}
           >
-            ✦ Connect with Brett →
+            ✦ Connect with Zachary Akers →
           </button>
         </div>
 
@@ -1600,9 +1797,68 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
         <div style={{ flex: 1, position: "relative", height: "100%", minWidth: 0, minHeight: 0 }}>
           <div ref={mapContainerRef} style={{ width: "100%", height: "100%", zIndex: 1 }} />
 
+          {/* Live MLS Feed Loading Indicator */}
+          {isDataLoading && (
+            <div
+              style={{
+                position: "absolute",
+                top: 24,
+                left: "50%",
+                transform: "translateX(-50%)",
+                zIndex: 1001,
+                background: "rgba(250, 248, 243, 0.96)",
+                backdropFilter: "blur(20px)",
+                WebkitBackdropFilter: "blur(20px)",
+                border: "1px solid rgba(184, 147, 84, 0.45)",
+                boxShadow: "0 14px 38px rgba(28, 31, 38, 0.18)",
+                padding: "10px 22px",
+                borderRadius: 40,
+                display: "flex",
+                alignItems: "center",
+                gap: 12,
+                pointerEvents: "none",
+                transition: "all 0.3s ease"
+              }}
+            >
+              <div style={{ position: "relative", width: 12, height: 12, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <span
+                  style={{
+                    position: "absolute",
+                    width: 12,
+                    height: 12,
+                    borderRadius: "50%",
+                    background: "rgba(184, 147, 84, 0.45)",
+                    animation: "ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite"
+                  }}
+                />
+                <span
+                  style={{
+                    width: 7,
+                    height: 7,
+                    borderRadius: "50%",
+                    background: "#b89354"
+                  }}
+                />
+              </div>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9.5, letterSpacing: "0.22em", color: "#1c1f26", fontWeight: 600, textTransform: "uppercase" }}>
+                    Connecting to Live MLS Feed
+                  </span>
+                  <span style={{ fontSize: 8.5, letterSpacing: "0.1em", color: "#b89354", background: "rgba(184, 147, 84, 0.12)", padding: "1px 6px", borderRadius: 10, textTransform: "uppercase", fontWeight: 600 }}>
+                    Live
+                  </span>
+                </div>
+                <span style={{ fontSize: 9, letterSpacing: "0.06em", color: "#737887", marginTop: 1 }}>
+                  Streaming active Miami developments &amp; GPS coordinates...
+                </span>
+              </div>
+            </div>
+          )}
+
           {/* Construction Stage Legend Overlay */}
-          <div 
-            className="map-legend" 
+          <div
+            className="map-legend"
             style={{
               position: "absolute",
               bottom: 28,
@@ -1620,8 +1876,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
               {Object.entries(STAGES).map(([key, config]) => (
-                <div 
-                  key={key} 
+                <div
+                  key={key}
                   onClick={() => setStageFilter(stageFilter === key ? "all" : key)}
                   style={{
                     display: "flex", alignItems: "center", gap: 8, cursor: "pointer",
@@ -1645,7 +1901,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               <div className="map-popup-sheet-handle" />
 
               {/* Close Button */}
-              <button 
+              <button
                 onClick={() => setSelected(null)}
                 style={{
                   position: "absolute", top: 12, right: 12, zIndex: 10, background: "rgba(0,0,0,0.5)",
@@ -1658,15 +1914,22 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
 
               {/* Slider / Image Gallery */}
               <div className="map-popup-image" style={{ position: "relative", height: 160, background: theme.ink }}>
-                <img 
-                  src={projectImages[activeImageIndex]} 
-                  alt={selected.name} 
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }} 
+                <img
+                  src={projectImages[activeImageIndex]}
+                  alt={selected.name}
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const fallback = getLuxuryFallbackImage(selected.neighborhood, selected.id);
+                    if (e.currentTarget.src !== fallback) {
+                      e.currentTarget.src = fallback;
+                    }
+                  }}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
-                
+
                 {/* Dots / Gallery Indexes */}
                 {projectImages.length > 1 && (
-                  <div 
+                  <div
                     style={{
                       position: "absolute", bottom: 8, right: 12, background: "rgba(0,0,0,0.6)",
                       padding: "3px 8px", borderRadius: 10, color: "#fff", fontSize: 9, letterSpacing: "0.1em"
@@ -1679,7 +1942,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                 {/* Left/Right Slider arrows */}
                 {projectImages.length > 1 && (
                   <>
-                    <button 
+                    <button
                       onClick={(e) => {
                         e.stopPropagation();
                         setActiveImageIndex((prev) => (prev === 0 ? projectImages.length - 1 : prev - 1));
@@ -1692,7 +1955,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     >
                       ‹
                     </button>
-                    <button 
+                    <button
                       onClick={(e) => {
                         e.stopPropagation();
                         setActiveImageIndex((prev) => (prev === projectImages.length - 1 ? 0 : prev + 1));
@@ -1708,7 +1971,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   </>
                 )}
 
-                <div 
+                <div
                   style={{
                     position: "absolute", bottom: 0, left: 0, right: 0,
                     background: "linear-gradient(to top, rgba(0,0,0,0.8), transparent)",
@@ -1725,8 +1988,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               </div>
 
               {/* Specs Statistics row */}
-              <div 
-                className="map-popup-stats-row" 
+              <div
+                className="map-popup-stats-row"
                 style={{
                   display: "grid", gridTemplateColumns: "repeat(3, 1fr)",
                   borderBottom: `1px solid ${theme.dune}`, textAlign: "center", padding: "12px 4px"
@@ -1766,8 +2029,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   </div>
                 )}
                 <div style={{ display: "flex", gap: 10 }}>
-                  <button 
-                    onClick={() => { setModalProject(selected); setModal("floors"); }}
+                  <button
+                    onClick={() => openInquiry(`${selected.name} — Pricing`)}
                     style={{
                       flex: 1, padding: "12px", background: theme.ink, color: "#fff", border: "none",
                       fontFamily: "'DM Sans', sans-serif", fontSize: 9, letterSpacing: "0.16em", textTransform: "uppercase",
@@ -1776,7 +2039,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   >
                     ✦ Request Pricing
                   </button>
-                  <button 
+                  <button
                     onClick={() => router.push(`/property/${selected.slug}`)}
                     style={{
                       flex: 1, padding: "12px", background: "transparent", border: `1px solid ${theme.dune}`,
@@ -1795,19 +2058,19 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
 
       {/* global contact advisor / pricing Form Modals */}
       {modal && (
-        <div 
+        <div
           style={{
             position: "fixed", inset: 0, background: "rgba(28,31,38,0.72)", backdropFilter: "blur(4px)",
             zIndex: 2000, display: "flex", alignItems: "center", justifyContent: "center", padding: 16
           }}
         >
-          <div 
+          <div
             style={{
               background: theme.cream, border: `1px solid ${theme.dune}`, width: "100%", maxWidth: 460,
               position: "relative", padding: "32px 24px", boxShadow: "0 12px 48px rgba(0,0,0,0.3)"
             }}
           >
-            <button 
+            <button
               onClick={() => setModal(null)}
               style={{
                 position: "absolute", top: 12, right: 12, border: "none", background: "transparent",
@@ -1822,11 +2085,11 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
             </span>
 
             <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 400, color: theme.ink, margin: "0 0 12px" }}>
-              {modal === "advisor" 
-                ? "Connect with Zachary Akers" 
-                : modal === "floors" 
-                ? "Request Floor Plans & Pricing" 
-                : "Register Early VIP Access"}
+              {modal === "advisor"
+                ? "Connect with Zachary Akers"
+                : modal === "floors"
+                  ? "Request Floor Plans & Pricing"
+                  : "Register Early VIP Access"}
             </h3>
 
             <p style={{ fontSize: 12, color: theme.mist, lineHeight: 1.5, margin: "0 0 20px" }}>
@@ -1835,23 +2098,23 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
 
             {/* Simple Contact Form */}
             <form onSubmit={(e) => { e.preventDefault(); alert("Inquiry submitted! We will contact you shortly."); setModal(null); }} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              <input 
-                type="text" required placeholder="Full Name" 
-                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12 }} 
+              <input
+                type="text" required placeholder="Full Name"
+                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12 }}
               />
-              <input 
-                type="email" required placeholder="Email Address" 
-                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12 }} 
+              <input
+                type="email" required placeholder="Email Address"
+                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12 }}
               />
-              <input 
-                type="tel" placeholder="Phone Number" 
-                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12 }} 
+              <input
+                type="tel" placeholder="Phone Number"
+                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12 }}
               />
-              <textarea 
-                rows={3} placeholder="Tell us what you're looking for..." 
-                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12, resize: "none" }} 
+              <textarea
+                rows={3} placeholder="Tell us what you're looking for..."
+                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12, resize: "none" }}
               />
-              <button 
+              <button
                 type="submit"
                 style={{
                   width: "100%", padding: "12px", background: theme.ink, color: theme.cream, border: "none",

@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
   if (!body || typeof body !== "object" || !("slug" in body) || typeof body.slug !== "string") {
     return NextResponse.json({ error: "A property slug is required." }, { status: 400 });
   }
-  const project = projects.find((item) => item.slug === body.slug);
+  const project = projects.find((item: { slug: string }) => item.slug === body.slug);
   if (!project) return NextResponse.json({ error: "Property not found." }, { status: 404 });
   const apiKey = process.env.FOLLOWUP_BOSS_API_KEY;
   if (!apiKey) return NextResponse.json({ error: "Visit tracking unavailable." }, { status: 503 });

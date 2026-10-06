@@ -27,7 +27,7 @@ interface MapProject {
   maxBed: number | null;
   priceFrom: string;
   completion: string;
-  units: number | null;
+  units: string | number | null;
   stories?: number | null;
   height?: number | null;
   pricePerSqft: number | null;
@@ -116,7 +116,7 @@ function calculateStats(projects: MapProject[]) {
 
 // Helper to get project primary image
 function getImageUrl(path: string | null | undefined): string {
-  if (!path) return "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&auto=format&fit=crop&q=60";
+  if (!path || path.includes("api.cotality.com")) return "https://frasermiami.s3.amazonaws.com/perigon/pool2.webp";
   if (path.startsWith("http://") || path.startsWith("https://")) {
     return path;
   }

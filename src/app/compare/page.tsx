@@ -20,7 +20,7 @@ interface Project {
   maxBed: number | null;
   priceFrom: string;
   completion: string;
-  units: number;
+  units: string | number;
   pricePerSqft?: number | null;
   percentSold?: number | null;
   badge?: string;
@@ -76,7 +76,7 @@ export default function ComparePage() {
   };
 
   const getImageUrl = (path: string | null | undefined): string => {
-    if (!path) return "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&auto=format&fit=crop&q=60";
+    if (!path || path.includes("api.cotality.com")) return "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp";
     if (path.startsWith("http://") || path.startsWith("https://")) {
       return path;
     }
@@ -88,7 +88,8 @@ export default function ComparePage() {
 
   const getSpecs = (p: Project | undefined) => {
     if (!p) return null;
-    const stories = p.id === 27 ? 30 : p.id === 9 ? 75 : Math.floor(p.units / 10 + 12);
+    const unitsNum = typeof p.units === "number" ? p.units : parseInt(String(p.units).replace(/[^0-9]/g, ""), 10) || 50;
+    const stories = p.id === 27 ? 30 : p.id === 9 ? 75 : Math.floor(unitsNum / 10 + 12);
     const sizeRange = p.minPrice
       ? `${(1070 + (p.id % 3) * 110).toLocaleString()} – ${(6093 - (p.id % 2) * 500).toLocaleString()} SF`
       : "—";

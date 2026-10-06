@@ -54,7 +54,9 @@ export function useHeroSlider({ slideCount }: UseHeroSliderOptions) {
 
     if (tryingToAdvance || tryingToReverse) {
       lenis?.stop();
-      event.preventDefault();
+      if (event.cancelable) {
+        event.preventDefault();
+      }
     } else {
       lenis?.start();
       return;

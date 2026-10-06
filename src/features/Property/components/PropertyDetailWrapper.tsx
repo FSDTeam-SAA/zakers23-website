@@ -5,12 +5,27 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import PropertyInquiryGate from "./PropertyInquiryGate";
 
+import PropertyDetailSkeleton from "./PropertyDetailSkeleton";
+
 const PropertyDetailPageClient = dynamic(
   () => import("./PropertyDetailPage"),
-  { ssr: false }
+  { 
+    ssr: false,
+    loading: () => <PropertyDetailSkeleton />
+  }
 );
 
-export default function PropertyDetailWrapper({ slug, name, expiresAt }: { slug: string; name: string; expiresAt: number }) {
+export default function PropertyDetailWrapper({
+  slug,
+  name,
+  expiresAt,
+  initialProject,
+}: {
+  slug: string;
+  name: string;
+  expiresAt: number;
+  initialProject?: any;
+}) {
   const router = useRouter();
   const lastVisit = useRef("");
   const [sessionDeadline, setSessionDeadline] = useState(expiresAt);
@@ -49,5 +64,5 @@ export default function PropertyDetailWrapper({ slug, name, expiresAt }: { slug:
   }, [slug, expiresAt, router]);
 
   if (expiredSession === expiresAt) return <PropertyInquiryGate name={name} />;
-  return <PropertyDetailPageClient slug={slug} />;
+  return <PropertyDetailPageClient slug={slug} initialProject={initialProject} />;
 }

@@ -6,6 +6,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  referrer: "no-referrer",
   title: "Miami New Development | Pre-Construction Condos & Luxury New Construction",
   description:
     "Explore Miami's best pre-construction condos and new developments. Market intelligence, floor plans, pricing, and private presentations from a top-ranked Miami luxury real estate advisor."

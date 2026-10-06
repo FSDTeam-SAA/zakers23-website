@@ -29,9 +29,9 @@ export function SiteFooter() {
               </a>
               <a
                 className="block transition-colors duration-200 hover:text-[#d2b072]"
-                href="mailto:brett@frasermiami.com"
+                href="mailto:zakers@me.com"
               >
-                brett@frasermiami.com
+                zakers@me.com
               </a>
               <a
                 className="block transition-colors duration-200 hover:text-[#d2b072]"

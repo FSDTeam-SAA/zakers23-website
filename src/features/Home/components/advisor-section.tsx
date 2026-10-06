@@ -105,11 +105,11 @@ Zach, is a veteran of 14 years in the real estate industry working both in sales
                 786.475.8134
               </a>
               <a
-                href="mailto:brett@frasermiami.com"
+                href="mailto:zakers@me.com"
                 className="inline-flex items-center gap-2 transition-colors duration-200 hover:text-[#b89354]"
               >
                 <span className="text-[#b89354]">✉</span>
-                brett@frasermiami.com
+                zakers@me.com
               </a>
             </div>
 

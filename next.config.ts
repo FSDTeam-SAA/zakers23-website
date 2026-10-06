@@ -3,6 +3,7 @@ import path from "path";
 
 const nextConfig: NextConfig = {
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -18,7 +19,15 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "images.unsplash.com"
+        hostname: "api.cotality.com"
+      },
+      {
+        protocol: "https",
+        hostname: "staticos.idxbroker.com"
+      },
+      {
+        protocol: "https",
+        hostname: "s3.amazonaws.com"
       }
     ]
   },
