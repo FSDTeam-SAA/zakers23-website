@@ -44,7 +44,7 @@ export function InsightDetailPage({ slug }: InsightDetailPageProps) {
               alt="Miami New Development"
               width={220}
               height={58}
-              className="site-logo h-auto w-[82px] md:w-[96px]"
+              className="site-logo h-auto w-[68px] md:w-[76px]"
               priority
             />
           </Link>
@@ -64,15 +64,16 @@ export function InsightDetailPage({ slug }: InsightDetailPageProps) {
                 <span className="insights-nav-link-label">Neighborhoods</span>
                 <span aria-hidden="true">⌄</span>
               </button>
-              <div className="absolute top-full left-1/2 z-50 mt-2 grid w-80 -translate-x-1/2 grid-cols-2 gap-x-4 gap-y-2 rounded border border-white/10 bg-[#0C1523]/95 p-4 text-left opacity-0 invisible shadow-2xl backdrop-blur-md transition-all duration-300 group-hover:visible group-hover:opacity-100">
+              <div className="nav-dropdown-menu">
                 {Object.entries(Ht).map(([slug, data]) => (
                   <button
                     key={slug}
+                    type="button"
                     onClick={(event) => {
                       event.stopPropagation();
                       router.push(`/neighborhood/${slug}`);
                     }}
-                    className="py-1 text-left text-[10px] uppercase tracking-[0.1em] text-gray-300 transition-colors hover:text-[#C9A84C]"
+                    className="nav-dropdown-item"
                   >
                     {data.name}
                   </button>
@@ -113,7 +114,7 @@ export function InsightDetailPage({ slug }: InsightDetailPageProps) {
             alt="Miami New Development"
             width={220}
             height={58}
-            className="site-logo h-auto w-[82px] md:w-[96px]"
+            className="site-logo h-auto w-[68px] md:w-[76px]"
             priority
           />
         </Link>
@@ -133,15 +134,16 @@ export function InsightDetailPage({ slug }: InsightDetailPageProps) {
               <span className="insights-nav-link-label">Neighborhoods</span>
               <span aria-hidden="true">⌄</span>
             </button>
-            <div className="absolute top-full left-1/2 z-50 mt-2 grid w-80 -translate-x-1/2 grid-cols-2 gap-x-4 gap-y-2 rounded border border-white/10 bg-[#0C1523]/95 p-4 text-left opacity-0 invisible shadow-2xl backdrop-blur-md transition-all duration-300 group-hover:visible group-hover:opacity-100">
+            <div className="nav-dropdown-menu">
               {Object.entries(Ht).map(([slug, data]) => (
                 <button
                   key={slug}
+                  type="button"
                   onClick={(event) => {
                     event.stopPropagation();
                     router.push(`/neighborhood/${slug}`);
                   }}
-                  className="py-1 text-left text-[10px] uppercase tracking-[0.1em] text-gray-300 transition-colors hover:text-[#C9A84C]"
+                  className="nav-dropdown-item"
                 >
                   {data.name}
                 </button>

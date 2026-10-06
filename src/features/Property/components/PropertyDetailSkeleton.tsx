@@ -8,21 +8,23 @@ export default function PropertyDetailSkeleton() {
   return (
     <main className="property-page bg-[#FAF8F3] min-h-screen text-[#1c1f26]">
       {/* Luxury Header Skeleton */}
-      <header className="flex items-center justify-between px-6 py-4 md:px-12 bg-[#FAF8F3] border-b border-[#ddd8cd]/60">
-        <Link href="/" className="opacity-70">
-          <Image
-            src="/images/logo.png"
-            alt="Miami New Development"
-            width={96}
-            height={28}
-            className="h-auto w-[82px] md:w-[96px]"
-            priority
-          />
-        </Link>
-        <div className="flex items-center gap-6">
-          <div className="luxury-shimmer w-20 h-4 rounded-sm hidden md:block" />
-          <div className="luxury-shimmer w-24 h-4 rounded-sm hidden md:block" />
-          <div className="luxury-shimmer w-28 h-8 rounded-sm" />
+      <header className="site-header site-header-light">
+        <div className="site-header-inner">
+          <Link href="/" className="opacity-70">
+            <Image
+              src="/images/logo.png"
+              alt="Miami New Development"
+              width={96}
+              height={28}
+              className="site-logo h-auto w-[68px] md:w-[76px]"
+              priority
+            />
+          </Link>
+          <div className="flex items-center gap-6">
+            <div className="luxury-shimmer w-20 h-4 rounded-sm hidden md:block" />
+            <div className="luxury-shimmer w-24 h-4 rounded-sm hidden md:block" />
+            <div className="luxury-shimmer w-28 h-8 rounded-full" />
+          </div>
         </div>
       </header>
 

@@ -12,6 +12,7 @@ import { submitInquiry } from "@/src/lib/inquiry";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 import PropertyDetailSkeleton from "./PropertyDetailSkeleton";
 import localProjects from "@/src/data/miami-projects.json";
+import { handleImageError, FALLBACK_IMAGE_URL, LUXURY_FALLBACK_IMAGE_URL, getSafeImageUrl } from "@/src/lib/image-utils";
 
 interface MapProject {
   id: number;
@@ -62,10 +63,12 @@ const STAGE_STEPS = [
 const fallbackImages = [
   "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp",
   "https://frasermiami.s3.amazonaws.com/perigon/pool2.webp",
+  LUXURY_FALLBACK_IMAGE_URL,
   "https://frasermiami.s3.amazonaws.com/baccarat/exterior-hummingbird-sunrise.webp",
   "https://frasermiami.s3.amazonaws.com/shoreclub/hero-beach-view.webp",
   "https://frasermiami.s3.amazonaws.com/rivage/hummingbird.webp",
   "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/01-Mansions-on-Fisher-Island-Featured.webp",
+  FALLBACK_IMAGE_URL,
   "https://frasermiami.s3.amazonaws.com/sixfisher/hero.webp",
   "https://frasermiami.s3.amazonaws.com/waldorf/waldorf-astoria-hero-twilight.webp",
 ];
@@ -74,10 +77,7 @@ function getImageUrl(path: string | null | undefined, index: number = 0): string
   if (!path || path.includes("api.cotality.com")) {
     return fallbackImages[Math.abs(index) % fallbackImages.length];
   }
-  if (path.startsWith("http://") || path.startsWith("https://")) {
-    return path;
-  }
-  return `https://frasermiami.s3.amazonaws.com/${path.replace(/^\//, "")}`;
+  return getSafeImageUrl(path, fallbackImages[Math.abs(index) % fallbackImages.length]);
 }
 
 function getSafeImage(imgs: string[] | undefined, primaryImg: string, index: number): string {
@@ -111,7 +111,17 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
   );
   const [projectsLoading, setProjectsLoading] = useState(false);
   const [isMatcherOpen, setIsMatcherOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [activeImgIdx, setActiveImgIdx] = useState<number | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 30);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Background fetch for fresh live MLS updates without blocking initial render
   useEffect(() => {
@@ -433,66 +443,65 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
   return (
     <main className="property-page bg-[#FAF8F3] min-h-screen text-[#1c1f26]">
       {/* Premium Header/Navbar */}
-      <header className="site-header absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 bg-[#FAF8F3]/90 backdrop-blur-md border-b border-[#FAF8F3]/5">
-        <Link href="/" className="logo-link">
-          <Image
-            src="/images/logo.png"
-            alt="Miami New Development"
-            width={220}
-            height={58}
-            className="site-logo h-auto w-[82px] md:w-[96px]"
-            priority
-          />
-        </Link>
-        <nav className="nav-links" aria-label="Primary">
-          <Link href="/map">Explore Map</Link>
-          <button
-            type="button"
-            className="hover:text-[#C9A84C] transition-colors text-black"
-            onClick={() => setIsMatcherOpen(true)}
-          >
-            Find My Project
-          </button>
-          <div className="relative group">
+      <header className={`site-header site-header-light ${isScrolled ? "site-header-scrolled" : ""}`}>
+        <div className="site-header-inner">
+          <Link href="/" className="brand">
+            <Image
+              src="/images/logo.png"
+              alt="Miami New Development"
+              width={220}
+              height={58}
+              className="site-logo h-auto w-[68px] md:w-[76px]"
+              priority
+            />
+          </Link>
+          <nav className="nav-links" aria-label="Primary">
+            <Link href="/map">Explore Map</Link>
             <button
               type="button"
-              className="nav-dropdown flex items-center gap-1 text-[#C9A84C]"
-              onClick={() => router.push("/neighborhood")}
+              onClick={() => setIsMatcherOpen(true)}
             >
-              Neighborhoods
-              <span aria-hidden="true">⌄</span>
+              Find My Project
             </button>
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-80 bg-[#FAF8F3]/95 backdrop-blur-md border border-[#FAF8F3]/10 p-4 rounded shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 grid grid-cols-2 gap-x-4 gap-y-2 text-left z-50">
-              {Object.entries(Ht).map(([slug, data]) => (
-                <button
-                  key={slug}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    router.push(`/neighborhood/${slug}`);
-                  }}
-                  className="text-left text-[#1c1f26] hover:text-[#C9A84C] transition-colors text-[10px] py-1 tracking-[0.1em] uppercase"
-                >
-                  {data.name}
-                </button>
-              ))}
+            <div className="relative group">
+              <button
+                type="button"
+                className="nav-dropdown flex items-center gap-1"
+                onClick={() => router.push("/neighborhood")}
+              >
+                Neighborhoods
+                <span aria-hidden="true">⌄</span>
+              </button>
+              <div className="nav-dropdown-menu">
+                {Object.entries(Ht).map(([slug, data]) => (
+                  <button
+                    key={slug}
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      router.push(`/neighborhood/${slug}`);
+                    }}
+                    className="nav-dropdown-item"
+                  >
+                    {data.name}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
-          <Link href="/waterfront">Waterfront Estates</Link>
-          <Link href="/insights">Insights</Link>
-          <span className="nav-divider" aria-hidden="true">
-            ·
-          </span>
-          <Link
-            href="/#contact"
-            onClick={(event) => {
-              event.preventDefault();
-              openInquiry(project?.name);
-            }}
-            style={{ cursor: "pointer" }}
-          >
-            Inquire
-          </Link>
-        </nav>
+            <Link href="/waterfront">Waterfront Estates</Link>
+            <Link href="/insights">Insights</Link>
+            <a
+              href="/#contact"
+              onClick={(event) => {
+                event.preventDefault();
+                openInquiry(project?.name);
+              }}
+              className="nav-inquire-btn"
+            >
+              Inquire
+            </a>
+          </nav>
+        </div>
       </header>
 
       {/* Hero Container - Rounded Grid Collage */}
@@ -506,6 +515,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 src={getSafeImage(project.imgs, project.img, 0)}
                 alt={project.name}
                 className="object-cover transition-transform duration-700 hover:scale-[1.02]"
+                onError={handleImageError}
               />
 
               {/* Status Badge */}
@@ -536,6 +546,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                   src={getSafeImage(project.imgs, project.img, 1)}
                   alt={`${project.name} Photo 2`}
                   className="object-cover transition-transform duration-700 hover:scale-[1.02]"
+                  onError={handleImageError}
                 />
               </div>
               <div className="relative h-full w-full overflow-hidden cursor-pointer" onClick={() => setActiveImgIdx(2)}>
@@ -544,6 +555,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                   src={getSafeImage(project.imgs, project.img, 2)}
                   alt={`${project.name} Photo 3`}
                   className="object-cover transition-transform duration-700 hover:scale-[1.02]"
+                  onError={handleImageError}
                 />
               </div>
 
@@ -760,6 +772,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 src={getSafeImage(project.imgs, project.img, 3)}
                 alt="Luxury Lounge Space"
                 className="object-cover"
+                onError={handleImageError}
               />
             </div>
           </div>
@@ -776,6 +789,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 src={getSafeImage(project.imgs, project.img, 4)}
                 alt="Luxury Dining Space"
                 className="object-cover"
+                onError={handleImageError}
               />
             </div>
             <div className="order-1 lg:order-2">
@@ -819,6 +833,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           src={getSafeImage(project.imgs, project.img, 5)}
           alt={`${project.name} Wide View`}
           className="object-cover opacity-95"
+          onError={handleImageError}
         />
         <div className="absolute inset-0 bg-black/10" />
       </section>
@@ -857,6 +872,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                   alt={`${project.name} - Photo ${idx + 1}`}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                  onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-[#0C1523]/35 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <span className="text-white text-[9px] uppercase tracking-[0.2em] font-semibold bg-[#B38E36] px-3.5 py-1.5 rounded-[1px] shadow-lg">
@@ -876,6 +892,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           src={getSafeImage(project.imgs, project.img, 6)}
           alt={`${project.name} Panoramic View`}
           className="object-cover opacity-90"
+          onError={handleImageError}
         />
         <div className="absolute inset-0 bg-black/10" />
       </section>
@@ -1069,7 +1086,13 @@ Zachary Akers
                   className="neighborhood-property-card bg-white cursor-pointer"
                 >
                   <div className="npc-image-wrap relative aspect-[1.3/1]">
-                    <img src={getImageUrl(proj.img)} alt={proj.name} loading="lazy" className="w-full h-full object-cover" />
+                    <img
+                      src={getImageUrl(proj.img)}
+                      alt={proj.name}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                      onError={handleImageError}
+                    />
                     {proj.comingSoon && (
                       <span className="npc-badge npc-badge--coming-soon">Coming Soon</span>
                     )}
@@ -1171,6 +1194,7 @@ Zachary Akers
                 src={getImageUrl(galleryImgs[activeImgIdx % galleryImgs.length])}
                 alt={`${project.name} photo ${(activeImgIdx % galleryImgs.length) + 1}`}
                 className="max-w-full max-h-full object-contain select-none shadow-[0_20px_50px_rgba(0,0,0,0.8)] rounded-[4px] border border-white/10"
+                onError={handleImageError}
               />
             </div>
 
@@ -1213,6 +1237,7 @@ Zachary Akers
                       src={getImageUrl(thumbUrl)}
                       alt={`Thumbnail ${idx + 1}`}
                       className="w-full h-full object-cover"
+                      onError={handleImageError}
                     />
                   </button>
                 );

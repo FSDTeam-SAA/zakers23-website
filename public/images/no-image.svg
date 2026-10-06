@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c14" />
+      <stop offset="50%" stop-color="#0c1523" />
+      <stop offset="100%" stop-color="#090e18" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e5c583" />
+      <stop offset="50%" stop-color="#bb9751" />
+      <stop offset="100%" stop-color="#8d6731" />
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bb9751" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#bb9751" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.025)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" />
+  <rect width="800" height="500" fill="url(#grid)" />
+
+  <!-- Ambient Luxury Glow -->
+  <circle cx="400" cy="240" r="280" fill="url(#glowGrad)" />
+
+  <!-- Outer Frame -->
+  <rect x="24" y="24" width="752" height="452" fill="none" stroke="rgba(187, 151, 81, 0.2)" stroke-width="1" />
+  <rect x="28" y="28" width="744" height="444" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+
+  <!-- Corner Accents -->
+  <path d="M 24 40 L 24 24 L 40 24" fill="none" stroke="#bb9751" stroke-width="2" />
+  <path d="M 776 40 L 776 24 L 760 24" fill="none" stroke="#bb9751" stroke-width="2" />
+  <path d="M 24 460 L 24 476 L 40 476" fill="none" stroke="#bb9751" stroke-width="2" />
+  <path d="M 776 460 L 776 476 L 760 476" fill="none" stroke="#bb9751" stroke-width="2" />
+
+  <!-- Center Icon Group -->
+  <g transform="translate(400, 195)">
+    <!-- Architectural Silhouette / Circle -->
+    <circle cx="0" cy="0" r="54" fill="rgba(187, 151, 81, 0.06)" stroke="rgba(187, 151, 81, 0.35)" stroke-width="1.5" />
+    
+    <!-- Stylized Camera / Photo Outline with subtle slash or mountain -->
+    <g transform="translate(-24, -22)" stroke="url(#goldGrad)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="7" width="44" height="34" rx="3" />
+      <path d="M 14 7 L 17 2 L 31 2 L 34 7" />
+      <circle cx="24" cy="24" r="9" />
+      <path d="M 8 35 L 18 25 L 28 35" stroke-width="1.5" />
+      <path d="M 24 33 L 31 26 L 40 35" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="288" text-anchor="middle" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="13" letter-spacing="4" fill="#bb9751" font-weight="600">
+    MIAMI LUXURY REAL ESTATE
+  </text>
+
+  <text x="400" y="324" text-anchor="middle" font-family="'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" letter-spacing="2.5" fill="#f1f5f9" font-weight="500">
+    IMAGE NOT AVAILABLE
+  </text>
+
+  <text x="400" y="352" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" letter-spacing="0.8" fill="#94a3b8" font-weight="400">
+    Architectural preview coming soon · Details available upon inquiry
+  </text>
+
+  <!-- Bottom Accent Line -->
+  <line x1="340" y1="375" x2="460" y2="375" stroke="rgba(187, 151, 81, 0.3)" stroke-width="1" />
+</svg>

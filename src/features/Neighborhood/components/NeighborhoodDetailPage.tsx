@@ -11,6 +11,7 @@ import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyPr
 import { SiteFooter } from "@/src/features/Home/components/site-footer";
 import { submitInquiry } from "@/src/lib/inquiry";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
+import { handleImageError, FALLBACK_IMAGE_URL, getSafeImageUrl } from "@/src/lib/image-utils";
 
 // Type definitions
 interface MapProject {
@@ -117,17 +118,24 @@ function calculateStats(projects: MapProject[]) {
 // Helper to get project primary image
 function getImageUrl(path: string | null | undefined): string {
   if (!path || path.includes("api.cotality.com")) return "https://frasermiami.s3.amazonaws.com/perigon/pool2.webp";
-  if (path.startsWith("http://") || path.startsWith("https://")) {
-    return path;
-  }
-  return `https://frasermiami.s3.amazonaws.com/${path.replace(/^\//, "")}`;
+  return getSafeImageUrl(path, FALLBACK_IMAGE_URL);
 }
 
 export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
   const router = useRouter();
   const { openInquiry } = useInquiry();
   const [isMatcherOpen, setIsMatcherOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [stageFilter, setStageFilter] = useState<string>("all");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 30);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Form intake state
   const [formName, setFormName] = useState("");
@@ -370,66 +378,65 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
   return (
     <main className="neighborhood-page">
       {/* Premium Header/Navbar */}
-      <header className="site-header absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 bg-[#FAF8F3]/90 backdrop-blur-md border-b border-[#FAF8F3]/5">
-        <Link href="/" className="logo-link">
-          <Image
-            src="/images/logo.png"
-            alt="Miami New Development"
-            width={220}
-            height={58}
-            className="site-logo h-auto w-[82px] md:w-[96px]"
-            priority
-          />
-        </Link>
-        <nav className="nav-links" aria-label="Primary">
-          <Link href="/map">Explore Map</Link>
-          <button
-            type="button"
-            className="hover:text-[#C9A84C] transition-colors text-black"
-            onClick={() => setIsMatcherOpen(true)}
-          >
-            Find My Project
-          </button>
-          <div className="relative group">
+      <header className={`site-header site-header-light ${isScrolled ? "site-header-scrolled" : ""}`}>
+        <div className="site-header-inner">
+          <Link href="/" className="brand">
+            <Image
+              src="/images/logo.png"
+              alt="Miami New Development"
+              width={220}
+              height={58}
+              className="site-logo h-auto w-[68px] md:w-[76px]"
+              priority
+            />
+          </Link>
+          <nav className="nav-links" aria-label="Primary">
+            <Link href="/map">Explore Map</Link>
             <button
               type="button"
-              className="nav-dropdown flex items-center gap-1 text-[#C9A84C]"
-              onClick={() => router.push("/neighborhood")}
+              onClick={() => setIsMatcherOpen(true)}
             >
-              Neighborhoods
-              <span aria-hidden="true">⌄</span>
+              Find My Project
             </button>
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-80 bg-[#FAF8F3]/95 backdrop-blur-md border border-[#FAF8F3]/10 p-4 rounded shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 grid grid-cols-2 gap-x-4 gap-y-2 text-left z-50">
-              {Object.entries(Ht).map(([s, data]) => (
-                <button
-                  key={s}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    router.push(`/neighborhood/${s}`);
-                  }}
-                  className="text-left text-[#1c1f26] hover:text-[#C9A84C] transition-colors text-[10px] py-1 tracking-[0.1em] uppercase"
-                >
-                  {data.name}
-                </button>
-              ))}
+            <div className="relative group">
+              <button
+                type="button"
+                className="nav-dropdown flex items-center gap-1"
+                onClick={() => router.push("/neighborhood")}
+              >
+                Neighborhoods
+                <span aria-hidden="true">⌄</span>
+              </button>
+              <div className="nav-dropdown-menu">
+                {Object.entries(Ht).map(([s, data]) => (
+                  <button
+                    key={s}
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      router.push(`/neighborhood/${s}`);
+                    }}
+                    className="nav-dropdown-item"
+                  >
+                    {data.name}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
-          <a href="/waterfront">Waterfront Estates</a>
-          <a href="/insights">Insights</a>
-          <span className="nav-divider" aria-hidden="true">
-            ·
-          </span>
-          <a
-            href="/#contact"
-            onClick={(event) => {
-              event.preventDefault();
-              openInquiry();
-            }}
-            style={{ cursor: "pointer" }}
-          >
-            Inquire
-          </a>
-        </nav>
+            <Link href="/waterfront">Waterfront Estates</Link>
+            <Link href="/insights">Insights</Link>
+            <a
+              href="/#contact"
+              onClick={(event) => {
+                event.preventDefault();
+                openInquiry();
+              }}
+              className="nav-inquire-btn"
+            >
+              Inquire
+            </a>
+          </nav>
+        </div>
       </header>
 
       {/* Main Neighborhood Banner & Intro */}
@@ -557,7 +564,12 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
                             className="neighborhood-property-card"
                           >
                             <div className="npc-image-wrap">
-                              <img src={getImageUrl(proj.img)} alt={proj.name} loading="lazy" />
+                              <img
+                                src={getImageUrl(proj.img)}
+                                alt={proj.name}
+                                loading="lazy"
+                                onError={handleImageError}
+                              />
                               {proj.comingSoon && (
                                 <span className="npc-badge npc-badge--coming-soon">Coming Soon</span>
                               )}
@@ -613,7 +625,12 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
                         className="neighborhood-property-card"
                       >
                         <div className="npc-image-wrap">
-                          <img src={getImageUrl(proj.img)} alt={proj.name} loading="lazy" />
+                          <img
+                            src={getImageUrl(proj.img)}
+                            alt={proj.name}
+                            loading="lazy"
+                            onError={handleImageError}
+                          />
                           {proj.comingSoon && (
                             <span className="npc-badge npc-badge--coming-soon">Coming Soon</span>
                           )}

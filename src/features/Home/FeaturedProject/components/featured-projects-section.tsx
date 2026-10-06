@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Project } from "@/src/features/Home/FeaturedProject/types/featured-project.types";
+import { handleImageError } from "@/src/lib/image-utils";
 type FeaturedProjectsSectionProps = { projects: Project[] };
 
 export function FeaturedProjectsSection({ projects }: FeaturedProjectsSectionProps) {
@@ -47,6 +48,7 @@ export function FeaturedProjectsSection({ projects }: FeaturedProjectsSectionPro
                     src={project.image}
                     alt={project.name}
                     className="object-cover transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] hover:scale-[1.035]"
+                    onError={handleImageError}
                   />
                   <p className="absolute inset-x-0 top-0 m-0 overflow-hidden text-ellipsis whitespace-nowrap bg-[rgba(64,74,90,0.95)] px-2 py-[5px] text-[7px] leading-[1.25] uppercase tracking-[0.14em] text-[rgba(244,239,230,0.95)] max-md:whitespace-normal">
                     {project.status}

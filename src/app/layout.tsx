@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CompareFloatingBar } from "@/src/components/CompareFloatingBar";
+import { ImageFallbackProvider } from "@/src/components/ImageFallbackProvider";
 import LenisProvider from "@/src/components/LenisProvider";
 import { InquiryProvider } from "@/src/features/inquiry/components/inquiry-provider";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body>
+        <ImageFallbackProvider />
         <LenisProvider>
           <InquiryProvider>
             {children}

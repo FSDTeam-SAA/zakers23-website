@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -8,20 +8,28 @@ import { Ht, getNeighborhoodNames } from "@/src/data/neighborhoods";
 import projectsRaw from "@/src/data/miami-projects.json";
 import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyProjectModal";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
+import { handleImageError, getSafeImageUrl, FALLBACK_IMAGE_URL } from "@/src/lib/image-utils";
 
 // Helper to get image URL
 function getImageUrl(path: string | null | undefined): string {
   if (!path) return "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&auto=format&fit=crop&q=60";
-  if (path.startsWith("http://") || path.startsWith("https://")) {
-    return path;
-  }
-  return `https://frasermiami.s3.amazonaws.com/${path.replace(/^\//, "")}`;
+  return getSafeImageUrl(path, FALLBACK_IMAGE_URL);
 }
 
 export default function NeighborhoodListPage() {
   const router = useRouter();
   const { openInquiry } = useInquiry();
   const [isMatcherOpen, setIsMatcherOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 30);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Get active projects count and a representative image for each neighborhood
   const neighborhoods = Object.entries(Ht).map(([slug, data]) => {
@@ -44,66 +52,65 @@ export default function NeighborhoodListPage() {
   return (
     <main className="min-h-screen bg-[#0C1523] text-[#FAF9F6] font-sans selection:bg-[#C9A84C]/30">
       {/* Premium Header/Navbar */}
-      <header className="site-header absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 bg-[#0C1523]/80 backdrop-blur-md border-b border-white/5">
-        <Link href="/" className="logo-link">
-          <Image
-            src="/images/logo.png"
-            alt="Miami New Development"
-            width={220}
-            height={58}
-            className="site-logo h-auto w-[82px] md:w-[96px]"
-            priority
-          />
-        </Link>
-        <nav className="nav-links" aria-label="Primary">
-          <Link href="/map">Explore Map</Link>
-          <button
-            type="button"
-            className="hover:text-[#C9A84C] transition-colors"
-            onClick={() => setIsMatcherOpen(true)}
-          >
-            Find My Project
-          </button>
-          <div className="relative group">
+      <header className={`site-header ${isScrolled ? "site-header-scrolled" : ""}`}>
+        <div className="site-header-inner">
+          <Link href="/" className="brand">
+            <Image
+              src="/images/logo.png"
+              alt="Miami New Development"
+              width={220}
+              height={58}
+              className="site-logo h-auto w-[68px] md:w-[76px]"
+              priority
+            />
+          </Link>
+          <nav className="nav-links" aria-label="Primary">
+            <Link href="/map">Explore Map</Link>
             <button
               type="button"
-              className="nav-dropdown flex items-center gap-1 text-[#C9A84C]"
-              onClick={() => router.push("/neighborhood")}
+              onClick={() => setIsMatcherOpen(true)}
             >
-              Neighborhoods
-              <span aria-hidden="true">⌄</span>
+              Find My Project
             </button>
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-80 bg-[#0C1523]/95 backdrop-blur-md border border-white/10 p-4 rounded shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 grid grid-cols-2 gap-x-4 gap-y-2 text-left z-50">
-              {Object.entries(Ht).map(([slug, data]) => (
-                <button
-                  key={slug}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    router.push(`/neighborhood/${slug}`);
-                  }}
-                  className="text-left text-gray-300 hover:text-[#C9A84C] transition-colors text-[10px] py-1 tracking-[0.1em] uppercase"
-                >
-                  {data.name}
-                </button>
-              ))}
+            <div className="relative group">
+              <button
+                type="button"
+                className="nav-dropdown flex items-center gap-1"
+                onClick={() => router.push("/neighborhood")}
+              >
+                Neighborhoods
+                <span aria-hidden="true">⌄</span>
+              </button>
+              <div className="nav-dropdown-menu">
+                {Object.entries(Ht).map(([slug, data]) => (
+                  <button
+                    key={slug}
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      router.push(`/neighborhood/${slug}`);
+                    }}
+                    className="nav-dropdown-item"
+                  >
+                    {data.name}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
-          <a href="/waterfront">Waterfront Estates</a>
-          <a href="/insights">Insights</a>
-          <span className="nav-divider" aria-hidden="true">
-            ·
-          </span>
-          <a
-            href="/#contact"
-            onClick={(event) => {
-              event.preventDefault();
-              openInquiry();
-            }}
-            style={{ cursor: "pointer" }}
-          >
-            Inquire
-          </a>
-        </nav>
+            <Link href="/waterfront">Waterfront Estates</Link>
+            <Link href="/insights">Insights</Link>
+            <a
+              href="/#contact"
+              onClick={(event) => {
+                event.preventDefault();
+                openInquiry();
+              }}
+              className="nav-inquire-btn"
+            >
+              Inquire
+            </a>
+          </nav>
+        </div>
       </header>
 
       {/* Hero Header */}
@@ -135,6 +142,7 @@ export default function NeighborhoodListPage() {
                   alt={hood.name}
                   className="w-full height-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-500 opacity-60"
                   style={{ height: "100%", width: "100%" }}
+                  onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0C1523] via-[#0C1523]/60 to-transparent z-10" />
               </div>

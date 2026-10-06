@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import projectsRaw from "@/src/data/miami-projects.json";
+import { handleImageError, getSafeImageUrl } from "@/src/lib/image-utils";
 
 interface Project {
   id: number;
@@ -56,11 +57,7 @@ export function CompareFloatingBar() {
   };
 
   const getImageUrl = (path: string | null | undefined): string => {
-    if (!path || path.includes("api.cotality.com")) return "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp";
-    if (path.startsWith("http://") || path.startsWith("https://")) {
-      return path;
-    }
-    return `https://frasermiami.s3.amazonaws.com/${path.replace(/^\//, "")}`;
+    return getSafeImageUrl(path, "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp");
   };
 
   return (
@@ -83,6 +80,7 @@ export function CompareFloatingBar() {
                 src={getImageUrl(p.img)}
                 alt={p.name}
                 className="object-cover w-full h-full rounded"
+                onError={handleImageError}
               />
             </div>
             <span className="max-w-[100px] truncate text-[11px] font-medium">{p.name}</span>

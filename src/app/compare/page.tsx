@@ -6,6 +6,7 @@ import Image from "next/image";
 import projectsRaw from "@/src/data/miami-projects.json";
 import { Ht } from "@/src/data/neighborhoods";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
+import { handleImageError, getSafeImageUrl, FALLBACK_IMAGE_URL } from "@/src/lib/image-utils";
 
 interface Project {
   id: number;
@@ -76,11 +77,7 @@ export default function ComparePage() {
   };
 
   const getImageUrl = (path: string | null | undefined): string => {
-    if (!path || path.includes("api.cotality.com")) return "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp";
-    if (path.startsWith("http://") || path.startsWith("https://")) {
-      return path;
-    }
-    return `https://frasermiami.s3.amazonaws.com/${path.replace(/^\//, "")}`;
+    return getSafeImageUrl(path, "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp");
   };
 
   const projA = allProjects.find((p) => p.id === compareIds[0]);
@@ -131,52 +128,51 @@ export default function ComparePage() {
     <div className="min-h-screen bg-[#FAF8F3] text-[#1c1f26] flex flex-col font-sans">
       {/* Site Header Navbar */}
       <header className="site-header site-header-scrolled map-site-header">
-        <Link className="brand" href="/">
-          <Image
-            src="/images/logo.png"
-            alt="Miami New Development"
-            width={220}
-            height={58}
-            className="site-logo h-auto w-[82px] md:w-[96px]"
-            priority
-          />
-        </Link>
-        <nav className="nav-links" aria-label="Primary">
-          <Link href="/map">Explore Map</Link>
-          <Link href="/#contact">Find My Project</Link>
-          <div className="relative group">
-            <Link href="/neighborhood" className="nav-dropdown flex items-center gap-1">
-              Neighborhoods
-              <span aria-hidden="true">⌄</span>
-            </Link>
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-80 bg-[#0C1523]/95 backdrop-blur-md border border-white/10 p-4 rounded shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 grid grid-cols-2 gap-x-4 gap-y-2 text-left z-50">
-              {Object.entries(Ht).map(([slug, data]) => (
-                <Link
-                  key={slug}
-                  href={`/neighborhood/${slug}`}
-                  className="text-left text-gray-300 hover:text-[#C9A84C] transition-colors text-[10px] py-1 tracking-[0.1em] uppercase"
-                >
-                  {data.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <Link href="/waterfront">Waterfront Estates</Link>
-          <Link href="/insights">Insights</Link>
-          <span className="nav-divider" aria-hidden="true">
-            ·
-          </span>
-          <Link
-            href="/#contact"
-            onClick={(event) => {
-              event.preventDefault();
-              openInquiry();
-            }}
-            style={{ cursor: "pointer" }}
-          >
-            Inquire
+        <div className="site-header-inner">
+          <Link className="brand" href="/">
+            <Image
+              src="/images/logo.png"
+              alt="Miami New Development"
+              width={220}
+              height={58}
+              className="site-logo h-auto w-[68px] md:w-[76px]"
+              priority
+            />
           </Link>
-        </nav>
+          <nav className="nav-links" aria-label="Primary">
+            <Link href="/map">Explore Map</Link>
+            <Link href="/#contact">Find My Project</Link>
+            <div className="relative group">
+              <Link href="/neighborhood" className="nav-dropdown flex items-center gap-1">
+                Neighborhoods
+                <span aria-hidden="true">⌄</span>
+              </Link>
+              <div className="nav-dropdown-menu">
+                {Object.entries(Ht).map(([slug, data]) => (
+                  <Link
+                    key={slug}
+                    href={`/neighborhood/${slug}`}
+                    className="nav-dropdown-item"
+                  >
+                    {data.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <Link href="/waterfront">Waterfront Estates</Link>
+            <Link href="/insights">Insights</Link>
+            <Link
+              href="/#contact"
+              onClick={(event) => {
+                event.preventDefault();
+                openInquiry();
+              }}
+              className="nav-inquire-btn"
+            >
+              Inquire
+            </Link>
+          </nav>
+        </div>
       </header>
 
       {/* Hero Section */}
@@ -214,6 +210,7 @@ export default function ComparePage() {
                       src={getImageUrl(projA.img)}
                       alt={projA.name}
                       className="object-cover w-full h-full"
+                      onError={handleImageError}
                     />
                     <span className="absolute top-3 left-3 bg-[#b89354] text-white text-[9px] uppercase tracking-wider font-semibold px-2.5 py-1 rounded shadow-sm">
                       {projA.stage.replace("_", " ")}
@@ -274,6 +271,7 @@ export default function ComparePage() {
                       src={getImageUrl(projB.img)}
                       alt={projB.name}
                       className="object-cover w-full h-full"
+                      onError={handleImageError}
                     />
                     <span className="absolute top-3 left-3 bg-[#b89354] text-white text-[9px] uppercase tracking-wider font-semibold px-2.5 py-1 rounded shadow-sm">
                       {projB.stage.replace("_", " ")}
@@ -448,6 +446,7 @@ export default function ComparePage() {
                     src={getImageUrl(p.img)}
                     alt={p.name}
                     className="object-cover w-full h-full group-hover:scale-[1.03] transition-transform duration-500"
+                    onError={handleImageError}
                   />
                   <span className="absolute top-3 left-3 bg-[#0C1523]/80 backdrop-blur-sm text-white text-[8px] uppercase tracking-wider font-semibold px-2 py-0.5 rounded">
                     {p.stage.replace("_", " ")}
@@ -584,6 +583,7 @@ export default function ComparePage() {
                       src={getImageUrl(p.img)}
                       alt={p.name}
                       className="w-12 h-12 object-cover rounded"
+                      onError={handleImageError}
                     />
                     <div>
                       <h4 className="font-semibold text-xs text-[#1c1f26] group-hover:text-[#b89354] transition-colors">

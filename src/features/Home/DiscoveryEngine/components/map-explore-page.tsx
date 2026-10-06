@@ -791,67 +791,67 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
     >
       {/* Site Header Navbar */}
       <header className="site-header site-header-scrolled map-site-header">
-        <Link className="brand" href="/">
-          <Image
-            src="/images/logo.png"
-            alt="Miami New Development"
-            width={220}
-            height={58}
-            className="site-logo h-auto w-[82px] md:w-[96px]"
-            priority
-          />
-        </Link>
-        <nav className="nav-links" aria-label="Primary">
-          <Link href="/map">Explore Map</Link>
-          <Link
-            href="/#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              setIsMatcherOpen(true);
-            }}
-          >
-            Find My Project
+        <div className="site-header-inner">
+          <Link className="brand" href="/">
+            <Image
+              src="/images/logo.png"
+              alt="Miami New Development"
+              width={220}
+              height={58}
+              className="site-logo h-auto w-[68px] md:w-[76px]"
+              priority
+            />
           </Link>
-          <div className="relative group">
-            <button
-              type="button"
-              className="nav-dropdown flex items-center gap-1"
-              onClick={() => router.push("/neighborhood")}
+          <nav className="nav-links" aria-label="Primary">
+            <Link href="/map">Explore Map</Link>
+            <Link
+              href="/#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                setIsMatcherOpen(true);
+              }}
             >
-              Neighborhoods
-              <span aria-hidden="true">⌄</span>
-            </button>
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-80 bg-[#0C1523]/95 backdrop-blur-md border border-white/10 p-4 rounded shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 grid grid-cols-2 gap-x-4 gap-y-2 text-left z-50">
-              {Object.entries(Ht).map(([slug, data]) => (
-                <button
-                  key={slug}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    router.push(`/neighborhood/${slug}`);
-                  }}
-                  className="text-left text-gray-300 hover:text-[#C9A84C] transition-colors text-[10px] py-1 tracking-[0.1em] uppercase"
-                >
-                  {data.name}
-                </button>
-              ))}
+              Find My Project
+            </Link>
+            <div className="relative group">
+              <button
+                type="button"
+                className="nav-dropdown flex items-center gap-1"
+                onClick={() => router.push("/neighborhood")}
+              >
+                Neighborhoods
+                <span aria-hidden="true">⌄</span>
+              </button>
+              <div className="nav-dropdown-menu">
+                {Object.entries(Ht).map(([slug, data]) => (
+                  <button
+                    key={slug}
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      router.push(`/neighborhood/${slug}`);
+                    }}
+                    className="nav-dropdown-item"
+                  >
+                    {data.name}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
-          <Link href="/waterfront">Waterfront Estates</Link>
-          <Link href="/insights">Insights</Link>
-          <span className="nav-divider" aria-hidden="true">
-            ·
-          </span>
-          <Link
-            href="/#contact"
-            onClick={(event) => {
-              event.preventDefault();
-              openInquiry();
-            }}
-            style={{ cursor: "pointer" }}
-          >
-            Inquire
-          </Link>
-        </nav>
+            <Link href="/waterfront">Waterfront Estates</Link>
+            <Link href="/insights">Insights</Link>
+            <Link
+              href="/#contact"
+              onClick={(event) => {
+                event.preventDefault();
+                openInquiry();
+              }}
+              className="nav-inquire-btn"
+            >
+              Inquire
+            </Link>
+          </nav>
+        </div>
       </header>
 
       {idxError && (

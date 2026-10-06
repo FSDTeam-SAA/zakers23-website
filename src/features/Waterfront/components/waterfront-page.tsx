@@ -515,20 +515,22 @@ export default function WaterfrontPage() {
   return (
     <main className="waterfront-page">
       <header className="waterfront-header">
-        <Link href="/" aria-label="Miami New Development home">
-          <Image src="/images/logo.png" alt="Miami New Development" width={220} height={58} priority className="site-logo h-auto w-[92px]" />
-        </Link>
-        <nav className="waterfront-nav" aria-label="Primary">
-          <Link href="/map">Explore Map</Link>
-          <Link href="/neighborhood">Neighborhoods</Link>
-          <Link className="waterfront-nav-active" href="/waterfront">
-            Waterfront Estates
+        <div className="site-header-inner">
+          <Link href="/" aria-label="Miami New Development home" className="brand">
+            <Image src="/images/logo.png" alt="Miami New Development" width={220} height={58} priority className="site-logo h-auto w-[52px]" />
           </Link>
-          <Link href="/insights">Insights</Link>
-          <button type="button" className="waterfront-nav-trigger" onClick={() => openInquiry("Waterfront Estates")}>
-            Inquire
-          </button>
-        </nav>
+          <nav className="waterfront-nav" aria-label="Primary">
+            <Link href="/map">Explore Map</Link>
+            <Link href="/neighborhood">Neighborhoods</Link>
+            <Link className="waterfront-nav-active" href="/waterfront">
+              Waterfront Estates
+            </Link>
+            <Link href="/insights">Insights</Link>
+            <button type="button" className="nav-inquire-btn" onClick={() => openInquiry("Waterfront Estates")}>
+              Inquire
+            </button>
+          </nav>
+        </div>
       </header>
 
       <section className="waterfront-intro">

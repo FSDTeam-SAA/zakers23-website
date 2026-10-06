@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import projectsRaw from "@/src/data/miami-projects.json";
+import { handleImageError } from "@/src/lib/image-utils";
 
 type DiscoveryProject = {
   id: number;
@@ -339,6 +340,7 @@ export function DiscoveryEngineSection({
                     src={imageUrl(project.img)}
                     alt={project.name}
                     className="match-thumb-image"
+                    onError={handleImageError}
                   />
                 </div>
                 <div className="match-copy">
