@@ -24,20 +24,24 @@ export function SiteFooter() {
           <div>
             <h4 className="mb-5 text-[12px] uppercase tracking-[0.32em] text-[#d2b072]">Contact</h4>
             <div className="space-y-3 text-[14px] leading-[1.45] text-[#596071]">
-              <a className="block transition-colors duration-200 hover:text-[#d2b072]" href="tel:7864758134">
-                786-475-8134
+              <a className="block transition-colors duration-200 hover:text-[#d2b072]" href="tel:3053435371">
+                (305) 343-5371
               </a>
               <a
                 className="block transition-colors duration-200 hover:text-[#d2b072]"
-                href="mailto:zakers@me.com"
+                href="mailto:Zakers@onesothebysrealty.com"
               >
-                zakers@me.com
+                Zakers@onesothebysrealty.com
               </a>
               <a
-                className="block transition-colors duration-200 hover:text-[#d2b072]"
-                href="https://www.instagram.com/frasermiami/"
+                className="inline-flex items-center gap-1.5 transition-colors duration-200 hover:underline"
+                style={{ color: "#25D366" }}
+                href="https://wa.me/13053435371?text=Hi%20Zachary%2C%20I%27d%20like%20to%20connect%20regarding%20Miami%20luxury%20real%20estate."
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                IG: @frasermiami
+                <span>💬</span>
+                WhatsApp: +1 305-343-5371
               </a>
             </div>
           </div>

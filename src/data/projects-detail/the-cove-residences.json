@@ -1,0 +1,339 @@
+{
+  "address": "456 NE 29th Street, Miami, FL 33137",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Bayfront Infinity Pool",
+      "sub": "Resort-style pool deck with private cabanas",
+      "img": "https://frasermiami.s3.amazonaws.com/cove-miami/infinity-pool.webp"
+    },
+    {
+      "icon": "🧖",
+      "label": "Tranquility Spa",
+      "sub": "Cold plunge, hammam, sauna, massage rooms"
+    },
+    {
+      "icon": "🏋",
+      "label": "Fitness Center",
+      "sub": "Spin auditorium and dedicated yoga room"
+    },
+    {
+      "icon": "🧘",
+      "label": "Meditation & Zen Garden",
+      "sub": "Outdoor, on the bay side of the podium"
+    },
+    {
+      "icon": "⚓",
+      "label": "Dock & Baywalk Access",
+      "sub": "Water-sports dock, direct baywalk connection"
+    },
+    {
+      "icon": "🍽",
+      "label": "Waterside Restaurant",
+      "sub": "Plus private dining room with chef's kitchen"
+    },
+    {
+      "icon": "🎬",
+      "label": "Theater & Performance Room",
+      "sub": "Game and billiards room adjoining"
+    },
+    {
+      "icon": "💼",
+      "label": "Business Center",
+      "sub": "Co-working, conference rooms, private offices with terrace"
+    },
+    {
+      "icon": "🍷",
+      "label": "Owner's Lounge",
+      "sub": "Wine storage and children's playroom"
+    },
+    {
+      "icon": "🐕",
+      "label": "Pet Spa",
+      "sub": "Plus guest suite, cold storage and storage lockers"
+    }
+  ],
+  "amenitiesDescription": "<p>Days start and end at the water. A resort-style infinity pool sits on the bay with private cabanas, next to a spa with cold plunge, hammam, sauna, and massage rooms, plus a fitness center with a spin auditorium, a yoga room, and an outdoor meditation garden.</p><p>The owner's lounge has wine storage. There is a theater, a game and billiards room, a children's playroom, and a private dining room with a chef's kitchen. A waterside restaurant sits at ground level, with an attended lobby and lounge behind it.</p><p>Work stays in the building: a business center with co-working, reception, and conference rooms, and private offices with their own terrace, available for purchase from 202 SF, from $155,000. Rooftop summer kitchens, a guest suite, pet spa, storage lockers, and cold storage round out the program. Poolside cabanas are available from 162 SF, from $160,000. Valet parking includes EV charging. A dock for water sports and direct baywalk access put the bay in daily use.</p>",
+  "architect": "Kobi Karp Architecture",
+  "avgPsf": "$916–$1,301",
+  "badge": "BAYFRONT EDGEWATER · FROM $795K",
+  "completion": "Q2/Q3 2028",
+  "ctaMicrocopy": "Under construction · Delivery Q2/Q3 2028 · From $795,000",
+  "densityScore": 45,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "90 days after contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Top-off (est. Q2/Q3 2027)"
+    },
+    {
+      "percentage": 60,
+      "milestone": "Closing (est. Q2/Q3 2028)"
+    }
+  ],
+  "description": "134 bayfront residences at 456 NE 29th Street in Edgewater. Forty stories by Kobi Karp with Dieguez Fridman interiors, an infinity pool on the water, and a dock for water sports. From $795K. Delivery 2028.",
+  "developer": "SB Development Group · Hazelton Capital Group",
+  "discoveryEngine": {
+    "lifestyle": [
+      "waterfront",
+      "walkable",
+      "wellness",
+      "design-forward",
+      "urban-core"
+    ],
+    "investmentProfile": [
+      "under-construction",
+      "accessible-luxury",
+      "waterfront-scarcity",
+      "pre-delivery-appreciation"
+    ],
+    "priceCategory": "luxury",
+    "vibeMatch": [
+      "quiet-luxury",
+      "serene",
+      "wellness-forward",
+      "contemporary"
+    ],
+    "goodFor": [
+      "primary-residence",
+      "second-home",
+      "pied-a-terre",
+      "end-user",
+      "international-buyer",
+      "investor"
+    ]
+  },
+  "dossierImageIndices": {
+    "amenities": 1,
+    "interstitials": [
+      5,
+      6,
+      7
+    ]
+  },
+  "editorialLine": "The terrace meets the bay.",
+  "faq": [
+    {
+      "question": "What are The Cove Residences prices and floor plans?",
+      "answer": "Released pricing runs from $795,000 for Residence H, an 868 SF one-bedroom + den, to $3,595,000 for Residences E and F, 2,763 SF four-bedroom + den plans on floors 34 through 40. Two-bedroom plans start at $1,195,000 (1,231 SF) and three-bedroom plans at $2,300,000 (2,304 SF). Private poolside cabanas from 162 SF start at $160,000 and private offices from 202 SF at $155,000."
+    },
+    {
+      "question": "Is The Cove Residences on the water?",
+      "answer": "Yes. The tower sits roughly 25 feet back from the seawall on Biscayne Bay at 456 NE 29th Street, with direct baywalk access, park and water frontage, and a dock for water sports. Most residences carry a south exposure across the bay."
+    },
+    {
+      "question": "When is estimated completion?",
+      "answer": "Q2/Q3 2028. The project broke ground in March 2026 on a $170 million construction loan from Bravo Property Trust and IDB, with Kaufman Lynn Construction as general contractor."
+    },
+    {
+      "question": "What is the deposit structure?",
+      "answer": "20% at contract, 10% 90 days after contract, 10% at top-off (estimated Q2/Q3 2027), and 60% at closing (estimated Q2/Q3 2028). Request the current purchase agreement for the exact dates."
+    },
+    {
+      "question": "Who is the developer and architect?",
+      "answer": "Developed by SB Development Group with Hazelton Capital Group. Kobi Karp Architecture is the architect, with interiors by Dieguez Fridman Design and Kaufman Lynn Construction as general contractor."
+    }
+  ],
+  "floorPlans": [
+    {
+      "type": "Residence H",
+      "floors": "South · Floors 8–23",
+      "addlRooms": "70 SF Exterior",
+      "beds": "1 bd + den",
+      "baths": 1,
+      "sqft": "868 SF",
+      "status": "Available",
+      "startingPrice": 795000
+    },
+    {
+      "type": "Residence G",
+      "floors": "North-South-West · Floors 8–23",
+      "addlRooms": "145 SF Exterior",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "1,231 SF",
+      "status": "Available",
+      "startingPrice": 1195000
+    },
+    {
+      "type": "Residence C",
+      "floors": "South · Floors 9–33",
+      "addlRooms": "125 SF Exterior",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,331 SF",
+      "status": "Available",
+      "startingPrice": 1335000
+    },
+    {
+      "type": "Residence B",
+      "floors": "South · Floors 9–33",
+      "addlRooms": "132 SF Exterior",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,472 SF",
+      "status": "Available",
+      "startingPrice": 1395000
+    },
+    {
+      "type": "Residence D",
+      "floors": "North-South-East · Floors 9–39",
+      "addlRooms": "397 SF Exterior",
+      "beds": "3 bd + den",
+      "baths": 3.5,
+      "sqft": "2,304 SF",
+      "status": "Available",
+      "startingPrice": 2300000
+    },
+    {
+      "type": "Residence A",
+      "floors": "North-South-West · Floors 24–39",
+      "addlRooms": "215 SF Exterior",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,142 SF",
+      "status": "Available",
+      "startingPrice": 2495000
+    },
+    {
+      "type": "Residence F",
+      "floors": "Floor 40",
+      "addlRooms": "303 SF Exterior",
+      "beds": "4 bd + den",
+      "baths": 4.5,
+      "sqft": "2,763 SF",
+      "status": "Available",
+      "startingPrice": 3595000
+    },
+    {
+      "type": "Residence E",
+      "floors": "South · Floors 34–39",
+      "addlRooms": "301 SF Exterior",
+      "beds": "4 bd + den",
+      "baths": 4.5,
+      "sqft": "2,763 SF",
+      "status": "Available",
+      "startingPrice": 3595000
+    }
+  ],
+  "floorPlansDefaultVisible": 5,
+  "generalContractor": "Kaufman Lynn Construction",
+  "height": "40 Stories",
+  "heroImgPosition": "center 55%",
+  "hoa": "~$1.35 / sq ft",
+  "id": 59,
+  "img": "https://frasermiami.s3.amazonaws.com/cove-miami/bayfront-sunset.webp",
+  "imgCaptions": {
+    "5": {
+      "kicker": "The Terrace",
+      "line": "Fully tiled balconies with glass railings, reached from the living room and the primary bedroom of every residence."
+    },
+    "6": {
+      "kicker": "Forty Stories",
+      "line": "Ceilings open to 11'10\" on floor 33 and 11'2\" on floor 40, above a podium that steps down to the baywalk."
+    },
+    "7": {
+      "kicker": "456 NE 29th Street",
+      "line": "Park and water in front. Wynwood, the Design District, and Downtown on foot."
+    }
+  },
+  "imgPositions": {
+    "6": "center 40%"
+  },
+  "imgPositionsMobile": {
+    "0": "center 60%"
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/cove-miami/bayfront-sunset.webp",
+    "https://frasermiami.s3.amazonaws.com/cove-miami/infinity-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/cove-miami/entrance.webp",
+    "https://frasermiami.s3.amazonaws.com/cove-miami/kitchen-living.webp",
+    "https://frasermiami.s3.amazonaws.com/cove-miami/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/cove-miami/terrace-bay-view.webp",
+    "https://frasermiami.s3.amazonaws.com/cove-miami/hero-tower-sunset.webp",
+    "https://frasermiami.s3.amazonaws.com/cove-miami/location-map.webp"
+  ],
+  "inquiryButtonLabel": "Request Pricing & Availability",
+  "inquirySubject": "Inquiry: The Cove Residences - Pricing Request",
+  "interiorDesigner": "Dieguez Fridman Design",
+  "investmentThesis": "<p>This is one of the last full-height towers on the Edgewater seawall between the Venetian and Julia Tuttle causeways. Aria Reserve, Villa Miami, and Cove account for most of what remains on the water. Parcels behind them are inland by definition. Cove holds 134 homes over 40 floors, the lowest count of the three on a tower of this height.</p><p>Released pricing starts at $795,000 for an 868 SF one-bedroom with den and runs to $3,595,000 for a 2,763 SF four-bedroom with den, roughly $916 to $1,301 per foot. Edgewater's Q2 2025 median condo trade sat near $1.575M. Branded bayfront towers immediately north and south of this parcel clear well above $1,300 per foot. You are buying bayfront product at an inland Edgewater basis.</p><p>SB Development Group and Hazelton Capital Group closed $170 million in construction financing from Bravo Property Trust and IDB and broke ground in March 2026. Kaufman Lynn Construction is the general contractor. Delivery is 2028. Kobi Karp Architecture and Dieguez Fridman Design are Miami practices with delivered towers. A 2026 contract on a 2028 closing underwrites about two years of Edgewater absorption at a per-foot basis set before the tower had a foundation.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "134",
+      "label": "Residences across 40 stories",
+      "note": "Roughly 3.4 homes per floor. Low density for a full-height Edgewater tower"
+    },
+    {
+      "value": "25 ft",
+      "label": "From the seawall",
+      "note": "Direct Biscayne Bay frontage with baywalk access and a dock for water sports"
+    },
+    {
+      "value": "$170M",
+      "label": "Construction loan closed",
+      "note": "Bravo Property Trust and IDB. The project broke ground in March 2026"
+    },
+    {
+      "value": "$916",
+      "label": "Per SF at the entry plan",
+      "note": "868 SF one-bedroom + den at $795,000, well inside the bayfront comp set"
+    }
+  ],
+  "lat": 25.8042103,
+  "lng": -80.18712,
+  "maxBath": 4.5,
+  "maxBed": 4,
+  "maxPrice": 3595000,
+  "maxSqft": 2763,
+  "minBath": 1,
+  "minBed": 1,
+  "minPrice": 795000,
+  "minSqft": 868,
+  "name": "The Cove Residences",
+  "neighborhood": "Edgewater",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=25.8042103,-80.18712"
+  },
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/the-cove-residences.jpg",
+  "parking": "In-building garage · valet with EV charging capability",
+  "petsAllowed": true,
+  "priceFrom": "$795K+",
+  "primaryCtaModal": "floors",
+  "privacyScore": 72,
+  "projectedAppreciation": 30,
+  "rentalPolicy": "1-month minimum, up to 12 rentals per year",
+  "residenceContent": "<p class=\"prop-residence-intro\">Forty stories stand twenty-five feet back from the Biscayne Bay seawall at 456 NE 29th Street, on a block that ends at the water with a park along one flank and open bay on the other. Wynwood, the Design District, and Downtown are within a walk, close enough to use and far enough that the city reads as a skyline rather than a neighbor.</p><p>Plans run from an 868 SF one-bedroom with den to 2,763 SF four-bedroom-plus-den layouts on floors 34 through 40, with two- and three-bedroom plates in between. Stacks take south, north-south-west, or north-south-east exposures. Ceilings hold 9'4\" through the tower and open to 11'10\" on floor 33 and 11'2\" on floor 40. Every residence has floor-to-ceiling impact glass and a fully tiled balcony with glass railings, reached from both the living room and the primary bedroom, running past 40 feet of frontage on the largest plans.</p><p>Dieguez Fridman kept the interiors material-led. Large-format ceramic tile runs through the living areas and bedrooms. Kitchens pair Calacatta Gold counters and matching backsplash with Bosch and Thermador appliances, including a black stainless combination oven and an induction cooktop, and wine coolers appear in select homes. Primary bathrooms set double stone vanities against Calacatta Gold wet walls. Laundry is full-size in every plan but the one-bedroom, which takes a stacked pair.</p>",
+  "salesTeam": "Fraser Miami Private Advisory",
+  "secondaryDownloadLabel": "Get the Floor Plans",
+  "seoKeywords": [
+    "The Cove Residences",
+    "Cove Miami condos",
+    "The Cove Residences Edgewater",
+    "456 NE 29th Street Miami",
+    "The Cove Residences pricing",
+    "The Cove Residences floor plans",
+    "Edgewater bayfront pre-construction condos",
+    "Kobi Karp Edgewater tower",
+    "Dieguez Fridman Miami interiors",
+    "SB Development Hazelton Capital Miami",
+    "Edgewater new construction 2028"
+  ],
+  "slug": "the-cove-residences",
+  "sqftRange": "868 – 2,763 SF interior",
+  "stage": "under_construction",
+  "stageLabel": "Broke Ground March 2026 · Delivery Q2/Q3 2028",
+  "statusRemark": "UNDER CONSTRUCTION · $170M CONSTRUCTION LOAN · DELIVERY 2028",
+  "stories": 40,
+  "tagline": "One hundred thirty-four homes, twenty-five feet from the Edgewater seawall.",
+  "units": 134,
+  "wellnessScore": 88
+}

@@ -1,0 +1,295 @@
+{
+  "address": "1755 John F Kennedy Causeway, Miami, FL 33141",
+  "amenities": [
+    {
+      "icon": "🍽",
+      "label": "Waterfront Restaurant",
+      "sub": "In-residence dining"
+    },
+    {
+      "icon": "🏊",
+      "label": "Two Pools + Jacuzzi",
+      "sub": "Bayfront plunge"
+    },
+    {
+      "icon": "⛵",
+      "label": "20-Slip Marina",
+      "sub": "Boat pickup/drop-off"
+    },
+    {
+      "icon": "💆",
+      "label": "Spa & Cryotherapy",
+      "sub": "Infrared sauna"
+    },
+    {
+      "icon": "🏋",
+      "label": "Fitness & Yoga",
+      "sub": "3,500 SF waterfront"
+    },
+    {
+      "icon": "🐕",
+      "label": "Dog Spa & Park",
+      "sub": "Indoor + outdoor"
+    }
+  ],
+  "amenitiesDescription": "<p>Over 60,000 square feet of amenities anchored by a destination waterfront restaurant with indoor/outdoor dining, resident charging privileges, private event catering, and in-residence and poolside dining on weekends. The Continuum Marketplace is restocked daily with wine and snacks. The pool level features a waterfront resort pool with cabana seating overlooking Indian Creek, a garden sunpool, and a bayfront jacuzzi plunge nestled in lush landscaping by Martha Schwartz Partners.</p><p>A private yacht club and watersports dock with paddleboards and kayaks connect residents directly to Biscayne Bay. The wellness program includes a state-of-the-art 3,500 SF fitness center, yoga and movement studio, and a full-service spa with cryotherapy chamber, infrared sauna, steam room, and private treatment rooms. Social spaces include a 6,000 SF rooftop sundeck with adult pool, soaking spa, and outdoor bar, a waterfront boardroom with A/V, an executive co-working lounge, and outdoor garden cabanas with WiFi. The Island Walk — a landscaped waterfront promenade — frames the entire bayfront edge. Family amenities include a children's art zone and playroom, outdoor splash pad, arcade and virtual lounge, and an outdoor glamping retreat. Pet amenities include an indoor dog wash and spa, indoor Companions Lounge, and a covered outdoor dog park. Building services include a Tesla house car, 24/7 concierge and valet, secured e-bike storage, and a Resident App for amenity bookings, concierge requests, and package management.</p>",
+  "architect": "Arquitectonica",
+  "completion": "Early 2028",
+  "densityScore": 55,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "In 120 Days"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top-Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing (Q1 2028)"
+    }
+  ],
+  "description": "Phase One of the Continuum Waterfront District. A 36-story Arquitectonica tower on Biscayne Bay in North Bay Village — 198 residences with wraparound terraces, over 60,000 SF of resort amenities, a waterfront restaurant, private yacht club membership, VIP beach club access, and Dorsia Premium Membership included at contract signing. Delivery Q1 2028.",
+  "developer": "Continuum Company & Aksoy Holdings",
+  "floorPlans": [
+    {
+      "type": "Residence 01",
+      "addlRooms": "1,000 SF Terrace",
+      "beds": "3",
+      "baths": "3.5",
+      "sqft": "2,080 SF Interior",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 02",
+      "addlRooms": "281 SF Terrace",
+      "beds": "2",
+      "baths": "2.5",
+      "sqft": "1,524 SF Interior",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 03",
+      "addlRooms": "272 SF Terrace",
+      "beds": "2 + Den",
+      "baths": "2.5",
+      "sqft": "1,600 SF Interior",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 04",
+      "addlRooms": "723 SF Terrace",
+      "beds": "3",
+      "baths": "3.5",
+      "sqft": "1,958 SF Interior",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 05",
+      "addlRooms": "616 SF Terrace",
+      "beds": "2",
+      "baths": "2.5",
+      "sqft": "1,370 SF Interior",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 06",
+      "addlRooms": "324 SF Terrace",
+      "beds": "2",
+      "baths": "2.5",
+      "sqft": "1,275 SF Interior",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 07",
+      "addlRooms": "325 SF Terrace",
+      "beds": "1 + Den",
+      "baths": "2",
+      "sqft": "915 SF Interior",
+      "status": "Inquire"
+    }
+  ],
+  "height": "36 Stories",
+  "heroImgPosition": "center 72%",
+  "hoa": "TBA",
+  "id": 23,
+  "img": "https://frasermiami.s3.amazonaws.com/continuumclub/aerial-hero.webp",
+  "imgPositionsMobile": {
+    "0": "center 78%"
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/continuumclub/aerial-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/entrance.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/boardwalk.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/property-lobby-exterior.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/property-lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/property-lobby-interior.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/pool2.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/dining-roof.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/property-waterfront-restaurant-outdoor.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/residences-cinematic-views.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/residences-living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/residences-primary-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/residences-primary-bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/continuumclub/residences-terraces.webp"
+  ],
+  "interiorDesigner": "Durukan Design",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$350M",
+        "label": "S3 Capital financing closed (May 2026)",
+        "note": "$261M construction loan for Phase One (this tower) + $83M predevelopment loan for Phase Two — institutional capital de-risks the path to delivery"
+      },
+      {
+        "value": "$940K+",
+        "label": "Starting price — rare sub-$1M waterfront entry",
+        "note": "236 residences from 1–4 bedrooms; 800–4,000 SF with wraparound terraces across 36 stories"
+      },
+      {
+        "value": "~50%",
+        "label": "Sold under contract",
+        "note": "Approximately half of the 236 residences absorbed before delivery — strong velocity for a non-branded, non-beach project"
+      },
+      {
+        "value": "60,000+ SF",
+        "label": "Resort amenities + 20-slip marina",
+        "note": "Waterfront restaurant, two pools, district marina, Tesla house car, watersports dock, spa with cryotherapy"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "Institutional capital across both phases",
+        "body": "Continuum Company and Aksoy Holding secured S3 Capital funding across both phases in May 2026 — institutional capital at a scale that materially de-risks delivery."
+      },
+      {
+        "pill": "Master plan",
+        "pillColor": "gold",
+        "title": "Phase One of the 4-acre Continuum Waterfront District",
+        "body": "Continuum Club is Phase One of a 4-acre district approved in 2025 after a ~$108.5M assemblage. Phase Two at 1819 JFK Causeway is planned as a separate ~300-unit condo plus a 96-room hotel and 114 furnished residences."
+      },
+      {
+        "pill": "Value thesis",
+        "pillColor": "gold",
+        "title": "Bayfront living at 40–50% below Miami Beach pricing",
+        "body": "North Bay Village offers Biscayne Bay waterfront access between Miami and Miami Beach at materially lower basis than Miami Beach. The value gap widens as beach and Edgewater pricing reset higher."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "Continuum Company & Aksoy Holdings — proven waterfront operators",
+        "body": "Continuum Company follows its South Beach flagship with Aksoy Holdings as capital partner. Arquitectonica, Durukan Design, and Martha Schwartz Partners complete a team with proven Miami waterfront execution."
+      },
+      {
+        "pill": "Lifestyle",
+        "pillColor": "gold",
+        "title": "Full resort program — restaurant, marina, watersports",
+        "body": "At sub-$1M entry pricing, a full resort-grade amenity stack like this is difficult to replicate anywhere in core Miami's bayfront submarkets."
+      },
+      {
+        "pill": "Emerging location",
+        "pillColor": "gray",
+        "title": "North Bay Village — early-cycle repositioning opportunity",
+        "body": "North Bay Village is in an early repricing cycle along the Miami-Miami Beach connector. As one of the first luxury launches in the district, Continuum helps establish future comp ceilings instead of buying at mature-cycle pricing."
+      }
+    ],
+    "thesis": "Continuum Club & Residences West is the value play of the current cycle: a full-amenity waterfront building with Sub-Zero/Wolf kitchens, 20-slip district marina, and resort-level lifestyle at a starting price under $1M. North Bay Village's bayfront location between Miami and Miami Beach has been undervalued for decades, and the master-planned Continuum Waterfront District is the first project positioned to change that. With approximately half of 236 residences under contract and a $350 million S3 Capital financing package closed in May 2026 ($261M construction + $83M Phase Two predevelopment), the market and institutional capital have both validated the thesis. For buyers priced out of Miami Beach or Brickell waterfront but unwilling to compromise on views and lifestyle, this is the answer.",
+    "footnote": "HOA: TBA · Rental policy: Inquire · Delivery: Early 2028"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$350M",
+        "label": "S3 Capital financing closed (May 2026)",
+        "note": "$261M construction loan for Phase One (this tower) + $83M predevelopment loan for Phase Two — institutional capital de-risks the path to delivery"
+      },
+      {
+        "value": "$940K+",
+        "label": "Starting price — rare sub-$1M waterfront entry",
+        "note": "236 residences from 1–4 bedrooms; 800–4,000 SF with wraparound terraces across 36 stories"
+      },
+      {
+        "value": "~50%",
+        "label": "Sold under contract",
+        "note": "Approximately half of the 236 residences absorbed before delivery — strong velocity for a non-branded, non-beach project"
+      },
+      {
+        "value": "60,000+ SF",
+        "label": "Resort amenities + 20-slip marina",
+        "note": "Waterfront restaurant, two pools, district marina, Tesla house car, watersports dock, spa with cryotherapy"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "Institutional capital across both phases",
+        "body": "Continuum Company and Aksoy Holding secured S3 Capital funding across both phases in May 2026 — institutional capital at a scale that materially de-risks delivery."
+      },
+      {
+        "pill": "Master plan",
+        "pillColor": "gold",
+        "title": "Phase One of the 4-acre Continuum Waterfront District",
+        "body": "Continuum Club is Phase One of a 4-acre district approved in 2025 after a ~$108.5M assemblage. Phase Two at 1819 JFK Causeway is planned as a separate ~300-unit condo plus a 96-room hotel and 114 furnished residences."
+      },
+      {
+        "pill": "Value thesis",
+        "pillColor": "gold",
+        "title": "Bayfront living at 40–50% below Miami Beach pricing",
+        "body": "North Bay Village offers Biscayne Bay waterfront access between Miami and Miami Beach at materially lower basis than Miami Beach. The value gap widens as beach and Edgewater pricing reset higher."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "Continuum Company & Aksoy Holdings — proven waterfront operators",
+        "body": "Continuum Company follows its South Beach flagship with Aksoy Holdings as capital partner. Arquitectonica, Durukan Design, and Martha Schwartz Partners complete a team with proven Miami waterfront execution."
+      },
+      {
+        "pill": "Lifestyle",
+        "pillColor": "gold",
+        "title": "Full resort program — restaurant, marina, watersports",
+        "body": "At sub-$1M entry pricing, a full resort-grade amenity stack like this is difficult to replicate anywhere in core Miami's bayfront submarkets."
+      },
+      {
+        "pill": "Emerging location",
+        "pillColor": "gray",
+        "title": "North Bay Village — early-cycle repositioning opportunity",
+        "body": "North Bay Village is in an early repricing cycle along the Miami-Miami Beach connector. As one of the first luxury launches in the district, Continuum helps establish future comp ceilings instead of buying at mature-cycle pricing."
+      }
+    ],
+    "thesis": "Continuum Club & Residences West is the value play of the current cycle: a full-amenity waterfront building with Sub-Zero/Wolf kitchens, 20-slip district marina, and resort-level lifestyle at a starting price under $1M. North Bay Village's bayfront location between Miami and Miami Beach has been undervalued for decades, and the master-planned Continuum Waterfront District is the first project positioned to change that. With approximately half of 236 residences under contract and a $350 million S3 Capital financing package closed in May 2026 ($261M construction + $83M Phase Two predevelopment), the market and institutional capital have both validated the thesis. For buyers priced out of Miami Beach or Brickell waterfront but unwilling to compromise on views and lifestyle, this is the answer.",
+    "footnote": "HOA: TBA · Rental policy: Inquire · Delivery: Early 2028"
+  },
+  "investmentThesis": "<p>Phase One of the master-planned Continuum Waterfront District — a 4-acre Biscayne Bay assemblage acquired for approximately $108.5 million between 2023 and 2024, approved under a North Bay Village special area plan in 2025. In May 2026, Continuum Company and Aksoy Holdings closed a $350 million S3 Capital financing package: $261 million in construction financing for this tower and $83 million in predevelopment financing for Phase Two (Continuum Club & Residences East at 1819 JFK Causeway) — a separate ~300-unit condominium with a 96-room hotel and 114 furnished hotel residences targeted for 2030. KAST Construction is the general contractor.</p><p>The first luxury branded condo in North Bay Village since its 2020 rezoning, and the second Continuum-branded project following Continuum South Beach — one of the most appreciating residential addresses in Miami. North Bay Village sits at the intersection of only three roadways connecting Miami and Miami Beach, placing residents within 5 minutes of the beach and 15 minutes of the Design District, Bal Harbour Shops, and top-rated private schools. The island is undergoing approximately $2 billion in new investment. At contract signing, buyers receive a Private Yacht Club Membership (fleet of 50'–100' yachts, three half-day excursions included, priority weekend booking), VIP Beach Club Membership with access at Ocean Terrace Beach Club, Collins Park, and South of Fifth, and a Dorsia Premium Membership for priority reservations at the world's most sought-after restaurants across 20+ global markets.</p>",
+  "isActive": true,
+  "landscapeArchitect": "Martha Schwartz Partners",
+  "lat": 25.8492,
+  "lng": -80.1492,
+  "maxBed": 4,
+  "maxPrice": 6000000,
+  "maxSqft": 4000,
+  "minBed": 1,
+  "minPrice": 940000,
+  "minSqft": 800,
+  "name": "Continuum Club & Residences",
+  "neighborhood": "North Bay Village",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/continuum-club-residences.jpg",
+  "percentSold": 50,
+  "priceFrom": "$940K+",
+  "privacyScore": 65,
+  "projectedAppreciation": 28,
+  "residenceContent": "<p class=\"prop-residence-intro\">Four collections — Bay Lofts, Tower Residences, Sky Residences, and Penthouses — oriented along the curvilinear Arquitectonica facade to maximize sunrise-to-sunset water exposure from every home. Ceiling heights range from 9 to 14 feet, with floor-to-ceiling impact-resistant glass opening to private wraparound terraces overlooking Biscayne Bay, Indian Creek, and the Downtown Miami skyline.</p><p>Kitchens feature Sub-Zero and Wolf integrated appliance packages — electric cooktop, wall oven, dishwasher, refrigerator, microwave, and wine fridge in select residences — alongside custom European cabinetry, quartz countertops, and waterfall-edge culinary islands. Primary bathrooms are marble-clad with five-fixture layouts, dual rainfall showerheads, arched double-sink vanities with Dornbracht fittings, and glass-enclosed wet rooms with bay views in select homes. Every residence includes an in-unit laundry room with full-size washer and dryer, double walk-in closets in all primary bedrooms, and wide-plank European wood flooring throughout living areas.</p>",
+  "slug": "continuum-club-residences",
+  "stage": "under_construction",
+  "statusRemark": "~50% SOLD · UNDER CONSTRUCTION · $350M FINANCING CLOSED MAY 2026",
+  "units": 198,
+  "wellnessScore": 80
+}

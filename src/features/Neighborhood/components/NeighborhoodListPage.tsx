@@ -97,7 +97,7 @@ export default function NeighborhoodListPage() {
                 ))}
               </div>
             </div>
-            <Link href="/waterfront">Waterfront Estates</Link>
+            <Link href="/waterfront">Waterfront Homes</Link>
             <Link href="/insights">Insights</Link>
             <a
               href="/#contact"

@@ -1,0 +1,183 @@
+{
+  "address": "2835 Tigertail Avenue, Coconut Grove, FL 33133",
+  "amenitiesDescription": "<p>THE WELL Coconut Grove delivers two distinct amenity tiers — one exclusively for residents, one shared with THE WELL Club members — anchored by a 40,000 SF rooftop wellness oasis and a 13,000 SF ground-level Wellness Club. The rooftop features two pools, a hot and cold plunge, private cabanas, a Fitness Forest, pickleball court, and an outdoor dining terrace. The Wellness Club includes a state-of-the-art fitness center, a mindful movement studio with aerial yoga and a healing gong wall, a communal bathhouse with steam, sauna, cold plunge, and caldarium, hyperbaric chambers, a crystal cave relaxation lounge, and private treatment rooms.</p><p>The resident-exclusive Conservatory — a double-height glass indoor-outdoor space — overlooks the tea garden with a reflection pond and hosts co-working, IV therapy, and a Shiftwave Recovery Chair. Additional programming includes bi-annual health coaching, annual whole-person health assessments, THE WELL Locker (Theragun, infrared blankets, lymph boots, FaceWare Pro), an aperitif bar, and an energy-clearing ceremony for every new residence upon move-in.</p>",
+  "architect": "Arquitectonica",
+  "completion": "Q4 2028",
+  "constructionPct": 12,
+  "densityScore": 40,
+  "description": "Miami's first WELL-branded residential community. 194 residences in Coconut Grove by Terra, Arquitectonica, and Meyer Davis. 40,000 SF rooftop wellness oasis. From $1.5M.",
+  "developer": "Terra & AB Asset Management",
+  "featureVideo": {
+    "src": "/thewellcg/the-well-video.mp4",
+    "poster": "/thewellcg/the-well-video-poster.webp",
+    "label": "The Wellness Sanctuary",
+    "tagline": "Wellness lives here. Whole-person care built into everyday Grove living.",
+    "uploadDate": "2026-09-06",
+    "duration": "PT2M39S"
+  },
+  "featureVideoPlacement": "top",
+  "height": "8 Stories",
+  "hoa": "Approximately $2.19 / sq ft",
+  "id": 21,
+  "img": "https://frasermiami.s3.amazonaws.com/thewellcg/hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/thewellcg/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/exterior-street.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/building.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/amenities-1.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/amenities-2.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/amenities-11.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/amenities-12.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/amenities-14.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/interior-29.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/interior-26.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/interior-21.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/interior-17.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/interior-12.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/interior-10.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/interior-6.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/interior-4.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/interior-3.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/interior-1.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/interior-0.webp",
+    "https://frasermiami.s3.amazonaws.com/thewellcg/hummingbird.webp"
+  ],
+  "inquiryButtonLabel": "Request Pricing & Floor Plans",
+  "inquirySubject": "Inquiry: THE WELL Coconut Grove - Private Inventory Request",
+  "interiorDesigner": "Meyer Davis",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+28%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Coconut Grove luxury condo trajectory (Park Grove, Grove at Grand Bay comps)"
+      },
+      {
+        "value": "$1,600+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. ~$1,100–1,400/sqft Grove luxury resale avg"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Wellness-branded residences command equivalent premium to hotel brands (Knight Frank)"
+      },
+      {
+        "value": "Near zero",
+        "label": "New condo supply in Coconut Grove",
+        "note": "The Well is the only new luxury condo in the Grove pipeline — extreme supply scarcity"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Category first",
+        "pillColor": "gold",
+        "title": "The Well — wellness brand's first residential venture",
+        "body": "The Well operates acclaimed wellness clubs in NYC, Bridgehampton, and globally. This is the brand's first residential address. Wellness-branded properties have emerged as the most differentiated new category in Miami luxury real estate."
+      },
+      {
+        "pill": "Supply scarcity",
+        "pillColor": "gold",
+        "title": "Only new luxury condo launching in Coconut Grove",
+        "body": "At Park Grove and Grove at Grand Bay, owners routinely decline offers 30–40% above purchase price — and with no competing new supply, The Well enters a market primed for absorption."
+      },
+      {
+        "pill": "Neighborhood",
+        "pillColor": "gold",
+        "title": "Coconut Grove: Miami's most resilient luxury micro-market",
+        "body": "Grove luxury condos appreciate steadily even in down years for the broader Miami market. The buyer base is primarily end-users — families, primary residents — not investors, which means lower inventory volatility and stronger price support."
+      },
+      {
+        "pill": "Lifestyle",
+        "pillColor": "gray",
+        "title": "Full wellness programming included for residents",
+        "body": "Medical wellness, spa, fitness, nutrition, and recovery programming built into the residential offering. This model commands premium rents from health-conscious long-term tenants and premium prices from buyers who live the wellness lifestyle."
+      }
+    ],
+    "thesis": "The Well enters the most supply-constrained neighborhood in Miami with a brand story that resonates precisely with the buyer demographic that calls Coconut Grove home. Grove buyers are primary-residence purchasers — they hold, they don't flip — which is why Park Grove resale prices reached 100% above original developer pricing. The Well's wellness differentiation creates a moat within this already moat-protected market.",
+    "footnote": "HOA: ~$2.19/sq ft · Rental policy: Min 30-day · Delivery: Q1 2028"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+28%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Coconut Grove luxury condo trajectory (Park Grove, Grove at Grand Bay comps)"
+      },
+      {
+        "value": "$1,600+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. ~$1,100–1,400/sqft Grove luxury resale avg"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Wellness-branded residences command equivalent premium to hotel brands (Knight Frank)"
+      },
+      {
+        "value": "Near zero",
+        "label": "New condo supply in Coconut Grove",
+        "note": "The Well is the only new luxury condo in the Grove pipeline — extreme supply scarcity"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Category first",
+        "pillColor": "gold",
+        "title": "The Well — wellness brand's first residential venture",
+        "body": "The Well operates acclaimed wellness clubs in NYC, Bridgehampton, and globally. This is the brand's first residential address. Wellness-branded properties have emerged as the most differentiated new category in Miami luxury real estate."
+      },
+      {
+        "pill": "Supply scarcity",
+        "pillColor": "gold",
+        "title": "Only new luxury condo launching in Coconut Grove",
+        "body": "At Park Grove and Grove at Grand Bay, owners routinely decline offers 30–40% above purchase price — and with no competing new supply, The Well enters a market primed for absorption."
+      },
+      {
+        "pill": "Neighborhood",
+        "pillColor": "gold",
+        "title": "Coconut Grove: Miami's most resilient luxury micro-market",
+        "body": "Grove luxury condos appreciate steadily even in down years for the broader Miami market. The buyer base is primarily end-users — families, primary residents — not investors, which means lower inventory volatility and stronger price support."
+      },
+      {
+        "pill": "Lifestyle",
+        "pillColor": "gray",
+        "title": "Full wellness programming included for residents",
+        "body": "Medical wellness, spa, fitness, nutrition, and recovery programming built into the residential offering. This model commands premium rents from health-conscious long-term tenants and premium prices from buyers who live the wellness lifestyle."
+      }
+    ],
+    "thesis": "The Well enters the most supply-constrained neighborhood in Miami with a brand story that resonates precisely with the buyer demographic that calls Coconut Grove home. Grove buyers are primary-residence purchasers — they hold, they don't flip — which is why Park Grove resale prices reached 100% above original developer pricing. The Well's wellness differentiation creates a moat within this already moat-protected market.",
+    "footnote": "HOA: ~$2.19/sq ft · Rental policy: Min 30-day · Delivery: Q1 2028"
+  },
+  "investmentThesis": "<p>50% sold. THE WELL brand's first fully integrated residential community, backed by Terra's development track record (Five Park Miami Beach, Villa Miami, Jean-Georges Miami Tropic). The WELL concept has a proven, affluent membership base that creates a built-in buyer pipeline. The dual-tier amenity model — private residential amenities plus a shared Wellness Club — generates revenue that supports building operations while giving residents access to programming that would be cost-prohibitive in a standalone residential building. Delivery targeted Q4 2028.</p>",
+  "isActive": true,
+  "landscapeArchitect": "L&ND",
+  "lat": 25.7306,
+  "lng": -80.2391,
+  "maxBed": 4,
+  "maxPrice": 6000000,
+  "maxSqft": 4200,
+  "minBed": 1,
+  "minPrice": 1500000,
+  "minSqft": 960,
+  "name": "THE WELL Coconut Grove",
+  "neighborhood": "Coconut Grove",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/the-well-coconut-grove.jpg",
+  "parking": "382 parking spaces; valet, 24-hour security, EV charging stations",
+  "percentSold": 50,
+  "priceFrom": "$1.5M+",
+  "privacyScore": 75,
+  "projectedAppreciation": 28,
+  "residenceContent": "<p class=\"prop-residence-intro\">Miami's first new development to fully integrate the WELL brand into residential living — a boutique community where wellness is engineered into the building itself, not just offered as an amenity. The distinctive coral stone facade honors Coconut Grove's architectural heritage while softly curved, nature-immersed interiors reflect the neighborhood's tropical character. Residences from one to four bedrooms feature 10-foot ceilings, floor-to-ceiling glass, European oak flooring, Italian stone bathrooms, custom Arclinea kitchens with Miele appliances, private terraces, and pre-wired smart home systems. The building holds Florida Green Building Design Silver Certification. Located steps from Coconut Grove's dining, boutiques, parks, and bayfront.</p>",
+  "seo": {
+    "title": "THE WELL Coconut Grove | Wellness Residences Miami",
+    "description": "THE WELL's first fully integrated residential community — 194 residences by Terra and Arquitectonica with Meyer Davis interiors. 13,000 SF wellness club, rooftop pool, holistic health programming. 1–4 BR from $1.4M, delivery 2028. Pricing available."
+  },
+  "slug": "the-well-coconut-grove",
+  "stage": "under_construction",
+  "statusRemark": "50% SOLD · GROUNDBROKEN",
+  "units": 194,
+  "unitsLeft": 97,
+  "wellnessScore": 100
+}

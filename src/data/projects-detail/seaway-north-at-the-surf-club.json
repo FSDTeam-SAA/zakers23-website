@@ -1,0 +1,281 @@
+{
+  "address": "9165 Collins Avenue, Surfside, FL 33154",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "5 Pools",
+      "sub": "1 private + 4 at Surf Club"
+    },
+    {
+      "icon": "🍽",
+      "label": "Thomas Keller Restaurant",
+      "sub": "The Surf Club Restaurant"
+    },
+    {
+      "icon": "🛎",
+      "label": "Four Seasons Service",
+      "sub": "Full hotel-caliber hospitality"
+    },
+    {
+      "icon": "🧖",
+      "label": "Oceanfront Spa",
+      "sub": "Four Seasons at The Surf Club"
+    },
+    {
+      "icon": "🏖",
+      "label": "Beach Cabanas",
+      "sub": "Historic Surf Club cabanas"
+    },
+    {
+      "icon": "🌿",
+      "label": "Peter Wirtz Gardens",
+      "sub": "Tuileries-caliber landscape"
+    }
+  ],
+  "amenitiesDescription": "<p>Seaway North residents enjoy the full Four Seasons Surf Club amenity ecosystem: Thomas Keller's restaurant and the adjacent Champagne Bar in the restored historic ballroom, the oceanfront Four Seasons Spa, four pools (including a residents-only pool surrounded by private beachfront gardens), historic beach cabanas originally built in the Prohibition era and beautifully restored, Winston's on the Beach, a state-of-the-art fitness center, and the private members' club. Peter Wirtz's tropical gardens — designed by the firm behind the Tuileries at the Louvre — connect Seaway North to The Surf Club via landscaped pathways. Four Seasons concierge, housekeeping, in-residence dining, and spa services are available on demand.</p>",
+  "architect": "Joseph Dirand · ODP Architecture & Design",
+  "architectQuote": "This is a collectible piece of architecture, designed without constraints.",
+  "architectQuoteBy": "Joseph Dirand",
+  "avgPsf": null,
+  "badge": "FULLY SOLD OUT · DELIVERING 2026",
+  "completion": "2026",
+  "densityScore": 15,
+  "depositStructure": [
+    {
+      "percentage": 30,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 20,
+      "milestone": "During Construction"
+    },
+    {
+      "percentage": 50,
+      "milestone": "At Closing (est. early 2026)"
+    }
+  ],
+  "description": "All ten oceanfront residences are sold. Joseph Dirand–designed Seaway North at the Four Seasons Surf Club, Surfside — sister to record-setting Seaway South. Trade reporting cited sellout above $386M with the final sale near $41M (~$38.6M average on ten units). Delivering early 2026.",
+  "developer": "Fort Partners",
+  "discoveryEngine": {
+    "vibes": [
+      "ultra-luxury",
+      "oceanfront",
+      "branded-living",
+      "boutique",
+      "legacy"
+    ],
+    "goodFor": [
+      "primary-residence",
+      "trophy-asset",
+      "family",
+      "privacy"
+    ],
+    "dealbreakers": []
+  },
+  "editorialLine": "Fully sold — the Dirand tower at 9165 Collins.",
+  "excerpt": "Sold-out Dirand tower at The Surf Club: trade press cited $386M+ sellout (~$38.6M average × 10 residences) and ~$41M final trade at 9165 Collins. Four Seasons service. Delivery early 2026 — contact for resale interest.",
+  "floorPlans": [
+    {
+      "type": "Full-Floor Residence",
+      "addlRooms": "Bay-to-Ocean Flow-Through",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "4,000–6,000 sq ft",
+      "status": "Sold out"
+    },
+    {
+      "type": "Beach Villa (2-Story)",
+      "addlRooms": "Direct Beach Access",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "4,500–5,500 sq ft",
+      "status": "Sold out"
+    },
+    {
+      "type": "10th Floor Penthouse",
+      "addlRooms": "360° Views + Rooftop",
+      "beds": 5,
+      "baths": 5.5,
+      "sqft": "10,000–14,000 sq ft",
+      "status": "Sold out"
+    }
+  ],
+  "height": "11 Stories",
+  "hoa": "~$3.00 / sq ft",
+  "id": 38,
+  "img": "/seaway/hero.webp",
+  "imgs": [
+    "/seaway/hero.webp",
+    "/seaway/building-ocean.webp",
+    "/seaway/beach-view.webp",
+    "/seaway/living-room.webp",
+    "/seaway/living-room2.webp",
+    "/seaway/pool.webp",
+    "/seaway/bedroom-balcony.webp",
+    "/seaway/lobby.webp",
+    "/seaway/kitchen.webp",
+    "/seaway/bedroom.webp",
+    "/seaway/balcony.webp",
+    "/seaway/cabana-pool.webp",
+    "/seaway/porte-cochere.webp",
+    "/seaway/lobby2.webp",
+    "/seaway/hero-beach.webp"
+  ],
+  "inquiryButtonLabel": "Inquire About Seaway North",
+  "inquirySubject": "Seaway North at The Surf Club",
+  "interiorDesigner": "Joseph Dirand",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "10",
+        "label": "Total residences — boutique Four Seasons inventory at 9165 Collins",
+        "note": "7 full-floor tower homes + beach villa + penthouse + additional curated residences — ten homes total"
+      },
+      {
+        "value": "$386M+",
+        "label": "Reported aggregate sellout (trade press)",
+        "note": "~$38.6M average on ten residences"
+      },
+      {
+        "value": "$41M",
+        "label": "Final sale reported (TradedMiami)",
+        "note": "Last developer residence at Seaway North — headline pricing for the boutique line"
+      },
+      {
+        "value": "$86M",
+        "label": "Record set by adjacent Seaway South",
+        "note": "Miami-Dade's all-time condo record (Nov 2025) — the comp floor for the campus"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Full-floor privacy",
+        "pillColor": "gold",
+        "title": "Seven full-floor plans — ultra-low density on campus",
+        "body": "Seven of Seaway North's ten residences are dedicated full-floor tower homes with flow-through views from Biscayne Bay to the Atlantic Ocean. No shared walls between residences. This level of privacy in a Four Seasons-managed oceanfront building is unprecedented in South Florida."
+      },
+      {
+        "pill": "Comp floor established",
+        "pillColor": "gold",
+        "title": "North priced into Seaway South's proven tier",
+        "body": "Seaway North didn't need to prove the market — Seaway South already did at $3,500–$5,400/sqft, and sponsor sales at North traded into that same valuation framework before inventory went to zero."
+      },
+      {
+        "pill": "Four Seasons ecosystem",
+        "pillColor": "gold",
+        "title": "Full Surf Club amenities for ten households",
+        "body": "Same Four Seasons service and amenity access as Seaway South: Thomas Keller restaurant, Champagne Bar, oceanfront spa, four pools, historic beach cabanas, fitness center, and private members' club, shared by only ten households instead of thirty-four."
+      },
+      {
+        "pill": "Sell-out",
+        "pillColor": "gray",
+        "title": "Primary supply closed — resale is the only entry",
+        "body": "Fort Partners' sponsor inventory is fully closed (TradedMiami); the next chapter is delivery and resale across only ten residences."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gray",
+        "title": "Surfside zoning caps future oceanfront supply",
+        "body": "Surfside's oceanfront zoning limits new development to low-rise, low-density projects. The Surf Club campus occupies a supply-constrained Collins stretch where replication is effectively impossible."
+      }
+    ],
+    "thesis": "Seaway North is the rarest format in the rarest location: ten Four Seasons–managed oceanfront homes on the same campus where Seaway South set the county's $86 million record. Trade reporting now describes a completed sellout at 9165 Collins — aggregate consideration cited above $386 million (~$38.6M average × 10), final trade near $41 million — validating the boutique thesis in headline terms. The architecture and service stack mirror Seaway South, but with ten owners instead of thirty-four, structural scarcity is still extreme. For new inventory, the window is closed; for capital, the bet is post-delivery performance in one of the tightest floats on Collins.",
+    "footnote": "HOA: ~$3.00/sq ft · Rental policy: No short-term · Delivery: Early 2026 · Sellout: ~$38.6M avg on 10 residences ($386M ÷ 10) · Last-sale figures per TradedMiami trade reporting"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "10",
+        "label": "Total residences — boutique Four Seasons inventory at 9165 Collins",
+        "note": "7 full-floor tower homes + beach villa + penthouse + additional curated residences — ten homes total"
+      },
+      {
+        "value": "$386M+",
+        "label": "Reported aggregate sellout (trade press)",
+        "note": "~$38.6M average on ten residences"
+      },
+      {
+        "value": "$41M",
+        "label": "Final sale reported (TradedMiami)",
+        "note": "Last developer residence at Seaway North — headline pricing for the boutique line"
+      },
+      {
+        "value": "$86M",
+        "label": "Record set by adjacent Seaway South",
+        "note": "Miami-Dade's all-time condo record (Nov 2025) — the comp floor for the campus"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Full-floor privacy",
+        "pillColor": "gold",
+        "title": "Seven full-floor plans — ultra-low density on campus",
+        "body": "Seven of Seaway North's ten residences are dedicated full-floor tower homes with flow-through views from Biscayne Bay to the Atlantic Ocean. No shared walls between residences. This level of privacy in a Four Seasons-managed oceanfront building is unprecedented in South Florida."
+      },
+      {
+        "pill": "Comp floor established",
+        "pillColor": "gold",
+        "title": "North priced into Seaway South's proven tier",
+        "body": "Seaway North didn't need to prove the market — Seaway South already did at $3,500–$5,400/sqft, and sponsor sales at North traded into that same valuation framework before inventory went to zero."
+      },
+      {
+        "pill": "Four Seasons ecosystem",
+        "pillColor": "gold",
+        "title": "Full Surf Club amenities for ten households",
+        "body": "Same Four Seasons service and amenity access as Seaway South: Thomas Keller restaurant, Champagne Bar, oceanfront spa, four pools, historic beach cabanas, fitness center, and private members' club, shared by only ten households instead of thirty-four."
+      },
+      {
+        "pill": "Sell-out",
+        "pillColor": "gray",
+        "title": "Primary supply closed — resale is the only entry",
+        "body": "Fort Partners' sponsor inventory is fully closed (TradedMiami); the next chapter is delivery and resale across only ten residences."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gray",
+        "title": "Surfside zoning caps future oceanfront supply",
+        "body": "Surfside's oceanfront zoning limits new development to low-rise, low-density projects. The Surf Club campus occupies a supply-constrained Collins stretch where replication is effectively impossible."
+      }
+    ],
+    "thesis": "Seaway North is the rarest format in the rarest location: ten Four Seasons–managed oceanfront homes on the same campus where Seaway South set the county's $86 million record. Trade reporting now describes a completed sellout at 9165 Collins — aggregate consideration cited above $386 million (~$38.6M average × 10), final trade near $41 million — validating the boutique thesis in headline terms. The architecture and service stack mirror Seaway South, but with ten owners instead of thirty-four, structural scarcity is still extreme. For new inventory, the window is closed; for capital, the bet is post-delivery performance in one of the tightest floats on Collins.",
+    "footnote": "HOA: ~$3.00/sq ft · Rental policy: No short-term · Delivery: Early 2026 · Sellout: ~$38.6M avg on 10 residences ($386M ÷ 10) · Last-sale figures per TradedMiami trade reporting"
+  },
+  "investmentThesis": "<p><strong>All sponsor residences are sold.</strong> Trade reporting (TradedMiami) described Fort Partners closing the final condominium at 9165 Collins Avenue — Surfside's Seaway at The Surf Club North — with aggregate sellout cited above $386 million, a final sale near $41 million, and about $38.6 million average across ten residences ($386 million ÷ 10). That headline sits alongside the adjacent Seaway South, which holds Miami-Dade's all-time condo record at $86 million (November 2025), reinforcing the corridor's pricing power. With only ten homes in the building, ownership float is minimal; the open question is no longer availability but delivery into Four Seasons–managed operations (early 2026), secondary-market liquidity, and how this inventory trades against the rest of The Surf Club campus.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeArchitect": "Peter Wirtz (Wirtz International)",
+  "lat": 25.8793069,
+  "lng": -80.1214565,
+  "maxBath": 5.5,
+  "maxBed": 5,
+  "maxPrice": 45000000,
+  "maxSqft": 14000,
+  "minBath": 3.5,
+  "minBed": 3,
+  "minPrice": 19000000,
+  "minSqft": 4000,
+  "name": "Seaway North at The Surf Club",
+  "neighborhood": "Surfside",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=25.8793069,-80.1214565"
+  },
+  "parking": "2–3 spaces per residence",
+  "percentSold": 100,
+  "priceFrom": "Sold out",
+  "pricePerSqft": null,
+  "privacyScore": 95,
+  "projectedAppreciation": 30,
+  "rentalPolicy": "No short-term rentals",
+  "residenceContent": "<p class=\"prop-residence-intro\">Seaway North is an 11-story building of ten ultra-luxury residences on a 1-acre Surfside oceanfront site, designed by Joseph Dirand in the same material language as its record-setting sister tower. Seven full-floor tower residences offer uninterrupted flow-through views from Biscayne Bay to the Atlantic Ocean. A two-story beach villa on the ground floors provides direct-access-to-sand living on The Surf Club campus. The penthouse crowns the 10th floor with panoramic exposures in every direction — with further curated homes completing the ten-residence boutique lineup.</p><p>Dirand has carried forward the design vocabulary that defined Seaway South — Perla stone terraces that read as if carved from the beach itself, wood-paneled interiors recalling classic yacht staterooms, champagne-colored window frames, and brass hardware throughout. Dedicated elevator landings for the tower homes. No shared walls between residences. The closest thing to single-family oceanfront living inside a Four Seasons-managed building.</p>",
+  "salesTeam": "Fort Realty LLC",
+  "slug": "seaway-north-at-the-surf-club",
+  "soldOut": true,
+  "stage": "under_construction",
+  "stageLabel": "Sold out · Under construction · Delivery 2026",
+  "statusRemark": "FULLY SOLD OUT · DELIVERING 2026",
+  "stories": 11,
+  "tagline": "Ten residences. Fully sold at The Surf Club.",
+  "units": 10,
+  "unitsLeft": 0,
+  "wellnessScore": 88
+}

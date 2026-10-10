@@ -1,0 +1,263 @@
+{
+  "address": "1400 Biscayne Blvd, Miami, FL 33132",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Pool Terrace",
+      "sub": "B&B Italia designed"
+    },
+    {
+      "icon": "🍽",
+      "label": "Private Restaurant",
+      "sub": "Residents only"
+    },
+    {
+      "icon": "🛎",
+      "label": "Concierge",
+      "sub": "24/7"
+    },
+    {
+      "icon": "🏋",
+      "label": "Wellness Studio",
+      "sub": "Lissoni design"
+    },
+    {
+      "icon": "🎨",
+      "label": "Art Installations",
+      "sub": "B&B Italia curated"
+    },
+    {
+      "icon": "🚗",
+      "label": "Valet",
+      "sub": "Full service"
+    }
+  ],
+  "amenitiesDescription": "<p>Casa Bella by B&B Italia spans two full amenity floors plus a signature rooftop: the pool deck features Enzo Enea-designed Italian gardens, an 80-foot lap pool, spa, poolside bar and Mediterranean café, private cabanas, open-air yoga lawn, and pickleball court.</p><p>Indoor amenities include a fitness center, yoga studios, spa and beauty salon, wine cellar, private theater, game room, children's playroom, and co-working lounge. The 56th-floor Sky Pool Terrace sits nearly 650 feet up with a rooftop pool, panoramic private observatory, and Casa Bella lounge.</p><p>Services include 24-hour concierge, valet, and security, on-demand housekeeping and lifestyle services, and a complimentary one-year membership to the Grand Bay Beach Club in Key Biscayne.</p>",
+  "architect": "Arquitectonica",
+  "architectQuote": "The interior is conceived as a single continuous space — you feel the sequence, not the rooms.",
+  "architectQuoteBy": "Piero Lissoni",
+  "badge": "Final 9 Units",
+  "completion": "2026",
+  "densityScore": 80,
+  "description": "B&B Italia's first residential tower, now delivered in Miami's Arts District. 56 stories, Piero Lissoni interiors, Related Group and Alta Developers. Closings underway with final homes remaining.",
+  "developer": "Related Group & Alta Developers",
+  "editorialLine": "Design history, delivered.",
+  "featureVideo": {
+    "src": "https://frasermiami.s3.amazonaws.com/casabella/casa-bella-amenities.mp4",
+    "poster": "https://frasermiami.s3.amazonaws.com/casabella/casa-bella-amenities-poster.webp",
+    "label": "Casa Bella by B&B Italia",
+    "tagline": "Two full amenity floors and a 56th-floor Sky Pool Terrace, curated by Piero Lissoni for B&B Italia.",
+    "uploadDate": "2026-09-03"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "1-Bedroom Design Suite",
+      "addlRooms": "Terrace",
+      "beds": 1,
+      "baths": 1,
+      "sqft": "900–1,200 sq ft",
+      "status": "Inquire"
+    },
+    {
+      "type": "2-Bedroom Lissoni Residence",
+      "addlRooms": "Terrace",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "1,600–2,400 sq ft",
+      "status": "2 Remaining"
+    }
+  ],
+  "generalContractor": "Coastal Construction",
+  "height": "56 Stories (650 ft)",
+  "heroImgPosition": "center",
+  "hoa": "$1.00 / sq ft",
+  "id": 6,
+  "img": "https://frasermiami.s3.amazonaws.com/casabella/Casa-Bella-PH-Duplex-Balcony.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/casabella/Casa-Bella-PH-Duplex-Balcony.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casa-Bella-Building.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/1400Biscayne-NightView.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Photomontage_Day-1.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casabella_Lobby_01_dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casa-Bella-Balcony-Sunrise.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/North-View.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casa-Bella-PH-Duplex-Living-Room.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Related-Group-Casa-Bella-04-UPH-1-01.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/UPH01_BedRoom-03.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/UPH04_MasterBathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casa-Bella-Living-Room.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casa-Bella-Kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casa-Bella-Bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casa-Bella-03-Casa-Cielo_Unit-1-02.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casabella_PoolDeck_02.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casabella-PoolLounge_02.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casabella-Spa_04.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casabella-WineRoom_01_dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casabella_Rooftop_02_day.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Related-CasaBella-03-Roof_Deck-PH01-01.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casabella-Fitness_01.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casabella-BusinessCenter_05_day.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casabella-Library_03_dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/casabella/Casabella-PartyRoom_05_dusk.webp"
+  ],
+  "interiorDesigner": "Piero Lissoni / Lissoni New York",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "98%",
+        "label": "Sold · final 9 units",
+        "note": "319 residences; over 90% under contract at delivery (PROFILEmiami Oct 2026)"
+      },
+      {
+        "value": "+28%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Edgewater/Arts District delivery cycle comps and B&B Italia brand premium"
+      },
+      {
+        "value": "$1,333",
+        "label": "Avg price / sq ft at launch",
+        "note": "Significant discount vs. adjacent Brickell luxury ($1,500–$1,800/sqft); neighborhood is repricing"
+      },
+      {
+        "value": "Oct 2026",
+        "label": "Delivered · closings underway",
+        "note": "Related Group and Alta officially delivered; first residents home (PROFILEmiami)"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Design brand",
+        "pillColor": "gold",
+        "title": "First-ever B&B Italia residential collaboration",
+        "body": "Casa Bella is the first new development built with B&B Italia, the four-time Compasso d'Oro winner. Piero Lissoni designed all interiors, lobby furnishings, and amenity spaces."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "Related Group & Alta Developers delivered Oct 2026",
+        "body": "Related Group and Alta Developers broke ground November 2023 with Coastal Construction and Cain financing. Official delivery puts first residents in the building."
+      },
+      {
+        "pill": "Absorption",
+        "pillColor": "gold",
+        "title": "Over 90% under contract at delivery",
+        "body": "Primary inventory is functionally exhausted. Remaining Cielo and Penthouse Collection homes are the last primary-market entry before the resale book opens."
+      },
+      {
+        "pill": "Location catalyst",
+        "pillColor": "gray",
+        "title": "Arts District bayfront at a lower basis",
+        "body": "1400 Biscayne sits between Wynwood, the Design District, and PAMM/Frost Science. Edgewater towers price higher on the same bayfront proximity; this corridor still carries a discount."
+      }
+    ],
+    "thesis": "B&B Italia's first residential project, designed by Piero Lissoni, is now delivered in a corridor that is still repricing. At roughly 98% sold with closings underway, the remaining homes are the last primary entry into a building that will define the Arts District's design identity. Related's post-delivery premium at prior towers (Icon Brickell, Brickell Heights, Paraiso) is the pattern buyers price against here.",
+    "footnote": "HOA: $1.00/sq ft (MLS median, Aug 2026) · Rental policy: Inquire · Delivered Oct 2026 · Closings underway"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "98%",
+        "label": "Sold · final 9 units",
+        "note": "319 residences; over 90% under contract at delivery (PROFILEmiami Oct 2026)"
+      },
+      {
+        "value": "+28%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Edgewater/Arts District delivery cycle comps and B&B Italia brand premium"
+      },
+      {
+        "value": "$1,333",
+        "label": "Avg price / sq ft at launch",
+        "note": "Significant discount vs. adjacent Brickell luxury ($1,500–$1,800/sqft); neighborhood is repricing"
+      },
+      {
+        "value": "Oct 2026",
+        "label": "Delivered · closings underway",
+        "note": "Related Group and Alta officially delivered; first residents home (PROFILEmiami)"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Design brand",
+        "pillColor": "gold",
+        "title": "First-ever B&B Italia residential collaboration",
+        "body": "Casa Bella is the first new development built with B&B Italia, the four-time Compasso d'Oro winner. Piero Lissoni designed all interiors, lobby furnishings, and amenity spaces."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "Related Group & Alta Developers delivered Oct 2026",
+        "body": "Related Group and Alta Developers broke ground November 2023 with Coastal Construction and Cain financing. Official delivery puts first residents in the building."
+      },
+      {
+        "pill": "Absorption",
+        "pillColor": "gold",
+        "title": "Over 90% under contract at delivery",
+        "body": "Primary inventory is functionally exhausted. Remaining Cielo and Penthouse Collection homes are the last primary-market entry before the resale book opens."
+      },
+      {
+        "pill": "Location catalyst",
+        "pillColor": "gray",
+        "title": "Arts District bayfront at a lower basis",
+        "body": "1400 Biscayne sits between Wynwood, the Design District, and PAMM/Frost Science. Edgewater towers price higher on the same bayfront proximity; this corridor still carries a discount."
+      }
+    ],
+    "thesis": "B&B Italia's first residential project, designed by Piero Lissoni, is now delivered in a corridor that is still repricing. At roughly 98% sold with closings underway, the remaining homes are the last primary entry into a building that will define the Arts District's design identity. Related's post-delivery premium at prior towers (Icon Brickell, Brickell Heights, Paraiso) is the pattern buyers price against here.",
+    "footnote": "HOA: $1.00/sq ft (MLS median, Aug 2026) · Rental policy: Inquire · Delivered Oct 2026 · Closings underway"
+  },
+  "investmentThesis": "<p>Officially delivered October 2026 with closings underway and roughly 98% sold: one of the most absorbed new towers in the current Miami cycle. The B&amp;B Italia collaboration is unique in global residential development: Lissoni's design authority extends from lobbies and amenities through every unit interior. On Biscayne Boulevard in the Arts &amp; Entertainment District.</p>",
+  "isActive": true,
+  "landscapeArchitect": "Enzo Enea",
+  "lat": 25.789122,
+  "lng": -80.189173,
+  "locationScore": 82,
+  "maxBath": 4,
+  "maxBed": 4,
+  "maxPrice": 6000000,
+  "maxSqft": 5000,
+  "minBath": 1,
+  "minBed": 1,
+  "minPrice": 1200000,
+  "minSqft": 711,
+  "name": "Casa Bella by B&B Italia",
+  "neighborhood": "Edgewater",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/casa-bella-by-b-b-italia.jpg",
+  "parking": "24/7 valet for residents and guests",
+  "percentSold": 98,
+  "priceFrom": "$1.2M+",
+  "pricePerSqft": 1333,
+  "privacyScore": 45,
+  "projectedAppreciation": 28,
+  "rentalPolicy": "Up to 6–12x per year; 30-day minimum stay",
+  "residenceContent": "<p class=\"prop-residence-intro\">The first development in the world created in collaboration with B&amp;B Italia, the four-time Compasso d'Oro-winning Italian design house. The undulating tower, its curved balconies drawn from the movement of Biscayne Bay, delivers interiors personally designed by Piero Lissoni. Every home features 10-foot ceilings, two private biometric elevators per unit, floor-to-ceiling glass, European porcelain tile, and terraces averaging 196 square feet. Kitchens are finished with Italian cabinetry, Bosch appliance suites, and quartz countertops; bathrooms with floor-to-ceiling porcelain, frameless glass showers, and rain showerheads. Located in the Arts &amp; Entertainment District, minutes from Wynwood, the Design District, Pérez Art Museum, and Frost Science Museum.</p>",
+  "salesTeam": "ONE Sotheby's International Realty",
+  "slug": "casa-bella-by-b-b-italia",
+  "stage": "move_in_ready",
+  "stageLabel": "Delivered · Closings Underway",
+  "units": 319,
+  "unitsLeft": 9,
+  "verified": {
+    "hoa": {
+      "date": "2026-08-23",
+      "source": "MLS active listings, Aug 2026 — monthly association fee ÷ interior sq ft (SqFt LA), median. $1.00/sf across 9 active listings, range $0.61-$1.09; one listing at $0.55/sf excluded as an outlier and twelve showing a $0 or blank fee dropped as data errors. Prior value of $0.80 was the low end of an unsourced range and ran 26% below observed."
+    },
+    "stage": {
+      "date": "2026-10-05",
+      "source": "PROFILEmiami — Related Group and Alta officially delivered; closings underway"
+    },
+    "units": {
+      "date": "2026-10-05",
+      "source": "PROFILEmiami delivery announcement — 319 residences including 10 penthouses"
+    },
+    "percentSold": {
+      "date": "2026-10-05",
+      "source": "PROFILEmiami — over 90% under contract at delivery; 98%/9 left retained from prior inventory tracking"
+    },
+    "completion": {
+      "date": "2026-10-05",
+      "source": "PROFILEmiami — officially delivered October 2026"
+    }
+  },
+  "wellnessScore": 60
+}

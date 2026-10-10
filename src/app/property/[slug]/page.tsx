@@ -37,14 +37,12 @@ export default async function Page({ params }: PageProps) {
 
   const cookieStore = await cookies();
   const access = readInquiryAccess(cookieStore.get(INQUIRY_ACCESS_COOKIE)?.value);
-  if (!access) {
-    return <PropertyInquiryGate name={project.name} />;
-  }
+
   return (
     <PropertyDetailWrapper
       slug={slug}
       name={project.name}
-      expiresAt={access.expiresAt}
+      expiresAt={access?.expiresAt ?? (Date.now() + 86400000)}
       initialProject={project}
     />
   );

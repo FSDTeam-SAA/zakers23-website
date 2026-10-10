@@ -44,6 +44,24 @@ interface MapProject {
   wellnessScore?: number | null;
   statusRemark?: string;
   developer?: string;
+  architect?: string;
+  interiorDesigner?: string;
+  landscapeArchitect?: string;
+  salesTeam?: string;
+  depositStructure?: any;
+  floorPlans?: any[];
+  amenities?: any[];
+  amenitiesDescription?: string;
+  featureVideo?: any;
+  featureVideoPlacement?: string;
+  videoTourId?: string;
+  floorPlanPdf?: string;
+  factSheetURL?: string;
+  keyMetrics?: any[];
+  tagline?: string;
+  editorialLine?: string;
+  hoa?: string | null;
+  address?: string;
 }
 
 const STAGES: Record<string, { label: string; dot: string; index: number }> = {
@@ -123,8 +141,9 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Background fetch for fresh live MLS updates without blocking initial render
+  // Optional background fetch only if initialProject was not provided
   useEffect(() => {
+    if (initialProject) return;
     const controller = new AbortController();
     fetch("/api/idx/properties", { cache: "no-store", signal: controller.signal })
       .then(async (response) => {
@@ -136,7 +155,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       })
       .catch((error: unknown) => { if ((error as { name?: string }).name !== "AbortError") console.error(error); });
     return () => controller.abort();
-  }, []);
+  }, [initialProject]);
 
   const project = useMemo(() => {
     if (initialProject) {
@@ -432,7 +451,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
 
     return [
       `Featuring spacious living areas in ${project.neighborhood}, this premier residence is an active listing on BeachesMLS and Miami Association of Realtors.`,
-      `Offering an elite luxury lifestyle in South Florida, represented by Zachary Akers (MR Luxury Group · ONE Sotheby's International Realty).`
+      `Offering an elite luxury lifestyle in South Florida, represented by Zachary Akers (ONE Sotheby's International Realty).`
     ];
   }, [project]);
 
@@ -488,7 +507,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 ))}
               </div>
             </div>
-            <Link href="/waterfront">Waterfront Estates</Link>
+            <Link href="/waterfront">Waterfront Homes</Link>
             <Link href="/insights">Insights</Link>
             <a
               href="/#contact"
@@ -609,22 +628,349 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           {projectAddress}
         </p>
 
-        {/* Core Stats Cards - Two Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <div className="bg-white border border-[#e8e4db] rounded-[4px] p-6 shadow-sm">
-            <span className="text-[9px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-2">From</span>
-            <strong className="text-3xl md:text-4xl font-serif font-normal text-[#1c1f26]">
-              {formatPriceStr(project.minPrice)}
+        {/* Feature Video Section */}
+        {project.featureVideo?.src && (
+          <div className="mb-14">
+            <div className="mb-3">
+              <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
+                CINEMATIC PREVIEW
+              </span>
+              <h3 className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
+                Architectural Video Experience
+              </h3>
+            </div>
+            <div className="border-b border-[#ddd8cd] mb-6" />
+            <div className="relative overflow-hidden rounded-[4px] border border-[#ddd8cd] bg-[#0c1523] shadow-xl">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                poster={project.featureVideo.poster ? (project.featureVideo.poster.startsWith("http") ? project.featureVideo.poster : `https://frasermiami.s3.amazonaws.com${project.featureVideo.poster}`) : undefined}
+                src={project.featureVideo.src.startsWith("http") ? project.featureVideo.src : `https://frasermiami.s3.amazonaws.com${project.featureVideo.src}`}
+                className="w-full h-auto max-h-[520px] object-cover"
+              />
+              {(project.featureVideo.label || project.featureVideo.tagline) && (
+                <div className="bg-white border-t border-[#ddd8cd] p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                  <div>
+                    {project.featureVideo.label && (
+                      <h4 className="text-xs uppercase tracking-[0.2em] font-semibold text-[#1c1f26]">
+                        {project.featureVideo.label}
+                      </h4>
+                    )}
+                    {project.featureVideo.tagline && (
+                      <p className="text-xs text-[#788092] mt-0.5">
+                        {project.featureVideo.tagline}
+                      </p>
+                    )}
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => openInquiry(`${project.name} Video Tour`)}
+                    className="text-[9px] uppercase tracking-[0.25em] font-semibold px-4 py-2.5 bg-[#1c1f26] text-white hover:bg-[#b89354] transition-colors self-start sm:self-auto cursor-pointer"
+                  >
+                    Request Private Tour
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Key Metrics Row */}
+        {project.keyMetrics && project.keyMetrics.length > 0 && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
+            {project.keyMetrics.map((metric: any, idx: number) => (
+              <div key={idx} className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
+                <span className="text-[9px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1">
+                  {metric.label}
+                </span>
+                <strong className="text-2xl font-serif font-normal text-[#1c1f26] block">
+                  {metric.value}
+                </strong>
+                {metric.note && (
+                  <p className="text-xs text-[#788092] mt-2 font-light leading-relaxed">
+                    {metric.note}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Core Stats Cards - 4 Column Flagship Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
+            <span className="text-[9px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Price From</span>
+            <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
+              {formatPriceStr(project.minPrice || project.priceFrom)}
             </strong>
           </div>
 
-          <div className="bg-white border border-[#e8e4db] rounded-[4px] p-6 shadow-sm">
-            <span className="text-[9px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-2">Delivery</span>
-            <strong className="text-3xl md:text-4xl font-serif font-normal text-[#1c1f26]">
-              {project.completion}
+          <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
+            <span className="text-[9px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Delivery</span>
+            <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
+              {project.completion || "TBD"}
+            </strong>
+          </div>
+
+          <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
+            <span className="text-[9px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Total Residences</span>
+            <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
+              {project.units || "—"}
+            </strong>
+          </div>
+
+          <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
+            <span className="text-[9px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Stories / Height</span>
+            <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
+              {project.stories ? `${project.stories} Stories` : (project.height ? `${project.height} FT` : (project.pricePerSqft ? `$${project.pricePerSqft.toLocaleString()}/SF` : "Luxury Tower"))}
             </strong>
           </div>
         </div>
+
+        {/* Residences & Floor Plans Table */}
+        {project.floorPlans && project.floorPlans.length > 0 && (
+          <div className="mb-14">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-4">
+              <div>
+                <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
+                  RESIDENCES &amp; PRICING
+                </span>
+                <h3 className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
+                  Floor Plans &amp; Availability
+                </h3>
+                <p className="text-xs text-[#8f96ab] mt-1 font-light">
+                  {project.floorPlans.length} residence layouts available in {project.neighborhood}
+                </p>
+              </div>
+
+              {project.floorPlanPdf && (
+                <a
+                  href={project.floorPlanPdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 border border-[#B38E36] text-[#B38E36] hover:bg-[#B38E36] hover:text-white transition-colors text-[10px] uppercase tracking-[0.2em] font-semibold self-start sm:self-auto rounded-[2px]"
+                >
+                  <span>📄 Download Complete Floor Plans (PDF)</span>
+                </a>
+              )}
+            </div>
+
+            <div className="border-b border-[#ddd8cd] mb-6" />
+
+            <div className="overflow-x-auto bg-white border border-[#e8e4db] rounded-[4px] shadow-sm">
+              <table className="w-full text-left border-collapse min-w-[620px]">
+                <thead>
+                  <tr className="border-b border-[#e8e4db] bg-[#fafaf8] text-[9.5px] uppercase tracking-[0.2em] text-[#8c8376]">
+                    <th className="py-4 px-6 font-semibold">Residence Type</th>
+                    <th className="py-4 px-6 font-semibold">Beds / Baths</th>
+                    <th className="py-4 px-6 font-semibold">Square Feet</th>
+                    <th className="py-4 px-6 font-semibold">Starting Price</th>
+                    <th className="py-4 px-6 font-semibold text-right">Inquire</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#f0ece1] text-xs">
+                  {project.floorPlans.map((plan: any, idx: number) => {
+                    const priceDisplay = plan.startingPrice
+                      ? (typeof plan.startingPrice === "number"
+                          ? `$${plan.startingPrice.toLocaleString("en-US")}`
+                          : plan.startingPrice)
+                      : (plan.priceNote || "Inquire for Pricing");
+
+                    return (
+                      <tr key={idx} className="hover:bg-[#faf9f6] transition-colors">
+                        <td className="py-4 px-6">
+                          <div className="font-serif text-[15px] text-[#1c1f26] font-medium">
+                            {plan.type}
+                          </div>
+                          {plan.floors && (
+                            <span className="text-[11px] text-[#8f96ab] font-light block mt-0.5">
+                              {plan.floors}
+                            </span>
+                          )}
+                        </td>
+                        <td className="py-4 px-6 font-mono text-[#535862]">
+                          {plan.beds !== undefined ? `${plan.beds} Bed` : "—"} · {plan.baths !== undefined ? `${plan.baths} Bath` : "—"}
+                        </td>
+                        <td className="py-4 px-6 text-[#535862]">
+                          <div>{plan.sqft || "—"}</div>
+                          {plan.addlRooms && (
+                            <span className="text-[10.5px] text-[#8f96ab] block">{plan.addlRooms}</span>
+                          )}
+                        </td>
+                        <td className="py-4 px-6 font-mono font-medium text-[#B38E36]">
+                          {priceDisplay}
+                        </td>
+                        <td className="py-4 px-6 text-right">
+                          <button
+                            type="button"
+                            onClick={() => openInquiry(`${project.name} — ${plan.type}`)}
+                            className="inline-flex items-center px-3.5 py-1.5 bg-[#1c1f26] text-white hover:bg-[#B38E36] transition-colors text-[9px] uppercase tracking-[0.16em] font-semibold rounded-[2px] cursor-pointer"
+                          >
+                            Request Pricing
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
+        {/* Building Amenities Grid */}
+        {project.amenities && project.amenities.length > 0 && (
+          <div className="mb-14">
+            <div className="mb-4">
+              <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
+                LIFESTYLE &amp; AMENITIES
+              </span>
+              <h3 className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
+                Building Amenities &amp; Exclusive Services
+              </h3>
+            </div>
+            <div className="border-b border-[#ddd8cd] mb-6" />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              {project.amenities.map((amenity: any, idx: number) => (
+                <div
+                  key={idx}
+                  className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm flex items-start gap-3.5 hover:border-[#B38E36]/40 transition-colors"
+                >
+                  <div className="w-10 h-10 rounded-full bg-[#faf7f0] border border-[#ecd5a8] flex items-center justify-center text-lg flex-shrink-0">
+                    {amenity.icon || "✦"}
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-serif font-normal text-[#1c1f26] leading-snug">
+                      {amenity.label}
+                    </h4>
+                    {amenity.sub && (
+                      <p className="text-[11px] text-[#788092] mt-1 font-light leading-relaxed">
+                        {amenity.sub}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {project.amenitiesDescription && (
+              <div
+                className="mt-6 bg-[#faf9f6] border border-[#e8e4db] rounded-[4px] p-6 text-xs text-[#535862] leading-relaxed font-light [&>p]:mb-3 [&>p:last-child]:mb-0"
+                dangerouslySetInnerHTML={{ __html: project.amenitiesDescription }}
+              />
+            )}
+          </div>
+        )}
+
+        {/* Development & Design Team */}
+        {(project.developer || project.architect || project.interiorDesigner || project.landscapeArchitect) && (
+          <div className="mb-14">
+            <div className="mb-4">
+              <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
+                THE VISIONARIES
+              </span>
+              <h3 className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
+                Development &amp; Design Team
+              </h3>
+            </div>
+            <div className="border-b border-[#ddd8cd] mb-6" />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {project.developer && (
+                <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
+                  <span className="text-[9px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5">
+                    Developer
+                  </span>
+                  <strong className="text-base font-serif font-normal text-[#1c1f26] block">
+                    {project.developer}
+                  </strong>
+                </div>
+              )}
+              {project.architect && (
+                <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
+                  <span className="text-[9px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5">
+                    Architect
+                  </span>
+                  <strong className="text-base font-serif font-normal text-[#1c1f26] block">
+                    {project.architect}
+                  </strong>
+                </div>
+              )}
+              {project.interiorDesigner && (
+                <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
+                  <span className="text-[9px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5">
+                    Interior Design
+                  </span>
+                  <strong className="text-base font-serif font-normal text-[#1c1f26] block">
+                    {project.interiorDesigner}
+                  </strong>
+                </div>
+              )}
+              {project.landscapeArchitect && (
+                <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
+                  <span className="text-[9px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5">
+                    Landscape Architecture
+                  </span>
+                  <strong className="text-base font-serif font-normal text-[#1c1f26] block">
+                    {project.landscapeArchitect}
+                  </strong>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Deposit Structure */}
+        {project.depositStructure && (
+          <div className="mb-14">
+            <div className="mb-4">
+              <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
+                PAYMENT MILESTONES
+              </span>
+              <h3 className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
+                Deposit &amp; Payment Schedule
+              </h3>
+            </div>
+            <div className="border-b border-[#ddd8cd] mb-6" />
+
+            <div className="bg-white border border-[#e8e4db] rounded-[4px] p-6 shadow-sm">
+              {Array.isArray(project.depositStructure) ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                  {project.depositStructure.map((item: any, idx: number) => {
+                    const milestone = typeof item === "string" ? item : (item.milestone || item.label || `Milestone ${idx + 1}`);
+                    const percent = typeof item === "object" ? (item.percentage || item.value || "") : "";
+                    const desc = typeof item === "object" ? (item.description || item.note || "") : "";
+                    return (
+                      <div key={idx} className="border-l-2 border-[#B38E36] pl-4 py-1">
+                        {percent && (
+                          <span className="text-xl font-serif text-[#B38E36] font-normal block">
+                            {percent}
+                          </span>
+                        )}
+                        <span className="text-xs font-medium text-[#1c1f26] block mt-0.5">
+                          {milestone}
+                        </span>
+                        {desc && (
+                          <p className="text-[11px] text-[#788092] mt-1 font-light leading-relaxed">
+                            {desc}
+                          </p>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <p className="text-xs text-[#535862] leading-relaxed">
+                  {String(project.depositStructure)}
+                </p>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Real MLS Specs Grid */}
         <div className="mb-14">
@@ -736,6 +1082,20 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           >
             INQUIRE ABOUT THIS PROPERTY
           </button>
+          <a
+            href={`https://wa.me/13053435371?text=${encodeURIComponent(`Hi Zachary, I'm interested in ${project.name} (${project.neighborhood}) and would like more details.`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 font-semibold text-[10px] uppercase tracking-[0.25em] text-center transition-all duration-200 rounded-[2px] cursor-pointer flex items-center justify-center gap-2 hover:brightness-105"
+            style={{ backgroundColor: "#25D366", color: "#ffffff" }}
+          >
+            <span className="flex items-center justify-center" style={{ color: "#ffffff" }}>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12.031 2C6.495 2 2 6.49 2 12.022c0 1.765.46 3.488 1.332 5.002L2 22l5.127-1.343a10.007 10.007 0 0 0 4.904 1.277h.004c5.535 0 10.03-4.49 10.03-10.022A10.015 10.015 0 0 0 12.031 2zm0 18.358h-.003a8.318 8.318 0 0 1-4.24-1.16l-.304-.18-3.148.825.84-3.067-.198-.315a8.307 8.307 0 0 1-1.274-4.439c0-4.593 3.738-8.33 8.33-8.33a8.293 8.293 0 0 1 5.889 2.441 8.292 8.292 0 0 1 2.438 5.892c0 4.593-3.738 8.333-8.33 8.333zm4.568-6.236c-.25-.125-1.48-.73-1.71-.813-.23-.083-.396-.125-.563.125-.166.25-.646.813-.792.98-.145.166-.291.187-.541.062a6.85 6.85 0 0 1-2.016-1.243 7.55 7.55 0 0 1-1.393-1.733c-.146-.25-.015-.385.11-.51.112-.112.25-.291.375-.437.125-.146.166-.25.25-.417.083-.166.041-.312-.021-.437-.062-.125-.563-1.354-.77-1.854-.202-.488-.408-.422-.563-.43l-.479-.008c-.166 0-.437.062-.666.312-.23.25-.875.855-.875 2.084 0 1.23.896 2.417 1.02 2.584.125.166 1.762 2.69 4.269 3.771.596.257 1.062.41 1.425.526.6.19 1.144.163 1.575.099.48-.072 1.48-.605 1.688-1.188.208-.584.208-1.084.146-1.188-.063-.105-.229-.167-.479-.292z" />
+              </svg>
+            </span>
+            <span style={{ color: "#ffffff" }}>WhatsApp Zachary</span>
+          </a>
           <button
             type="button"
             onClick={() => setActiveImgIdx(0)}
@@ -933,10 +1293,10 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                     LUXURY REAL ESTATE ADVISOR
                   </span>
                   <h3 className="text-3xl md:text-4xl font-serif font-normal text-[#1c1f26] mb-3">
-Zachary Akers
+                    Zachary Akers
                   </h3>
                   <p className="text-[11px] uppercase tracking-[0.2em] text-[#7c8498] font-light mb-6">
-                    MR LUXURY GROUP &middot; ONE SOTHEBY&apos;S INTERNATIONAL REALTY
+                    ONE SOTHEBY&apos;S INTERNATIONAL REALTY
                   </p>
                   <p className="text-xs md:text-sm font-light leading-relaxed text-[#535862] max-w-[580px] mb-8">
                     Zach, is a veteran of 14 years in the real estate industry working both in sales, as well as luxury new-construction and development. Zach is adept at understanding the relationship between investment and emotional connection to your property. With vast experience working with homeowners from all walks of life and backgrounds, he understands that no home buyer or seller is the same, but they all want results. Zach will help you purchase or sell your property seamlessly and with integrity.
@@ -946,16 +1306,16 @@ Zachary Akers
                 {/* Highlight Counters */}
                 <div className="grid grid-cols-3 border-y border-[#ddd8cd] py-6 mb-8 max-w-[640px]">
                   <div>
-                    <strong className="block text-2xl font-serif font-normal text-[#1c1f26]">15+</strong>
+                    <strong className="block text-2xl font-serif font-normal text-[#1c1f26]">14+</strong>
                     <span className="text-[9px] uppercase tracking-[0.15em] text-[#8c8376] mt-1 block">Years Experience</span>
                   </div>
                   <div>
-                    <strong className="block text-2xl font-serif font-normal text-[#1c1f26]">$1.2B+</strong>
-                    <span className="text-[9px] uppercase tracking-[0.15em] text-[#8c8376] mt-1 block">Career Sales</span>
+                    <strong className="block text-2xl font-serif font-normal text-[#1c1f26]">$1B+</strong>
+                    <span className="text-[9px] uppercase tracking-[0.15em] text-[#8c8376] mt-1 block">Closed Sales</span>
                   </div>
                   <div>
-                    <strong className="block text-2xl font-serif font-normal text-[#1c1f26]">#3</strong>
-                    <span className="text-[9px] uppercase tracking-[0.15em] text-[#8c8376] mt-1 block">Ranked Team</span>
+                    <strong className="block text-2xl font-serif font-normal text-[#1c1f26]">2026</strong>
+                    <span className="text-[9px] uppercase tracking-[0.15em] text-[#8c8376] mt-1 block">Top Producer</span>
                   </div>
                 </div>
 
@@ -967,12 +1327,20 @@ Zachary Akers
                   >
                     SCHEDULE PRIVATE PRESENTATION
                   </a>
-                  <div className="flex gap-6 justify-center sm:justify-start items-center text-xs font-mono">
-                    <a href="tel:7864758134" className="hover:text-[#bb9751] transition-colors">
-                      📞 786.475.8134
+                  <div className="flex flex-wrap gap-4 sm:gap-6 justify-center sm:justify-start items-center text-xs font-mono">
+                    <a href="tel:3053435371" className="hover:text-[#bb9751] transition-colors">
+                      📞 (305) 343-5371
                     </a>
-                    <a href="mailto:zakers@me.com" className="hover:text-[#bb9751] transition-colors">
-                      ✉ Email Advisor
+                    <a href="mailto:Zakers@onesothebysrealty.com" className="hover:text-[#bb9751] transition-colors">
+                      ✉ Zakers@onesothebysrealty.com
+                    </a>
+                    <a
+                      href={`https://wa.me/13053435371?text=Hi%20Zachary%2C%20I%27d%20like%20to%20inquire%20about%20${encodeURIComponent(project.name)}.`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#25D366] hover:underline flex items-center gap-1 font-sans text-xs uppercase tracking-wider"
+                    >
+                      💬 WhatsApp
                     </a>
                   </div>
                 </div>

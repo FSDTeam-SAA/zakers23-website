@@ -1,0 +1,305 @@
+{
+  "address": "18401 Collins Ave, Sunny Isles Beach, FL",
+  "amenities": [
+    {
+      "icon": "🚗",
+      "label": "Dezervator™",
+      "sub": "Car to sky garage"
+    },
+    {
+      "icon": "🏊",
+      "label": "Oceanfront Pool",
+      "sub": "Sunrise to sunset"
+    },
+    {
+      "icon": "🍽",
+      "label": "Proper English",
+      "sub": "Todd English, 4× James Beard"
+    },
+    {
+      "icon": "🛎",
+      "label": "Concierge",
+      "sub": "24/7 white glove"
+    },
+    {
+      "icon": "🏋",
+      "label": "Spa & Fitness",
+      "sub": "World-class"
+    },
+    {
+      "icon": "🎪",
+      "label": "Event Lounge",
+      "sub": "Private"
+    }
+  ],
+  "amenitiesDescription": "<p>Over 20,000 sq ft of amenity space, curated by Bentley's design team and furnished with Bentley Home collection.</p><h4>Arrival &amp; Dining</h4><p>Three-story ocean-view lobby. <strong>Proper English by Todd English</strong> — a residents-only restaurant concept by the four-time James Beard Award-winning chef, his first private restaurant. Mezzanine Lounge and Whiskey Bar (Bentley matrix grille–inspired). Cigar Lounge.</p><h4>Entertainment</h4><p>14-seat private cinema (Bentley motorcar–inspired). Game Room: golf simulators, racing simulators, VR. Kid's Club. Pet Spa.</p><h4>Wellness</h4><p>Fitness center with ocean-view outdoor terrace. Men's and women's dressing rooms: steam, sauna, lockers. Full-service spa with couples and individual treatment rooms; in-residence spa on demand.</p><h4>Pool &amp; Beach</h4><p>Heated oceanfront pool with spa, cabanas, F&amp;B service. 200 ft of private shoreline with beach attendants, chaises, umbrellas. Oceanfront beauty salon.</p><h4>Services</h4><p>24-hour valet, multilingual concierge, restaurant and yacht reservations, lifestyle and health concierge.</p>",
+  "architect": "Sieger Suarez Architects",
+  "architectQuote": "The building's form is drawn directly from the character of a Bentley — powerful, sculptural, precise.",
+  "architectQuoteBy": "Sieger Suarez Architects",
+  "badge": "$630M Construction Loan Secured",
+  "completion": "2028",
+  "constructionImgs": [
+    "/bentley/updates/aerial-tower2.webp",
+    "/bentley/updates/aerial-tower.webp",
+    "/bentley/updates/tower.webp",
+    "/bentley/updates/drone-aerial-beach.webp"
+  ],
+  "constructionNote": "Reinforced concrete superstructure at approximately 13 stories as of late July 2026. Collins Avenue arrival sequence (porte cochere, entry court, ramped access) advancing in parallel. Pace remains roughly one floor every five to six working days.",
+  "constructionUpdateDate": "August 2026",
+  "densityScore": 42,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "Reservation"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Additional Progress Payment"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 50,
+      "milestone": "At Delivery"
+    }
+  ],
+  "description": "The world's first Bentley-branded residence. A patented Dezervator delivers your motorcar directly to your sky garage — an expression of engineering and craft in perfect harmony.",
+  "developer": "Dezer Development",
+  "dossierImageIndices": {
+    "amenities": 11,
+    "footer": 15
+  },
+  "editorialLine": "The art of the automobile, elevated.",
+  "featureYouTubeId": "iqmaq8B4-j8",
+  "featureYouTubeLabel": "The Dezervator Experience",
+  "featureYouTubeTagline": "Your motorcar. Your floor. Automotive ingenuity in vertical form.",
+  "featureYouTubeUploadDate": "2026-03-13",
+  "floorPlans": [
+    {
+      "type": "3-Bedroom Sky Residence",
+      "addlRooms": "Car Garage + Terrace",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "3,500–5,000 sq ft",
+      "status": "Limited"
+    },
+    {
+      "type": "4-Bedroom Penthouse",
+      "addlRooms": "Car Garage + Pool",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "5,200–7,000 sq ft",
+      "status": "1 Remaining"
+    },
+    {
+      "type": "5-Bedroom Apex Suite",
+      "addlRooms": "Rooftop + 2 Car Garage",
+      "beds": 5,
+      "baths": 5.5,
+      "sqft": "8,000–12,000 sq ft",
+      "status": "Inquire"
+    }
+  ],
+  "height": "62 Stories / 716 ft",
+  "hoa": "$2.50 / sq ft",
+  "id": 2,
+  "img": "https://frasermiami.s3.amazonaws.com/bentley/hero.webp",
+  "imgPositions": {
+    "4": "center 85%"
+  },
+  "imgPositionsMobile": {
+    "4": "center 85%"
+  },
+  "imgs": [
+    "/bentley/hero.webp",
+    "/bentley/hero2.webp",
+    "/bentley/building_bottomshot.webp",
+    "/bentley/east_unit_greatroom.webp",
+    "/bentley/ocean-hero.webp",
+    "/bentley/beach-hero.webp",
+    "/bentley/building_sunset.webp",
+    "/bentley/08-dev.webp",
+    "/bentley/entrance_design.webp",
+    "/bentley/lounge-lobby.webp",
+    "/bentley/lounge.webp",
+    "/bentley/restaurant.webp",
+    "/bentley/mezzanine_theater.webp",
+    "/bentley/wellness_salon.webp",
+    "/bentley/gym.webp",
+    "/bentley/sunset-pool.webp",
+    "/bentley/east_unit_pool.webp",
+    "/bentley/west_unit_pool.webp",
+    "/bentley/east_unit_foyer.webp",
+    "/bentley/east_unit_kitchen.webp",
+    "/bentley/east_unit_masterbed.webp",
+    "/bentley/east_unit_masterbed2.webp",
+    "/bentley/east_unit_floridaroom.webp",
+    "/bentley/west_unit_masterbed.webp",
+    "/bentley/west_unit_masterbath.webp",
+    "/bentley/west_unit_kitchen.webp",
+    "/bentley/west_unit_greatroom.webp",
+    "/bentley/west_unit_balcony1.webp",
+    "/bentley/west_unit_balcony2.webp"
+  ],
+  "interiorDesigner": "Bentley Design Team",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Sunny Isles branded corridor delivery comps (Porsche Design, Armani/Casa)"
+      },
+      {
+        "value": "$1,400",
+        "label": "Avg asking / sq ft (total)",
+        "note": "vs. ~$2,167/sqft Ritz-Carlton Sunny Isles resale avg (Q3 2025)"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Avg over non-branded peers globally (Knight Frank 2025)"
+      },
+      {
+        "value": "216",
+        "label": "Total residences",
+        "note": "Boutique for a 62-story oceanfront tower; scale creates amenity depth without diluting exclusivity"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Engineering",
+        "pillColor": "gold",
+        "title": "World's first Dezervator™ car elevator",
+        "body": "Dezer's proprietary sky-garage system — first deployed at Porsche Design Tower, which delivered among the strongest post-delivery appreciation in Sunny Isles history. Bentley Residences is the second iteration."
+      },
+      {
+        "pill": "Brand scarcity",
+        "pillColor": "gold",
+        "title": "First Bentley-branded residence in the world",
+        "body": "Bentley's global debut in residential real estate. Brand-first projects in Miami (Porsche, Armani, Versace) have consistently commanded resale premiums. No comparable Bentley address exists anywhere."
+      },
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Superstructure at ~13 stories (August 2026)",
+        "body": "Went vertical in June 2026 and is climbing at roughly one floor every five to six working days. Delivery remains targeted for 2028."
+      },
+      {
+        "pill": "Land scarcity",
+        "pillColor": "gray",
+        "title": "Dezer controls majority of Sunny Isles oceanfront",
+        "body": "Michael Dezer owns more oceanfront acreage in Sunny Isles than any other single owner. Future supply from this developer will be limited by choice, not availability."
+      }
+    ],
+    "thesis": "Dezer Development's track record is the most relevant comparable: Porsche Design Tower, launched in 2012 at ~$1,400/sqft, traded above $3,000/sqft at resale. Bentley Residences extends that playbook with a first-in-class automotive brand, the Dezervator sky-garage, and a 216-unit canvas. At 716 feet and 62 stories, it will be the tallest residential tower on a U.S. beachfront upon its 2028 delivery — a distinction that supports long-term resale demand.",
+    "footnote": "HOA: ~$2.50/sq ft · Rental policy: Min 6-month lease · Delivery: 2028"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Sunny Isles branded corridor delivery comps (Porsche Design, Armani/Casa)"
+      },
+      {
+        "value": "$1,400",
+        "label": "Avg asking / sq ft (total)",
+        "note": "vs. ~$2,167/sqft Ritz-Carlton Sunny Isles resale avg (Q3 2025)"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Avg over non-branded peers globally (Knight Frank 2025)"
+      },
+      {
+        "value": "216",
+        "label": "Total residences",
+        "note": "Boutique for a 62-story oceanfront tower; scale creates amenity depth without diluting exclusivity"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Engineering",
+        "pillColor": "gold",
+        "title": "World's first Dezervator™ car elevator",
+        "body": "Dezer's proprietary sky-garage system — first deployed at Porsche Design Tower, which delivered among the strongest post-delivery appreciation in Sunny Isles history. Bentley Residences is the second iteration."
+      },
+      {
+        "pill": "Brand scarcity",
+        "pillColor": "gold",
+        "title": "First Bentley-branded residence in the world",
+        "body": "Bentley's global debut in residential real estate. Brand-first projects in Miami (Porsche, Armani, Versace) have consistently commanded resale premiums. No comparable Bentley address exists anywhere."
+      },
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Superstructure at ~13 stories (August 2026)",
+        "body": "Went vertical in June 2026 and is climbing at roughly one floor every five to six working days. Delivery remains targeted for 2028."
+      },
+      {
+        "pill": "Land scarcity",
+        "pillColor": "gray",
+        "title": "Dezer controls majority of Sunny Isles oceanfront",
+        "body": "Michael Dezer owns more oceanfront acreage in Sunny Isles than any other single owner. Future supply from this developer will be limited by choice, not availability."
+      }
+    ],
+    "thesis": "Dezer Development's track record is the most relevant comparable: Porsche Design Tower, launched in 2012 at ~$1,400/sqft, traded above $3,000/sqft at resale. Bentley Residences extends that playbook with a first-in-class automotive brand, the Dezervator sky-garage, and a 216-unit canvas. At 716 feet and 62 stories, it will be the tallest residential tower on a U.S. beachfront upon its 2028 delivery — a distinction that supports long-term resale demand.",
+    "footnote": "HOA: ~$2.50/sq ft · Rental policy: Min 6-month lease · Delivery: 2028"
+  },
+  "investmentThesis": "<p>At 716 feet, Bentley Residences is the tallest residential tower on any U.S. beachfront, backed by a $630M construction loan and Florida Green Building Council certification. Construction went vertical in June 2026 and has reached approximately 13 stories as of late July, advancing at roughly one floor every five to six working days. The foundation pour (a 36-hour, 20,000-cubic-yard operation by Coastal Construction) was the largest residential construction pour in Florida and the second-largest in U.S. history. The Dezervator™ vehicle elevator system is a genuine engineering innovation that exists nowhere else in the world, and the brand collaboration is the first ground-up residential project in Bentley's history. Dezer Development controls 200 feet of Sunny Isles Beach oceanfront at 18401 Collins Avenue, with Aventura Mall, Bal Harbour Shops, and both MIA and FLL airports within reach. Completion 2028.</p>",
+  "isActive": true,
+  "landscapeArchitect": "Enzo Enea",
+  "lat": 25.9463,
+  "lng": -80.1202,
+  "maxBath": 5,
+  "maxBed": 5,
+  "maxPrice": 37500000,
+  "maxSqft": 12000,
+  "minBath": 3,
+  "minBed": 3,
+  "minPrice": 5800000,
+  "minSqft": 3500,
+  "name": "Bentley Residences",
+  "neighborhood": "Sunny Isles Beach",
+  "parking": "1 sky garage included per residence",
+  "percentSold": 50,
+  "priceFrom": "$5.8M+",
+  "pricePerSqft": 1400,
+  "privacyScore": 85,
+  "projectedAppreciation": 32,
+  "rentalPolicy": "Min 6-month lease, 2x per year. No short-term.",
+  "residenceContent": "<p class=\"prop-residence-intro\">The world's first Bentley-branded residential building, with no more than four homes per floor. Arrival is via the glass-enclosed Dezervator™ — a patented vehicular elevator system with four robotic car lifts that delivers you and your cars directly to your private sky garage, accommodating three to four vehicles per residence.</p><div class=\"residence-highlights\"><div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Views</span><span class=\"residence-highlight-value\">Atlantic &amp; Intracoastal</span></div><div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Ceilings</span><span class=\"residence-highlight-value\">10 ft Smooth-Finish</span></div><div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Kitchens</span><span class=\"residence-highlight-value\">Miele full suite</span></div><div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Smart Home</span><span class=\"residence-highlight-value\">Crestron + Savant</span></div></div><p>Residences are delivered fully finished with diamond-pattern oolite stone flooring, custom Italian-designed cabinetry, Miele full kitchen suites, primary bathrooms with soaking tubs, custom vanities and private sauna rooms, motorized blackout shades, and private elevator landings. Every home includes dual laundry, two hot water heaters, and a dedicated A/V closet. The cylindrical glass facade maximizes ocean exposure while the Dezervator delivers residents and their vehicles to sky garages with three to four car capacity per residence.</p>",
+  "salesTeam": "Douglas Elliman",
+  "slug": "bentley-residences",
+  "stage": "under_construction",
+  "stageLabel": "13 Floors Above Grade",
+  "statusRemark": "~13 Floors Above Grade · 2028 Delivery",
+  "units": 216,
+  "unitsLeft": 108,
+  "verified": {
+    "completion": {
+      "date": "2026-06-11",
+      "source": "PROFILEmiami — 2028, construction past level 7 of 62"
+    },
+    "pricePerSqft": {
+      "date": "2026-08-21",
+      "source": "MLS listings on total SF basis, matching the displayed size range"
+    },
+    "percentSold": {
+      "date": "2025-11-05",
+      "source": "The Real Deal — over 50 percent presold, $630M loan"
+    }
+  },
+  "videoTourId": null,
+  "wellnessScore": 78
+}

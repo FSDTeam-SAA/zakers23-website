@@ -1,0 +1,273 @@
+{
+  "address": "740 Ocean Terrace, Miami Beach, FL 33141",
+  "amenities": [
+    {
+      "icon": "🚗",
+      "label": "Porte Cochère & Motor Court",
+      "sub": "Cobblestone drive, triple-height"
+    },
+    {
+      "icon": "📚",
+      "label": "Library & Tea Room",
+      "sub": "Rattan shelving, garden views"
+    },
+    {
+      "icon": "🏊",
+      "label": "75-ft Lap Pool",
+      "sub": "5th-floor Ocean Terrace deck"
+    },
+    {
+      "icon": "🧘",
+      "label": "Spa & Fitness",
+      "sub": "Treatment rooms, sauna, yoga lawn"
+    },
+    {
+      "icon": "🍽",
+      "label": "Sunrise Restaurant",
+      "sub": "Oceanfront + members' club"
+    },
+    {
+      "icon": "🛎",
+      "label": "24-Hour Concierge",
+      "sub": "Valet, catering, sommelier"
+    }
+  ],
+  "amenitiesDescription": "<p><strong>Arrival & Lobby:</strong> Grand porte-cochère with cobblestone drive and triple-height motor court. RAMSA-designed lobby with 14-ft coffered ceiling and Port Oro marble desk.</p><p><strong>Resident Spaces:</strong> Curvilinear library with rattan-lined shelving. Tea Room with travertine floors and garden views. Private morning garden by Enzo Enea. Residents' private suite: lounge, media room, catering kitchen, children's playroom.</p><p><strong>Pool & Terrace:</strong> 5th-floor Ocean Terrace amenity deck. 75-ft residents' lap pool, therapy pool, and poolside bar. Sunrise lawn with garden cabanas and hammock coves.</p><p><strong>Wellness:</strong> Indoor-outdoor fitness center with ocean views, movement studio, and yoga lawn. Spa with treatment rooms, sauna, steam rooms, and relaxation lounge.</p><p><strong>Hotel & Dining:</strong> 42-key boutique hotel (Art Deco building, RAMSA interiors). Oceanfront Sunrise Restaurant. Private members' club with rooftop bar. Approximately 15,000 SF curated street-level retail.</p><p><strong>Services:</strong> 24-hour concierge, valet, in-home catering, and sommelier service.</p>",
+  "architect": "Revuelta Architecture International",
+  "completion": "Est. 2029",
+  "densityScore": 20,
+  "description": "An entire oceanfront city block in North Beach. 350 feet of Atlantic frontage, 76 residences, RAMSA interiors. Two towers plus boutique hotel, private club, and curated retail. Est. 2029.",
+  "developer": "Witkoff + Ocean Terrace Holdings",
+  "floorPlans": [
+    {
+      "type": "3 Bedroom",
+      "addlRooms": "Condominium · Terrace",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "~2,950–4,200 SF",
+      "status": "From $6,300,000"
+    },
+    {
+      "type": "4 Bedroom",
+      "addlRooms": "Condominium · Terrace",
+      "beds": 4,
+      "baths": 4,
+      "sqft": "~4,500–6,000 SF",
+      "status": "$10.3M–~$16M"
+    },
+    {
+      "type": "Penthouse (Lower)",
+      "addlRooms": "Condominium · Private Rooftop Pool",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "~6,000–6,500 SF",
+      "status": "Price on request"
+    },
+    {
+      "type": "Penthouse (Upper)",
+      "addlRooms": "Condominium · Private Rooftop Pool",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "~6,500–6,900 SF",
+      "status": "Up to ~$64M"
+    },
+    {
+      "type": "Resort Residence",
+      "addlRooms": "Condo-Hotel · Separate Tower · Fully Furnished",
+      "separateProgram": true,
+      "beds": "1–4",
+      "baths": "1–4.5",
+      "sqft": "Varies",
+      "status": "From ~$3.5M"
+    }
+  ],
+  "height": "20 Stories (235 ft)",
+  "heroImgPosition": "58% center",
+  "hoa": "~$2.50/SF/month",
+  "id": 26,
+  "img": "https://frasermiami.s3.amazonaws.com/oceanterrace/hero-beach.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/hero-beach.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/porte-cochere.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/library.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/tea-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/garden-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/pool-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/restaurant.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/gym.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/massage-romo.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/living.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/balcony-living.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanterrace/kitchen2.webp"
+  ],
+  "inquiryButtonLabel": "Request Full Fact Sheet & Floor Plans",
+  "inquirySubject": "Inquiry: Ocean Terrace Residences - Fact Sheet & Floor Plans Request",
+  "interiorDesigner": "Robert A.M. Stern Architects (RAMSA)",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "North Beach up-zoning and Art Deco district revitalization driving strong appreciation cycle"
+      },
+      {
+        "value": "$2,100",
+        "label": "Entry price per sq ft",
+        "note": "North Beach luxury entry point"
+      },
+      {
+        "value": "First in a decade",
+        "label": "New luxury oceanfront in North Beach",
+        "note": "No competing oceanfront supply in the pipeline"
+      },
+      {
+        "value": "$3.5M",
+        "label": "Resort residence entry",
+        "note": "The 24 condo-hotel residences in the separate resort tower open beneath the 52-unit condominium, which starts at $6.3M."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Neighborhood momentum",
+        "pillColor": "gold",
+        "title": "North Beach — Miami Beach's most active revitalization corridor",
+        "body": "The City of Miami Beach has invested significantly in the North Beach Town Center and oceanfront promenade. New food and beverage, art programming, and residential investment are repositioning North Beach from undervalued to emerging luxury — the classic early-cycle setup."
+      },
+      {
+        "pill": "Historic",
+        "pillColor": "gold",
+        "title": "Art Deco oceanfront — distinctive design context",
+        "body": "Ocean Terrace's site faces one of the most intact stretches of Art Deco architecture on Miami Beach's ocean side. The historic context and promenade create a neighborhood texture that brand-new towers in Brickell or Edgewater cannot replicate."
+      },
+      {
+        "pill": "Relative value",
+        "pillColor": "green",
+        "title": "Miami Beach oceanfront at Mid-Beach prices from 5 years ago",
+        "body": "Ocean Terrace opens at the low end of Mid-Beach and Surfside oceanfront pricing ($2,000–$3,500/sqft). For buyers who believe North Beach is undervalued relative to its oceanfront location, this is the asymmetric entry point."
+      },
+      {
+        "pill": "Supply",
+        "pillColor": "gray",
+        "title": "No competing oceanfront supply in North Beach pipeline",
+        "body": "North Beach's strict historic district zoning and height limits make it essentially impossible to build a competing oceanfront tower. Ocean Terrace's supply position is effectively permanent."
+      }
+    ],
+    "thesis": "Ocean Terrace is the North Beach conviction bet: a first-mover on Miami Beach's last undervalued oceanfront corridor, at a price point that already reflects its neighborhood status rather than its trajectory. Mid-Beach was once priced at North Beach levels before the Faena, Aman, and Perigon pipeline repositioned it. The same thesis applies here — but earlier in the cycle, with real oceanfront access and genuine Art Deco context.",
+    "footnote": "HOA: ~$2.50/sq ft · Rental policy: Min 30-day, up to 6x per year · Delivery: 2029"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "North Beach up-zoning and Art Deco district revitalization driving strong appreciation cycle"
+      },
+      {
+        "value": "$2,100",
+        "label": "Entry price per sq ft",
+        "note": "North Beach luxury entry point"
+      },
+      {
+        "value": "First in a decade",
+        "label": "New luxury oceanfront in North Beach",
+        "note": "No competing oceanfront supply in the pipeline"
+      },
+      {
+        "value": "$3.5M",
+        "label": "Resort residence entry",
+        "note": "The 24 condo-hotel residences in the separate resort tower open beneath the 52-unit condominium, which starts at $6.3M."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Neighborhood momentum",
+        "pillColor": "gold",
+        "title": "North Beach — Miami Beach's most active revitalization corridor",
+        "body": "The City of Miami Beach has invested significantly in the North Beach Town Center and oceanfront promenade. New food and beverage, art programming, and residential investment are repositioning North Beach from undervalued to emerging luxury — the classic early-cycle setup."
+      },
+      {
+        "pill": "Historic",
+        "pillColor": "gold",
+        "title": "Art Deco oceanfront — distinctive design context",
+        "body": "Ocean Terrace's site faces one of the most intact stretches of Art Deco architecture on Miami Beach's ocean side. The historic context and promenade create a neighborhood texture that brand-new towers in Brickell or Edgewater cannot replicate."
+      },
+      {
+        "pill": "Relative value",
+        "pillColor": "green",
+        "title": "Miami Beach oceanfront at Mid-Beach prices from 5 years ago",
+        "body": "Ocean Terrace opens at the low end of Mid-Beach and Surfside oceanfront pricing ($2,000–$3,500/sqft). For buyers who believe North Beach is undervalued relative to its oceanfront location, this is the asymmetric entry point."
+      },
+      {
+        "pill": "Supply",
+        "pillColor": "gray",
+        "title": "No competing oceanfront supply in North Beach pipeline",
+        "body": "North Beach's strict historic district zoning and height limits make it essentially impossible to build a competing oceanfront tower. Ocean Terrace's supply position is effectively permanent."
+      }
+    ],
+    "thesis": "Ocean Terrace is the North Beach conviction bet: a first-mover on Miami Beach's last undervalued oceanfront corridor, at a price point that already reflects its neighborhood status rather than its trajectory. Mid-Beach was once priced at North Beach levels before the Faena, Aman, and Perigon pipeline repositioned it. The same thesis applies here — but earlier in the cycle, with real oceanfront access and genuine Art Deco context.",
+    "footnote": "HOA: ~$2.50/sq ft · Rental policy: Min 30-day, up to 6x per year · Delivery: 2029"
+  },
+  "investmentThesis": "<p>One of the last remaining full-block oceanfront development sites on Miami Beach. The 350 feet of continuous Atlantic frontage creates a land position that is essentially irreplaceable. The dual-product offering (52 boutique + 24 resort residences) addresses two distinct buyer segments within a single address. The private members' club and boutique hotel generate foot traffic and service infrastructure that purely residential buildings cannot support. Enzo Enea and Raymond Jungles handling landscape design — two of the most respected firms in the field — signals the level of ambition. 60,000+ SF of resort-style amenities. Est. delivery 2029.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeArchitect": "Enzo Enea (Ocean Terrace) + Raymond Jungles (Park)",
+  "lat": 25.8605258,
+  "lng": -80.1201703,
+  "locationScore": 45,
+  "maxBed": 5,
+  "maxPrice": 64000000,
+  "maxSqft": 6900,
+  "minBed": 3,
+  "minPrice": 6300000,
+  "minSqft": 2950,
+  "name": "Ocean Terrace Residences",
+  "neighborhood": "North Beach, Miami Beach",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/ocean-terrace-residences.jpg",
+  "priceFrom": "$6.3M+",
+  "pricePerSqft": 2100,
+  "privacyScore": 90,
+  "projectedAppreciation": 30,
+  "rentalPolicy": "30-day minimum, up to 6 rentals per year",
+  "residenceContent": "<p class=\"prop-residence-intro\">Occupying an entire oceanfront city block in Miami Beach's North Beach enclave, commanding 350 feet of continuous Atlantic frontage across 2.2 acres. Two sculptural glass towers yield 52 boutique residences and 24 fully furnished resort residences — every one facing east with unobstructed ocean views. Interiors by RAMSA and exteriors by Revuelta blend a boutique hotel, private members' club, curated retail, and tropical gardens by Enzo Enea and Raymond Jungles into a self-contained luxury ecosystem. Boutique residences feature 10-foot ceilings, floor-to-ceiling hurricane-rated glass, custom European oak and porcelain flooring, Italian stone kitchens, and smart home systems. Resort residences arrive fully furnished for those seeking a turnkey oceanfront address.</p>",
+  "slug": "ocean-terrace-residences",
+  "sqftRange": "2,950 – 6,900",
+  "stage": "preconstruction",
+  "statusRemark": "PRE-CONSTRUCTION · EST. 2029",
+  "stickyCtaLabel": "Request Fact Sheet",
+  "units": 76,
+  "verified": {
+    "priceFrom": {
+      "date": "2026-03-23",
+      "source": "PROFILEmiami — Witkoff reveal, condominium pricing from $6.3M"
+    },
+    "minPrice": {
+      "date": "2026-03-23",
+      "source": "PROFILEmiami — Witkoff reveal, condominium pricing from $6.3M"
+    },
+    "pricePerSqft": {
+      "date": "2026-03-23",
+      "source": "Derived: $6.3M entry condominium at ~2,950 SF"
+    },
+    "units": {
+      "date": "2026-03-23",
+      "source": "PROFILEmiami — 52 condominiums plus 24 resort residences"
+    },
+    "completion": {
+      "date": "2026-03-23",
+      "source": "PROFILEmiami — completion expected 2029"
+    },
+    "stage": {
+      "date": "2026-03-23",
+      "source": "PROFILEmiami — preconstruction, sales underway"
+    },
+    "floorPlans": {
+      "date": "2026-03-23",
+      "source": "Ocean Terrace official site and Traded resort residences launch"
+    }
+  },
+  "wellnessScore": 85
+}

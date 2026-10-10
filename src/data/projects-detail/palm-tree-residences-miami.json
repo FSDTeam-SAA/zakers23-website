@@ -1,0 +1,600 @@
+{
+  "address": "1018 N Miami Ave, Miami, FL 33136",
+  "amenities": [
+    {
+      "icon": "🌴",
+      "label": "57,000 SF Amenities",
+      "sub": "Three levels of curated programming"
+    },
+    {
+      "icon": "🎵",
+      "label": "Palm Tree Club Venue",
+      "sub": "Ground-level F&B with curated sound"
+    },
+    {
+      "icon": "🏊",
+      "label": "Beach Club Rooftop",
+      "sub": "Resort-style infinity pool"
+    },
+    {
+      "icon": "🎾",
+      "label": "Double Padel Court",
+      "sub": "Plus golf simulator"
+    },
+    {
+      "icon": "🧖",
+      "label": "Spa & Cold Plunge",
+      "sub": "Steam, sauna, treatment rooms"
+    },
+    {
+      "icon": "🔄",
+      "label": "Short-Term Rental",
+      "sub": "Fully furnished, turnkey delivery"
+    }
+  ],
+  "amenitiesDescription": "<p>Over 57,000 square feet of curated amenities spans three levels, anchored by the signature Palm Tree Club venue at ground level with culinary and entertainment programming curated by Palm Tree Crew's artist network. The Palm Tree Beach Club rooftop features a resort-style infinity pool, lounge bar with garden terrace, and a private members lounge. Wellness facilities include a Technogym-equipped fitness center with climbing wall, a movement studio for yoga and Pilates, and a spa with steam, sauna, cold plunge, and private treatment rooms. A double padel court, a golf simulator, juice bar, valet, house cruiser bikes, and 24-hour concierge complete the offering.</p>",
+  "architect": "Kobi Karp Architecture & Interior Design",
+  "badge": "NEW LAUNCH · SHORT-TERM RENTAL FLEXIBILITY",
+  "completion": "Q4 2029",
+  "densityScore": 90,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "January 2027"
+    },
+    {
+      "percentage": 5,
+      "milestone": "April 2027 (Groundbreaking)"
+    }
+  ],
+  "description": "Designed by Kobi Karp Architecture, Palm Tree Residences is a 37-story tower of 483 fully finished, furnished turnkey homes in Miami's Entertainment District. Floor plans span junior suites through three-bedroom residences with Italkraft kitchens, Miele appliances, and Waterworks baths. A PMG and Palm Tree Crew collaboration pairing yield-flexible short-term rental product with a globally recognized lifestyle brand.",
+  "developer": "PMG, Lion Development Group, Sterling Equities, Eden Residential",
+  "discoveryEngine": {
+    "lifestyle": [
+      "urban-core",
+      "branded-living",
+      "nightlife",
+      "short-term-rental"
+    ],
+    "investmentProfile": [
+      "pre-construction",
+      "income-producing",
+      "turnkey"
+    ],
+    "priceCategory": "luxury",
+    "vibeMatch": [
+      "city-energy",
+      "social",
+      "lifestyle-led"
+    ],
+    "goodFor": [
+      "investment",
+      "second-home",
+      "international-buyer"
+    ]
+  },
+  "editorialLine": "The global Palm Tree lifestyle, built for Miami.",
+  "featureVideo": {
+    "src": "/palm-tree-residences-miami/palm-tree-residences-video.mp4",
+    "poster": "/palm-tree-residences-miami/building-hero.webp",
+    "label": "Palm Tree Residences",
+    "tagline": "Downtown Miami living, 37 stories up — rooftop pool, double padel court, and a skyline that never sits still.",
+    "uploadDate": "2026-08-25"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "Residence 03",
+      "floors": "Floor 12",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 632,
+      "exteriorSF": 206,
+      "addlRooms": "Den",
+      "priceLabel": "$749,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 03",
+      "floors": "Floor 18 · East view",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 632,
+      "exteriorSF": 206,
+      "addlRooms": "Den",
+      "priceLabel": "$791,500",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 08",
+      "floors": "Floor 16 · South view",
+      "beds": 1,
+      "baths": 1,
+      "interiorSF": 602,
+      "exteriorSF": 106,
+      "addlRooms": "Den",
+      "priceLabel": "$920,500",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 10",
+      "floors": "Floor 10 · West & south views",
+      "beds": 2,
+      "baths": 2,
+      "interiorSF": 859,
+      "exteriorSF": 352,
+      "priceLabel": "$1,043,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 05",
+      "floors": "Floor 21 · South view · Lock-out option (2BR + studio)",
+      "beds": 3,
+      "baths": 3,
+      "interiorSF": 1209,
+      "exteriorSF": 213,
+      "priceLabel": "$1,630,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 16",
+      "floors": "Floor 19",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 510,
+      "exteriorSF": 72,
+      "addlRooms": "Private Office (62 SF)",
+      "priceLabel": "$603,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 11",
+      "floors": "Floor 12",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 619,
+      "exteriorSF": 155,
+      "addlRooms": "Den / Private Office (75 SF)",
+      "priceLabel": "$724,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 14 & 15",
+      "floors": "Floor 11",
+      "beds": 1,
+      "baths": 1,
+      "interiorSF": 604,
+      "exteriorSF": 40,
+      "addlRooms": "Den / Private Office (60 SF)",
+      "priceLabel": "$764,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 13",
+      "floors": "Floor 11",
+      "beds": 2,
+      "baths": 2,
+      "interiorSF": 863,
+      "exteriorSF": 277,
+      "addlRooms": "Private Office (84 SF)",
+      "priceLabel": "$974,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 05",
+      "floors": "Floor 11",
+      "beds": 3,
+      "baths": 3,
+      "interiorSF": 1209,
+      "exteriorSF": 101,
+      "addlRooms": "Private Office (100 SF)",
+      "priceLabel": "$1,491,500",
+      "status": "Available"
+    },
+    {
+      "type": "Penthouse Collection",
+      "floors": "PH07",
+      "beds": null,
+      "baths": null,
+      "interiorSF": 1114,
+      "exteriorSF": 178,
+      "addlRooms": "Private Office (120 SF)",
+      "priceLabel": "$1,667,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 02",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 491,
+      "exteriorSF": 152,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 06",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 509,
+      "exteriorSF": 72,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 07",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 509,
+      "exteriorSF": 72,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 12",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 478,
+      "exteriorSF": 171,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 16",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 510,
+      "exteriorSF": 72,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 17",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 510,
+      "exteriorSF": 72,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 03",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 632,
+      "exteriorSF": 206,
+      "addlRooms": "Den",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 11",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 619,
+      "exteriorSF": 234,
+      "addlRooms": "Den",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 08",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 1,
+      "baths": 1,
+      "interiorSF": 602,
+      "exteriorSF": 106,
+      "addlRooms": "Den",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 09",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 1,
+      "baths": 1,
+      "interiorSF": 603,
+      "exteriorSF": 95,
+      "addlRooms": "Den",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 14",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 1,
+      "baths": 1,
+      "interiorSF": 605,
+      "exteriorSF": 95,
+      "addlRooms": "Den",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 15",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 1,
+      "baths": 1,
+      "interiorSF": 604,
+      "exteriorSF": 106,
+      "addlRooms": "Den",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 18",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 1,
+      "baths": 1,
+      "interiorSF": 606,
+      "exteriorSF": 106,
+      "addlRooms": "Den",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 19",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 1,
+      "baths": 1,
+      "interiorSF": 607,
+      "exteriorSF": 94,
+      "addlRooms": "Den",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 01",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 2,
+      "baths": 2,
+      "interiorSF": 854,
+      "exteriorSF": 359,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 04",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 2,
+      "baths": 2,
+      "interiorSF": 853,
+      "exteriorSF": 345,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 10",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 2,
+      "baths": 2,
+      "interiorSF": 859,
+      "exteriorSF": 352,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 13",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 2,
+      "baths": 2,
+      "interiorSF": 863,
+      "exteriorSF": 352,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 05",
+      "floors": "Floors 10, 16, 21, 31 & 36",
+      "beds": 3,
+      "baths": 3,
+      "interiorSF": 1209,
+      "exteriorSF": 213,
+      "status": "Inquire"
+    }
+  ],
+  "heroImgPosition": "center",
+  "hoa": "$1.79/sf (includes trash, water, valet & internet)",
+  "id": 49,
+  "img": "https://frasermiami.s3.amazonaws.com/palm-tree-residences-miami/building-hero.webp",
+  "imgPositions": {
+    "3": "50% 100%"
+  },
+  "imgPositionsMobile": {
+    "3": "50% 100%"
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/palm-tree-residences-miami/building-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/palm-tree-residences-miami/rooftop-pool-deck.webp",
+    "https://frasermiami.s3.amazonaws.com/palm-tree-residences-miami/padel-court.webp",
+    "https://frasermiami.s3.amazonaws.com/palm-tree-residences-miami/gym.webp",
+    "https://frasermiami.s3.amazonaws.com/palm-tree-residences-miami/living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/palm-tree-residences-miami/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/palm-tree-residences-miami/primary-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/palm-tree-residences-miami/primary-bathroom.webp"
+  ],
+  "interiorDesigner": "Kobi Karp",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "483",
+        "label": "Turnkey Residences",
+        "note": "Fully furnished and finished, eliminating post-closing fit-out and standardizing rental product across the tower"
+      },
+      {
+        "value": "Low-$600s",
+        "label": "Now Releasing",
+        "note": "From the low-$600s. Now Releasing. Current pricing spans junior suites from the low-$600s through premium three-bedroom residences up to $3M."
+      },
+      {
+        "value": "57,000 SF",
+        "label": "Amenity Program",
+        "note": "Three levels of hospitality-driven programming including Palm Tree Club venue, Beach Club rooftop, double padel court, and full spa"
+      },
+      {
+        "value": "STR",
+        "label": "Short-Term Rental Eligible",
+        "note": "Entertainment District zoning permits daily rentals without HOA lease restrictions, maximizing ADR potential"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Developer Track Record",
+        "pillColor": "gold",
+        "title": "PMG's Entertainment District Dominance",
+        "body": "The developer has already pioneered and proven the ultra-luxury short-term rental model in this immediate corridor with historic sellouts at E11EVEN Hotel & Residences and West Eleventh. Palm Tree Residences executes that exact same liquid, high-occupancy playbook under optimized Entertainment District zoning."
+      },
+      {
+        "pill": "Brand Gravity",
+        "pillColor": "gold",
+        "title": "Kygo's Palm Tree Crew lifestyle ecosystem",
+        "body": "The brand produces festivals in St. Tropez, Aspen, the Hamptons, and Napa, anchoring cultural moments from F1 Miami to Art Basel. Ownership functions as an exclusive lifestyle passport with VIP access to curated global activations."
+      },
+      {
+        "pill": "Owner Access",
+        "pillColor": "gold",
+        "title": "Festival and venue privileges worldwide",
+        "body": "Ownership unlocks priority festival access, expedited entry at PTC venues, and weekday dining at Palm Tree Club Miami—extending asset utility beyond the unit through an exclusive lifestyle passport."
+      },
+      {
+        "pill": "Product Spec",
+        "pillColor": "gray",
+        "title": "Turnkey STR product at scale",
+        "body": "Operators can list at delivery with hospitality-grade Italkraft, Miele, and Waterworks specifications throughout — consistent, rental-ready product with no variable finish quality across the tower."
+      }
+    ],
+    "thesis": "Palm Tree Residences stands out as the cycle's defining intersection of high-yield utility and global brand equity. Attaching Kygo's Palm Tree Crew lifestyle ecosystem generates immediate organic demand, while the unconstrained short-term rental flexibility removes investor friction and drives maximum ADR potential. Crucially, ownership acts as an exclusive lifestyle passport—granting residents priority access to Palm Tree Festivals, expedited entry at PTC venues, and members-only tables and lounges. Entering at current pricing from the low-$600s provides sophisticated portfolio buyers with highly asymmetric upside in the urban core's most lucrative hospitality segment.",
+    "footnote": "HOA: $1.79/sf · Rental policy: Short-term rentals permitted · Pricing from the low-$600s · Delivery: Q4 2029 · Developers: PMG, Lion Development Group, Sterling Equities, Eden Residential"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "483",
+        "label": "Turnkey Residences",
+        "note": "Fully furnished and finished, eliminating post-closing fit-out and standardizing rental product across the tower"
+      },
+      {
+        "value": "Low-$600s",
+        "label": "Now Releasing",
+        "note": "From the low-$600s. Now Releasing. Current pricing spans junior suites from the low-$600s through premium three-bedroom residences up to $3M."
+      },
+      {
+        "value": "57,000 SF",
+        "label": "Amenity Program",
+        "note": "Three levels of hospitality-driven programming including Palm Tree Club venue, Beach Club rooftop, double padel court, and full spa"
+      },
+      {
+        "value": "STR",
+        "label": "Short-Term Rental Eligible",
+        "note": "Entertainment District zoning permits daily rentals without HOA lease restrictions, maximizing ADR potential"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Developer Track Record",
+        "pillColor": "gold",
+        "title": "PMG's Entertainment District Dominance",
+        "body": "The developer has already pioneered and proven the ultra-luxury short-term rental model in this immediate corridor with historic sellouts at E11EVEN Hotel & Residences and West Eleventh. Palm Tree Residences executes that exact same liquid, high-occupancy playbook under optimized Entertainment District zoning."
+      },
+      {
+        "pill": "Brand Gravity",
+        "pillColor": "gold",
+        "title": "Kygo's Palm Tree Crew lifestyle ecosystem",
+        "body": "The brand produces festivals in St. Tropez, Aspen, the Hamptons, and Napa, anchoring cultural moments from F1 Miami to Art Basel. Ownership functions as an exclusive lifestyle passport with VIP access to curated global activations."
+      },
+      {
+        "pill": "Owner Access",
+        "pillColor": "gold",
+        "title": "Festival and venue privileges worldwide",
+        "body": "Ownership unlocks priority festival access, expedited entry at PTC venues, and weekday dining at Palm Tree Club Miami—extending asset utility beyond the unit through an exclusive lifestyle passport."
+      },
+      {
+        "pill": "Product Spec",
+        "pillColor": "gray",
+        "title": "Turnkey STR product at scale",
+        "body": "Operators can list at delivery with hospitality-grade Italkraft, Miele, and Waterworks specifications throughout — consistent, rental-ready product with no variable finish quality across the tower."
+      }
+    ],
+    "thesis": "Palm Tree Residences stands out as the cycle's defining intersection of high-yield utility and global brand equity. Attaching Kygo's Palm Tree Crew lifestyle ecosystem generates immediate organic demand, while the unconstrained short-term rental flexibility removes investor friction and drives maximum ADR potential. Crucially, ownership acts as an exclusive lifestyle passport—granting residents priority access to Palm Tree Festivals, expedited entry at PTC venues, and members-only tables and lounges. Entering at current pricing from the low-$600s provides sophisticated portfolio buyers with highly asymmetric upside in the urban core's most lucrative hospitality segment.",
+    "footnote": "HOA: $1.79/sf · Rental policy: Short-term rentals permitted · Pricing from the low-$600s · Delivery: Q4 2029 · Developers: PMG, Lion Development Group, Sterling Equities, Eden Residential"
+  },
+  "investmentThesis": "<p>Sited in Miami's Entertainment District, the tower operates under zoning that permits short-term rentals without the minimum-lease restrictions typical of Miami condominiums. Turnkey delivery—fully finished, furnished, and rent-ready—removes fit-out risk and accelerates time-to-revenue for income-oriented buyers. Over 57,000 square feet of hospitality-driven amenity programming across three levels supports occupancy economics and guest experience at scale.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.7840333,
+  "lng": -80.1944318,
+  "maxBath": 3,
+  "maxBed": 3,
+  "maxPrice": 3000000,
+  "maxSqft": 1209,
+  "minBath": 1,
+  "minBed": 0,
+  "minPrice": 603000,
+  "minSqft": 478,
+  "name": "Palm Tree Residences Miami",
+  "neighborhood": "Downtown Miami",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=1018+N+Miami+Ave,+Miami,+FL+33136"
+  },
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/palm-tree-residences-miami.jpg",
+  "ownerBenefits": "<p>Palm Tree Residences Miami is the first residential address from Palm Tree Crew, the global lifestyle platform founded by Kygo and Myles Shear and the producer of the Palm Tree Music Festival across West Palm Beach, Aspen, the Hamptons, St. Tropez, Napa Valley, Montreal, Singapore and beyond. Here, ownership is not just an address. It is your way into that calendar.</p><p><strong>Palm Tree Club events and venues.</strong> Priority access to Palm Tree Festivals, with preferred ticketing and table opportunities. Dedicated, expedited entry at PTC venues and preferred ticket pricing across select venues. Weekday dining privileges at Palm Tree Club Miami, on the ground floor of your own building, plus access to members-only tables, lounges and premium viewing decks.</p><p><strong>In residence.</strong> A dedicated concierge who works across the entire Palm Tree Crew ecosystem, curated programming from wellness activations to resident and guest events, signature merchandise, and residents-only online discounts.</p><p>No other tower in Miami comes with this access. Request current pricing and availability below.</p>",
+  "ownerBenefitsTitle": "Palm Tree Club Access",
+  "ownerBenefitsVideo": {
+    "src": "/palm-tree-residences-miami/palm-tree-club.mp4",
+    "poster": "/palm-tree-residences-miami/palm-tree-club-poster.webp",
+    "eyebrow": "Owner Benefits",
+    "label": "Palm Tree Club",
+    "tagline": "Festivals, venues and the Palm Tree Crew calendar — priority access comes with ownership.",
+    "uploadDate": "2026-09-22",
+    "duration": "PT1M31S",
+    "trackingLabel": "owner-benefits"
+  },
+  "parking": "Valet (included in HOA); spot count TBD",
+  "priceFrom": "From $603,000",
+  "priceFromDisplay": "From Low-$600s",
+  "privacyScore": 30,
+  "rentalPolicy": "Short-term rental permitted",
+  "residenceContent": "<p class=\"prop-residence-intro\">Designed by the renowned Kobi Karp Architecture, Palm Tree Residences is a striking 37-story tower offering 483 fully finished and furnished turnkey homes. Floor plans range from efficient junior suites to expansive three-bedroom residences, with select configurations featuring custom Murphy beds for maximum layout flexibility. High-specification interiors include designer kitchens by Italkraft with fully integrated Miele appliances, alongside spa-inspired bathrooms outfitted with Waterworks fixtures and custom vanities. Every residence features a private balcony with skyline views and fully built-out closets. A collaboration between Property Markets Group (PMG) and Kygo's Palm Tree Crew, the development seamlessly capitalizes on Miami's high-demand short-term rental market by pairing a yield-flexible asset with a globally recognized lifestyle brand.</p>",
+  "salesTeam": "PMG Residential",
+  "seoKeywords": [
+    "Palm Tree Residences Miami",
+    "PMG Miami condos",
+    "Palm Tree Crew real estate",
+    "Downtown Miami short-term rentals",
+    "1018 N Miami Ave",
+    "Kobi Karp architecture Miami",
+    "Miami Entertainment District preconstruction",
+    "PMG Miami developments",
+    "Sterling Equities Miami",
+    "Palm Tree Crew Miami",
+    "Kygo Miami real estate",
+    "short-term rental condos Miami"
+  ],
+  "slug": "palm-tree-residences-miami",
+  "stage": "preconstruction",
+  "stageLabel": "Coming Soon",
+  "statusRemark": "Publicly announced May 2026. Current release from the low-$600s.",
+  "stories": 37,
+  "tagline": "The world's first Palm Tree Residences by PMG and Palm Tree Crew, offering short-term rental flexibility in Miami's Entertainment District.",
+  "units": 483,
+  "verified": {
+    "minPrice": {
+      "date": "2026-08-25",
+      "source": "Lowest actual unit price on record: Residence 1916 (Jr. Suite) at $603,000 on the Friends & Family Pricing sheet (Price List August 2026.png, Drive). Replaces $560,000 (palmtreeresidencemiami.com) on 2026-09-22: no dated broker collateral has shown any unit below $603K, and the Sep 22 release came in higher. F&F is a discount tier and 1916 is not re-confirmed, so regular entry pricing may already be higher -- re-check against PRICING/PTR Price Log.csv on each new release."
+    },
+    "maxPrice": {
+      "date": "2026-08-25",
+      "source": "Developer broker kit Price Range Sheet -- 3-Bedroom tier $1.4M-$3M"
+    },
+    "floorPlans": {
+      "date": "2026-09-22",
+      "source": "Developer broker kit -- Price Range Sheet key plan (levels 10, 16, 21, 31 & 36); interiorSF/exteriorSF and beds/baths per residence. Per-unit pricing withheld (status: Inquire) since only type-level launch ranges are confirmed, not current per-unit prices. Six specific priced units added same day from a 'Friends & Family Pricing' sheet Brett shared (screenshot, source page not identified) -- these carry real priceLabel/status: Available; note their exteriorSF (balcony) figures differ from the typical-floor key plan for the same residence numbers, which is plausibly genuine floor-specific variation (these units are on floors 11/12/19, not the typical reference floors 10/16/21/31/36) rather than a data conflict. UPDATE 2026-09-22: five more priced units (1203, 1608, 1803, 1010, 2105) added from per-unit pricing + floor plan PDFs the developer sales team posted to the Palm Tree Residences broker WhatsApp group on 2026-09-22 (screenshots Brett shared). Floors 12 and 18 are not typical key-plan floors, so their SF is the typical-floor figure for the stack and may differ slightly. The 2026-08-25 Friends & Family rows have NOT been re-confirmed as still available or still at those prices."
+    },
+    "completion": {
+      "date": "2026-08-25",
+      "source": "'Friends & Family Pricing' sheet Brett shared: Completion Q4 2029, Groundbreaking Spring 2027 (was 'Est. 2030', sourced only to general press coverage)."
+    },
+    "hoa": {
+      "date": "2026-08-25",
+      "source": "'Friends & Family Pricing' sheet Brett shared: $1.79/SF, includes trash, water, valet & internet (was TBD)."
+    },
+    "depositStructure": {
+      "date": "2026-08-25",
+      "source": "'Friends & Family Pricing' sheet Brett shared: 10% at contract, 10% Jan 2027, 5% April 2027 (groundbreaking) = 25% total down per the sheet's own '(Only 25% Down)' label. The remaining 75% is presumably due at/near closing but that split was not shown on the sheet, so it is NOT included here -- confirm before assuming a single 75% closing payment."
+    }
+  },
+  "wellnessScore": 70
+}

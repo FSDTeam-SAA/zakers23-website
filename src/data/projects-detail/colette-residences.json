@@ -1,0 +1,346 @@
+{
+  "address": "1880 Brickell Avenue, Miami, FL 33129",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "50-Foot Rooftop Pool",
+      "sub": "Cabanas & 5,200 SF sun deck"
+    },
+    {
+      "icon": "🧖",
+      "label": "Spa & Wellness",
+      "sub": "Jacuzzi, sauna & massage room"
+    },
+    {
+      "icon": "💪",
+      "label": "Technogym Fitness",
+      "sub": "Indoor + outdoor wellness deck"
+    },
+    {
+      "icon": "🛗",
+      "label": "Private Elevator Access",
+      "sub": "Password-protected, 4 elevators"
+    },
+    {
+      "icon": "🍽",
+      "label": "Indoor & Outdoor Lounges",
+      "sub": "Catering kitchen + BBQ"
+    },
+    {
+      "icon": "🎬",
+      "label": "Screening Room",
+      "sub": "Private cinema"
+    }
+  ],
+  "amenitiesDescription": "Amenities are scaled for 34 owners, not 400: over 15,000 square feet of shared space across indoor and outdoor zones. The rooftop anchors the building with a 50-foot swimming pool, private cabanas, and a 5,200 SF sun deck. Below that, a Technogym fitness center extends to an outdoor wellness area for yoga and stretching with city and bay views. A full spa includes a jacuzzi, sauna, and massage room. Entertaining is handled through an indoor lounge with catering kitchen for private dinners and an outdoor lounge with barbecue and kitchen. Additional spaces include a screening room, children's playroom, and meeting room. The double-height lobby is designed with natural light and lush greenery. Building services run 24/7 with concierge, front desk, valet, and advanced access control throughout.",
+  "architect": "OSPA · Bellon Architecture (Architect of Record)",
+  "badge": "PRE-CONSTRUCTION · 35% PRESOLD",
+  "completion": "2028",
+  "constructionImgs": [],
+  "densityScore": 30,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "60 Days from Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking (Est. Fall 2026)"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off (Est. Q1 2028)"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing (Est. Q4 2028)"
+    }
+  ],
+  "description": "Colette Residences brings a deliberately low-rise, boutique format to South Brickell: 34 homes across five stories at 1880 Brickell Avenue, where Brickell's urban energy meets the residential character of Coconut Grove. Developed by Meta Development and designed by Brazilian studio OSPA, the building is wrapped in wood, concrete, and glass, with private terraces from every residence and rooftop gardens open to the Miami sky. Four collections span ground floor through penthouse: Garden Residences with private yards and outdoor kitchens, Terrace Residences with expanded open-air living, the core Colette Residences on floors two through five, and two crown penthouses measuring nearly 6,000 square feet each with private rooftop pools. In a corridor of supertalls, Colette's five-story silhouette, private elevator access, and 15,000+ square feet of amenities for 34 owners is the counterpoint: intimate scale, serious finishing.",
+  "developer": "Meta Development",
+  "discoveryEngine": {
+    "vibes": [
+      "boutique",
+      "quiet-luxury",
+      "design-forward",
+      "residential",
+      "pre-construction"
+    ],
+    "goodFor": [
+      "primary-residence",
+      "family",
+      "privacy",
+      "downsizer"
+    ],
+    "dealbreakers": []
+  },
+  "editorialLine": "Boutique by design, not default.",
+  "featureVideo": {
+    "src": "/colette-residences/colette-brand-film.mp4",
+    "poster": "/colette-residences/colette-poster.webp",
+    "label": "Colette Residences",
+    "tagline": "34 homes across five stories in South Brickell — boutique scale, Brazilian design by OSPA.",
+    "uploadDate": "2026-09-03"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "The Terrace Residences",
+      "addlRooms": "Expanded Terraces",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "2,143 SF",
+      "status": "Available"
+    },
+    {
+      "type": "The Garden Residences",
+      "addlRooms": "Private Garden + Outdoor Kitchen + Spa",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "2,166–2,358 SF",
+      "status": "Available"
+    },
+    {
+      "type": "The Colette Residences (2BR)",
+      "addlRooms": "Terrace",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "2,210+ SF",
+      "status": "Available"
+    },
+    {
+      "type": "The Colette Residences (3BR)",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "2,400–2,800 SF",
+      "status": "Available"
+    },
+    {
+      "type": "The Colette Residences (4BR)",
+      "addlRooms": "Terrace",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "3,180+ SF",
+      "status": "Available"
+    },
+    {
+      "type": "The Penthouses",
+      "addlRooms": "Office + Family Room + Private Rooftop Pool + Summer Kitchen + 1,200 SF Terrace",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "5,916–6,128 SF",
+      "status": "Available"
+    }
+  ],
+  "height": "5 Stories",
+  "hoa": "$2.15/sq ft",
+  "id": 40,
+  "img": "/colette-residences/hero.webp",
+  "imgs": [
+    "/colette-residences/hero.webp",
+    "/colette-residences/hero2.webp",
+    "/colette-residences/hummingbird-aerial.webp",
+    "/colette-residences/great-room.webp",
+    "/colette-residences/kitchen.webp",
+    "/colette-residences/primary-bedroom.webp",
+    "/colette-residences/pool.webp",
+    "/colette-residences/exterior-lounge.webp",
+    "/colette-residences/private-pool.webp",
+    "/colette-residences/spa.webp"
+  ],
+  "interiorDesigner": "OSPA",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "~$2.79M",
+        "label": "Starting price",
+        "note": "Pre-construction entry (PROFILEmiami, Aug 2026)"
+      },
+      {
+        "value": "35%",
+        "label": "Presold",
+        "note": "The Real Deal, Aug 18, 2026"
+      },
+      {
+        "value": "34",
+        "label": "Residences, 5 stories",
+        "note": "15,000+ SF amenities; among the lowest unit counts in Brickell pre-construction"
+      },
+      {
+        "value": "$8M",
+        "label": "Townhome contract",
+        "note": "4,300 SF + 2,000 SF outdoor, $1,844/SF, Barrichello, Aug 2026"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Boutique format",
+        "pillColor": "gold",
+        "title": "OSPA-designed low-rise in South Brickell",
+        "body": "Five-story wood, concrete, and glass building with private terraces on every home and password-protected elevator access. Four collections (Garden through penthouse) sit as a residential counterpoint to 50-story branded towers on the same avenue."
+      },
+      {
+        "pill": "Sales proof",
+        "pillColor": "gold",
+        "title": "F1 driver Barrichello buys $8M townhome",
+        "body": "Rubens Barrichello contracted a 4,300 SF two-story townhome (4 bed, 5.5 bath, 2,000 SF outdoor) at about $8M, or $1,844 per square foot. META described it as one of the last remaining townhomes in the stack."
+      },
+      {
+        "pill": "Combinable product",
+        "pillColor": "gold",
+        "title": "Single buyer assembles four homes for $15M",
+        "body": "An international buyer paid $15M for four residences totaling 9,029 SF ($1,661/SF) to combine into two duplex townhomes. That trade showed demand for combinable, house-scale product inside a five-story Brickell building."
+      },
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "July demolition, fall 2026 groundbreaking targeted",
+        "body": "A building on the 1870-1880 Brickell assemblage was demolished in July 2026. Trade coverage puts groundbreaking this fall, with completion still slated for 2028."
+      },
+      {
+        "pill": "Tradeoffs",
+        "pillColor": "gray",
+        "title": "Niche product, not a skyline or hotel-branded play",
+        "body": "Five stories favors neighborhood and canopy views over bay panoramas. Meta is a boutique developer without Related-scale balance, and there is no hotel rental program."
+      }
+    ],
+    "thesis": "Colette is the anti-supertall Brickell bet: amenities scaled to a true boutique denominator, at an entry that undercuts branded bayfront towers. The low-rise envelope should deliver faster than 60-story competitors. For end-users who want Grove-adjacent quiet with Brickell walkability, and investors comfortable with boutique execution, it fills a product gap the corridor rarely offers at this basis.",
+    "footnote": "HOA: $2.15/sq ft · Rental policy: TBD · Delivery: est. Q4 2028 · Site demolished July 2026 · lifeatcolette.com"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "~$2.79M",
+        "label": "Starting price",
+        "note": "Pre-construction entry (PROFILEmiami, Aug 2026)"
+      },
+      {
+        "value": "35%",
+        "label": "Presold",
+        "note": "The Real Deal, Aug 18, 2026"
+      },
+      {
+        "value": "34",
+        "label": "Residences, 5 stories",
+        "note": "15,000+ SF amenities; among the lowest unit counts in Brickell pre-construction"
+      },
+      {
+        "value": "$8M",
+        "label": "Townhome contract",
+        "note": "4,300 SF + 2,000 SF outdoor, $1,844/SF, Barrichello, Aug 2026"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Boutique format",
+        "pillColor": "gold",
+        "title": "OSPA-designed low-rise in South Brickell",
+        "body": "Five-story wood, concrete, and glass building with private terraces on every home and password-protected elevator access. Four collections (Garden through penthouse) sit as a residential counterpoint to 50-story branded towers on the same avenue."
+      },
+      {
+        "pill": "Sales proof",
+        "pillColor": "gold",
+        "title": "F1 driver Barrichello buys $8M townhome",
+        "body": "Rubens Barrichello contracted a 4,300 SF two-story townhome (4 bed, 5.5 bath, 2,000 SF outdoor) at about $8M, or $1,844 per square foot. META described it as one of the last remaining townhomes in the stack."
+      },
+      {
+        "pill": "Combinable product",
+        "pillColor": "gold",
+        "title": "Single buyer assembles four homes for $15M",
+        "body": "An international buyer paid $15M for four residences totaling 9,029 SF ($1,661/SF) to combine into two duplex townhomes. That trade showed demand for combinable, house-scale product inside a five-story Brickell building."
+      },
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "July demolition, fall 2026 groundbreaking targeted",
+        "body": "A building on the 1870-1880 Brickell assemblage was demolished in July 2026. Trade coverage puts groundbreaking this fall, with completion still slated for 2028."
+      },
+      {
+        "pill": "Tradeoffs",
+        "pillColor": "gray",
+        "title": "Niche product, not a skyline or hotel-branded play",
+        "body": "Five stories favors neighborhood and canopy views over bay panoramas. Meta is a boutique developer without Related-scale balance, and there is no hotel rental program."
+      }
+    ],
+    "thesis": "Colette is the anti-supertall Brickell bet: amenities scaled to a true boutique denominator, at an entry that undercuts branded bayfront towers. The low-rise envelope should deliver faster than 60-story competitors. For end-users who want Grove-adjacent quiet with Brickell walkability, and investors comfortable with boutique execution, it fills a product gap the corridor rarely offers at this basis.",
+    "footnote": "HOA: $2.15/sq ft · Rental policy: TBD · Delivery: est. Q4 2028 · Site demolished July 2026 · lifeatcolette.com"
+  },
+  "investmentThesis": "Colette occupies a rare niche in South Brickell: boutique low-rise luxury at an entry that sits well below the branded tower competition nearby (St. Regis, Cipriani) while delivering a distinctly different product. The 40/60 deposit structure (10% at contract, 10% at 60 days, 10% at groundbreaking, 10% at top-off, 60% at closing) keeps most capital until delivery. Meta completed the 1870-1880 Brickell Avenue assemblage (about 0.8 acres) and moved from site control into demolition, with vertical construction expected this fall. In a corridor where assemblage opportunities are scarce, that sequence supports Colette as a low-density alternative to 60-story towers.",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "$15M",
+      "label": "Four-home combination",
+      "note": "Two duplex townhomes totaling 9,029 SF"
+    },
+    {
+      "value": "$18.5M",
+      "label": "Acquisition loan",
+      "note": "BridgeCity Capital, May 2026 assemblage"
+    },
+    {
+      "value": "15,000+",
+      "label": "SF of amenities",
+      "note": "Scaled to a boutique owner count, not a 400-unit tower"
+    }
+  ],
+  "landscapeArchitect": "David O. Design",
+  "lat": 25.755138,
+  "lng": -80.19758,
+  "locationScore": 72,
+  "maxBath": 5.5,
+  "maxBed": 4,
+  "maxPrice": 10000000,
+  "maxSqft": 6128,
+  "minBath": 2,
+  "minBed": 2,
+  "minPrice": 2790000,
+  "minSqft": 2143,
+  "name": "Colette Residences",
+  "neighborhood": "Brickell",
+  "parking": "2–3 covered spaces per residence; EV charging in garage",
+  "percentSold": 35,
+  "priceFrom": "$2.79M+",
+  "pricePerSqft": null,
+  "privacyScore": 80,
+  "projectedAppreciation": 20,
+  "rentalPolicy": "TBD",
+  "residenceContent": "Residences range from two to four bedrooms, starting at 2,143 square feet for the Terrace Collection and reaching over 6,100 square feet in the penthouses. Every home features floor-to-ceiling impact-resistant glass, ceilings up to 10'6\", and private terraces that wrap from living areas through to primary bathrooms. Kitchens are outfitted with custom Italian millwork by Cesar, Miele appliances including a 78-bottle wine cooler, and mineral-based Inalco countertops. Walk-in closets are finished by Lema. Bathrooms feature Graff matte-black fixtures, Victoria & Albert freestanding tubs, and Duravit wall-hung toilets. Porcelanosa large-format mineral flooring runs throughout. Each residence receives password-protected private elevator access via one of four elevators, plus a service elevator. Homes are pre-wired for smart-home integration across lighting, climate, window treatments, and audio. Two to three covered parking spaces per unit, with EV charging in the garage.",
+  "slug": "colette-residences",
+  "stage": "preconstruction",
+  "statusRemark": "PRE-CONSTRUCTION · $8M TOWNHOME · AUG 2026",
+  "stories": 5,
+  "tagline": "A boutique collection of 34 residences at the crossroads of South Brickell and Coconut Grove.",
+  "units": 34,
+  "unitsLeft": null,
+  "verified": {
+    "units": {
+      "date": "2026-08-20",
+      "source": "META Development release via PRWeb, 34 residences"
+    },
+    "percentSold": {
+      "date": "2026-08-18",
+      "source": "The Real Deal, Barrichello townhome coverage"
+    },
+    "minPrice": {
+      "date": "2026-08-03",
+      "source": "PROFILEmiami Development Spotlight, starting at $2.79 million"
+    },
+    "completion": {
+      "date": "2026-08-20",
+      "source": "META Development release via PRWeb, completion 2028"
+    },
+    "stage": {
+      "date": "2026-08-18",
+      "source": "The Real Deal: demolished July 2026, construction expected fall 2026"
+    }
+  },
+  "website": "https://www.lifeatcolette.com",
+  "wellnessScore": 78
+}

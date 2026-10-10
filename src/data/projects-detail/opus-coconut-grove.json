@@ -1,0 +1,427 @@
+{
+  "address": "3137 SW 27th Avenue, Miami, FL 33133",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Rooftop Pool & Sundeck",
+      "sub": "4,300 SF panoramic sundeck"
+    },
+    {
+      "icon": "🔥",
+      "label": "Outdoor Gourmet Kitchen",
+      "sub": "Covered BBQ lounge"
+    },
+    {
+      "icon": "🏋",
+      "label": "Rooftop Fitness",
+      "sub": "Cardio and weight machines"
+    },
+    {
+      "icon": "💆",
+      "label": "Signature Spa",
+      "sub": "Sauna, steam, massage room"
+    },
+    {
+      "icon": "💼",
+      "label": "Business Suites",
+      "sub": "Private offices + conference room"
+    },
+    {
+      "icon": "🍷",
+      "label": "Private Wine Cellars",
+      "sub": "Dedicated per residence"
+    },
+    {
+      "icon": "🚗",
+      "label": "Klaus Automated Parking",
+      "sub": "2–3 spaces + EV charging"
+    },
+    {
+      "icon": "🛎",
+      "label": "24-Hour Reception",
+      "sub": "Optional valet service"
+    },
+    {
+      "icon": "🧸",
+      "label": "Children's Playroom",
+      "sub": "Family-designed interiors"
+    },
+    {
+      "icon": "📦",
+      "label": "Dedicated Storage",
+      "sub": "Private storage + bike storage"
+    },
+    {
+      "icon": "📹",
+      "label": "HD Security",
+      "sub": "Full property coverage"
+    }
+  ],
+  "architect": "Kobi Karp Architecture & Interior Design (KKAID)",
+  "architectQuote": "There is a growing shift toward residences that feel more personal, more intentional, and more connected to their surroundings. Buyers are prioritizing design, scale, and privacy over sheer volume. OPUS responds to that shift.",
+  "architectQuoteBy": "Andrew Rasken, CEO, Meta Development",
+  "badge": "UNDER CONSTRUCTION · 50%+ SOLD",
+  "completion": "2027",
+  "constructionImgs": [],
+  "densityScore": 12,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking (Completed April 2026)"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 70,
+      "milestone": "At Closing (Est. 2027)"
+    }
+  ],
+  "description": "OPUS Coconut Grove is a deliberately small, six-story building at 3137 SW 27th Avenue — 14 residences total: 12 three-bedroom homes across four residential floors, plus two four-bedroom penthouses on the top floors. Architecture by Miami's Kobi Karp with interiors by São Paulo studio João Armentano and landscape by David O. Inc., the building is positioned as an elevated alternative to the Grove's large-scale branded towers: no 200-unit HOA, no elevator banks, no sales gallery theatrics. Interiors feature premium porcelain flooring and countertops, European-designed cabinetry, Miele appliances, natural gas cooktops, and full-height laminated glass windows with ceiling heights up to 3.60 meters (nearly 12 feet). Each residence has a private terrace; residences 2B, 2D, and the penthouses include BBQ-ready infrastructure. Two to three assigned spaces per residence within a fully autonomous Klaus Multiparking system with EV charging capability, plus dedicated storage and individual wine cellars on the mezzanine. The rooftop carries a 4,300-square-foot sundeck with pool, outdoor gourmet kitchen and BBQ, fitness center, and spa with massage room, dry sauna, and steam room. The mezzanine level holds private offices, a conference room, children's playroom, wine cellars, and dedicated storage for each residence. Ground floor features a 24-hour reception and intimate lobby with 12-foot ceilings. Walking distance (under 5 minutes) to CocoWalk, the Grove's Michelin-starred restaurants, Monty's and the bayside yacht clubs, and top-rated schools.",
+  "developer": "Meta Development",
+  "discoveryEngine": {
+    "lifestyle": [
+      "boutique",
+      "private",
+      "family-friendly",
+      "walkable"
+    ],
+    "investmentProfile": [
+      "under-construction",
+      "low-density"
+    ],
+    "priceCategory": "luxury",
+    "vibeMatch": [
+      "quiet-luxury",
+      "design-forward",
+      "residential",
+      "intimate",
+      "boutique"
+    ],
+    "goodFor": [
+      "primary-residence",
+      "family",
+      "privacy",
+      "downsizer",
+      "design-enthusiast"
+    ]
+  },
+  "editorialLine": "Coconut Grove, at the scale of a house.",
+  "excerpt": "14 boutique residences by Kobi Karp and João Armentano in the heart of Coconut Grove. Broke ground April 2026. Rooftop pool and spa, Klaus automated parking, from ~$2.8M. 50%+ sold.",
+  "featureVideo": {
+    "src": "/opus-coconut-grove/opus-showcase.mp4",
+    "poster": "/opus-coconut-grove/opus-poster.webp",
+    "label": "OPUS Coconut Grove",
+    "tagline": "A boutique Coconut Grove address — facade, pool deck, and rooftop lounge rendered in full.",
+    "uploadDate": "2026-09-03"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "Residence 2A",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,950 SF interior / 2,269 SF total · 319 SF terrace",
+      "status": "Sold"
+    },
+    {
+      "type": "Residence 2B",
+      "addlRooms": "Large Terrace · BBQ-ready",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,521 SF interior / 2,859 SF total · 338 SF terrace",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 2C",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,945 SF interior / 2,276 SF total · 331 SF terrace",
+      "status": "Sold"
+    },
+    {
+      "type": "Residence 2D",
+      "addlRooms": "Large Terrace · BBQ-ready",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,544 SF interior / 2,869 SF total · 325 SF terrace",
+      "status": "Sold"
+    },
+    {
+      "type": "Residence 3A",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,950 SF interior / 2,269 SF total · 319 SF terrace",
+      "status": "Sold"
+    },
+    {
+      "type": "Residence 3B",
+      "addlRooms": "Wraparound Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,905 SF interior / 2,853 SF total · 948 SF terrace",
+      "status": "Sold"
+    },
+    {
+      "type": "Residence 3C",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,936 SF interior / 2,269 SF total · 333 SF terrace",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 3D",
+      "addlRooms": "Wraparound Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,905 SF interior / 2,872 SF total · 967 SF terrace",
+      "status": "Sold"
+    },
+    {
+      "type": "Residence 4A",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,950 SF interior / 2,269 SF total · 319 SF terrace",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 4B",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,925 SF interior / 2,216 SF total · 291 SF terrace",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 4C",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,937 SF interior / 2,269 SF total · 332 SF terrace",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 4D",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,903 SF interior / 2,201 SF total · 298 SF terrace",
+      "status": "Available"
+    },
+    {
+      "type": "Penthouse A",
+      "addlRooms": "Private Pool Terrace · BBQ-ready",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "Up to 3,884 SF total",
+      "status": "Inquire"
+    },
+    {
+      "type": "Penthouse B",
+      "addlRooms": "Private Pool Terrace · BBQ-ready",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "Up to 3,884 SF total",
+      "status": "Inquire"
+    }
+  ],
+  "height": "6 Stories",
+  "hoa": "Est. $2.04 / sq ft / month",
+  "id": 41,
+  "img": "/opus-coconut-grove/hero.webp",
+  "imgs": [
+    "/opus-coconut-grove/hero.webp",
+    "/opus-coconut-grove/hero-sunset.webp",
+    "/opus-coconut-grove/facade-detail.webp",
+    "/opus-coconut-grove/aerial.webp",
+    "/opus-coconut-grove/lobby.webp",
+    "/opus-coconut-grove/unit-a.webp",
+    "/opus-coconut-grove/unit-a2.webp",
+    "/opus-coconut-grove/unit-a-bedroom.webp",
+    "/opus-coconut-grove/unit-a-bedroom2.webp",
+    "/opus-coconut-grove/bathroom.webp",
+    "/opus-coconut-grove/unit-2b.webp",
+    "/opus-coconut-grove/unit-2b2.webp",
+    "/opus-coconut-grove/penthouse-bedroom.webp",
+    "/opus-coconut-grove/map.webp",
+    "/opus-coconut-grove/pool2.webp",
+    "/opus-coconut-grove/rooftop-lounge.webp",
+    "/opus-coconut-grove/rooftop-lounge2.webp",
+    "/opus-coconut-grove/barbeque-area.webp",
+    "/opus-coconut-grove/barbeque-area-roof.webp",
+    "/opus-coconut-grove/gym.webp",
+    "/opus-coconut-grove/playroom.webp",
+    "/opus-coconut-grove/pool.webp"
+  ],
+  "interiorDesigner": "João Armentano (Armentano Arquitetura)",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "~18%",
+        "label": "Projected appreciation",
+        "note": "Through stabilization from entry PSF roughly $1,235–$1,475/SF toward mid-$1,500s–$1,700s/SF by delivery vs. current Grove trajectory"
+      },
+      {
+        "value": "~$1,235+",
+        "label": "Entry PSF (approx.)",
+        "note": "Materially below branded Grove towers where recent closings have cleared $2,000+/SF (Vita, Four Seasons Coconut Grove)"
+      },
+      {
+        "value": "50%+",
+        "label": "Absorbed pre-vertical",
+        "note": "7 of 14 residences under contract before vertical construction commenced in April 2026"
+      },
+      {
+        "value": "14",
+        "label": "Total residences",
+        "note": "Six stories — 12 three-bedroom plans across four floors plus two penthouses; Klaus automated parking with EV charging"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Absorption",
+        "pillColor": "gold",
+        "title": "Selling out ahead of the superstructure",
+        "body": "Unusually strong absorption for a Grove boutique project — the low-density format is finding its buyer without needing a sales-gallery spectacle, and remaining inventory will compress as vertical work progresses."
+      },
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "Discount to delivered Grove product",
+        "body": "A meaningful discount to delivered branded Grove product in the same submarket, for a boutique offering — with under 18 months to delivery."
+      },
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "$28M Arixa Capital construction loan",
+        "body": "Construction financing closed with Arixa Capital concurrent with April 2026 groundbreaking. Meta Development's first Miami project to enter vertical construction — Colette Residences in South Brickell follows. Lender due diligence on a small 14-unit boutique project signals conviction on the absorption story."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gray",
+        "title": "14 residences · constrained secondary supply",
+        "body": "One of the smallest new-construction programs in Coconut Grove. At full absorption, secondary supply will be structurally constrained — unlike 100+ unit towers where resale competition is built into the asset. Half the inventory is already off-market."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gray",
+        "title": "Kobi Karp, João Armentano, David O.",
+        "body": "Kobi Karp is among Miami's most prolific luxury architects. João Armentano brings a São Paulo residential voice rarely seen here. David O. landscape ties the team together. Klaus automated parking with EV charging is uncommon at 14 units."
+      },
+      {
+        "pill": "Walkability",
+        "pillColor": "gray",
+        "title": "< 5 minutes to Grove village core",
+        "body": "3137 SW 27th Avenue sits in the walkable South Grove corridor — under 5 minutes on foot to CocoWalk, Michelin-starred restaurants, marinas, and Grove retail. Distinct from Grove Isle / Fair Isle waterfront product. The play here is village walkability, not bayfront exposure."
+      }
+    ],
+    "thesis": "OPUS counter-positions against the Grove's large-scale pipeline (Four Seasons Coconut Grove, Vita at Grove Isle, The Fairchild). For buyers who have rejected the 200-unit tower experience but still want new construction, full amenities, and Coconut Grove walkability, the submarket has almost no direct comp. Strong pre-sales velocity and a closed construction loan validate the thesis — the market is selecting for low-density, design-led product.",
+    "footnote": "HOA: Est. $2.04/sq ft/month · Delivery: Estimated 2027 · Groundbreaking: April 2026 · Buyer representation: Zachary Akers, ONE Sotheby's International Realty (direct developer channel)"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "~18%",
+        "label": "Projected appreciation",
+        "note": "Through stabilization from entry PSF roughly $1,235–$1,475/SF toward mid-$1,500s–$1,700s/SF by delivery vs. current Grove trajectory"
+      },
+      {
+        "value": "~$1,235+",
+        "label": "Entry PSF (approx.)",
+        "note": "Materially below branded Grove towers where recent closings have cleared $2,000+/SF (Vita, Four Seasons Coconut Grove)"
+      },
+      {
+        "value": "50%+",
+        "label": "Absorbed pre-vertical",
+        "note": "7 of 14 residences under contract before vertical construction commenced in April 2026"
+      },
+      {
+        "value": "14",
+        "label": "Total residences",
+        "note": "Six stories — 12 three-bedroom plans across four floors plus two penthouses; Klaus automated parking with EV charging"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Absorption",
+        "pillColor": "gold",
+        "title": "Selling out ahead of the superstructure",
+        "body": "Unusually strong absorption for a Grove boutique project — the low-density format is finding its buyer without needing a sales-gallery spectacle, and remaining inventory will compress as vertical work progresses."
+      },
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "Discount to delivered Grove product",
+        "body": "A meaningful discount to delivered branded Grove product in the same submarket, for a boutique offering — with under 18 months to delivery."
+      },
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "$28M Arixa Capital construction loan",
+        "body": "Construction financing closed with Arixa Capital concurrent with April 2026 groundbreaking. Meta Development's first Miami project to enter vertical construction — Colette Residences in South Brickell follows. Lender due diligence on a small 14-unit boutique project signals conviction on the absorption story."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gray",
+        "title": "14 residences · constrained secondary supply",
+        "body": "One of the smallest new-construction programs in Coconut Grove. At full absorption, secondary supply will be structurally constrained — unlike 100+ unit towers where resale competition is built into the asset. Half the inventory is already off-market."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gray",
+        "title": "Kobi Karp, João Armentano, David O.",
+        "body": "Kobi Karp is among Miami's most prolific luxury architects. João Armentano brings a São Paulo residential voice rarely seen here. David O. landscape ties the team together. Klaus automated parking with EV charging is uncommon at 14 units."
+      },
+      {
+        "pill": "Walkability",
+        "pillColor": "gray",
+        "title": "< 5 minutes to Grove village core",
+        "body": "3137 SW 27th Avenue sits in the walkable South Grove corridor — under 5 minutes on foot to CocoWalk, Michelin-starred restaurants, marinas, and Grove retail. Distinct from Grove Isle / Fair Isle waterfront product. The play here is village walkability, not bayfront exposure."
+      }
+    ],
+    "thesis": "OPUS counter-positions against the Grove's large-scale pipeline (Four Seasons Coconut Grove, Vita at Grove Isle, The Fairchild). For buyers who have rejected the 200-unit tower experience but still want new construction, full amenities, and Coconut Grove walkability, the submarket has almost no direct comp. Strong pre-sales velocity and a closed construction loan validate the thesis — the market is selecting for low-density, design-led product.",
+    "footnote": "HOA: Est. $2.04/sq ft/month · Delivery: Estimated 2027 · Groundbreaking: April 2026 · Buyer representation: Zachary Akers, ONE Sotheby's International Realty (direct developer channel)"
+  },
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeDesigner": "David O. Inc. Landscape Architecture",
+  "lat": 25.7332,
+  "lng": -80.2373,
+  "maxBath": 4.5,
+  "maxBed": 4,
+  "maxPrice": null,
+  "maxSqft": 3884,
+  "minBath": 3.5,
+  "minBed": 3,
+  "minPrice": 2800000,
+  "minSqft": 1903,
+  "name": "OPUS Coconut Grove",
+  "neighborhood": "Coconut Grove",
+  "neighborhoodTier": "boutique",
+  "percentSold": 50,
+  "priceFrom": "$2.8M+",
+  "pricePerSqft": null,
+  "privacyScore": 92,
+  "projectedAppreciation": 18,
+  "rentalPolicy": "Primary residence focus",
+  "salesTeam": "Zachary Akers · ONE Sotheby's International Realty (Buyer Representation · Direct Developer Channel)",
+  "slug": "opus-coconut-grove",
+  "stage": "under_construction",
+  "statusRemark": "Under construction. 50% sold. Delivering 2027.",
+  "stories": 6,
+  "tagline": "A 14-residence boutique address in the heart of Coconut Grove.",
+  "units": 14,
+  "unitsLeft": 7,
+  "website": "https://opusgrove.com",
+  "wellnessScore": 72
+}

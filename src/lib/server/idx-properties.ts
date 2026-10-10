@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import localProjects from "@/src/data/miami-projects.json";
 
 export type IdxProject = {
@@ -28,6 +30,30 @@ export type IdxProject = {
   pricePerSqft?: number | null;
   description?: string;
   fullDetailsURL?: string;
+  address?: string;
+  tagline?: string;
+  editorialLine?: string;
+  stories?: number | null;
+  height?: number | null;
+  hoa?: string | null;
+  developer?: string;
+  architect?: string;
+  interiorDesigner?: string;
+  landscapeArchitect?: string;
+  salesTeam?: string;
+  depositStructure?: any;
+  floorPlans?: any[];
+  amenities?: any[];
+  amenitiesDescription?: string;
+  featureVideo?: any;
+  featureVideoPlacement?: string;
+  videoTourId?: string;
+  floorPlanPdf?: string;
+  factSheetURL?: string;
+  keyMetrics?: any[];
+  constructionImgs?: string[];
+  constructionNote?: string;
+  constructionUpdateDate?: string;
 };
 
 const DEFAULT_ENDPOINT = "https://api.idxbroker.com/clients/savedlinks/3906/results";
@@ -243,33 +269,57 @@ function normalize(record: Record<string, unknown>, index: number): IdxProject |
   }
 
   return {
-    id: Number(listingId.replace(/\D/g, "")) || index + 1,
+    id: (typeof record.id === "number" ? record.id : Number(listingId.replace(/\D/g, ""))) || index + 1,
     mlsId: listingId,
-    slug: slugify(`${name}-${listingId}`),
+    slug: record.slug ? String(record.slug) : slugify(`${name}-${listingId}`),
     name,
-    shortName: name,
+    shortName: text(record.shortName, name),
     neighborhood,
     stage,
     isActive: !/sold|withdrawn|closed/i.test(status),
     isFeatured: Boolean(record.isFeatured || (record.featured === "y") || index < 6),
     lat: latitude,
     lng: longitude,
-    minPrice: price,
-    maxPrice: price,
-    priceFrom: price ? `$${price.toLocaleString("en-US")}` : "Pricing on request",
-    completion: yearBuilt || text(record.completion, record.completionDate) || "Contact for details",
-    statusRemark: status,
-    badge: `MLS #${listingId} · ACTIVE`,
-    units: sqft ? `${sqft.toLocaleString("en-US")} SF` : text(record.sqFt ?? record.sqft, record.units) || "—",
+    minPrice: (number(record.minPrice) ?? price),
+    maxPrice: (number(record.maxPrice) ?? price),
+    priceFrom: text(record.priceFrom) || (price ? `$${price.toLocaleString("en-US")}` : "Pricing on request"),
+    completion: text(record.completion, record.completionDate) || yearBuilt || "Contact for details",
+    statusRemark: text(record.statusRemark, status),
+    badge: text(record.badge) || `MLS #${listingId} · ACTIVE`,
+    units: text(record.units) || (sqft ? `${sqft.toLocaleString("en-US")} SF` : "—"),
     img,
     imgs,
-    minBed: beds,
-    maxBed: beds,
-    baths: baths ?? undefined,
-    sqft: sqft ?? undefined,
+    minBed: number(record.minBed) ?? beds,
+    maxBed: number(record.maxBed) ?? beds,
+    baths: baths ?? (number(record.baths) ?? undefined),
+    sqft: sqft ?? (number(record.sqft) ?? undefined),
     pricePerSqft,
-    description,
+    description: text(record.description, description),
     fullDetailsURL,
+    address: text(record.address, record.addressFull),
+    tagline: text(record.tagline),
+    editorialLine: text(record.editorialLine),
+    stories: number(record.stories),
+    height: number(record.height),
+    hoa: text(record.hoa),
+    developer: text(record.developer),
+    architect: text(record.architect),
+    interiorDesigner: text(record.interiorDesigner),
+    landscapeArchitect: text(record.landscapeArchitect),
+    salesTeam: text(record.salesTeam),
+    depositStructure: record.depositStructure,
+    floorPlans: Array.isArray(record.floorPlans) ? record.floorPlans : undefined,
+    amenities: Array.isArray(record.amenities) ? record.amenities : undefined,
+    amenitiesDescription: text(record.amenitiesDescription),
+    featureVideo: record.featureVideo,
+    featureVideoPlacement: text(record.featureVideoPlacement),
+    videoTourId: text(record.videoTourId),
+    floorPlanPdf: text(record.floorPlanPdf),
+    factSheetURL: text(record.factSheetURL),
+    keyMetrics: Array.isArray(record.keyMetrics) ? record.keyMetrics : undefined,
+    constructionImgs: Array.isArray(record.constructionImgs) ? record.constructionImgs : undefined,
+    constructionNote: text(record.constructionNote),
+    constructionUpdateDate: text(record.constructionUpdateDate),
   };
 }
 
@@ -388,24 +438,49 @@ async function fetchLiveProperties(): Promise<{
   };
 }
 
+import waterfrontMls from "@/src/data/waterfront-mls.json";
+
 export async function getIdxProperties(): Promise<IdxProject[]> {
   const result = await getIdxPropertiesWithMeta();
   return result.projects;
 }
 
 export async function getIdxPropertyBySlug(slug: string): Promise<IdxProject | null> {
-  const properties = await getIdxProperties();
   const normalizedSlug = slug.toLowerCase().trim();
 
-  // 1. Direct slug match in live listings
-  const found = properties.find((p) => p.slug.toLowerCase() === normalizedSlug);
-  if (found) return found;
+  // 0. Check individual rich project detail JSON on disk
+  try {
+    const detailPath = path.join(process.cwd(), "src/data/projects-detail", `${normalizedSlug}.json`);
+    if (fs.existsSync(detailPath)) {
+      const detailRaw = JSON.parse(fs.readFileSync(detailPath, "utf-8"));
+      const normalizedDetail = normalize(detailRaw, 0);
+      if (normalizedDetail) return normalizedDetail;
+    }
+  } catch (err) {
+    console.error("Error reading project detail JSON:", err);
+  }
 
-  // 2. Match by MLS ID suffix (e.g. from slug suffix "...-a12005335")
+  // 1. Direct match in local pre-construction condos (Priority 1)
+  const preconstructionList = (localProjects as unknown as Record<string, unknown>[])
+    .map((item, idx) => normalize(item, idx))
+    .filter((item): item is IdxProject => item !== null);
+
+  const preconFound = preconstructionList.find((p) => p.slug.toLowerCase() === normalizedSlug);
+  if (preconFound) return preconFound;
+
+  // 2. Direct match in waterfront MLS listings (Priority 2)
+  const mlsList = (waterfrontMls as unknown as Record<string, unknown>[])
+    .map((item, idx) => normalize(item, idx))
+    .filter((item): item is IdxProject => item !== null);
+
+  const mlsFound = mlsList.find((p) => p.slug.toLowerCase() === normalizedSlug);
+  if (mlsFound) return mlsFound;
+
+  // 3. Match by MLS ID suffix (e.g. from slug suffix "...-a12005335")
   const slugParts = normalizedSlug.split("-");
   const possibleMls = slugParts[slugParts.length - 1]?.toUpperCase();
   if (possibleMls) {
-    const byMls = properties.find((p) =>
+    const byMls = mlsList.find((p) =>
       p.mlsId?.toUpperCase() === possibleMls ||
       p.badge?.toUpperCase().includes(possibleMls) ||
       String(p.id).toUpperCase() === possibleMls
@@ -413,29 +488,29 @@ export async function getIdxPropertyBySlug(slug: string): Promise<IdxProject | n
     if (byMls) return byMls;
   }
 
-  // 3. Fallback to local miami-projects.json
-  const fallbackList = (localProjects as unknown as Record<string, unknown>[])
-    .map((item, idx) => normalize(item, idx))
-    .filter((item): item is IdxProject => item !== null);
+  // 4. Match in live IDX Broker feed
+  try {
+    const liveProperties = await getIdxProperties();
+    const liveFound = liveProperties.find((p) => p.slug.toLowerCase() === normalizedSlug);
+    if (liveFound) return liveFound;
 
-  const localFound = fallbackList.find((p) => p.slug.toLowerCase() === normalizedSlug);
-  if (localFound) return localFound;
-
-  if (possibleMls) {
-    const localByMls = fallbackList.find((p) =>
-      p.mlsId?.toUpperCase() === possibleMls ||
-      p.badge?.toUpperCase().includes(possibleMls) ||
-      String(p.id).toUpperCase() === possibleMls
-    );
-    if (localByMls) return localByMls;
+    if (possibleMls) {
+      const liveByMls = liveProperties.find((p) =>
+        p.mlsId?.toUpperCase() === possibleMls ||
+        p.badge?.toUpperCase().includes(possibleMls) ||
+        String(p.id).toUpperCase() === possibleMls
+      );
+      if (liveByMls) return liveByMls;
+    }
+  } catch (e) {
+    console.error("Live IDX lookup failed:", e);
   }
 
-  // 4. Fuzzy title/name match
+  // 5. Fuzzy match on title/name
   const searchName = normalizedSlug.replace(/-/g, " ");
-  const byName = properties.find((p) => p.name.toLowerCase().includes(searchName) || searchName.includes(p.name.toLowerCase()))
-    || fallbackList.find((p) => p.name.toLowerCase().includes(searchName) || searchName.includes(p.name.toLowerCase()));
+  const byName = preconstructionList.find((p) => p.name.toLowerCase().includes(searchName) || searchName.includes(p.name.toLowerCase()))
+    || mlsList.find((p) => p.name.toLowerCase().includes(searchName) || searchName.includes(p.name.toLowerCase()));
   if (byName) return byName;
 
-  // 5. Guaranteed fallback: return primary active project so user never gets 404
-  return properties[0] || fallbackList[0] || null;
+  return null;
 }

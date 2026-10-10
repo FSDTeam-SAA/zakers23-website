@@ -1,0 +1,160 @@
+{
+  "address": "1775 Collins Avenue, Miami Beach, FL 33139",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Four Swimming Pools",
+      "sub": "Including iconic fleur-de-lis pool"
+    },
+    {
+      "icon": "🏖",
+      "label": "220 ft Ocean Frontage",
+      "sub": "Direct beach access with cabanas"
+    },
+    {
+      "icon": "🍽",
+      "label": "Langosteria Beach Club",
+      "sub": "First U.S. outpost · Members only"
+    },
+    {
+      "icon": "💆",
+      "label": "Rosewood Asaya Spa",
+      "sub": "4,000 SF wellness sanctuary"
+    },
+    {
+      "icon": "🏋️",
+      "label": "Double-Height Fitness",
+      "sub": "Full-service wellness center"
+    },
+    {
+      "icon": "🛎",
+      "label": "Rosewood Services",
+      "sub": "24-hour concierge + global privileges"
+    }
+  ],
+  "amenitiesDescription": "Life at The Raleigh extends well beyond the residences. The restored three-acre estate operates as a Rosewood-managed compound blending hotel-caliber service with residential privacy. Four distinct pool experiences include the restored fleur-de-lis pool, a sunrise lap pool, a beachside pool, and a residents-only pool, each with dedicated cabana and food-and-beverage service. The members-only Beach Club, operated by Milan's Langosteria, marks the celebrated restaurant group's first U.S. location and offers beachfront dining, in-residence dining, and cabana service along 220 feet of ocean frontage. Wellness is anchored by a Rosewood Asaya Spa spanning 4,000 square feet and a double-height fitness center. Restored heritage spaces include the Martini Bar and Tiger Room, returned to their original Art Deco grandeur. Dining extends to a signature Rosewood restaurant within the historic South Seas building. Residents receive 24-hour concierge, housekeeping, and access to the full global Rosewood privileges network.",
+  "architect": "Peter Marino · Kobi Karp Architecture",
+  "architectQuote": "This fresh, historic restoration and renovation of The Raleigh joins a private beach club with a Latin beat and elegant residences of demure black, white and ivory. This mixture is the best Miami cocktail that I can imagine.",
+  "architectQuoteBy": "Peter Marino, Architect",
+  "badge": "HPB & Commission Pending",
+  "completion": "TBD",
+  "densityScore": 22,
+  "depositStructure": [
+    {
+      "percentage": null,
+      "milestone": "Deposit structure to be announced upon sales relaunch"
+    }
+  ],
+  "description": "One of Miami Beach's most significant redevelopments, Rosewood Residences Miami Beach returns the legendary 1940 Raleigh Hotel to its place at the center of South Beach culture. Spanning three oceanfront acres at 1775 Collins Avenue, the project unites the historic Raleigh, Richmond, and South Seas hotels into a single Rosewood-branded compound featuring a restored 60-suite hotel, approximately 52 ultra-luxury residences in a new 17-story tower, and a members-only Beach Club. Interiors and restoration are designed by Peter Marino with Kobi Karp handling the tower architecture. The property includes 220 feet of direct ocean frontage, four swimming pools anchored by the Raleigh's iconic fleur-de-lis pool, and the first U.S. outpost of Milan's Langosteria restaurant. Originally acquired in 2019 by SHVO, the project changed hands in late 2025 when Nahla Capital purchased the development site for $270 million. Nahla, which also developed Rosewood Residences Beverly Hills, has retained the Rosewood brand partnership and is relaunching sales in 2026. Fresh Historic Preservation Board approvals are required before vertical construction resumes.",
+  "developer": "Nahla Capital",
+  "editorialLine": "Where South Beach began. Where it returns.",
+  "floorPlans": [
+    {
+      "type": "2 Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "~2,100 SF",
+      "status": "Inquire"
+    },
+    {
+      "type": "3 Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "~3,500 SF",
+      "status": "Inquire",
+      "startingPrice": 10000000
+    },
+    {
+      "type": "4 Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "~5,000 SF",
+      "status": "Inquire"
+    },
+    {
+      "type": "5 Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 5,
+      "baths": 5.5,
+      "sqft": "~7,800 SF",
+      "status": "Inquire"
+    },
+    {
+      "type": "Penthouse",
+      "addlRooms": "Wraparound Terrace",
+      "beds": "4–7",
+      "baths": "4.5–7.5",
+      "sqft": "4,564–13,218 SF",
+      "status": "Inquire"
+    }
+  ],
+  "height": "17 Stories",
+  "hoa": "TBD",
+  "id": 37,
+  "img": "/the-raleigh/raleigh-hotel-miami-beach.webp",
+  "imgs": [
+    "/the-raleigh/raleigh-hotel-miami-beach.webp",
+    "/the-raleigh/raleigh-miami-beach-pool.webp",
+    "/the-raleigh/raleigh-residence-living-dining.webp",
+    "/the-raleigh/raleigh-master-bedroom-.webp",
+    "/the-raleigh/raleigh-hotel-miami-beach-2.webp"
+  ],
+  "inquiryButtonLabel": "Inquire About Rosewood Residences",
+  "inquirySubject": "Rosewood Residences Miami Beach",
+  "interiorDesigner": "Peter Marino",
+  "investmentThesis": "The Raleigh anchors the Collins Avenue stretch between 14th and 20th Streets now known as Billionaires' Beach. Nahla Capital's $270 million acquisition in late 2025 reset a project that had stalled under prior ownership; the firm's track record with Rosewood Residences Beverly Hills brings operational credibility to the brand partnership. Nahla's plan presented to the Miami Beach Planning Board in July 2026 calls for about 52 residences alongside the restored 60-suite hotel, well below the 84 residential units entitled in 2020. The competitive set (Shore Club, Aman, Bulgari) confirms the micro-market is being repositioned at the highest tier of global resort-residential development. Full Rosewood hotel services, a Langosteria-operated Beach Club, four pools, and the restoration of one of America's most recognized swimming pools form a hospitality wrapper few South Florida projects can match.",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.7937682,
+  "lng": -80.1279271,
+  "locationScore": 70,
+  "maxBath": 7.5,
+  "maxBed": 7,
+  "maxPrice": 150000000,
+  "maxSqft": 13218,
+  "minBath": 2.5,
+  "minBed": 2,
+  "minPrice": 10000000,
+  "minSqft": 2100,
+  "name": "Rosewood Residences Miami Beach",
+  "neighborhood": "Miami Beach",
+  "parking": "TBD",
+  "percentSold": null,
+  "priceFrom": "From $10M",
+  "pricePerSqft": null,
+  "privacyScore": 95,
+  "rentalPolicy": "TBD",
+  "residenceContent": "Rosewood Residences Miami Beach occupies a new 17-story oceanfront tower set within the restored three-acre Raleigh estate. Layouts range from two to five bedrooms in the main tower, with penthouses offering four to seven bedrooms and up to 13,218 square feet of interior space plus expansive wraparound terraces. Peter Marino's interiors draw on The Raleigh's Art Deco heritage through marble, onyx, decorative plasters, and custom woodwork. Every home features floor-to-ceiling windows, generous outdoor living space, and direct sightlines to the Atlantic. Access is through a private porte-cochere entrance, and residents are served by two dedicated lobbies furnished with art and objects curated by Marino. The composition is intentionally horizontal and estate-like, designed to feel more like a collection of private oceanfront homes than a conventional tower.",
+  "salesTeam": "Compass Development Marketing Group",
+  "slug": "rosewood-residences-miami-beach",
+  "stage": "preconstruction",
+  "statusRemark": "HPB & COMMISSION APPROVALS PENDING",
+  "units": 52,
+  "unitsLeft": null,
+  "verified": {
+    "units": {
+      "date": "2026-07-07",
+      "source": "Miami Beach Planning Board (PB26-0815/0816 hearing transcript) — applicant stated ~52 condo plan; The Real Deal same-day coverage. City Commission + HPB still pending."
+    },
+    "height": {
+      "date": "2026-07-07",
+      "source": "Planning Board hearing + The Real Deal — proposed ~17-story / ~200 ft tower via two added floors; HPB allocates height"
+    },
+    "completion": {
+      "date": "2026-07-07",
+      "source": "No dated developer or Compass delivery date. Prior 2028 predates Nahla's redesign; Planning Board FAR backed 2026-07-07 with Commission + HPB still pending, so 2028 is not supportable. Circulating 2029/2030 figures are aggregator-sourced only."
+    },
+    "stage": {
+      "date": "2026-07-07",
+      "source": "The Real Deal — City Commission and Historic Preservation Board approvals still required before revised tower proceeds; page description notes HPB before vertical resumes"
+    },
+    "statusRemark": {
+      "date": "2026-03-11",
+      "source": "The Real Deal — Compass appointed Feb 2026; Freedman to lead sales Mar 2026, launch 'likely later this year' (not confirmed open as of Sep 2026 research). HPB/Commission pending per TRD Jul 7."
+    }
+  },
+  "wellnessScore": 90
+}

@@ -1,0 +1,122 @@
+{
+  "address": "1920 Alton Road, Miami Beach, FL 33139",
+  "amenities": [
+    {
+      "icon": "🎾",
+      "label": "Padel & Wellness Club",
+      "sub": "Approx. 22,272 SF per filed plans"
+    },
+    {
+      "icon": "🏊",
+      "label": "Resort-Style Pool",
+      "sub": "With outdoor hot tub"
+    },
+    {
+      "icon": "🌿",
+      "label": "Lounge Terraces",
+      "sub": "Per filed plans"
+    },
+    {
+      "icon": "🛍",
+      "label": "Ground-Floor Retail",
+      "sub": "4,343 SF at Alton Road"
+    },
+    {
+      "icon": "🚗",
+      "label": "Podium Parking",
+      "sub": "53 spaces per filed plans"
+    }
+  ],
+  "amenitiesDescription": "<p>Based on filed plans, the podium holds a wellness club of approximately 22,272 square feet incorporating multiple padel courts, together with a resort-style swimming pool, an outdoor hot tub and lounge seating terraces. The ground floor includes roughly 4,343 square feet of commercial space, reported as likely café or fast-casual use, and 53 structured parking spaces. Additional indoor amenities have been referenced in the filing but not detailed, and no operator has been announced.</p>",
+  "architect": "ODP Architecture",
+  "badge": "LIVE LOCAL ACT · ADMINISTRATIVE FILING",
+  "comingSoon": true,
+  "comingSoonLayout": "minimal",
+  "completion": "TBD",
+  "densityScore": 62,
+  "depositStructure": null,
+  "description": "Turnbridge Equities has filed plans for Reserve at One Sunset, a 20-story, approximately 323-foot mixed-use tower at 1920 Alton Road in Miami Beach's Sunset Harbour neighborhood. ODP Architecture designed the building, which rises roughly 13 feet floor to floor above a podium. The Live Local Act filing calls for 35 residences: 21 condominiums in three- to five-bedroom layouts averaging about 4,288 square feet, and 14 workforce rentals in studio and one-bedroom layouts averaging about 510 square feet, restricted to households earning at least 120 percent of area median income. Filed program elements include roughly 4,343 square feet of ground-floor commercial space, a wellness club with multiple padel courts, a resort-style pool, an outdoor hot tub, and 53 podium parking spaces. The site currently holds the buildings occupied by Pura Vida and Anatomy. The proposal is under administrative review and has not been approved. Pricing, floor plans, and a sales timeline have not been released.",
+  "developer": "Turnbridge Equities",
+  "editorialLine": "Twenty-one for-sale residences above a private wellness and padel club in Sunset Harbour.",
+  "floorPlans": [],
+  "height": "20 Stories / approx. 323 ft",
+  "heroImageCredit": "ODP Architecture",
+  "heroImgPosition": "center 40%",
+  "hoa": "TBD",
+  "id": 69,
+  "img": "/reserve-at-one-sunset/exterior-dusk-corner.webp",
+  "imgs": [
+    "/reserve-at-one-sunset/exterior-dusk-corner.webp",
+    "/reserve-at-one-sunset/exterior-alton-day.webp",
+    "/reserve-at-one-sunset/exterior-alton-dusk.webp"
+  ],
+  "inquiryButtonLabel": "Request Updates",
+  "interiorDesigner": "TBD",
+  "investmentThesis": "<p>Sunset Harbour has almost no new condominium supply. The neighborhood is built out at low rise, hemmed by the bay on one side and Alton Road on the other, and its inventory is dominated by older mid-rise stock and converted commercial space. A 21-unit tower at this scale would be the most significant residential addition the neighborhood has seen in years.</p><p>The scarcity is compounded by format. Twenty-one is a small enough count that the building would trade as a closely held address rather than a marketed tower, and the average size reported in the filing puts these residences in a bracket where buyers are usually choosing between a waterfront house and a full floor. Very little product in Miami Beach competes on both counts.</p><p>What makes it possible is the Live Local Act. By dedicating 40 percent of the unit count to workforce housing, the project pursues height and density through administrative staff review rather than the city's discretionary board process — the same mechanism now reshaping the Alton Road corridor. That pathway is faster, but approval is not guaranteed and nothing has been granted yet. Request updates on this page to be notified when approval status, official renderings, and any program details are published.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.795269,
+  "launchState": "coming_soon",
+  "lng": -80.141726,
+  "locationScore": 90,
+  "maxBath": null,
+  "maxBed": 5,
+  "maxPrice": null,
+  "maxSqft": null,
+  "minBath": null,
+  "minBed": 3,
+  "minPrice": null,
+  "minSqft": null,
+  "name": "Reserve at One Sunset",
+  "neighborhood": "Miami Beach",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=25.795269,-80.141726"
+  },
+  "parking": "53 spaces (per filed plans)",
+  "priceFrom": "Pricing TBD",
+  "priceFromDisplay": "TBD",
+  "pricePerSqft": null,
+  "privacyScore": 68,
+  "rentalPolicy": "TBD",
+  "residenceContent": "<p class=\"prop-residence-intro\">A proposed 20-story tower at the Alton Road edge of Sunset Harbour, on an assemblage addressed 1920 Alton Road and referred to in the filing as 1 Sunset Drive. ODP Architecture's design sets a slender residential volume above a podium holding the amenity club, ground-floor commercial frontage and structured parking, with floor-to-floor heights of roughly 13 feet.</p><p>The residential program is deliberately thin. Twenty-one condominiums occupy the tower in three- to five-bedroom layouts averaging about 4,288 square feet — closer to single-family proportions than to a typical Miami Beach condominium floor. Fourteen workforce rentals in studio and one-bedroom layouts sit lower in the building under the Live Local Act program.</p><p>Filed plans show a wellness club of roughly 22,272 square feet with multiple padel courts, a resort-style pool, an outdoor hot tub and lounge terraces, plus about 4,343 square feet of ground-floor commercial space expected to suit café or fast-casual use. Finishes, unit plans and pricing have not been released.</p>",
+  "salesTeam": "Fraser Miami Private Advisory",
+  "seoKeywords": [
+    "Reserve at One Sunset",
+    "1920 Alton Road Miami Beach",
+    "Turnbridge Equities Miami Beach",
+    "Sunset Harbour new development",
+    "ODP Architecture Miami Beach",
+    "Live Local Act Miami Beach",
+    "Sunset Harbour condos for sale"
+  ],
+  "slug": "reserve-at-one-sunset",
+  "stage": "coming_soon",
+  "stageLabel": "Coming Soon",
+  "statusRemark": "Live Local Act filing (Sep 2026). Not yet approved by the City of Miami Beach.",
+  "tagline": "20-story Live Local Act tower proposed for Sunset Harbour.",
+  "units": 35,
+  "unitsLeft": null,
+  "verified": {
+    "units": {
+      "date": "2026-09-29",
+      "source": "Florida YIMBY / Floridian Development, Sep 2026 coverage of Live Local Act filing (35 units, 21 condo / 14 workforce)"
+    },
+    "height": {
+      "date": "2026-09-29",
+      "source": "Florida YIMBY, Sep 2026 coverage of Live Local Act filing (20 stories, approx. 323 ft)"
+    },
+    "stage": {
+      "date": "2026-09-29",
+      "source": "Floridian Development, Sep 2026 — filed under Live Local Act, not yet approved"
+    },
+    "statusRemark": {
+      "date": "2026-09-29",
+      "source": "Floridian Development, Sep 2026 — administrative review pending, approval not guaranteed"
+    },
+    "completion": {
+      "date": "2026-09-29",
+      "source": "No completion date stated in any Sep 2026 coverage"
+    }
+  },
+  "wellnessScore": 88
+}

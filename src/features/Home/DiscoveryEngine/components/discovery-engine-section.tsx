@@ -45,13 +45,13 @@ const NEIGHBORHOOD_OPTIONS = [
   "Bal Harbour",
 ];
 
-// Curated Price Presets (matching the actual project price spectrum)
+// Curated Price Presets (matching the actual pre-construction project price spectrum)
 const PRICE_PRESETS = [
-  { label: "All Prices", range: [0, 250000] as [number, number] },
-  { label: "Under $15M", range: [0, 15000] as [number, number] },
-  { label: "$15M–$25M", range: [15000, 25000] as [number, number] },
-  { label: "$25M–$50M", range: [25000, 50000] as [number, number] },
-  { label: "$50M+", range: [50000, 250000] as [number, number] },
+  { label: "All Prices", range: [0, 50000] as [number, number] },
+  { label: "Under $3M", range: [0, 3000] as [number, number] },
+  { label: "$3M–$6M", range: [3000, 6000] as [number, number] },
+  { label: "$6M–$12M", range: [6000, 12000] as [number, number] },
+  { label: "$12M+", range: [12000, 50000] as [number, number] },
 ];
 
 // 0 = ultra-private enclave; 100 = dense urban core
@@ -84,7 +84,7 @@ function wellnessSignal(project: DiscoveryProject): number {
 }
 
 function formatBandValue(value: number) {
-  if (value >= 110000 || value >= 250000) return "$250M+";
+  if (value >= 50000) return "$50M+";
   if (value >= 1000) return `$${(value / 1000).toFixed(value % 1000 === 0 ? 0 : 1)}M`;
   return `$${value}K`;
 }
@@ -101,12 +101,12 @@ export function DiscoveryEngineSection({
   const [selectedNeighborhood, setSelectedNeighborhood] = useState("All");
   const [location, setLocation] = useState(50);
   const [wellness, setWellness] = useState(50);
-  const [budget, setBudget] = useState<[number, number]>([0, 250000]);
+  const [budget, setBudget] = useState<[number, number]>([0, 50000]);
   const [searchQuery, setSearchQuery] = useState("");
 
   const matches = useMemo(() => {
     const minVal = budget[0] * 1000;
-    const maxVal = budget[1] >= 110000 ? Infinity : budget[1] * 1000;
+    const maxVal = budget[1] >= 50000 ? Infinity : budget[1] * 1000;
 
     return projects
       .filter((project) => {
@@ -175,14 +175,14 @@ export function DiscoveryEngineSection({
     location !== 50 ||
     wellness !== 50 ||
     budget[0] !== 0 ||
-    budget[1] !== 250000;
+    budget[1] !== 50000;
 
   const handleResetFilters = () => {
     setSelectedNeighborhood("All");
     setSearchQuery("");
     setLocation(50);
     setWellness(50);
-    setBudget([0, 250000]);
+    setBudget([0, 50000]);
   };
 
   return (

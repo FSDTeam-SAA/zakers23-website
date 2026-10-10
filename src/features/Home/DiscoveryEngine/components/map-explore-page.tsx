@@ -8,6 +8,7 @@ import mapboxgl from "mapbox-gl";
 import FindMyProjectModal, { Vt, MatcherPrefs } from "@/src/features/FindMyProject/components/FindMyProjectModal";
 import { Ht } from "@/src/data/neighborhoods";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
+import localPreconProjects from "@/src/data/miami-projects.json";
 
 // Map Project Interface matching extracted schema
 export interface MapProject {
@@ -250,11 +251,11 @@ type MapExplorePageProps = {
 export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePageProps) {
   const router = useRouter();
   const { openInquiry } = useInquiry();
-  const [allProjects, setAllProjects] = useState<MapProject[]>([]);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [allProjects, setAllProjects] = useState<MapProject[]>(localPreconProjects as unknown as MapProject[]);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [idxError, setIdxError] = useState<string | null>(null);
 
-  const isDataLoading = isLoading || (allProjects.length === 0 && !idxError);
+  const isDataLoading = false;
 
   // States
   const [selected, setSelected] = useState<MapProject | null>(null);
@@ -279,33 +280,6 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
   // Matcher wizard modal states
   const [isMatcherOpen, setIsMatcherOpen] = useState<boolean>(false);
   const [matcherPrefs, setMatcherPrefs] = useState<MatcherPrefs | null>(null);
-
-  useEffect(() => {
-    let isSubscribed = true;
-    setIsLoading(true);
-    const controller = new AbortController();
-    fetch("/api/idx/properties?fresh=true", { cache: "no-store", signal: controller.signal })
-      .then(async (response) => {
-        const body = await response.json();
-        if (!response.ok) throw new Error(body.error || "Could not load live IDX listings.");
-        if (isSubscribed) {
-          console.log(`🌐 [Explore Map] Loaded ${body.projects?.length} listings. Data source: ${body.source || "live_api"}`);
-          setAllProjects(Array.isArray(body.projects) ? body.projects : []);
-          setIsLoading(false);
-        }
-      })
-      .catch((error: unknown) => {
-        if (!isSubscribed) return;
-        if ((error as { name?: string }).name !== "AbortError") {
-          setIdxError(error instanceof Error ? error.message : "Could not load live IDX listings.");
-        }
-        setIsLoading(false);
-      });
-    return () => {
-      isSubscribed = false;
-      controller.abort();
-    };
-  }, []);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -838,7 +812,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                 ))}
               </div>
             </div>
-            <Link href="/waterfront">Waterfront Estates</Link>
+            <Link href="/waterfront">Waterfront Homes</Link>
             <Link href="/insights">Insights</Link>
             <Link
               href="/#contact"
@@ -1476,7 +1450,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   No projects match this filter
                 </h3>
                 <p style={{ fontSize: 13, color: theme.mist, maxWidth: 420, margin: "0 auto 20px", lineHeight: 1.6 }}>
-                  Pre-construction inventory shifts constantly. Speak with Brett to find off-market units.
+                  Pre-construction inventory shifts constantly. Speak with Zachary to find off-market units.
                 </p>
                 <button
                   onClick={() => openInquiry("Discovery Map")}
@@ -1680,7 +1654,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     fontFamily: "'DM Sans', sans-serif", fontWeight: 500, cursor: "pointer", textAlign: "left"
                   }}
                 >
-                  Or ask Brett about off-market inventory →
+                  Or ask Zachary about off-market inventory →
                 </button>
               </div>
             ) : (

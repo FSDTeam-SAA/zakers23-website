@@ -1,0 +1,259 @@
+{
+  "address": "8995 Collins Avenue, Surfside, FL 33154",
+  "amenities": [
+    {
+      "icon": "🏖",
+      "label": "1,350+ ft Beachfront",
+      "sub": "Surf Club's beach"
+    },
+    {
+      "icon": "🏊",
+      "label": "Surf Club Pools",
+      "sub": "Full access"
+    },
+    {
+      "icon": "🍽",
+      "label": "Surf Club Dining",
+      "sub": "Restaurant & bar"
+    },
+    {
+      "icon": "🛎",
+      "label": "Four Seasons Services",
+      "sub": "Concierge, spa, housekeeping"
+    },
+    {
+      "icon": "🌳",
+      "label": "Peter Wirtz Gardens",
+      "sub": "Promenade to beach"
+    }
+  ],
+  "amenitiesDescription": "<p>Surf House residents have access to the full Four Seasons Surf Club ecosystem, one of the most comprehensive luxury service platforms in South Florida. On-site services include a Four Seasons Director of Residences, residential concierge, 24-hour emergency repair, doorman and bellman, security patrols, electronic-access elevators and garage, dedicated private arrival and valet entry, exterior window and balcony cleaning, sliding door maintenance, secured floor access, and AC filter service. À la carte Four Seasons services extend to on-demand car service, in-residence spa treatments, grocery provisioning, housekeeping and butler service, wellness programming with personal trainers, and dog grooming.</p><p>The campus amenities include the Oceanfront Spa at The Surf Club, a state-of-the-art fitness center, the Lido Restaurant and Champagne Bar, The Surf Club Restaurant by Thomas Keller, historic beach cabanas at The Surf Club Private, a private function room, Four Seasons beach service, a dedicated swimming pool on the Surf House property, two additional swimming pools at The Surf Club, the Kids For All Seasons center, and lush tropical gardens designed by Peter Wirtz. The Surf Club Private membership — available to residents — provides access to the restored 1930s clubhouse, its painted ballroom ceiling, and the storied beach cabana tradition that has defined this stretch of coastline for nearly a century.</p>",
+  "architect": "Jerome Engelking (KKAID)",
+  "architectQuote": "We sought to honor the legacy of The Surf Club while introducing a forward-thinking residential experience.",
+  "architectQuoteBy": "Jerome Engelking",
+  "badge": "Final Residence Available",
+  "completion": "Est. 2027",
+  "constructionPct": 22,
+  "densityScore": 15,
+  "description": "17 oceanfront residences at the Four Seasons Surf Club in Surfside. Architecture by Jerome Engelking, interiors by Fabrizio Casiraghi. Final residence available.",
+  "developer": "Fort Partners",
+  "editorialLine": "The spirit of The Surf Club, elevated.",
+  "floorPlans": [
+    {
+      "type": "2-Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "2,262–4,000 SF",
+      "status": "Sold Out"
+    },
+    {
+      "type": "3-Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "3,000–5,000 SF",
+      "status": "Sold Out"
+    },
+    {
+      "type": "4-Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 4,
+      "baths": 4,
+      "sqft": "~7,305 SF total · Unit 201",
+      "status": "Available",
+      "startingPrice": 30000000
+    },
+    {
+      "type": "5-Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 5,
+      "baths": 5,
+      "sqft": "5,000–7,780 SF",
+      "status": "Sold Out"
+    }
+  ],
+  "height": "11 Stories",
+  "hoa": "~$3.00 / sq ft",
+  "id": 35,
+  "img": "/surf-house/hummingbird.webp",
+  "imgs": [
+    "/surf-house/hummingbird.webp",
+    "/surf-house/ocean-aerial.webp",
+    "/surf-house/surf-house-miami-beach-2.webp",
+    "/surf-house/surf-house-miami-beach.webp",
+    "/surf-house/surf-house-miami-beach-hero.webp",
+    "/surf-house/surf-house-miami-beach-12.webp",
+    "/surf-house/surf-house-miami-beach-5.webp",
+    "/surf-house/surf-house-miami-beach-7.webp",
+    "/surf-house/surf-house-miami-beach-8.webp",
+    "/surf-house/surf-house-miami-beach-9.webp",
+    "/surf-house/surf-house-miami-beach-10.webp"
+  ],
+  "interiorDesigner": "Fabrizio Casiraghi",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "The Surf Club Four Seasons comp; Surfside oceanfront permanently supply-constrained"
+      },
+      {
+        "value": "$3,500+",
+        "label": "Avg asking / sq ft",
+        "note": "The Surf Club Four Seasons residences now trade $3,500–$5,000/sqft on resale"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Four Seasons residences globally: 20–25% resale gains post-delivery (Knight Frank)"
+      },
+      {
+        "value": "Near zero",
+        "label": "Resale inventory at The Surf Club Four Seasons",
+        "note": "Existing Surf Club units almost never trade — extreme hold behavior confirms value"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Four Seasons legacy",
+        "pillColor": "gold",
+        "title": "Surf Club, among Florida's top branded addresses",
+        "body": "The Four Seasons at The Surf Club (Thomas Mayne / Morphosis architecture) is the reference point for ultra-luxury in Surfside, and Surf House offers access to that ecosystem at a more accessible price tier."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Surfside — Miami Beach without Miami Beach density",
+        "body": "Surfside occupies an anomalous position: walking distance to Bal Harbour Shops, direct beachfront, and a residential scale that Miami Beach's high-rises can't replicate. Eighty Seven Park and Arte Surfside established Surfside as a destination for buyers who want the ocean without the tourism."
+      },
+      {
+        "pill": "Hotel access",
+        "pillColor": "gold",
+        "title": "Access to Four Seasons Surf Club hotel amenities",
+        "body": "Thomas Kramer's original Surf Club now operates as a Four Seasons Hotel. Surf House residents have access to the hotel's spa, beach club, restaurants, and global Four Seasons network — the most recognized hotel services brand in the world."
+      },
+      {
+        "pill": "Inventory",
+        "pillColor": "gray",
+        "title": "Boutique format — rare opportunity in Surf Club campus",
+        "body": "Surf House is a limited collection of townhomes and low-rise residences within the Surf Club campus. The combination of low density, Four Seasons services, and beachfront position creates conditions for extremely scarce future resale inventory."
+      }
+    ],
+    "thesis": "The Surf Club Four Seasons proved the thesis: ultra-low density, historic pedigree, Four Seasons brand, and Surfside's quiet-luxury positioning produce some of Florida's highest per-sqft values and most disciplined hold behavior. Surf House extends that campus at a lower price tier — accessible to buyers who cannot reach the Four Seasons tower pricing but want the same address, beach club, and brand.",
+    "footnote": "HOA: ~$3.00/sq ft · Rental policy: Via Four Seasons program · Delivery: est. 2027"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "The Surf Club Four Seasons comp; Surfside oceanfront permanently supply-constrained"
+      },
+      {
+        "value": "$3,500+",
+        "label": "Avg asking / sq ft",
+        "note": "The Surf Club Four Seasons residences now trade $3,500–$5,000/sqft on resale"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Four Seasons residences globally: 20–25% resale gains post-delivery (Knight Frank)"
+      },
+      {
+        "value": "Near zero",
+        "label": "Resale inventory at The Surf Club Four Seasons",
+        "note": "Existing Surf Club units almost never trade — extreme hold behavior confirms value"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Four Seasons legacy",
+        "pillColor": "gold",
+        "title": "Surf Club, among Florida's top branded addresses",
+        "body": "The Four Seasons at The Surf Club (Thomas Mayne / Morphosis architecture) is the reference point for ultra-luxury in Surfside, and Surf House offers access to that ecosystem at a more accessible price tier."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Surfside — Miami Beach without Miami Beach density",
+        "body": "Surfside occupies an anomalous position: walking distance to Bal Harbour Shops, direct beachfront, and a residential scale that Miami Beach's high-rises can't replicate. Eighty Seven Park and Arte Surfside established Surfside as a destination for buyers who want the ocean without the tourism."
+      },
+      {
+        "pill": "Hotel access",
+        "pillColor": "gold",
+        "title": "Access to Four Seasons Surf Club hotel amenities",
+        "body": "Thomas Kramer's original Surf Club now operates as a Four Seasons Hotel. Surf House residents have access to the hotel's spa, beach club, restaurants, and global Four Seasons network — the most recognized hotel services brand in the world."
+      },
+      {
+        "pill": "Inventory",
+        "pillColor": "gray",
+        "title": "Boutique format — rare opportunity in Surf Club campus",
+        "body": "Surf House is a limited collection of townhomes and low-rise residences within the Surf Club campus. The combination of low density, Four Seasons services, and beachfront position creates conditions for extremely scarce future resale inventory."
+      }
+    ],
+    "thesis": "The Surf Club Four Seasons proved the thesis: ultra-low density, historic pedigree, Four Seasons brand, and Surfside's quiet-luxury positioning produce some of Florida's highest per-sqft values and most disciplined hold behavior. Surf House extends that campus at a lower price tier — accessible to buyers who cannot reach the Four Seasons tower pricing but want the same address, beach club, and brand.",
+    "footnote": "HOA: ~$3.00/sq ft · Rental policy: Via Four Seasons program · Delivery: est. 2027"
+  },
+  "investmentThesis": "<p>One of the tightest supply stories in South Florida luxury real estate. Resale prices on The Surf Club campus have set all-time records for Miami-Dade County, including a $44 million penthouse at the original Four Seasons Surf Club towers and an $86 million penthouse at the adjacent Seaway South — the highest-priced condo sale in county history. With 16 of 17 Surf House units already under contract, the building is effectively sold out before completion.</p><p>Fort Partners secured a $110.7 million construction loan from Athene/Apollo in late 2024, signaling continued institutional confidence in the address. The Surf Club campus has established a pricing floor well above $4,000 per square foot on resales, with the strongest units exceeding $6,000 PSF. Fort Partners' track record at this address — from the original Four Seasons towers through Seaway and now Surf House — has consistently rewarded early buyers, and after Surf House and Seaway North deliver, no remaining buildable oceanfront exists on this stretch of Collins Avenue. The final residence represents the last new-construction opportunity on the campus.</p>",
+  "isActive": true,
+  "landscapeArchitect": "Peter Wirtz",
+  "lat": 25.8760723,
+  "lng": -80.1210884,
+  "maxBath": 6,
+  "maxBed": 5,
+  "maxPrice": 30000000,
+  "maxSqft": 7780,
+  "minBath": 2,
+  "minBed": 2,
+  "minPrice": 8500000,
+  "minSqft": 2262,
+  "name": "Surf House at The Surf Club",
+  "neighborhood": "Surfside",
+  "percentSold": 94,
+  "priceFrom": "$8.5M+",
+  "privacyScore": 95,
+  "residenceContent": "<p class=\"prop-residence-intro\">Surf House is the newest building inside The Surf Club's 1,350-foot beachfront enclave in Surfside, an 11-story tower designed by New York-based French architect Jerome Engelking with softly curved alabaster arches, palm-shaped columns, terrazzo cladding, and vaulted cornices that echo the original 1965 structure. The 17 residences span 2,262 to 7,780 square feet of interior space, each with private elevator access and deep wraparound terraces framed by the building's signature arches. Landscape by Belgian architect Peter Wirtz connects the building to the beach through tropical gardens and a promenade of white sand.</p><p>Interiors by Paris-based Italian architect Fabrizio Casiraghi draw from a distinctly European tradition — warm woods, natural stones, woven textures, and soft neutrals — that sets them apart from the glass-and-marble vocabulary of most Miami luxury towers. Residences feature terrazzo flooring, natural stone countertops, custom millwork with glass-paneled closets, and freestanding soaking tubs, finished with the quiet material richness of Casiraghi's hotel work at Sant Ambroeus Milan and Hotel La Ponche in Saint-Tropez.</p><p>Three residence types are offered. Sunset residences are 2-bedroom homes with 3,049 total square feet oriented toward Biscayne Bay. Sunrise Residence 4B plans deliver 4-bedroom layouts with 7,305 total square feet across three ocean-facing exposures. The full-floor Sunrise to Sunset residences span the entire building at 10,354 total square feet with 5 bedrooms, a media room, staff quarters, and dual sunrise-to-sunset exposures — among the largest single-floor plans on Miami's oceanfront.</p><p>The sole remaining residence is Unit 201, a Sunrise Residence 4B plan with 5,518 square feet of interior space and 1,787 square feet of private terracing. The layout wraps three exposures: a 137-foot Ocean North Terrace, a 63-foot Sunrise Terrace along the Atlantic, and a 57-foot south-facing terrace. The living room measures 28 by 31 feet with direct ocean views, opening to a 30-by-21-foot kitchen and dining area and a separate 20-by-21-foot family room. The primary suite includes an 18-by-15-foot bedroom and a 19-by-8-foot walk-in closet. Three additional bedrooms at 18 by 14 feet each, a private office, powder room, and laundry complete the plan. Offered at $30 million.</p>",
+  "salesTeam": "Fort Partners",
+  "slug": "surf-house",
+  "stage": "under_construction",
+  "stageLabel": "Under Construction",
+  "statusRemark": "UNDER CONSTRUCTION · 94% PRE-SOLD · FINAL RESIDENCE AT $30M",
+  "units": 17,
+  "unitsLeft": 1,
+  "verified": {
+    "minPrice": {
+      "date": "2026-05-28",
+      "source": "ManhattanMiami / Meridian — $8.5M launch entry price"
+    },
+    "priceFrom": {
+      "date": "2026-05-28",
+      "source": "ManhattanMiami / Meridian — $8.5M launch entry price"
+    },
+    "stage": {
+      "date": "2026-07-16",
+      "source": "Town of Surfside Town Manager Report — status \"Closing Foundation\""
+    },
+    "completion": {
+      "date": "2026-07-16",
+      "source": "Est. 2027, unconfirmed. No developer, lender or trade source publishes a date; Surfside projects FY2028 taxable value"
+    },
+    "unitsLeft": {
+      "date": "2026-08-22",
+      "source": "Final residence, Unit 201, asking $30M"
+    },
+    "minSqft": {
+      "date": "2026-05-28",
+      "source": "Fort Partners era sources, four independent (2,262-7,780 SF)"
+    },
+    "units": {
+      "date": "2024-11-12",
+      "source": "Fort Partners and The Real Deal — 17 residences, 11 stories"
+    },
+    "hoa": {
+      "date": "2026-08-25",
+      "source": "Backfilled from the existing investmentIntelligence.js Market Position footnote (~$3.00/sq ft); original source undocumented — needs a primary confirmation (developer budget or MLS once resales exist)."
+    }
+  },
+  "wellnessScore": 85
+}

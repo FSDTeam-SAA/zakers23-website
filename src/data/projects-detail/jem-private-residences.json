@@ -1,0 +1,204 @@
+{
+  "address": "1016 NE 2nd Avenue, Miami, FL 33132",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Sky Pool & Cabanas",
+      "sub": "50th floor, 700+ ft"
+    },
+    {
+      "icon": "🍸",
+      "label": "Sky Lounge",
+      "sub": "Fireplace, custom bar"
+    },
+    {
+      "icon": "🍽",
+      "label": "Private Dining",
+      "sub": "Glass-enclosed, bay views"
+    },
+    {
+      "icon": "🎨",
+      "label": "PAMM Partnership",
+      "sub": "Museum membership & Art Week"
+    },
+    {
+      "icon": "⛵",
+      "label": "Residence Yacht Club",
+      "sub": "55–68 ft charters & excursions"
+    },
+    {
+      "icon": "🏋",
+      "label": "Fitness Center",
+      "sub": "Peloton, yoga, pilates"
+    }
+  ],
+  "amenitiesDescription": "<p>JEM Private Residences Miami anchors the JEM Club — a masterfully curated indoor-outdoor amenity collection occupying the entire 50th floor, set 700+ feet above Downtown Miami. Outdoor: resort pool with cabanas, floating daybeds, and a commissioned sculpture by Lorenzo Quinn; Jacuzzi zone with tropical shower; alfresco lounge with reflection pools and lush landscaping; sunken lounge; and a Summer Kitchen outdoor dining terrace. Indoor: Sky Lounge with feature fireplace and custom stone bar; glass-enclosed private dining room with wet bar and direct outdoor deck access; game room with billiards and large-format TV; spirits tasting room with amber glass shelving and bronze decanter racks; cold plunge; yoga garden; outdoor boxing arena; fitness center; spa with private treatment room; and co-working lounge with individual and group seating. Arrival: grand porte-cochère with 24-hour valet, sculpted centerpiece, and abundant foliage; private residential-only entrance and valet on Level 2; attended lobby with fireplace, custom sculpted artwork, and bespoke millwork detailing.</p><p>Naftali Group has announced exclusive collaborations with <strong>Pérez Art Museum Miami (PAMM)</strong> and <strong>Residence Yacht Club</strong>. The PAMM program includes a residential membership with unlimited admission, guest access, and invitations to major events tied to Miami Art Week and beyond — plus previews, private cultural programming, and member benefits across the museum's dining, retail, and event spaces. Through Residence Yacht Club, eligible residents gain access to private charters, sport fishing, and curated excursions aboard fully crewed 55- to 68-foot vessels with concierge coordination — a serviced yachting layer without the burden of ownership.</p>",
+  "architect": "Arquitectonica",
+  "completion": "Q4 2027",
+  "densityScore": 85,
+  "description": "67 stories at Miami Worldcenter. All 273 residences on floors 43 and above, guaranteeing panoramic views from every unit. Sky Villas by Fendi Casa from $8M. Delivery targeted Q4 2027.",
+  "developer": "Naftali Group",
+  "factSheetURL": "https://frasermiami.s3.amazonaws.com/jem/factsheet.pdf",
+  "height": "67 Stories (700 ft)",
+  "hoa": "$1.35/sf",
+  "id": 14,
+  "img": "https://frasermiami.s3.amazonaws.com/jem/hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/jem/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/hero2.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/entrance.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/port-cochere.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/hero1.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/balcony.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/gym.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/yoga-room.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/sauna.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/spa.webp",
+    "https://frasermiami.s3.amazonaws.com/jem/dusk.webp"
+  ],
+  "interiorDesigner": "Rockwell Group",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Downtown Miami luxury pipeline trajectory and Worldcenter momentum"
+      },
+      {
+        "value": "$1,000+",
+        "label": "Avg asking / sq ft",
+        "note": "Luxury price point with strong long-term appreciation runway as the district matures"
+      },
+      {
+        "value": "273 homes",
+        "label": "Residences from floor 43+",
+        "note": "All units sit above the podium — no low-floor inventory diluting views or resale"
+      },
+      {
+        "value": "700+ ft",
+        "label": "67-story tower at Worldcenter",
+        "note": "Upper-floor views across Biscayne Bay and the skyline — height as a permanent asset"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Podium topped out — vertical tower underway",
+        "body": "Ground broke April 2024; Naftali Group secured $465M in construction financing in 2025. Podium construction has topped out (parking, lobby, and retail levels formed), with the superstructure advancing toward completion anticipated Q4 2027 — per Florida YIMBY (Feb 2026)."
+      },
+      {
+        "pill": "Worldcenter",
+        "pillColor": "gold",
+        "title": "Miami Worldcenter: $6B+ mixed-use district",
+        "body": "JEM sits within Miami Worldcenter, one of the largest urban developments in the U.S. The master plan includes hotels, retail, and multiple residential towers — a live-work-play environment that supports long-term value as the district fills in."
+      },
+      {
+        "pill": "Partnerships",
+        "pillColor": "gold",
+        "title": "PAMM + Residence Yacht Club",
+        "body": "Naftali Group has announced exclusive collaborations with Pérez Art Museum Miami and Residence Yacht Club — museum membership-style access and programming plus serviced yachting (private charters and excursions on 55- to 68-foot vessels with crew and concierge coordination), extending lifestyle beyond traditional in-tower amenities."
+      },
+      {
+        "pill": "Product",
+        "pillColor": "green",
+        "title": "Rockwell interiors · Fendi Casa Sky Villas",
+        "body": "Interiors by Rockwell Group; five Sky Villas on upper floors by Fendi Casa from $8M. One- to four-bedroom residences from $1.2M+ create a wide buyer universe versus ultra-niche boutique towers."
+      },
+      {
+        "pill": "Rental",
+        "pillColor": "gray",
+        "title": "Downtown Miami rental demand",
+        "body": "30-day minimum rentals (up to four times per year) offer income flexibility. Proximity to Brightline, Kaseya Center, and Brickell supports both event-driven and annual leasing."
+      }
+    ],
+    "thesis": "JEM's case is Miami Worldcenter location plus vertical product discipline: with no low-floor inventory, every home enjoys protected views and light. New PAMM and Residence Yacht Club partnerships add cultural and waterfront layers competitors cannot easily replicate. As the district matures, owners benefit from neighborhood lift while upper-floor premiums hold.",
+    "footnote": "HOA: $1.35/sq ft · Rental policy: 30-day min, 4× per year · Delivery: Q4 2027"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Downtown Miami luxury pipeline trajectory and Worldcenter momentum"
+      },
+      {
+        "value": "$1,000+",
+        "label": "Avg asking / sq ft",
+        "note": "Luxury price point with strong long-term appreciation runway as the district matures"
+      },
+      {
+        "value": "273 homes",
+        "label": "Residences from floor 43+",
+        "note": "All units sit above the podium — no low-floor inventory diluting views or resale"
+      },
+      {
+        "value": "700+ ft",
+        "label": "67-story tower at Worldcenter",
+        "note": "Upper-floor views across Biscayne Bay and the skyline — height as a permanent asset"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Podium topped out — vertical tower underway",
+        "body": "Ground broke April 2024; Naftali Group secured $465M in construction financing in 2025. Podium construction has topped out (parking, lobby, and retail levels formed), with the superstructure advancing toward completion anticipated Q4 2027 — per Florida YIMBY (Feb 2026)."
+      },
+      {
+        "pill": "Worldcenter",
+        "pillColor": "gold",
+        "title": "Miami Worldcenter: $6B+ mixed-use district",
+        "body": "JEM sits within Miami Worldcenter, one of the largest urban developments in the U.S. The master plan includes hotels, retail, and multiple residential towers — a live-work-play environment that supports long-term value as the district fills in."
+      },
+      {
+        "pill": "Partnerships",
+        "pillColor": "gold",
+        "title": "PAMM + Residence Yacht Club",
+        "body": "Naftali Group has announced exclusive collaborations with Pérez Art Museum Miami and Residence Yacht Club — museum membership-style access and programming plus serviced yachting (private charters and excursions on 55- to 68-foot vessels with crew and concierge coordination), extending lifestyle beyond traditional in-tower amenities."
+      },
+      {
+        "pill": "Product",
+        "pillColor": "green",
+        "title": "Rockwell interiors · Fendi Casa Sky Villas",
+        "body": "Interiors by Rockwell Group; five Sky Villas on upper floors by Fendi Casa from $8M. One- to four-bedroom residences from $1.2M+ create a wide buyer universe versus ultra-niche boutique towers."
+      },
+      {
+        "pill": "Rental",
+        "pillColor": "gray",
+        "title": "Downtown Miami rental demand",
+        "body": "30-day minimum rentals (up to four times per year) offer income flexibility. Proximity to Brightline, Kaseya Center, and Brickell supports both event-driven and annual leasing."
+      }
+    ],
+    "thesis": "JEM's case is Miami Worldcenter location plus vertical product discipline: with no low-floor inventory, every home enjoys protected views and light. New PAMM and Residence Yacht Club partnerships add cultural and waterfront layers competitors cannot easily replicate. As the district matures, owners benefit from neighborhood lift while upper-floor premiums hold.",
+    "footnote": "HOA: $1.35/sq ft · Rental policy: 30-day min, 4× per year · Delivery: Q4 2027"
+  },
+  "investmentThesis": "<p>Naftali Group's first Miami project, bringing a New York development pedigree (the firm behind some of Manhattan's most refined boutique projects) to a 67-story tower at Miami Worldcenter. The decision to place all residences on floors 43+ is a meaningful market differentiator — no low-floor inventory diluting the value proposition. Exclusive partnerships with Pérez Art Museum Miami (PAMM) and Residence Yacht Club extend lifestyle beyond the building with museum membership programming and serviced yachting. The Fendi Casa Sky Villas represent the only Fendi-branded residences in the current Miami pipeline. Naftali Group secured $465 million in construction financing in 2025 to advance the tower after an April 2024 groundbreaking; podium construction has topped out, with completion anticipated Q4 2027. 30-day minimum rental permission (4x/year) gives owners income flexibility without the traffic of a full hotel program.</p>",
+  "isActive": true,
+  "landscapeArchitect": "EDSA",
+  "lat": 25.784346,
+  "lng": -80.191295,
+  "maxBed": 4,
+  "maxPrice": 20000000,
+  "maxSqft": 5277,
+  "minBed": 1,
+  "minPrice": 1200000,
+  "minSqft": 476,
+  "name": "JEM Private Residences",
+  "neighborhood": "Downtown Miami",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/jem-private-residences.jpg",
+  "priceFrom": "$1.2M+",
+  "privacyScore": 40,
+  "rentalPolicy": "30-day minimum, 4x per year",
+  "residenceContent": "<p class=\"prop-residence-intro\">All 273 condominium residences are positioned on floors 43 and above — a structural decision that guarantees panoramic views of Biscayne Bay, the Atlantic, and the Miami skyline from every unit. Located within Miami Worldcenter, Downtown Miami's 27-acre master-planned cultural and entertainment district. Designed by Arquitectonica with interiors by Rockwell Group and landscape architecture by EDSA. One- to four-bedroom residences span 476 to 2,052 SF, with Italian porcelain flooring, custom European kitchens, Bosch appliances, and spa-inspired bathrooms. Five ultra-luxury Sky Villas on the top floors are designed by Fendi Casa with exclusive furnishings and finishes, priced from $8M. The building permits minimum 30-day rentals up to four times per year, providing rental flexibility for investment buyers. Ground broke April 2024; podium construction topped out in 2026 with vertical construction advancing toward completion anticipated Q4 2027. General contractor: Coastal Construction.</p>",
+  "salesTeam": "OneWorld Properties",
+  "slug": "jem-private-residences",
+  "stage": "under_construction",
+  "statusRemark": "PODIUM TOPPED OUT · Q4 2027",
+  "units": 273,
+  "wellnessScore": 60
+}

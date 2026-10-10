@@ -1,0 +1,469 @@
+{
+  "address": "3055 North Miami Avenue, Miami, FL 33127",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "60-ft Heated Pool",
+      "sub": "7th-floor Proper Floor deck"
+    },
+    {
+      "icon": "🎾",
+      "label": "Pickleball Court",
+      "sub": "Outdoor kitchen + trellis"
+    },
+    {
+      "icon": "💪",
+      "label": "3,000 SF Fitness Center",
+      "sub": "Pilates room included"
+    },
+    {
+      "icon": "💆",
+      "label": "Spa · Steam · Sauna",
+      "sub": "Connected to outdoor terraces"
+    },
+    {
+      "icon": "🌿",
+      "label": "Vegetable Garden",
+      "sub": "Designed by Naturalficial"
+    },
+    {
+      "icon": "🎨",
+      "label": "Art-Filled Lobby",
+      "sub": "5,000 SF · 16-ft ceilings · Meyer Davis"
+    },
+    {
+      "icon": "🍽",
+      "label": "Chef's Kitchen Lounge",
+      "sub": "East Lounge with outdoor terraces"
+    },
+    {
+      "icon": "⛳",
+      "label": "Virtual Golf + Screening",
+      "sub": "Indoor entertainment"
+    },
+    {
+      "icon": "🐾",
+      "label": "Pet Spa",
+      "sub": "Ground-floor access"
+    },
+    {
+      "icon": "☕",
+      "label": "Lobby Café",
+      "sub": "Coffee + pastries"
+    },
+    {
+      "icon": "🎭",
+      "label": "Culture Concierge",
+      "sub": "Preferred access to Miami culture"
+    },
+    {
+      "icon": "🏖",
+      "label": "Shelborne Beach Club Access",
+      "sub": "10-min drive to South Beach"
+    }
+  ],
+  "architect": "Arquitectonica",
+  "badge": "PHASE 1 OF $2B MIDTOWN PARK · SALES LAUNCHED",
+  "completion": "2028",
+  "densityScore": 88,
+  "depositStructure": null,
+  "description": "Midtown Park Residences By Proper is the inaugural tower in a five-acre, $2 billion master plan between Wynwood, the Design District, and Edgewater. Arquitectonica's 28-story tower delivers 288 Proper-branded residences, studios through penthouses, with Meyer Davis interiors and 40,000 square feet of amenities on the 7th-floor Proper Floor.",
+  "developer": "Rosso Development · Midtown Development",
+  "discoveryEngine": {
+    "lifestyle": [
+      "urban",
+      "amenity-rich",
+      "walkable",
+      "design-forward"
+    ],
+    "investmentProfile": [
+      "pre-construction",
+      "master-plan",
+      "value-play"
+    ],
+    "priceCategory": "entry-luxury",
+    "vibeMatch": [
+      "city-energy",
+      "social",
+      "lifestyle-led",
+      "new-urban-core"
+    ],
+    "goodFor": [
+      "investment",
+      "primary-residence",
+      "first-luxury-buyer",
+      "future-upside"
+    ]
+  },
+  "editorialLine": "Proper arrives in Midtown. Culture, design, and five acres of urbanism in between.",
+  "featureVideo": {
+    "src": "/midtown-park/midtown-park-film.mp4",
+    "poster": "/midtown-park/midtown-park-film-poster.webp",
+    "label": "Midtown Park By Proper",
+    "tagline": "The project film: Arquitectonica's tower, Meyer Davis interiors, and the five-acre park stitching Midtown to Wynwood and the Design District.",
+    "uploadDate": "2026-09-05"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlanPdf": "https://frasermiami.s3.amazonaws.com/midtown-park/Midtown-Park-Floor-Plans.pdf",
+  "floorPlans": [
+    {
+      "type": "Studio",
+      "addlRooms": "Residence 08 · East / city",
+      "beds": 0,
+      "baths": 1,
+      "interiorSF": 537,
+      "exteriorSF": 83,
+      "startingPrice": 569900,
+      "status": "Available"
+    },
+    {
+      "type": "Residence 05",
+      "addlRooms": "1 bedroom · North / city",
+      "beds": 1,
+      "baths": 1,
+      "interiorSF": 633,
+      "exteriorSF": 196,
+      "startingPrice": 768900,
+      "status": "Available"
+    },
+    {
+      "type": "Residence 11",
+      "addlRooms": "2 bedroom + den · North / city",
+      "beds": 2,
+      "baths": 2,
+      "interiorSF": 1176,
+      "exteriorSF": 258,
+      "startingPrice": 1376900,
+      "status": "Available"
+    },
+    {
+      "type": "Residence 10",
+      "addlRooms": "3 bedroom · Southwest corner · City",
+      "beds": 3,
+      "baths": 3.5,
+      "interiorSF": 1704,
+      "exteriorSF": 681,
+      "startingPrice": 1981900,
+      "status": "Available"
+    },
+    {
+      "type": "PH 06",
+      "addlRooms": "Penthouse · 2 levels with pool · South / city / bay",
+      "beds": 3,
+      "baths": 4.5,
+      "interiorSF": 2165,
+      "exteriorSF": 1774,
+      "startingPrice": 3277900,
+      "status": "Available"
+    },
+    {
+      "type": "Residence 03",
+      "addlRooms": "1 bedroom + den · North / city / bay",
+      "beds": 1,
+      "baths": 1,
+      "interiorSF": 782,
+      "exteriorSF": 196,
+      "startingPrice": 944900,
+      "status": "Available"
+    },
+    {
+      "type": "Residence 09",
+      "addlRooms": "1 bedroom + den · North / city",
+      "beds": 1,
+      "baths": 2,
+      "interiorSF": 883,
+      "exteriorSF": 98,
+      "startingPrice": 1096900,
+      "status": "Available"
+    },
+    {
+      "type": "Residence 06",
+      "addlRooms": "1 bedroom + den · South / city / bay",
+      "beds": 1,
+      "baths": 2,
+      "interiorSF": 1060,
+      "exteriorSF": 178,
+      "startingPrice": 1309900,
+      "status": "Available"
+    },
+    {
+      "type": "Residence 12",
+      "addlRooms": "2 bedroom · Northwest corner · North / city",
+      "beds": 2,
+      "baths": 2.5,
+      "interiorSF": 1239,
+      "exteriorSF": 572,
+      "startingPrice": 1465900,
+      "status": "Available"
+    },
+    {
+      "type": "Residence 04",
+      "addlRooms": "2 bedroom + den · South / city / bay",
+      "beds": 2,
+      "baths": 2,
+      "interiorSF": 1168,
+      "exteriorSF": 286,
+      "startingPrice": 1525900,
+      "status": "Available"
+    },
+    {
+      "type": "Residence 02",
+      "addlRooms": "3 bedroom · Southeast corner · City / bay",
+      "beds": 3,
+      "baths": 3.5,
+      "interiorSF": 1616,
+      "exteriorSF": 721,
+      "startingPrice": 2094900,
+      "status": "Available"
+    },
+    {
+      "type": "Residence 01",
+      "addlRooms": "3 bedroom · Northeast corner · City / bay",
+      "beds": 3,
+      "baths": 3.5,
+      "interiorSF": 1730,
+      "exteriorSF": 630,
+      "startingPrice": 2284900,
+      "status": "Available"
+    },
+    {
+      "type": "PH 05",
+      "addlRooms": "Penthouse · Den · 2 levels with pool · North / city / bay",
+      "beds": 4,
+      "baths": 5,
+      "interiorSF": 2510,
+      "startingPrice": 3765900,
+      "status": "Available"
+    }
+  ],
+  "floorPlansDefaultVisible": 5,
+  "height": "28 Stories",
+  "hoa": null,
+  "id": 43,
+  "img": "/midtown-park/hero.webp",
+  "imgs": [
+    "/midtown-park/hero.webp",
+    "/midtown-park/hero2.webp",
+    "/midtown-park/building-hero.jpg.webp",
+    "/midtown-park/aerial.webp",
+    "/midtown-park/aerial2.webp",
+    "/midtown-park/street-hero.webp",
+    "/midtown-park/tower-bay-view.webp",
+    "/midtown-park/hummingbird.webp",
+    "/midtown-park/dusk-park.webp",
+    "/midtown-park/neighborhood-map.webp",
+    "/midtown-park/park-aerial.webp",
+    "/midtown-park/masterplan-aerial.webp",
+    "/midtown-park/park-view.webp",
+    "/midtown-park/midtown-park.webp",
+    "/midtown-park/paseo.webp",
+    "/midtown-park/cafe-terrace.webp",
+    "/midtown-park/retail-night.webp",
+    "/midtown-park/porte-cochere.webp",
+    "/midtown-park/lobby-hero.webp",
+    "/midtown-park/lobby.webp",
+    "/midtown-park/lobby-vertical.webp",
+    "/midtown-park/pool.webp",
+    "/midtown-park/pergola-terrace.webp",
+    "/midtown-park/padel-courts.webp",
+    "/midtown-park/padel-players.webp",
+    "/midtown-park/gym.webp",
+    "/midtown-park/spa.webp",
+    "/midtown-park/golf-simulator.webp",
+    "/midtown-park/kids-room.webp",
+    "/midtown-park/lounge.webp",
+    "/midtown-park/lounge2.webp",
+    "/midtown-park/coworking.webp",
+    "/midtown-park/living-room-dusk.webp",
+    "/midtown-park/living.webp",
+    "/midtown-park/living2.webp",
+    "/midtown-park/living4.webp",
+    "/midtown-park/living-balcony.webp",
+    "/midtown-park/balcony-golden-hour.webp",
+    "/midtown-park/living-room-loft.webp",
+    "/midtown-park/loft.webp",
+    "/midtown-park/kitchen.webp",
+    "/midtown-park/dining-room-sunset.webp",
+    "/midtown-park/bedroom.webp",
+    "/midtown-park/bathroom.webp",
+    "/midtown-park/bathroom-wetroom.webp",
+    "/midtown-park/penthouse-terrace.webp",
+    "/midtown-park/penthouse-terrace2.webp",
+    "/midtown-park/penthouse-roofdeck.webp",
+    "/midtown-park/street-view.webp"
+  ],
+  "interiorDesigner": "Meyer Davis Studio",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "From $600s",
+        "label": "Entry pricing, below branded-residence tier",
+        "note": "Starting in the low $600,000s for a branded product. Comparable Edgewater and Design District branded towers start at $1M+. The master plan is the long-duration value driver."
+      },
+      {
+        "value": "288",
+        "label": "Residences, Phase 1 of 924",
+        "note": "Studio through 3BR plus Private Collection penthouses with 4-5BR layouts, 20-ft ceilings, rooftop gardens, and private pools. Phase 1 is 31% of the eventual 924-unit master plan."
+      },
+      {
+        "value": "5 acres",
+        "label": "Master plan, $2B buildout",
+        "note": "1.17M sq ft total: two 28-story towers, two 17-story towers, 60,000 sq ft office, over 100,000 sq ft retail, public plazas, landscaped paseos, and a padel and racquet club."
+      },
+      {
+        "value": "2028",
+        "label": "Delivery, UDRB approved Oct 2025",
+        "note": "City of Miami Urban Development Review Board approval secured October 2025. Construction timeline tracks toward 2028 delivery. Shelborne By Proper already reopened in South Beach."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Master plan",
+        "pillColor": "gold",
+        "title": "A master plan that links three districts",
+        "body": "The full redevelopment links Midtown, Wynwood, and the Design District with major office, retail, and public-space programming — a long-duration value driver as the district builds out around Phase 1."
+      },
+      {
+        "pill": "Hospitality brand",
+        "pillColor": "gold",
+        "title": "Proper Hospitality, second branded residence globally",
+        "body": "Midtown Park is Proper Hospitality's second branded residence globally. Owners receive Culture Concierge programming, preferred rates across Proper properties, and access to the Shelborne By Proper Beach Club on Miami Beach."
+      },
+      {
+        "pill": "Design team",
+        "pillColor": "gold",
+        "title": "Arquitectonica, Meyer Davis Studio, Naturalficial",
+        "body": "Arquitectonica leads architecture, Meyer Davis Studio designs interiors, and Naturalficial leads landscape. The project pairs institutional design pedigree with a layered public-realm program across plazas, greenery, and integrated art."
+      },
+      {
+        "pill": "Amenity program",
+        "pillColor": "gold",
+        "title": "40,000 sq ft amenities on the Proper Floor",
+        "body": "The Proper Floor consolidates 40,000 square feet of lifestyle programming, including pool, wellness, fitness, sport, and social spaces. The package is designed as a full-day resident ecosystem rather than a standard tower amenity deck."
+      },
+      {
+        "pill": "Recreation",
+        "pillColor": "gray",
+        "title": "ULTRA Padel and a planned racquet club",
+        "body": "ULTRA Padel partners on a padel and racquet club planned within the Midtown Park master plan. It positions Midtown Park around one of luxury housing's fastest-growing amenity categories."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Midtown, Wynwood, and Design District within walking distance",
+        "body": "3055 North Miami Avenue sits at the seam between Midtown, Wynwood, and the Design District. The location offers walkable daily retail and short-hop access to Miami's highest-velocity cultural and luxury corridors."
+      }
+    ],
+    "thesis": "Midtown Park Residences is a value play on Miami's branded-residence category, with entry from the low $600,000s for a Proper-branded, Arquitectonica and Meyer Davis tower below the $1M+ Edgewater and Design District floor. The $2B, five-acre master plan will anchor Midtown as a walkable district between Wynwood and the Design District, capped by a padel and racquet club operated by ULTRA Padel. Phase 1 buyers capture pricing before full buildout delivers and before Proper expands its U.S. residential footprint beyond two properties.",
+    "footnote": "HOA: TBD · Rental policy: TBD · Delivery: est. 2028"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "From $600s",
+        "label": "Entry pricing, below branded-residence tier",
+        "note": "Starting in the low $600,000s for a branded product. Comparable Edgewater and Design District branded towers start at $1M+. The master plan is the long-duration value driver."
+      },
+      {
+        "value": "288",
+        "label": "Residences, Phase 1 of 924",
+        "note": "Studio through 3BR plus Private Collection penthouses with 4-5BR layouts, 20-ft ceilings, rooftop gardens, and private pools. Phase 1 is 31% of the eventual 924-unit master plan."
+      },
+      {
+        "value": "5 acres",
+        "label": "Master plan, $2B buildout",
+        "note": "1.17M sq ft total: two 28-story towers, two 17-story towers, 60,000 sq ft office, over 100,000 sq ft retail, public plazas, landscaped paseos, and a padel and racquet club."
+      },
+      {
+        "value": "2028",
+        "label": "Delivery, UDRB approved Oct 2025",
+        "note": "City of Miami Urban Development Review Board approval secured October 2025. Construction timeline tracks toward 2028 delivery. Shelborne By Proper already reopened in South Beach."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Master plan",
+        "pillColor": "gold",
+        "title": "A master plan that links three districts",
+        "body": "The full redevelopment links Midtown, Wynwood, and the Design District with major office, retail, and public-space programming — a long-duration value driver as the district builds out around Phase 1."
+      },
+      {
+        "pill": "Hospitality brand",
+        "pillColor": "gold",
+        "title": "Proper Hospitality, second branded residence globally",
+        "body": "Midtown Park is Proper Hospitality's second branded residence globally. Owners receive Culture Concierge programming, preferred rates across Proper properties, and access to the Shelborne By Proper Beach Club on Miami Beach."
+      },
+      {
+        "pill": "Design team",
+        "pillColor": "gold",
+        "title": "Arquitectonica, Meyer Davis Studio, Naturalficial",
+        "body": "Arquitectonica leads architecture, Meyer Davis Studio designs interiors, and Naturalficial leads landscape. The project pairs institutional design pedigree with a layered public-realm program across plazas, greenery, and integrated art."
+      },
+      {
+        "pill": "Amenity program",
+        "pillColor": "gold",
+        "title": "40,000 sq ft amenities on the Proper Floor",
+        "body": "The Proper Floor consolidates 40,000 square feet of lifestyle programming, including pool, wellness, fitness, sport, and social spaces. The package is designed as a full-day resident ecosystem rather than a standard tower amenity deck."
+      },
+      {
+        "pill": "Recreation",
+        "pillColor": "gray",
+        "title": "ULTRA Padel and a planned racquet club",
+        "body": "ULTRA Padel partners on a padel and racquet club planned within the Midtown Park master plan. It positions Midtown Park around one of luxury housing's fastest-growing amenity categories."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Midtown, Wynwood, and Design District within walking distance",
+        "body": "3055 North Miami Avenue sits at the seam between Midtown, Wynwood, and the Design District. The location offers walkable daily retail and short-hop access to Miami's highest-velocity cultural and luxury corridors."
+      }
+    ],
+    "thesis": "Midtown Park Residences is a value play on Miami's branded-residence category, with entry from the low $600,000s for a Proper-branded, Arquitectonica and Meyer Davis tower below the $1M+ Edgewater and Design District floor. The $2B, five-acre master plan will anchor Midtown as a walkable district between Wynwood and the Design District, capped by a padel and racquet club operated by ULTRA Padel. Phase 1 buyers capture pricing before full buildout delivers and before Proper expands its U.S. residential footprint beyond two properties.",
+    "footnote": "HOA: TBD · Rental policy: TBD · Delivery: est. 2028"
+  },
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeDesigner": "Naturalficial",
+  "lat": 25.805128,
+  "lng": -80.194311,
+  "maxBath": 5,
+  "maxBed": 5,
+  "maxPrice": null,
+  "maxSqft": null,
+  "minBath": 1,
+  "minBed": 0,
+  "minPrice": 600000,
+  "minSqft": null,
+  "name": "Midtown Park Residences By Proper",
+  "neighborhood": "Midtown",
+  "neighborhoodMap": {
+    "image": "/midtown-park/neighborhood-map.webp",
+    "pinUrl": "https://maps.app.goo.gl/w81Dsvgtqm14Ue3L9",
+    "caption": "Midtown Park sits at the convergence of Midtown, Wynwood, the Design District, and Edgewater, a 10-minute drive across the causeway to the reopened Shelborne By Proper on South Beach, where owners access a private beach club with 300+ feet of shoreline.",
+    "alt": "Illustrated neighborhood map showing Midtown Park's position in Miami relative to Wynwood, Design District, Edgewater, Downtown Miami, Brickell, and the 10-minute causeway drive to The Shelborne By Proper on South Beach"
+  },
+  "percentSold": null,
+  "priceFrom": "From low $600,000s",
+  "priceFromDisplay": "$600K+",
+  "pricePerSqft": null,
+  "privacyScore": 38,
+  "residenceContent": "<p class=\"prop-residence-intro\">Midtown Park Residences By Proper is the inaugural tower within Midtown Park, a five-acre mixed-use master plan connecting Midtown Miami to Wynwood, the Design District, and Edgewater. Arquitectonica's 28-story tower delivers 288 Proper-branded residences. Interiors by Meyer Davis Studio carry Proper Hospitality's design language from the 5,000-square-foot art-filled lobby through 40,000 square feet of amenities on the 7th-floor Proper Floor.</p>\n<div class=\"residence-highlights\">\n<div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Lobby</span><span class=\"residence-highlight-value\">5,000 SF</span></div>\n<div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Proper Floor</span><span class=\"residence-highlight-value\">40,000 SF</span></div>\n<div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Penthouses</span><span class=\"residence-highlight-value\">20-ft living rooms</span></div>\n<div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Beach club</span><span class=\"residence-highlight-value\">10 min to Shelborne</span></div>\n</div>\n<h4>The residences</h4>\n<ul>\n<li>Studios through three-bedrooms on typical floors</li>\n<li>Private Collection penthouses: four- and five-bedroom homes with double-height 20-foot corner living rooms, rooftop terraces, private gardens, and pools</li>\n</ul>\n<h4>Finishes</h4>\n<ul>\n<li>Kitchens: Italian cabinetry, imported quartz, Sub-Zero and Wolf appliances, and Hansgrohe faucets</li>\n<li>Primary baths: Meyer Davis-curated Jade ceramic walls and Hansgrohe brass fixtures</li>\n</ul>\n<h4>The Proper Floor</h4>\n<ul>\n<li>Heated 60-foot pool anchored by a Hernán Marina sculpture</li>\n<li>Adult spa pool and pickleball court</li>\n<li>3,000-square-foot fitness center with Pilates room</li>\n<li>Spa with steam room and sauna</li>\n<li>Virtual golf and screening room</li>\n<li>Communal vegetable garden designed by Naturalficial</li>\n<li>East Lounge with chef's kitchen, plus a dedicated event lounge</li>\n</ul>\n<h4>Owner privileges</h4>\n<ul>\n<li>Proper Culture Concierge program</li>\n<li>Preferred rates across the Proper Hospitality portfolio</li>\n<li>Shelborne By Proper Beach Club on South Beach, a 10-minute drive across the causeway</li>\n</ul>\n<h4>At master-plan buildout</h4>\n<p>This tower is Phase 1 (288 units). The full Midtown Park district at completion:</p>\n<div class=\"residence-highlights residence-highlights--compact\">\n<div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">All phases</span><span class=\"residence-highlight-value\">924 units</span></div>\n<div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Office</span><span class=\"residence-highlight-value\">60,000 SF</span></div>\n<div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Retail</span><span class=\"residence-highlight-value\">100,000+ SF</span></div>\n<div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Racquet club</span><span class=\"residence-highlight-value\">ULTRA Padel</span></div>\n</div>",
+  "salesTeam": "Fortune Development Sales (Exclusive)",
+  "secondaryDownloadLabel": "Get the Floor Plans",
+  "shortName": "Midtown Park by Proper",
+  "slug": "midtown-park-residences-by-proper",
+  "stage": "preconstruction",
+  "statusRemark": "Sales launched · Phase 1 of Midtown Park · Delivery 2028",
+  "stories": 28,
+  "tagline": "The first tower in a $2B, 1.17M-square-foot master plan stitching Midtown to Wynwood and the Design District. Designed by Arquitectonica, interiors by Meyer Davis, branded by Proper.",
+  "units": 288,
+  "unitsLeft": null,
+  "verified": {
+    "floorPlans": {
+      "date": "2026-07-10",
+      "source": "Developer price list (Excel, modified July 10, 2026). Sample unit per residence line with published asking price, interior/exterior SF, rooms, and exposure. Typical-floor plans 01-12 plus PH 05/06 from the unbranded broker PDFs dated January-June 2026."
+    }
+  },
+  "videoTourId": null,
+  "wellnessScore": 74
+}

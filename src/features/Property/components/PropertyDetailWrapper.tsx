@@ -63,6 +63,5 @@ export default function PropertyDetailWrapper({
     }).catch(() => console.error("Property visit could not be recorded."));
   }, [slug, expiresAt, router]);
 
-  if (expiredSession === expiresAt) return <PropertyInquiryGate name={name} />;
   return <PropertyDetailPageClient slug={slug} initialProject={initialProject} />;
 }

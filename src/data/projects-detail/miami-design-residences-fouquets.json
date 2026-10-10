@@ -1,0 +1,408 @@
+{
+  "address": "39 NE 39th Street, Miami, FL 33137",
+  "alaCarteServices": [
+    "Residence maintenance",
+    "Pantry stocking",
+    "Housekeeping",
+    "Laundry and pressing",
+    "Dry cleaning and tailoring",
+    "Dog walking",
+    "Babysitting",
+    "Personal training",
+    "Car detailing and cleaning",
+    "Chauffeur services",
+    "Event planning and catering"
+  ],
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Rooftop Pool",
+      "sub": "70 ft · Intracoastal views"
+    },
+    {
+      "icon": "🍽",
+      "label": "5 Fouquet's Concepts",
+      "sub": "Dining, bar & patisserie"
+    },
+    {
+      "icon": "🛎",
+      "label": "Fouquet's Services",
+      "sub": "Hotel-caliber for owners"
+    },
+    {
+      "icon": "🧖",
+      "label": "Full Wellness Suite",
+      "sub": "Spa, sauna, cold plunge"
+    },
+    {
+      "icon": "🏋",
+      "label": "Fitness & Training",
+      "sub": "Studio + yoga/Pilates"
+    },
+    {
+      "icon": "🎬",
+      "label": "Golf Sim & Cinema",
+      "sub": "Plus lounge & playroom"
+    }
+  ],
+  "amenitiesDescription": "<p>Over 40,000 square feet of interior and exterior amenities span the ground level, third floor, and rooftop — designed by RDAI with the same rigor brought to every residence. The 70-foot rooftop pool overlooks the Intracoastal Waterway and South Beach, surrounded by approximately 15,300 square feet of resident-exclusive outdoor space including shaded seating areas, four cabanas, and an outdoor shower deck. A full wellness suite encompasses a fitness center, private training studio, yoga and Pilates room, sauna, steam room, cold plunge, jacuzzi, and dedicated men's and women's spas with locker rooms.</p><p>Social spaces include a golf simulator and screening room, lounge and party room, meeting room, children's playroom, entertaining suite, executive lounge, serenity lounge — each with adjacent terraces — plus a catering kitchen, garden and courtyard, and salon suite for à la carte services. Fouquet's brings five distinct dining and bar concepts in-building, including a patisserie, alongside full residential management: owners receive the same bespoke concierge, housekeeping, pantry stocking, chauffeur, and lifestyle programming extended to hotel guests.</p>",
+  "architect": "David Chipperfield Architects",
+  "architectQuote": "By marrying our deep heritage with David Chipperfield's architectural vision, we look forward to delivering Fouquet's signature art de vivre to both residents and guests.",
+  "architectQuoteBy": "Gregory Rabuel, CEO of Barrière",
+  "badge": "SALES NOW OPEN",
+  "completion": "2030",
+  "densityScore": 65,
+  "depositSchedule": [
+    {
+      "label": "Deposit 1 — 10%",
+      "trigger": "At contract execution"
+    },
+    {
+      "label": "Deposit 2 — 10%",
+      "trigger": "90 days after contract execution"
+    },
+    {
+      "label": "Deposit 3 — 10%",
+      "trigger": "Within 5 days of groundbreaking notice"
+    },
+    {
+      "label": "Deposit 4 — 10%",
+      "trigger": "Within 5 days of top-off notice"
+    },
+    {
+      "label": "Balance — 60%",
+      "trigger": "At closing"
+    }
+  ],
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "Contract Signing"
+    },
+    {
+      "percentage": 10,
+      "milestone": "90 Days After Signing"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Structure Tops Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "Closing"
+    }
+  ],
+  "description": "The Design District's first residential development. 143 residences in a 25-story tower by 2023 Pritzker laureate Sir David Chipperfield, connected to an 85-key Fouquet's hotel. From $1.8M.",
+  "developer": "Raycliff Capital, Fort Partners, Miami Design District Associates & Constellation Hotels Holding Ltd.",
+  "editorialLine": "Architecture as permanence. Hospitality as art.",
+  "excerpt": "143 Chipperfield-designed residences paired with an 85-key Fouquet's hotel in the Design District. Interiors by RDAI. Five dining concepts. Full hotel services for owners. From $1,804,000.",
+  "floorPlans": [
+    {
+      "type": "Residence 04",
+      "floors": "Floors 4–18",
+      "addlRooms": "218 SF Exterior",
+      "beds": 1,
+      "baths": 1.5,
+      "sqft": "902 SF Interior",
+      "status": "Available",
+      "startingPrice": 1804000
+    },
+    {
+      "type": "Residence 05",
+      "floors": "Floors 4–18",
+      "addlRooms": "319 SF Exterior",
+      "beds": "1 + Den",
+      "baths": 2,
+      "sqft": "1,036 SF Interior",
+      "status": "Available",
+      "startingPrice": 2020200
+    },
+    {
+      "type": "Residence 08",
+      "floors": "Floors 4–18",
+      "addlRooms": "518 SF Exterior",
+      "beds": "1 + Den",
+      "baths": 2,
+      "sqft": "1,196 SF Interior",
+      "status": "Available",
+      "startingPrice": 2702960
+    },
+    {
+      "type": "Residence 02",
+      "floors": "Floors 4–18",
+      "addlRooms": "912 SF Exterior",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,766 SF Interior",
+      "status": "Available",
+      "startingPrice": 4068864
+    },
+    {
+      "type": "Residence 03",
+      "floors": "Floors 4–18",
+      "addlRooms": "356 SF Exterior",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,341 SF Interior",
+      "status": "Available",
+      "startingPrice": 2695000
+    },
+    {
+      "type": "Residence 07",
+      "floors": "Floors 4–18",
+      "addlRooms": "700 SF Exterior",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,550 SF Interior",
+      "status": "Available",
+      "startingPrice": 3286000
+    },
+    {
+      "type": "Residence 06",
+      "floors": "Floors 4–18",
+      "addlRooms": "983 SF Exterior",
+      "beds": "2 + Den",
+      "baths": 2.5,
+      "sqft": "1,891 SF Interior",
+      "status": "Available",
+      "startingPrice": 4084560
+    },
+    {
+      "type": "Residence 05",
+      "floors": "Floors 19–25",
+      "addlRooms": "745 SF Exterior",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "1,922 SF Interior",
+      "status": "Available",
+      "startingPrice": 6150400
+    },
+    {
+      "type": "Residence 02",
+      "floors": "Floors 19–25",
+      "addlRooms": "596 SF Exterior",
+      "beds": "3 + Den",
+      "baths": 3.5,
+      "sqft": "2,034 SF Interior",
+      "status": "Available",
+      "startingPrice": 6000300
+    },
+    {
+      "type": "Residence 04",
+      "floors": "Floors 19–25",
+      "addlRooms": "1,455 SF Exterior",
+      "beds": "3 + Den",
+      "baths": 3.5,
+      "sqft": "2,598 SF Interior",
+      "status": "Available",
+      "startingPrice": 8053800
+    },
+    {
+      "type": "Residence 01",
+      "floors": "Floors 19–25",
+      "addlRooms": "1,753 SF Exterior",
+      "beds": "4 + Den",
+      "baths": 3.5,
+      "sqft": "2,975 SF Interior",
+      "status": "Available",
+      "startingPrice": 10186400
+    }
+  ],
+  "hoa": "Est. $1.50–$2.00/sf/mo (TBD)",
+  "hotelBrand": "Fouquet's Miami",
+  "hotelDescription": "Fouquet's has defined Parisian luxury since 1899, when it first opened on the Champs-Élysées. Part of the Barrière group, the brand operates acclaimed hotels from Tribeca to Gustavia to Courchevel. Miami marks its second U.S. property — fully integrated within the residential tower, with owners receiving the same bespoke attention extended to hotel guests: five distinct dining concepts, curated programming, and day-to-day lifestyle management.",
+  "hotelParent": "Barrière",
+  "hotelQuote": "The creative sophistication of the Design District perfectly complements our ultra-luxury destinations from Tribeca and Gustavia to Courchevel and the Champs-Élysées. By marrying our deep heritage with David Chipperfield's architectural vision, we look forward to delivering Fouquet's signature art de vivre to both residents and guests.",
+  "hotelQuoteAttribution": "Gregory Rabuel, CEO of Barrière",
+  "hotelRooms": 85,
+  "id": 34,
+  "img": "https://frasermiami.s3.amazonaws.com/fouquets-miami/building-daytime-hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/building-daytime-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/sprial-staircase.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/building-dusk-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/entrance.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/living-room-3.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/living-room-2.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/kitchen-2.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/kitchen-3.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/kitchen-4.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/penthouse-living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/penthouse-living-room-2.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/hummingbird.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/rooftop-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/rooftop-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/spa.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/gym.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/kids-room.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/entertainment-suite.webp",
+    "https://frasermiami.s3.amazonaws.com/fouquets-miami/executive-lounge.webp"
+  ],
+  "interiorDesigner": "RDAI",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Design District luxury, with five-star hotel integration and a Pritzker-laureate architecture premium"
+      },
+      {
+        "value": "$2,000+",
+        "label": "Avg asking / sq ft",
+        "note": "Entry Residence 04 from $1,804,000 at 902 SF interior (~$2,000/SF); upper-floor inventory to $10.2M"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Fouquet's (Barrière) heritage tier; Knight Frank: hospitality-branded residences outperform non-branded peers on average"
+      },
+      {
+        "value": "143",
+        "label": "Total residences — boutique scale",
+        "note": "Intimate unit count for a 25-story tower; Chipperfield's restraint extends to the building's density"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "David Chipperfield, Pritzker Prize laureate (2023)",
+        "body": "Chipperfield won architecture's Pritzker Prize in 2023. Miami Design Residences is his first residential tower in the Americas, a debut that will draw global press and collector-buyer demand."
+      },
+      {
+        "pill": "Hotel brand",
+        "pillColor": "gold",
+        "title": "Fouquet's — Barrière's Parisian ultra-luxury lineage",
+        "body": "Fouquet's has defined Parisian luxury since 1899 on the Champs-Élysées. Parent group Barrière operates Fouquet's globally (Tribeca, Gustavia, Courchevel, and more). Miami is the second U.S. Fouquet's, fully integrated with the tower — hotel-caliber services and dining for owners from day one of delivery."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Design District — art, retail, and cultural gravity",
+        "body": "39 NE 39th Street sits in Miami's premier design and luxury retail corridor, minutes from the Institute of Contemporary Art and Pérez Art Museum. International gallery and fashion traffic supports both end-user and pied-à-terre demand."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gray",
+        "title": "Art Basel alignment — design-world credibility",
+        "body": "The Fouquet's and Chipperfield brands both resonate with the global design and art collector community. Miami's Art Basel connection — the world's largest art fair — creates an annual buyer event that reinforces the positioning and drives international demand."
+      }
+    ],
+    "thesis": "Miami Design Residences makes a bet on architecture and taste as the primary investment thesis — that the right buyer will pay a lasting premium for a Pritzker laureate's first Americas residential commission, paired with Fouquet's and Barrière's hotel pedigree. In the Design District — where branded residential supply is still nascent — Chipperfield's restraint and European sensibility create a distinct resale category for buyers to whom provenance matters more than amenity count.",
+    "footnote": "HOA: Est. $1.50–$2.00/sq ft (TBD) · Rental policy: Via hotel program · Delivery: 2030"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Design District luxury, with five-star hotel integration and a Pritzker-laureate architecture premium"
+      },
+      {
+        "value": "$2,000+",
+        "label": "Avg asking / sq ft",
+        "note": "Entry Residence 04 from $1,804,000 at 902 SF interior (~$2,000/SF); upper-floor inventory to $10.2M"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Fouquet's (Barrière) heritage tier; Knight Frank: hospitality-branded residences outperform non-branded peers on average"
+      },
+      {
+        "value": "143",
+        "label": "Total residences — boutique scale",
+        "note": "Intimate unit count for a 25-story tower; Chipperfield's restraint extends to the building's density"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "David Chipperfield, Pritzker Prize laureate (2023)",
+        "body": "Chipperfield won architecture's Pritzker Prize in 2023. Miami Design Residences is his first residential tower in the Americas, a debut that will draw global press and collector-buyer demand."
+      },
+      {
+        "pill": "Hotel brand",
+        "pillColor": "gold",
+        "title": "Fouquet's — Barrière's Parisian ultra-luxury lineage",
+        "body": "Fouquet's has defined Parisian luxury since 1899 on the Champs-Élysées. Parent group Barrière operates Fouquet's globally (Tribeca, Gustavia, Courchevel, and more). Miami is the second U.S. Fouquet's, fully integrated with the tower — hotel-caliber services and dining for owners from day one of delivery."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Design District — art, retail, and cultural gravity",
+        "body": "39 NE 39th Street sits in Miami's premier design and luxury retail corridor, minutes from the Institute of Contemporary Art and Pérez Art Museum. International gallery and fashion traffic supports both end-user and pied-à-terre demand."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gray",
+        "title": "Art Basel alignment — design-world credibility",
+        "body": "The Fouquet's and Chipperfield brands both resonate with the global design and art collector community. Miami's Art Basel connection — the world's largest art fair — creates an annual buyer event that reinforces the positioning and drives international demand."
+      }
+    ],
+    "thesis": "Miami Design Residences makes a bet on architecture and taste as the primary investment thesis — that the right buyer will pay a lasting premium for a Pritzker laureate's first Americas residential commission, paired with Fouquet's and Barrière's hotel pedigree. In the Design District — where branded residential supply is still nascent — Chipperfield's restraint and European sensibility create a distinct resale category for buyers to whom provenance matters more than amenity count.",
+    "footnote": "HOA: Est. $1.50–$2.00/sq ft (TBD) · Rental policy: Via hotel program · Delivery: 2030"
+  },
+  "investmentThesis": "<p>Developed by a partnership of Raycliff Capital, Fort Partners, Miami Design District Associates (Dacra / L Catterton / Brookfield), and Constellation Hotels Holding — four institutions with combined track records spanning global luxury hospitality, design district curation, and high-end residential development. The Design District's position as Miami's premier luxury retail and cultural destination (home to Louis Vuitton, Dior, Chanel, ICA Miami) underpins long-term value. Fouquet's — the legendary Champs-Elysees brasserie — brings a Parisian hospitality brand to its first U.S. address. The 40% pre-closing deposit structure (10% signing, 10% at 90 days, 10% groundbreaking, 10% top-off, 60% closing) is competitive for a project of this caliber. Sales launched March 2026; estimated completion 2030.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeArchitect": "Perry Guillot Inc.",
+  "lat": 25.8127936,
+  "lng": -80.1946713,
+  "maxBath": 3.5,
+  "maxBed": 4,
+  "maxPrice": 10186400,
+  "maxSqft": 4728,
+  "minBath": 1,
+  "minBed": 1,
+  "minPrice": 1804000,
+  "minSqft": 902,
+  "name": "Miami Design Residences by Fouquet's",
+  "neighborhood": "Design District",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/miami-design-residences-fouquets.jpg",
+  "parking": "Valet and self-parking below grade",
+  "pressDate": "March 10, 2026",
+  "pressHeadline": "Fouquet's Is Opening a Luxe New Hotel in the Buzzy Design District",
+  "pressSource": "Robb Report",
+  "pressUrl": "https://robbreport.com/travel/hotels/fouquets-miami-new-hotel-1237673281/",
+  "priceFrom": "$1.8M+",
+  "pricePerSqft": 2000,
+  "privacyScore": 60,
+  "projectedAppreciation": 30,
+  "rentalPolicy": "Minimum 30-day rentals",
+  "residenceContent": "<p class=\"prop-residence-intro\">The Design District's first residential development and the only Florida project by 2023 Pritzker Prize laureate Sir David Chipperfield. The tower rises on nearly two acres at 39 NE 39th Street, its colonnade arrival sequence, glass and mineral cladding, and champagne-colored mullions calibrated to Miami's shifting light. Interiors by Parisian studio RDAI bring warmth and precision in equal measure — custom oak and lacquered wood cabinetry, Sub-Zero and Wolf appliances, and floor-to-ceiling hurricane-rated windows throughout. An 85-key Fouquet's hotel connects to the residential tower, providing residents with Paris-standard hospitality services, priority restaurant access, and a seamless blend of private living and hotel amenity. Landscape by Perry Guillot Inc.</p>",
+  "salesAgent": "Corcoran Sunshine Marketing Group",
+  "salesTeam": "Corcoran Sunshine Marketing Group",
+  "seo": {
+    "title": "Miami Design Residences by Fouquet's | Design District Pre-Construction Condos",
+    "description": "Miami Design Residences Designed by Chipperfield brings Fouquet's ultra-luxury hotel living to the Design District. 143 residences across 25 stories with five-star services, five dining concepts, and sweeping water views. Pricing, floor plans & availability from a Miami luxury real estate advisor.",
+    "keywords": [
+      "Miami Design Residences",
+      "Fouquet's Miami",
+      "David Chipperfield Miami",
+      "Design District condos for sale",
+      "Design District pre-construction 2030",
+      "Barrière hotel Miami",
+      "luxury condos Design District Miami",
+      "RDAI interiors Miami",
+      "Pritzker Prize architect Miami condo"
+    ]
+  },
+  "slug": "miami-design-residences-fouquets",
+  "stage": "preconstruction",
+  "statusRemark": "Sales launched March 2026 · Estimated completion 2030",
+  "stories": 25,
+  "tagline": "Chipperfield architecture. Fouquet's hospitality. The Design District's first luxury address.",
+  "units": 143,
+  "wellnessScore": 85
+}

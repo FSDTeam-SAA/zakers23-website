@@ -1,0 +1,314 @@
+{
+  "address": "725 NE 24th St, Miami, FL 33137",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Bayfront Pool",
+      "sub": "Resort-scale"
+    },
+    {
+      "icon": "⛵",
+      "label": "Marina Access",
+      "sub": "Private boat slips"
+    },
+    {
+      "icon": "🍽",
+      "label": "Bayfront Restaurant",
+      "sub": "Full service"
+    },
+    {
+      "icon": "🏋",
+      "label": "Wellness Center",
+      "sub": "Spa & gym"
+    },
+    {
+      "icon": "🎾",
+      "label": "Sport Courts",
+      "sub": "Tennis & pickleball"
+    },
+    {
+      "icon": "🛎",
+      "label": "Concierge",
+      "sub": "24/7"
+    }
+  ],
+  "amenitiesDescription": "<p>Aria Reserve's more than 2 acres of amenities span three distinct levels: Bay Level, SkyLobby Level, and Garden Level.</p><p>The Bay Level puts residents directly at the water with a resort pool and waterfront promenade overlooking Biscayne Bay. The SkyLobby Level offers co-working suites, private meeting rooms, and social lounges for the live-work-play lifestyle. The Garden Level — an entire floor devoted to sport, wellness, and family — includes elite fitness facilities, sports courts, children's amenities, and panoramic water views.</p><p>24-hour concierge, security, and valet complete the offering.</p>",
+  "architect": "Arquitectonica",
+  "architectQuote": "Scale and intimacy rarely coexist. Aria Reserve resolves that tension by framing the bay so completely that every residence feels like a private waterfront estate.",
+  "architectQuoteBy": "Arquitectonica",
+  "badge": "South Tower Move-In Ready",
+  "completion": "South Tower Delivered · North Tower Late 2026",
+  "constructionImgs": [
+    "/ariareserve/updates/Aria-Reserve-1-scaled.webp",
+    "/ariareserve/updates/Aria-Reserve-2-scaled.webp",
+    "/ariareserve/updates/Aria-Reserve-5-scaled.webp",
+    "/ariareserve/updates/Aria-Reserve-6-scaled.webp",
+    "/ariareserve/updates/Aria-Reserve-7-scaled.webp",
+    "/ariareserve/updates/Aria-Reserve-8-scaled.webp"
+  ],
+  "constructionNote": "South Tower: move-in ready; closings underway. North Tower: finishing for move-in readiness toward the end of 2026; closings expected in the next 2–3 months.",
+  "constructionPct": 97,
+  "constructionUpdateDate": "September 2026",
+  "densityScore": 100,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At 20th Floor Pour"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 50,
+      "milestone": "At Closing (2025/2026)"
+    }
+  ],
+  "description": "The tallest waterfront twin towers in the United States. Two 62-story glass towers on over 5 acres of Biscayne Bay in Edgewater. South Tower is move-in ready with closings underway. North Tower move-in readiness is expected toward the end of 2026, with closings projected in the next 2–3 months.",
+  "developer": "Melo Group",
+  "editorialLine": "The bay, your backyard.",
+  "featureVideo": {
+    "src": "/ariareserve/aria-reserve-short.mp4",
+    "poster": "/ariareserve/aria-reserve-short-poster.webp",
+    "label": "Aria Reserve",
+    "tagline": "The tallest waterfront twin towers in the United States — 547 feet of Biscayne Bay frontage in Edgewater.",
+    "uploadDate": "2026-09-03"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "1-Bedroom Waterfront",
+      "addlRooms": "Terrace",
+      "beds": 1,
+      "baths": 2,
+      "sqft": "1,028–1,276 sq ft",
+      "status": "From $960,000"
+    },
+    {
+      "type": "2-Bedroom Bayview",
+      "addlRooms": "Terrace",
+      "beds": 2,
+      "baths": 3,
+      "sqft": "1,542–1,738 sq ft",
+      "status": "From $1,450,000"
+    },
+    {
+      "type": "3-Bedroom Corner",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": "3–3.5",
+      "sqft": "1,618–1,978 sq ft",
+      "status": "From $1,500,000"
+    },
+    {
+      "type": "4–5 Bedroom",
+      "addlRooms": "Terrace",
+      "beds": "4–5",
+      "baths": "5–5.5",
+      "sqft": "2,520–3,189 sq ft",
+      "status": "From $2,400,000"
+    },
+    {
+      "type": "Penthouse",
+      "addlRooms": "PH floors",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "2,895–2,930 sq ft",
+      "status": "From $3,390,000"
+    }
+  ],
+  "height": "62 Stories (649 ft)",
+  "hoa": "$0.96 / sq ft",
+  "id": 3,
+  "img": "/ariareserve/aria-reserve-exterior-day.webp",
+  "imgs": [
+    "/ariareserve/aria-reserve-exterior-day.webp",
+    "/ariareserve/aria-reserve-hero-twilight.webp",
+    "/ariareserve/aria-reserve-garden-aerial.webp",
+    "/ariareserve/aria-reserve-balcony-view.webp",
+    "/ariareserve/aria-reserve-bay-pool.webp",
+    "/ariareserve/aria-reserve-skylounge.webp",
+    "/ariareserve/aria-reserve-garden-lounge.webp",
+    "/ariareserve/aria-reserve-garden.webp",
+    "/ariareserve/aria-reserve-gym.webp",
+    "/ariareserve/aria-reserve-playground.webp",
+    "/ariareserve/aria-reserve-living-room.webp",
+    "/ariareserve/aria-reserve-living-room2.webp",
+    "/ariareserve/aria-reserve-bedroom.webp",
+    "/ariareserve/aria-reserve-bedroom2.webp",
+    "/ariareserve/aria-reserve-master-bath.webp",
+    "/ariareserve/aria-reserve-kidsroom.webp"
+  ],
+  "interiorDesigner": "MORADA Haute Furniture Boutique",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+25%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on the Edgewater waterfront delivery cycle"
+      },
+      {
+        "value": "$1,214",
+        "label": "Avg asking / sq ft",
+        "note": "Competitive entry point vs. $1,100/sqft Edgewater resale avg"
+      },
+      {
+        "value": "65 days",
+        "label": "Median days to sell — Edgewater luxury",
+        "note": "Shortest sell time in Greater Downtown Miami luxury segment, Q4 2025"
+      },
+      {
+        "value": "782",
+        "label": "Total residences across twin towers",
+        "note": "Scale enables resort-grade amenities — marina, multiple pools, waterfront programming — that boutique projects cannot match"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Scale",
+        "pillColor": "gold",
+        "title": "Tallest waterfront twin tower in the U.S.",
+        "body": "649 feet across 62 stories — the tallest waterfront twin-tower project in the U.S., a combined footprint whose scale supports amenities boutique buildings can't."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Edgewater: deep tenant demand",
+        "body": "Strong tenant demand from professionals who want Biscayne Bay waterfront without Miami Beach prices underpins the corridor's fast absorption."
+      },
+      {
+        "pill": "Entry point",
+        "pillColor": "green",
+        "title": "Best $ / sq ft for direct bayfront in Miami",
+        "body": "From $850K. Comparable bayfront buildings in Edgewater (Missoni Baia $500K–$9M+; Elysee $2.99M–$6.25M) validate that early-entry Aria buyers are acquiring well below replacement cost for this corridor."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Melo Group — delivered every project on time",
+        "body": "Melo Group has developed over 30 buildings in Miami over 25 years with no failed deliveries. In a market with developer risk, execution history is a meaningful differentiator."
+      }
+    ],
+    "thesis": "Aria Reserve is the rare case where scale is the differentiator rather than scarcity. The full-service marina, 75,000+ sqft of amenities, and the bayfront footprint create a lifestyle category that boutique projects can't replicate. For buyers seeking a primary Edgewater home or a rental income vehicle, the entry point — below $1,300/sqft for direct Biscayne Bay — represents compelling value in a neighborhood where comparable resale now trades above that level.",
+    "footnote": "HOA: ~$0.96/sq ft (MLS median, Aug 2026) · Rental policy: Min 30-day, 4x per year · South Tower move-in ready (closings underway); North Tower move-in ready late 2026 (closings in 2–3 months)"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+25%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on the Edgewater waterfront delivery cycle"
+      },
+      {
+        "value": "$1,214",
+        "label": "Avg asking / sq ft",
+        "note": "Competitive entry point vs. $1,100/sqft Edgewater resale avg"
+      },
+      {
+        "value": "65 days",
+        "label": "Median days to sell — Edgewater luxury",
+        "note": "Shortest sell time in Greater Downtown Miami luxury segment, Q4 2025"
+      },
+      {
+        "value": "782",
+        "label": "Total residences across twin towers",
+        "note": "Scale enables resort-grade amenities — marina, multiple pools, waterfront programming — that boutique projects cannot match"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Scale",
+        "pillColor": "gold",
+        "title": "Tallest waterfront twin tower in the U.S.",
+        "body": "649 feet across 62 stories — the tallest waterfront twin-tower project in the U.S., a combined footprint whose scale supports amenities boutique buildings can't."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Edgewater: deep tenant demand",
+        "body": "Strong tenant demand from professionals who want Biscayne Bay waterfront without Miami Beach prices underpins the corridor's fast absorption."
+      },
+      {
+        "pill": "Entry point",
+        "pillColor": "green",
+        "title": "Best $ / sq ft for direct bayfront in Miami",
+        "body": "From $850K. Comparable bayfront buildings in Edgewater (Missoni Baia $500K–$9M+; Elysee $2.99M–$6.25M) validate that early-entry Aria buyers are acquiring well below replacement cost for this corridor."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Melo Group — delivered every project on time",
+        "body": "Melo Group has developed over 30 buildings in Miami over 25 years with no failed deliveries. In a market with developer risk, execution history is a meaningful differentiator."
+      }
+    ],
+    "thesis": "Aria Reserve is the rare case where scale is the differentiator rather than scarcity. The full-service marina, 75,000+ sqft of amenities, and the bayfront footprint create a lifestyle category that boutique projects can't replicate. For buyers seeking a primary Edgewater home or a rental income vehicle, the entry point — below $1,300/sqft for direct Biscayne Bay — represents compelling value in a neighborhood where comparable resale now trades above that level.",
+    "footnote": "HOA: ~$0.96/sq ft (MLS median, Aug 2026) · Rental policy: Min 30-day, 4x per year · South Tower move-in ready (closings underway); North Tower move-in ready late 2026 (closings in 2–3 months)"
+  },
+  "investmentThesis": "<p>Over 5 acres of Biscayne Bay waterfront with 547 linear feet of water frontage, a land position that is effectively irreplaceable in the Edgewater corridor. More than 2 acres of exclusive amenities span three levels. Melo Group serves as developer and general contractor. South Tower is move-in ready with closings underway. North Tower move-in readiness is expected toward the end of 2026, with closings projected in the next 2–3 months. 95% sold across both towers, with remaining inventory concentrated in premium upper-floor and penthouse positions. Located minutes from Wynwood, the Design District, Brickell, and Miami Beach.</p>",
+  "isActive": true,
+  "landscapeArchitect": "ArquitectonicaGEO",
+  "lat": 25.7997,
+  "lng": -80.1852,
+  "maxBath": 7.5,
+  "maxBed": 6,
+  "maxPrice": 10999999,
+  "maxSqft": 6358,
+  "minBath": 1,
+  "minBed": 1,
+  "minPrice": 850000,
+  "minSqft": 700,
+  "name": "Aria Reserve",
+  "neighborhood": "Edgewater",
+  "percentSold": 95,
+  "priceFrom": "$850K+",
+  "pricePerSqft": 1001,
+  "privacyScore": 30,
+  "projectedAppreciation": 25,
+  "rentalPolicy": "Minimum 30-day lease, 4x per year",
+  "residenceContent": "<p class=\"prop-residence-intro\">Two sinuous glass towers draw their form from the meeting of water and land, their mirrored curved facades designed by Arquitectonica principal Bernardo Fort-Brescia. Every residence features floor-to-ceiling impact glass, private elevator access, and expansive bayfront terraces. One- to four-bedroom layouts include Panoramic Residences (floors 3–56), Skyview Villas (47–56), Penthouse Residences (57–59), and Tri-Level Penthouse Mansions on the top three floors — with Italian porcelain flooring, Snaidero cabinetry, Bosch appliance packages, and smart home readiness throughout. Interiors by MORADA Haute Furniture Boutique; landscape architecture by ArquitectonicaGEO.</p>",
+  "salesTeam": "ONE Sotheby's International Realty",
+  "slug": "aria-reserve",
+  "stage": "move_in_ready",
+  "statusRemark": "South Tower closings underway · North Tower move-in ready late 2026",
+  "units": 782,
+  "unitsLeft": 37,
+  "verified": {
+    "completion": {
+      "date": "2026-09-11",
+      "source": "Brett Fraser — South Tower move-in ready with closings underway; North Tower move-in ready late 2026, closings in 2–3 months"
+    },
+    "stage": {
+      "date": "2026-09-11",
+      "source": "Brett Fraser — South Tower move-in ready with closings underway; North Tower move-in ready late 2026, closings in 2–3 months"
+    },
+    "statusRemark": {
+      "date": "2026-09-11",
+      "source": "Brett Fraser — South Tower move-in ready with closings underway; North Tower move-in ready late 2026, closings in 2–3 months"
+    },
+    "hoa": {
+      "date": "2026-08-23",
+      "source": "MLS active listings, Aug 2026 — monthly association fee ÷ interior sq ft (SqFt LA), median. $0.96/sf across 14 active listings; a penthouse at $2.47/sf excluded as an outlier."
+    },
+    "pricePerSqft": {
+      "date": "2026-09-07",
+      "source": "MLS past sales at Aria Reserve — avg $1,001/sf across 34 closed sales with reported SF (Sep 2025–Sep 2026). Median $989/sf."
+    },
+    "unitsLeft": {
+      "date": "2026-09-07",
+      "source": "MLS active listings at 700 NE 24th St (Aria Reserve) — 37 Active asks; 1 Pending excluded"
+    },
+    "maxPrice": {
+      "date": "2026-09-07",
+      "source": "MLS active ask #PHM 6001 at $10,999,999 (remaining inventory ceiling; recent PH closings $3.39M–$3.98M)"
+    }
+  },
+  "wellnessScore": 72
+}

@@ -1,0 +1,204 @@
+{
+  "address": "244 SW 9th St",
+  "amenities": [
+    {
+      "icon": "🥂",
+      "label": "B Social Club",
+      "sub": "45,000 SF · two levels · indoor and outdoor programming"
+    },
+    {
+      "icon": "🏊",
+      "label": "Rooftop Pools",
+      "sub": "Elevated pool deck"
+    },
+    {
+      "icon": "🏋",
+      "label": "Private Fitness Center",
+      "sub": "Residents-only"
+    },
+    {
+      "icon": "🛎",
+      "label": "Concierge",
+      "sub": "Full concierge services"
+    },
+    {
+      "icon": "🌆",
+      "label": "Social Spaces",
+      "sub": "Indoor and outdoor resident programming"
+    },
+    {
+      "icon": "🌊",
+      "label": "City & Ocean Views",
+      "sub": "Brickell financial district address"
+    }
+  ],
+  "amenitiesDescription": "<p>Residents will have access to a 45,000 square foot, two-level B Social Club with indoor and outdoor programming, rooftop pools, a private fitness center, full concierge services, and a range of indoor and outdoor social spaces. Homes are positioned for city and ocean views.</p>",
+  "architect": "Arquitectonica",
+  "badge": "BREITLING BRANDED RESIDENCES · NEWLY ANNOUNCED",
+  "brandPartner": "Breitling",
+  "comingSoon": true,
+  "completion": "2031",
+  "ctaMicrocopy": "Pricing to be announced",
+  "densityScore": 80,
+  "depositStructure": [],
+  "description": "B Residences is the flagship of Breitling's new branded residence collection and the watchmaker's first move into for-sale real estate. Rising approximately 70 stories in the heart of Brickell, the tower brings more than 300 condominiums to one of the district's last large prime parcels, near Brickell City Centre. Designed by Arquitectonica, the building pairs floor-to-ceiling glass and bronze-toned framing with a curved podium of landscaped amenity terraces. The collection culminates in penthouses with double-height living areas and private pools. At its center is a 45,000 square foot, two-level B Social Club, alongside rooftop pools, a private fitness center, concierge service, and indoor and outdoor social spaces. Partners Group, which owns Breitling, is investing approximately $220 million in the project alongside Empira Group, whose Miami team leads development. Construction is expected to begin in late 2028 with completion targeted for 2031.",
+  "developer": "Partners Group, in partnership with Empira Group",
+  "editorialLine": "Breitling's flagship branded residences, rising in Brickell.",
+  "floorPlans": [],
+  "galleryMosaicHeight": "clamp(520px, 65vh, 720px)",
+  "height": "~70 Stories",
+  "heroImgPosition": "center",
+  "heroObjectFit": "contain",
+  "id": 56,
+  "img": "/breitling-residences/dusk-building-hero.webp",
+  "imgs": [
+    "/breitling-residences/dusk-building-hero.webp",
+    "/breitling-residences/street-level-building.webp",
+    "/breitling-residences/building-hero.webp"
+  ],
+  "inquiryButtonLabel": "Request Details",
+  "interiorDesigner": "TBA",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$220M",
+        "label": "Projected investment",
+        "note": "Per Partners Group's June 2026 announcement"
+      },
+      {
+        "value": "~70",
+        "label": "Stories",
+        "note": "Approximately 70 stories in the Brickell financial district"
+      },
+      {
+        "value": "300+",
+        "label": "Residences",
+        "note": "For-sale condominiums in Breitling's debut residential collection"
+      },
+      {
+        "value": "2031",
+        "label": "Delivery target",
+        "note": "Construction expected to begin late 2028"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Ownership",
+        "pillColor": "gold",
+        "title": "Brand, capital, and developer under one owner",
+        "body": "Partners Group owns Breitling and acquired Empira, aligning the watch brand, balance sheet, and development platform in one group. That structure lowers the licensing and execution risk common in third-party branded residences."
+      },
+      {
+        "pill": "Brand debut",
+        "pillColor": "gold",
+        "title": "Global debut of Breitling residential brand",
+        "body": "B Residences is the first for-sale real estate project in Breitling history and the flagship of its new branded residence collection."
+      },
+      {
+        "pill": "Site",
+        "pillColor": "gold",
+        "title": "One of Brickell's last large prime sites",
+        "body": "The development sits on more than one acre near Brickell City Centre, one of the few remaining large parcels in central Brickell."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Walkable financial-district address",
+        "body": "Residents sit in the heart of Brickell's financial district, steps from the corridor's dining, retail, and transit connections."
+      },
+      {
+        "pill": "Buyer pool",
+        "pillColor": "gray",
+        "title": "Offering open to US and international buyers",
+        "body": "Partners Group has stated the project will be marketed to both domestic and international purchasers at launch."
+      }
+    ],
+    "thesis": "B Residences aligns brand, capital, and developer under a single owner. Partners Group owns Breitling and acquired Empira, so the watch brand, the balance sheet, and the development platform sit in one group, which reduces the licensing and execution risk that weighs on many branded projects. The site is one of Brickell's last large prime parcels, and the project is the global debut of the Breitling residential brand.",
+    "footnote": "Figures per Partners Group's June 2026 announcement. Project details, pricing, and timeline are preliminary and subject to change."
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$220M",
+        "label": "Projected investment",
+        "note": "Per Partners Group's June 2026 announcement"
+      },
+      {
+        "value": "~70",
+        "label": "Stories",
+        "note": "Approximately 70 stories in the Brickell financial district"
+      },
+      {
+        "value": "300+",
+        "label": "Residences",
+        "note": "For-sale condominiums in Breitling's debut residential collection"
+      },
+      {
+        "value": "2031",
+        "label": "Delivery target",
+        "note": "Construction expected to begin late 2028"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Ownership",
+        "pillColor": "gold",
+        "title": "Brand, capital, and developer under one owner",
+        "body": "Partners Group owns Breitling and acquired Empira, aligning the watch brand, balance sheet, and development platform in one group. That structure lowers the licensing and execution risk common in third-party branded residences."
+      },
+      {
+        "pill": "Brand debut",
+        "pillColor": "gold",
+        "title": "Global debut of Breitling residential brand",
+        "body": "B Residences is the first for-sale real estate project in Breitling history and the flagship of its new branded residence collection."
+      },
+      {
+        "pill": "Site",
+        "pillColor": "gold",
+        "title": "One of Brickell's last large prime sites",
+        "body": "The development sits on more than one acre near Brickell City Centre, one of the few remaining large parcels in central Brickell."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Walkable financial-district address",
+        "body": "Residents sit in the heart of Brickell's financial district, steps from the corridor's dining, retail, and transit connections."
+      },
+      {
+        "pill": "Buyer pool",
+        "pillColor": "gray",
+        "title": "Offering open to US and international buyers",
+        "body": "Partners Group has stated the project will be marketed to both domestic and international purchasers at launch."
+      }
+    ],
+    "thesis": "B Residences aligns brand, capital, and developer under a single owner. Partners Group owns Breitling and acquired Empira, so the watch brand, the balance sheet, and the development platform sit in one group, which reduces the licensing and execution risk that weighs on many branded projects. The site is one of Brickell's last large prime parcels, and the project is the global debut of the Breitling residential brand.",
+    "footnote": "Figures per Partners Group's June 2026 announcement. Project details, pricing, and timeline are preliminary and subject to change."
+  },
+  "investmentThesis": "<p>Partners Group owns Breitling and is investing approximately $220 million in the project alongside Empira Group, whose Miami team leads development. That alignment puts brand, capital, and developer under one owner, which reduces the licensing and execution risk that weighs on many branded projects. The site is one of Brickell's last large prime parcels in the financial district. Construction is expected to begin in late 2028, with completion targeted for 2031. This is the global debut of the Breitling residential brand.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.7650075,
+  "launchState": "coming_soon",
+  "lng": -80.1981976,
+  "maxBed": null,
+  "maxPrice": null,
+  "maxSqft": null,
+  "minBed": null,
+  "minPrice": null,
+  "minSqft": null,
+  "name": "B Residences",
+  "neighborhood": "Brickell",
+  "neighborhoodMap": {
+    "pinUrl": "https://maps.app.goo.gl/TZNpeBTzNM3CTNyX8",
+    "alt": "Map showing B Residences at 244 SW 9th Street in Brickell, Miami"
+  },
+  "priceFrom": "Pricing TBD",
+  "privacyScore": 50,
+  "residenceContent": "<p class=\"prop-residence-intro\">B Residences is the flagship of Breitling's new branded residence collection and the watchmaker's first for-sale real estate offering. Rising approximately 70 stories in the heart of Brickell, the tower brings more than 300 condominiums to one of the district's last large prime parcels, near Brickell City Centre.</p><p>Designed by Arquitectonica, the building pairs floor-to-ceiling glass and bronze-toned framing with a curved podium of landscaped amenity terraces. The collection culminates in penthouses with double-height living areas and private pools. At its center is a 45,000 square foot, two-level B Social Club, alongside rooftop pools, a private fitness center, concierge service, and indoor and outdoor social spaces with city and ocean views.</p>",
+  "slug": "b-residences-brickell",
+  "stage": "coming_soon",
+  "stageLabel": "Newly Announced",
+  "statusRemark": "NEWLY ANNOUNCED · PRE-CONSTRUCTION",
+  "units": 300,
+  "wellnessScore": 75
+}

@@ -1,0 +1,304 @@
+{
+  "address": "3801 & 3883 Biscayne Boulevard, Miami, FL 33137",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "85' Lap Pool",
+      "sub": "Plus beach-entry pool with sun shelf"
+    },
+    {
+      "icon": "🧖",
+      "label": "Wellness Sanctuary",
+      "sub": "Cold plunge, infrared & steam saunas, spa"
+    },
+    {
+      "icon": "🏋",
+      "label": "Fitness & Movement",
+      "sub": "Yoga, Pilates & outdoor training"
+    },
+    {
+      "icon": "🛎",
+      "label": "Kempinski Concierge",
+      "sub": "24-hour, trained by Kempinski"
+    },
+    {
+      "icon": "🍽",
+      "label": "Private Dining",
+      "sub": "Chef's kitchen, wine & cigar lounge"
+    },
+    {
+      "icon": "🎮",
+      "label": "Family & Games",
+      "sub": "Playrooms, F1 & golf simulators"
+    },
+    {
+      "icon": "🎾",
+      "label": "Padel Court",
+      "sub": "Ground level"
+    },
+    {
+      "icon": "🚗",
+      "label": "House Car & Valet",
+      "sub": "On-site structured parking"
+    }
+  ],
+  "amenitiesDescription": "<p>Roughly 70,000 square feet of amenities flows across both towers and an elevated amenity bridge. Wellness anchors the program with a coed spa, cold plunge, infrared and steam saunas, a movement studio, and an 85-foot lap pool. Social and family spaces range from private dining and a wine and cigar lounge to a padel court, golf and F1 simulators, and children's playrooms.</p>",
+  "architect": "Arquitectonica",
+  "architectQuote": "Miami is where timeless luxury and visionary development meet. It is the ideal setting to introduce Kempinski Residences to the United States.",
+  "architectQuoteBy": "Barbara Muckermann, CEO, Kempinski Group",
+  "badge": "NOW SELLING",
+  "completion": "Q4 2029",
+  "densityScore": 72,
+  "depositStructure": [],
+  "description": "Kempinski Residences Miami Design District brings the European hotel company's first branded homes in the United States to the gateway of the Design District. Two towers hold 132 residences of two to four bedrooms plus den, served daily by Kempinski's hospitality team, with delivery targeted for Q4 2029.",
+  "developer": "DaGrosa Capital Development Partners",
+  "discoveryEngine": {
+    "lifestyle": [
+      "branded",
+      "design-forward",
+      "wellness",
+      "urban-cultural"
+    ],
+    "investmentProfile": [
+      "pre-construction",
+      "branded-residences",
+      "limited-inventory"
+    ],
+    "priceCategory": "ultra-luxury",
+    "vibeMatch": [
+      "sophisticated",
+      "cultural",
+      "serene"
+    ],
+    "goodFor": [
+      "international-buyer",
+      "design-enthusiast",
+      "wellness-seeker",
+      "pied-a-terre"
+    ]
+  },
+  "editorialLine": "Kempinski's first U.S. address.",
+  "faq": [
+    {
+      "question": "What are prices and floor plans at Kempinski Residences Miami Design District?",
+      "answer": "Pricing starts at $3.76M. The collection offers two to four bedroom plus den residences across three floor plans: 2-Bedroom + Den from 2,151 to 2,505 square feet, 3-Bedroom + Den from 2,685 to 2,699 square feet, and 4-Bedroom + Den from 3,090 to 3,102 square feet. All are corner residences reached through a private elevator lobby."
+    },
+    {
+      "question": "When is Kempinski Residences Miami estimated for completion?",
+      "answer": "Delivery is targeted for the fourth quarter of 2029."
+    },
+    {
+      "question": "What amenities does Kempinski Residences Miami Design District offer?",
+      "answer": "Roughly 70,000 square feet of amenities spans both towers and an elevated amenity bridge. Wellness includes a coed spa, cold plunge, infrared and steam saunas, a movement studio, and an 85-foot lap pool. Social and family spaces include private dining, a wine and cigar lounge, a padel court, golf and F1 simulators, and children's playrooms."
+    },
+    {
+      "question": "Who is the developer and architect of Kempinski Residences Miami?",
+      "answer": "Kempinski Residences Miami Design District is developed by DaGrosa Capital Development Partners, with architecture by Arquitectonica, interiors by Rockwell Group, and landscape by Enea. Kempinski oversees daily service."
+    },
+    {
+      "question": "Where is Kempinski Residences Miami Design District located?",
+      "answer": "The two towers sit at 3801 and 3883 Biscayne Boulevard at the gateway to the Miami Design District, steps from the district's galleries, boutiques, and restaurants."
+    },
+    {
+      "question": "Why is Kempinski Residences Miami significant?",
+      "answer": "It is Kempinski's first branded residential project in the United States. The 132 residences across two 20-story towers bring the European house's hotel-grade service to the Design District, with a first-to-market brand entry supporting long-term positioning."
+    }
+  ],
+  "floorPlans": [
+    {
+      "type": "2-Bedroom + Den",
+      "addlRooms": "Den + Terrace",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "2,151 - 2,505 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "3-Bedroom + Den",
+      "addlRooms": "Den + Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,685 - 2,699 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "4-Bedroom + Den",
+      "addlRooms": "Den + Terrace",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "3,090 - 3,102 sq ft",
+      "status": "Available"
+    }
+  ],
+  "height": "20 Stories",
+  "hoa": null,
+  "id": 54,
+  "img": "https://frasermiami.s3.amazonaws.com/kempinski-residences/building-hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/building-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/hero-building-aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/hummingbird-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/pool-day.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/building-west.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/hummingbird2.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/arrival.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/porte-cochere.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/bathroom-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/pool-east.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/pool2.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/pool-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/kempinski-residences/hummingbird.webp"
+  ],
+  "interiorDesigner": "Rockwell Group",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$3.76M",
+        "label": "Starting Price",
+        "note": "N-603, remaining-inventory floor per developer price list"
+      },
+      {
+        "value": "$1,680-$2,242",
+        "label": "Price / Sq Ft",
+        "note": "Stack range across available inventory"
+      },
+      {
+        "value": "132",
+        "label": "Total Residences",
+        "note": "66 per tower, plus 6 townhomes and 17 resident-only guest suites"
+      },
+      {
+        "value": "Q4 2029",
+        "label": "Estimated Delivery",
+        "note": "Per developer materials, January 2026"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand first",
+        "pillColor": "gold",
+        "title": "Kempinski's First U.S. Residence",
+        "body": "Europe's oldest luxury hotel group is debuting branded residences in the United States here. A first-to-market brand entry is difficult to replicate and supports long-term positioning."
+      },
+      {
+        "pill": "Brand premium",
+        "pillColor": "gold",
+        "title": "Branded Residence Premium",
+        "body": "Branded residences in Miami have historically traded at meaningful premiums to non-branded comparables, and tend to hold value through market cycles."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Low-density, corner-plate scale",
+        "body": "Nearly all corner layouts with private elevator lobbies, and a low overall density that limits resale competition within the building."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Design District Cultural Corridor",
+        "body": "The address anchors the gateway to one of Miami's strongest luxury retail and cultural neighborhoods, home to global flagships and chef-driven dining."
+      },
+      {
+        "pill": "Relative value",
+        "pillColor": "gray",
+        "title": "Value Versus Oceanfront Branded Peers",
+        "body": "Pricing sits below many waterfront branded residences, while east homes still capture open Biscayne Bay views."
+      }
+    ],
+    "thesis": "Kempinski Residences marks the European house's first U.S. residential project, developed by DaGrosa Capital at the gateway to the Miami Design District. With 132 intimate residences, roughly 70,000 square feet of amenities, and Rockwell Group interiors, it delivers branded service in a cultural corridor rather than the usual waterfront setting. Pricing from $3.76M positions it below several oceanfront branded peers while capturing Design District demand.",
+    "footnote": "Pricing and availability per developer price list, subject to change. Specifications and renderings per developer materials, January 2026."
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$3.76M",
+        "label": "Starting Price",
+        "note": "N-603, remaining-inventory floor per developer price list"
+      },
+      {
+        "value": "$1,680-$2,242",
+        "label": "Price / Sq Ft",
+        "note": "Stack range across available inventory"
+      },
+      {
+        "value": "132",
+        "label": "Total Residences",
+        "note": "66 per tower, plus 6 townhomes and 17 resident-only guest suites"
+      },
+      {
+        "value": "Q4 2029",
+        "label": "Estimated Delivery",
+        "note": "Per developer materials, January 2026"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand first",
+        "pillColor": "gold",
+        "title": "Kempinski's First U.S. Residence",
+        "body": "Europe's oldest luxury hotel group is debuting branded residences in the United States here. A first-to-market brand entry is difficult to replicate and supports long-term positioning."
+      },
+      {
+        "pill": "Brand premium",
+        "pillColor": "gold",
+        "title": "Branded Residence Premium",
+        "body": "Branded residences in Miami have historically traded at meaningful premiums to non-branded comparables, and tend to hold value through market cycles."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Low-density, corner-plate scale",
+        "body": "Nearly all corner layouts with private elevator lobbies, and a low overall density that limits resale competition within the building."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Design District Cultural Corridor",
+        "body": "The address anchors the gateway to one of Miami's strongest luxury retail and cultural neighborhoods, home to global flagships and chef-driven dining."
+      },
+      {
+        "pill": "Relative value",
+        "pillColor": "gray",
+        "title": "Value Versus Oceanfront Branded Peers",
+        "body": "Pricing sits below many waterfront branded residences, while east homes still capture open Biscayne Bay views."
+      }
+    ],
+    "thesis": "Kempinski Residences marks the European house's first U.S. residential project, developed by DaGrosa Capital at the gateway to the Miami Design District. With 132 intimate residences, roughly 70,000 square feet of amenities, and Rockwell Group interiors, it delivers branded service in a cultural corridor rather than the usual waterfront setting. Pricing from $3.76M positions it below several oceanfront branded peers while capturing Design District demand.",
+    "footnote": "Pricing and availability per developer price list, subject to change. Specifications and renderings per developer materials, January 2026."
+  },
+  "investmentThesis": "<p>Kempinski Residences is the European house's first branded residential project in the United States, developed by DaGrosa Capital with Arquitectonica architecture. At 132 residences across two towers, it offers hotel-grade service in the Design District rather than on the water, with pricing from $3.76M and delivery targeted for Q4 2029. Branded-residence scarcity and a first-to-market brand entry support long-term positioning.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeArchitect": "Enea",
+  "lat": 25.8130876,
+  "lng": -80.1888549,
+  "maxBed": 4,
+  "maxPrice": 6928200,
+  "maxSqft": 3102,
+  "minBed": 2,
+  "minPrice": 3761200,
+  "minSqft": 2151,
+  "name": "Kempinski Residences Miami Design District",
+  "neighborhood": "Design District",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/kempinski-residences.jpg",
+  "percentSold": null,
+  "priceFrom": "$3.76M+",
+  "pricePerSqft": 1749,
+  "privacyScore": 84,
+  "rentalPolicy": null,
+  "residenceContent": "<p class=\"prop-residence-intro\">Curved walls of floor-to-ceiling glass open onto ten-foot balconies and eleven-foot ceilings, drawing daylight deep into every great room, with open Biscayne Bay views from the upper east residences. Each home is a corner residence reached through a private elevator lobby, finished in natural stone curated by Rockwell Group, with a Gaggenau kitchen anchored by a waterfall island. The primary suite holds a freestanding tub, an oversized shower, and a walk-in closet sized like a dressing room.</p>",
+  "salesTeam": "ISG World",
+  "shortName": "Kempinski Residences",
+  "slug": "kempinski-residences",
+  "stage": "preconstruction",
+  "stageLabel": "Now Selling",
+  "statusRemark": "Now selling, delivery Q4 2029",
+  "stories": 20,
+  "units": 132,
+  "unitsLeft": null,
+  "wellnessScore": 88
+}

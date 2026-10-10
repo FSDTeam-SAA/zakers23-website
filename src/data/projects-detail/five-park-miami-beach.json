@@ -1,0 +1,223 @@
+{
+  "address": "500 Alton Road, Miami Beach, FL 33139",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Canopy Club",
+      "sub": "26th-floor members' club"
+    },
+    {
+      "icon": "🌳",
+      "label": "Canopy Park",
+      "sub": "3-acre adjacent park"
+    },
+    {
+      "icon": "🍽",
+      "label": "Rotating Chefs",
+      "sub": "Private dining program"
+    },
+    {
+      "icon": "💆",
+      "label": "Spa & Wellness",
+      "sub": "Full treatment rooms"
+    },
+    {
+      "icon": "🎨",
+      "label": "Daniel Buren Bridge",
+      "sub": "Pedestrian art piece"
+    },
+    {
+      "icon": "🏋",
+      "label": "Fitness Center",
+      "sub": "Barry's, yoga"
+    }
+  ],
+  "amenitiesDescription": "<p>Five Park Miami Beach anchors 50,000 SF of amenities across multiple levels, plus a three-acre Canopy Park directly adjacent. The 6th-floor terrace deck features adult and family pools, cabanas, shaded trellises, sunset terrace, meditation deck, pool bar and café, and a summer kitchen with bay and skyline views. The Canopy Club — Miami Beach's first residents-only member's club on the 26th floor — includes a club lounge, dining and living rooms with outdoor terraces, a jewel box private bar, billiards lounge, glass-enclosed private dining room with rotating celebrated chefs, spa with men's and women's lounges, saunas, hammam, and dedicated treatment rooms, a wellness lounge with outdoor workout zone, Pilates bikes, yoga deck, and juice bar. Additional amenities: screening room, children's learning lab, teen club, co-working spaces, luxury short-term owner guest suites (5th floor), 24-hr concierge and butler services, and house car service. Residents also receive membership to a private Beach Club south of Fifth Street with lounge chairs, umbrellas, towel service, and electric Moke vehicle transport.</p>",
+  "architect": "Arquitectonica",
+  "completion": "2024",
+  "constructionPct": 100,
+  "densityScore": 50,
+  "description": "Miami Beach's tallest residential tower. 48 stories at 500 Alton Road in South Beach. Two residence tiers: Park Residences and Canopy Club. Adjacent three-acre park. Now delivered.",
+  "developer": "Terra & GFO Investments",
+  "floorPlans": [
+    {
+      "type": "Park Residence (Floors 8–25)",
+      "addlRooms": "Terrace",
+      "beds": "1–3",
+      "baths": 2,
+      "sqft": "1,000 – 2,178 SF",
+      "status": "From $1.25M"
+    },
+    {
+      "type": "Canopy Club Residence (Floors 27–48)",
+      "addlRooms": "Terrace",
+      "beds": 5,
+      "baths": 4.5,
+      "sqft": "1,434 – 6,000 SF",
+      "status": "From $2.5M"
+    }
+  ],
+  "height": "48 Stories (518 ft)",
+  "heroImgPosition": "38% center",
+  "hoa": "~$2.48/sq ft (median across towers)",
+  "id": 25,
+  "img": "https://frasermiami.s3.amazonaws.com/fivepark/hero-hummingbird.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/fivepark/hero-hummingbird.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/hummingbird-south-beach.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/pool-restaurant.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/condo-club.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/purple-bar.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/private-dining.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/living-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/living.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/living2.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/bedroom2.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/gym.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/childrens-area.webp",
+    "https://frasermiami.s3.amazonaws.com/fivepark/park.webp"
+  ],
+  "inquiryButtonLabel": "Schedule a Tour",
+  "inquirySubject": "Inquiry: Five Park Miami Beach - Fact Sheet & Floor Plans Request",
+  "interiorDesigner": "Gabellini Sheppard",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Terra Group's prior Miami Beach delivery performance"
+      },
+      {
+        "value": "$1,800+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,292/sqft Miami Beach luxury resale avg (Q3 2025)"
+      },
+      {
+        "value": "100%",
+        "label": "Developer comp resale appreciation",
+        "note": "Park Grove (same developer) resale units traded at 100% above original developer price"
+      },
+      {
+        "value": "Near zero",
+        "label": "Resale inventory at comparable Terra buildings",
+        "note": "At Eighty Seven Park and Park Grove, owners refuse to sell — even at 30%+ premiums"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Developer track record",
+        "pillColor": "gold",
+        "title": "Terra Group: Eighty Seven Park, Park Grove — both resale records",
+        "body": "David Martin's Terra Group has produced two of Miami Beach's most sought-after buildings — Eighty Seven Park and Park Grove — where inventory almost never reaches the resale market. Five Park is his most ambitious project yet."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "South Beach + 3-acre Canopy Park",
+        "body": "Five Park tops South Beach at 518 feet and 48 stories, anchoring a 3-acre public park with a Daniel Buren pedestrian bridge. The Alton Road site sits between Biscayne Bay, South Pointe Park, and the ocean, on one of the corridor's most visible residential blocks."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Arquitectonica + Gabellini Sheppard",
+        "body": "226 residences. Only 2 units per floor on premium lines. Private elevator access to every home. New York's Gabellini Sheppard interiors. The floor-plan efficiency and low density create the conditions for extreme scarcity on the resale market."
+      },
+      {
+        "pill": "Amenity",
+        "pillColor": "gray",
+        "title": "Miami Beach's only residents-only member's club",
+        "body": "Five Park's members' club is a first for Miami Beach — adding a recurring lifestyle amenity that creates resident stickiness and underpins long-term hold behavior."
+      }
+    ],
+    "thesis": "Five Park's investment case rests on one data point: Terra Group's prior two Miami Beach buildings. At Eighty Seven Park and Park Grove, virtually no inventory has ever reached the resale market, even as values doubled. That hold behavior is a direct function of product quality, location, and floor-plan scarcity — and Five Park replicates all three at a larger scale with a more prominent address. The 3-acre park and Daniel Buren bridge are permanent public amenities that will drive foot traffic and lifestyle validation for the neighborhood over decades.",
+    "footnote": "HOA: ~$2.48/sq ft (MLS median, Aug 2026; range $1.91–2.68) · Rental policy: 6-month minimum (up to 2x per year) · Delivery: 2024 (delivered)"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Terra Group's prior Miami Beach delivery performance"
+      },
+      {
+        "value": "$1,800+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,292/sqft Miami Beach luxury resale avg (Q3 2025)"
+      },
+      {
+        "value": "100%",
+        "label": "Developer comp resale appreciation",
+        "note": "Park Grove (same developer) resale units traded at 100% above original developer price"
+      },
+      {
+        "value": "Near zero",
+        "label": "Resale inventory at comparable Terra buildings",
+        "note": "At Eighty Seven Park and Park Grove, owners refuse to sell — even at 30%+ premiums"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Developer track record",
+        "pillColor": "gold",
+        "title": "Terra Group: Eighty Seven Park, Park Grove — both resale records",
+        "body": "David Martin's Terra Group has produced two of Miami Beach's most sought-after buildings — Eighty Seven Park and Park Grove — where inventory almost never reaches the resale market. Five Park is his most ambitious project yet."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "South Beach + 3-acre Canopy Park",
+        "body": "Five Park tops South Beach at 518 feet and 48 stories, anchoring a 3-acre public park with a Daniel Buren pedestrian bridge. The Alton Road site sits between Biscayne Bay, South Pointe Park, and the ocean, on one of the corridor's most visible residential blocks."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Arquitectonica + Gabellini Sheppard",
+        "body": "226 residences. Only 2 units per floor on premium lines. Private elevator access to every home. New York's Gabellini Sheppard interiors. The floor-plan efficiency and low density create the conditions for extreme scarcity on the resale market."
+      },
+      {
+        "pill": "Amenity",
+        "pillColor": "gray",
+        "title": "Miami Beach's only residents-only member's club",
+        "body": "Five Park's members' club is a first for Miami Beach — adding a recurring lifestyle amenity that creates resident stickiness and underpins long-term hold behavior."
+      }
+    ],
+    "thesis": "Five Park's investment case rests on one data point: Terra Group's prior two Miami Beach buildings. At Eighty Seven Park and Park Grove, virtually no inventory has ever reached the resale market, even as values doubled. That hold behavior is a direct function of product quality, location, and floor-plan scarcity — and Five Park replicates all three at a larger scale with a more prominent address. The 3-acre park and Daniel Buren bridge are permanent public amenities that will drive foot traffic and lifestyle validation for the neighborhood over decades.",
+    "footnote": "HOA: ~$2.48/sq ft (MLS median, Aug 2026; range $1.91–2.68) · Rental policy: 6-month minimum (up to 2x per year) · Delivery: 2024 (delivered)"
+  },
+  "investmentThesis": "<p>Delivered and occupied, eliminating construction risk for buyers. South Beach has consistently ranked among the most sought-after residential addresses in Florida, with extremely limited new supply. The adjacent three-acre Canopy Park and the Daniel Buren pedestrian bridge create a public amenity layer that enhances the building's long-term desirability. The Canopy Club (26th floor) is Miami Beach's first residents-only members' club within a condominium, with rotating celebrated chefs, private dining, and a curated social calendar. The elliptical tower form is a design-driven differentiator — there is no bad orientation in the building.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeArchitect": "ArquitectonicaGEO",
+  "lat": 25.775493,
+  "lng": -80.141063,
+  "maxBed": 5,
+  "maxPrice": 8000000,
+  "maxSqft": 6000,
+  "minBed": 1,
+  "minPrice": 1250000,
+  "minSqft": 1000,
+  "name": "Five Park Miami Beach",
+  "neighborhood": "South Beach",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/five-park-miami-beach.jpg",
+  "priceFrom": "$1.25M+",
+  "pricePerSqft": 2200,
+  "pricePerSqftRange": "~$2,200 avg",
+  "privacyScore": 88,
+  "projectedAppreciation": 28,
+  "rentalPolicy": "6-Month Minimum (up to 2x per year)",
+  "residenceContent": "<p class=\"prop-residence-intro\">Miami Beach's tallest residential tower, with a unique elliptical form designed to create unobstructed 360-degree views from every floor — spanning Biscayne Bay, the Atlantic Ocean, and the Miami skyline simultaneously. Two residence tiers: Canopy Club Residences on floors 26 through 48 with private club access, and Park Residences on lower floors. Interiors by New York's Gabellini Sheppard feature floor-to-ceiling glass, custom Italian kitchens with Miele appliances, European oak flooring, and spa-inspired bathrooms with natural stone. Design direction by Anda Andrei. A three-acre Canopy Park by ArquitectonicaGEO sits directly adjacent, and the Daniel Buren pedestrian bridge — by the internationally acclaimed French artist — connects residents to South Pointe and the beach. Now delivered and occupied.</p>",
+  "slug": "five-park-miami-beach",
+  "stage": "move_in_ready",
+  "statusRemark": "COMPLETED 2024 · MOVE-IN READY",
+  "units": 226,
+  "verified": {
+    "hoa": {
+      "date": "2026-08-23",
+      "source": "MLS active listings, Aug 2026 — monthly association fee ÷ interior sq ft (SqFt LA), median. $2.48/sf across 5 active listings, range $1.91-2.68; the active set skews to larger Park-tower residences."
+    }
+  },
+  "wellnessScore": 82
+}

@@ -1,0 +1,430 @@
+{
+  "address": "619 Brickell Ave, Miami, FL 33131",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Four Distinct Pools",
+      "sub": "86-ft sunset · hot/cold plunges · salt rejuvenation · lap",
+      "img": "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/lap-pool.webp"
+    },
+    {
+      "icon": "🍽",
+      "label": "Nobu Restaurant · 11th Floor",
+      "sub": "Residents-only · in addition to ground-floor Nobu",
+      "img": "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/nobu-cafe.webp"
+    },
+    {
+      "icon": "🧬",
+      "label": "$25M Longevity Center",
+      "sub": "Cryotherapy, hyperbaric oxygen, IV peptides, ozone therapy",
+      "img": "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/outdoor-yoga.webp"
+    },
+    {
+      "icon": "🧖",
+      "label": "Nobu Spa",
+      "sub": "Hammam, sauna, salt pool, fire pit",
+      "img": "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/plunge-pool.webp"
+    },
+    {
+      "icon": "🏋",
+      "label": "Movement & Performance",
+      "sub": "Fitness, yoga, Pilates, spinning, rebound",
+      "img": "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/fitness-center.webp"
+    },
+    {
+      "icon": "🎾",
+      "label": "Padel & Sports Sims",
+      "sub": "Padel courts · sports simulators · game rooms",
+      "img": "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/padel-court.webp"
+    },
+    {
+      "icon": "🧘",
+      "label": "Meditation Terrace",
+      "sub": "Bayfront · open-air"
+    },
+    {
+      "icon": "🛎",
+      "label": "Five-Star Services",
+      "sub": "Butler, chauffeur & house car · lifestyle manager · housekeeping · pet care · travel desk · 24-hour concierge"
+    },
+    {
+      "icon": "🚗",
+      "label": "Valet & Private Garages",
+      "sub": "Self-park + private garage options"
+    }
+  ],
+  "amenitiesDescription": "<p><strong>Pools &amp; deck:</strong> Four pools (86-foot sunset, hot and cold plunges, salt rejuvenation, lap with spa garden) with resort-style pool-deck F&amp;B.</p><p><strong>Nobu F&amp;B &amp; longevity:</strong> Ground-floor Nobu with bayfront access and owners' private dining, residents-only restaurant on 11, bayfront café and bar, and in-residence dining with private chef service. The $25M Longevity Center covers cryotherapy, hyperbaric oxygen, IV peptides, ozone therapy, and dedicated recovery suites, paired with a Nobu Spa (hammam, sauna, treatment rooms).</p><p><strong>Movement &amp; services:</strong> Fitness, yoga, Pilates, spinning, outdoor pavilion, padel courts, and sports simulators. Private porte-cochère arrival with valet, self-park, and private garage options; butler, house car, lifestyle manager, and 24-hour concierge.</p>",
+  "architect": "Foster + Partners (Design Architect)",
+  "architectOfRecord": "Sieger Suarez",
+  "avgPsf": "$1,660–$4,070",
+  "cardImg": "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/hero-building.webp",
+  "completion": "2030",
+  "ctaMicrocopy": "Residences from $2.2M · Pre-construction",
+  "densityScore": 85,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At Contract (Apr 2026)"
+    },
+    {
+      "percentage": 5,
+      "milestone": "90 Days After Contract (Jul 2026)"
+    },
+    {
+      "percentage": 15,
+      "milestone": "Groundbreaking (Apr 2027)"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Top Off (Dec 2028)"
+    },
+    {
+      "percentage": 60,
+      "milestone": "Balance at Closing (Sep 2030)"
+    }
+  ],
+  "description": "Miami's first Nobu-branded residences. 75-story Foster + Partners tower on Biscayne Bay, 306 homes from $2.2M, with a $25M longevity program and residents-only Nobu dining.",
+  "developer": "13th Floor Investments + Key International",
+  "dossierImageIndices": {
+    "amenities": 2,
+    "interstitials": [
+      5,
+      9,
+      12,
+      17
+    ]
+  },
+  "faq": [
+    {
+      "question": "What are 619 Brickell prices and floor plans?",
+      "answer": "Nine residence types across 306 homes, from about $2.23M (1 bedroom) through $16.5M Sky Villas; penthouses on request. Homes run 1–5 bedrooms and roughly 1,160–5,526 SF. A 4,826 SF Sky Villa (Unit 28D) sold for $20.5M in June 2026 ($4,247/SF). See current floor plans for live availability."
+    },
+    {
+      "question": "What is the deposit structure?",
+      "answer": "40% across pre-construction (10% at contract, 5% at 90 days, 15% at groundbreaking, 10% at top-off). 60% balance at closing."
+    },
+    {
+      "question": "When is estimated completion?",
+      "answer": "Estimated completion is 2030 per the developer."
+    },
+    {
+      "question": "How is this different from the existing Nobu Hotel + Residences in Miami?",
+      "answer": "Separate product. 619 Brickell is Nobu Hospitality's first branded residential tower in Miami: Foster + Partners, pre-construction on Biscayne Bay, with a $25M longevity program and residents-only Nobu dining. It is not the earlier delivered Nobu hotel residence inventory."
+    },
+    {
+      "question": "Are residences furnished/turnkey at delivery?",
+      "answer": "Yes. All 306 residences deliver fully furnished and turnkey with Nobu Hospitality."
+    },
+    {
+      "question": "Who is the developer and architect?",
+      "answer": "Developed by 13th Floor Investments + Key International. Foster + Partners is design architect; Sieger Suarez is architect of record. Interiors by Design Agency · Studio Munge."
+    }
+  ],
+  "featureVideo": {
+    "src": "/619-brickell-nobu-residences/619-brickell-nobu-video.mp4",
+    "poster": "/619-brickell-nobu-residences/619-brickell-nobu-video-poster.webp",
+    "label": "619 Brickell",
+    "tagline": "Norman Foster and Nobu Matsuhisa, from first sketch to a bayfront tower — Miami's first Nobu-branded residences.",
+    "uploadDate": "2026-09-03",
+    "mobileObjectFit": "contain"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlanPdf": "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/619-Residences-Brickell-Nobu-floorplates.pdf",
+  "floorPlans": [
+    {
+      "type": "1 Bedroom",
+      "addlRooms": "Turnkey",
+      "beds": 1,
+      "baths": 1.5,
+      "sqft": "1,188 SF",
+      "status": "Available",
+      "startingPrice": 2230000
+    },
+    {
+      "type": "2 Bedroom",
+      "addlRooms": "Turnkey",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,351 SF",
+      "status": "Available",
+      "startingPrice": 2810000
+    },
+    {
+      "type": "2 Bed + Den",
+      "addlRooms": "Turnkey",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,502 SF",
+      "status": "Available",
+      "startingPrice": 3700000
+    },
+    {
+      "type": "3 Bed + Den",
+      "addlRooms": "Turnkey",
+      "beds": 3,
+      "baths": 4.5,
+      "sqft": "2,747 SF",
+      "status": "Available",
+      "startingPrice": 4840000
+    },
+    {
+      "type": "4 Bed + Den",
+      "addlRooms": "Turnkey",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "3,178 SF",
+      "status": "Available",
+      "startingPrice": 7570000
+    },
+    {
+      "type": "Sky Villa (4 Bed)",
+      "addlRooms": "Turnkey",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "4,058 SF",
+      "status": "Available",
+      "startingPrice": 16500000
+    },
+    {
+      "type": "Sky Villa (5 Bed)",
+      "addlRooms": "Turnkey",
+      "beds": 5,
+      "baths": 5.5,
+      "sqft": "4,826 SF",
+      "status": "Limited",
+      "startingPrice": 13500000
+    },
+    {
+      "type": "Skyflat (5 Bed)",
+      "addlRooms": "Turnkey",
+      "beds": 5,
+      "baths": 6.5,
+      "sqft": "5,506 SF",
+      "status": "Available",
+      "startingPrice": 13420000
+    },
+    {
+      "type": "Penthouse",
+      "addlRooms": "Turnkey",
+      "beds": null,
+      "baths": null,
+      "status": "Inquire",
+      "inquireOnly": true
+    }
+  ],
+  "floorPlansDefaultVisible": 4,
+  "height": "75 Stories",
+  "heroImgPosition": "center",
+  "id": 27,
+  "img": "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/hero-tower-bay.webp",
+  "imgCaptions": {
+    "5": {
+      "kicker": "Four Pools, One Deck",
+      "line": "An 86-foot sunset pool, hot and cold plunges, salt rejuvenation, and a lap pool."
+    },
+    "9": {
+      "kicker": "Movement, Outdoors",
+      "line": "An open-air pavilion on the amenity deck, framed to the Miami skyline."
+    },
+    "12": {
+      "kicker": "The Nobu Café",
+      "line": "Wood-slatted and open to Biscayne Bay — one of the Nobu-programmed rooms on the amenity floors."
+    },
+    "17": {
+      "kicker": "Above Brickell",
+      "line": "Foster + Partners rotated each tier so the residences turn toward the bay."
+    }
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/hero-tower-bay.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/arrival-boardwalk.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/pool-deck-aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/pool-deck-night.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/plunge-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/lap-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/fitness-center.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/outdoor-yoga.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/padel-court.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/nobu-cafe.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/nobu-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/owners-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/wine-room.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/screening-room.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/bbq-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/primary-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/primary-bath.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/residence-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/living-dining.webp"
+  ],
+  "inquiryButtonLabel": "Request Pricing & Availability",
+  "inquirySubject": "Inquiry: 619 Brickell (Nobu Residences) - Pricing Request",
+  "interiorDesigner": "Design Agency · Studio Munge",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$25M",
+        "label": "Longevity amenity capex",
+        "note": "Medical-grade biohacking program, first of its kind in Miami branded residential"
+      },
+      {
+        "value": "$1,660–$4,070",
+        "label": "Launch ask per sq ft",
+        "note": "Price list through the Sky Villas"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Knight Frank: hotel-branded residences outperform unbranded by 31% globally on average"
+      },
+      {
+        "value": "$20.5M",
+        "label": "Sky Villa sale (June 2026)",
+        "note": "Unit 28D, a 4,826 SF five-bedroom duplex at $4,247/SF — the highest published sale since the April launch"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "F&B brand",
+        "pillColor": "gold",
+        "title": "Nobu runs the full F&B stack",
+        "body": "Residents-only restaurant on level 11, ground-floor Nobu with owners' private dining, bayfront café, and in-residence dining. Nobu Hospitality programs every F&B touchpoint."
+      },
+      {
+        "pill": "Architect",
+        "pillColor": "gold",
+        "title": "Foster + Partners' first Miami tower of this scale",
+        "body": "Five twisting cassettes rotate each tier toward Biscayne Bay. The studio behind Apple Park and Hearst Tower is the design architect."
+      },
+      {
+        "pill": "Wellness",
+        "pillColor": "gold",
+        "title": "Longevity program, not spa-as-amenity",
+        "body": "Cryotherapy, hyperbaric oxygen, IV peptides, and dedicated recovery suites — built around medical-grade longevity rather than a conventional spa."
+      },
+      {
+        "pill": "Site",
+        "pillColor": "gold",
+        "title": "Walkable bayfront, rare in Brickell branded peers",
+        "body": "One of Brickell's last walkable bayfront parcels, minutes from Brickell City Centre. That corridor is finite once built out."
+      },
+      {
+        "pill": "Delivery model",
+        "pillColor": "gray",
+        "title": "Fully furnished turnkey across all 306 homes",
+        "body": "Every residence delivers furnished with Nobu Hospitality. Buyers skip post-closing fit-out, and the building keeps consistent brand presentation for resale."
+      }
+    ],
+    "thesis": "619 Brickell opens a Miami category that did not exist: branded residential built around longevity and biohacking. Foster + Partners architecture plus Nobu's deepest F&B integration sit on one of Brickell's last walkable bayfront parcels. Top-of-stack demand printed within months of the April 2026 launch, with entry inventory still from $2.2M.",
+    "footnote": "HOA: TBD at closing · Rental policy: TBD per HOA · Sales launched April 30, 2026 · Unit 28D Sky Villa sold June 30, 2026 at $20.5M · Estimated completion 2030"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$25M",
+        "label": "Longevity amenity capex",
+        "note": "Medical-grade biohacking program, first of its kind in Miami branded residential"
+      },
+      {
+        "value": "$1,660–$4,070",
+        "label": "Launch ask per sq ft",
+        "note": "Price list through the Sky Villas"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Knight Frank: hotel-branded residences outperform unbranded by 31% globally on average"
+      },
+      {
+        "value": "$20.5M",
+        "label": "Sky Villa sale (June 2026)",
+        "note": "Unit 28D, a 4,826 SF five-bedroom duplex at $4,247/SF — the highest published sale since the April launch"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "F&B brand",
+        "pillColor": "gold",
+        "title": "Nobu runs the full F&B stack",
+        "body": "Residents-only restaurant on level 11, ground-floor Nobu with owners' private dining, bayfront café, and in-residence dining. Nobu Hospitality programs every F&B touchpoint."
+      },
+      {
+        "pill": "Architect",
+        "pillColor": "gold",
+        "title": "Foster + Partners' first Miami tower of this scale",
+        "body": "Five twisting cassettes rotate each tier toward Biscayne Bay. The studio behind Apple Park and Hearst Tower is the design architect."
+      },
+      {
+        "pill": "Wellness",
+        "pillColor": "gold",
+        "title": "Longevity program, not spa-as-amenity",
+        "body": "Cryotherapy, hyperbaric oxygen, IV peptides, and dedicated recovery suites — built around medical-grade longevity rather than a conventional spa."
+      },
+      {
+        "pill": "Site",
+        "pillColor": "gold",
+        "title": "Walkable bayfront, rare in Brickell branded peers",
+        "body": "One of Brickell's last walkable bayfront parcels, minutes from Brickell City Centre. That corridor is finite once built out."
+      },
+      {
+        "pill": "Delivery model",
+        "pillColor": "gray",
+        "title": "Fully furnished turnkey across all 306 homes",
+        "body": "Every residence delivers furnished with Nobu Hospitality. Buyers skip post-closing fit-out, and the building keeps consistent brand presentation for resale."
+      }
+    ],
+    "thesis": "619 Brickell opens a Miami category that did not exist: branded residential built around longevity and biohacking. Foster + Partners architecture plus Nobu's deepest F&B integration sit on one of Brickell's last walkable bayfront parcels. Top-of-stack demand printed within months of the April 2026 launch, with entry inventory still from $2.2M.",
+    "footnote": "HOA: TBD at closing · Rental policy: TBD per HOA · Sales launched April 30, 2026 · Unit 28D Sky Villa sold June 30, 2026 at $20.5M · Estimated completion 2030"
+  },
+  "investmentThesis": "<p>Miami's first Nobu-branded residences, and the first in the city built around longevity and biohacking rather than spa-as-amenity, with a $25 million medical-grade wellness program. Foster + Partners (Apple Park, Hearst Tower) is design architect on its first Miami tower of this scale. Nobu Hospitality programs F&amp;B end to end: residents-only restaurant on 11, ground-floor Nobu with owners' private dining, and in-residence dining. A June 2026 Sky Villa sale at $20.5M ($4,247/SF) confirmed top-stack demand after the April launch. Residences from $2.2M; penthouses on request. Delivery estimated 2030.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "$25M",
+      "label": "Longevity & biohacking program",
+      "note": "Medical-grade wellness, not spa-as-amenity"
+    },
+    {
+      "value": "90,000+",
+      "label": "SF of amenities",
+      "note": "Among the largest amenity programs in Brickell"
+    },
+    {
+      "value": "4",
+      "label": "Distinct pools",
+      "note": "Sunset, plunges, salt rejuvenation, lap"
+    },
+    {
+      "value": "$1,660–$4,070",
+      "label": "Launch ask per sq ft",
+      "note": "Price list through Sky Villas; June 2026 sale printed $4,247/SF"
+    }
+  ],
+  "lat": 25.7676735,
+  "lng": -80.1896617,
+  "locationScore": 92,
+  "maxBed": 5,
+  "maxPrice": 16500000,
+  "maxSqft": 5526,
+  "minBed": 1,
+  "minPrice": 2230000,
+  "minSqft": 1160,
+  "name": "619 Brickell (Nobu Residences)",
+  "neighborhood": "Brickell, Miami",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/619-brickell-nobu-residences.jpg",
+  "parking": "Valet · Self-Park · Private Garages",
+  "priceFrom": "$2.2M+",
+  "primaryCtaModal": "floors",
+  "privacyScore": 55,
+  "projectedAppreciation": 32,
+  "residenceContent": "<p class=\"prop-residence-intro\">Foster + Partners shaped this 75-story Brickell bayfront tower as five twisting cassettes, rotating each tier so residences open to Biscayne Bay. The site sits on one of the corridor's last walkable direct-bay parcels. Inside, one- to five-bedroom plans, Sky Villas, and penthouses deliver turnkey: floor-to-ceiling glazing, wraparound terraces, custom kitchens with integrated appliances, and spa-inspired bathrooms in stone and warm wood, furnished and styled with Nobu Hospitality.</p>",
+  "secondaryDownloadLabel": "Get the Floor Plans",
+  "slug": "619-brickell-nobu-residences",
+  "sqftRange": "1,160 – 5,526 SF",
+  "stage": "preconstruction",
+  "statusRemark": "PRE-CONSTRUCTION · $20.5M SKY VILLA SALE · JUN 2026",
+  "units": 306,
+  "wellnessScore": 98
+}

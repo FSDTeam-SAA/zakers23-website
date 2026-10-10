@@ -81,7 +81,7 @@ export function InsightDetailPage({ slug }: InsightDetailPageProps) {
               </div>
             </div>
             <Link href="/waterfront">
-              <span className="insights-nav-link-label">Waterfront Estates</span>
+              <span className="insights-nav-link-label">Waterfront Homes</span>
             </Link>
             <Link href="/insights" className="insights-nav-active">
               <span className="insights-nav-link-label">Insights</span>
@@ -151,7 +151,7 @@ export function InsightDetailPage({ slug }: InsightDetailPageProps) {
             </div>
           </div>
           <Link href="/waterfront">
-            <span className="insights-nav-link-label">Waterfront Estates</span>
+            <span className="insights-nav-link-label">Waterfront Homes</span>
           </Link>
           <Link href="/insights" className="insights-nav-active">
             <span className="insights-nav-link-label">Insights</span>

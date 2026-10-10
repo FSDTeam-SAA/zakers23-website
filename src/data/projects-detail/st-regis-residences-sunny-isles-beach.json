@@ -1,0 +1,347 @@
+{
+  "address": "18801 Collins Avenue, Sunny Isles Beach, FL 33160",
+  "amenities": [
+    {
+      "icon": "🛎",
+      "label": "St. Regis Butler Service",
+      "sub": "Fully anticipatory, 24/7 personalized"
+    },
+    {
+      "icon": "🏊",
+      "label": "Longest Infinity Pool in S. Florida",
+      "sub": "West Pool Deck with sunset views"
+    },
+    {
+      "icon": "🍽",
+      "label": "Signature Five-Star Restaurant",
+      "sub": "Bar lounge · private dining · oceanfront terrace"
+    },
+    {
+      "icon": "🧖",
+      "label": "Full-Floor Oceanfront Spa",
+      "sub": "Sauna, steam, plunge pools, vitality pool"
+    },
+    {
+      "icon": "🏋",
+      "label": "Oceanfront Athletic Club",
+      "sub": "Fitness, spinning, Pilates, yoga rooms"
+    },
+    {
+      "icon": "🏖",
+      "label": "435 ft Private Beach",
+      "sub": "Beach Club with 3 pools, Bar & Grill"
+    },
+    {
+      "icon": "🍸",
+      "label": "Ellipse Club",
+      "sub": "Cognac room, golf simulator, wine vault"
+    },
+    {
+      "icon": "🐾",
+      "label": "Pet Spa & Dog Park",
+      "sub": "On-site beach level"
+    },
+    {
+      "icon": "🥂",
+      "label": "St. Regis Sabrage Ritual",
+      "sub": "Champagne ceremony at sunset"
+    },
+    {
+      "icon": "🚗",
+      "label": "24/7 Valet & Concierge",
+      "sub": "Grand porte-cochère arrival"
+    },
+    {
+      "icon": "👥",
+      "label": "Guest Suites",
+      "sub": "For residents' guests, housekeeping included"
+    },
+    {
+      "icon": "💼",
+      "label": "Business Club",
+      "sub": "John Jacob Astor boardroom, co-working"
+    }
+  ],
+  "amenitiesDescription": "<p>Over 70,000 square feet of resort amenities conceived as a private residential club — one of the most extensive programs in South Florida new development.</p><h4>Lobby &amp; Arrival</h4><p>Grand double-height porte-cochère arrival. ~10,000 sq ft lobby with Great Hall, Grand Staircase, and oceanfront terrace. Signature five-star restaurant with bar lounge, private dining room, and oceanfront terrace. Business Club with John Jacob Astor boardroom and co-working spaces. Drawing room, library, and breakfast lounge with herb garden.</p><h4>Ellipse Club — Mezzanine</h4><p>Private Ellipse Club with cognac room, cards and poker tables, pool and billiards, wine vault, 20'×9' LED lounge, golf simulator, workshop and art room, and private chef's kitchen dining room.</p><h4>Beach Club</h4><p>Three oceanfront pools including a lap pool and children's splash area. Beach Bar &amp; Grill with indoor-outdoor seating, beach service, and in-residence dining. Private beach amenities — cabanas, chaise lounges, umbrellas. Dog park and pet spa on-site. Multi-purpose events lawn.</p><h4>West Pool Deck (6th Floor)</h4><p>The longest infinity-edge pool in South Florida, flanked by a sunken sitting lounge, dining terrace, Sunset Pool Bar, dry lounges, fire pit, and an expansive artfully landscaped events pavilion with sweeping city and bay views.</p><h4>Wellness Center</h4><p>Full oceanfront spa spanning an entire floor — spa concierge, juice and nutrition bar, his-and-hers sauna and steam rooms, outdoor relaxation terrace with plunge pools, individual and couples treatment rooms, vitality pool, beauty salon and barbershop, relaxation lounge, and revitalization spa.</p><h4>Athletic Club</h4><p>Oceanfront fitness center with multipurpose training rooms, outdoor fitness terrace, virtual trainer room, spinning room, Pilates room, and yoga room.</p><h4>Residents Club</h4><p>Library, bar and lounge, multipurpose events space, VIP conference room, oceanfront terrace dining, and guest suites with housekeeping service.</p><h4>St. Regis Rituals</h4><p>Signature St. Regis Butler Service — anticipatory and fully personalized. The Art of Sabrage champagne ceremony. Afternoon Tea Ritual. Sommelier-in-residence.</p>",
+  "architect": "Arquitectonica",
+  "architectQuote": "The sun defines Miami. The Sunny Isles name is not accidental. The Earth's elliptical path is depicted in the towers' shapes. The monumental ever-changing curvature creates a form identifiable from afar against the open skies.",
+  "architectQuoteBy": "Bernardo Fort-Brescia, Arquitectonica",
+  "badge": "South Tower Foundation Complete · North Tower Now Selling",
+  "completion": "2028–2029",
+  "densityScore": 30,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "Contract Signing"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Structure Tops Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "Closing"
+    }
+  ],
+  "description": "Two 62-story, 750-foot elliptical towers on 4.7 oceanfront acres in Sunny Isles Beach. Arquitectonica's skyline-defining form, Anastassiadis interiors, and St. Regis butler service, sabrage, and afternoon tea woven into permanent residence. South Tower foundation complete July 2026; 70,000 sq ft of amenities including the longest infinity-edge pool in South Florida.",
+  "developer": "Fortune International Group & Château Group",
+  "discoveryEngine": {
+    "lifestyle": [
+      "oceanfront",
+      "ultra-luxury",
+      "branded-service",
+      "resort-living",
+      "wellness"
+    ],
+    "investmentProfile": [
+      "under-construction",
+      "nearly-sold-south-tower",
+      "institutional-financing",
+      "trophy-asset"
+    ],
+    "priceCategory": "ultra-luxury",
+    "vibeMatch": [
+      "old-world-glamour",
+      "resort-at-home",
+      "wellness-first",
+      "ocean-obsessed",
+      "brand-prestige"
+    ],
+    "goodFor": [
+      "primary-residence",
+      "second-home",
+      "trophy-asset",
+      "family",
+      "uhnw"
+    ]
+  },
+  "editorialLine": "The full weight of St. Regis, without the hotel.",
+  "floorPlans": [
+    {
+      "type": "2 Bedroom + Den",
+      "beds": 2,
+      "baths": 3,
+      "sqft": "1,848 ft²",
+      "priceLabel": "From $5,100,000",
+      "status": "Available"
+    },
+    {
+      "type": "3 Bedroom + Den",
+      "beds": 3,
+      "baths": 5.5,
+      "sqft": "3,322 ft²",
+      "priceLabel": "From $9,400,000",
+      "status": "Available"
+    },
+    {
+      "type": "4 Bedroom + Den",
+      "beds": 4,
+      "baths": 6.5,
+      "sqft": "3,569 ft²",
+      "priceLabel": "From $9,640,000",
+      "status": "Available"
+    },
+    {
+      "type": "4 Bedroom + Den",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "4,437 ft²",
+      "priceLabel": "From $12,445,000",
+      "status": "Available"
+    },
+    {
+      "type": "4 Bedroom",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "4,407 ft²",
+      "priceLabel": "From $12,560,000",
+      "status": "Available"
+    },
+    {
+      "type": "4 Bedroom + Den",
+      "beds": 4,
+      "baths": 7.5,
+      "sqft": "5,592 ft²",
+      "priceLabel": "From $16,500,000",
+      "status": "Available"
+    },
+    {
+      "type": "5 Bedroom",
+      "beds": 5,
+      "baths": 6.5,
+      "sqft": "6,769 ft²",
+      "priceLabel": "From $19,900,000",
+      "status": "Available"
+    }
+  ],
+  "floorPlansShowAll": true,
+  "generalContractor": "Coastal Construction",
+  "height": "62 Stories / 750 ft (Two Towers)",
+  "heroImgPosition": "center",
+  "hoa": "Inquire",
+  "id": 46,
+  "img": "/sr-residences-sunny-isles/hero-dusk.webp",
+  "imgs": [
+    "/sr-residences-sunny-isles/hero-dusk.webp",
+    "/sr-residences-sunny-isles/hero.webp",
+    "/sr-residences-sunny-isles/living-room-hero.webp",
+    "/sr-residences-sunny-isles/balcony-hero.webp",
+    "/sr-residences-sunny-isles/living-sunrise.webp",
+    "/sr-residences-sunny-isles/living-daytime.webp",
+    "/sr-residences-sunny-isles/living.webp",
+    "/sr-residences-sunny-isles/bedroom.webp",
+    "/sr-residences-sunny-isles/bathroom.webp",
+    "/sr-residences-sunny-isles/kitchen.webp",
+    "/sr-residences-sunny-isles/kitchen2.webp",
+    "/sr-residences-sunny-isles/balcony.webp",
+    "/sr-residences-sunny-isles/balcony2.webp",
+    "/sr-residences-sunny-isles/pool-deck-west.webp",
+    "/sr-residences-sunny-isles/lobby-lounge.webp",
+    "/sr-residences-sunny-isles/club-lounge.webp",
+    "/sr-residences-sunny-isles/club-bar.webp",
+    "/sr-residences-sunny-isles/resident-dining.webp",
+    "/sr-residences-sunny-isles/beach-garden.webp"
+  ],
+  "interiorDesigner": "Anastassiadis",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$532.1M",
+        "label": "Construction financing secured",
+        "note": "Bank OZK and City National Bank of Florida loans across both towers as of Apr 2026"
+      },
+      {
+        "value": "$3B+",
+        "label": "Projected sellout",
+        "note": "Among the highest projected sellouts in Sunny Isles new-development pipeline"
+      },
+      {
+        "value": "320 homes",
+        "label": "Two-tower inventory profile",
+        "note": "170-unit South Tower (nearly sold) + 150-unit North Tower now selling"
+      },
+      {
+        "value": "July 2026",
+        "label": "South Tower foundation complete",
+        "note": "~10,000 CY mat pour; vertical construction expected later in 2026"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "South Tower mat foundation complete July 2026",
+        "body": "A three-day pour (July 24–26) placed about 10,000 cubic yards for a 13-foot mat. Vertical work begins later in 2026; North Tower groundbreaking is early Q4."
+      },
+      {
+        "pill": "Capital stack",
+        "pillColor": "gold",
+        "title": "Institutional financing validates execution confidence",
+        "body": "Two independent lenders underwrote both towers through separate diligence processes, the kind of institutional validation pre-construction buyers rarely have this early."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "435 ft of beach, longest under construction",
+        "body": "Developers cite the longest ocean frontage of any luxury residential project now under construction in South Florida, on a 4.7-acre Collins Avenue assemblage."
+      },
+      {
+        "pill": "Brand + team",
+        "pillColor": "gold",
+        "title": "Fortune, Château, Coastal, and St. Regis",
+        "body": "Fortune and Château delivered Ritz-Carlton Sunny Isles with Coastal Construction. Layering St Regis butler service onto that track record differentiates the product beyond design alone."
+      }
+    ],
+    "thesis": "St. Regis Sunny Isles is the institutionalized oceanfront thesis: scarce beach frontage, a globally recognized service brand, and a financing stack that reduces execution risk. The South Tower mat foundation closed in July 2026 with vertical work ahead later this year, while North Tower sales run into an early-Q4 2026 groundbreaking. For buyers targeting long-duration value in Sunny Isles, absorption proof from the South Tower plus amenity depth makes this one of the highest-conviction large-scale positions in the current cycle.",
+    "footnote": "HOA: Inquire · Rental policy: Inquire · South Tower foundation complete July 2026 · Vertical later 2026 · North Tower groundbreaking early Q4 2026 · Delivery: 2028–2029 · 18801 Collins Ave, Sunny Isles Beach"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$532.1M",
+        "label": "Construction financing secured",
+        "note": "Bank OZK and City National Bank of Florida loans across both towers as of Apr 2026"
+      },
+      {
+        "value": "$3B+",
+        "label": "Projected sellout",
+        "note": "Among the highest projected sellouts in Sunny Isles new-development pipeline"
+      },
+      {
+        "value": "320 homes",
+        "label": "Two-tower inventory profile",
+        "note": "170-unit South Tower (nearly sold) + 150-unit North Tower now selling"
+      },
+      {
+        "value": "July 2026",
+        "label": "South Tower foundation complete",
+        "note": "~10,000 CY mat pour; vertical construction expected later in 2026"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "South Tower mat foundation complete July 2026",
+        "body": "A three-day pour (July 24–26) placed about 10,000 cubic yards for a 13-foot mat. Vertical work begins later in 2026; North Tower groundbreaking is early Q4."
+      },
+      {
+        "pill": "Capital stack",
+        "pillColor": "gold",
+        "title": "Institutional financing validates execution confidence",
+        "body": "Two independent lenders underwrote both towers through separate diligence processes, the kind of institutional validation pre-construction buyers rarely have this early."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "435 ft of beach, longest under construction",
+        "body": "Developers cite the longest ocean frontage of any luxury residential project now under construction in South Florida, on a 4.7-acre Collins Avenue assemblage."
+      },
+      {
+        "pill": "Brand + team",
+        "pillColor": "gold",
+        "title": "Fortune, Château, Coastal, and St. Regis",
+        "body": "Fortune and Château delivered Ritz-Carlton Sunny Isles with Coastal Construction. Layering St Regis butler service onto that track record differentiates the product beyond design alone."
+      }
+    ],
+    "thesis": "St. Regis Sunny Isles is the institutionalized oceanfront thesis: scarce beach frontage, a globally recognized service brand, and a financing stack that reduces execution risk. The South Tower mat foundation closed in July 2026 with vertical work ahead later this year, while North Tower sales run into an early-Q4 2026 groundbreaking. For buyers targeting long-duration value in Sunny Isles, absorption proof from the South Tower plus amenity depth makes this one of the highest-conviction large-scale positions in the current cycle.",
+    "footnote": "HOA: Inquire · Rental policy: Inquire · South Tower foundation complete July 2026 · Vertical later 2026 · North Tower groundbreaking early Q4 2026 · Delivery: 2028–2029 · 18801 Collins Ave, Sunny Isles Beach"
+  },
+  "investmentThesis": "<p>The St. Regis Residences Sunny Isles Beach is one of the most capitalized condo projects in Florida history: $532.1 million in construction financing from Bank OZK ($418.3M) and City National Bank of Florida ($113.8M), arranged by Berkadia, with a projected sellout exceeding $3 billion. Fortune International Group (Jade Signature, Ritz-Carlton Sunny Isles) and Château Group (FENDI Château Surfside, Ritz-Carlton Sunny Isles) are among South Florida's most proven ultra-luxury delivery teams, with Coastal Construction as general contractor. In July 2026 the South Tower completed its mat foundation after a three-day continuous pour of about 10,000 cubic yards (July 24–26); vertical construction is expected later this year and the tower remains on schedule for 2028 delivery. The north tower is in active sales, with groundbreaking scheduled for early fourth quarter 2026 and delivery targeted for 2029. At $5.1M+ with pricing from $2,700/SF, the project competes directly against Bentley Residences and Perigon at the top of the Sunny Isles market, with hotel-caliber service infrastructure that pure residential towers cannot replicate. The 4.7-acre oceanfront estate, acquired for $113M in 2014, holds 435 linear feet of beach: the longest ocean frontage of any luxury residential project currently under construction in South Florida.</p>",
+  "isActive": true,
+  "isFeatured": true,
+  "landscapeArchitect": "EDSA",
+  "lat": 25.9519,
+  "lng": -80.1196,
+  "maxBath": 7.5,
+  "maxBed": 5,
+  "maxPrice": 25000000,
+  "maxSqft": 10000,
+  "minBath": 3,
+  "minBed": 2,
+  "minPrice": 5100000,
+  "minSqft": 1848,
+  "name": "St. Regis Residences Sunny Isles Beach",
+  "neighborhood": "Sunny Isles Beach",
+  "parking": "Inquire",
+  "percentSold": 55,
+  "priceFrom": "$5.1M+",
+  "pricePerSqft": 2700,
+  "privacyScore": 88,
+  "rentalPolicy": "Inquire",
+  "residenceContent": "<p class=\"prop-residence-intro\">Two 62-story towers (170 residences in the south and 150 in the north) rise from a 4.7-acre oceanfront estate at 18801 Collins Avenue, commanding 435 linear feet of Sunny Isles Beach. Arquitectonica's signature elliptical form, inspired by the Earth's orbit around the sun, delivers ever-changing curvature that reads distinctly against the open sky from any vantage point. Interiors by São Paulo–based studio Anastassiadis draw from private yacht design: sleek curvilinear forms, couture-grade craftsmanship, floor-to-ceiling glass, and voluminous ceiling heights that frame unobstructed Atlantic, city, and Intracoastal views in every direction.</p><div class=\"residence-highlights\"><div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Views</span><span class=\"residence-highlight-value\">Atlantic, Intracoastal &amp; Skyline</span></div><div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Towers</span><span class=\"residence-highlight-value\">Two 62-Story / 750 ft Elliptical Towers</span></div><div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Site</span><span class=\"residence-highlight-value\">4.7 Acres · 435 ft of Beach</span></div><div class=\"residence-highlight-item\"><span class=\"residence-highlight-label\">Service</span><span class=\"residence-highlight-value\">St. Regis Butler Service</span></div></div><p>Each home delivers expansive layouts in 2- to 5-bedroom configurations, with master suite proportions and curated materials and finishes. The south tower (170 units, launched 2022) is nearly sold out and delivering in 2028. The north tower (150 units) is now selling, with groundbreaking scheduled for early Q4 2026 and delivery targeted for 2029.</p>",
+  "salesTeam": "Fortune International Group",
+  "slug": "st-regis-residences-sunny-isles-beach",
+  "stage": "under_construction",
+  "stageLabel": "South Tower Foundation Complete · Vertical Later 2026",
+  "statusRemark": "South Tower Mat Foundation Complete · July 2026",
+  "tagline": "Two elliptical towers. 435 feet of oceanfront. The full weight of St. Regis service, privately at home.",
+  "units": 320,
+  "unitsLeft": 144,
+  "videoTourId": null,
+  "wellnessScore": 95
+}

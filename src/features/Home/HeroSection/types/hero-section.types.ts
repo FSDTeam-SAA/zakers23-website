@@ -5,4 +5,5 @@ export type HeroSlide = {
   supporting: string;
   credit: string;
   slug?: string;
+  position?: string;
 };

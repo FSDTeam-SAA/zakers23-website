@@ -1,0 +1,253 @@
+{
+  "address": "3501 NE 1st Avenue, Miami, FL 33137",
+  "amenities": [
+    {
+      "icon": "🍽",
+      "label": "Jean-Georges Restaurant",
+      "sub": "Residents-only, Level 8"
+    },
+    {
+      "icon": "🏊",
+      "label": "Rooftop Skydeck Pool",
+      "sub": "Level 49, panoramic"
+    },
+    {
+      "icon": "💆",
+      "label": "Spa & Sauna",
+      "sub": "Steam, infrared, plunge"
+    },
+    {
+      "icon": "🎾",
+      "label": "Squash Court",
+      "sub": "Plus yoga studio"
+    },
+    {
+      "icon": "🎬",
+      "label": "Screening Room",
+      "sub": "Private cinema"
+    },
+    {
+      "icon": "🛍",
+      "label": "abc kitchens",
+      "sub": "Ground-floor JG concept"
+    }
+  ],
+  "amenitiesDescription": "<p>Jean-Georges Miami Tropic Residences delivers 41,000+ SF of indoor-outdoor amenities across six dedicated levels, anchored by a culinary program fully curated by Jean-Georges. Level 8: resort-style pool with private cabanas, kids' pool, lush gardens, outdoor theater, summer kitchen, and a residents-only indoor-outdoor restaurant by Jean-Georges. Level 49 Rooftop Skydeck: second pool with panoramic bay and city views, rooftop bar, private dining room, archival library, and lounge. Level 7 Wellness: indoor-outdoor fitness center, squash court, yoga studio, spa with steam room, infrared sauna, cold plunge, treatment rooms, massage cabanas, healing garden, and juice bar. Level 5 Coworking and Entertainment: business lounge, podcast recording studio, private conference rooms, art gallery, chef's kitchen, residents' lounge, bar lounge, multi-function room, and sculpture garden. Level 2 Lobby: Yabu Pushelberg-designed lobby with tropical garden, 24-hr concierge, 24-hr valet, porte-cochère with dedicated drop-off, Jean-Georges mini-market, and secured package room. Additional in-residence services include specialty catering menus, pantry stocking, and in-residence dining — all curated by Jean-Georges.</p>",
+  "architect": "Arquitectonica",
+  "completion": "2029",
+  "densityScore": 85,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing"
+    }
+  ],
+  "description": "Jean-Georges' first residential project. 48 stories in the Design District with abc kitchens — his exclusive in-residence kitchen concept — in every home, and an abc kitchens Miami restaurant at street level. 329 residences plus 10 penthouses. Delivery 2029.",
+  "developer": "Terra & Lion Development Group",
+  "featureVideo": {
+    "src": "https://frasermiami.s3.amazonaws.com/miamitropic/miami-tropic-film.mp4",
+    "poster": "https://frasermiami.s3.amazonaws.com/miamitropic/miami-tropic-poster.webp",
+    "label": "Jean-Georges Miami Tropic Residences",
+    "tagline": "Culinary program by Jean-Georges, interiors by Yabu Pushelberg, architecture by Arquitectonica — taste is everything.",
+    "uploadDate": "2026-09-03"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "1 Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 1,
+      "baths": 1,
+      "sqft": "852 – 1,001 SF Interior",
+      "status": "Inquire"
+    },
+    {
+      "type": "2 Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "1,427 – 1,965 SF Interior",
+      "status": "Inquire"
+    },
+    {
+      "type": "3 Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,285 – 2,990 SF Interior",
+      "status": "Inquire"
+    },
+    {
+      "type": "4 Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "3,712 – 4,073 SF Interior",
+      "status": "Inquire"
+    }
+  ],
+  "height": "48 Stories",
+  "heroImgPosition": "center",
+  "hoa": "$1.10 / sq ft",
+  "id": 24,
+  "img": "https://frasermiami.s3.amazonaws.com/miamitropic/exterior.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/miamitropic/facade-hero2.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/exterior.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/tower-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/pool-level.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/living.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/dining.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/balcony-hummingbird.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/balcony.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/wynwood-views.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/spa.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/spa2.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/yoga-room.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/gym-cardio.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/jungle.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/street-level.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/facade.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/tower.webp",
+    "https://frasermiami.s3.amazonaws.com/miamitropic/facade-hero.webp"
+  ],
+  "inquiryButtonLabel": "Request Full Fact Sheet & Inventory",
+  "inquirySubject": "Inquiry: Jean-Georges Miami Tropic - Fact Sheet Request",
+  "interiorDesigner": "Yabu Pushelberg",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Design District & Edgewater luxury pre-construction cycle comps."
+      },
+      {
+        "value": "$1,800+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. luxury urban core averages; represents exceptional relative value for a Michelin-branded tower."
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Culinary-branded residences carry similar premiums to hotel brands (Knight Frank)"
+      },
+      {
+        "value": "30-day min",
+        "label": "Rental flexibility",
+        "note": "Owner-friendly rental policy supports flexible lifestyle and long-term wealth preservation strategies in Miami's most fashionable cultural corridor."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Culinary brand",
+        "pillColor": "gold",
+        "title": "Jean-Georges Vongerichten — Michelin-starred anchor",
+        "body": "Jean-Georges operates 60+ restaurants globally, including multiple Michelin-starred venues. The culinary brand is the residential amenity — residents have in-tower access to the chef's programming and dining, a model proven to drive both occupancy and resale premiums."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Design District — Miami's Luxury Capital",
+        "body": "3501 NE 1st Avenue places residents at the absolute epicenter of Miami's premier luxury retail, art, and fashion corridor. Surrounded by flagship boutiques like Louis Vuitton, Dior, and Chanel, the immediate neighborhood commands unparalleled global prestige and sustained high-income demand."
+      },
+      {
+        "pill": "Developer + design",
+        "pillColor": "gold",
+        "title": "Terra + Lion Development, Yabu Pushelberg interiors",
+        "body": "Developed by the Terra and Lion Development Group alliance, with interiors by Yabu Pushelberg — institutional-grade execution credentials behind the culinary concept."
+      }
+    ],
+    "thesis": "Jean-Georges Miami Tropic Residences introduces an entirely unique value proposition to the Miami luxury real estate market: a globally revered culinary brand driving the foundational lifestyle of the tower, rather than acting as a standard commercial tenant. Developed by the powerhouse alliance of Terra and Lion Development Group, and paired with sophisticated interiors by Yabu Pushelberg, the building carries institutional-grade execution credentials. In an urban core segment where brand differentiation heavily dictates future liquidation velocity, this culinary pedigree creates a highly durable moat. Positioned at the gates of the high-barrier-to-entry Design District, the $1.1M+ entry point represents a remarkably sharp tactical entry into Miami's most culturally significant neighborhood.",
+    "footnote": "HOA: $1.10/sq ft · Rental policy: Min 3-month · Delivery: 2029 · GC: Certified / Approved Schedule"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Design District & Edgewater luxury pre-construction cycle comps."
+      },
+      {
+        "value": "$1,800+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. luxury urban core averages; represents exceptional relative value for a Michelin-branded tower."
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Culinary-branded residences carry similar premiums to hotel brands (Knight Frank)"
+      },
+      {
+        "value": "30-day min",
+        "label": "Rental flexibility",
+        "note": "Owner-friendly rental policy supports flexible lifestyle and long-term wealth preservation strategies in Miami's most fashionable cultural corridor."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Culinary brand",
+        "pillColor": "gold",
+        "title": "Jean-Georges Vongerichten — Michelin-starred anchor",
+        "body": "Jean-Georges operates 60+ restaurants globally, including multiple Michelin-starred venues. The culinary brand is the residential amenity — residents have in-tower access to the chef's programming and dining, a model proven to drive both occupancy and resale premiums."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Design District — Miami's Luxury Capital",
+        "body": "3501 NE 1st Avenue places residents at the absolute epicenter of Miami's premier luxury retail, art, and fashion corridor. Surrounded by flagship boutiques like Louis Vuitton, Dior, and Chanel, the immediate neighborhood commands unparalleled global prestige and sustained high-income demand."
+      },
+      {
+        "pill": "Developer + design",
+        "pillColor": "gold",
+        "title": "Terra + Lion Development, Yabu Pushelberg interiors",
+        "body": "Developed by the Terra and Lion Development Group alliance, with interiors by Yabu Pushelberg — institutional-grade execution credentials behind the culinary concept."
+      }
+    ],
+    "thesis": "Jean-Georges Miami Tropic Residences introduces an entirely unique value proposition to the Miami luxury real estate market: a globally revered culinary brand driving the foundational lifestyle of the tower, rather than acting as a standard commercial tenant. Developed by the powerhouse alliance of Terra and Lion Development Group, and paired with sophisticated interiors by Yabu Pushelberg, the building carries institutional-grade execution credentials. In an urban core segment where brand differentiation heavily dictates future liquidation velocity, this culinary pedigree creates a highly durable moat. Positioned at the gates of the high-barrier-to-entry Design District, the $1.1M+ entry point represents a remarkably sharp tactical entry into Miami's most culturally significant neighborhood.",
+    "footnote": "HOA: $1.10/sq ft · Rental policy: Min 3-month · Delivery: 2029 · GC: Certified / Approved Schedule"
+  },
+  "investmentThesis": "<p>The first residential venture by Michelin-starred chef Jean-Georges Vongerichten — a chef-led branded residence with the operational logic of a Major Food Group or Cipriani play, but with a Michelin-pedigree culinary identity. The ground-floor abc kitchens Miami restaurant — a fusion of Jean-Georges' acclaimed abcV, abc cocina, and abc kitchen New York concepts, marking the brand's Miami debut — anchors 27,500 SF of activated retail and gives residents direct access to one of the city's most anticipated restaurant openings. The Design District address places the building at the center of Miami's premier luxury retail and cultural corridor, alongside Louis Vuitton, Dior, Chanel, and the Institute of Contemporary Art. Landscape by Miami-based CLAD. 41,000+ SF of amenities across six levels. The $1.1M+ entry point makes this one of the few branded-residence opportunities in Miami at sub-$2M pricing — meaningful for buyers seeking the Jean-Georges name without ultra-luxury acquisition cost. Delivery 2029.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeArchitect": "CLAD",
+  "lat": 25.8102,
+  "lng": -80.1917,
+  "maxBed": 4,
+  "maxPrice": 8000000,
+  "maxSqft": 4000,
+  "minBed": 1,
+  "minPrice": 1100000,
+  "minSqft": 852,
+  "name": "Jean-Georges Miami Tropic Residences",
+  "neighborhood": "Design District",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/jean-georges-miami-tropic-residences.jpg",
+  "priceFrom": "$1.1M+",
+  "pricePerSqft": 1300,
+  "pricePerSqftRange": "$1,300 avg",
+  "privacyScore": 40,
+  "projectedAppreciation": 32,
+  "rentalPolicy": "3-month minimum",
+  "residenceContent": "<p class=\"prop-residence-intro\">A 48-story Design District tower with residences from floors 9 through 47 and 10 penthouses crowning floor 48. Interiors by Yabu Pushelberg bring warm, textured residential quality — custom millwork, natural stone, and soft organic palettes throughout. Every home features abc kitchens, Jean-Georges' custom kitchen concept designed exclusively for this project, with fully integrated Miele appliances, custom cabinetry, and natural stone countertops. Bathrooms include floor-to-ceiling porcelain, rain showerheads, and backlit vanity mirrors. Ceiling heights, terrace orientations, and floor-to-ceiling glass extend the residential character through the upper-floor and penthouse stack. The building holds Florida Green Building Coalition certification.</p>",
+  "salesTeam": "Douglas Elliman Development Marketing",
+  "slug": "jean-georges-miami-tropic-residences",
+  "stage": "preconstruction",
+  "statusRemark": "PRE-CONSTRUCTION · ABC KITCHENS · DELIVERY 2029",
+  "stickyCtaLabel": "Request Fact Sheet",
+  "units": 329,
+  "wellnessScore": 75
+}

@@ -1,0 +1,341 @@
+{
+  "address": "3601 Biscayne Boulevard, Miami, FL 33137",
+  "amenities": [
+    {
+      "icon": "🌿",
+      "label": "Vitality & Longevity Center",
+      "sub": "30,000+ SF on Level 6"
+    },
+    {
+      "icon": "🍽",
+      "label": "Six F&B Concepts",
+      "sub": "Including Michelin-starred dining"
+    },
+    {
+      "icon": "🏖",
+      "label": "Full-Service Beach Club",
+      "sub": "Dedicated transportation"
+    },
+    {
+      "icon": "🚁",
+      "label": "Rooftop Helipad",
+      "sub": "Preferred BLADE charter access"
+    },
+    {
+      "icon": "🛎",
+      "label": "Anantara Hotel Program",
+      "sub": "50 suites · Levels 5 & 6"
+    },
+    {
+      "icon": "🏠",
+      "label": "Dual Residential Lobbies",
+      "sub": "Resort and private arrivals"
+    },
+    {
+      "icon": "✨",
+      "label": "Nam Jai Concierge",
+      "sub": "Exclusive access at contract"
+    },
+    {
+      "icon": "🌊",
+      "label": "Biscayne Bay Views",
+      "sub": "Panoramic bay, ocean, skyline"
+    }
+  ],
+  "architect": "Kohn Pedersen Fox (KPF)",
+  "badge": "FIRST ANANTARA IN THE U.S. · PRE-LAUNCH",
+  "completion": "2030",
+  "densityScore": 66,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "90 days after contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At groundbreaking (Est. Q3 2027)"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At 19th floor pour (Est. Q4 2028)"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At closing (Est. 2030)"
+    }
+  ],
+  "description": "Anantara Residences Miami marks the North American debut of Anantara Hotels & Resorts, the award-winning luxury hospitality brand of Minor Hotels. The 50-story landmark at 3601 Biscayne Boulevard sits where Edgewater, the Design District, Midtown, Wynwood, and Miami Beach converge. One Thousand Group developed the tower in partnership with Minor Hotels, with architecture by Kohn Pedersen Fox and interiors by Patricia Urquiola. The building delivers 200 total residences in two collections, plus 50 hotel suites owned and operated by Anantara for the life of the building.",
+  "developer": "One Thousand Group · Minor Hotels",
+  "discoveryEngine": {
+    "lifestyle": [
+      "wellness",
+      "branded-living",
+      "waterfront",
+      "service-driven"
+    ],
+    "investmentProfile": [
+      "pre-construction",
+      "branded-residence",
+      "long-hold"
+    ],
+    "priceCategory": "luxury",
+    "vibeMatch": [
+      "global-luxury",
+      "wellness-first",
+      "design-forward",
+      "hotel-caliber"
+    ],
+    "goodFor": [
+      "investment",
+      "second-home",
+      "international-buyer",
+      "wellness-buyer"
+    ]
+  },
+  "editorialLine": "Without end. Anantara arrives in America.",
+  "featureVideo": {
+    "src": "/anantara/anantara-cutaways.mp4",
+    "poster": "/images/anantara/hero-day.webp",
+    "label": "Anantara Miami Resort & Residences",
+    "tagline": "North America's first Anantara — a 50-story Biscayne Bay tower where Edgewater, the Design District, and Wynwood converge.",
+    "uploadDate": "2026-09-03"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "Resort 1 Bed, 1 Bath",
+      "beds": 1,
+      "baths": 1,
+      "sqft": "913 - 1,034 SF",
+      "price": 1800000,
+      "status": "Available"
+    },
+    {
+      "type": "Resort 2 Bed, 2.5 Bath",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,580 SF",
+      "price": 2900000,
+      "status": "Available"
+    },
+    {
+      "type": "Private 3 Bed, 3.5 Bath",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,391 - 2,979 SF",
+      "price": 4800000,
+      "status": "Available"
+    },
+    {
+      "type": "Private 4 Bed, 4.5 Bath",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "2,955 - 3,649 SF",
+      "price": 6000000,
+      "status": "Available"
+    },
+    {
+      "type": "Private 5 Bed, 5.5 Bath",
+      "beds": 5,
+      "baths": 5.5,
+      "sqft": "5,346 SF",
+      "price": 13000000,
+      "status": "Available"
+    },
+    {
+      "type": "Penthouse Full Floor",
+      "beds": 6,
+      "baths": 7,
+      "sqft": "10,966 SF",
+      "price": 23900000,
+      "status": "Available"
+    }
+  ],
+  "height": "50 Stories · 650 ft",
+  "hideTeamCredits": false,
+  "hoa": "$2.20 / sq ft",
+  "id": 42,
+  "img": "/images/anantara/hero-day.webp",
+  "imgs": [
+    "/images/anantara/hero-day.webp",
+    "/images/anantara/hero-dusk.webp",
+    "/images/anantara/amenity-deck.webp",
+    "/images/anantara/pool-1.webp",
+    "/images/anantara/pool-2.webp",
+    "/images/anantara/pool-3.webp",
+    "/images/anantara/pool-4.webp",
+    "/images/anantara/pool-1-dusk.webp",
+    "/images/anantara/aerial-day.webp",
+    "/images/anantara/aerial-dusk.webp",
+    "/images/anantara/jewelbox.webp",
+    "/images/anantara/garden-1.webp",
+    "/images/anantara/garden-2.webp",
+    "/images/anantara/garden-3.webp",
+    "/images/anantara/garden-4.webp",
+    "/images/anantara/garden-5.webp",
+    "/images/anantara/entrance.webp",
+    "/images/anantara/porte-cochère-1.webp",
+    "/images/anantara/porte-cochère-2.webp",
+    "/images/anantara/streetscape.webp",
+    "/images/anantara/aerial-helipad-day.webp",
+    "/images/anantara/aerial-helipad-sunset.webp",
+    "/images/anantara/vignette-1.webp",
+    "/images/anantara/vignette-2.webp",
+    "/images/anantara/vignette-3.webp"
+  ],
+  "interiorDesigner": "Studio Patricia Urquiola",
+  "landscapeArchitect": "P Landscape (Bangkok) & EDSA",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "First in North America",
+        "label": "Anantara-branded residences",
+        "note": "North America's debut of Anantara Hotels & Resorts, owned and operated by the brand for the life of the building."
+      },
+      {
+        "value": "200",
+        "label": "Residences + 50 hotel suites",
+        "note": "100 furnished resort residences (floors 11-22) and 100 private residences (floors 23-47), plus 50 Anantara-managed hotel suites."
+      },
+      {
+        "value": "130K+ SF",
+        "label": "Indoor and outdoor amenities",
+        "note": "Includes a 30,000+ SF Vitality and Longevity Center on Level 6, six F&B concepts including a Michelin-starred restaurant, and a full-service beach club with dedicated transportation."
+      },
+      {
+        "value": "$1.6M+",
+        "label": "Private residence entry price",
+        "note": "Private 1BR from $1.6M (913-1,053 SF). Resort 1BR from $1.8M. Private inventory runs to $13M for a 5,346 SF five-bedroom."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Hospitality brand",
+        "pillColor": "gold",
+        "title": "Developed with Minor Hotels, Anantara-operated",
+        "body": "Developed by One Thousand Group in partnership with Minor Hotels. Anantara manages the hotel suites and the residential hospitality program, with Nam Jai Concierge services at contract."
+      },
+      {
+        "pill": "Product mix",
+        "pillColor": "gold",
+        "title": "Two ownership paths — resort and private",
+        "body": "The resort collection is fully furnished with optional hotel rental management; the private collection adds private elevators, a dedicated lobby, and a six-month minimum rental term."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "KPF tower, Patricia Urquiola interiors",
+        "body": "Kohn Pedersen Fox designed the 50-story Biscayne Bay landmark, with Patricia Urquiola leading interiors."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Edgewater, Design District, Midtown, Wynwood",
+        "body": "3601 Biscayne sits at the convergence of five of Miami's strongest submarkets, with seamless access to dining, retail, culture, and Miami Beach."
+      },
+      {
+        "pill": "Infrastructure",
+        "pillColor": "gray",
+        "title": "Rooftop helipad with BLADE charter access",
+        "body": "Preferred helicopter access pairs with in-residence dining, room service, house car service, and dedicated butler service on private residences."
+      }
+    ],
+    "thesis": "Anantara Miami is North America's first Anantara-branded tower: 200 residences split between a furnished resort collection and a private collection, backed by 50 hotel suites and Anantara's full hospitality stack. Entry at $1.6M on private one-bedrooms undercuts typical Edgewater new-development pricing for a globally flagged product with optional resort rental income.",
+    "footnote": "HOA: $2.20/sf · Rental: Optional hotel program on resort residences · 6-month minimum on private residences · Closing: Q4 2030"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "First in North America",
+        "label": "Anantara-branded residences",
+        "note": "North America's debut of Anantara Hotels & Resorts, owned and operated by the brand for the life of the building."
+      },
+      {
+        "value": "200",
+        "label": "Residences + 50 hotel suites",
+        "note": "100 furnished resort residences (floors 11-22) and 100 private residences (floors 23-47), plus 50 Anantara-managed hotel suites."
+      },
+      {
+        "value": "130K+ SF",
+        "label": "Indoor and outdoor amenities",
+        "note": "Includes a 30,000+ SF Vitality and Longevity Center on Level 6, six F&B concepts including a Michelin-starred restaurant, and a full-service beach club with dedicated transportation."
+      },
+      {
+        "value": "$1.6M+",
+        "label": "Private residence entry price",
+        "note": "Private 1BR from $1.6M (913-1,053 SF). Resort 1BR from $1.8M. Private inventory runs to $13M for a 5,346 SF five-bedroom."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Hospitality brand",
+        "pillColor": "gold",
+        "title": "Developed with Minor Hotels, Anantara-operated",
+        "body": "Developed by One Thousand Group in partnership with Minor Hotels. Anantara manages the hotel suites and the residential hospitality program, with Nam Jai Concierge services at contract."
+      },
+      {
+        "pill": "Product mix",
+        "pillColor": "gold",
+        "title": "Two ownership paths — resort and private",
+        "body": "The resort collection is fully furnished with optional hotel rental management; the private collection adds private elevators, a dedicated lobby, and a six-month minimum rental term."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "KPF tower, Patricia Urquiola interiors",
+        "body": "Kohn Pedersen Fox designed the 50-story Biscayne Bay landmark, with Patricia Urquiola leading interiors."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Edgewater, Design District, Midtown, Wynwood",
+        "body": "3601 Biscayne sits at the convergence of five of Miami's strongest submarkets, with seamless access to dining, retail, culture, and Miami Beach."
+      },
+      {
+        "pill": "Infrastructure",
+        "pillColor": "gray",
+        "title": "Rooftop helipad with BLADE charter access",
+        "body": "Preferred helicopter access pairs with in-residence dining, room service, house car service, and dedicated butler service on private residences."
+      }
+    ],
+    "thesis": "Anantara Miami is North America's first Anantara-branded tower: 200 residences split between a furnished resort collection and a private collection, backed by 50 hotel suites and Anantara's full hospitality stack. Entry at $1.6M on private one-bedrooms undercuts typical Edgewater new-development pricing for a globally flagged product with optional resort rental income.",
+    "footnote": "HOA: $2.20/sf · Rental: Optional hotel program on resort residences · 6-month minimum on private residences · Closing: Q4 2030"
+  },
+  "investmentThesis": "<p>North America's first Anantara-branded residences are owned and operated by Anantara for the life of the building, with Nam Jai Concierge services available at contract. Pricing starts at $1.6M for private one-bedrooms (913 to 1,053 SF) and $1.8M for furnished resort one-bedrooms; private inventory runs to $13M for a 5,346 SF five-bedroom. Resort residences suit seasonal and investment-oriented ownership with an optional rental pool; private residences carry a six-month minimum rental term. Maintenance is $2.20 per square foot. Deposit schedule: 10% at contract, 10% at 90 days, 10% at groundbreaking (Q3 2027), 10% at top-off (Q4 2028), and 60% at closing (Q4 2030). Broker compensation: 6% total (2% at 20% deposit, 3% at 30% deposit, 1% at closing).</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.8110101,
+  "lng": -80.1887917,
+  "maxBath": 7,
+  "maxBed": 6,
+  "maxPrice": 23900000,
+  "maxSqft": 10966,
+  "minBath": 1,
+  "minBed": 1,
+  "minPrice": 1800000,
+  "minSqft": 913,
+  "name": "Anantara Miami Resort & Residences",
+  "neighborhood": "Edgewater",
+  "percentSold": null,
+  "priceFrom": "From $1,800,000",
+  "priceFromDisplay": "$1.8M+",
+  "pricePerSqft": null,
+  "privacyScore": 62,
+  "rentalPolicy": "Optional hotel rental program on resort residences · 6-month minimum on private residences",
+  "residenceContent": "<p class=\"prop-residence-intro\">The tower splits into two distinct residential products above the hotel podium. Resort Residences on floors 11 through 22 comprise 100 fully furnished homes by Patricia Urquiola with 10-foot ceilings, a dedicated arrival lobby, and optional participation in Anantara's hotel rental management program. Private Residences on floors 23 through 47 comprise 100 unfurnished homes with 11-foot ceilings, private elevators, a separate lobby and elevator bank, and exclusive access to the seventh-floor private amenity deck in addition to the full hotel program. Both collections share in-residence dining, room service, house car service, and the project's 130,000-square-foot indoor and outdoor amenity stack, including a 30,000-square-foot Vitality and Longevity Center on the sixth floor, six food and beverage concepts with a Michelin-starred anchor, and a full-service beach club with dedicated transportation. A rooftop helipad offers preferred access to BLADE charter services.</p>",
+  "salesTeam": "ONE Sotheby's International Realty (Exclusive)",
+  "shortName": "Anantara Residences Miami",
+  "slug": "anantara-miami-resort-residences",
+  "stage": "preconstruction",
+  "statusRemark": "Public launch later in 2026 · Closing targeted Q4 2030 · Early-access inquiries open.",
+  "stories": 50,
+  "tagline": "North America's first Anantara: a 50-story Biscayne Bay tower pairing fully furnished resort residences with private homes and hotel-managed service.",
+  "units": 200,
+  "unitsLeft": null,
+  "videoTourId": null,
+  "wellnessScore": 97
+}

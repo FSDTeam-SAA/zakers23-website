@@ -1,0 +1,270 @@
+{
+  "address": "1210 Brickell Ave, Miami, FL 33131",
+  "amenities": [
+    {
+      "icon": "🌳",
+      "label": "Bosco Sky Park",
+      "sub": "500 ft above Brickell"
+    },
+    {
+      "icon": "🍽",
+      "label": "Casa Tua Dining",
+      "sub": "Terra, Uva, Fuoco, Vento"
+    },
+    {
+      "icon": "🏊",
+      "label": "9th-Floor Pool",
+      "sub": "Loungers, cabanas, sun shelf"
+    },
+    {
+      "icon": "🌅",
+      "label": "Rooftop Pool & Vento",
+      "sub": "Jacuzzi, lounge, stage"
+    },
+    {
+      "icon": "🏋",
+      "label": "18,000 SF Wellness",
+      "sub": "Spa, vitality pool, studios"
+    },
+    {
+      "icon": "🛎",
+      "label": "24-Hour Concierge",
+      "sub": "Digital concierge"
+    },
+    {
+      "icon": "🚗",
+      "label": "24-Hour Valet Parking",
+      "sub": "Full-service"
+    }
+  ],
+  "amenitiesDescription": "<p>ORA is built around Bosco — a 40-foot sky park soaring 500 feet above Brickell, with walking paths, a meditation and sculpture garden, a recreational lawn, and live programming: film screenings, yoga, pilates, and music.</p><p>The 9th-floor resort pool features loungers, cabanas, and a sun shelf amid lush landscaping. Two full floors are dedicated to fitness and wellness, including an 18,000 SF center, spa, vitality pool, and yoga and pilates studios.</p><p>Four Casa Tua dining concepts anchor the building: Terra (24-hour gourmet market and bakery), Uva (enoteca with 500+ wines and Mediterranean cuisine), Fuoco (wood-burning fire restaurant), and Vento (rooftop lounge with jacuzzi pool, private dining, and entertainment stage). Co-working spaces, a clubroom, 24-hour concierge, and 24-hour valet complete the offering.</p>",
+  "architect": "Arquitectonica",
+  "architectQuote": "Casa Tua transforms spaces with soul. Our job was to give that soul a tower worthy of it.",
+  "architectQuoteBy": "Arquitectonica",
+  "badge": "Pre-Launch",
+  "completion": "2029",
+  "densityScore": 95,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing (2029)"
+    }
+  ],
+  "description": "Casa Tua's first residential tower. 76 stories in Brickell with 540 fully furnished residences by m2atelier — warm, personal, and turnkey from $900K.",
+  "developer": "Fortune International Group",
+  "editorialLine": "The spirit of Casa Tua, elevated.",
+  "featureVideo": {
+    "src": "/ora/ora-casa-tua-restaurant-cinema.mp4",
+    "poster": "/ora/ora-casa-tua-miami-skyline-hero.webp",
+    "label": "The Restaurant-Cinema",
+    "tagline": "A Casa Tua original — intimate dining beneath a living screen.",
+    "uploadDate": "2026-03-13"
+  },
+  "floorPlans": [
+    {
+      "type": "Studio Residence",
+      "addlRooms": "Terrace",
+      "beds": 0,
+      "baths": 1,
+      "sqft": "487–600 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "1-Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 1,
+      "baths": 1,
+      "sqft": "600–1,000 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "2-Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "1,000–1,600 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "3-Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "1,600–2,302 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "4-Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 4,
+      "baths": 4,
+      "sqft": "2,302 sq ft",
+      "status": "Available"
+    }
+  ],
+  "height": "76 Stories (930 ft)",
+  "hoa": "$1.45 / sq ft",
+  "id": 7,
+  "img": "/ora/ora-casa-tua-street-view.webp",
+  "imgs": [
+    "/ora/ora-casa-tua-street-view.webp",
+    "/ora/ora-casa-tua-miami-skyline-hero.webp",
+    "/ora/ora-casa-tua-rooftop-experience.webp",
+    "/ora/ora-casa-tua-9th-floor-pool.webp",
+    "/ora/ora-casa-tua-lobby-arrival.webp",
+    "/ora/ora-casa-tua-model-living-view.webp",
+    "/ora/ora-casa-tua-luxury-kitchen.webp",
+    "/ora/ora-casa-tua-master-suite.webp",
+    "/ora/ora-casa-tua-master-bedroom.webp",
+    "/ora/ora-casa-tua-garden-atrium.webp",
+    "/ora/ora-casa-tua-dining-room.webp",
+    "/ora/ora-casa-tua-uva-wine-bar.webp",
+    "/ora/ora-casa-tua-unit-living-terrace.webp",
+    "/ora/ora-casa-tua-unit-terrace.webp"
+  ],
+  "interiorDesigner": "m2atelier",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+28%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Brickell luxury brand + STR flexibility; Casa Tua's established clientele drives above-market demand"
+      },
+      {
+        "value": "$1,500+",
+        "label": "Avg asking / sq ft",
+        "note": "Brickell luxury entry tier with STR income potential meaningfully above non-STR peers at the same price band"
+      },
+      {
+        "value": "Nightly",
+        "label": "STR permitted — rare in Brickell luxury",
+        "note": "One of very few Brickell towers with hotel-program nightly rental eligibility; most require 6–12 month minimums"
+      },
+      {
+        "value": "540",
+        "label": "Residences — fully furnished at delivery",
+        "note": "Turnkey m2atelier interiors included; no post-closing fit-out required — particularly compelling for international and seasonal buyers"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "STR flexibility",
+        "pillColor": "gold",
+        "title": "Meaningful nightly-yield potential",
+        "body": "ORA's hotel-program structure allows nightly rental participation, making it one of the few investment-grade Brickell condos where owners can pursue hotel-style nightly yield rather than long-lease income."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Casa Tua's first residential tower, two decades of clientele",
+        "body": "Casa Tua built one of Miami's most beloved restaurants and a loyal following at Brickell City Centre. ORA is the brand's residential debut, extending a hospitality identity that operates at the intersection of intimacy and exclusivity."
+      },
+      {
+        "pill": "Amenities",
+        "pillColor": "gold",
+        "title": "Four dining venues, sky park, two pools onsite",
+        "body": "Terra market, Uva wine bar, Fuoco fire restaurant, and Vento rooftop lounge, plus an 18,000 SF wellness center and Bosco sky garden. No Brickell competitor in this price tier offers comparable in-building hospitality depth."
+      },
+      {
+        "pill": "Entry point",
+        "pillColor": "gray",
+        "title": "From $900K, hotel-service Brickell at luxury entry tier",
+        "body": "Studios from approximately $900K. In a Brickell market where branded luxury typically starts at $2M+, ORA delivers hotel-service residential living with nightly rental flexibility at a genuinely accessible entry price."
+      }
+    ],
+    "thesis": "ORA is the yield-and-lifestyle bet on Brickell: Casa Tua's brand credibility, a rare STR-permitted structure, and a 540-residence campus with restaurant, market, and hospitality programming that creates a genuine live-in hotel experience. For investors seeking Brickell exposure with rental income flexibility, the combination of brand, location, and STR eligibility is unique in the market at this price tier.",
+    "footnote": "HOA: ~$1.45/sq ft · Rental policy: Nightly via Casa Tua hotel program · Delivery: 2029"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+28%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Brickell luxury brand + STR flexibility; Casa Tua's established clientele drives above-market demand"
+      },
+      {
+        "value": "$1,500+",
+        "label": "Avg asking / sq ft",
+        "note": "Brickell luxury entry tier with STR income potential meaningfully above non-STR peers at the same price band"
+      },
+      {
+        "value": "Nightly",
+        "label": "STR permitted — rare in Brickell luxury",
+        "note": "One of very few Brickell towers with hotel-program nightly rental eligibility; most require 6–12 month minimums"
+      },
+      {
+        "value": "540",
+        "label": "Residences — fully furnished at delivery",
+        "note": "Turnkey m2atelier interiors included; no post-closing fit-out required — particularly compelling for international and seasonal buyers"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "STR flexibility",
+        "pillColor": "gold",
+        "title": "Meaningful nightly-yield potential",
+        "body": "ORA's hotel-program structure allows nightly rental participation, making it one of the few investment-grade Brickell condos where owners can pursue hotel-style nightly yield rather than long-lease income."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Casa Tua's first residential tower, two decades of clientele",
+        "body": "Casa Tua built one of Miami's most beloved restaurants and a loyal following at Brickell City Centre. ORA is the brand's residential debut, extending a hospitality identity that operates at the intersection of intimacy and exclusivity."
+      },
+      {
+        "pill": "Amenities",
+        "pillColor": "gold",
+        "title": "Four dining venues, sky park, two pools onsite",
+        "body": "Terra market, Uva wine bar, Fuoco fire restaurant, and Vento rooftop lounge, plus an 18,000 SF wellness center and Bosco sky garden. No Brickell competitor in this price tier offers comparable in-building hospitality depth."
+      },
+      {
+        "pill": "Entry point",
+        "pillColor": "gray",
+        "title": "From $900K, hotel-service Brickell at luxury entry tier",
+        "body": "Studios from approximately $900K. In a Brickell market where branded luxury typically starts at $2M+, ORA delivers hotel-service residential living with nightly rental flexibility at a genuinely accessible entry price."
+      }
+    ],
+    "thesis": "ORA is the yield-and-lifestyle bet on Brickell: Casa Tua's brand credibility, a rare STR-permitted structure, and a 540-residence campus with restaurant, market, and hospitality programming that creates a genuine live-in hotel experience. For investors seeking Brickell exposure with rental income flexibility, the combination of brand, location, and STR eligibility is unique in the market at this price tier.",
+    "footnote": "HOA: ~$1.45/sq ft · Rental policy: Nightly via Casa Tua hotel program · Delivery: 2029"
+  },
+  "investmentThesis": "<p>Casa Tua has cultivated an intensely loyal following among ultra-high-net-worth clientele for over two decades — ORA is the brand's first residential tower, a natural extension for an established global buyer base that already knows the brand intimately. Fortune International Group brings proven Brickell execution to the project, with delivery targeted for 2029. Short-term rental eligibility is rare at this address: the vast majority of Brickell luxury towers require minimum 6-to-12-month leases, making ORA one of the very few assets in the corridor with hotel-program nightly yield potential. The fully furnished, turnkey delivery model eliminates post-closing friction and accelerates income-ready occupancy for international and seasonal buyers.</p>",
+  "isActive": true,
+  "lat": 25.7613,
+  "lng": -80.193,
+  "maxBath": 4,
+  "maxBed": 4,
+  "maxPrice": 8000000,
+  "maxSqft": 2302,
+  "minBath": 1,
+  "minBed": 0,
+  "minPrice": 900000,
+  "minSqft": 487,
+  "name": "Ora by Casa Tua",
+  "neighborhood": "Brickell",
+  "parking": "24-hour valet parking services",
+  "percentSold": 50,
+  "priceFrom": "$900K+",
+  "pricePerSqft": 1500,
+  "privacyScore": 30,
+  "projectedAppreciation": 30,
+  "rentalPolicy": "Short-term rental flexible",
+  "residenceContent": "<p class=\"prop-residence-intro\">Arquitectonica's 76-story tower at 1210 Brickell Avenue is designed around the Casa Tua philosophy: warm, layered, and personal rather than minimal or corporate. Every one of the 540 residences arrives fully furnished and turnkey by Italian design house m2atelier, from studio to four-bedroom. Interiors feature 10-foot ceilings, floor-to-ceiling glass, generous terraces, European oak flooring, custom Italian kitchens with integrated Miele appliances, and bathrooms with book-matched stone and rain showers. Arrival is through a canopy of tropical plantings and water features, with a ground-floor restaurant and private club for residents.</p>",
+  "salesTeam": "ONE Sotheby's International Realty",
+  "slug": "ora-by-casa-tua",
+  "stage": "preconstruction",
+  "units": 540,
+  "unitsLeft": 270,
+  "wellnessScore": 72
+}

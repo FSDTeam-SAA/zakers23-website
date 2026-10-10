@@ -1,0 +1,285 @@
+{
+  "address": "710 NE 29th Street, Miami, FL 33137",
+  "amenities": [
+    {
+      "icon": "🍽",
+      "label": "Major Food Group",
+      "sub": "Bayfront restaurant, in-home dining"
+    },
+    {
+      "icon": "🏊",
+      "label": "Bayfront Pool",
+      "sub": "Full F&B service"
+    },
+    {
+      "icon": "💆",
+      "label": "Wellness Level",
+      "sub": "Spa, cold plunge, hammam"
+    },
+    {
+      "icon": "🎭",
+      "label": "The Great Room",
+      "sub": "Three-level private club"
+    },
+    {
+      "icon": "🚁",
+      "label": "Helipad",
+      "sub": "FAA approval pending"
+    },
+    {
+      "icon": "🛥",
+      "label": "Private Dock",
+      "sub": "Boat slip, permit pending"
+    }
+  ],
+  "amenitiesDescription": "<p>Villa Miami's lifestyle is built entirely around Major Food Group — the team behind Carbone, ZZ's Club, and Dirty French. Residents access a two-level bayfront Italian-inspired restaurant, a residents-only juice bar and coffee lounge, poolside food and beverage, private chef services, pantry stocking, Sadelle's morning service, and VIP access across all MFG restaurants globally. The Club spans three levels: a Great Room, private dining, library, screening room, game room, kids and family lounge, and dedicated Estate Manager and In-House Curator offices.</p><p>The Wellness Level features an outdoor pool, full spa, herbal steam room, sauna, hot and cold plunge pools, chromotherapy showers, relaxation lounge, and salon. With 20,000 sq ft of amenities and a Baywalk connection, Villa Miami sets a new standard for new condo development in Miami's Edgewater.</p>",
+  "architect": "ODP Architects",
+  "availability": "Active - Pre-Construction (Inquire for specific unit matrix)",
+  "brandedResidence": "Major Food Group",
+  "completion": "Late 2027",
+  "constructionImgs": [
+    "/villamiami/updates/Villa-Miami-03012026-01-scaled.webp",
+    "/villamiami/updates/Villa-Miami-03012026-07-scaled.webp",
+    "/villamiami/updates/Villa-Miami-03012026-08-scaled.webp",
+    "/villamiami/updates/Villa-Miami-03012026-10-scaled.webp",
+    "/villamiami/updates/Villa-Miami-03012026-12-scaled.webp",
+    "/villamiami/updates/Villa-Miami-03012026-14-scaled.webp",
+    "/villamiami/updates/Villa-Miami-03012026-15-scaled.webp",
+    "/villamiami/updates/Villa-Miami-03012026-18-scaled.webp",
+    "/villamiami/updates/Villa-Miami-03012026-25-scaled.webp",
+    "/villamiami/updates/Villa-Miami-03012026-26-scaled.webp"
+  ],
+  "constructionUpdateDate": "March 2026",
+  "densityScore": 55,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "In 90 Days"
+    },
+    {
+      "percentage": 10,
+      "milestone": "In 180 Days"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top-Off"
+    },
+    {
+      "percentage": 50,
+      "milestone": "At Closing"
+    }
+  ],
+  "description": "Full- and half-floor bayfront residences in Edgewater, imagined and serviced entirely by Major Food Group. 70 half- and full-floor homes across 56 stories. Carbone, ZZ's Club, and Dirty French, at home. From $5.75M.",
+  "developer": "Terra + One Thousand Group",
+  "floorPlans": [
+    {
+      "type": "Villa Piano (Full-Floor)",
+      "addlRooms": "360-degree view corridors with sunrise and sunset terraces.",
+      "beds": "4 - 5",
+      "baths": "4.5 - 5.5",
+      "sqft": "6,548 - 6,618 SQ FT",
+      "status": "Inquire"
+    },
+    {
+      "type": "Villa Mezzo (Half-Floor)",
+      "addlRooms": "Linear living zones with structured bedroom configurations promoting cross-ventilation.",
+      "beds": "3 - 4",
+      "baths": "3.5 - 4.5",
+      "sqft": "2,936 - 3,316 SQ FT",
+      "status": "Inquire"
+    }
+  ],
+  "generalContractor": "Moss Construction",
+  "height": "56 Stories (650 ft)",
+  "heroImgPosition": "center top",
+  "hoa": "Est. $2.10 / sq ft",
+  "id": 22,
+  "img": "https://frasermiami.s3.amazonaws.com/villamiami/hero-villa.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/villamiami/hero-villa.webp",
+    "https://frasermiami.s3.amazonaws.com/villamiami/villa-miami-tower.webp",
+    "https://frasermiami.s3.amazonaws.com/villamiami/villa-miami-arrival.webp",
+    "https://frasermiami.s3.amazonaws.com/villamiami/villa-miami-indoor-outdoor.webp",
+    "https://frasermiami.s3.amazonaws.com/villamiami/villa-miami-living.webp",
+    "https://frasermiami.s3.amazonaws.com/villamiami/villa-miami-dining.webp",
+    "https://frasermiami.s3.amazonaws.com/villamiami/villa-miami-kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/villamiami/villa-miami-kitchen2.webp",
+    "https://frasermiami.s3.amazonaws.com/villamiami/villa-miami-family-room.webp",
+    "https://frasermiami.s3.amazonaws.com/villamiami/villa-miami-master-bath.webp"
+  ],
+  "interiorDesigner": "Vicky Charles",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "70",
+        "label": "Total residences",
+        "note": "Half-floor and full-floor only; 1–2 per floor"
+      },
+      {
+        "value": "$2,054",
+        "label": "Avg PSF (current MLS)",
+        "note": "4 active listings, $5.85M–$10.3M"
+      },
+      {
+        "value": "65%",
+        "label": "Topped off",
+        "note": "37 of 56 floors as of May 2026"
+      },
+      {
+        "value": "Late 2027",
+        "label": "Est. completion",
+        "note": "Closings projected ~18 months out"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Branded",
+        "pillColor": "gold",
+        "title": "MFG's first branded residential tower",
+        "body": "Major Food Group operates the resident dining, a bayfront restaurant, and the Copper Club amenity program. Mario Carbone designed the in-unit kitchens."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gold",
+        "title": "ODP exoskeleton with Vicky Charles interiors",
+        "body": "Copper-toned cast exoskeleton wraps the full height. Charles (AD100) brings the same residential sensibility as her work for the Clooneys and Beckhams."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Half- and full-floor plates only",
+        "body": "Private elevator entry to every home, with full-floor plates running ~6,200 sf and sunrise-to-sunset terraces."
+      },
+      {
+        "pill": "Access",
+        "pillColor": "gray",
+        "title": "Arrive by land, sea, or air",
+        "body": "Private dock with boat slips, porte-cochère, and a rooftop helipad. Crown penthouse listed at $55M."
+      },
+      {
+        "pill": "Construction",
+        "pillColor": "gray",
+        "title": "Vertical progress — glazing underway",
+        "body": "Up from the 28th floor in March 2026, with glazing installation underway and copper cladding still to come."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Bayfront Edgewater, two sides of water",
+        "body": "Premium frontage wrapping two sides of the site. Walking distance to Margaret Pace Park and the Design District."
+      }
+    ],
+    "thesis": "Villa Miami is the highest-conviction branded-residence bet in Edgewater. Major Food Group's first residential tower attaches a globally recognized hospitality brand to a 70-unit boutique floor plate at a moment when Edgewater inventory is still dominated by 300- to 400-unit towers. Construction risk is largely retired at 65% topped off, and MLS resale activity already prints around $2,054 PSF before any units have closed.",
+    "footnote": "HOA: Est. $2.10/sq ft · Construction status and floor count per Florida YIMBY site update, May 12, 2026. Pricing reflects current MLS listings; developer pricing available on request."
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "70",
+        "label": "Total residences",
+        "note": "Half-floor and full-floor only; 1–2 per floor"
+      },
+      {
+        "value": "$2,054",
+        "label": "Avg PSF (current MLS)",
+        "note": "4 active listings, $5.85M–$10.3M"
+      },
+      {
+        "value": "65%",
+        "label": "Topped off",
+        "note": "37 of 56 floors as of May 2026"
+      },
+      {
+        "value": "Late 2027",
+        "label": "Est. completion",
+        "note": "Closings projected ~18 months out"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Branded",
+        "pillColor": "gold",
+        "title": "MFG's first branded residential tower",
+        "body": "Major Food Group operates the resident dining, a bayfront restaurant, and the Copper Club amenity program. Mario Carbone designed the in-unit kitchens."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gold",
+        "title": "ODP exoskeleton with Vicky Charles interiors",
+        "body": "Copper-toned cast exoskeleton wraps the full height. Charles (AD100) brings the same residential sensibility as her work for the Clooneys and Beckhams."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Half- and full-floor plates only",
+        "body": "Private elevator entry to every home, with full-floor plates running ~6,200 sf and sunrise-to-sunset terraces."
+      },
+      {
+        "pill": "Access",
+        "pillColor": "gray",
+        "title": "Arrive by land, sea, or air",
+        "body": "Private dock with boat slips, porte-cochère, and a rooftop helipad. Crown penthouse listed at $55M."
+      },
+      {
+        "pill": "Construction",
+        "pillColor": "gray",
+        "title": "Vertical progress — glazing underway",
+        "body": "Up from the 28th floor in March 2026, with glazing installation underway and copper cladding still to come."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Bayfront Edgewater, two sides of water",
+        "body": "Premium frontage wrapping two sides of the site. Walking distance to Margaret Pace Park and the Design District."
+      }
+    ],
+    "thesis": "Villa Miami is the highest-conviction branded-residence bet in Edgewater. Major Food Group's first residential tower attaches a globally recognized hospitality brand to a 70-unit boutique floor plate at a moment when Edgewater inventory is still dominated by 300- to 400-unit towers. Construction risk is largely retired at 65% topped off, and MLS resale activity already prints around $2,054 PSF before any units have closed.",
+    "footnote": "HOA: Est. $2.10/sq ft · Construction status and floor count per Florida YIMBY site update, May 12, 2026. Pricing reflects current MLS listings; developer pricing available on request."
+  },
+  "investmentThesis": "<p>75% sold. Major Food Group is operationally embedded in the building — this is not a brand licensing deal. Residents receive in-home dining by MFG, pantry stocking, private chef services, Sadelle's morning service, a two-level bayfront Italian restaurant, a residents-only juice bar and coffee lounge, poolside food and beverage, and VIP access across all MFG restaurants globally. The depth of integration is unprecedented in Miami branded residential and creates an ownership experience that competing branded buildings cannot replicate without an analogous F&amp;B partner. Additional features include a rooftop helipad (FAA approval pending), private dock and boat slip (permit pending), 24-hour valet, bank vault storage, and EV charging. A dedicated Estate Manager and In-House Curator round out the service model. Delivery targeted late 2027.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "kitchenDesigner": "Mario Carbone",
+  "landscapeArchitect": "Enea Garden Design (Enzo Enea)",
+  "lat": 25.804,
+  "lng": -80.1865,
+  "maxBed": 5,
+  "maxPrice": 10300000,
+  "maxSqft": 6618,
+  "minBed": 3,
+  "minPrice": 5750000,
+  "minSqft": 2936,
+  "name": "Villa Miami",
+  "neighborhood": "Edgewater",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/villa-miami.jpg",
+  "parking": "Valet + Private Garage (plus complimentary Villa Escalade car service)",
+  "penthousePrice": 55000000,
+  "percentSold": 75,
+  "priceFrom": "$5.75M+",
+  "pricePerSqft": 2054,
+  "pricePerSqftRange": "$1,650 – $2,200",
+  "privacyScore": 60,
+  "projectedAppreciation": 30,
+  "rentalPolicy": "Minimum 6 Months",
+  "residenceContent": "<p class=\"prop-residence-intro\">A 56-story bayfront tower with three residence types: Villa Piano (full-floor, 4–5 bedrooms), Villa Mezzo (half-floor, 3–4 bedrooms), and two-story penthouses with private pools on the upper levels. Every home offers 10-to-11-foot ceilings, floor-to-ceiling windows, and dual sunrise and sunset terraces oriented to Biscayne Bay. Interiors by Vicky Charles feature custom Italian kitchens with Gaggenau and Sub-Zero appliances, wide-plank European oak, natural stone bathrooms, and hand-selected fixtures. Landscape architecture is by Enea Garden Design under Enzo Enea, wrapping the podium and pool deck. The full-floor and half-floor footprints — one to two residences per level, with private elevator entry — read closer to a single-family estate than a typical condominium tower.</p>",
+  "slug": "villa-miami",
+  "stage": "under_construction",
+  "statusRemark": "75% SOLD · VERTICAL CONSTRUCTION UNDERWAY",
+  "units": 70,
+  "unitsLeft": 18,
+  "verified": {
+    "percentSold": {
+      "date": "2026-10-01",
+      "source": "Listing-side agent email, Villa Miami update — weakest tier in the source order; confirm against dated broker collateral"
+    },
+    "unitsLeft": {
+      "date": "2026-10-01",
+      "source": "Derived from percentSold 75% of 70 units, not independently stated"
+    }
+  },
+  "wellnessScore": 85
+}

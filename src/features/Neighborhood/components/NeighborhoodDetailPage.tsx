@@ -423,7 +423,7 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
                 ))}
               </div>
             </div>
-            <Link href="/waterfront">Waterfront Estates</Link>
+            <Link href="/waterfront">Waterfront Homes</Link>
             <Link href="/insights">Insights</Link>
             <a
               href="/#contact"

@@ -1,0 +1,261 @@
+{
+  "address": "3425 Collins Avenue, Miami Beach, FL 33140",
+  "amenities": [
+    {
+      "icon": "🌊",
+      "label": "Private Beach Club",
+      "sub": "Direct oceanfront access"
+    },
+    {
+      "icon": "🏊",
+      "label": "Oceanfront Pool",
+      "sub": "Residents only"
+    },
+    {
+      "icon": "🧘",
+      "label": "Aman Spa",
+      "sub": "Full treatment program"
+    },
+    {
+      "icon": "🍽",
+      "label": "Fine Dining",
+      "sub": "In-tower & Versailles"
+    },
+    {
+      "icon": "🛎",
+      "label": "24-Hour Concierge",
+      "sub": "Aman white-glove service"
+    },
+    {
+      "icon": "🌿",
+      "label": "Yoga Pavilion",
+      "sub": "Oceanfront wellness"
+    }
+  ],
+  "amenitiesDescription": "<p>Aman Residences Miami Beach delivers the brand's full hospitality ecosystem to a sold-out ownership group of just 22 households. The tower features a private oceanfront pool and the renowned Aman Spa, with treatment rooms, wellness programming, and an oceanfront yoga pavilion reserved for residents and their guests. Dining venues serve both the tower and the adjacent Versailles hotel, with priority access to every Aman Miami Beach facility included as standard.</p><p>White-glove service includes 24-hour concierge and valet alongside a dedicated residential management team that operates independently from the hotel to protect resident privacy. Owners may opt into Aman's hotel rental program for short-term income, and receive priority access and preferred status across Aman's global portfolio of more than 35 properties worldwide.</p>",
+  "architect": "Kengo Kuma",
+  "architectQuote": "The building should feel like a breath. Every surface, every threshold, an invitation to slow down, to feel the light move, to hear the ocean without trying.",
+  "architectQuoteBy": "Kengo Kuma",
+  "badge": "Fully sold out",
+  "completion": "2027",
+  "constructionImgs": [
+    {
+      "url": "/aman/updates/2026-08-tower-branding.webp",
+      "date": "August 2026",
+      "isoDate": "2026-08-11",
+      "alt": "Aman Miami Beach construction fence and Suffolk field office on Collins Avenue",
+      "caption": "Aman site fence and the Suffolk field office at street level, the tower's angled terrace edges visible above."
+    },
+    {
+      "url": "/aman/updates/2026-08-tower-palms.webp",
+      "date": "August 2026",
+      "isoDate": "2026-08-11",
+      "alt": "Aman Miami Beach residential tower nearing topping out, two tower cranes working",
+      "caption": "The 18-story Kengo Kuma tower seen across the lawn, both cranes working. Delivery is targeted for 2027."
+    },
+    {
+      "url": "/aman/updates/2026-08-tower-crown.webp",
+      "date": "August 2026",
+      "isoDate": "2026-08-11",
+      "alt": "Wave-profile terrace slabs and top-level formwork on the Aman Miami Beach tower",
+      "caption": "The crown still in formwork, with Kengo Kuma's wave-profile terrace edges legible and blue glazing installed on the floors below."
+    },
+    {
+      "url": "/aman/updates/2026-08-versailles-steel.webp",
+      "date": "August 2026",
+      "isoDate": "2026-08-11",
+      "alt": "Steel exoskeleton bracing the retained facades of the 1940 Versailles Hotel",
+      "caption": "The temporary steel exoskeleton holding the Versailles Hotel's north, west and south facades while the interior is rebuilt inside them."
+    },
+    {
+      "url": "/aman/updates/2026-08-tower-and-versailles.webp",
+      "date": "August 2026",
+      "isoDate": "2026-08-11",
+      "alt": "Aman Miami Beach tower and the steel-braced Versailles Hotel seen together from Collins Avenue",
+      "caption": "The full site from Collins Avenue — the new tower with glazing to roughly the eleventh level, and the Versailles Hotel held in its steel bracing at left."
+    }
+  ],
+  "constructionNote": "Residential tower near topping out. Floor-to-ceiling glass installed on roughly the lower half of the facade. Formwork and safety netting still active at the crown. Versailles Hotel facades held in temporary steel bracing beside the tower. Suffolk on site as general contractor.",
+  "constructionUpdateDate": "August 2026",
+  "densityScore": 10,
+  "depositStructure": [],
+  "description": "All 22 residences are sold. Kengo Kuma's 18-story tower in the Faena District on the oceanfront sand. Aman's legendary service, beside the restored Versailles Hotel. Delivery 2027.",
+  "developer": "OKO Group & Access Industries",
+  "editorialLine": "Fully sold. An iconic Faena District landmark.",
+  "floorPlans": [
+    {
+      "type": "2-Bedroom Ocean Residence",
+      "addlRooms": "Oversized Terrace",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "2,500–3,200 sq ft",
+      "status": "Sold out"
+    },
+    {
+      "type": "3-Bedroom Full-Floor",
+      "addlRooms": "Wraparound Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "3,800–4,500 sq ft",
+      "status": "Sold out"
+    },
+    {
+      "type": "4-Bedroom Sky Residence",
+      "addlRooms": "Private Terrace + Plunge Pool",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "4,800–5,500 sq ft",
+      "status": "Sold out"
+    },
+    {
+      "type": "Duplex Penthouse",
+      "addlRooms": "Private Pool + Full-Floor",
+      "beds": 6,
+      "baths": 6.5,
+      "sqft": "6,000+ sq ft",
+      "status": "Sold out"
+    }
+  ],
+  "height": "18 Stories",
+  "hoa": "$3.20 / sq ft",
+  "id": 32,
+  "img": "https://frasermiami.s3.us-east-2.amazonaws.com/amanmiami/aerial-hero.webp",
+  "imgPositions": {
+    "3": "50% 88%"
+  },
+  "imgPositionsMobile": {
+    "3": "50% 88%"
+  },
+  "imgs": [
+    "https://frasermiami.s3.us-east-2.amazonaws.com/amanmiami/aerial-hero.webp",
+    "/aman/aerial-hero2.webp",
+    "/aman/building-exterior.webp",
+    "/aman/building-beach.webp"
+  ],
+  "interiorDesigner": "Kengo Kuma & Associates / Jean-Michel Gathy",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+40%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Faena District delivery cycles and Aman New York resale precedent"
+      },
+      {
+        "value": "$5,500/sf",
+        "label": "Sell-out avg / sq ft",
+        "note": "Record-setting blended sell-out in 2021, vs. ~$1,400/sf Mid-Beach resale average"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Aman premium over non-branded comparables (Knight Frank 2025), the highest tier of any hotel brand"
+      },
+      {
+        "value": "22",
+        "label": "Total residences, all sold",
+        "note": "Sold out at launch; now a resale-only market."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Lowest density tower on Collins Avenue",
+        "body": "Just 22 homes — fewer than most oceanfront towers have floors. Nothing at this density exists elsewhere on Miami Beach."
+      },
+      {
+        "pill": "Brand equity",
+        "pillColor": "gold",
+        "title": "Only Aman oceanfront residence in the Americas",
+        "body": "Aman New York set resale records in Manhattan. Miami Beach is the brand's first oceanfront U.S. address, drawing a global base of Aman loyalists who follow every new residential launch."
+      },
+      {
+        "pill": "Resale only",
+        "pillColor": "gray",
+        "title": "No developer inventory — entry is the secondary market",
+        "body": "All 22 residences sold before delivery, so the only way into Aman Miami Beach is the secondary market — pricing set by what existing owners will accept, with no competitive new inventory coming to this address."
+      }
+    ],
+    "thesis": "This is a rare combination: a Pritzker-laureate building, an operating Aman hotel next door, and a sell-out that priced the asset at the top of the market before vertical construction even began. OKO's Miami track record, including the record-setting penthouse sales at UNA Residences in Brickell, gives the underwriting real precedent. With no developer inventory left, the only entry is the resale market, and that scarcity is the heart of the case.",
+    "footnote": "HOA: $3.20/sq ft · Rental policy: Hotel program via Aman · Delivery: 2027"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+40%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Faena District delivery cycles and Aman New York resale precedent"
+      },
+      {
+        "value": "$5,500/sf",
+        "label": "Sell-out avg / sq ft",
+        "note": "Record-setting blended sell-out in 2021, vs. ~$1,400/sf Mid-Beach resale average"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Aman premium over non-branded comparables (Knight Frank 2025), the highest tier of any hotel brand"
+      },
+      {
+        "value": "22",
+        "label": "Total residences, all sold",
+        "note": "Sold out at launch; now a resale-only market."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Lowest density tower on Collins Avenue",
+        "body": "Just 22 homes — fewer than most oceanfront towers have floors. Nothing at this density exists elsewhere on Miami Beach."
+      },
+      {
+        "pill": "Brand equity",
+        "pillColor": "gold",
+        "title": "Only Aman oceanfront residence in the Americas",
+        "body": "Aman New York set resale records in Manhattan. Miami Beach is the brand's first oceanfront U.S. address, drawing a global base of Aman loyalists who follow every new residential launch."
+      },
+      {
+        "pill": "Resale only",
+        "pillColor": "gray",
+        "title": "No developer inventory — entry is the secondary market",
+        "body": "All 22 residences sold before delivery, so the only way into Aman Miami Beach is the secondary market — pricing set by what existing owners will accept, with no competitive new inventory coming to this address."
+      }
+    ],
+    "thesis": "This is a rare combination: a Pritzker-laureate building, an operating Aman hotel next door, and a sell-out that priced the asset at the top of the market before vertical construction even began. OKO's Miami track record, including the record-setting penthouse sales at UNA Residences in Brickell, gives the underwriting real precedent. With no developer inventory left, the only entry is the resale market, and that scarcity is the heart of the case.",
+    "footnote": "HOA: $3.20/sq ft · Rental policy: Hotel program via Aman · Delivery: 2027"
+  },
+  "investmentThesis": "<p><strong>All 22 residences are sold.</strong> Aman Miami Beach is the brand's second urban address in the United States after Aman New York, and its first oceanfront residence in the Americas. It is developed by Vladislav Doronin's OKO Group, the team behind Brickell's UNA Residences, in partnership with Aman and Len Blavatnik's Access Industries. The 22 residences presold in 2021 at a blended average near $5,000 per square foot, a Miami Beach record at the time. The adjacent restored Versailles Hotel will host 56 hotel rooms with interiors by Jean-Michel Gathy of Denniston, anchoring hotel-backed services, an optional rental program, and the long-term brand equity of Aman's global portfolio. Suffolk is general contractor. As of August 2026 the residential tower is near topping out with glazing advancing up the lower half, while the 1940 Versailles Hotel stands within the temporary external steel bracing that retains its north, west and south facades — its interior structure was demolished floor by floor and is being rebuilt inside the preserved envelope, over two new basement levels. Residential delivery remains on track for 2027.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.8087025,
+  "lng": -80.1225487,
+  "maxBed": 6,
+  "maxPrice": 80000000,
+  "maxSqft": 6000,
+  "minBed": 2,
+  "minPrice": 15000000,
+  "minSqft": 2500,
+  "name": "Aman Residences Miami Beach",
+  "neighborhood": "Mid-Beach",
+  "percentSold": 100,
+  "priceFrom": "Sold out",
+  "pricePerSqft": 5500,
+  "privacyScore": 98,
+  "projectedAppreciation": 40,
+  "relatedExcludeSlugs": [
+    "st-regis-brickell-residences",
+    "cipriani-residences-brickell"
+  ],
+  "rentalPolicy": "Hotel rental program available through Aman",
+  "residenceContent": "<p class=\"prop-residence-intro\">22 private homes in an 18-story tower designed by Pritzker Prize laureate Kengo Kuma, rising directly on the oceanfront sand at 3425 Collins Avenue. Residences range from expansive two-bedroom simplexes to full-floor homes and a small collection of duplex penthouses, spanning 2,500 to over 6,000 square feet. Every home is oriented toward uninterrupted Atlantic views, with oversized terraces, private elevator access, and Kuma's signature angular yet soft minimalism expressed through undulating forms, tactile Japanese-inspired materials, and a seamless interplay between interior space and the ocean beyond. Full-floor residences and duplex penthouses include private pools. Owners have access to Aman Interiors, a bespoke design service offering signature Aman furnishings to maintain aesthetic unity throughout each home.</p>",
+  "salesTeam": "OKO Group",
+  "shortName": "Aman Residences",
+  "slug": "aman-residences-miami-beach",
+  "soldOut": true,
+  "stage": "under_construction",
+  "stageLabel": "Sold out · Under construction · Delivery 2027",
+  "units": 22,
+  "unitsLeft": 0,
+  "wellnessScore": 95
+}

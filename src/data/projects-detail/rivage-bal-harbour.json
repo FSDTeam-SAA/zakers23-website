@@ -1,0 +1,430 @@
+{
+  "address": "10245 Collins Ave, Bal Harbour, FL 33154",
+  "amenities": [
+    {
+      "icon": "🏖",
+      "label": "Private Beach Club",
+      "sub": "200 ft shoreline"
+    },
+    {
+      "icon": "🏊",
+      "label": "Sunrise & Sunset Pools",
+      "sub": "Dual pool concept"
+    },
+    {
+      "icon": "💆",
+      "label": "Rivage Spa",
+      "sub": "Hammam, plunge, treatments"
+    },
+    {
+      "icon": "🚗",
+      "label": "Private Two-Car Garage",
+      "sub": "Every residence"
+    },
+    {
+      "icon": "🎾",
+      "label": "Padel & Pickleball",
+      "sub": "Courtside"
+    },
+    {
+      "icon": "🛎",
+      "label": "Full Concierge",
+      "sub": "24/7 residential services"
+    }
+  ],
+  "amenitiesDescription": "<p>Rivage Bal Harbour delivers 25,000 SF of resort amenities anchored by a fully serviced private beach club with 200 linear feet of oceanfront and a curated selection of water sports. Two pools frame the tower — the Sunrise Pool with direct Atlantic views and oceanside fitness facilities, and the Sunset Pool on the western edge, a tropical refuge with bar and adjacent pickleball and padel courts.</p><p>The Rivage Spa offers sauna, hammam, hot and cold plunge pools, and private treatment rooms, while the fitness pavilion with high-impact training room and yoga studio overlooks the ocean. Social spaces include a signature oceanfront dining room, breakfast bar, cocktail lounge, media room, library, wine vault, Club Room with billiards, private screening room, and both a virtual golf simulator and a virtual reality game simulator.</p><p>Resident services are handled by a dedicated butler and estate manager providing personal chef, housekeeping, medical concierge, laundry, shopping, and in-residence dining from the on-site kitchen. A 24-hour security and valet team, house car, mailroom with secure package technology, and on-site general manager complete the offering.</p>",
+  "architect": "SOM",
+  "completion": "2027",
+  "densityScore": 20,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "90 Days After Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing"
+    }
+  ],
+  "description": "The last beachfront development on Bal Harbour's barrier island. 56 residences by SOM with Rottet Studio interiors. 200 linear feet of private shoreline. Private two-car garage per residence. From $8M to the $75M Crown Jewel Penthouse.",
+  "developer": "Related Group, Two Roads Development & Rockpoint",
+  "dossierImageIndices": {
+    "story": 11,
+    "features": 5
+  },
+  "featureVideo": {
+    "src": "/rivage/rivage-bal-harbour-video-v2.mp4",
+    "poster": "/rivage/rivage-video-poster.webp",
+    "label": "Rivage Bal Harbour",
+    "tagline": "200 feet of private Bal Harbour beach, SOM architecture, and Rottet Studio interiors — an oceanfront estate reimagined in the sky.",
+    "uploadDate": "2026-08-25",
+    "duration": "PT1M32S"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlanPdf": "https://frasermiami.s3.amazonaws.com/rivage/Rivage-Bal-Harbour-Fact-Sheet-and-Floor-Plans.pdf",
+  "floorPlans": [
+    {
+      "type": "Residence C",
+      "floors": "Floor 2",
+      "beds": 3,
+      "baths": 3,
+      "interiorSF": 3284,
+      "exteriorSF": 585,
+      "addlRooms": "Private 2-Car Garage",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence C",
+      "floors": "Floors 3–17",
+      "beds": 3,
+      "baths": 3,
+      "interiorSF": 3297,
+      "exteriorSF": 585,
+      "addlRooms": "Private 2-Car Garage",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence B",
+      "floors": "Floor 2",
+      "beds": 4,
+      "baths": 5,
+      "interiorSF": 4215,
+      "exteriorSF": 388,
+      "addlRooms": "Den / Service + Private 2-Car Garage",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence B",
+      "floors": "Floors 3–17",
+      "beds": 4,
+      "baths": 5,
+      "interiorSF": 4358,
+      "exteriorSF": 388,
+      "addlRooms": "Den / Service + Private 2-Car Garage",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence A",
+      "floors": "Floor 2",
+      "beds": 4,
+      "baths": 5,
+      "interiorSF": 4784,
+      "exteriorSF": 388,
+      "addlRooms": "Den / Service + Private 2-Car Garage",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence A",
+      "floors": "Floors 3–17",
+      "beds": 4,
+      "baths": 5,
+      "interiorSF": 4810,
+      "exteriorSF": 388,
+      "addlRooms": "Den / Service + Private 2-Car Garage",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence B",
+      "floors": "Floors 18–21",
+      "beds": 5,
+      "baths": 6,
+      "interiorSF": 5810,
+      "exteriorSF": 485,
+      "addlRooms": "Office / Bedroom + Family Room",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence A",
+      "floors": "Floors 18–21",
+      "beds": 5,
+      "baths": 6,
+      "interiorSF": 6655,
+      "exteriorSF": 876,
+      "addlRooms": "Office / Bedroom + Family Room",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence B+C Combined",
+      "floors": "Floors 3–17",
+      "beds": 6,
+      "baths": 7,
+      "interiorSF": 7655,
+      "exteriorSF": 973,
+      "addlRooms": "Service Quarters",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence A+C Combined",
+      "floors": "Floors 3–17",
+      "beds": 6,
+      "baths": 7,
+      "interiorSF": 8107,
+      "exteriorSF": 973,
+      "addlRooms": "Service Quarters",
+      "status": "Inquire"
+    },
+    {
+      "type": "Penthouse",
+      "floors": "Floor 22",
+      "beds": 5,
+      "baths": 7,
+      "interiorSF": 8239,
+      "exteriorSF": 776,
+      "addlRooms": "Private Elevator + Sky Room",
+      "status": "Inquire"
+    },
+    {
+      "type": "Penthouse",
+      "floors": "Floors 22–24",
+      "beds": 6,
+      "baths": 9,
+      "interiorSF": 10029,
+      "exteriorSF": 6101,
+      "addlRooms": "Sky Room, Pool + Outdoor Kitchen",
+      "status": "Inquire"
+    },
+    {
+      "type": "Ocean Penthouse — Crown Jewel",
+      "floors": "Floors 23–25",
+      "beds": 5,
+      "baths": 6,
+      "interiorSF": 12603,
+      "exteriorSF": 6425,
+      "addlRooms": "Longevity Suite, Pool + Sky Room",
+      "priceLabel": "$75M",
+      "status": "Available"
+    }
+  ],
+  "height": "25 Stories (275 ft)",
+  "hoa": "$2.10/sf",
+  "id": 13,
+  "img": "https://frasermiami.s3.amazonaws.com/rivage/beachhero.webp",
+  "imgPositions": {
+    "3": "center 88%"
+  },
+  "imgPositionsMobile": {
+    "3": "center 92%"
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/rivage/beachhero.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/beachaerial.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/portecochere.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/entrance.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/privategarage.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/amenities.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/artgallery.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/livingroom.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/residencec.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/phcrooftop.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/cocktail.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/gym.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/yogastudio.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/spahammam.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/spaplunge.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/medialibrary.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/screeningroom.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/golfsim.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/childrensroom.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/pickleball.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/poolbeach.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/sunsetpool.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/oceandining.webp",
+    "https://frasermiami.s3.amazonaws.com/rivage/hummingbird.webp"
+  ],
+  "interiorDesigner": "Rottet Studio",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$75M",
+        "label": "Final penthouse",
+        "note": "Crown Jewel Penthouse, released July 2026"
+      },
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on the Bal Harbour luxury comp trajectory"
+      },
+      {
+        "value": "$4,500+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. ~$3,500/sqft Bal Harbour luxury resale avg; Rivage positioned at top of market"
+      },
+      {
+        "value": "56",
+        "label": "Total residences",
+        "note": "Extreme density — Bal Harbour's most intimate new tower"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Absorption",
+        "pillColor": "gold",
+        "title": "80% sold as of August 2026",
+        "body": "Sales have reached 80 percent across the 56-residence tower."
+      },
+      {
+        "pill": "Record pricing",
+        "pillColor": "gold",
+        "title": "Final penthouse released at $75M",
+        "body": "Two of three penthouses are under contract. The last, the $75M Crown Jewel Penthouse, was released in July 2026 with a dedicated longevity suite and more than 10,000 square feet of outdoor space."
+      },
+      {
+        "pill": "Ultra-Boutique Scale",
+        "pillColor": "gold",
+        "title": "Elite Single-Family Alternative",
+        "body": "Grand-scale residences sit on one of the nation's most valuable oceanfront tracts, with average plates exceeding 3,500 square feet — pairing resort-level security and amenities with standalone-estate privacy and layout."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Bal Harbour — highest-priced residential beach in Florida",
+        "body": "Bal Harbour's combination of the Shops, proximity to Surfside, and ultra-low density has consistently produced Florida's top-performing luxury condo resale numbers. Oceana Bal Harbour and the Surf Club Four Seasons established the reference frame; Rivage extends it."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "Related Group — Miami's most prolific luxury developer",
+        "body": "Related Group has delivered over 90,000 homes in South Florida. Their luxury tier — including Hyde Beach and Auberge Beach Residences — has a consistent record of on-time delivery and strong post-delivery appreciation."
+      },
+      {
+        "pill": "Views",
+        "pillColor": "gray",
+        "title": "Unobstructed Atlantic + Intracoastal — dual water exposure",
+        "body": "Rivage's siting provides both oceanfront and Intracoastal views for upper floors. Dual water exposure in Bal Harbour is essentially impossible to replicate — the width of the barrier island limits this to a handful of addresses."
+      }
+    ],
+    "thesis": "Rivage delivers an exceptional long-horizon preservation play: an ultra-low-density boutique tower occupying Bal Harbour's absolute final piece of developable coastline. Backed by the institutional powerhouse partnership of Related Group, Two Roads Development, and Rockpoint, the project carries flawless execution credentials. In a submarket where established legacy resales at Oceana and the Surf Club Four Seasons consistently command historic premiums, entering Rivage at pre-construction pricing offers sophisticated capital an irreplaceable tactical position. Bal Harbour remains the most fundamentally bulletproof luxury micro-market in Florida—characterized not by market corrections, but by perpetual asset compression.",
+    "footnote": "HOA: $2.10/sq ft · Rental policy: Min 90-day · Delivery: 2027"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$75M",
+        "label": "Final penthouse",
+        "note": "Crown Jewel Penthouse, released July 2026"
+      },
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on the Bal Harbour luxury comp trajectory"
+      },
+      {
+        "value": "$4,500+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. ~$3,500/sqft Bal Harbour luxury resale avg; Rivage positioned at top of market"
+      },
+      {
+        "value": "56",
+        "label": "Total residences",
+        "note": "Extreme density — Bal Harbour's most intimate new tower"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Absorption",
+        "pillColor": "gold",
+        "title": "80% sold as of August 2026",
+        "body": "Sales have reached 80 percent across the 56-residence tower."
+      },
+      {
+        "pill": "Record pricing",
+        "pillColor": "gold",
+        "title": "Final penthouse released at $75M",
+        "body": "Two of three penthouses are under contract. The last, the $75M Crown Jewel Penthouse, was released in July 2026 with a dedicated longevity suite and more than 10,000 square feet of outdoor space."
+      },
+      {
+        "pill": "Ultra-Boutique Scale",
+        "pillColor": "gold",
+        "title": "Elite Single-Family Alternative",
+        "body": "Grand-scale residences sit on one of the nation's most valuable oceanfront tracts, with average plates exceeding 3,500 square feet — pairing resort-level security and amenities with standalone-estate privacy and layout."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Bal Harbour — highest-priced residential beach in Florida",
+        "body": "Bal Harbour's combination of the Shops, proximity to Surfside, and ultra-low density has consistently produced Florida's top-performing luxury condo resale numbers. Oceana Bal Harbour and the Surf Club Four Seasons established the reference frame; Rivage extends it."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "Related Group — Miami's most prolific luxury developer",
+        "body": "Related Group has delivered over 90,000 homes in South Florida. Their luxury tier — including Hyde Beach and Auberge Beach Residences — has a consistent record of on-time delivery and strong post-delivery appreciation."
+      },
+      {
+        "pill": "Views",
+        "pillColor": "gray",
+        "title": "Unobstructed Atlantic + Intracoastal — dual water exposure",
+        "body": "Rivage's siting provides both oceanfront and Intracoastal views for upper floors. Dual water exposure in Bal Harbour is essentially impossible to replicate — the width of the barrier island limits this to a handful of addresses."
+      }
+    ],
+    "thesis": "Rivage delivers an exceptional long-horizon preservation play: an ultra-low-density boutique tower occupying Bal Harbour's absolute final piece of developable coastline. Backed by the institutional powerhouse partnership of Related Group, Two Roads Development, and Rockpoint, the project carries flawless execution credentials. In a submarket where established legacy resales at Oceana and the Surf Club Four Seasons consistently command historic premiums, entering Rivage at pre-construction pricing offers sophisticated capital an irreplaceable tactical position. Bal Harbour remains the most fundamentally bulletproof luxury micro-market in Florida—characterized not by market corrections, but by perpetual asset compression.",
+    "footnote": "HOA: $2.10/sq ft · Rental policy: Min 90-day · Delivery: 2027"
+  },
+  "investmentThesis": "<p>80% sold. Rivage occupies scarce Bal Harbour oceanfront, in a village with little remaining beachfront land for new construction. Construction financing is secured, and architectural execution is led by SOM, the firm behind the Burj Khalifa and One World Trade Center, bringing institutional-grade precision to the sand. Enzo Enea's landscape architecture frames the site. Bal Harbour Shops is within walking distance. Two of the building's three penthouses are under contract. The last, released in July 2026 at $75M, is the Crown Jewel Penthouse: five bedrooms across the tower's top floors with a dedicated longevity suite, oceanfront plunge pool, and more than 10,000 square feet of outdoor space.</p>",
+  "isActive": true,
+  "landscapeArchitect": "Enea Garden Design",
+  "lat": 25.8972,
+  "lng": -80.1235,
+  "locationScore": 40,
+  "maxBath": 9,
+  "maxBed": 6,
+  "maxPrice": 75000000,
+  "maxSqft": 12603,
+  "minBath": 3,
+  "minBed": 3,
+  "minPrice": 8000000,
+  "minSqft": 3284,
+  "name": "Rivage Bal Harbour",
+  "neighborhood": "Bal Harbour",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/rivage-bal-harbour.jpg",
+  "parking": "Private enclosed 2-car garage + storage, every residence",
+  "percentSold": 80,
+  "priceFrom": "$8M+",
+  "privacyScore": 95,
+  "projectedAppreciation": 35,
+  "residenceContent": "<p class=\"prop-residence-intro\">Rivage Bal Harbour sits on 200 linear feet of pristine private shoreline across 2.67 acres, with no more than three residences per floor. Each estate features direct private elevator entry, 10-foot ceilings, floor-to-ceiling glass, and expansive terraces up to 12 feet deep with unobstructed panoramas of the Atlantic Ocean, Biscayne Bay, and the Miami skyline. Interiors by Lauren Rottet of Rottet Studio blend warm natural stones, custom millwork, and a refined coastal palette. Professional-grade kitchens are outfitted with Sub-Zero, Wolf, and Cove appliances and custom Italian cabinetry. Every residence includes a private, fully enclosed two-car garage — a structural rarity in oceanfront vertical development.</p>",
+  "secondaryDownloadLabel": "Get the Fact Sheet & Floor Plans",
+  "slug": "rivage-bal-harbour",
+  "stage": "under_construction",
+  "statusRemark": "80% SOLD · $75M CROWN JEWEL PENTHOUSE",
+  "units": 56,
+  "verified": {
+    "priceFrom": {
+      "date": "2026-08-24",
+      "basis": "launch",
+      "source": "Confirmed by Brett — original published entry around $8M"
+    },
+    "minPrice": {
+      "date": "2026-08-24",
+      "basis": "launch",
+      "source": "Confirmed by Brett — original published entry around $8M"
+    },
+    "maxPrice": {
+      "date": "2026-07-31",
+      "source": "PROFILEmiami — Crown Jewel Penthouse released at $75M"
+    },
+    "percentSold": {
+      "date": "2026-08-24",
+      "source": "Confirmed by Brett"
+    },
+    "statusRemark": {
+      "date": "2026-08-24",
+      "source": "Confirmed by Brett — 80% sold; Crown Jewel penthouse released July 2026 (PROFILEmiami)"
+    },
+    "hoa": {
+      "date": "2026-08-24",
+      "source": "Confirmed by Brett; matches the developer Fact Sheet estimate of $2.10/SF"
+    }
+  },
+  "wellnessScore": 85
+}

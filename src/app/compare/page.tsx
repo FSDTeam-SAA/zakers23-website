@@ -159,7 +159,7 @@ export default function ComparePage() {
                 ))}
               </div>
             </div>
-            <Link href="/waterfront">Waterfront Estates</Link>
+            <Link href="/waterfront">Waterfront Homes</Link>
             <Link href="/insights">Insights</Link>
             <Link
               href="/#contact"
@@ -522,7 +522,7 @@ export default function ComparePage() {
             <div className="flex flex-col gap-2">
               <Link href="/map" className="hover:text-white transition-colors">Explore Map</Link>
               <Link href="/neighborhood" className="hover:text-white transition-colors">Neighborhoods</Link>
-              <Link href="/waterfront" className="hover:text-white transition-colors">Waterfront Estates</Link>
+              <Link href="/waterfront" className="hover:text-white transition-colors">Waterfront Homes</Link>
               <Link href="/insights" className="hover:text-white transition-colors">Insights</Link>
             </div>
           </div>

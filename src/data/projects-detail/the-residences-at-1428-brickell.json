@@ -1,0 +1,260 @@
+{
+  "address": "1428 Brickell Ave, Miami, FL 33131",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Rooftop Pool",
+      "sub": "Level 70, 850 ft up"
+    },
+    {
+      "icon": "🍷",
+      "label": "Owners Club",
+      "sub": "Wine lounge, library"
+    },
+    {
+      "icon": "☀",
+      "label": "Solar Powered",
+      "sub": "500+ photovoltaic panels"
+    },
+    {
+      "icon": "💆",
+      "label": "Full Wellness Level",
+      "sub": "Spa, sauna, plunge"
+    },
+    {
+      "icon": "👶",
+      "label": "Children's World",
+      "sub": "Two-story play center"
+    },
+    {
+      "icon": "🔒",
+      "label": "Private Only",
+      "sub": "No hotel, no memberships"
+    }
+  ],
+  "amenitiesDescription": "<p>The Residences at 1428 Brickell delivers over 80,000 SF of amenities dedicated exclusively to its 195 residences: no public access, no outside memberships. The crown of the building is Level 70, an adults-only rooftop pool at 850 feet with a two-story sky atrium lounge, lush planting, and a rooftop bar with poolside service. Level 67 houses The Owners Club: a two-story private club with a wine and spirits lounge with temperature-controlled storage, a private dining room with a limited-edition Vaselli chef's kitchen, and a residents' library lounge. A full wellness level includes multiple pools, a spa, yoga and fitness facilities, and a beauty suite. Level 10 offers Antonio Citterio-designed fully furnished guest suites exclusively for residents' families and guests.</p><p>The travertine lobby, appointed with B&B Italia furnishings and Flexform pieces by Citterio, Azucena chairs by Luigi Caccia Dominioni, and a bespoke sculptural chandelier, sets the tone from arrival. Services include a dedicated Residential Director, 24/7 concierge, valet, and porter.</p>",
+  "architect": "Arquitectonica",
+  "badge": "70%+ Sold · Level 25/70",
+  "completion": "2028",
+  "constructionPct": 36,
+  "constructionUpdateDate": "July 2026",
+  "densityScore": 50,
+  "description": "The world's first high-rise partially powered by solar energy. 70 stories at 1428 Brickell Ave. 195 private residences, LEED-certified. Level 25 as of September 2026, over 70% sold. No hotel, no outside memberships. Delivery 2028.",
+  "developer": "Ytech",
+  "height": "70 Stories (861 ft)",
+  "hoa": "$2–$3+ / sq ft",
+  "id": 18,
+  "img": "https://frasermiami.s3.amazonaws.com/1428brickell/hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/1428brickell/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/entrance.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/porte-cochere.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/rooftop.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/pool2.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/gym.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/spa.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/living.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/living2.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/living-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/great-room.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/dining.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/dining-hummingbird.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/hummingbird.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/hummingbird-ocean-view.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/bedroom2.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/penthouse.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/ph-interior-living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/ph-great-room.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/ph-dining.webp",
+    "https://frasermiami.s3.amazonaws.com/1428brickell/ph-kitchen.webp"
+  ],
+  "inquiryButtonLabel": "Request Full Fact Sheet & Inventory",
+  "inquirySubject": "Inquiry: 1428 Brickell - Fact Sheet Request",
+  "interiorDesigner": "ACPV Architects (Antonio Citterio & Patricia Viel)",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Brickell luxury delivery comps"
+      },
+      {
+        "value": "$2.9M+",
+        "label": "Starting price point",
+        "note": "195 residences from $2.9M; two-story penthouse 11,052 SF with 5 bedrooms"
+      },
+      {
+        "value": "Level 25",
+        "label": "Construction progress (Sep 2026)",
+        "note": "70-story tower; Level 70 rooftop pool at 850 feet; delivery 2028"
+      },
+      {
+        "value": "$565M",
+        "label": "Construction financing",
+        "note": "J.P. Morgan and Sculptor Real Estate package with Ytech equity"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Design pedigree",
+        "pillColor": "gold",
+        "title": "Antonio Citterio, first Miami project",
+        "body": "ACPV designed Bulgari Hotels worldwide, Ermenegildo Zegna HQ, and The Middle House Shanghai. 1428 Brickell is Citterio's first residential project in the Americas, with kitchens, baths, and suites fully designed, not licensed."
+      },
+      {
+        "pill": "Sustainability",
+        "pillColor": "gold",
+        "title": "World's first solar-powered high-rise",
+        "body": "Nearly 500 photovoltaic glass panels on the west facade (about 20,000 SF) are estimated to generate roughly 175,000 kWh per year. LEED-certified."
+      },
+      {
+        "pill": "Momentum",
+        "pillColor": "gold",
+        "title": "Level 25 with more than 70% sold",
+        "body": "Superstructure reached Level 25 in September 2026 with more than 70% of the 195 residences under contract ahead of 2028 delivery."
+      },
+      {
+        "pill": "Privacy",
+        "pillColor": "gold",
+        "title": "No hotel, no outside memberships, residents only",
+        "body": "No hotel, co-working memberships, or public restaurant. More than 80,000 SF of amenities serve 195 residences only, with separated circulation and a Level 67 Owners Club."
+      },
+      {
+        "pill": "Delivery",
+        "pillColor": "gray",
+        "title": "Fully finished: flooring to window treatments included",
+        "body": "Every residence closes finished: Italian travertine flooring, custom closets, lighting, wall detailing, and window treatments. Buyers skip the typical 6 to 12 month post-closing fit-out."
+      }
+    ],
+    "thesis": "1428 Brickell is the conviction play for buyers who believe Brickell's luxury ceiling is still rising. Antonio Citterio's first project in the Americas, institutional construction capital, 70 stories of pure residential (no hotel dilution), and the world's first solar-integrated high-rise facade. At 195 units it threads boutique exclusivity with enough mass for a real building community. Fully finished delivery removes the costly gap between closing and occupancy. Launch pricing from $2.9M keeps early contracts on the right side of Brickell's rising floor.",
+    "footnote": "HOA: Est. $2–$3+/sq ft · Rental policy: 6-month min, 2x/year · Delivery: 2028 · Level 25 / 70%+ sold as of Sep 2026"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Brickell luxury delivery comps"
+      },
+      {
+        "value": "$2.9M+",
+        "label": "Starting price point",
+        "note": "195 residences from $2.9M; two-story penthouse 11,052 SF with 5 bedrooms"
+      },
+      {
+        "value": "Level 25",
+        "label": "Construction progress (Sep 2026)",
+        "note": "70-story tower; Level 70 rooftop pool at 850 feet; delivery 2028"
+      },
+      {
+        "value": "$565M",
+        "label": "Construction financing",
+        "note": "J.P. Morgan and Sculptor Real Estate package with Ytech equity"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Design pedigree",
+        "pillColor": "gold",
+        "title": "Antonio Citterio, first Miami project",
+        "body": "ACPV designed Bulgari Hotels worldwide, Ermenegildo Zegna HQ, and The Middle House Shanghai. 1428 Brickell is Citterio's first residential project in the Americas, with kitchens, baths, and suites fully designed, not licensed."
+      },
+      {
+        "pill": "Sustainability",
+        "pillColor": "gold",
+        "title": "World's first solar-powered high-rise",
+        "body": "Nearly 500 photovoltaic glass panels on the west facade (about 20,000 SF) are estimated to generate roughly 175,000 kWh per year. LEED-certified."
+      },
+      {
+        "pill": "Momentum",
+        "pillColor": "gold",
+        "title": "Level 25 with more than 70% sold",
+        "body": "Superstructure reached Level 25 in September 2026 with more than 70% of the 195 residences under contract ahead of 2028 delivery."
+      },
+      {
+        "pill": "Privacy",
+        "pillColor": "gold",
+        "title": "No hotel, no outside memberships, residents only",
+        "body": "No hotel, co-working memberships, or public restaurant. More than 80,000 SF of amenities serve 195 residences only, with separated circulation and a Level 67 Owners Club."
+      },
+      {
+        "pill": "Delivery",
+        "pillColor": "gray",
+        "title": "Fully finished: flooring to window treatments included",
+        "body": "Every residence closes finished: Italian travertine flooring, custom closets, lighting, wall detailing, and window treatments. Buyers skip the typical 6 to 12 month post-closing fit-out."
+      }
+    ],
+    "thesis": "1428 Brickell is the conviction play for buyers who believe Brickell's luxury ceiling is still rising. Antonio Citterio's first project in the Americas, institutional construction capital, 70 stories of pure residential (no hotel dilution), and the world's first solar-integrated high-rise facade. At 195 units it threads boutique exclusivity with enough mass for a real building community. Fully finished delivery removes the costly gap between closing and occupancy. Launch pricing from $2.9M keeps early contracts on the right side of Brickell's rising floor.",
+    "footnote": "HOA: Est. $2–$3+/sq ft · Rental policy: 6-month min, 2x/year · Delivery: 2028 · Level 25 / 70%+ sold as of Sep 2026"
+  },
+  "investmentThesis": "<p>Backed by a $565 million construction loan from J.P. Morgan and Sculptor Real Estate. The only new Brickell tower that is private-only: no hotel, no outside memberships, no shared amenities with non-residents. ACPV Architects (Antonio Citterio Patricia Viel) designed Bulgari Hotels worldwide; their involvement brings that same standard to 195 private residences. The Solar Backbone is a genuine first-in-class sustainability feature, not a marketing overlay. Superstructure has reached Level 25 with more than 70% of residences sold. Over 80,000 SF of amenities are dedicated exclusively to residents. Delivery targeted 2028.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeArchitect": "ArquitectonicaGEO",
+  "lat": 25.7596,
+  "lng": -80.1927,
+  "maxBed": 5,
+  "maxPrice": 12000000,
+  "maxSqft": 11052,
+  "minBed": 2,
+  "minPrice": 2900000,
+  "minSqft": 1800,
+  "name": "The Residences at 1428 Brickell",
+  "neighborhood": "Brickell",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/the-residences-at-1428-brickell.jpg",
+  "parking": "24/7 valet-serviced, secure, air-conditioned parking; two or more spots per residence; EV charging stations",
+  "percentSold": 70,
+  "priceFrom": "$2.9M+",
+  "privacyScore": 75,
+  "progressVideo": {
+    "vimeoId": "1208893098",
+    "title": "1428 Brickell Reaches Level 17",
+    "caption": "Residential levels climbing through Level 17 on Brickell Avenue (34s)."
+  },
+  "projectedAppreciation": 28,
+  "rentalPolicy": "Max of two times per year with a minimum of six months each",
+  "residenceContent": "<p class=\"prop-residence-intro\">The world's first high-rise residential tower partially powered by solar energy, LEED-certified. The building's sinuous silhouette is defined by a \"Solar Backbone\": nearly 500 photovoltaic-integrated glass panels along the west facade comprising about 20,000 SF of energy-generating surface. Interiors by ACPV Architects Antonio Citterio Patricia Viel (the firm behind Bulgari Hotels worldwide) feature Italian stone flooring, floor-to-ceiling glass, 10-to-11-foot ceilings, custom Boffi kitchens, Gaggenau appliances, and spa-like bathrooms with natural stone. Tower residences run two to four bedrooms from roughly 1,800 to 4,000 SF, all oriented to Biscayne Bay. The crown is a two-story, 11,052 SF penthouse with five bedrooms, seven bathrooms, and expansive bay terraces. No hotel component, no outside memberships, and separated circulation throughout: a private residential address with controlled access at every level.</p>",
+  "salesTeam": "Cervera Real Estate",
+  "slug": "the-residences-at-1428-brickell",
+  "stage": "under_construction",
+  "stageLabel": "Level 25/70",
+  "statusRemark": "LEVEL 25/70 · 70%+ SOLD · SOLAR BACKBONE",
+  "stickyCtaLabel": "Request Fact Sheet",
+  "units": 195,
+  "unitsLeft": 58,
+  "verified": {
+    "completion": {
+      "date": "2025-11-04",
+      "source": "The Real Deal, CoStar and Multi-Housing News — Q4 2028"
+    },
+    "units": {
+      "date": "2025-11-03",
+      "source": "The Real Deal — 195 residences"
+    },
+    "minPrice": {
+      "date": "2022-10-13",
+      "basis": "launch",
+      "source": "Launch collateral entry price, per site pricing convention"
+    },
+    "percentSold": {
+      "date": "2026-09-08",
+      "source": "World Red Eye / 1428 Brickell — more than 70% sold"
+    },
+    "unitsLeft": {
+      "date": "2026-09-08",
+      "source": "Derived from 195 residences at 70%+ sold (World Red Eye, Sep 8 2026); ceiling of remaining inventory"
+    },
+    "stage": {
+      "date": "2026-09-08",
+      "source": "World Red Eye — superstructure reached Level 25"
+    },
+    "statusRemark": {
+      "date": "2026-09-08",
+      "source": "World Red Eye construction milestone coverage"
+    }
+  },
+  "wellnessScore": 95
+}

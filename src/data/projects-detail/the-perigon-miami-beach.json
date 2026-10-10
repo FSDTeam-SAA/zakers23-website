@@ -1,0 +1,317 @@
+{
+  "address": "5333 Collins Ave, Miami Beach, FL 33140",
+  "amenities": [
+    {
+      "icon": "🍽",
+      "label": "Residents Restaurant & Speakeasy",
+      "sub": "By Michelin-starred Chef Shaun Hergatt"
+    },
+    {
+      "icon": "🏊",
+      "label": "Beachside Pool",
+      "sub": "Sunbeds, cabanas, outdoor spa"
+    },
+    {
+      "icon": "🌊",
+      "label": "200 ft Private Shoreline",
+      "sub": "Full beach service"
+    },
+    {
+      "icon": "🧘",
+      "label": "Private Spa & Fitness",
+      "sub": "Ocean views, sauna, treatment rooms"
+    },
+    {
+      "icon": "🍷",
+      "label": "Wine Room & Lounges",
+      "sub": "Conservatory, sunrise lounge, speakeasy"
+    },
+    {
+      "icon": "🚗",
+      "label": "House Car & Valet",
+      "sub": "24-hour security and concierge"
+    }
+  ],
+  "amenitiesDescription": "<p>The Perigon Miami Beach delivers 20,000+ SF of amenities reserved exclusively for owners and their guests — anchored by a residents-only restaurant and speakeasy helmed by Michelin-starred Chef Shaun Hergatt, with in-residence catering and pantry stocking available.</p><p><strong>Outdoor:</strong> beachside pool with sunbeds and cabanas, outdoor spa, intimate gardens and meditation lounge areas overlooking the Atlantic, and direct private access to 200 linear feet of shoreline with full beach service.</p><p><strong>Indoor:</strong> sprawling conservatory with daily breakfast bar, sunrise lounge with catering kitchen, cocktail lounge and speakeasy, bespoke wine room, double-height lobby with open lounge, state-of-the-art fitness center with ocean views, private spa with sauna and treatment rooms, private salon, screening room, billiards room, and children's playroom.</p><p><strong>Services:</strong> residential butler, on-site general manager, dedicated lifestyle concierge, home management (cleaning, maintenance, floral, pantry stocking), house car, 24-hour security and valet.</p>",
+  "architect": "OMA / Rem Koolhaas",
+  "architectQuote": "Each tower rotation is a calculated response to the ocean — to ensure that every resident lives in the view, not beside it.",
+  "architectQuoteBy": "OMA / Rem Koolhaas",
+  "badge": "Topped Off March 2026 · Approaching Sellout",
+  "completion": "Spring 2027",
+  "densityScore": 25,
+  "depositStructure": [
+    {
+      "percentage": 30,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing (Spring 2027)"
+    }
+  ],
+  "description": "The first new oceanfront tower to top out on Miami Beach in this cycle. OMA / Rem Koolhaas design on Millionaires' Row. 73 residences plus 10 guest suites on two ocean-to-bay acres. Delivery Spring 2027.",
+  "developer": "Mast Capital & Starwood Capital Group",
+  "editorialLine": "Koolhaas geometry. Ocean-front permanence.",
+  "featureVideo": {
+    "src": "/perigon/perigon-top-off.mp4",
+    "poster": "/perigon/perigon-top-off-poster.webp",
+    "label": "The Perigon Miami Beach",
+    "tagline": "Topped off March 2026. The first new oceanfront tower of this Miami Beach cycle to reach full height, delivering Spring 2027.",
+    "uploadDate": "2026-03-11",
+    "duration": "PT1M4S",
+    "mobileObjectFit": "contain"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "Residence 606",
+      "addlRooms": "White Oak kitchen",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "3,808 ft²",
+      "exteriorSF": 2240,
+      "priceLabel": "$12,545,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 1202",
+      "addlRooms": "Canaletto Walnut kitchen",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "3,528 ft²",
+      "exteriorSF": 918,
+      "priceLabel": "$13,387,500",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 1702",
+      "addlRooms": "White Oak kitchen",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "3,528 ft²",
+      "exteriorSF": 918,
+      "priceLabel": "$16,206,750",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 1506",
+      "addlRooms": "White Oak kitchen",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "4,784 ft²",
+      "exteriorSF": 2588,
+      "priceLabel": "$20,900,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 1201",
+      "addlRooms": "Canaletto Walnut kitchen",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "5,774 ft²",
+      "exteriorSF": 1772,
+      "priceLabel": "$28,900,000",
+      "status": "Available"
+    },
+    {
+      "type": "Penthouse West",
+      "addlRooms": "White Oak kitchen",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "5,685 ft²",
+      "exteriorSF": 6487,
+      "priceLabel": "$37,000,000",
+      "status": "Available"
+    }
+  ],
+  "floorPlansShowAll": true,
+  "height": "17 Stories",
+  "hoa": "$2.00–$2.35 / sq ft",
+  "id": 10,
+  "img": "/perigon/hero.webp",
+  "imgs": [
+    "/perigon/hero.webp",
+    "/perigon/hero2.webp",
+    "/perigon/hero3.webp",
+    "/perigon/pool-hero.webp",
+    "/perigon/pool.webp",
+    "/perigon/pool2.webp",
+    "/perigon/intracoastal.webp",
+    "/perigon/breezeway.webp",
+    "/perigon/lobby.webp",
+    "/perigon/lounge.webp",
+    "/perigon/loung2.webp",
+    "/perigon/restaurant.webp",
+    "/perigon/gym.webp",
+    "/perigon/spa.webp",
+    "/perigon/balcony.webp",
+    "/perigon/livingroom.webp",
+    "/perigon/livingroom2.webp",
+    "/perigon/kitchen.webp",
+    "/perigon/kitchen2.webp",
+    "/perigon/bedroom.webp",
+    "/perigon/bathroom.webp"
+  ],
+  "interiorDesigner": "Tara Bernerd",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$2,800+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,292/sqft Miami Beach luxury resale avg; Perigon priced as architectural trophy"
+      },
+      {
+        "value": "6 homes",
+        "label": "Residences remaining",
+        "note": "Per developer price list, June 11, 2026 — from $12,545,000 to $37,000,000 (of 73 total residences)"
+      },
+      {
+        "value": "Mar 2026",
+        "label": "Topped off",
+        "note": "First new oceanfront residential tower of the current Miami Beach cycle to top out (Florida YIMBY)"
+      },
+      {
+        "value": "73 homes",
+        "label": "Total residences",
+        "note": "Plus 10 owner guest suites on two ocean-to-bay acres at 5333 Collins"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "OMA / Rem Koolhaas — one of two Miami projects",
+        "body": "Rem Koolhaas and OMA have almost no residential work in Miami — The Perigon is effectively one of two. OMA's New York projects (11 West 57th, 121 East 22nd) set block records on resale. Scarcity of Koolhaas-designed residences globally creates serious collector demand."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "73 residences + 10 guest suites — low density on Collins",
+        "body": "At 73 homes across 17 stories, The Perigon offers roughly four residences per floor. Each home features OMA's signature cascading volume geometry and uncompromised ocean views — a footprint that is impossible to replicate at scale on mid-beach Collins."
+      },
+      {
+        "pill": "Capital",
+        "pillColor": "gold",
+        "title": "$390M construction loan from Mast Capital",
+        "body": "Mast Capital secured a landmark $390M construction loan to deliver the project. As of September 2026 the tower is enclosed and interiors are underway toward Spring 2027 delivery."
+      },
+      {
+        "pill": "Exit market",
+        "pillColor": "gray",
+        "title": "A UHNW-only exit market",
+        "body": "The remaining inventory targets a UHNW buyer universe driven by OMA scarcity, ocean frontage, and trophy architecture rather than local mid-market cycles."
+      }
+    ],
+    "thesis": "The Perigon is the architectural answer to the ultra-luxury buyer who wants something that cannot be replicated by adding more money. Koolhaas's cascading ocean-view geometry, an 83-unit residential canvas including guest suites, and Mast Capital's institutional backing create a building that will be studied as a reference point for Miami Beach's design evolution. With Spring 2027 delivery and major structural work complete, the building is a finishing story — with pricing still at the top of the Miami Beach new-development market.",
+    "footnote": "HOA: $2.00–$2.35/sq ft · Rental policy: 2 rentals/year, no minimum · Delivery: Spring 2027 · Topped off March 2026 · Tower enclosed Sept 2026"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$2,800+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,292/sqft Miami Beach luxury resale avg; Perigon priced as architectural trophy"
+      },
+      {
+        "value": "6 homes",
+        "label": "Residences remaining",
+        "note": "Per developer price list, June 11, 2026 — from $12,545,000 to $37,000,000 (of 73 total residences)"
+      },
+      {
+        "value": "Mar 2026",
+        "label": "Topped off",
+        "note": "First new oceanfront residential tower of the current Miami Beach cycle to top out (Florida YIMBY)"
+      },
+      {
+        "value": "73 homes",
+        "label": "Total residences",
+        "note": "Plus 10 owner guest suites on two ocean-to-bay acres at 5333 Collins"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "OMA / Rem Koolhaas — one of two Miami projects",
+        "body": "Rem Koolhaas and OMA have almost no residential work in Miami — The Perigon is effectively one of two. OMA's New York projects (11 West 57th, 121 East 22nd) set block records on resale. Scarcity of Koolhaas-designed residences globally creates serious collector demand."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "73 residences + 10 guest suites — low density on Collins",
+        "body": "At 73 homes across 17 stories, The Perigon offers roughly four residences per floor. Each home features OMA's signature cascading volume geometry and uncompromised ocean views — a footprint that is impossible to replicate at scale on mid-beach Collins."
+      },
+      {
+        "pill": "Capital",
+        "pillColor": "gold",
+        "title": "$390M construction loan from Mast Capital",
+        "body": "Mast Capital secured a landmark $390M construction loan to deliver the project. As of September 2026 the tower is enclosed and interiors are underway toward Spring 2027 delivery."
+      },
+      {
+        "pill": "Exit market",
+        "pillColor": "gray",
+        "title": "A UHNW-only exit market",
+        "body": "The remaining inventory targets a UHNW buyer universe driven by OMA scarcity, ocean frontage, and trophy architecture rather than local mid-market cycles."
+      }
+    ],
+    "thesis": "The Perigon is the architectural answer to the ultra-luxury buyer who wants something that cannot be replicated by adding more money. Koolhaas's cascading ocean-view geometry, an 83-unit residential canvas including guest suites, and Mast Capital's institutional backing create a building that will be studied as a reference point for Miami Beach's design evolution. With Spring 2027 delivery and major structural work complete, the building is a finishing story — with pricing still at the top of the Miami Beach new-development market.",
+    "footnote": "HOA: $2.00–$2.35/sq ft · Rental policy: 2 rentals/year, no minimum · Delivery: Spring 2027 · Topped off March 2026 · Tower enclosed Sept 2026"
+  },
+  "investmentThesis": "<p>92% sold, approaching sellout. Located on Millionaires' Row at 5333 Collins Avenue, on one of the last remaining ocean-to-bay development sites on Miami Beach. The Koolhaas/OMA pedigree is rare in the Miami market — The Perigon is OMA's first oceanfront residential project in the Americas, and one of only a handful of South Florida towers by a Pritzker Prize–winning firm. The two-acre site with 200 feet of private shoreline creates a land position that cannot be replicated on this stretch of Collins Avenue. Topped out March 2026. As of September 2026, major structural work is complete across the Main Tower, Clubhouse, and Pavilion, the tower is enclosed, and interiors are advancing floor by floor toward Spring 2027 delivery.</p>",
+  "isActive": true,
+  "landscapeArchitect": "Gustafson Porter + Bowman",
+  "lat": 25.832,
+  "lng": -80.1203,
+  "locationScore": 50,
+  "maxBath": 5.5,
+  "maxBed": 4,
+  "maxPrice": 37000000,
+  "maxSqft": 5774,
+  "minBath": 3.5,
+  "minBed": 3,
+  "minPrice": 12545000,
+  "minSqft": 3528,
+  "name": "The Perigon Miami Beach",
+  "neighborhood": "Miami Beach",
+  "percentSold": 92,
+  "priceFrom": "$12.5M+",
+  "pricePerSqft": 2074,
+  "privacyScore": 90,
+  "rentalPolicy": "2 rentals/year, no minimum",
+  "residenceContent": "<p class=\"prop-residence-intro\">The building sits on a two-acre ocean-to-bay site with nearly 200 linear feet of private Atlantic shoreline. OMA's design — the firm's first oceanfront residential project in the Americas — targets LEED Gold certification and uses an angular, faceted glass form to maximize ocean exposure from every residence. Interiors by London-based Tara Bernerd pair natural stone, cerused oak, and textured plaster with floor-to-ceiling windows and deep terraces. Ten owner guest suites are available for visiting family and friends. ODP Architecture &amp; Design serves as architect of record; Gustafson Porter + Bowman (the firm behind the Eiffel Tower gardens) designed the landscape.</p>",
+  "salesTeam": "Douglas Elliman Development Marketing",
+  "slug": "the-perigon-miami-beach",
+  "sqftRange": "3,528 – 5,774",
+  "stage": "topped_off",
+  "stageLabel": "Topped Off — Completing Spring 2027",
+  "units": 73,
+  "unitsLeft": 6,
+  "verified": {
+    "completion": {
+      "date": "2026-09-09",
+      "source": "Developer email, The Perigon Miami Beach Advances Toward Spring 2027 Delivery — structural work complete; Spring 2027 delivery"
+    },
+    "stage": {
+      "date": "2026-09-09",
+      "source": "Developer email, Sept 9 2026 — Main Tower, Clubhouse, and Pavilion structural work complete; tower enclosed"
+    },
+    "percentSold": {
+      "date": "2026-06-11",
+      "source": "Developer price list, June 11 2026 — 6 residences remaining of 73"
+    },
+    "unitsLeft": {
+      "date": "2026-06-11",
+      "source": "Developer price list, June 11 2026 — 6 residences remaining"
+    },
+    "minPrice": {
+      "date": "2024-08-01",
+      "basis": "launch",
+      "source": "Launch entry from ~$12.5M; June 2026 list still opens at $12,545,000"
+    }
+  },
+  "wellnessScore": 80
+}

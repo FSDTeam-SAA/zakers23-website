@@ -1,0 +1,281 @@
+{
+  "address": "400 Biscayne Boulevard, Miami, FL 33132",
+  "amenities": [
+    {
+      "icon": "🔭",
+      "label": "Observation Sky Deck",
+      "sub": "850 ft, public + resident"
+    },
+    {
+      "icon": "🏊",
+      "label": "Sky Pool",
+      "sub": "800+ feet above Miami"
+    },
+    {
+      "icon": "🍸",
+      "label": "Delano Rose Bar",
+      "sub": "Reimagined icon"
+    },
+    {
+      "icon": "💆",
+      "label": "The Source by Delano",
+      "sub": "Full-floor wellness"
+    },
+    {
+      "icon": "🍽",
+      "label": "Cafe Delano",
+      "sub": "All-day restaurant"
+    },
+    {
+      "icon": "🎭",
+      "label": "Members' Club",
+      "sub": "Cultural programming"
+    }
+  ],
+  "amenitiesDescription": "<p>The amenity program is conceived as a vertical resort by Meyer Davis, layered across the tower's full height. At the base, Cafe Delano is an all-day signature restaurant. The resort-level pool deck features a wraparound pool, cabana lounge areas, and a poolside bar overlooking Biscayne Bay. Higher in the tower, the Delano Members' Club offers cultural and social programming exclusive to residents.</p><p>Wellness is anchored by The Source by Delano, a full-floor sanctuary with treatment rooms, sauna, steam rooms, cold plunge, private lockers, a fitness center, and a movement studio. Above 800 feet, the Sky Pool delivers one of the most elevated pool experiences in the Western Hemisphere. At the crown, roughly 850 feet up, Miami's first public observation floor features a cantilevered glass deck and a reimagined Delano Rose Bar. A sky restaurant rounds out the elevated dining program. Core residential services include 24-hour concierge, valet, security, and on-demand housekeeping, pet care, and property maintenance.</p>",
+  "architect": "Carlos Ott / CUBE 3",
+  "completion": "2031",
+  "densityScore": 95,
+  "description": "The first Delano-branded residence, anywhere. PMG's second Miami supertall rises 90 stories at 400 Biscayne Blvd. 421 residences in two ownership collections with a public observation sky deck. From $725,000.",
+  "developer": "PMG & Ennismore",
+  "floorPlans": [
+    {
+      "type": "Suite",
+      "addlRooms": "D Collection",
+      "beds": 0,
+      "baths": 1,
+      "status": "From $725,000"
+    },
+    {
+      "type": "1 Bedroom",
+      "addlRooms": "D Collection",
+      "beds": 1,
+      "baths": 1,
+      "status": "From $950,000"
+    },
+    {
+      "type": "2 Bedroom Lockout",
+      "addlRooms": "D Collection",
+      "beds": 2,
+      "baths": 2,
+      "status": "From $1,358,000"
+    },
+    {
+      "type": "2 Bedroom",
+      "addlRooms": "D Collection",
+      "beds": 2,
+      "baths": 2,
+      "status": "From $1,601,000"
+    },
+    {
+      "type": "1 Bedroom + Den",
+      "addlRooms": "D Collection · Den",
+      "beds": 1,
+      "baths": 1,
+      "status": "From $1,646,000"
+    },
+    {
+      "type": "2 Bedroom + Den",
+      "addlRooms": "D Collection · Den",
+      "beds": 2,
+      "baths": 2,
+      "status": "From $2,838,000"
+    },
+    {
+      "type": "1 Bedroom",
+      "addlRooms": "D Residences",
+      "beds": 1,
+      "baths": 1,
+      "status": "From $1,460,000"
+    },
+    {
+      "type": "2 Bedroom",
+      "addlRooms": "D Residences",
+      "beds": 2,
+      "baths": 2,
+      "status": "From $2,025,000"
+    },
+    {
+      "type": "2 Bedroom + Den",
+      "addlRooms": "D Residences · Den",
+      "beds": 2,
+      "baths": 2.5,
+      "status": "From $3,115,000"
+    },
+    {
+      "type": "3 Bedroom",
+      "addlRooms": "D Residences",
+      "beds": 3,
+      "baths": 2.5,
+      "status": "From $3,685,000"
+    }
+  ],
+  "floorPlansShowAll": true,
+  "height": "90 Stories",
+  "hoa": "$1.85/sf",
+  "id": 20,
+  "img": "https://frasermiami.s3.amazonaws.com/delano/exterior.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/delano/exterior.webp",
+    "https://frasermiami.s3.amazonaws.com/delano/great-room.webp",
+    "https://frasermiami.s3.amazonaws.com/delano/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/delano/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/delano/bath.webp",
+    "https://frasermiami.s3.amazonaws.com/delano/spa.webp",
+    "https://frasermiami.s3.amazonaws.com/delano/observation-deck.webp",
+    "https://frasermiami.s3.amazonaws.com/delano/tower.webp",
+    "https://frasermiami.s3.amazonaws.com/delano/location.webp"
+  ],
+  "inquiryButtonLabel": "Request Full Fact Sheet & Inventory",
+  "inquirySubject": "Inquiry: Delano Residences - Fact Sheet Request",
+  "interiorDesigner": "Meyer Davis",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "PMG's supertall track record (Waldorf Astoria) + Delano brand resurgence"
+      },
+      {
+        "value": "985 ft",
+        "label": "Height: PMG's second Miami supertall",
+        "note": "90 stories, one block from Waldorf Astoria Residences; a permanent Biscayne Boulevard skyline anchor"
+      },
+      {
+        "value": "From $725,000",
+        "label": "Entry price: most accessible Miami supertall",
+        "note": "D Collection suites from $725,000; D Residences three-bedrooms from $3.685M"
+      },
+      {
+        "value": "Dual",
+        "label": "Two collections: hotel program or private residence",
+        "note": "Delano Collection (floors 20 to 47) for hotel-program income; Delano Residences (49 to 75) for private ownership"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand resurgence",
+        "pillColor": "gold",
+        "title": "Delano Miami Beach reopening 2026 at peak brand moment",
+        "body": "The original Delano Miami Beach is reopening in 2026 under Ennismore and Accor. That reopening, paired with this tower launch, is the brand's highest-profile moment in three decades."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "PMG: only developer with two Miami supertalls",
+        "body": "Waldorf Astoria Miami is PMG's first Miami supertall and is nearly sold out next door. Delano is the second, and PMG's third U.S. supertall after 111 West 57th Street."
+      },
+      {
+        "pill": "Flexibility",
+        "pillColor": "gold",
+        "title": "Two collections: short-term yield or long-term residence",
+        "body": "One collection participates in the hotel rental program for short-stay income. The other is traditional luxury living with select deeded office suites."
+      },
+      {
+        "pill": "Observation deck",
+        "pillColor": "gray",
+        "title": "Miami's first public observation floor plus Rose Bar",
+        "body": "A cantilevered glass deck at roughly 850 feet creates permanent foot traffic and brand awareness. The Rose Bar at height becomes a destination that compounds Delano equity."
+      }
+    ],
+    "thesis": "Delano Residences is the PMG formula applied to one of America's most culturally significant hospitality brands. Waldorf Astoria proved PMG can deliver a Miami supertall above pricing expectations. Delano extends that playbook with genuine cultural cachet, a dual-collection structure for yield and end-user buyers, and published pricing from $725,000.",
+    "footnote": "HOA: ~$1.85/sq ft · Rental policy: Hotel program (Collection) / Min 30-day (Residential) · Delivery: 2031 · Pricing from developer Price Range sheet (D Collection suites from $725,000)"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "PMG's supertall track record (Waldorf Astoria) + Delano brand resurgence"
+      },
+      {
+        "value": "985 ft",
+        "label": "Height: PMG's second Miami supertall",
+        "note": "90 stories, one block from Waldorf Astoria Residences; a permanent Biscayne Boulevard skyline anchor"
+      },
+      {
+        "value": "From $725,000",
+        "label": "Entry price: most accessible Miami supertall",
+        "note": "D Collection suites from $725,000; D Residences three-bedrooms from $3.685M"
+      },
+      {
+        "value": "Dual",
+        "label": "Two collections: hotel program or private residence",
+        "note": "Delano Collection (floors 20 to 47) for hotel-program income; Delano Residences (49 to 75) for private ownership"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand resurgence",
+        "pillColor": "gold",
+        "title": "Delano Miami Beach reopening 2026 at peak brand moment",
+        "body": "The original Delano Miami Beach is reopening in 2026 under Ennismore and Accor. That reopening, paired with this tower launch, is the brand's highest-profile moment in three decades."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "PMG: only developer with two Miami supertalls",
+        "body": "Waldorf Astoria Miami is PMG's first Miami supertall and is nearly sold out next door. Delano is the second, and PMG's third U.S. supertall after 111 West 57th Street."
+      },
+      {
+        "pill": "Flexibility",
+        "pillColor": "gold",
+        "title": "Two collections: short-term yield or long-term residence",
+        "body": "One collection participates in the hotel rental program for short-stay income. The other is traditional luxury living with select deeded office suites."
+      },
+      {
+        "pill": "Observation deck",
+        "pillColor": "gray",
+        "title": "Miami's first public observation floor plus Rose Bar",
+        "body": "A cantilevered glass deck at roughly 850 feet creates permanent foot traffic and brand awareness. The Rose Bar at height becomes a destination that compounds Delano equity."
+      }
+    ],
+    "thesis": "Delano Residences is the PMG formula applied to one of America's most culturally significant hospitality brands. Waldorf Astoria proved PMG can deliver a Miami supertall above pricing expectations. Delano extends that playbook with genuine cultural cachet, a dual-collection structure for yield and end-user buyers, and published pricing from $725,000.",
+    "footnote": "HOA: ~$1.85/sq ft · Rental policy: Hotel program (Collection) / Min 30-day (Residential) · Delivery: 2031 · Pricing from developer Price Range sheet (D Collection suites from $725,000)"
+  },
+  "investmentThesis": "<p>PMG's third supertall nationwide and second in Miami, positioned one block north of their nearly sold-out Waldorf Astoria. The dual-collection ownership structure is the key differentiator: Delano Collection units (floors 20 through 47) are eligible for short-term nightly rentals through the hotel operator, generating hotel-style income, a feature available in only a handful of branded Miami towers. Floors 49 through 75 hold a traditional luxury residential address with select deeded office suites. PMG's track record includes Manhattan's 111 West 57th Street and the sold-out E11EVEN Hotel &amp; Residences. The original Delano Miami Beach is reopening in 2026 under Ennismore, extending the brand's global visibility at residential launch. Ownership includes Accor ALL Live Limitless elite VIP status across the global hotel portfolio. Groundbreaking expected summer 2027; delivery targeted for 2031.</p>",
+  "isActive": true,
+  "lat": 25.7775,
+  "lng": -80.1885,
+  "locationScore": 90,
+  "maxBath": 2.5,
+  "maxBed": 3,
+  "maxPrice": 3685000,
+  "maxSqft": 1846,
+  "minBath": 1,
+  "minBed": 0,
+  "minPrice": 725000,
+  "minSqft": 422,
+  "name": "Delano Residences Miami",
+  "neighborhood": "Downtown Miami",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/delano-residences-miami.jpg",
+  "priceFrom": "$725,000+",
+  "pricePerSqft": null,
+  "privacyScore": 35,
+  "projectedAppreciation": 30,
+  "residenceContent": "<p class=\"prop-residence-intro\">The tower is organized into two distinct residential collections. The Delano Collection (floors 20 through 47) comprises 266 suites, one-, and two-bedroom residences, including lockout layouts. The Delano Residences (floors 49 through 75) offer 155 homes designed for long-term living, with select units including deeded, glass-enclosed private office suites. Interiors by Meyer Davis feature custom Italkraft cabinetry, fully integrated Sub-Zero and Wolf appliances, Waterworks bathroom fixtures, contemporary lighting packages, smart home technology, and fully built-out closets. Floor-to-ceiling glass frames panoramic views of Biscayne Bay, Miami Beach, and the Atlantic from every residence.</p>",
+  "slug": "delano-residences-miami",
+  "stage": "preconstruction",
+  "statusRemark": "ACTIVE SALES · 90-STORY SUPERTALL",
+  "stickyCtaLabel": "Request Fact Sheet",
+  "units": 421,
+  "verified": {
+    "priceFrom": {
+      "date": "2026-09-09",
+      "source": "Developer Price Range sheet: D Collection Suites from $725,000"
+    },
+    "minPrice": {
+      "date": "2026-09-09",
+      "source": "Developer Price Range sheet: D Collection Suites from $725,000"
+    },
+    "maxPrice": {
+      "date": "2026-09-09",
+      "source": "Developer Price Range sheet: D Residences 3 Bed from $3,685,000"
+    },
+    "floorPlans": {
+      "date": "2026-09-09",
+      "source": "Developer Price Range sheet (D Collection / D Residences starting prices). SF omitted; sheet publishes type-level starting prices only."
+    }
+  },
+  "wellnessScore": 75
+}

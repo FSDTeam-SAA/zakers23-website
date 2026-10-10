@@ -1,0 +1,386 @@
+{
+  "address": "94 NE 29th Street, Miami, FL 33137",
+  "amenities": [
+    {
+      "icon": "🐆",
+      "label": "Leopard Room Speakeasy",
+      "sub": "Soundproofed · private events"
+    },
+    {
+      "icon": "🏊",
+      "label": "Rooftop Resort Pool",
+      "sub": "City-view pool deck"
+    },
+    {
+      "icon": "🍸",
+      "label": "Rooftop Restaurant & Bar",
+      "sub": "F&B at the crown"
+    },
+    {
+      "icon": "🧊",
+      "label": "RESET Wellness & Longevity",
+      "sub": "Cold plunge · infrared · marble hammam"
+    },
+    {
+      "icon": "💪",
+      "label": "Fitness Center",
+      "sub": "Technogym · Peloton · The Mirror"
+    },
+    {
+      "icon": "🎶",
+      "label": "VINYL Listening Room",
+      "sub": "Billiards · theater · DJ turntables"
+    },
+    {
+      "icon": "🏖",
+      "label": "Beach Club Access",
+      "sub": "South of Fifth · towel & food service"
+    },
+    {
+      "icon": "🏍",
+      "label": "Motorcycle & Bicycle Rentals",
+      "sub": "Shared resident fleet · gated bike room"
+    },
+    {
+      "icon": "💼",
+      "label": "Private Office Suites",
+      "sub": "Work close to home"
+    },
+    {
+      "icon": "🎨",
+      "label": "Art-Filled Lobby",
+      "sub": "Fine art + custom motorcycles"
+    },
+    {
+      "icon": "🐾",
+      "label": "Pet Spa",
+      "sub": "Doggy-Style grooming"
+    },
+    {
+      "icon": "🛎",
+      "label": "Hotel-Style Services",
+      "sub": "24hr valet · EV charging · Rider Link app"
+    }
+  ],
+  "amenitiesDescription": "<p>The Rider programs its amenities around a rock-and-roll, creator-first identity. Arrival is through an art-filled lobby with custom motorcycle displays, vaulted ceilings, and a \"Lightning\" port-cochere sculpture by Van Alpert, with rock photography licensed from the Morrison Hotel Gallery in Los Angeles and Iconic Images Gallery in London running through the building. Recreation centers on a rooftop resort-style pool and rooftop food-and-beverage space, with the ground-floor Leopard Room as a soundproofed speakeasy and lounge owners and tenants can reserve for private events (a garage level above separates it from the residences).</p><p>Wellness lives on the RESET floor, with weights, Technogym and Peloton equipment, The Mirror, a cold plunge garden, infrared saunas, a traditional marble Turkish hammam, and a massage room. The VINYL listening room adds billiards, a theater screen, and DJ turntables, and the building includes private office suites, content-creation corners, a roaming art gallery, a pet spa, valet, electric vehicle charging, a gated bicycle room, and a private garage. Motorcycle and bicycle rentals are available for residents, along with beach club access in the South of Fifth neighborhood of Miami Beach.</p>",
+  "architect": "Deforma Studio",
+  "badge": "TOPPED OFF · 50% SOLD · STR-FRIENDLY",
+  "completion": "H2 2027",
+  "densityScore": 92,
+  "depositStructure": [],
+  "description": "The Rider Residences is a 12-story boutique condominium at 94 NE 29th Street, where Wynwood, Midtown, the Design District, and Edgewater meet. A joint venture between Ciprés and Rilea Group, with architecture by Deforma Studio and interiors by RADYCA, it holds 152 fully furnished homes from studios to penthouses, priced from $550,000 to $2.4 million, 85 yards from the future Wynwood Brightline station. Backed by a $90M Banco Inbursa construction loan (September 2025), the tower topped off in September 2026 and targets second-half 2027 delivery, with 50% of residences sold to buyers across Europe, South America, California, and New York. Deforma Studio's industrial facade pairs with RADYCA interiors finished with Italkraft cabinetry, Bertazzoni appliances, Cosentino Dekton surfaces, and smart-home technology; Restoration Hardware furnishings are available in select penthouse and lanai residences. About 11,000 square feet of ground-floor retail and rooftop food-and-beverage space anchors the program. Amenities include an art-and-motorcycle lobby, rooftop pool, the Leopard Room speakeasy for private events, RESET wellness with cold plunge and infrared saunas, a marble Turkish hammam, motorcycle and bicycle rentals, and beach club access in South of Fifth. Short-term rentals are allowed, with optional management through The Rider Living; buyers can access crypto-backed mortgages through Milo, with closings facilitated by Propy.",
+  "developer": "Ciprés · Rilea Group",
+  "discoveryEngine": {
+    "lifestyle": [
+      "urban",
+      "short-term-rental",
+      "walkable",
+      "transit-adjacent"
+    ],
+    "investmentProfile": [
+      "under-construction",
+      "income-producing",
+      "turnkey",
+      "transit-driven"
+    ],
+    "priceCategory": "entry-luxury",
+    "vibeMatch": [
+      "city-energy",
+      "social",
+      "lifestyle-led",
+      "new-urban-core"
+    ],
+    "goodFor": [
+      "investment",
+      "second-home",
+      "international-buyer",
+      "first-luxury-buyer"
+    ]
+  },
+  "dossierImageIndices": {
+    "amenities": 2
+  },
+  "editorialLine": "Rock and roll comes home to Wynwood. Furnished, rentable, 85 yards from the train.",
+  "floorPlans": [
+    {
+      "type": "Studio",
+      "addlRooms": "Balcony",
+      "beds": 0,
+      "baths": 1,
+      "sqft": "386–662 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "1 Bedroom",
+      "addlRooms": "Balcony",
+      "beds": 1,
+      "baths": 1,
+      "sqft": "706–759 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "1 Bedroom + Den",
+      "addlRooms": "Balcony",
+      "beds": 1,
+      "baths": 1,
+      "sqft": "770–823 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "2 Bedroom",
+      "addlRooms": "Lock-out option",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "900–1,070 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "2 Bedroom + Den",
+      "addlRooms": "Balcony",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "1,021–1,148 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "3 Bedroom",
+      "addlRooms": "Lock-out option",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "1,240–1,612 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "Custom Penthouse",
+      "addlRooms": "Terrace + library + family room · inquire",
+      "beds": 3,
+      "baths": 4,
+      "sqft": "Inquire",
+      "status": "Inquire"
+    }
+  ],
+  "height": "12 Stories",
+  "hoa": null,
+  "id": 52,
+  "img": "https://frasermiami.s3.amazonaws.com/the-rider-residences/building-hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/building-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/building-hero2.webp",
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/kitchen-hummingbird.webp",
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/residents-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/residents-lounge2.webp",
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/gym.webp",
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/wellness-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/the-rider-residences/wellness-terrace2.webp"
+  ],
+  "interiorDesigner": "RADYCA",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "From $550K",
+        "label": "Furnished residences, studio to penthouse",
+        "note": "Fully furnished homes from $550,000 to $2.4 million across 386 to 1,612 square feet, plus penthouses. Many layouts are lock-out plans built for short-term rental."
+      },
+      {
+        "value": "50%",
+        "label": "Sold at structural top-off",
+        "note": "Florida YIMBY (Sept 15, 2026) reported 50% sold to buyers from Europe, South America, California, and New York as the tower topped off."
+      },
+      {
+        "value": "$90M",
+        "label": "Banco Inbursa construction loan",
+        "note": "Mexico's Banco Inbursa closed a $90M construction loan in September 2025. The 152-unit tower topped off in September 2026 and targets H2 2027 delivery."
+      },
+      {
+        "value": "H2 2027",
+        "label": "Anticipated delivery",
+        "note": "Structure complete; facade and interiors underway after the September 2026 top-off, with completion anticipated in the second half of 2027."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Topped off September 2026 on schedule",
+        "body": "Florida YIMBY reported the last slab poured at 94 NE 29th Street, with facade and interiors next. Delivery is anticipated in the second half of 2027."
+      },
+      {
+        "pill": "Pricing & absorption",
+        "pillColor": "gold",
+        "title": "From $550K to $2.4M; 50% sold",
+        "body": "Residences are priced from $550K to $2.4M. The team reported 50% sold at top-off, with demand from Europe, South America, California, and New York."
+      },
+      {
+        "pill": "Income model",
+        "pillColor": "gold",
+        "title": "STR-ready with The Rider Living",
+        "body": "Homes deliver fully furnished with short-term rentals permitted. Optional management runs through The Rider Living; Milo crypto mortgages and Propy closings are offered."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gold",
+        "title": "Deforma Studio shell, RADYCA interiors",
+        "body": "Industrial facade by Deforma Studio with RADYCA interiors, Bertazzoni, Italkraft, and Cosentino Dekton finishes. Select penthouse and lanai homes offer Restoration Hardware furnishings."
+      },
+      {
+        "pill": "Amenities",
+        "pillColor": "gray",
+        "title": "Leopard Room, rooftop pool, and RESET wellness",
+        "body": "The ground-floor Leopard Room is a soundproofed speakeasy for private events. Amenities also include a rooftop pool, cold plunge, infrared saunas, a marble hammam, and South of Fifth beach club access."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Wynwood crossroads, 85 yards from Brightline",
+        "body": "94 NE 29th Street sits where Wynwood, Midtown, Edgewater, and the Design District meet, about 85 yards from the planned Wynwood Brightline station, with roughly 11,000 square feet of retail and F&B."
+      }
+    ],
+    "thesis": "The Rider is an income-first play on Wynwood's transit future. One hundred fifty-two fully furnished, short-term-rental-ready residences priced from $550,000 to $2.4 million sit 85 yards from the planned Wynwood Brightline station. A $90M Banco Inbursa loan closed in September 2025, the tower topped off in September 2026 with 50% sold, and delivery is anticipated in the second half of 2027. Optional management through The Rider Living and crypto-backed purchase paths via Milo lower friction for investor buyers. Risks remain typical of late-stage construction and of a market where short-term-rental rules can change, so underwrite to conservative occupancy and confirm current pricing before contract.",
+    "footnote": "Developer: Ciprés and Rilea Group · General contractor: Beauchamp Construction · Architect: Deforma Studio · Interiors: RADYCA · Address: 94 NE 29th Street, Miami, FL 33137 · Units: 152 · Delivery: H2 2027 (topped off Sept 2026) · Pricing: $550,000 to $2.4M · Financing: $90M Banco Inbursa (Sept 2025) · Retail: ~11,000 sq ft ground-floor and rooftop F&B · Rentals: short-term allowed, optional The Rider Living management · Crypto mortgages via Milo; closings via Propy"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "From $550K",
+        "label": "Furnished residences, studio to penthouse",
+        "note": "Fully furnished homes from $550,000 to $2.4 million across 386 to 1,612 square feet, plus penthouses. Many layouts are lock-out plans built for short-term rental."
+      },
+      {
+        "value": "50%",
+        "label": "Sold at structural top-off",
+        "note": "Florida YIMBY (Sept 15, 2026) reported 50% sold to buyers from Europe, South America, California, and New York as the tower topped off."
+      },
+      {
+        "value": "$90M",
+        "label": "Banco Inbursa construction loan",
+        "note": "Mexico's Banco Inbursa closed a $90M construction loan in September 2025. The 152-unit tower topped off in September 2026 and targets H2 2027 delivery."
+      },
+      {
+        "value": "H2 2027",
+        "label": "Anticipated delivery",
+        "note": "Structure complete; facade and interiors underway after the September 2026 top-off, with completion anticipated in the second half of 2027."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Topped off September 2026 on schedule",
+        "body": "Florida YIMBY reported the last slab poured at 94 NE 29th Street, with facade and interiors next. Delivery is anticipated in the second half of 2027."
+      },
+      {
+        "pill": "Pricing & absorption",
+        "pillColor": "gold",
+        "title": "From $550K to $2.4M; 50% sold",
+        "body": "Residences are priced from $550K to $2.4M. The team reported 50% sold at top-off, with demand from Europe, South America, California, and New York."
+      },
+      {
+        "pill": "Income model",
+        "pillColor": "gold",
+        "title": "STR-ready with The Rider Living",
+        "body": "Homes deliver fully furnished with short-term rentals permitted. Optional management runs through The Rider Living; Milo crypto mortgages and Propy closings are offered."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gold",
+        "title": "Deforma Studio shell, RADYCA interiors",
+        "body": "Industrial facade by Deforma Studio with RADYCA interiors, Bertazzoni, Italkraft, and Cosentino Dekton finishes. Select penthouse and lanai homes offer Restoration Hardware furnishings."
+      },
+      {
+        "pill": "Amenities",
+        "pillColor": "gray",
+        "title": "Leopard Room, rooftop pool, and RESET wellness",
+        "body": "The ground-floor Leopard Room is a soundproofed speakeasy for private events. Amenities also include a rooftop pool, cold plunge, infrared saunas, a marble hammam, and South of Fifth beach club access."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Wynwood crossroads, 85 yards from Brightline",
+        "body": "94 NE 29th Street sits where Wynwood, Midtown, Edgewater, and the Design District meet, about 85 yards from the planned Wynwood Brightline station, with roughly 11,000 square feet of retail and F&B."
+      }
+    ],
+    "thesis": "The Rider is an income-first play on Wynwood's transit future. One hundred fifty-two fully furnished, short-term-rental-ready residences priced from $550,000 to $2.4 million sit 85 yards from the planned Wynwood Brightline station. A $90M Banco Inbursa loan closed in September 2025, the tower topped off in September 2026 with 50% sold, and delivery is anticipated in the second half of 2027. Optional management through The Rider Living and crypto-backed purchase paths via Milo lower friction for investor buyers. Risks remain typical of late-stage construction and of a market where short-term-rental rules can change, so underwrite to conservative occupancy and confirm current pricing before contract.",
+    "footnote": "Developer: Ciprés and Rilea Group · General contractor: Beauchamp Construction · Architect: Deforma Studio · Interiors: RADYCA · Address: 94 NE 29th Street, Miami, FL 33137 · Units: 152 · Delivery: H2 2027 (topped off Sept 2026) · Pricing: $550,000 to $2.4M · Financing: $90M Banco Inbursa (Sept 2025) · Retail: ~11,000 sq ft ground-floor and rooftop F&B · Rentals: short-term allowed, optional The Rider Living management · Crypto mortgages via Milo; closings via Propy"
+  },
+  "investmentThesis": "<p>The Rider is an income-first play on Wynwood's transit future. Fully furnished, short-term-rental-ready residences priced from $550,000 to $2.4 million sit 85 yards from the planned Wynwood Brightline station, in a corridor where homes near existing Miami Brightline stops have been reported to outpace broader-market appreciation since the line opened. A $90M Banco Inbursa construction loan closed in September 2025, and the tower topped off in September 2026 with 50% sold to buyers from Europe, South America, California, and New York. That sequence retires much of the early execution risk: the structure is complete and moving into facade and interiors ahead of second-half 2027 delivery. Optional management through The Rider Living keeps operating friction lower than the market norm for condo-hotel style product.</p><p>Rilea Group brings a four-decade Miami track record, including J.P. Morgan's offices at 1450 Brickell, and is building here with Beauchamp Construction as general contractor. The same team is also starting Mohawk at Wynwood on the same block. Risks remain typical of late-stage construction and of a market where short-term-rental rules can change, so buyers should underwrite to conservative annual occupancy rather than peak-season highs, and confirm current pricing and the rental certificate-of-use process before contract.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.803738,
+  "liveCam": {
+    "provider": "EarthCam",
+    "embedUrl": "https://share.earthcam.net/tJ90CoLmq7TzrY396Yd88HSS_zOBPZJ5oS9DR65zQhE/rider_wynwood/camera_1/view_1",
+    "label": "Live Construction Camera"
+  },
+  "lng": -80.193081,
+  "locationScore": 80,
+  "maxBath": 4,
+  "maxBed": 3,
+  "maxPrice": 2400000,
+  "maxSqft": 1612,
+  "minBath": 1,
+  "minBed": 0,
+  "minPrice": 550000,
+  "minSqft": 386,
+  "name": "The Rider Residences",
+  "neighborhood": "Wynwood",
+  "neighborhoodMap": {
+    "pinUrl": "https://maps.app.goo.gl/oPAuDiATBTkGG7yz9",
+    "caption": "94 NE 29th Street sits where Wynwood, Midtown, the Design District, and Edgewater meet, 85 yards from the planned Wynwood Brightline station.",
+    "alt": "Map showing The Rider Residences at 94 NE 29th Street in Wynwood, Miami"
+  },
+  "percentSold": 50,
+  "priceFrom": "From $550,000",
+  "priceFromDisplay": "$550K+",
+  "pricePerSqft": null,
+  "privacyScore": 28,
+  "rentalPolicy": "Short-term rentals allowed. No minimum lease. Optional management via The Rider Living. Crypto-backed mortgages available through Milo; closings facilitated by Propy.",
+  "residenceContent": "<p class=\"prop-residence-intro\">The Rider holds 152 fully furnished and finished residences across 12 stories, ranging from studios at 386 square feet through one-, two-, and three-bedroom homes up to 1,612 square feet, plus penthouses. Select layouts incorporate dens and additional half bathrooms. Many plans are designed with lock-out studios, so owners can live in part of a residence and rent the rest, or rent the whole home by the day, week, or month. Kitchens are built with Italkraft cabinetry, Bertazzoni appliances, and Cosentino Dekton surfaces, with smart-home technology throughout. Restoration Hardware furnishings are available in select penthouse and lanai residences.</p><p>Every home is delivered turnkey so it can generate income from the first night. The Rider Link app connects owners to home-sharing platforms, schedules property use, and handles maintenance from anywhere, while optional management runs through The Rider Living. Buyers can also access crypto-backed mortgages through Milo, with closings facilitated by Propy.</p>",
+  "salesTeam": "Cervera Real Estate (Exclusive)",
+  "shortName": "The Rider",
+  "slug": "the-rider-residences",
+  "stage": "topped_off",
+  "stageLabel": "Topped off · 50% sold · H2 2027",
+  "statusRemark": "TOPPED OFF · 50% SOLD · H2 2027",
+  "stories": 12,
+  "units": 152,
+  "unitsLeft": null,
+  "verified": {
+    "stage": {
+      "date": "2026-09-15",
+      "source": "Florida YIMBY, The Rider Residences Tops Off At 94 NE 29th Street In Miami (Sept 15, 2026). Structure topped off; sales-gallery celebration Sept 9, 2026."
+    },
+    "completion": {
+      "date": "2026-09-15",
+      "source": "Florida YIMBY top-off coverage (Sept 15, 2026): completion anticipated in the second half of 2027."
+    },
+    "percentSold": {
+      "date": "2026-09-15",
+      "source": "Florida YIMBY top-off coverage (Sept 15, 2026): development team reported sales have reached 50 percent."
+    },
+    "priceFrom": {
+      "date": "2026-09-15",
+      "source": "Florida YIMBY top-off report, Sep 15 2026 (floridayimby.com/2026/09/the-rider-residences-tops-off-at-94-ne-29th-street-in-miami.html); sales launched Mar 2024 from the $600Ks with 511 SF studios; smaller 386 SF homes since added — Brett approved $550K 2026-09-21"
+    },
+    "minPrice": {
+      "date": "2026-09-15",
+      "source": "Florida YIMBY top-off report, Sep 15 2026 (floridayimby.com/2026/09/the-rider-residences-tops-off-at-94-ne-29th-street-in-miami.html); sales launched Mar 2024 from the $600Ks with 511 SF studios; smaller 386 SF homes since added — Brett approved $550K 2026-09-21"
+    },
+    "maxPrice": {
+      "date": "2026-09-15",
+      "source": "Florida YIMBY top-off coverage (Sept 15, 2026): to $2.4 million."
+    },
+    "units": {
+      "date": "2026-09-15",
+      "source": "Florida YIMBY top-off coverage (Sept 15, 2026): 152 residences."
+    },
+    "statusRemark": {
+      "date": "2026-09-15",
+      "source": "Florida YIMBY top-off coverage (Sept 15, 2026)."
+    }
+  },
+  "wellnessScore": 68
+}

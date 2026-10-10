@@ -137,7 +137,7 @@ export default function InquiryModal({ isOpen, context, onClose, onSuccess, requ
               {status === "error" && <p className="consultation-error" role="alert">Something went wrong submitting your inquiry. Please try again.</p>}
             </form>
             <div className="consultation-alternatives">
-              <a className="consultation-whatsapp" href="https://wa.me/17864758134" target="_blank" rel="noopener noreferrer">
+              <a className="consultation-whatsapp" href="https://wa.me/13053435371?text=Hi%20Zachary%2C%20I%27d%20like%20to%20connect%20regarding%20Miami%20luxury%20real%20estate." target="_blank" rel="noopener noreferrer">
                 <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true">
                   <circle cx="12" cy="12" r="12" fill="#13d766" />
                   <path d="M6.4 17.7l.8-2.7a7 7 0 1 1 2.5 2.3l-3.3.4Z" fill="none" stroke="white" strokeWidth="1.35" />
@@ -149,8 +149,7 @@ export default function InquiryModal({ isOpen, context, onClose, onSuccess, requ
             </div>
           </>
         )}
-        <div className="consultation-brands" aria-label="MR Luxury Group · ONE Sotheby's International Realty">
-          <div className="consultation-mr"><span>MR</span><span>Luxury Group</span></div>
+        <div className="consultation-brands" aria-label="ONE Sotheby's International Realty">
           <div className="consultation-sothebys"><span>ONE</span><div>Sotheby&apos;s<small>International Realty</small></div></div>
         </div>
       </div>

@@ -1,0 +1,471 @@
+{
+  "address": "2650 Lincoln Avenue, Miami, FL 33133",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Rooftop Lap Pool",
+      "sub": "Forty feet, heated, with covered cabanas"
+    },
+    {
+      "icon": "🧖",
+      "label": "Spa Level",
+      "sub": "Sauna, steam room and hot and cold plunge tubs"
+    },
+    {
+      "icon": "💪",
+      "label": "Fitness Centre",
+      "sub": "Outdoor yoga and meditation terrace alongside"
+    },
+    {
+      "icon": "⛳",
+      "label": "Golf Simulator",
+      "sub": "Beside the co-working lounge and media area"
+    },
+    {
+      "icon": "🔥",
+      "label": "Summer Kitchens",
+      "sub": "Rooftop grills and long tables for entertaining"
+    },
+    {
+      "icon": "🐕",
+      "label": "Private Dog Park",
+      "sub": "Enclosed, with a dedicated grooming room"
+    }
+  ],
+  "amenitiesDescription": "<p><strong>Rooftop:</strong> A forty-foot heated lap pool with covered cabanas and an observation deck reading across the canopy to Biscayne Bay and the Downtown skyline. Summer kitchens with outdoor grills and long tables sit alongside a lounge seating area for private events, and an outdoor yoga and meditation terrace occupies the quiet end.</p><p><strong>Wellness:</strong> A zen spa-inspired level with sauna, steam room and hot and cold plunge tubs, a powder room with shower and dressing area, and a state-of-the-art fitness centre opening onto planting.</p><p><strong>Residents' lounge:</strong> A co-working lounge and media area on the mezzanine, with a golf simulator and a multi-purpose pool table.</p><p><strong>Pets and services:</strong> An enclosed private dog park and a private grooming room. Building services include a 24/7 front desk with night security, monitoring and surveillance, valet parking, on-site management and maintenance, a dedicated secured parcel room, an enclosed bicycle room, EV-ready parking, an emergency generator, and private storage rooms available for purchase.</p>",
+  "architect": "Paredes Architects (Frank Paredes)",
+  "completion": "Q3 2028",
+  "densityScore": 18,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "Contract Signing"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "5th Floor Concrete Pour"
+    },
+    {
+      "percentage": 60,
+      "milestone": "Closing"
+    }
+  ],
+  "description": "Forty-eight residences at 2650 Lincoln Avenue in Coconut Grove. Eight stories by Paredes Architects with Design Philosophy interiors, a rooftop lap pool and a spa level. From $1.5M, delivery Q3 2028.",
+  "developer": "LORE Development Group and Element Development",
+  "dossierImageIndices": {
+    "interstitials": [
+      22,
+      11,
+      13,
+      21
+    ]
+  },
+  "editorialLine": "Forty-eight homes in the Grove village.",
+  "featureVideo": {
+    "src": "https://frasermiami.s3.amazonaws.com/the-lincoln/the-lincoln-film.mp4",
+    "poster": "https://frasermiami.s3.amazonaws.com/the-lincoln/the-lincoln-film-poster.webp",
+    "label": "The Lincoln Coconut Grove",
+    "tagline": "Forty-eight residences on Lincoln Avenue, drawn by Paredes Architects with interiors by Design Philosophy.",
+    "uploadDate": "2026-09-09",
+    "duration": "PT1M38S"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "Residence 03",
+      "floors": "Levels 2–7",
+      "beds": "1 + Den",
+      "baths": 2.5,
+      "interiorSF": 1227,
+      "exteriorSF": "96–126 SF Exterior",
+      "startingPrice": 1520000,
+      "priceNote": "Unit 203",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 02",
+      "floors": "Levels 2–7",
+      "beds": "1 + Den",
+      "baths": 2.5,
+      "interiorSF": 1281,
+      "exteriorSF": "96–126 SF Exterior",
+      "startingPrice": 1960000,
+      "priceNote": "Unit 502",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 06",
+      "floors": "Levels 2–7",
+      "beds": "2 + Den",
+      "baths": 3.5,
+      "interiorSF": 1591,
+      "exteriorSF": 105,
+      "startingPrice": 2195000,
+      "priceNote": "Unit 306",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 04",
+      "floors": "Levels 2–7",
+      "beds": "2 + Den",
+      "baths": 3,
+      "interiorSF": 1760,
+      "exteriorSF": 323,
+      "startingPrice": 2626000,
+      "priceNote": "Unit 404",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 01",
+      "floors": "Levels 2–7",
+      "beds": "3 + Den",
+      "baths": "3 – 4",
+      "interiorSF": "1,875–1,884 SF",
+      "exteriorSF": 436,
+      "startingPrice": 2695000,
+      "priceNote": "Unit 201",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 07",
+      "floors": "Levels 2–7",
+      "beds": "3 + Den",
+      "baths": 4,
+      "interiorSF": 2026,
+      "exteriorSF": 251,
+      "startingPrice": 2962000,
+      "priceNote": "Unit 407",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 05",
+      "floors": "Levels 2–7",
+      "beds": "4 + Den",
+      "baths": "4.5 – 5.5",
+      "interiorSF": 2611,
+      "exteriorSF": 462,
+      "startingPrice": 3115000,
+      "priceNote": "Unit 205",
+      "status": "Available"
+    },
+    {
+      "type": "Penthouse Collection",
+      "floors": "Level 8 · six duplex homes",
+      "beds": "3–4 + Den",
+      "baths": "3.5 – 4.5",
+      "interiorSF": "2,713–2,983 SF",
+      "inquireOnly": true,
+      "status": "Inquire"
+    }
+  ],
+  "floorPlansShowAll": true,
+  "galleryImageAlts": [
+    "The Lincoln Coconut Grove seen from the corner of Lincoln Avenue and SW 27th Avenue, eight stories of planted balconies behind the tree line",
+    "The west elevation of The Lincoln at dusk, warm interior light behind vertical timber-toned fins",
+    "The covered entrance on Lincoln Avenue, with valet arrival under the building",
+    "The double-height lobby at The Lincoln, sculptural stair rising to the mezzanine",
+    "A living room at The Lincoln with wood cabinetry, full-height glass and the Coconut Grove canopy beyond",
+    "A kitchen island at The Lincoln in marble, with counter seating and a Snaidero cabinetry run",
+    "A living room seating group at The Lincoln around a marble coffee table",
+    "An open living and dining room at The Lincoln looking through to the kitchen and terrace",
+    "A primary bedroom at The Lincoln with a corner window over the Grove canopy at sunset",
+    "A primary bathroom shower at The Lincoln clad in book-matched marble",
+    "The forty-foot heated rooftop lap pool at The Lincoln in daylight, cabanas along the deck",
+    "The rooftop pool at The Lincoln at dusk, lit water framed by planting and pergolas",
+    "The rooftop lounge at The Lincoln at dusk, the Downtown Miami skyline on the horizon",
+    "Summer kitchens and long dining tables on the rooftop at The Lincoln at dusk",
+    "The rooftop lawn and lounge seating at The Lincoln under shade sails",
+    "The fitness centre at The Lincoln, full-height glass onto planting",
+    "The spa at The Lincoln with plunge tubs and a robed changing area",
+    "The sauna and steam room at The Lincoln, finished in warm timber",
+    "The golf simulator at The Lincoln beside the residents' lounge",
+    "The games room at The Lincoln with a pool table and bar",
+    "A private balcony at The Lincoln looking west over Coconut Grove",
+    "Sunset over the Coconut Grove canopy from a terrace at The Lincoln",
+    "An aerial view of Coconut Grove, the marina and Biscayne Bay from above The Lincoln",
+    "A detail of The Lincoln's façade, planted balconies stacked behind vertical fins"
+  ],
+  "generalContractor": "Winmar Construction",
+  "height": "8 Stories",
+  "hoa": "Not published",
+  "id": 64,
+  "img": "https://frasermiami.s3.amazonaws.com/the-lincoln/building-corner-day.webp",
+  "imgCaptions": {
+    "11": {
+      "kicker": "The Rooftop",
+      "line": "A forty-foot heated lap pool under cabanas, eight floors above Lincoln Avenue."
+    },
+    "13": {
+      "kicker": "Summer Kitchens",
+      "line": "Grills, long tables and lounge seating set against the Downtown skyline."
+    },
+    "21": {
+      "kicker": "Level Eight",
+      "line": "The canopy from above, with Biscayne Bay beyond."
+    },
+    "22": {
+      "kicker": "Coconut Grove",
+      "line": "Three minutes on foot to the marinas, restaurants and parks that define the village."
+    }
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/building-corner-day.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/building-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/entrance.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/living-island.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/living-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/living-kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/primary-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/primary-bath.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/rooftop-pool-day.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/rooftop-pool-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/rooftop-skyline.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/rooftop-lounge-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/rooftop-lawn.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/fitness-center.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/spa.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/sauna.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/golf-simulator.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/game-room.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/balcony-view.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/terrace-sunset.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/grove-aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/the-lincoln/facade-detail.webp"
+  ],
+  "interiorDesigner": "Design Philosophy",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "48",
+        "label": "Total residences",
+        "note": "Eight stories on a 20,970-square-foot corner. One of the smallest buildings in the Grove pipeline."
+      },
+      {
+        "value": "$1.5M",
+        "label": "Launch entry price",
+        "note": "Sales opened December 2024. Released inventory currently runs $1.52M to $3.12M."
+      },
+      {
+        "value": "40%",
+        "label": "Pre-sold at groundbreaking",
+        "note": "Developer figure, June 2026, before the construction loan closed."
+      },
+      {
+        "value": "Q3 2028",
+        "label": "Estimated delivery",
+        "note": "Winmar Construction started work on site in June 2026."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "Construction loan closed at $58 million",
+        "body": "SME Capital funded the build in September 2026, arranged by Berkadia, on a 30-month term with two six-month extension options. The financing question on a Q3 2028 delivery is now behind the project."
+      },
+      {
+        "pill": "Supply",
+        "pillColor": "gold",
+        "title": "Grove approvals are capped by code, not by cycle",
+        "body": "Zoning and tree canopy protections limit what can be built here. The Lincoln, OPUS and Ziggurat together add fewer than ninety homes to the village core."
+      },
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "Priced under both of the other Grove boutiques",
+        "body": "Ziggurat opens at $3.5 million across nineteen homes and OPUS at $2.8 million across fourteen. The Lincoln opened at $1.5 million and blends near $1,380 a square foot across released inventory."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Backed by Leste Group and Opportunity",
+        "body": "LORE Development Group was formed by the Brazilian asset managers Leste Group and Opportunity. Element Development, the Miami partner, put the site on balance sheet for $8.56 million in 2023."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Three minutes on foot to the Grove village core",
+        "body": "Restaurants, shops, parks and the marinas are walkable. Coral Gables, Brickell, Downtown, Miami Beach and the airport all sit inside fifteen minutes by car."
+      }
+    ],
+    "thesis": "The Lincoln is the way into a walkable Coconut Grove address without moving up into estate pricing. Forty-eight homes, every plan carrying a den, on a corner three minutes from the village — in a neighbourhood where the supply constraint is written into the zoning code rather than into a sales narrative. With the site owned outright since 2023, forty percent pre-sold before financing, and a $58 million construction loan now closed, the remaining question is finish and delivery rather than whether the building happens.",
+    "footnote": "HOA: not published · Rental policy: not published · Delivery: est. Q3 2028 (broke ground June 2026). Pricing per the developer's 8 July 2026 availability sheet, eight homes released; the six penthouses are unpriced. Square footages are interior, per the developer key plan set V17 Rev16."
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "48",
+        "label": "Total residences",
+        "note": "Eight stories on a 20,970-square-foot corner. One of the smallest buildings in the Grove pipeline."
+      },
+      {
+        "value": "$1.5M",
+        "label": "Launch entry price",
+        "note": "Sales opened December 2024. Released inventory currently runs $1.52M to $3.12M."
+      },
+      {
+        "value": "40%",
+        "label": "Pre-sold at groundbreaking",
+        "note": "Developer figure, June 2026, before the construction loan closed."
+      },
+      {
+        "value": "Q3 2028",
+        "label": "Estimated delivery",
+        "note": "Winmar Construction started work on site in June 2026."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "Construction loan closed at $58 million",
+        "body": "SME Capital funded the build in September 2026, arranged by Berkadia, on a 30-month term with two six-month extension options. The financing question on a Q3 2028 delivery is now behind the project."
+      },
+      {
+        "pill": "Supply",
+        "pillColor": "gold",
+        "title": "Grove approvals are capped by code, not by cycle",
+        "body": "Zoning and tree canopy protections limit what can be built here. The Lincoln, OPUS and Ziggurat together add fewer than ninety homes to the village core."
+      },
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "Priced under both of the other Grove boutiques",
+        "body": "Ziggurat opens at $3.5 million across nineteen homes and OPUS at $2.8 million across fourteen. The Lincoln opened at $1.5 million and blends near $1,380 a square foot across released inventory."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Backed by Leste Group and Opportunity",
+        "body": "LORE Development Group was formed by the Brazilian asset managers Leste Group and Opportunity. Element Development, the Miami partner, put the site on balance sheet for $8.56 million in 2023."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Three minutes on foot to the Grove village core",
+        "body": "Restaurants, shops, parks and the marinas are walkable. Coral Gables, Brickell, Downtown, Miami Beach and the airport all sit inside fifteen minutes by car."
+      }
+    ],
+    "thesis": "The Lincoln is the way into a walkable Coconut Grove address without moving up into estate pricing. Forty-eight homes, every plan carrying a den, on a corner three minutes from the village — in a neighbourhood where the supply constraint is written into the zoning code rather than into a sales narrative. With the site owned outright since 2023, forty percent pre-sold before financing, and a $58 million construction loan now closed, the remaining question is finish and delivery rather than whether the building happens.",
+    "footnote": "HOA: not published · Rental policy: not published · Delivery: est. Q3 2028 (broke ground June 2026). Pricing per the developer's 8 July 2026 availability sheet, eight homes released; the six penthouses are unpriced. Square footages are interior, per the developer key plan set V17 Rev16."
+  },
+  "investmentThesis": "<p>Coconut Grove is the tightest luxury supply in Miami-Dade, and not by accident: zoning and tree canopy protections cap what can be approved, so the pipeline is measured in single buildings. The Lincoln, OPUS and Ziggurat together add fewer than ninety homes to the village core. That constraint is the whole investment case here — it is written into the code, not into a brochure.</p><p>The $58 million construction loan from SME Capital, arranged by Berkadia and closed in September 2026, retires the financing question on a Q3 2028 delivery. The developers had already put the site on their own balance sheet, acquiring it for $8.56 million in 2023, and were 40 percent pre-sold before the loan funded. LORE Development Group was formed by the Brazilian asset managers Leste Group and Opportunity, and partners here with Miami-based Element Development.</p><p>What separates this building from its Grove neighbours is the entry point. Ziggurat opens at $3.5 million across nineteen homes, OPUS at $2.8 million across fourteen, and Vita at Grove Isle at $8.5 million; The Lincoln opens at $1.5 million, with a released band running to $3.1 million. For a buyer who wants a walkable Grove address without moving up into estate pricing, this is one of very few ways in — and at forty-eight homes, the owner roster stays short.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "$58M",
+      "label": "Construction loan, September 2026",
+      "note": "SME Capital, arranged by Berkadia — 30 months plus two six-month extensions"
+    },
+    {
+      "value": "40%",
+      "label": "Pre-sold at groundbreaking",
+      "note": "Developer figure, June 2026, before the loan closed"
+    },
+    {
+      "value": "20,970 SF",
+      "label": "Site area",
+      "note": "Acquired for $8.56 million in 2023"
+    }
+  ],
+  "lat": 25.7329,
+  "lifestyle": [
+    "boutique",
+    "walkable",
+    "wellness",
+    "village-luxury",
+    "design-forward"
+  ],
+  "lng": -80.2374,
+  "maxBath": 5.5,
+  "maxBed": 4,
+  "maxPrice": 3115000,
+  "maxSqft": 2983,
+  "minBath": 2.5,
+  "minBed": 1,
+  "minPrice": 1500000,
+  "minSqft": 1227,
+  "name": "The Lincoln Coconut Grove",
+  "neighborhood": "Coconut Grove",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=25.7329,-80.2374"
+  },
+  "neighborhoodTier": "boutique",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/the-lincoln-coconut-grove.jpg",
+  "parking": "Valet parking; EV-ready garage; enclosed bicycle room; private storage available for purchase",
+  "percentSold": 40,
+  "priceFrom": "$1.5M+",
+  "pricePerSqft": 1382,
+  "privacyScore": 84,
+  "projectedAppreciation": 22,
+  "rentalPolicy": "Not published",
+  "residenceContent": "<p class=\"prop-residence-intro\">Eight stories on a 20,970-square-foot corner where Lincoln Avenue meets SW 27th Avenue, a three-minute walk from the restaurants, shops and marinas at the centre of Coconut Grove. Frank Paredes drew the building as a set of stacked, rounded bays rather than a flat slab, and Cité Arquitetura of Rio de Janeiro consulted on the façade: vertical timber-toned fins wrap the corners, and every balcony carries a planted edge, so the elevation reads as canopy rather than curtain wall. Arrival is under a covered entrance off Lincoln Avenue, into a double-height lobby with a sculptural stair up to the mezzanine.</p><p>Forty-eight homes run from one bedroom to four, and every plan in the building carries an in-suite den or office in addition to its bedrooms — the reason the bathroom counts sit high for the bedroom count. Ceilings reach eleven feet. Porcelain floors run throughout with three alternative finishes available, eight-foot doors are hung on concealed hinges, and balconies are glass-railed with power outlets and space to plant. Kitchens are Snaidero, made in Italy, with islands up to ten feet, quartz counters, integrated panelled Miele appliances and a built-in wine fridge; Sub-Zero and Wolf are optional upgrades. Primary bathrooms carry marble counters, floor-to-ceiling glass shower panels, Brizo fixtures and Toto fittings.</p><p>The top floor holds six duplex penthouses, from 2,713 to 2,983 square feet of interior space, oriented north-west, west, south-west, north-east, east and south-east. Above them the roof is given over entirely to residents: a forty-foot heated lap pool, an observation deck with covered cabanas, summer kitchens with grills and long tables, an outdoor yoga and meditation area, and lounge seating under pergolas. The building is designed to a green building certification, with an emergency generator, EV-ready parking and 24/7 front desk and night security.</p>",
+  "shortName": "The Lincoln",
+  "slug": "the-lincoln-coconut-grove",
+  "sqftRange": "1,227 – 2,983 SF interior",
+  "stage": "under_construction",
+  "statusRemark": "UNDER CONSTRUCTION · BROKE GROUND JUNE 2026",
+  "tagline": "An eight-story building of forty-eight residences, three minutes on foot from the centre of Coconut Grove.",
+  "units": 48,
+  "verified": {
+    "minPrice": {
+      "date": "2026-06-10",
+      "source": "The Real Deal, groundbreaking coverage — prices start at $1.5 million; sales launched late 2024",
+      "basis": "launch"
+    },
+    "maxPrice": {
+      "date": "2026-07-08",
+      "source": "Developer availability sheet — top published ask $3.115M (Unit 205); six penthouses unpriced"
+    },
+    "pricePerSqft": {
+      "date": "2026-07-08",
+      "source": "Developer availability sheet — $18.79M across 13,598 SF interior on 8 released homes"
+    },
+    "units": {
+      "date": "2025-01-20",
+      "source": "Developer fact sheet (unbranded) — 48 residences, 1 to 4 bedrooms plus a den"
+    },
+    "minSqft": {
+      "date": "2025-03-26",
+      "source": "Developer key plans V17 Rev16 — Residence 03 interior 1,227 SF"
+    },
+    "maxSqft": {
+      "date": "2025-03-26",
+      "source": "Developer key plans V17 Rev16 — PH1 (NW) interior 2,983 SF across both levels"
+    },
+    "height": {
+      "date": "2026-09-08",
+      "source": "Florida YIMBY, construction loan coverage — eight stories above grade"
+    },
+    "completion": {
+      "date": "2026-09-08",
+      "source": "Florida YIMBY, construction loan coverage — third quarter of 2028"
+    },
+    "percentSold": {
+      "date": "2026-06-10",
+      "source": "Developer figure via The Real Deal — 40% pre-sold at groundbreaking"
+    },
+    "generalContractor": {
+      "date": "2026-06-10",
+      "source": "The Real Deal / Florida YIMBY — Winmar Construction, Reston VA"
+    },
+    "stage": {
+      "date": "2026-06-10",
+      "source": "Florida YIMBY — construction started June 2026 at 3151 SW 27th Ave"
+    }
+  },
+  "vibeMatch": [
+    "quiet-luxury",
+    "intimate",
+    "wellness-forward",
+    "residential"
+  ],
+  "wellnessScore": 72
+}

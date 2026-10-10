@@ -1,0 +1,287 @@
+{
+  "address": "300 Biscayne Blvd Way, Miami, FL 33132",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Resort Pool Deck",
+      "sub": "Full bay views"
+    },
+    {
+      "icon": "🍽",
+      "label": "Waldorf Dining",
+      "sub": "Multiple concepts"
+    },
+    {
+      "icon": "🛎",
+      "label": "Hotel Services",
+      "sub": "Full Waldorf Astoria"
+    },
+    {
+      "icon": "🏋",
+      "label": "Wellness Center",
+      "sub": "Spa & fitness"
+    },
+    {
+      "icon": "🚗",
+      "label": "Valet Parking",
+      "sub": "24/7"
+    },
+    {
+      "icon": "🎭",
+      "label": "Peacock Alley Bar",
+      "sub": "Signature Waldorf venue"
+    }
+  ],
+  "amenitiesDescription": "<p>Residents access the full Waldorf Astoria ecosystem — including the legendary Peacock Alley with triple-height ceilings, signature restaurant, all-day brasserie, private bar and wine tasting room, resort pool with cabanas, signature spa, and fitness center with private training studios.</p><p>Exclusive residential amenities include a private porte cochère with 24-hour valet, an Owners Lounge with panoramic bay views and billiard room, private pool deck with whirlpools, children's club, and 24-hour concierge. The Savant-powered Waldorf Astoria app gives residents on-demand access to room service, spa bookings, house car, valet, and more — setting a new standard for branded luxury condo living in Miami.</p>",
+  "architect": "Carlos Ott / Sieger Suarez Architects",
+  "architectQuote": "We designed each residence to frame the bay like a living painting — floor to ceiling, edge to edge.",
+  "architectQuoteBy": "Sieger Suarez Architects",
+  "badge": "92%+ Sold · Level 85/100",
+  "completion": "Q2 2028",
+  "constructionPct": 85,
+  "densityScore": 95,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "Contract Signing"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Structure Tops Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "Closing"
+    }
+  ],
+  "description": "Miami's future tallest tower — a crystalline form rising above Biscayne Bay, uniting Waldorf Astoria's legendary hospitality with residences of extraordinary scale and finish.",
+  "developer": "Property Markets Group",
+  "editorialLine": "Miami's future skyline, defined.",
+  "featureVideo": {
+    "src": "/waldorf/waldorf-sky-collection.mp4",
+    "poster": "/waldorf/waldorf-sky-collection-poster.webp",
+    "label": "Waldorf Astoria Residences",
+    "tagline": "The Sky Collection at Waldorf Astoria Residences — Cube 8, floors 88 through 96, Florida's future tallest tower.",
+    "uploadDate": "2026-09-03",
+    "mobileObjectFit": "contain"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "1-Bedroom Sky Suite",
+      "addlRooms": "Terrace",
+      "beds": 1,
+      "baths": 1,
+      "sqft": "800–1,100 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "2-Bedroom Residence",
+      "addlRooms": "Terrace",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "1,400–2,000 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "3-Bedroom Penthouse",
+      "addlRooms": "Full Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "3,200–5,000 sq ft",
+      "status": "Limited"
+    }
+  ],
+  "height": "100 Stories / 1,049 ft",
+  "hoa": "Approx. $0.98–$1.25/sf ($3,600–$5,000+/mo typical)",
+  "id": 1,
+  "img": "/waldorf/waldorf-astoria-hero-twilight.webp",
+  "imgs": [
+    "/waldorf/waldorf-astoria-hero-twilight.webp",
+    "/waldorf/waldorf-astoria-exterior-clouds.webp",
+    "/waldorf/waldorf-astoria-bayfront.webp",
+    "/waldorf/waldorf-astoria-pool.webp",
+    "/waldorf/waldorf-astoria-upper-pool.webp",
+    "/waldorf/waldorf-astoria-hotel-lobby.webp",
+    "/waldorf/waldorf-astoria-hotel-lobby2.webp",
+    "/waldorf/waldorf-astoria-hotel-lobby3.webp",
+    "/waldorf/waldorf-astoria-peacock-alley-bar.webp",
+    "/waldorf/waldorf-astoria-lounge.webp",
+    "/waldorf/waldorf-astoria-living-room-view.webp",
+    "/waldorf/waldorf-astoria-master-bedroom.webp",
+    "/waldorf/waldorf-astoria-master-bedroom2.webp",
+    "/waldorf/waldorf-astoria-master-bath.webp",
+    "/waldorf/waldorf-astoria-kitchen.webp",
+    "/waldorf/waldorf-astoria-kitchen2.webp",
+    "/waldorf/waldorf-astoria-balcony.webp",
+    "/waldorf/waldorf-astoria-unit-sunset.webp",
+    "/waldorf/waldorf-astoria-pool2.webp",
+    "/waldorf/waldorf-skyline-dusk.webp",
+    "/waldorf/waldorf-astoria-hd.mp4"
+  ],
+  "interiorDesigner": "BAMO",
+  "interstitialVideos": {
+    "A": 0
+  },
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+40%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Comparable NYC supertalls appreciated 35–50% post-delivery"
+      },
+      {
+        "value": "$4,000+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,500/sqft top-end Downtown resale avg; supertall premium well-established"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Knight Frank: hotel-branded residences outperform non-branded by 31% on average"
+      },
+      {
+        "value": "1,049 ft",
+        "label": "Height — tallest tower south of Manhattan",
+        "note": "Permanent skyline anchor; upper-floor views unobstructable by any future construction"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Historic first",
+        "pillColor": "gold",
+        "title": "First-in-category appreciation precedent",
+        "body": "First-in-category towers globally have delivered outsized appreciation — One57, 432 Park, and 111 West 57th all set NYC pricing records. Waldorf Astoria Miami holds the equivalent first-supertall position in its market."
+      },
+      {
+        "pill": "Brand prestige",
+        "pillColor": "gold",
+        "title": "Waldorf Astoria — Hilton's most prestigious residential brand",
+        "body": "The Waldorf Astoria name carries 125 years of global hotel heritage. In NYC, Waldorf-branded residences trade at significant premiums to comparable non-branded product. The Miami tower is the brand's most architecturally ambitious residential project to date."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Ninth and final cube now underway",
+        "body": "Eight of the nine offset glass cubes are structurally legible. Work has begun on the uppermost volume, the most pronounced cantilever on the tower."
+      },
+      {
+        "pill": "Timeline",
+        "pillColor": "gray",
+        "title": "Level 85 reached, winter top-off advertised",
+        "body": "Florida YIMBY documented the superstructure at level 85 on August 23, 2026. Site banners advertise a winter top-off."
+      }
+    ],
+    "thesis": "Waldorf Astoria Miami is the supertall thesis: buy the city's defining skyline anchor before the Miami luxury market matures to match NYC, Dubai, or Hong Kong pricing for comparable buildings. At $4,000/sqft it trades at a meaningful premium to the Brickell resale market — and a meaningful discount to what this address will command once the global buyer community fully discovers it.",
+    "footnote": "HOA: ~$2.50/sq ft · Rental policy: Via Waldorf Astoria hotel program · Delivery: Q2 2028"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+40%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Comparable NYC supertalls appreciated 35–50% post-delivery"
+      },
+      {
+        "value": "$4,000+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,500/sqft top-end Downtown resale avg; supertall premium well-established"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Knight Frank: hotel-branded residences outperform non-branded by 31% on average"
+      },
+      {
+        "value": "1,049 ft",
+        "label": "Height — tallest tower south of Manhattan",
+        "note": "Permanent skyline anchor; upper-floor views unobstructable by any future construction"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Historic first",
+        "pillColor": "gold",
+        "title": "First-in-category appreciation precedent",
+        "body": "First-in-category towers globally have delivered outsized appreciation — One57, 432 Park, and 111 West 57th all set NYC pricing records. Waldorf Astoria Miami holds the equivalent first-supertall position in its market."
+      },
+      {
+        "pill": "Brand prestige",
+        "pillColor": "gold",
+        "title": "Waldorf Astoria — Hilton's most prestigious residential brand",
+        "body": "The Waldorf Astoria name carries 125 years of global hotel heritage. In NYC, Waldorf-branded residences trade at significant premiums to comparable non-branded product. The Miami tower is the brand's most architecturally ambitious residential project to date."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Ninth and final cube now underway",
+        "body": "Eight of the nine offset glass cubes are structurally legible. Work has begun on the uppermost volume, the most pronounced cantilever on the tower."
+      },
+      {
+        "pill": "Timeline",
+        "pillColor": "gray",
+        "title": "Level 85 reached, winter top-off advertised",
+        "body": "Florida YIMBY documented the superstructure at level 85 on August 23, 2026. Site banners advertise a winter top-off."
+      }
+    ],
+    "thesis": "Waldorf Astoria Miami is the supertall thesis: buy the city's defining skyline anchor before the Miami luxury market matures to match NYC, Dubai, or Hong Kong pricing for comparable buildings. At $4,000/sqft it trades at a meaningful premium to the Brickell resale market — and a meaningful discount to what this address will command once the global buyer community fully discovers it.",
+    "footnote": "HOA: ~$2.50/sq ft · Rental policy: Via Waldorf Astoria hotel program · Delivery: Q2 2028"
+  },
+  "investmentThesis": "<p>The tower combines 387 private residences with 205 Waldorf Astoria hotel rooms, backed by a $668M construction loan from Bank OZK and Related Fund Management, the largest residential condo construction loan in Florida history. The development partnership includes Greybrook Realty Partners, Mohari Hospitality, and S2 Development, with property management by Hilton Worldwide. General contractor: John Moriarty &amp; Associates. As of August 2026, the superstructure has reached level 85 and work has begun on the ninth and final cube, with a winter top-off advertised on site. At 92% sold, the project enters its final inventory window before Q2 2028 delivery.</p>",
+  "isActive": true,
+  "lat": 25.7765,
+  "lng": -80.1887,
+  "locationScore": 90,
+  "maxBath": 5,
+  "maxBed": 5,
+  "maxPrice": 50000000,
+  "maxSqft": 9000,
+  "minBath": 1,
+  "minBed": 1,
+  "minPrice": 3200000,
+  "minSqft": 900,
+  "name": "Waldorf Astoria Residences",
+  "neighborhood": "Downtown Miami",
+  "parking": "2 spaces included",
+  "percentSold": 92,
+  "priceFrom": "$3.2M+",
+  "pricePerSqft": 3950,
+  "privacyScore": 50,
+  "projectedAppreciation": 35,
+  "rentalPolicy": "Minimum 30-day rentals",
+  "residenceContent": "<p class=\"prop-residence-intro\">Florida's first supertall skyscraper, designed as nine spiraling, offset glass cubes that deliver unobstructed 360-degree views of Downtown Miami, Miami Beach, and the Atlantic Ocean. The architecture stacks the cubes at deliberate offsets so each residence reads as part of a discrete sky-block rather than a uniform tower floor. BAMO-designed interiors feature 10-foot floor-to-ceiling windows, custom Italian cabinetry by Italkraft, Sub-Zero and Wolf appliances, Dornbracht and Duravit fixtures, and Savant smart home technology with a custom Waldorf Astoria app controlling concierge services, lighting, climate, and A/V from your phone.</p>",
+  "salesTeam": "PMG Residential",
+  "slug": "waldorf-astoria-residences",
+  "stage": "under_construction",
+  "stageLabel": "Level 85/100 · Final Cube",
+  "statusRemark": "LEVEL 85/100 · FINAL CUBE UNDERWAY · Q2 2028",
+  "units": 387,
+  "unitsLeft": 31,
+  "verified": {
+    "pricePerSqft": {
+      "date": "2026-08-21",
+      "source": "Zilbert listings and Traded closed sale at $4,000/SF (Dec 2024)"
+    },
+    "completion": {
+      "date": "2026-08-27",
+      "source": "Florida YIMBY — completion anticipated Q2 2028"
+    },
+    "percentSold": {
+      "date": "2026-06-01",
+      "source": "Miami Real Group — over 90 percent sold"
+    },
+    "stage": {
+      "date": "2026-08-27",
+      "source": "Florida YIMBY — under construction; ninth and final cube begun at level 85, winter top-off advertised"
+    },
+    "statusRemark": {
+      "date": "2026-08-27",
+      "source": "Florida YIMBY — level 85 of 100, ninth cube underway, Q2 2028"
+    }
+  },
+  "wellnessScore": 70
+}

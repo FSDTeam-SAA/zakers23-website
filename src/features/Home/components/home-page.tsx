@@ -86,7 +86,7 @@ export function HomePage() {
                 ))}
               </div>
             </div>
-            <a href="/waterfront">Waterfront Estates</a>
+            <a href="/waterfront">Waterfront Homes</a>
             <a href="/insights">Insights</a>
             <a
               href="#contact"

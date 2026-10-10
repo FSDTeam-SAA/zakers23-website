@@ -1,0 +1,315 @@
+{
+  "address": "75 SW Miami Avenue Road, Miami, FL 33130",
+  "amenities": [
+    {
+      "icon": "🏎",
+      "label": "Bugatti Residences",
+      "sub": "First U.S. residential tower"
+    },
+    {
+      "icon": "🌊",
+      "label": "Miami River Frontage",
+      "sub": "300+ linear feet"
+    },
+    {
+      "icon": "⛵",
+      "label": "Direct Bay & Boating Access",
+      "sub": "Via the Miami River to Biscayne Bay"
+    },
+    {
+      "icon": "🛎",
+      "label": "Rhodium Butler Service",
+      "sub": "Exclusive global operating partner"
+    },
+    {
+      "icon": "🏙",
+      "label": "Brickell Urban Core",
+      "sub": "Near Brickell City Centre"
+    },
+    {
+      "icon": "🚄",
+      "label": "Brightline & I-95 Access",
+      "sub": "Walkable financial district"
+    }
+  ],
+  "amenitiesDescription": "<p>The amenity program has not been announced. Publicly disclosed site attributes include more than 300 feet of Miami River frontage and access to Biscayne Bay and the region's boating network.</p>",
+  "architect": "Brandon Haw Architecture",
+  "badge": "BUGATTI'S FIRST U.S. RESIDENCES · PRE-LAUNCH RESERVATIONS",
+  "brandPartner": "Bugatti",
+  "comingSoon": true,
+  "completion": "TBD",
+  "ctaMicrocopy": "Pricing to be announced",
+  "densityScore": 62,
+  "depositStructure": null,
+  "description": "Bugatti Residences Miami is the French automotive marque's first U.S. residential tower: 183 bespoke residences, including four ultra-exclusive penthouses, rising 60 stories on the Miami River. Developed by Prosper Group and Belgium's Versluys Group with architecture by Brandon Haw and interiors by Yabu Pushelberg. While sales have not yet officially launched, select project renderings and early reservation allocations are now open for qualified clients through Zachary Akers.",
+  "developer": "Prosper Group & Versluys Group (joint venture)",
+  "dossierImageIndices": {
+    "story": 1,
+    "features": 2,
+    "interstitials": [
+      3
+    ]
+  },
+  "editorialLine": "Bugatti's first residences in the United States.",
+  "floorPlans": [],
+  "galleryImageAlts": [
+    "Bugatti Residences Miami - Dusk tower view on the Miami River",
+    "Bugatti Residences Miami - Wide dusk skyline perspective",
+    "Bugatti Residences Miami - Daytime riverfront architectural rendering",
+    "Bugatti Residences Miami - Evening tower facade perspective",
+    "Bugatti Residences Miami - Wide evening riverfront skyline",
+    "Bugatti Residences Miami - Signature tower front view (daytime)",
+    "Bugatti Residences Miami - Center illuminated tower profile at night",
+    "Bugatti Residences Miami - Signature C-line aerodynamically curved balcony detail",
+    "Bugatti Residences Miami - High-floor riverfront private balcony views",
+    "Bugatti Residences Miami - Pedestrian promenade and river arrival",
+    "Bugatti Residences Miami - Waterfront promenade and building access"
+  ],
+  "height": "60 Stories",
+  "heroImgPosition": "center top",
+  "hoa": "TBD",
+  "id": 57,
+  "img": "/images/bugatti/dusk-unbranded.webp",
+  "imgCaptions": {
+    "3": {
+      "kicker": "The C-line",
+      "line": "The tower profile follows Bugatti's signature curve."
+    }
+  },
+  "imgPositions": {
+    "1": "center 18%",
+    "2": "center 18%",
+    "3": "center"
+  },
+  "imgPositionsMobile": {
+    "0": "center 12%",
+    "1": "center 15%",
+    "2": "center 15%"
+  },
+  "imgs": [
+    "/images/bugatti/dusk-unbranded.webp",
+    "/images/bugatti/dusk-unbranded-wide.webp",
+    "/images/bugatti/daytime-unbranded.webp",
+    "/images/bugatti/evening-unbranded.webp",
+    "/images/bugatti/evening-unbranded-wide.webp",
+    "/images/bugatti/center-logo---wide-day-time.webp",
+    "/images/bugatti/center-logo---night-time.webp",
+    "/images/bugatti/corner-logo-3.webp",
+    "/images/bugatti/corner-logo-4.webp",
+    "/images/bugatti/corner-logo-1.webp",
+    "/images/bugatti/corner-logo-2.webp"
+  ],
+  "inquiryButtonLabel": "Request Early Access",
+  "interiorDesigner": "Yabu Pushelberg",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "First U.S.",
+        "label": "Bugatti branded residences",
+        "note": "The French marque's first residential tower in the United States. Dubai is the inaugural project, under another developer."
+      },
+      {
+        "value": "183",
+        "label": "Residences, including 4 penthouses",
+        "note": "60-story tower on the Miami River. Count updated at the September 2026 brand reveal."
+      },
+      {
+        "value": "300+ ft",
+        "label": "Miami River frontage",
+        "note": "Direct river frontage on one of Brickell's last waterfront assemblages."
+      },
+      {
+        "value": "$50M",
+        "label": "Land closed August 2026",
+        "note": "Stated $650 million development. Prosper Group and Versluys Group joint venture."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Bugatti's first residential tower in the United States",
+        "body": "Miami is the marque's U.S. residential debut. Bugatti Residences by BinGhatti in Dubai is the inaugural project, under another developer."
+      },
+      {
+        "pill": "Site",
+        "pillColor": "gold",
+        "title": "Carved from a neighboring riverfront assemblage",
+        "body": "The sellers are Two Roads and Newgard, the same partnership building One Brickell Riverfront next door. The parcel was carved from that adjacent riverfront holding."
+      },
+      {
+        "pill": "Partnership",
+        "pillColor": "gold",
+        "title": "Versluys Group's first project in the United States",
+        "body": "The Belgian firm, founded in 1908, pairs with Prosper Group under Jay Roberts. Versluys has spent a century on coastal work in Belgium and the Netherlands."
+      },
+      {
+        "pill": "Scale",
+        "pillColor": "gold",
+        "title": "183 residences across 60 stories, including four penthouses",
+        "body": "Four penthouses sit inside a 60-story riverfront tower. That is 183 residences on one of Brickell's last waterfront parcels."
+      },
+      {
+        "pill": "Basis",
+        "pillColor": "gray",
+        "title": "$50 million close on a $650 million development",
+        "body": "Prosper and Versluys paid $50 million in August 2026 for the roughly one-acre site. A developer release puts the development at $650 million."
+      },
+      {
+        "pill": "Timing",
+        "pillColor": "gray",
+        "title": "Sales expected in the first half of 2027",
+        "body": "Florida YIMBY, PROFILEmiami, and The Real Deal all date the launch to the first half of 2027. No price schedule has been published."
+      }
+    ],
+    "thesis": "Bugatti Residences Miami is the French marque's first U.S. residential tower, on one of Brickell's last waterfront parcels. Prosper Group and Versluys Group closed the site for $50 million in August 2026, a $650 million stated development carved from the neighboring One Brickell Riverfront holding. Versluys, founded in 1908, is entering the United States for the first time. Sales are expected in the first half of 2027, with pricing still unpublished.",
+    "footnote": "HOA: TBD · Rental policy: TBD · Delivery: TBD · Land closed August 2026 · Sales launch: first half of 2027"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "First U.S.",
+        "label": "Bugatti branded residences",
+        "note": "The French marque's first residential tower in the United States. Dubai is the inaugural project, under another developer."
+      },
+      {
+        "value": "183",
+        "label": "Residences, including 4 penthouses",
+        "note": "60-story tower on the Miami River. Count updated at the September 2026 brand reveal."
+      },
+      {
+        "value": "300+ ft",
+        "label": "Miami River frontage",
+        "note": "Direct river frontage on one of Brickell's last waterfront assemblages."
+      },
+      {
+        "value": "$50M",
+        "label": "Land closed August 2026",
+        "note": "Stated $650 million development. Prosper Group and Versluys Group joint venture."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Bugatti's first residential tower in the United States",
+        "body": "Miami is the marque's U.S. residential debut. Bugatti Residences by BinGhatti in Dubai is the inaugural project, under another developer."
+      },
+      {
+        "pill": "Site",
+        "pillColor": "gold",
+        "title": "Carved from a neighboring riverfront assemblage",
+        "body": "The sellers are Two Roads and Newgard, the same partnership building One Brickell Riverfront next door. The parcel was carved from that adjacent riverfront holding."
+      },
+      {
+        "pill": "Partnership",
+        "pillColor": "gold",
+        "title": "Versluys Group's first project in the United States",
+        "body": "The Belgian firm, founded in 1908, pairs with Prosper Group under Jay Roberts. Versluys has spent a century on coastal work in Belgium and the Netherlands."
+      },
+      {
+        "pill": "Scale",
+        "pillColor": "gold",
+        "title": "183 residences across 60 stories, including four penthouses",
+        "body": "Four penthouses sit inside a 60-story riverfront tower. That is 183 residences on one of Brickell's last waterfront parcels."
+      },
+      {
+        "pill": "Basis",
+        "pillColor": "gray",
+        "title": "$50 million close on a $650 million development",
+        "body": "Prosper and Versluys paid $50 million in August 2026 for the roughly one-acre site. A developer release puts the development at $650 million."
+      },
+      {
+        "pill": "Timing",
+        "pillColor": "gray",
+        "title": "Sales expected in the first half of 2027",
+        "body": "Florida YIMBY, PROFILEmiami, and The Real Deal all date the launch to the first half of 2027. No price schedule has been published."
+      }
+    ],
+    "thesis": "Bugatti Residences Miami is the French marque's first U.S. residential tower, on one of Brickell's last waterfront parcels. Prosper Group and Versluys Group closed the site for $50 million in August 2026, a $650 million stated development carved from the neighboring One Brickell Riverfront holding. Versluys, founded in 1908, is entering the United States for the first time. Sales are expected in the first half of 2027, with pricing still unpublished.",
+    "footnote": "HOA: TBD · Rental policy: TBD · Delivery: TBD · Land closed August 2026 · Sales launch: first half of 2027"
+  },
+  "investmentThesis": "<p>This is Bugatti's first residential tower in the United States. Dubai is the marque's inaugural residential project, under another developer. Prosper Group and Belgium's Versluys Group closed the site for $50 million in August 2026, a $650 million stated development, on a parcel carved from the adjacent One Brickell Riverfront holding rather than found on the open market.</p><p>Versluys Group, founded in 1908 and led by CEO Bart Versluys with COO Peter De Decker, has spent more than a century on high-end coastal work in Belgium and the Netherlands, including the renovation of La Réserve in Knokke-Heist. This is the firm's U.S. entry, paired with Prosper under CEO Jay Roberts.</p><p>Sales are expected in the first half of 2027, with no price schedule published. Registering now is the way to hold a position before public launch.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "First U.S.",
+      "label": "Bugatti residences",
+      "note": "Marque's first residential tower in the United States"
+    },
+    {
+      "value": "$50M",
+      "label": "Land closed Aug 2026",
+      "note": "$650M stated development on a roughly one-acre riverfront assemblage"
+    },
+    {
+      "value": "H1 2027",
+      "label": "Sales launch",
+      "note": "Pricing unpublished"
+    },
+    {
+      "value": "300+ ft",
+      "label": "Miami River frontage",
+      "note": "Direct river frontage, access to Biscayne Bay"
+    }
+  ],
+  "lat": 25.768075,
+  "launchState": "coming_soon",
+  "lng": -80.195186,
+  "locationScore": 92,
+  "maxBath": null,
+  "maxBed": null,
+  "maxPrice": null,
+  "maxSqft": null,
+  "minBath": null,
+  "minBed": null,
+  "minPrice": null,
+  "minSqft": null,
+  "name": "Bugatti Residences Miami",
+  "neighborhood": "Brickell",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=25.768075,-80.195186"
+  },
+  "parking": "TBD",
+  "priceFrom": "Pricing TBD",
+  "priceFromDisplay": "TBD",
+  "pricePerSqft": null,
+  "privacyScore": 70,
+  "rentalPolicy": "TBD",
+  "residenceContent": "<p class=\"prop-residence-intro\">Bugatti Residences Miami rises 60 stories on a roughly one-acre Miami River assemblage at 75 SW Miami Avenue Road, with more than 300 feet of river frontage that opens east toward Biscayne Bay and the Downtown skyline. The site sits in Brickell's urban core, near Brickell City Centre, Interstate 95, Brightline, and Miami International.</p><p>Brandon Haw Architecture leads the design, drawing on Bugatti's C-line for the tower form. Interiors are by George Yabu and Glenn Pushelberg. Floor plans, finishes, and the full amenity program have not been released.</p><p>Bugatti named Rhodium as exclusive global residential operating partner, with a program defined by white-glove butler service.</p>",
+  "salesTeam": "ONE Sotheby's International Realty · Zachary Akers",
+  "seoKeywords": [
+    "Bugatti Residences Miami",
+    "Bugatti Residences Brickell",
+    "Bugatti branded residences Miami",
+    "Brickell riverfront condos",
+    "75 SW Miami Avenue Road",
+    "Miami River luxury tower",
+    "Prosper Group Brickell",
+    "Versluys Group Miami",
+    "Brandon Haw Architecture",
+    "Yabu Pushelberg Miami",
+    "Rhodium residences",
+    "Brickell waterfront pre-construction"
+  ],
+  "shortName": "Bugatti Residences",
+  "slug": "bugatti-residences-miami",
+  "stage": "coming_soon",
+  "stageLabel": "Pre-Launch Reservations",
+  "statusRemark": "Broker Update: Advance reservations and exclusive preview meetings are now available prior to the official launch.",
+  "tagline": "A waterfront tower in Brickell, with interiors by Yabu Pushelberg.",
+  "units": 183,
+  "unitsLeft": null,
+  "verified": {
+    "units": {
+      "date": "2026-09-17",
+      "source": "Florida YIMBY, Bugatti Residences Miami announcement (183 residences including four penthouses)"
+    },
+    "statusRemark": {
+      "date": "2026-09-17",
+      "source": "Florida YIMBY, sales launch first half of 2027"
+    }
+  },
+  "wellnessScore": 70
+}

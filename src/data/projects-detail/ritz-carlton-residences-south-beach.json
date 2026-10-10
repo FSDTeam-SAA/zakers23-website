@@ -1,0 +1,297 @@
+{
+  "address": "1671 Collins Avenue, Miami Beach, FL 33139",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Private Rooftop Pool",
+      "sub": "Cabanas & ocean views"
+    },
+    {
+      "icon": "🎬",
+      "label": "Screening Room",
+      "sub": "Onyx bar & modernist loungers"
+    },
+    {
+      "icon": "🏋️",
+      "label": "TechnoGym Fitness Center",
+      "sub": "24-hour, personal training"
+    },
+    {
+      "icon": "🍽",
+      "label": "José Andrés Dining",
+      "sub": "Zaytinya, DiLido Beach Club"
+    },
+    {
+      "icon": "💆",
+      "label": "Ritz-Carlton Spa",
+      "sub": "Sauna, steam, in-residence"
+    },
+    {
+      "icon": "🏖",
+      "label": "Beach Club Access",
+      "sub": "Dedicated oceanfront service"
+    },
+    {
+      "icon": "🛎",
+      "label": "24-Hour Concierge",
+      "sub": "Doorman & valet"
+    },
+    {
+      "icon": "🌿",
+      "label": "Sculpture Garden",
+      "sub": "Landscaping by Naturalficial"
+    }
+  ],
+  "amenitiesDescription": "<p>The amenity program spans over 50,000 square feet across residential-exclusive spaces and shared Ritz-Carlton hotel privileges. A private rooftop pool deck with cabanas, sun loungers, and sweeping Atlantic views anchors the residents-only floor, joined by a screening room with backlit onyx cocktail bar, an entertainment lounge with chef's kitchen and garden-view dining, and a TechnoGym fitness center with personal training rooms.</p><p>Residents also enjoy preferred access to The Ritz-Carlton, South Beach hotel amenities: the signature spa (treatments, sauna, steam room, in-residence services), beach club with dedicated oceanfront service, Ritz Kids programming, and culinary experiences by José Andrés including Zaytinya, DiLido Beach Club, Lapidus Bar, and a new café in the restored Sagamore lobby. The building features a private double-height lobby overlooking a sculpture garden, 24-hour concierge and doorman, and valet parking.</p>",
+  "architect": "Kobi Karp Architecture & Interior Design",
+  "architectQuote": "The way the ocean and light and shadow move during the day, it's like nature's artwork outside your window. A kaleidoscope of color.",
+  "architectQuoteBy": "Fredrik Eklund, Douglas Elliman",
+  "badge": "30 Residences · Oceanfront Collins Avenue",
+  "completion": "2028",
+  "constructionImgs": [],
+  "densityScore": 55,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 20,
+      "milestone": "At Groundbreaking (est. Q3 2026)"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off (est. Q3 2027)"
+    },
+    {
+      "percentage": 50,
+      "milestone": "At Closing (est. Q4 2028)"
+    }
+  ],
+  "description": "Thirty residences. One of the last oceanfront sites on Collins Avenue. The Ritz-Carlton Residences, South Beach is a boutique tower rising behind the Sagamore Hotel at the foot of Lincoln Road — where Miami Beach's most iconic retail corridor meets the Atlantic. Designed by Kobi Karp with interiors by Alessandro Munge of Studio Munge, the building draws on the mid-century legacy of Morris Lapidus while delivering a thoroughly modern program: 10-foot ceilings, full-height glass, wraparound terraces, and Gaggenau kitchens finished in Calacatta Extra marble and honey oak millwork. Two duplex penthouses crown the tower with private rooftop pools, outdoor kitchens, and unobstructed ocean panoramas. Culinary programming throughout is by Michelin-starred chef José Andrés, whose Zaytinya and DiLido Beach Club anchor the adjacent Ritz-Carlton hotel. Residents receive preferred access to the hotel's spa, fitness center, beach club, and the newly renovated Sagamore — all managed under the Ritz-Carlton service standard. The developer group — Lionstone, Flag Luxury Group (Dayssi Olarte de Kanavos), and Ben-Josef Group — secured a $61.2 million predevelopment loan in September 2025, and the project has been converting reservations to contracts with a projected sellout north of $450 million. Pricing averages roughly $4,000 per square foot, placing it at the top of the South Beach new-construction market alongside The Perigon and Aman Miami Beach.",
+  "developer": "Sobe Sky Development (Lionstone Development, Flag Luxury Group, Ben-Josef Group)",
+  "editorialLine": "Your beach house in the sky.",
+  "floorPlans": [
+    {
+      "type": "1-Bedroom",
+      "addlRooms": "Powder Room",
+      "beds": 1,
+      "baths": 1,
+      "sqft": "1,197 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "2-Bedroom",
+      "addlRooms": "Powder Room",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "1,781–2,217 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "3-Bedroom",
+      "addlRooms": "Powder Room",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "2,389–2,991 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "5-Bedroom",
+      "addlRooms": "Powder Room",
+      "beds": 5,
+      "baths": 6,
+      "sqft": "4,520 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "Duplex Penthouse",
+      "addlRooms": "Private Rooftop Pool + Kitchen",
+      "beds": 5,
+      "baths": 6,
+      "sqft": "8,104 sq ft",
+      "status": "Limited"
+    }
+  ],
+  "height": "15 Stories",
+  "hoa": "TBD",
+  "hotelBrand": "The Ritz-Carlton",
+  "id": 39,
+  "img": "/ritz-south-beach/hero.webp",
+  "imgs": [
+    "/ritz-south-beach/hero.webp",
+    "/ritz-south-beach/hero2.webp",
+    "/ritz-south-beach/hero-beach.webp",
+    "/ritz-south-beach/pool.webp",
+    "/ritz-south-beach/pool-sunrise.webp",
+    "/ritz-south-beach/living-hero.webp",
+    "/ritz-south-beach/living-room.webp",
+    "/ritz-south-beach/living.webp",
+    "/ritz-south-beach/living-room2.webp",
+    "/ritz-south-beach/kitchen.webp",
+    "/ritz-south-beach/kitchen-morning.webp",
+    "/ritz-south-beach/dining-dusk.webp",
+    "/ritz-south-beach/bedroom.webp",
+    "/ritz-south-beach/bathroom-hero.webp",
+    "/ritz-south-beach/bathroom.webp",
+    "/ritz-south-beach/bathroom-vanity.webp",
+    "/ritz-south-beach/penthouse.webp",
+    "/ritz-south-beach/rooftop-pool.webp",
+    "/ritz-south-beach/night-swim.webp",
+    "/ritz-south-beach/theatre.webp",
+    "/ritz-south-beach/wine-cellar-dusk.webp",
+    "/ritz-south-beach/porte-cochere.webp",
+    "/ritz-south-beach/hummingbird.webp"
+  ],
+  "inquiryButtonLabel": "Inquire — The Ritz-Carlton Residences, South Beach",
+  "inquirySubject": "The Ritz-Carlton Residences, South Beach",
+  "interiorDesigner": "Alessandro Munge / Studio Munge",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$4,000",
+        "label": "Avg. price / sq ft",
+        "note": "Top tier for South Beach new construction — comparable to The Perigon and Aman Miami Beach"
+      },
+      {
+        "value": "30",
+        "label": "Total residences",
+        "note": "Boutique oceanfront count"
+      },
+      {
+        "value": "$450M+",
+        "label": "Projected sellout",
+        "note": "Developer materials; reservations converting to contracts"
+      },
+      {
+        "value": "$61.2M",
+        "label": "Predevelopment financing",
+        "note": "Bank Hapoalim loan reported Sept. 2025 (Florida YIMBY) — institutional backing"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Ritz-Carlton service, built in",
+        "body": "Ritz-Carlton service infrastructure is built into daily operations — hotel spa, fitness, beach club, and José Andrés dining adjacent to the residential tower."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Only 30 units on a rare oceanfront site",
+        "body": "One of the last oceanfront development parcels on Collins Avenue, at the foot of Lincoln Road — extreme land scarcity in a fully built-out corridor."
+      },
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "Institutional lender backing",
+        "body": "The reported facility signals lender confidence in the sponsor group — Lionstone, Flag Luxury Group, and Ben-Josef Group — and the sell-through story."
+      },
+      {
+        "pill": "Neighborhood",
+        "pillColor": "gray",
+        "title": "Lincoln Road revitalization",
+        "body": "$42M+ in public-private investment is reshaping the eastern corridor — streetscape and retail should feel materially upgraded by the late-2028 delivery window."
+      },
+      {
+        "pill": "Context",
+        "pillColor": "gray",
+        "title": "Adjacent Sagamore renovation",
+        "body": "Hotel-suite inventory and restored historic fabric add energy to the block without directly competing with the 30 private residences' product type."
+      }
+    ],
+    "thesis": "The Ritz-Carlton Residences, South Beach occupies a rare position: a branded, boutique oceanfront tower at the terminus of Lincoln Road with only 30 units. At roughly $4,000/SF, pricing sits at the upper tier of South Beach new construction — comparable to The Perigon and Aman — but the Ritz-Carlton operational package (José Andrés dining, full spa, beach club, concierge) is among the most comprehensive in the submarket. The $61.2M predevelopment loan from Bank Hapoalim signals institutional confidence, and the concurrent $42M+ Lincoln Road revitalization should lift the immediate surroundings materially by delivery. The primary risks are execution timeline (groundbreaking est. Q3 2026, closing est. Q4 2028) and the premium over established resale comps in buildings like Setai and Continuum. For buyers seeking a turnkey branded residence with genuine hotel-grade service on the beach, this is one of the most compelling entries in the current cycle.",
+    "footnote": "Pricing and deposit structure per developer materials as of Q1 2026. Predevelopment loan details per Florida YIMBY, September 2025."
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$4,000",
+        "label": "Avg. price / sq ft",
+        "note": "Top tier for South Beach new construction — comparable to The Perigon and Aman Miami Beach"
+      },
+      {
+        "value": "30",
+        "label": "Total residences",
+        "note": "Boutique oceanfront count"
+      },
+      {
+        "value": "$450M+",
+        "label": "Projected sellout",
+        "note": "Developer materials; reservations converting to contracts"
+      },
+      {
+        "value": "$61.2M",
+        "label": "Predevelopment financing",
+        "note": "Bank Hapoalim loan reported Sept. 2025 (Florida YIMBY) — institutional backing"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Ritz-Carlton service, built in",
+        "body": "Ritz-Carlton service infrastructure is built into daily operations — hotel spa, fitness, beach club, and José Andrés dining adjacent to the residential tower."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Only 30 units on a rare oceanfront site",
+        "body": "One of the last oceanfront development parcels on Collins Avenue, at the foot of Lincoln Road — extreme land scarcity in a fully built-out corridor."
+      },
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "Institutional lender backing",
+        "body": "The reported facility signals lender confidence in the sponsor group — Lionstone, Flag Luxury Group, and Ben-Josef Group — and the sell-through story."
+      },
+      {
+        "pill": "Neighborhood",
+        "pillColor": "gray",
+        "title": "Lincoln Road revitalization",
+        "body": "$42M+ in public-private investment is reshaping the eastern corridor — streetscape and retail should feel materially upgraded by the late-2028 delivery window."
+      },
+      {
+        "pill": "Context",
+        "pillColor": "gray",
+        "title": "Adjacent Sagamore renovation",
+        "body": "Hotel-suite inventory and restored historic fabric add energy to the block without directly competing with the 30 private residences' product type."
+      }
+    ],
+    "thesis": "The Ritz-Carlton Residences, South Beach occupies a rare position: a branded, boutique oceanfront tower at the terminus of Lincoln Road with only 30 units. At roughly $4,000/SF, pricing sits at the upper tier of South Beach new construction — comparable to The Perigon and Aman — but the Ritz-Carlton operational package (José Andrés dining, full spa, beach club, concierge) is among the most comprehensive in the submarket. The $61.2M predevelopment loan from Bank Hapoalim signals institutional confidence, and the concurrent $42M+ Lincoln Road revitalization should lift the immediate surroundings materially by delivery. The primary risks are execution timeline (groundbreaking est. Q3 2026, closing est. Q4 2028) and the premium over established resale comps in buildings like Setai and Continuum. For buyers seeking a turnkey branded residence with genuine hotel-grade service on the beach, this is one of the most compelling entries in the current cycle.",
+    "footnote": "Pricing and deposit structure per developer materials as of Q1 2026. Predevelopment loan details per Florida YIMBY, September 2025."
+  },
+  "investmentThesis": "At roughly $4,000 per square foot on only thirty units, the project competes in the same ultra-prime band as The Perigon and Aman Miami Beach but with a full Ritz-Carlton operational stack — hotel dining by José Andrés, spa, beach club, and concierge — woven into daily life. The $61.2M Bank Hapoalim predevelopment loan (reported Sept. 2025) is a meaningful institutional vote of confidence, and the Lincoln Road corridor is in the middle of a $42M+ public-private reinvestment cycle that should lift the immediate streetscape by delivery. The main risks are timeline (groundbreaking est. Q3 2026, closing est. Q4 2028) and the premium buyers pay versus established resale icons like Setai or Continuum. For purchasers who want a boutique count, true ocean adjacency, and branded service without a 200-unit tower, this is one of the most complete packages on the beach in the current cycle.",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.7916382,
+  "lng": -80.1289424,
+  "maxBath": 6,
+  "maxBed": 5,
+  "maxPrice": 125000000,
+  "maxSqft": 8104,
+  "minBath": 1,
+  "minBed": 1,
+  "minPrice": 4250000,
+  "minSqft": 1197,
+  "name": "The Ritz-Carlton Residences, South Beach",
+  "neighborhood": "South Beach",
+  "parking": "Valet",
+  "percentSold": null,
+  "priceFrom": "$4.25M+",
+  "pricePerSqft": 4000,
+  "privacyScore": 75,
+  "projectedAppreciation": 35,
+  "rentalPolicy": "TBD",
+  "residenceContent": "<p class=\"prop-residence-intro\">Thirty private residences rise fifteen stories above one of the last oceanfront parcels on Collins Avenue, directly behind the Sagamore at the eastern terminus of Lincoln Road. Kobi Karp's architecture channels Miami Beach's Lapidus-era glamour through a contemporary lens — 10-foot ceilings, full-height glass, and terraces that wrap the living spaces. Studio Munge interiors pair Calacatta Extra marble with honey oak millwork and Gaggenau kitchens. Duplex penthouses crown the building with private rooftop pools and outdoor kitchens. Service and amenities bridge to The Ritz-Carlton, South Beach hotel next door, including José Andrés dining, spa, fitness, and beach club access — plus the restored Sagamore as part of the broader campus.</p>",
+  "salesTeam": "Inquire for sales gallery",
+  "slug": "ritz-carlton-residences-south-beach",
+  "stage": "preconstruction",
+  "statusRemark": "Pre-construction · South Beach Oceanfront",
+  "stickyCtaLabel": "Inquire",
+  "stories": 15,
+  "units": 30,
+  "unitsLeft": null,
+  "wellnessScore": 88
+}

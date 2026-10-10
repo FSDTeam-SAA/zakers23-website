@@ -1,0 +1,120 @@
+{
+  "address": "425 Ocean Drive, Miami Beach, FL 33139",
+  "amenities": [
+    {
+      "icon": "🌊",
+      "label": "Oceanfront / Direct Beach Access",
+      "sub": "Per filed plans"
+    },
+    {
+      "icon": "🏊",
+      "label": "Private Rooftop Pool",
+      "sub": "Condo owners only, separate from hotel"
+    },
+    {
+      "icon": "🏖",
+      "label": "Ground-Floor Beach Club",
+      "sub": "Per filed plans"
+    },
+    {
+      "icon": "🏛",
+      "label": "1937 Savoy Lobby Preserved",
+      "sub": "Original lobby retained in new building"
+    }
+  ],
+  "amenitiesDescription": "<p>Based on filed plans, program points include a private rooftop pool and amenities for condominium owners (separate from the hotel), a ground-floor beach club, and direct beach access. The original 1937 Savoy lobby would be preserved. The full amenity list has not been released.</p>",
+  "architect": "Arquitectonica",
+  "avgSqft": 2000,
+  "badge": "PROPOSED · UNDER CITY REVIEW",
+  "comingSoon": true,
+  "comingSoonLayout": "minimal",
+  "completion": "TBD",
+  "densityScore": 62,
+  "depositStructure": null,
+  "description": "A proposed 38-story oceanfront tower at 425 Ocean Drive in South of Fifth, on the two-acre site of the historic 1937 Savoy Hotel. Plans filed by Allied Partners in June 2026 call for 90 private condominium residences averaging roughly 2,000 square feet, a 76-key hotel, and a ground-floor beach club, with architecture by Arquitectonica. Condominium owners would have a private rooftop pool and amenities separate from hotel guests, along with direct beach access. The original Savoy lobby would be preserved within the new building. The building would include 150 residences in total, 60 of them workforce units on the lower floors, as required under Florida's Live Local Act. The project is currently under administrative review by the City of Miami Beach and has not been approved. Pricing, floor plans, and a sales timeline have not been released.",
+  "developer": "Allied Partners",
+  "editorialLine": "Two acres of Ocean Drive in South of Fifth, held by the same hotel since 1937 and now in play.",
+  "floorPlans": [],
+  "height": "38 Stories / approx. 453 ft",
+  "heroImgPosition": "center",
+  "hoa": "TBD",
+  "hotelRooms": 76,
+  "id": 65,
+  "img": "/coming-soon-skyline.webp",
+  "imgs": [
+    "/coming-soon-skyline.webp"
+  ],
+  "inquiryButtonLabel": "Request Updates",
+  "interiorDesigner": "TBD",
+  "investmentThesis": "<p>Allied Partners filed plans in June 2026 for a mixed condo-hotel tower on one of the few remaining oceanfront assemblages in South of Fifth. The program pairs 90 market condominiums with a 76-key hotel and required workforce housing, and is still under City of Miami Beach administrative review with no approval yet.</p><p>Pricing, floor plans, and a sales timeline have not been released. Request updates on this page for approval status, official renderings, and any program details as they are published.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.7733,
+  "launchState": "coming_soon",
+  "lng": -80.1312,
+  "maxBath": null,
+  "maxBed": null,
+  "maxPrice": null,
+  "maxSqft": null,
+  "minBath": null,
+  "minBed": null,
+  "minPrice": null,
+  "minSqft": null,
+  "name": "The Savoy",
+  "neighborhood": "South of Fifth",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=25.7733,-80.1312"
+  },
+  "parking": "TBD",
+  "priceFrom": "Pricing TBD",
+  "priceFromDisplay": "TBD",
+  "pricePerSqft": null,
+  "privacyScore": 70,
+  "rentalPolicy": "TBD",
+  "residenceContent": "<p class=\"prop-residence-intro\">A proposed 38-story tower on Ocean Drive in South of Fifth, on the two-acre site of the 1937 Savoy Hotel. Plans call for 90 private condominium residences averaging roughly 2,000 square feet, a 76-key hotel, and a ground-floor beach club, with architecture by Arquitectonica.</p><p>Condominium owners would have a private rooftop pool and amenities separate from hotel guests, plus direct beach access. The original Savoy lobby would be preserved within the new building. Sixty workforce units on the lower floors bring the residential total to 150 under Florida's Live Local Act.</p><p>Floor plans, finishes, and pricing have not been released.</p>",
+  "salesTeam": "Fraser Miami Private Advisory",
+  "seoKeywords": [
+    "The Savoy Miami Beach",
+    "425 Ocean Drive",
+    "Savoy Hotel Miami Beach redevelopment",
+    "South of Fifth new development",
+    "Allied Partners Miami Beach",
+    "Arquitectonica Ocean Drive",
+    "SoFi condo hotel",
+    "Live Local Act Miami Beach"
+  ],
+  "slug": "the-savoy-miami-beach",
+  "stage": "coming_soon",
+  "stageLabel": "Coming Soon",
+  "statusRemark": "Proposed, under City of Miami Beach administrative review (not yet approved).",
+  "tagline": "A proposed oceanfront tower on Ocean Drive.",
+  "units": 90,
+  "unitsLeft": null,
+  "verified": {
+    "units": {
+      "date": "2026-09-08",
+      "source": "Floridian Development report (Sept 8, 2026) on plans filed with the City of Miami Beach in June 2026"
+    },
+    "hotelRooms": {
+      "date": "2026-09-08",
+      "source": "Floridian Development report (Sept 8, 2026) on plans filed with the City of Miami Beach in June 2026"
+    },
+    "avgSqft": {
+      "date": "2026-09-08",
+      "source": "Floridian Development report (Sept 8, 2026) on plans filed with the City of Miami Beach in June 2026"
+    },
+    "height": {
+      "date": "2026-09-08",
+      "source": "Floridian Development report (Sept 8, 2026) on plans filed with the City of Miami Beach in June 2026"
+    },
+    "stage": {
+      "date": "2026-09-08",
+      "source": "Floridian Development report (Sept 8, 2026) on plans filed with the City of Miami Beach in June 2026"
+    },
+    "statusRemark": {
+      "date": "2026-09-08",
+      "source": "Floridian Development report (Sept 8, 2026) on plans filed with the City of Miami Beach in June 2026"
+    }
+  },
+  "wellnessScore": 70
+}

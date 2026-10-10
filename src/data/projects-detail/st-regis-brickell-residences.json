@@ -1,0 +1,309 @@
+{
+  "address": "1809 Brickell Ave, Miami, FL 33129",
+  "amenities": [
+    {
+      "icon": "🍵",
+      "label": "St. Regis Tea Room",
+      "sub": "31st-floor Sky Lounge"
+    },
+    {
+      "icon": "🥃",
+      "label": "Cognac Room",
+      "sub": "Signature Sky Lounge"
+    },
+    {
+      "icon": "🛎",
+      "label": "St. Regis Butler Service",
+      "sub": "24-hour"
+    },
+    {
+      "icon": "⛵",
+      "label": "Proposed Private Marina",
+      "sub": "Cleared to begin permit filings"
+    },
+    {
+      "icon": "🏊",
+      "label": "25m Lap Pool",
+      "sub": "Holistic Wellness Center"
+    },
+    {
+      "icon": "🚗",
+      "label": "24-Hour Valet & Parking",
+      "sub": "Private spaces, EV charging"
+    },
+    {
+      "icon": "🍽",
+      "label": "Fine Dining by Fabio Trabocchi",
+      "sub": "Ground floor"
+    }
+  ],
+  "amenitiesDescription": "<p>The St. Regis Residences Miami delivers over 50,000 SF of interior and exterior amenity space anchored by a bayside infinity pool with private cabanas, poolside bar and café, and a proposed private marina on city-owned submerged land, cleared by the City Commission so developers may begin submitting permits (city lease and slip count still pending). The Holistic Wellness Center features an indoor 25-meter lap pool, cold plunge, Pilates and yoga studio, salt spa room, dual saunas, steam rooms, and state-of-the-art treatment rooms, with curated programming by The Wright Fit.</p><p>The 31st-floor Sky Lounge houses the signature St. Regis Cognac Room, St. Regis Tea Room, and a double-height bar and lounge with sweeping bay views. Additional amenities include a ground-floor fine dining restaurant by Michelin-starred chef Fabio Trabocchi, exclusive beach club access, salon, pet spa, media room, business center, golf simulator, children's entertainment room, and guest suites.</p><p>Services include 24-hour concierge, St. Regis Butler Service, housekeeping, in-residence dining, valet, luxury house car, and global St. Regis membership privileges. The tower features secure, on-site, 24-hour valet parking, private residential parking, and dedicated EV charging stations.</p>",
+  "architect": "Robert A.M. Stern Architects",
+  "architectQuote": "We drew on the great ocean liners of the golden age: their sense of arrival, their craftsmanship, their timeless elegance.",
+  "architectQuoteBy": "Robert A.M. Stern Architects",
+  "badge": "Flagship Opportunity",
+  "completion": "Q4 2027",
+  "densityScore": 40,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing (Q4 2027)"
+    }
+  ],
+  "description": "Residence-only, no hotel component. Robert A.M. Stern Architects with Rockwell Group interiors. 152 private bayfront homes in South Brickell, with the St. Regis Butler program and Wright Fit wellness programming. Q4 2027 delivery.",
+  "developer": "Related Group & Integra Investments",
+  "editorialLine": "Modern classicism. Legendary service.",
+  "floorPlans": [
+    {
+      "type": "2-Bedroom Residence",
+      "addlRooms": "Private Terrace",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "2,616–3,500 sq ft",
+      "status": "Limited"
+    },
+    {
+      "type": "3-Bedroom Residence",
+      "addlRooms": "Private Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "3,500–4,800 sq ft",
+      "status": "Limited"
+    },
+    {
+      "type": "4-Bedroom Residence",
+      "addlRooms": "Private Terrace",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "4,800–6,200 sq ft",
+      "status": "Limited"
+    },
+    {
+      "type": "5–6 Bedroom Sky Home",
+      "addlRooms": "Full Floor Terrace",
+      "beds": 6,
+      "baths": 6.5,
+      "sqft": "6,200–10,012 sq ft",
+      "status": "Inquire"
+    }
+  ],
+  "height": "50 Stories",
+  "heroImgPosition": "58% center",
+  "hoa": "~$3.20 / sq ft",
+  "id": 8,
+  "img": "/srresidences/hero-dusk.webp",
+  "imgs": [
+    "/srresidences/hero-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/srresidences/unit-balcony.webp",
+    "/srresidences/hero-master.webp",
+    "/srresidences/hummingbird-sunrise.webp",
+    "/srresidences/east-tower-entrance.webp",
+    "/srresidences/entrance.webp",
+    "/srresidences/lobby.webp",
+    "/srresidences/pool.webp",
+    "/srresidences/pool-view.webp",
+    "/srresidences/pool-bar.webp",
+    "/srresidences/indoor-lap-pool.webp",
+    "/srresidences/restaurant.webp",
+    "/srresidences/restuarant2.webp",
+    "/srresidences/library-bar.webp",
+    "/srresidences/library-bar-balcony.webp",
+    "/srresidences/lounge.webp",
+    "/srresidences/drawing-room.webp",
+    "/srresidences/res1.webp",
+    "/srresidences/res2.webp",
+    "/srresidences/res3.webp",
+    "/srresidences/res4.webp",
+    "/srresidences/res6.webp",
+    "/srresidences/res7.webp",
+    "/srresidences/balcony-sunset.webp",
+    "/srresidences/gym.webp",
+    "/srresidences/gym2.webp",
+    "/srresidences/plunge-pool.webp",
+    "/srresidences/steam-room.webp",
+    "/srresidences/sauna.webp",
+    "/srresidences/theater.webp",
+    "/srresidences/teens-room.webp",
+    "/srresidences/kids-room.webp"
+  ],
+  "interiorDesigner": "Rockwell Group",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$47M",
+        "label": "Charles penthouse under contract (July 2026)",
+        "note": "10,012 SF at $4,694/SF; among the highest-priced condo contracts in Brickell"
+      },
+      {
+        "value": "~$900M",
+        "label": "Contracts to date",
+        "note": "Path toward a nearly $1B sellout ahead of Q4 2027 delivery"
+      },
+      {
+        "value": "$2,777",
+        "label": "Avg asking / sq ft",
+        "note": "vs. ~$1,500/sqft top-end Brickell resale"
+      },
+      {
+        "value": "1–4",
+        "label": "Homes per floor",
+        "note": "Near-total corner configuration; South Brickell's least dense luxury tower"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "$22.7M contract recorded at $3,071 per square foot",
+        "body": "Traded Miami recorded a 7,391-square-foot developer sale at 1809 Brickell Avenue on August 23, 2026."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Robert A.M. Stern: architect of 15 CPW and 220 CPS",
+        "body": "RAMSA's New York residential work set block records that held for years. Their Miami debut brings the same classical-modern vocabulary to South Brickell."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Gated bayfront enclave in South Brickell",
+        "body": "1809 Brickell Avenue sits in the most secluded section of Brickell, with direct Biscayne Bay frontage. That gated private setting is hard to replicate in the corridor."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "St. Regis butler service, residential-only",
+        "body": "No hotel guests share amenities or services. Residents receive full St. Regis butler service, housekeeping, and global membership privileges."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Related Group with Integra Investments",
+        "body": "Related has delivered more than 100,000 residences across South Florida. Integra is the Miami-native co-sponsor on this ultra-luxury bayfront tower."
+      },
+      {
+        "pill": "Waterfront",
+        "pillColor": "gold",
+        "title": "City Commission clears path to begin marina permits",
+        "body": "In September 2026 Miami cleared Related and Integra to begin submitting permits for a private marina on city-owned submerged land beside 1809 Brickell. Lease and slip count remain undisclosed."
+      }
+    ],
+    "thesis": "Absorption above 80% and a $47M Charles penthouse contract confirm demand at the top of the Brickell stack. Remaining inventory is the scarce final window before Q4 2027 delivery.",
+    "footnote": "HOA: ~$3.20/sq ft · Rental policy: Min 1-year lease · Delivery: Q4 2027 · Charles penthouse under contract reported July 31, 2026"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$47M",
+        "label": "Charles penthouse under contract (July 2026)",
+        "note": "10,012 SF at $4,694/SF; among the highest-priced condo contracts in Brickell"
+      },
+      {
+        "value": "~$900M",
+        "label": "Contracts to date",
+        "note": "Path toward a nearly $1B sellout ahead of Q4 2027 delivery"
+      },
+      {
+        "value": "$2,777",
+        "label": "Avg asking / sq ft",
+        "note": "vs. ~$1,500/sqft top-end Brickell resale"
+      },
+      {
+        "value": "1–4",
+        "label": "Homes per floor",
+        "note": "Near-total corner configuration; South Brickell's least dense luxury tower"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "$22.7M contract recorded at $3,071 per square foot",
+        "body": "Traded Miami recorded a 7,391-square-foot developer sale at 1809 Brickell Avenue on August 23, 2026."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Robert A.M. Stern: architect of 15 CPW and 220 CPS",
+        "body": "RAMSA's New York residential work set block records that held for years. Their Miami debut brings the same classical-modern vocabulary to South Brickell."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Gated bayfront enclave in South Brickell",
+        "body": "1809 Brickell Avenue sits in the most secluded section of Brickell, with direct Biscayne Bay frontage. That gated private setting is hard to replicate in the corridor."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "St. Regis butler service, residential-only",
+        "body": "No hotel guests share amenities or services. Residents receive full St. Regis butler service, housekeeping, and global membership privileges."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Related Group with Integra Investments",
+        "body": "Related has delivered more than 100,000 residences across South Florida. Integra is the Miami-native co-sponsor on this ultra-luxury bayfront tower."
+      },
+      {
+        "pill": "Waterfront",
+        "pillColor": "gold",
+        "title": "City Commission clears path to begin marina permits",
+        "body": "In September 2026 Miami cleared Related and Integra to begin submitting permits for a private marina on city-owned submerged land beside 1809 Brickell. Lease and slip count remain undisclosed."
+      }
+    ],
+    "thesis": "Absorption above 80% and a $47M Charles penthouse contract confirm demand at the top of the Brickell stack. Remaining inventory is the scarce final window before Q4 2027 delivery.",
+    "footnote": "HOA: ~$3.20/sq ft · Rental policy: Min 1-year lease · Delivery: Q4 2027 · Charles penthouse under contract reported July 31, 2026"
+  },
+  "investmentThesis": "<p>The first St. Regis residence in Miami, and one of the few new South Brickell projects offered as a residence-only program with no hotel component, protecting service consistency for owners. A proposed private marina on city-owned submerged land would add scarce yacht dockage to an already gated bayfront site. The Wright Fit curates wellness programming. South Brickell's bayfront corridor has limited remaining development sites and no comparable residence-only competition at this service tier.</p>",
+  "isActive": true,
+  "isFeatured": true,
+  "landscapeArchitect": "Enzo Enea / Enea Garden Design",
+  "lat": 25.7542214,
+  "lng": -80.1950473,
+  "locationScore": 68,
+  "maxBath": 6.5,
+  "maxBed": 6,
+  "maxPrice": 47000000,
+  "maxSqft": 10012,
+  "minBath": 2,
+  "minBed": 2,
+  "minPrice": 5000000,
+  "minSqft": 2616,
+  "name": "St. Regis Brickell Residences",
+  "neighborhood": "Brickell",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/st-regis-brickell-residences.jpg",
+  "parking": "Secure, on-site, 24-hour valet parking, private residential parking, and dedicated EV charging stations",
+  "percentSold": 80,
+  "priceFrom": "$5M+",
+  "pricePerSqft": 2777,
+  "privacyScore": 80,
+  "projectedAppreciation": 35,
+  "rentalPolicy": "Min 1-year lease",
+  "residenceContent": "<p class=\"prop-residence-intro\">A gated bayfront enclave of 152 private homes in South Brickell, with no hotel rooms and no transient use. Every residence features 11-foot ceilings, private elevator with direct entry foyer, double-door arrival, custom European stone flooring, and expansive flow-through terraces oriented to capture both Biscayne Bay and Coconut Grove sightlines. Kitchens include Gaggenau appliance suites, honed natural stone countertops, and custom millwork. Primary bathrooms feature radiant heated floors, free-standing soaking tubs, and his-and-hers vanities. Robert A.M. Stern's design language is modern classicism (proportion and permanence), with Rockwell Group's interiors layering texture, warmth, and craft. Minutes from Coconut Grove, Downtown Miami, and Key Biscayne.</p>",
+  "salesTeam": "Related Realty",
+  "slug": "st-regis-brickell-residences",
+  "stage": "under_construction",
+  "statusRemark": "80%+ SOLD · CLEARED TO BEGIN MARINA PERMITS",
+  "units": 152,
+  "unitsLeft": 30,
+  "verified": {
+    "statusRemark": {
+      "date": "2026-09-11",
+      "source": "World Red Eye / Times Now: Miami City Commission cleared Related and Integra to begin permitting a private marina on city-owned submerged land at 1809 Brickell Ave"
+    }
+  },
+  "wellnessScore": 75
+}

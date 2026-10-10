@@ -26,7 +26,14 @@ export function HeroSection({ slides }: HeroSectionProps) {
             className={`hero-slide ${index === activeSlide ? "is-active" : ""}`}
             aria-hidden={index !== activeSlide}
           >
-            <Image fill priority={index === 0} src={slide.image} alt={slide.title} className="hero-image" />
+            <Image
+              fill
+              priority={index === 0}
+              src={slide.image}
+              alt={slide.title}
+              className="hero-image"
+              style={{ objectPosition: slide.position || "center center" }}
+            />
             <div className="hero-gradient hero-gradient-top" />
             <div className="hero-gradient hero-gradient-bottom" />
             <div className="hero-copy">

@@ -1,0 +1,357 @@
+{
+  "address": "90 SW 3rd St, Miami, FL 33130",
+  "amenities": [
+    {
+      "icon": "🌉",
+      "label": "Faena Rose Sky Bridge",
+      "sub": "45,000 SF, 700 ft up",
+      "img": "https://frasermiami.s3.amazonaws.com/faenaresidences/rose-terrace-dusk.webp"
+    },
+    {
+      "icon": "🏊",
+      "label": "Sky Bridge Pool",
+      "sub": "Infinity pool, panoramic",
+      "img": "https://frasermiami.s3.amazonaws.com/faenaresidences/rose-pool.webp"
+    },
+    {
+      "icon": "💆",
+      "label": "Tierra Santa Healing House",
+      "sub": "Hammam, longevity clinic",
+      "img": "https://frasermiami.s3.amazonaws.com/faenaresidences/hammam.webp"
+    },
+    {
+      "icon": "🎭",
+      "label": "Cultural Programming",
+      "sub": "Art, performance, events"
+    },
+    {
+      "icon": "🎬",
+      "label": "Screening Theater",
+      "sub": "40-seat private cinema"
+    },
+    {
+      "icon": "🎾",
+      "label": "Padel & Golf Sim",
+      "sub": "Active lifestyle",
+      "img": "https://frasermiami.s3.amazonaws.com/faenaresidences/padel-court.webp"
+    }
+  ],
+  "amenitiesDescription": "<p>Arrival begins in The Cathedral, an immersive lobby featuring a commissioned mural that establishes the cultural character of the building. The centerpiece is Faena Rose, a 45,000-square-foot cultural and wellness hub suspended between the towers. The club includes an infinity pool with panoramic Miami views, a 40-seat private screening theater, fine-dining restaurant, cocktail bar, cigar lounge, private dining room, billiards room, creative lounge, and content creation studios. At the Sky Bridge's summit, a full-length outdoor pool deck and terrace garden create one of the most extraordinary elevated social spaces in any Miami residential development.</p><p>At the podium level, the Tierra Santa Healing House is a world-class wellness destination with a hammam centered on Amazonite stone, longevity clinic, botanical steam rooms, red light therapy, cold plunge, and a full beauty arcade. Fitness programming includes a padel court, golf simulator, outdoor workout terraces, and dedicated pilates studio. Faena's signature cultural programming, with rotating art installations, performances, and curated community events, ensures the building operates as a living cultural institution.</p>",
+  "architect": "Rafael Viñoly",
+  "completion": "2030",
+  "densityScore": 90,
+  "description": "Two 68-story towers by Rafael Viñoly on the Miami River, connected nearly 700 feet up by Faena Rose. 406 residences from $1.3M in Faena's first standalone residential project, a 14-acre cultural district.",
+  "developer": "Fortune International Group and KAR Properties",
+  "dossierImageIndices": {
+    "interstitials": [
+      25,
+      27,
+      30,
+      33
+    ]
+  },
+  "featureVideo": {
+    "src": "https://frasermiami.s3.amazonaws.com/faenaresidences/faena-residences-film.mp4",
+    "poster": "https://frasermiami.s3.amazonaws.com/faenaresidences/faena-residences-film-poster.webp",
+    "label": "Faena Residences Miami",
+    "tagline": "The project film: Rafael Viñoly's twin towers on the Miami River, the tri-level Sky Bridge suspended 700 feet up, and the Tierra Santa Healing House at the podium.",
+    "uploadDate": "2026-09-08",
+    "duration": "PT1M53S"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "1 Bedroom Residence",
+      "beds": 1,
+      "baths": null,
+      "sqft": "711–910 sq ft",
+      "startingPrice": 1300000
+    },
+    {
+      "type": "2 Bedroom Residence",
+      "beds": 2,
+      "baths": null,
+      "sqft": "1,230–1,684 sq ft",
+      "startingPrice": 2100000
+    },
+    {
+      "type": "3 Bedroom Residence",
+      "beds": 3,
+      "baths": null,
+      "sqft": "2,063–2,225 sq ft",
+      "startingPrice": 3400000
+    },
+    {
+      "type": "4 Bedroom Residence",
+      "beds": 4,
+      "baths": null,
+      "sqft": "3,181 sq ft",
+      "startingPrice": 5900000
+    },
+    {
+      "type": "River Loft",
+      "floors": "Levels 3–10",
+      "beds": "2 - 4 + Den",
+      "baths": null,
+      "sqft": "1,429–3,200 sq ft",
+      "startingPrice": 2900000
+    },
+    {
+      "type": "Sky Loft",
+      "floors": "Levels 61–63",
+      "beds": "2 - 4 + Den",
+      "baths": null,
+      "sqft": "2,266–6,652 sq ft",
+      "startingPrice": 6800000
+    },
+    {
+      "type": "Sky Villa",
+      "floors": "Levels 62–64",
+      "beds": 4,
+      "baths": null,
+      "sqft": "3,091–3,308 sq ft",
+      "status": "Inquire",
+      "inquireOnly": true
+    },
+    {
+      "type": "Penthouse",
+      "floors": "Levels 61–67",
+      "beds": "3 - 4",
+      "baths": null,
+      "sqft": "2,586–8,184 sq ft",
+      "status": "Inquire",
+      "inquireOnly": true
+    },
+    {
+      "type": "Crown Residence",
+      "floors": "Top of stack · two-story",
+      "addlRooms": "Penthouse collection",
+      "beds": null,
+      "baths": null,
+      "sqft": "Inquire",
+      "startingPrice": 39500000,
+      "priceLabel": "$39.5M"
+    }
+  ],
+  "floorPlansShowAll": true,
+  "height": "68 Stories",
+  "hoa": "Approximately $1.80/sf",
+  "id": 19,
+  "img": "https://frasermiami.s3.amazonaws.com/faenaresidences/hero.webp",
+  "imgCaptions": {
+    "25": {
+      "kicker": "Crown Residence",
+      "line": "The two-story penthouse at the top of the stack, interiors by Faena Design Studio with Bryan O'Sullivan Studio."
+    },
+    "27": {
+      "kicker": "Crown Residence",
+      "line": "A curved metal fireplace anchors the upper living room."
+    },
+    "30": {
+      "kicker": "Crown Residence",
+      "line": "The primary bedroom opens to Biscayne Bay and the river."
+    },
+    "33": {
+      "kicker": "Faena Rose",
+      "line": "The sky club terrace, nearly 700 feet above the Miami River."
+    }
+  },
+  "imgPositions": {
+    "32": "center top"
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/hero2.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/entrance.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/porte-cochere.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/porte-cochere2.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/cathedral.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/chapel.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/east-living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/south-kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/dining.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/bloom-bar.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/sky-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/library.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/faena-beach-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/infinity-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/juice-bar-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/juice-bar.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/pool-cabana.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/fitness-center-gym.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/movement-studio-gym.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/padel-court.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/hammam.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/crown-living.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/rose-billiards.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/crown-fireplace.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/crown-dining.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/crown-media.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/crown-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/crown-bedroom-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/rose-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/rose-terrace-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/rose-garden.webp",
+    "https://frasermiami.s3.amazonaws.com/faenaresidences/rose-fitness.webp"
+  ],
+  "inquiryButtonLabel": "Request Full Fact Sheet & Inventory",
+  "inquirySubject": "Inquiry: Faena Residences - Fact Sheet Request",
+  "interiorDesigner": "Faena Design Studio with Bryan O'Sullivan Studio",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+38%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Faena brand benchmark on Miami Beach: Faena House resales at $3,000+/sqft; original buyers saw 60–100%+ appreciation"
+      },
+      {
+        "value": "$1.3M+",
+        "label": "Starting price: accessible Faena entry",
+        "note": "406 residences across twin 68-story towers; 1–4 bedrooms from 700–3,300 SF"
+      },
+      {
+        "value": "14 acres",
+        "label": "Gated riverfront site on the Miami River",
+        "note": "327 ft of Miami River frontage; the only gated residential community on the Miami River with private dock access"
+      },
+      {
+        "value": "$30M",
+        "label": "Record penthouse sale (July 2026)",
+        "note": "Largest residential transaction ever recorded on the Miami River. Follows a $12.67M contract on a 6,300 SF residence in November 2025."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Alan Faena: Miami Beach's most successful neighborhood creator",
+        "body": "Alan Faena transformed Mid-Beach into a premium cultural district anchored by Faena House, Faena Hotel, and Faena Forum. The same neighborhood-creation playbook now targets Brickell on the Miami River."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Vinoly towers linked by Faena Rose at 700 feet",
+        "body": "Two 68-story Viñoly towers connect at Faena Rose on floors 61 through 64, nearly 700 feet above the Miami River."
+      },
+      {
+        "pill": "Collection",
+        "pillColor": "gold",
+        "title": "$39.5M Crown Residence leads first penthouse collection",
+        "body": "Faena Design Studio and Bryan O'Sullivan published a two-story Crown Residence at the top of the stack in September 2026. It is the first penthouse collection at the Miami River project."
+      },
+      {
+        "pill": "Wellness",
+        "pillColor": "gold",
+        "title": "Tierra Santa Healing House: Faena's signature spa concept",
+        "body": "The podium spa brings Faena's Tierra Santa Healing House concept from Miami Beach into the residential program. The wellness stack includes hammam, longevity clinic, botanical steam, red light therapy, and cold plunge."
+      },
+      {
+        "pill": "Entry point",
+        "pillColor": "gray",
+        "title": "Faena brand at Downtown Miami pricing, not Miami Beach",
+        "body": "The same brand that lifted Faena House on Miami Beach opens here at a materially lower basis: Faena exposure at river-and-Downtown pricing rather than beach pricing."
+      }
+    ],
+    "thesis": "Faena Residences Miami is the boldest bet in the current Miami cycle: Alan Faena applying the same neighborhood-creation playbook that turned Mid-Beach into a $3,000/sqft corridor, now aimed at a 14-acre stretch of the Miami River. The Faena brand has never failed to create outsized appreciation. Faena House original buyers realized 60–100%+ gains. Twin 68-story Viñoly towers, a Sky Bridge club 700 feet in the air, Tierra Santa spa, and five-star residential services, all at a starting price of $1.3M. If Faena succeeds on the river the way it succeeded on the beach, the appreciation trajectory for early buyers could mirror what the original Faena District delivered. The $30 million penthouse sale recorded in July 2026, the largest residential transaction ever on the Miami River, confirms that top-of-stack demand is materializing ahead of delivery. The September 2026 penthouse collection, led by a $39.5 million two-story Crown Residence, sets the published ceiling of that stack.",
+    "footnote": "HOA: Est. $1.80/sq ft · Rental policy: Inquire · Delivery: 2030"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+38%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Faena brand benchmark on Miami Beach: Faena House resales at $3,000+/sqft; original buyers saw 60–100%+ appreciation"
+      },
+      {
+        "value": "$1.3M+",
+        "label": "Starting price: accessible Faena entry",
+        "note": "406 residences across twin 68-story towers; 1–4 bedrooms from 700–3,300 SF"
+      },
+      {
+        "value": "14 acres",
+        "label": "Gated riverfront site on the Miami River",
+        "note": "327 ft of Miami River frontage; the only gated residential community on the Miami River with private dock access"
+      },
+      {
+        "value": "$30M",
+        "label": "Record penthouse sale (July 2026)",
+        "note": "Largest residential transaction ever recorded on the Miami River. Follows a $12.67M contract on a 6,300 SF residence in November 2025."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Alan Faena: Miami Beach's most successful neighborhood creator",
+        "body": "Alan Faena transformed Mid-Beach into a premium cultural district anchored by Faena House, Faena Hotel, and Faena Forum. The same neighborhood-creation playbook now targets Brickell on the Miami River."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Vinoly towers linked by Faena Rose at 700 feet",
+        "body": "Two 68-story Viñoly towers connect at Faena Rose on floors 61 through 64, nearly 700 feet above the Miami River."
+      },
+      {
+        "pill": "Collection",
+        "pillColor": "gold",
+        "title": "$39.5M Crown Residence leads first penthouse collection",
+        "body": "Faena Design Studio and Bryan O'Sullivan published a two-story Crown Residence at the top of the stack in September 2026. It is the first penthouse collection at the Miami River project."
+      },
+      {
+        "pill": "Wellness",
+        "pillColor": "gold",
+        "title": "Tierra Santa Healing House: Faena's signature spa concept",
+        "body": "The podium spa brings Faena's Tierra Santa Healing House concept from Miami Beach into the residential program. The wellness stack includes hammam, longevity clinic, botanical steam, red light therapy, and cold plunge."
+      },
+      {
+        "pill": "Entry point",
+        "pillColor": "gray",
+        "title": "Faena brand at Downtown Miami pricing, not Miami Beach",
+        "body": "The same brand that lifted Faena House on Miami Beach opens here at a materially lower basis: Faena exposure at river-and-Downtown pricing rather than beach pricing."
+      }
+    ],
+    "thesis": "Faena Residences Miami is the boldest bet in the current Miami cycle: Alan Faena applying the same neighborhood-creation playbook that turned Mid-Beach into a $3,000/sqft corridor, now aimed at a 14-acre stretch of the Miami River. The Faena brand has never failed to create outsized appreciation. Faena House original buyers realized 60–100%+ gains. Twin 68-story Viñoly towers, a Sky Bridge club 700 feet in the air, Tierra Santa spa, and five-star residential services, all at a starting price of $1.3M. If Faena succeeds on the river the way it succeeded on the beach, the appreciation trajectory for early buyers could mirror what the original Faena District delivered. The $30 million penthouse sale recorded in July 2026, the largest residential transaction ever on the Miami River, confirms that top-of-stack demand is materializing ahead of delivery. The September 2026 penthouse collection, led by a $39.5 million two-story Crown Residence, sets the published ceiling of that stack.",
+    "footnote": "HOA: Est. $1.80/sq ft · Rental policy: Inquire · Delivery: 2030"
+  },
+  "investmentThesis": "<p>Over $300 million in contract sales reported as of late 2025, with more than 20% of residences sold before groundbreaking. A $30 million penthouse sale recorded in July 2026 stands as the largest residential transaction ever on the Miami River. In September 2026 Faena published its first penthouse collection, led by a $39.5 million two-story Crown Residence, a collection ask distinct from that recorded sale. This is Faena's first standalone residential project, following the transformative Faena District in Miami Beach (Faena House, Faena Hotel, Faena Forum). A $38 million credit facility from Bank OZK supports the sales and marketing program. Groundbreaking is anticipated in the second half of 2026, with completion targeted around 2030. The broader site plan envisions a phased, three-block cultural district with a private park, wellness center, marina, and public art installations along the river. Landscape by Sasaki. With over $25 billion of nearby investment reshaping the Miami River corridor and roughly 10,000 residential units in the pipeline, the project is positioned at the center of Downtown Miami's most significant waterfront transformation.</p>",
+  "isActive": true,
+  "lat": 25.7698,
+  "lng": -80.1942,
+  "locationScore": 90,
+  "maxBed": 4,
+  "maxPrice": 39500000,
+  "maxSqft": 8184,
+  "minBed": 1,
+  "minPrice": 1300000,
+  "minSqft": 711,
+  "name": "Faena Residences Miami",
+  "neighborhood": "Downtown Miami",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/faena-residences-miami.jpg",
+  "priceFrom": "$1.3M+",
+  "privacyScore": 40,
+  "projectedAppreciation": 32,
+  "residenceContent": "<p class=\"prop-residence-intro\">The two towers sit on 327 feet of Miami River frontage directly across from Brickell City Centre. Viñoly designed them as a pair of offset slab forms that separate as they rise and reconnect through Faena Rose, a three-story Sky Bridge on floors 61 through 64, suspended nearly 700 feet above the city. Interiors by Faena Design Studio with Bryan O'Sullivan Studio bring Faena's signature warmth to a modernist framework: open floor plans with floor-to-ceiling impact glass, 10-foot-deep terraces, travertine flooring, custom Italian cabinetry, natural stone countertops, and Gaggenau appliances throughout. Every residence frames expansive views of the Miami River, Biscayne Bay, and the Downtown skyline. The penthouse collection includes Sky Villas with private terraces and pools, and a two-story Crown Residence at the top of the stack.</p>",
+  "seo": {
+    "title": "Faena Residences Miami | Riverfront Pre-Construction Condos",
+    "description": "Alan Faena's first standalone residential project on the Miami River. Rafael Viñoly twin towers, Faena Rose sky club, penthouse collection led by a $39.5M Crown Residence. From $1.3M."
+  },
+  "slug": "faena-residences-miami",
+  "stage": "preconstruction",
+  "statusRemark": "BRAND NEW LAUNCH · BRICKELL ON THE RIVER",
+  "stickyCtaLabel": "Request Fact Sheet",
+  "units": 406,
+  "verified": {
+    "floorPlans": {
+      "date": "2026-09-08",
+      "source": "Faena Residences Miami price list (Aug 11, 2026) for type, interior SF range and starting price; level ranges from the developer's 61-plan digital set (Nov 2025 / Mar 2026). Sky Villa appears in the plan set but not the price list — inquire-only. Penthouses are 'Prices Upon Request' on the list itself."
+    },
+    "maxPrice": {
+      "date": "2026-09-16",
+      "source": "PROFILE Miami, penthouse collection reveal: $39.5M two-story Crown Residence"
+    }
+  },
+  "wellnessScore": 80
+}

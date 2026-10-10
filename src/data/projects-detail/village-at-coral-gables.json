@@ -1,0 +1,510 @@
+{
+  "address": "504 Malaga Avenue, Coral Gables, FL 33134",
+  "amenities": [
+    {
+      "icon": "🏛",
+      "label": "4,000 SF Clubhouse",
+      "sub": "Residents' lounge, library and conference room"
+    },
+    {
+      "icon": "🏊",
+      "label": "Resort Pool Deck",
+      "sub": "Sunbed relaxation areas and a plunge pool"
+    },
+    {
+      "icon": "💪",
+      "label": "Athletic Centre",
+      "sub": "Alongside the clubhouse"
+    },
+    {
+      "icon": "💼",
+      "label": "Business Centre",
+      "sub": "Conference room with high-speed Wi-Fi"
+    },
+    {
+      "icon": "⛲",
+      "label": "Gardens and Plazas",
+      "sub": "Glorietas drawn from the 1929 Ibero-American Exposition"
+    },
+    {
+      "icon": "🔒",
+      "label": "On-Site Management",
+      "sub": "24-hour monitored HD camera system, guest parking"
+    }
+  ],
+  "amenitiesDescription": "<p><strong>The clubhouse:</strong> Four thousand square feet given over to a residents' lounge, a library and a conference room with high-speed Wi-Fi — programmed for people who work from home as much as for entertaining.</p><p><strong>Pool and wellness:</strong> A resort-style pool deck with sunbed relaxation areas and a plunge pool, alongside an athletic centre.</p><p><strong>The village itself:</strong> Gardens, plazas, walkways and fountains between the homes, with glorietas drawn from the 1929 Ibero-American Exposition. The Villas carry their own heated pools, outdoor kitchens and showers.</p><p><strong>Services:</strong> On-site management, a 24-hour monitored HD camera system, guest parking and electric vehicle charging stations.</p>",
+  "architect": "De La Guardia Victoria Architects & Urbanists",
+  "completion": "Delivered 2026",
+  "densityScore": 12,
+  "depositStructure": [
+    {
+      "percentage": 40,
+      "milestone": "Contract Signing"
+    },
+    {
+      "percentage": 60,
+      "milestone": "Closing"
+    }
+  ],
+  "description": "Forty-eight villas, townhomes, lofts and flats at 504 Malaga Avenue, Coral Gables. De La Guardia Victoria architecture across a 2.6-acre block of gardens and plazas. Delivered 2026, 88% sold.",
+  "developer": "MG Developer",
+  "dossierImageIndices": {
+    "interstitials": [
+      9,
+      13,
+      12,
+      8
+    ]
+  },
+  "editorialLine": "Coral Gables' eighth village, delivered.",
+  "featureVideo": {
+    "src": "https://frasermiami.s3.amazonaws.com/village-coral-gables/the-village-film.mp4",
+    "poster": "https://frasermiami.s3.amazonaws.com/village-coral-gables/the-village-film-poster.webp",
+    "label": "The Village at Coral Gables",
+    "tagline": "Forty-eight Spanish-colonial residences completing George Merrick's plan for the City Beautiful.",
+    "uploadDate": "2026-09-10",
+    "duration": "PT2M9S"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "Villa",
+      "unit": "Type B",
+      "floors": "Type B · Two stories",
+      "beds": 3,
+      "baths": 3.5,
+      "interiorSF": 2439,
+      "exteriorSF": 1799
+    },
+    {
+      "type": "Villa",
+      "unit": "Type A",
+      "floors": "Type A · Two stories",
+      "beds": 3,
+      "baths": 3.5,
+      "interiorSF": 2863,
+      "exteriorSF": 1353
+    },
+    {
+      "type": "Townhome",
+      "unit": "Type B",
+      "floors": "Type B · Three stories",
+      "beds": 4,
+      "baths": 3.5,
+      "interiorSF": 3147,
+      "exteriorSF": 1168
+    },
+    {
+      "type": "Townhome",
+      "unit": "Type C",
+      "floors": "Type C · Three stories",
+      "beds": 4,
+      "baths": 3.5,
+      "interiorSF": 3218,
+      "exteriorSF": 1237
+    },
+    {
+      "type": "Townhome",
+      "unit": "Type A",
+      "floors": "Type A · Three stories",
+      "beds": 4,
+      "baths": 4.5,
+      "interiorSF": 3246,
+      "exteriorSF": 1238
+    },
+    {
+      "type": "Loft",
+      "unit": "Type B",
+      "floors": "Type B · Three stories",
+      "beds": 2,
+      "baths": 2.5,
+      "interiorSF": 1881,
+      "exteriorSF": 888
+    },
+    {
+      "type": "Loft",
+      "unit": "Type A",
+      "floors": "Type A · Three stories",
+      "beds": 2,
+      "baths": 2.5,
+      "interiorSF": 1881,
+      "exteriorSF": 594
+    },
+    {
+      "type": "Flat",
+      "unit": "Type A",
+      "floors": "Type A · Single level",
+      "beds": "2 + Study",
+      "baths": 2.5,
+      "interiorSF": 1771,
+      "exteriorSF": 250
+    },
+    {
+      "type": "Flat",
+      "unit": "Type B",
+      "floors": "Type B · Single level",
+      "beds": "2 + Study",
+      "baths": 2.5,
+      "interiorSF": 1698,
+      "exteriorSF": 250
+    }
+  ],
+  "floorPlansShowAll": true,
+  "galleryImageAlts": [
+    "Aerial photograph of The Village at Coral Gables, forty-eight barrel-tile roofs around planted courtyards with the Coral Gables and Downtown Miami skylines beyond",
+    "A completed villa at The Village at Coral Gables photographed from the garden, arched loggia and blue wrought-iron balcony behind young palms",
+    "The landscaped pedestrian paseo running between the homes at The Village at Coral Gables, palms along a low coral-stone wall",
+    "Low aerial photograph of The Village at Coral Gables set into the mature Coral Gables tree canopy",
+    "Photographed detail of a Village at Coral Gables facade — a deep arched opening, barrel tile and a blue balcony rail against the canopy",
+    "Aerial photograph along the central spine of The Village at Coral Gables toward downtown Coral Gables",
+    "Aerial photograph of The Village at Coral Gables with the Granada golf course fairway adjoining the block",
+    "Aerial photograph placing The Village at Coral Gables within its surrounding residential streets",
+    "Aerial photograph of a private walled courtyard and pool at one of the Village at Coral Gables villas",
+    "Rendering of the Village at Coral Gables facade at dusk, warm light behind the arched entry and balconies",
+    "Rendering of the pool seen through the arched loggia at The Village at Coral Gables",
+    "Rendering of a private villa pool and covered loggia at The Village at Coral Gables",
+    "Rendering of the clubhouse lounge at The Village at Coral Gables, palms and a chandelier under a timber ceiling",
+    "Rendering of the resort-style pool deck at The Village at Coral Gables with sunbeds along the arcade",
+    "Rendering of the athletic centre at The Village at Coral Gables under a slatted timber ceiling",
+    "Rendering of the business centre at The Village at Coral Gables, work seating beside the lounge",
+    "Rendering of a Loft living room and kitchen at The Village at Coral Gables under arched windows",
+    "Rendering of a Loft primary bedroom at The Village at Coral Gables beneath a fourteen-foot cathedral ceiling",
+    "Rendering of a Flat living room opening onto its covered loggia at The Village at Coral Gables",
+    "Rendering of a Flat dining room at The Village at Coral Gables beside the open kitchen",
+    "Rendering of a Townhome living room at The Village at Coral Gables with built-in shelving and a terrace beyond",
+    "Rendering of a Townhome kitchen at The Village at Coral Gables, Italian cabinetry and a stone island",
+    "Rendering of the main terrace of a Townhome at The Village at Coral Gables, outdoor dining under cover",
+    "Rendering of a Villa living and dining room at The Village at Coral Gables",
+    "Rendering of a Villa primary bedroom at The Village at Coral Gables",
+    "Rendering of a primary bathroom at The Village at Coral Gables, Italian double vanity in stained wood under arched mirrors",
+    "Rendering of a Flat primary bathroom at The Village at Coral Gables with a natural stone floor and walk-in shower"
+  ],
+  "height": "2–4 Stories",
+  "id": 66,
+  "img": "https://frasermiami.s3.amazonaws.com/village-coral-gables/village-aerial-skyline.webp",
+  "imgCaptions": {
+    "8": {
+      "kicker": "The Villas",
+      "line": "Four homes, each with a walled courtyard and its own heated pool."
+    },
+    "9": {
+      "kicker": "The City Beautiful",
+      "line": "Nothing here rises above four stories, and approvals of this kind stay rare."
+    },
+    "12": {
+      "kicker": "The Clubhouse",
+      "line": "Four thousand square feet of lounge, library and conference room."
+    },
+    "13": {
+      "kicker": "The Pool Deck",
+      "line": "Sunbeds along the arcade, a plunge pool, and the clubhouse a few steps away."
+    }
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/village-aerial-skyline.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/villa-facade-garden.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/garden-paseo.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/village-aerial-canopy.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/facade-arch-detail.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/village-aerial-spine.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/village-aerial-golf.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/village-aerial-context.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/villa-courtyard-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/facade-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/arcade-pool-view.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/villa-pool-loggia.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/clubhouse.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/amenity-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/fitness-center.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/business-center.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/loft-living-kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/loft-primary-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/flat-living-loggia.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/flat-dining.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/townhome-living.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/townhome-kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/townhome-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/villa-living-dining.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/villa-primary-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/primary-bath.webp",
+    "https://frasermiami.s3.amazonaws.com/village-coral-gables/flat-primary-bath.webp"
+  ],
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "88%",
+        "label": "Sold",
+        "note": "Forty-two of forty-eight homes. Six remain per the developer's February 2026 availability sheet."
+      },
+      {
+        "value": "$1,675/SF",
+        "label": "Record price per square foot",
+        "note": "Villa 4 closed at $4.8 million in February 2025 — a Coral Gables new-construction record."
+      },
+      {
+        "value": "2.6 acres",
+        "label": "Seventeen-lot assemblage",
+        "note": "Six transactions totalling $15.85 million, completed April 2022. No comparable assemblage is currently filed."
+      },
+      {
+        "value": "Delivered",
+        "label": "Handed over 2026",
+        "note": "Topped off ahead of schedule November 2024. Move-ins began Summer 2025."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Supply",
+        "pillColor": "gold",
+        "title": "A 17-lot assemblage this size is rare in Coral Gables",
+        "body": "Seventeen lots took six separate transactions and $15.85 million in 2022, plus a unanimous city commission vote. No comparable assemblage is currently in the Coral Gables pipeline."
+      },
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "Set the Coral Gables new-construction record",
+        "body": "Villa 4 sold for $4.8 million at $1,675 a square foot in February 2025, the highest ever paid for new construction in the city."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Six homes left across three collections",
+        "body": "Two Villas at $4.5 million, two Townhomes at $3.99 and $4.2 million, two Lofts at $2.55 and $2.7 million. Phase 3 pricing, February 2026."
+      },
+      {
+        "pill": "Risk",
+        "pillColor": "gray",
+        "title": "Move-in ready, not a construction underwrite",
+        "body": "The buildings are standing, landscaped and already occupied. Remaining homes are ready for occupancy, so the underwrite is the residence rather than a delivery date or a construction loan."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Walking distance to two golf courses and Miracle Mile",
+        "body": "The Biltmore and Granada courses, the Biltmore Hotel and downtown Coral Gables are all on foot. Miami International is fifteen minutes by car."
+      }
+    ],
+    "thesis": "The Village is Coral Gables' eighth village and the completion of a plan George Merrick set out a century ago — forty-eight Spanish-colonial homes on a single 2.6-acre block of gardens, plazas and fountains, with nothing above four stories. The scarcity argument is the assembly cost: six transactions and $15.85 million in 2022, plus a unanimous commission vote, which is why projects of this scale stay uncommon in Coral Gables. The building has already proved its ceiling, setting the city's new-construction record at $1,675 a square foot in February 2025, and it has already delivered. What remains is six finished homes from $2.55 million — priced as completed product, with the delivery, financing and construction risk that defines the rest of this market entirely removed.",
+    "footnote": "HOA: not published · Deposit structure: 40% at contract signing, 60% at closing · Delivered 2026 (move-ins from Summer 2025). Availability and pricing per the developer's availability sheet dated 3 February 2026, marked \"Last Updated On January 2026\" — re-confirm before quoting. Square footages are interior (A/C) area per the developer's July 2022 collection fact sheets; press figures of \"1,750 to 3,100 SF\" are a stale rounding."
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "88%",
+        "label": "Sold",
+        "note": "Forty-two of forty-eight homes. Six remain per the developer's February 2026 availability sheet."
+      },
+      {
+        "value": "$1,675/SF",
+        "label": "Record price per square foot",
+        "note": "Villa 4 closed at $4.8 million in February 2025 — a Coral Gables new-construction record."
+      },
+      {
+        "value": "2.6 acres",
+        "label": "Seventeen-lot assemblage",
+        "note": "Six transactions totalling $15.85 million, completed April 2022. No comparable assemblage is currently filed."
+      },
+      {
+        "value": "Delivered",
+        "label": "Handed over 2026",
+        "note": "Topped off ahead of schedule November 2024. Move-ins began Summer 2025."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Supply",
+        "pillColor": "gold",
+        "title": "A 17-lot assemblage this size is rare in Coral Gables",
+        "body": "Seventeen lots took six separate transactions and $15.85 million in 2022, plus a unanimous city commission vote. No comparable assemblage is currently in the Coral Gables pipeline."
+      },
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "Set the Coral Gables new-construction record",
+        "body": "Villa 4 sold for $4.8 million at $1,675 a square foot in February 2025, the highest ever paid for new construction in the city."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Six homes left across three collections",
+        "body": "Two Villas at $4.5 million, two Townhomes at $3.99 and $4.2 million, two Lofts at $2.55 and $2.7 million. Phase 3 pricing, February 2026."
+      },
+      {
+        "pill": "Risk",
+        "pillColor": "gray",
+        "title": "Move-in ready, not a construction underwrite",
+        "body": "The buildings are standing, landscaped and already occupied. Remaining homes are ready for occupancy, so the underwrite is the residence rather than a delivery date or a construction loan."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Walking distance to two golf courses and Miracle Mile",
+        "body": "The Biltmore and Granada courses, the Biltmore Hotel and downtown Coral Gables are all on foot. Miami International is fifteen minutes by car."
+      }
+    ],
+    "thesis": "The Village is Coral Gables' eighth village and the completion of a plan George Merrick set out a century ago — forty-eight Spanish-colonial homes on a single 2.6-acre block of gardens, plazas and fountains, with nothing above four stories. The scarcity argument is the assembly cost: six transactions and $15.85 million in 2022, plus a unanimous commission vote, which is why projects of this scale stay uncommon in Coral Gables. The building has already proved its ceiling, setting the city's new-construction record at $1,675 a square foot in February 2025, and it has already delivered. What remains is six finished homes from $2.55 million — priced as completed product, with the delivery, financing and construction risk that defines the rest of this market entirely removed.",
+    "footnote": "HOA: not published · Deposit structure: 40% at contract signing, 60% at closing · Delivered 2026 (move-ins from Summer 2025). Availability and pricing per the developer's availability sheet dated 3 February 2026, marked \"Last Updated On January 2026\" — re-confirm before quoting. Square footages are interior (A/C) area per the developer's July 2022 collection fact sheets; press figures of \"1,750 to 3,100 SF\" are a stale rounding."
+  },
+  "investmentThesis": "<p>Blocks of this scale are uncommon in Coral Gables. The site took six separate transactions and $15.85 million to assemble in 2022, a unanimous city commission vote to approve, and a Mediterranean Revival density bonus of two extra units per acre. No comparable assemblage is currently in the pipeline. Whatever the market does, the supply at this address is fixed.</p><p>The building has already proved its ceiling. Villa 4 closed at $4.8 million in February 2025 — $1,675 per square foot, the highest ever paid for new construction in Coral Gables. Forty-two of the forty-eight homes are sold, the project topped off ahead of schedule in November 2024 at 60% sold, move-ins began in Summer 2025, and the final phase handed over in Spring 2026.</p><p>What is left is six residences at Phase 3 pricing: two Villas at $4.5 million, two Townhomes at $3.99 and $4.2 million, and two Lofts at $2.55 and $2.7 million. A buyer here is not underwriting a delivery date, a construction loan or a rendering — the homes are standing, landscaped and occupied by neighbours. That is a materially different risk profile from everything else on this site, and it is priced as finished product rather than as a pre-construction discount.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "$1,675/SF",
+      "label": "Record price per square foot",
+      "note": "Villa 4 at $4.8M, February 2025 — the highest for new construction in Coral Gables"
+    },
+    {
+      "value": "2.6 acres",
+      "label": "17-lot assemblage",
+      "note": "Six transactions totalling $15.85 million, completed April 2022"
+    },
+    {
+      "value": "6 of 48",
+      "label": "Residences remaining",
+      "note": "Developer availability sheet, February 2026 — Phase 3 pricing"
+    }
+  ],
+  "lat": 25.74337,
+  "lifestyle": [
+    "boutique",
+    "walkable",
+    "village-luxury",
+    "limited-inventory",
+    "design-forward"
+  ],
+  "lng": -80.264684,
+  "maxBath": 4.5,
+  "maxBed": 4,
+  "maxPrice": 4500000,
+  "maxSqft": 3246,
+  "minBath": 2.5,
+  "minBed": 2,
+  "minPrice": 1700000,
+  "minSqft": 1698,
+  "name": "The Village at Coral Gables",
+  "neighborhood": "Coral Gables",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=25.743370,-80.264684"
+  },
+  "neighborhoodTier": "boutique",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/village-at-coral-gables.jpg",
+  "percentSold": 88,
+  "priceFrom": "$1.7M+",
+  "pricePerSqft": null,
+  "privacyScore": 88,
+  "projectedAppreciation": null,
+  "remainingInventory": {
+    "asOf": "2026-02-03",
+    "units": [
+      {
+        "type": "Villa",
+        "unit": "Villa 2",
+        "beds": 3,
+        "baths": 3.5,
+        "sqft": 2439,
+        "price": 4500000,
+        "orientation": "West",
+        "floorplan": "B"
+      },
+      {
+        "type": "Villa",
+        "unit": "Villa 3",
+        "beds": 3,
+        "baths": 3.5,
+        "sqft": 2439,
+        "price": 4500000,
+        "orientation": "West",
+        "floorplan": "B"
+      },
+      {
+        "type": "Townhome",
+        "unit": "Townhome 3",
+        "beds": 4,
+        "baths": 3.5,
+        "sqft": 3147,
+        "price": 3990700,
+        "orientation": "East",
+        "floorplan": "B"
+      },
+      {
+        "type": "Townhome",
+        "unit": "Townhome 15",
+        "beds": 4,
+        "baths": 3.5,
+        "sqft": 3147,
+        "price": 4200000,
+        "orientation": "West",
+        "floorplan": "B"
+      },
+      {
+        "type": "Loft",
+        "unit": "Loft 3",
+        "beds": 2,
+        "baths": 2.5,
+        "sqft": 1881,
+        "price": 2700000,
+        "orientation": "East",
+        "floorplan": "B"
+      },
+      {
+        "type": "Loft",
+        "unit": "Loft 4",
+        "beds": 2,
+        "baths": 2.5,
+        "sqft": 1881,
+        "price": 2550000,
+        "orientation": "East",
+        "floorplan": "A"
+      }
+    ]
+  },
+  "residenceContent": "<p class=\"prop-residence-intro\">Seventeen lots bounded by Malaga Avenue, Santander Avenue, Segovia Street and Hernando Street, assembled into a single 2.6-acre block and built out as Coral Gables' eighth village. De La Guardia Victoria Architects &amp; Urbanists drew it as a piece of town rather than a building — tree-lined streets, plazas, walkways and fountains between the homes, with glorietas modelled on the 1929 Ibero-American Exposition. Nothing rises above four stories. The whole enclave completes the plan George Merrick set out for the City Beautiful a century ago, which is the point of it.</p><p>Forty-eight residences across four collections. Twenty-four Flats of two bedrooms and a study, 1,698 to 1,771 square feet of interior space under ten-foot cove ceilings, each with a covered loggia. Four three-story Lofts at 1,881 square feet, with fourteen-foot cathedral ceilings over the primary bedroom and a private two-car garage. Sixteen three-story Townhomes from 3,147 to 3,246 square feet, with wet bars, walk-in laundries, skylights over the stairs and private elevators from the garage. Four two-story Villas at 2,439 and 2,863 square feet, each with a heated pool, an outdoor kitchen with gas grill and an outdoor shower.</p><p>The specification is the same throughout: hurricane-rated CGI windows and doors in a bronze finish, wood-plank front doors, Italian kitchen cabinetry with stone counters and backsplash, Wolf and Sub-Zero appliances, natural stone bathroom floors with Italian double vanities in stained wood, seven- and eight-foot premium wood doors, coral stone on every terrace, smooth painted stucco and brown clay barrel roof tile outside. Air conditioning runs in zones, hot water recirculates, and every home is generator-ready and wired for an electric vehicle charger.</p>",
+  "shortName": "The Village at Coral Gables",
+  "slug": "village-at-coral-gables",
+  "stage": "move_in_ready",
+  "statusRemark": "DELIVERED 2026 · 6 RESIDENCES REMAIN",
+  "tagline": "Forty-eight Spanish-colonial residences on a 2.6-acre block in the heart of Coral Gables — built, landscaped and handed over.",
+  "units": 48,
+  "unitsLeft": 6,
+  "verified": {
+    "units": {
+      "date": "2025-02-18",
+      "source": "MG Developer record-sale release — 24 flats, 4 lofts, 16 townhomes, 4 villas"
+    },
+    "percentSold": {
+      "date": "2026-02-03",
+      "source": "MG Developer availability sheet — 6 of 48 remaining, Phase 3 pricing"
+    },
+    "maxPrice": {
+      "date": "2026-02-03",
+      "source": "MG Developer availability sheet — Villa 2 and Villa 3 at $4,500,000"
+    },
+    "minPrice": {
+      "date": "2023-07-05",
+      "basis": "launch",
+      "source": "South Florida Business Journal / Florida YIMBY — launch pricing from $1.7M"
+    },
+    "priceFrom": {
+      "date": "2023-07-05",
+      "basis": "launch",
+      "source": "South Florida Business Journal / Florida YIMBY — launch pricing from $1.7M"
+    },
+    "stage": {
+      "date": "2026-04-21",
+      "source": "MG Developer drone photography — buildings complete, landscaping mature, no site equipment"
+    },
+    "statusRemark": {
+      "date": "2026-02-03",
+      "source": "MG Developer availability sheet — 6 of 48 remaining"
+    }
+  },
+  "vibeMatch": [
+    "quiet-luxury",
+    "residential",
+    "intimate",
+    "serene",
+    "old-world-glamour"
+  ],
+  "wellnessScore": 55
+}

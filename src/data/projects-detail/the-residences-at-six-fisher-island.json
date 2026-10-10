@@ -1,0 +1,349 @@
+{
+  "address": "6 Fisher Island Drive, Miami Beach, FL 33109",
+  "amenities": [
+    {
+      "icon": "🏖",
+      "label": "650 ft Shoreline",
+      "sub": "Private oceanfront"
+    },
+    {
+      "icon": "🏊",
+      "label": "Bayfront & Sunset Pools",
+      "sub": "Dual resort pools"
+    },
+    {
+      "icon": "💆",
+      "label": "The Sanctuary Spa",
+      "sub": "Full-service salon"
+    },
+    {
+      "icon": "⛳",
+      "label": "Fisher Island Club",
+      "sub": "Lifetime membership"
+    },
+    {
+      "icon": "🍽",
+      "label": "Residents' Club",
+      "sub": "Private dining"
+    },
+    {
+      "icon": "🌟",
+      "label": "STARR Restaurants",
+      "sub": "Culinary by Stephen Starr"
+    },
+    {
+      "icon": "🚢",
+      "label": "Private Ferry",
+      "sub": "Island access"
+    }
+  ],
+  "amenitiesDescription": "<p>Six Fisher Island delivers over 55,000 SF of bespoke amenities across a private island setting with 650 linear feet of shoreline and gardens by Enea Garden Design. The Bayfront and Sunset pools each have an outdoor spa, sunbeds, and private cabanas, with poolside food and beverage service. The Sanctuary Spa features a sauna, hot and cold plunge pools, multiple treatment rooms, and a world-class salon.</p><p>The state-of-the-art fitness center overlooks Biscayne Bay with dedicated spaces for high-impact training, Pilates reformers, and a yoga studio. Dining options include the signature bayfront restaurant helmed by a celebrated chef, the Sunrise Lounge café, a private dining room and Chef's Table with a bespoke wine room, a speakeasy-style cocktail bar, and in-residence dining and catering. STARR Restaurants, led by James Beard Award-winning restaurateur Stephen Starr, will curate the culinary program at Six Fisher Island.</p><p>The amenities deck pairs a padel court with an imaginative children's playground, alongside two bayfront lounges, a multisport simulator game room and teen lounge, a boardroom equipped with advanced technology, and luxury guest suites for family and friends. A private dock with houseboat sits on the property; the Fisher Island Club's deep-water marina and luxury yacht harbour accommodate vessels up to 250 feet.</p><p>Service runs to a residential butler, a dedicated lifestyle concierge, an on-site general manager, 24-hour security and valet, and a house car and house tender to Miami Beach and the Watson Island Heliport. Every owner receives a complimentary golf cart; three dedicated parking spaces per residence cover two cars plus golf cart storage.</p>",
+  "architect": "Kobi Karp",
+  "completion": "Late 2026–early 2027",
+  "constructionImgs": [
+    {
+      "url": "/sixfisher/construction-update-june-2026.webp",
+      "date": "June 2026"
+    },
+    {
+      "url": "/sixfisher/construction-update-may-2026.webp",
+      "date": "May 2026"
+    }
+  ],
+  "constructionPct": 88,
+  "constructionUpdateDate": "August 2026",
+  "densityScore": 5,
+  "description": "The final new development on Fisher Island. 50 estate homes from 3,872 to 15,570 SF, with a lifetime Fisher Island Club membership included at closing.",
+  "developer": "Related Group, BH Group & Globe Invest",
+  "featureVideo": {
+    "src": "/sixfisher/six-fisher-perfected.mp4",
+    "poster": "/sixfisher/six-fisher-perfected-poster.webp",
+    "label": "The Residences at Six Fisher Island",
+    "tagline": "The last new condominium on Fisher Island. Fifty estate residences, accessible only by ferry.",
+    "uploadDate": "2026-09-18",
+    "duration": "PT50S",
+    "mobileObjectFit": "contain"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "Residence 02",
+      "beds": 3,
+      "baths": 4.5,
+      "sqft": "3,976 SF Interior",
+      "addlRooms": "763 SF Exterior · Service Suite",
+      "status": "From $16,800,000"
+    },
+    {
+      "type": "Residence 04",
+      "beds": 3,
+      "baths": 4.5,
+      "sqft": "3,872 SF Interior",
+      "addlRooms": "823 SF Exterior · Den · Service Suite",
+      "status": "From $16,950,000"
+    },
+    {
+      "type": "Residence 05",
+      "beds": 3,
+      "baths": 4.5,
+      "sqft": "3,872 SF Interior",
+      "addlRooms": "784 SF Exterior · Den · Service Suite",
+      "status": "From $17,000,000"
+    },
+    {
+      "type": "Residence 03",
+      "beds": "3 - 4",
+      "baths": "3.5 - 5.5",
+      "sqft": "3,925–4,428 SF Interior",
+      "addlRooms": "1,153 SF Exterior · Service Suite",
+      "status": "From $19,300,000"
+    },
+    {
+      "type": "Residence 06",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "5,058 SF Interior",
+      "addlRooms": "1,943 SF Exterior · Family Room · Office · Windowed Service Suite",
+      "status": "From $22,000,000"
+    },
+    {
+      "type": "Residence 01",
+      "beds": 5,
+      "baths": 6.5,
+      "sqft": "4,980 SF Interior",
+      "addlRooms": "880 SF Exterior · Service Suite",
+      "inquireOnly": true,
+      "status": "Inquire"
+    },
+    {
+      "type": "Combined Residence 04C",
+      "beds": 5,
+      "baths": "5.5 - 7",
+      "sqft": "7,744 SF Interior",
+      "addlRooms": "1,607 SF Exterior · Great Room · Exercise Room · Den · Wine Room",
+      "status": "From $34,550,000"
+    },
+    {
+      "type": "Combined Residence 02C",
+      "beds": 6,
+      "baths": 7.5,
+      "sqft": "8,404 SF Interior",
+      "addlRooms": "1,916 SF Exterior · Great Room · Exercise Room · Office · Wine Room",
+      "inquireOnly": true,
+      "status": "Inquire"
+    }
+  ],
+  "floorPlansShowAll": true,
+  "generalContractor": "Coastal Construction",
+  "height": "10 Stories",
+  "hoa": "Approximately $3.50/sf (estimated for island-exclusive service).",
+  "id": 16,
+  "img": "https://frasermiami.s3.amazonaws.com/sixfisher/hero.webp",
+  "imgPositions": {
+    "4": "center 80%"
+  },
+  "imgPositionsMobile": {
+    "4": "center 85%"
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/sixfisher/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/aerial2.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/aerial3.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/balcony.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/boardwalk.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/driveway.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/golf-aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/kitchen2.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/lounge3.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/pool2.webp",
+    "https://frasermiami.s3.amazonaws.com/sixfisher/pool3.webp"
+  ],
+  "inquiryButtonLabel": "Schedule a Tour",
+  "inquirySubject": "Inquiry: Six Fisher Island - Private Inventory Request",
+  "interiorDesigner": "Tara Bernerd & Partners",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "2×",
+        "label": "Comparable resale, 2019 to 2022",
+        "note": "A Palazzo della Luna unit bought for $10.5M in 2019 resold for $21.3M in 2022, at $4,811 per square foot, a building record at the time (public records)."
+      },
+      {
+        "value": "$15M+",
+        "label": "Launch price · 10 residences remain",
+        "note": "3,872 to 15,570 SF; 3 to 8 bedrooms. Remaining inventory is asking $16.8M to $34.55M, a blended $4,421 per square foot as of the developer's May 2026 price list."
+      },
+      {
+        "value": "50 homes",
+        "label": "Final condominium parcel on Fisher Island",
+        "note": "50 residences on a 6.5-acre waterfront site. No comparable new condo project is currently entitled on the island."
+      },
+      {
+        "value": "$2.2M+",
+        "label": "Average household income, ZIP 33109",
+        "note": "Fisher Island has ranked as America's wealthiest ZIP code by average income (Bloomberg analysis of IRS data)."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Final entitled condominium parcel on Fisher Island",
+        "body": "Six Fisher sits on one of the island's last major developable waterfront sites, with no comparable condo pipeline announced today. That constrained supply profile has historically supported strong resale pricing in ZIP 33109."
+      },
+      {
+        "pill": "Access",
+        "pillColor": "gold",
+        "title": "Private island access with lifetime club membership",
+        "body": "Fisher Island is accessible only by ferry, yacht, or helicopter. Each purchaser receives a lifetime Fisher Island Club membership at closing, covering golf, marina, beach club, tennis, spa, and dining, with recent golf and Beach Club upgrades underway."
+      },
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Tower cranes removed; glass railings advancing on facade",
+        "body": "Profile Miami reports final-stage work in August 2026: cranes dismantled, glass railings rising, and pool forms pouring on the south amenities deck. Coastal Construction is GC; delivery is targeted for late 2026 or early 2027."
+      },
+      {
+        "pill": "Inventory",
+        "pillColor": "gold",
+        "title": "Ten residences remain of the original fifty",
+        "body": "The developer's May 2026 price list shows ten homes available from $16.8M to $34.55M, a blended $4,421 per square foot. Two penthouses previously closed for a combined $150 million."
+      },
+      {
+        "pill": "Dining",
+        "pillColor": "gold",
+        "title": "Private dining curated by Stephen Starr",
+        "body": "STARR Restaurants, led by James Beard Award-winning restaurateur Stephen Starr, will run the culinary program. It spans a signature waterfront restaurant, Chef's Table, Sunrise Lounge café, and in-residence dining reserved for just 50 households."
+      },
+      {
+        "pill": "Density",
+        "pillColor": "gray",
+        "title": "50 residences across 6.5 acres of private waterfront",
+        "body": "Six Fisher spreads 50 residences across 6.5 acres and 650 feet of shoreline, landscaped by Enea Garden Design. That land-to-unit ratio is among Miami-Dade's lowest for new development."
+      }
+    ],
+    "thesis": "Six Fisher Island occupies Fisher Island's final entitled condominium parcel: a 10-story, 50-residence building on America's wealthiest private island, accessible only by ferry. Fisher Island's average household income exceeds $2.2M, the highest of any ZIP code in the country. Palazzo della Luna, the island's last condo delivery in 2019, has seen resales more than double: one unit bought for $10.5M resold for $21.3M in 2022, at $4,811 per square foot. At 50 estate-scale residences with private pools, 10-foot ceilings, and lifetime club membership included, Six Fisher targets the top of the Miami market with a format the island is unlikely to repeat at this scale.",
+    "footnote": "HOA: Est. $3.50/sq ft · Rental policy: HOA approval required · Delivery: Late 2026–early 2027 · GC: Coastal Construction · Landscape: Enea Garden Design · Inventory and pricing as of the developer's May 2026 price list"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "2×",
+        "label": "Comparable resale, 2019 to 2022",
+        "note": "A Palazzo della Luna unit bought for $10.5M in 2019 resold for $21.3M in 2022, at $4,811 per square foot, a building record at the time (public records)."
+      },
+      {
+        "value": "$15M+",
+        "label": "Launch price · 10 residences remain",
+        "note": "3,872 to 15,570 SF; 3 to 8 bedrooms. Remaining inventory is asking $16.8M to $34.55M, a blended $4,421 per square foot as of the developer's May 2026 price list."
+      },
+      {
+        "value": "50 homes",
+        "label": "Final condominium parcel on Fisher Island",
+        "note": "50 residences on a 6.5-acre waterfront site. No comparable new condo project is currently entitled on the island."
+      },
+      {
+        "value": "$2.2M+",
+        "label": "Average household income, ZIP 33109",
+        "note": "Fisher Island has ranked as America's wealthiest ZIP code by average income (Bloomberg analysis of IRS data)."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Final entitled condominium parcel on Fisher Island",
+        "body": "Six Fisher sits on one of the island's last major developable waterfront sites, with no comparable condo pipeline announced today. That constrained supply profile has historically supported strong resale pricing in ZIP 33109."
+      },
+      {
+        "pill": "Access",
+        "pillColor": "gold",
+        "title": "Private island access with lifetime club membership",
+        "body": "Fisher Island is accessible only by ferry, yacht, or helicopter. Each purchaser receives a lifetime Fisher Island Club membership at closing, covering golf, marina, beach club, tennis, spa, and dining, with recent golf and Beach Club upgrades underway."
+      },
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Tower cranes removed; glass railings advancing on facade",
+        "body": "Profile Miami reports final-stage work in August 2026: cranes dismantled, glass railings rising, and pool forms pouring on the south amenities deck. Coastal Construction is GC; delivery is targeted for late 2026 or early 2027."
+      },
+      {
+        "pill": "Inventory",
+        "pillColor": "gold",
+        "title": "Ten residences remain of the original fifty",
+        "body": "The developer's May 2026 price list shows ten homes available from $16.8M to $34.55M, a blended $4,421 per square foot. Two penthouses previously closed for a combined $150 million."
+      },
+      {
+        "pill": "Dining",
+        "pillColor": "gold",
+        "title": "Private dining curated by Stephen Starr",
+        "body": "STARR Restaurants, led by James Beard Award-winning restaurateur Stephen Starr, will run the culinary program. It spans a signature waterfront restaurant, Chef's Table, Sunrise Lounge café, and in-residence dining reserved for just 50 households."
+      },
+      {
+        "pill": "Density",
+        "pillColor": "gray",
+        "title": "50 residences across 6.5 acres of private waterfront",
+        "body": "Six Fisher spreads 50 residences across 6.5 acres and 650 feet of shoreline, landscaped by Enea Garden Design. That land-to-unit ratio is among Miami-Dade's lowest for new development."
+      }
+    ],
+    "thesis": "Six Fisher Island occupies Fisher Island's final entitled condominium parcel: a 10-story, 50-residence building on America's wealthiest private island, accessible only by ferry. Fisher Island's average household income exceeds $2.2M, the highest of any ZIP code in the country. Palazzo della Luna, the island's last condo delivery in 2019, has seen resales more than double: one unit bought for $10.5M resold for $21.3M in 2022, at $4,811 per square foot. At 50 estate-scale residences with private pools, 10-foot ceilings, and lifetime club membership included, Six Fisher targets the top of the Miami market with a format the island is unlikely to repeat at this scale.",
+    "footnote": "HOA: Est. $3.50/sq ft · Rental policy: HOA approval required · Delivery: Late 2026–early 2027 · GC: Coastal Construction · Landscape: Enea Garden Design · Inventory and pricing as of the developer's May 2026 price list"
+  },
+  "investmentThesis": "<p>Six Fisher occupies Fisher Island's final entitled condominium parcel: 6.5 acres with 650 linear feet of shoreline on the most exclusive private island community in the United States. The island has consistently ranked among the wealthiest ZIP codes in America. A complimentary lifetime Fisher Island Club membership at closing adds significant long-term value, as club memberships are independently priced in the hundreds of thousands. The island's ferry-only access creates a level of privacy and security unmatched by any mainland address. As of August 2026, construction is in its final stages: tower cranes have been removed, glass railings are progressing up the exterior, and the south amenities deck is taking shape with pool pours underway across the lower levels and villa residences. Two penthouses have closed for a combined $150 million among several major transactions at the development. Coastal Construction is overseeing delivery targeted for late 2026 or early 2027.</p>",
+  "isActive": true,
+  "landscapeArchitect": "Enea Garden Design",
+  "lat": 25.7638,
+  "lng": -80.1407,
+  "locationScore": 12,
+  "maxBed": 8,
+  "maxPrice": 90000000,
+  "maxSqft": 15570,
+  "minBed": 3,
+  "minPrice": 15000000,
+  "minSqft": 3872,
+  "name": "The Residences at Six Fisher Island",
+  "neighborhood": "Fisher Island",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/the-residences-at-six-fisher-island.jpg",
+  "parking": "Three dedicated parking spaces per unit, typically two for cars and one for a provided golf cart",
+  "priceFrom": "$15M+",
+  "pricePerSqft": 4421,
+  "privacyScore": 100,
+  "progressVideo": {
+    "vimeoId": "1220893884",
+    "title": "August 2026 Construction Update",
+    "caption": "Related Group August 2026 site update (63s): exterior progress on the Six Fisher Island residences.",
+    "date": "August 2026",
+    "credit": "Related Group"
+  },
+  "projectedAppreciation": 40,
+  "rentalPolicy": "HOA approval required for any rentals",
+  "residenceContent": "<p class=\"prop-residence-intro\">The final new development on Fisher Island, accessible only by private ferry or watercraft. The building rises 10 stories on a 6.5-acre waterfront site with 650 linear feet of shoreline, landscaped by Enea Garden Design. Just 50 estate-style residences served by three lobbies, each with a full-time concierge, with private elevator entry, 10-foot ceilings, floor-to-ceiling glass, and 15-foot-deep terraces. Interiors by Tara Bernerd &amp; Partners use natural stone, warm timber, and a muted coastal palette to complement the island setting. Kitchens feature full Sub-Zero and Wolf appliance suites, custom cabinetry, and natural stone countertops. Primary suites include twin oversized walk-in wardrobes with custom built-ins. Every purchaser receives a complimentary lifetime Fisher Island Club membership at closing.</p>",
+  "salesTeam": "Douglas Elliman",
+  "slug": "the-residences-at-six-fisher-island",
+  "stage": "under_construction",
+  "statusRemark": "10 RESIDENCES REMAIN · $16.8M–$34.55M",
+  "units": 50,
+  "unitsLeft": 10,
+  "verified": {
+    "completion": {
+      "date": "2026-09-04",
+      "source": "Brett Fraser — Late 2026–early 2027"
+    },
+    "pricePerSqft": {
+      "date": "2026-05-06",
+      "source": "Developer broker price list — Available Residences, May 6 2026 (blended over 10 listings)"
+    },
+    "unitsLeft": {
+      "date": "2026-05-06",
+      "source": "Developer broker price list — Available Residences, May 6 2026"
+    },
+    "minPrice": {
+      "date": "2026-09-16",
+      "source": "Launch pricing",
+      "basis": "launch"
+    }
+  },
+  "wellnessScore": 85
+}

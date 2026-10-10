@@ -1,0 +1,426 @@
+{
+  "address": "1715 Douglas Road, Coral Gables, FL 33134",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Resort-Style Pool",
+      "sub": "In-pool lounging steps + sun shelf"
+    },
+    {
+      "icon": "🍹",
+      "label": "Outdoor Bar",
+      "sub": "Poolside social terrace"
+    },
+    {
+      "icon": "💪",
+      "label": "Fitness Center",
+      "sub": "Cardio, strength + free weights"
+    },
+    {
+      "icon": "🔥",
+      "label": "Sauna",
+      "sub": "Restorative heat therapy"
+    },
+    {
+      "icon": "🧘",
+      "label": "Yoga Lawn",
+      "sub": "Outdoor, open-air practice"
+    },
+    {
+      "icon": "🛋",
+      "label": "Residents' Club Room",
+      "sub": "Entertainer's kitchen + social lounge"
+    },
+    {
+      "icon": "💻",
+      "label": "Co-Working Center",
+      "sub": "Dedicated desks + private booths"
+    },
+    {
+      "icon": "📊",
+      "label": "Conference Room",
+      "sub": "A/V-ready"
+    },
+    {
+      "icon": "🏀",
+      "label": "Half Basketball Court",
+      "sub": "With court wall"
+    },
+    {
+      "icon": "🛴",
+      "label": "Children's Playground",
+      "sub": "Plus ground-level splash fountain"
+    },
+    {
+      "icon": "🐕",
+      "label": "Dog Park",
+      "sub": "Landscaped run"
+    },
+    {
+      "icon": "🛎",
+      "label": "24-Hour Concierge",
+      "sub": "Attended lobby + smart package room"
+    },
+    {
+      "icon": "🚗",
+      "label": "Assigned Parking + Valet",
+      "sub": "Assigned space + 24-hour valet"
+    }
+  ],
+  "amenitiesDescription": "<p>The pool deck is the center of the building: a resort-style pool with integrated in-pool lounging steps, a landscaped sun shelf with panoramic views, and an outdoor bar and sink for casual gatherings. Wellness runs alongside it, with a fitness center carrying cardio, strength equipment and free weights, a sauna for heat therapy, and an outdoor yoga lawn for open-air practice.</p><p>Indoors, the residents' club room and social lounge carries sculptural lighting, an entertainer's kitchen, and generous seating; a co-working center offers dedicated desks and private booths, with an A/V-ready conference room beside it. The ground plane is built for families: a children's playground, a half basketball court with a court wall, a splash fountain set within the garden, and a dog park. Building services include an intimate arrival lobby with 24-hour concierge, a smart package room with integrated lockbox, dedicated resident and bicycle storage, controlled-access entry, on-site property management, a resident app for amenity reservations and valet coordination, and assigned parking with 24-hour valet.</p>",
+  "architect": "Asprea Studio with Caymares Martin A&E Design",
+  "badge": "UNDER CONSTRUCTION · Q1 2028",
+  "completion": "Q1 2028",
+  "densityScore": 48,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "90 Days from Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "180 Days from Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top-Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing (2028)"
+    }
+  ],
+  "description": "Seventeen Gables is a 117-residence, eight-story condominium at 1715 Douglas Road on the eastern edge of Coral Gables. Developed by Ascendra Capital and BAM Property Development, with design and interiors by New York-based Asprea Studio and Caymares Martin A&E Design as architect of record, it is positioned as attainable luxury in a submarket that produces very little new condominium supply and prices almost all of it well above this. Residences run from one to three bedrooms across 557 to 1,428 square feet, with nine-foot ceilings, floor-to-ceiling impact glass, a balcony with every home, engineered stone counters paired with European-style cabinetry, a Bosch cooking suite with paneled Fisher & Paykel refrigeration and dishwasher, spa-inspired baths with floating vanities, and Blomberg washer-dryers in residence. Released pricing as of June 2026 runs from $634,900 for a 557 square foot one-bedroom to $1,893,900 for the 1,428 square foot three-bedroom, with association dues budgeted at $1.60 per square foot. At eight stories it is among the tallest buildings in the East Gables, with panoramic views spanning the Coral Gables tree canopy to the Miami skyline. The amenity program includes a resort-style pool with in-pool lounging steps and a landscaped sun shelf, a fitness center and sauna, an outdoor yoga lawn, a residents' club room with entertainer's kitchen, a co-working center with private booths and an A/V-ready conference room, plus a half basketball court, children's playground, ground-level splash fountain, and dog park, with 24-hour concierge and valet alongside assigned parking. The project closed a $60 million construction loan from Dwight Mortgage Trust in February 2026, broke ground that May, and is expected to deliver in the first quarter of 2028.",
+  "developer": "Ascendra Capital · BAM Property Development",
+  "editorialLine": "A quieter corner of the Gables, eight stories up.",
+  "faq": [
+    {
+      "question": "How much do residences at Seventeen Gables cost?",
+      "answer": "Released pricing as of June 2026 runs from $634,900 for a 557 SF one-bedroom to $1,893,900 for the 1,428 SF three-bedroom with two and a half baths. One-bedrooms are priced from $634,900 to $798,900, one-bedroom-plus-den plans from $820,900, and two-bedrooms from $861,900 to $1,243,900. Across the released sheet that works out to roughly $955 to $1,377 per square foot, averaging about $1,132. Pricing is subject to change without notice."
+    },
+    {
+      "question": "What is the deposit structure at Seventeen Gables?",
+      "answer": "Forty percent is due before closing, spread across four payments: 10% at contract, 10% at 90 days from contract, 10% at 180 days from contract, and 10% at top-off, with the balance due at closing. That is a gentler schedule than the 20%-at-contract structures typical of Miami's ultra-luxury tier."
+    },
+    {
+      "question": "When will Seventeen Gables be completed?",
+      "answer": "Estimated completion is the first quarter of 2028. Dwight Mortgage Trust closed a $60 million construction loan in February 2026 and the developers broke ground in May 2026, concurrent with the sales launch rather than after clearing a pre-sale threshold, so the schedule does not depend on absorption."
+    },
+    {
+      "question": "What are the HOA fees at Seventeen Gables?",
+      "answer": "Association dues are budgeted at $1.60 per square foot, which works out to roughly $891 a month for a 557 SF one-bedroom and about $2,285 a month for the 1,428 SF three-bedroom. Figures are estimates and subject to change."
+    },
+    {
+      "question": "Where is Seventeen Gables located?",
+      "answer": "At 1715 Douglas Road, at Alhambra Circle and Douglas Road on the eastern edge of Coral Gables. It is within walking distance of downtown Coral Gables dining and shopping, and minutes from Miracle Mile, the Coconut Grove waterfront, the University of Miami, and Brickell."
+    },
+    {
+      "question": "What amenities does Seventeen Gables offer?",
+      "answer": "A resort-style pool with in-pool lounging steps and a sun shelf, an outdoor bar, a fitness center with cardio and free weights, a sauna, an outdoor yoga lawn, a residents' club room with entertainer's kitchen, a co-working center with private booths and an A/V-ready conference room, a half basketball court, a children's playground, a splash fountain, and a dog park. Services include 24-hour concierge, assigned parking with 24-hour valet, a smart package room, and on-site property management."
+    }
+  ],
+  "featureVideo": {
+    "src": "/seventeen-coral-gables/seventeen-showcase.mp4",
+    "poster": "/seventeen-coral-gables/seventeen-poster.webp",
+    "label": "Seventeen Gables",
+    "tagline": "Downtown Miami on the skyline, Coral Gables underfoot — the pool deck, gardens, and residences.",
+    "uploadDate": "2026-09-03"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "One-Bedroom",
+      "addlRooms": "Balcony",
+      "beds": 1,
+      "baths": 1,
+      "sqft": "557–720 SF",
+      "status": "From $634,900"
+    },
+    {
+      "type": "One-Bedroom + Den",
+      "addlRooms": "Den + Balcony",
+      "beds": 1,
+      "baths": 1,
+      "sqft": "755 SF",
+      "status": "Inquire"
+    },
+    {
+      "type": "One-Bedroom + Den",
+      "addlRooms": "Den + Powder + Balcony",
+      "beds": 1,
+      "baths": 1.5,
+      "sqft": "860 SF",
+      "status": "From $820,900"
+    },
+    {
+      "type": "One-Bedroom + Den",
+      "addlRooms": "Den + Balcony",
+      "beds": 1,
+      "baths": 2,
+      "sqft": "850 SF",
+      "status": "From $913,900"
+    },
+    {
+      "type": "Two-Bedroom",
+      "addlRooms": "Balcony",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "810–990 SF",
+      "status": "From $861,900"
+    },
+    {
+      "type": "Two-Bedroom + Den",
+      "addlRooms": "Den + Balcony",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "1,024–1,080 SF",
+      "status": "Inquire"
+    },
+    {
+      "type": "Three-Bedroom",
+      "addlRooms": "Powder + Balcony",
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": "1,428 SF",
+      "status": "From $1,893,900"
+    }
+  ],
+  "height": "8 Stories",
+  "hoa": "$1.60 / sq ft",
+  "id": 61,
+  "img": "/seventeen-coral-gables/hero.webp",
+  "imgs": [
+    "/seventeen-coral-gables/hero.webp",
+    "/seventeen-coral-gables/pool-deck.webp",
+    "/seventeen-coral-gables/night.webp",
+    "/seventeen-coral-gables/living.webp",
+    "/seventeen-coral-gables/lobby.webp",
+    "/seventeen-coral-gables/kitchen.webp",
+    "/seventeen-coral-gables/bedroom.webp",
+    "/seventeen-coral-gables/bathroom.webp",
+    "/seventeen-coral-gables/dining.webp",
+    "/seventeen-coral-gables/lobby-lounge.webp",
+    "/seventeen-coral-gables/pool-lounge.webp",
+    "/seventeen-coral-gables/club-lounge.webp",
+    "/seventeen-coral-gables/fitness.webp",
+    "/seventeen-coral-gables/sauna.webp",
+    "/seventeen-coral-gables/club-kitchen.webp",
+    "/seventeen-coral-gables/conference-room.webp",
+    "/seventeen-coral-gables/playground.webp",
+    "/seventeen-coral-gables/dog-park.webp",
+    "/seventeen-coral-gables/basketball-court.webp",
+    "/seventeen-coral-gables/splash-fountain.webp",
+    "/seventeen-coral-gables/exterior-corner.webp",
+    "/seventeen-coral-gables/lobby-seating.webp",
+    "/seventeen-coral-gables/lobby-detail.webp",
+    "/seventeen-coral-gables/pool-deck-2.webp",
+    "/seventeen-coral-gables/pool-detail.webp",
+    "/seventeen-coral-gables/club-lounge-2.webp",
+    "/seventeen-coral-gables/club-bar.webp",
+    "/seventeen-coral-gables/dog-park-2.webp"
+  ],
+  "interiorDesigner": "Asprea Studio",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$60M",
+        "label": "Dwight Mortgage Trust construction loan",
+        "note": "Closed February 2026, three months before groundbreaking. Construction lending for Miami condominiums has grown selective, so a closed facility at this size is an outside underwriter testing the numbers."
+      },
+      {
+        "value": "May 2026",
+        "label": "Broke ground with the sales launch",
+        "note": "Vertical work started concurrent with sales rather than after clearing a pre-sale threshold. Buyers are not carrying the risk that the project waits on absorption to begin."
+      },
+      {
+        "value": "$634,900",
+        "label": "Entry price, June 2026 release",
+        "note": "One to three bedrooms, 557 to 1,428 square feet, running to $1,893,900 for the three-bedroom. Roughly $955 to $1,377 per square foot across the released sheet, averaging about $1,132."
+      },
+      {
+        "value": "Q1 2028",
+        "label": "Estimated delivery",
+        "note": "Deposit runs 10% at contract, 10% at 90 days, 10% at 180 days, 10% at top off, with the balance at closing. HOA is budgeted at $1.60 per square foot."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "The entry point into new Coral Gables construction",
+        "body": "Cora Merrick Park opens at $900,000 and Ponce Park at $3.1 million. The June 2026 sheet at Seventeen Gables opens at $634,900 and runs to $1,893,900, in a city that produces almost no new condominium supply at any price."
+      },
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "$60M Dwight Mortgage Trust loan closed February 2026",
+        "body": "The facility closed three months ahead of groundbreaking. BAM and Ascendra are self-funding the balance, which is why the schedule does not depend on sales velocity."
+      },
+      {
+        "pill": "Absorption",
+        "pillColor": "gold",
+        "title": "Groundbreaking concurrent with the sales launch",
+        "body": "Most boutique projects wait to clear a pre-sale threshold before going vertical. Starting both at once removes the financing contingency that stalls comparable buildings."
+      },
+      {
+        "pill": "Supply",
+        "pillColor": "gray",
+        "title": "Compact layouts in a large-format submarket",
+        "body": "Coral Gables new construction skews to move-down buyers leaving houses. A 557 square foot one-bedroom has no real competitor in the city."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Douglas Road at the eastern city boundary",
+        "body": "Minutes from Miracle Mile, the Coconut Grove waterfront, and Brickell. The buyer pool runs to Gables renters, University of Miami staff, and workers priced out of a single-family purchase."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gray",
+        "title": "Asprea Studio with Caymares Martin as architect of record",
+        "body": "Karen Asprea's New York studio handles both architecture and interiors. Caymares Martin works inside the Mediterranean Revival vocabulary that governs Coral Gables design review, which lowers approval risk."
+      }
+    ],
+    "thesis": "Seventeen Gables is an access play, not a scarcity play. Coral Gables produces very little new condominium product, and what it does produce is aimed at buyers already living there and moving down from a house: Ponce Park at $3.1 million, Cora Merrick Park at $900,000, both averaging well above 1,500 square feet. Seventeen Gables opens beneath both at $634,900, with 117 compact residences, which puts a new-construction address in the city within reach of a buyer pool that has never had one. The risk in that positioning is absorption, and the developers have addressed it directly. Dwight Mortgage Trust closed a $60 million construction loan in February 2026 and vertical work began in May, concurrent with the sales launch rather than after a pre-sale threshold. That sequencing is unusual and it matters: the delivery date is not a function of how fast the building sells. What buyers are underwriting here is a submarket with structurally thin supply and a schedule that is already funded.",
+    "footnote": "Pricing per developer sheet dated June 2026, subject to change · HOA: $1.60/sq ft · Rental policy: TBD · Delivery: est. Q1 2028 · Deposit: 10% contract, 10% at 90 days, 10% at 180 days, 10% top off, balance at closing · $60M Dwight Mortgage Trust loan closed Feb 2026"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$60M",
+        "label": "Dwight Mortgage Trust construction loan",
+        "note": "Closed February 2026, three months before groundbreaking. Construction lending for Miami condominiums has grown selective, so a closed facility at this size is an outside underwriter testing the numbers."
+      },
+      {
+        "value": "May 2026",
+        "label": "Broke ground with the sales launch",
+        "note": "Vertical work started concurrent with sales rather than after clearing a pre-sale threshold. Buyers are not carrying the risk that the project waits on absorption to begin."
+      },
+      {
+        "value": "$634,900",
+        "label": "Entry price, June 2026 release",
+        "note": "One to three bedrooms, 557 to 1,428 square feet, running to $1,893,900 for the three-bedroom. Roughly $955 to $1,377 per square foot across the released sheet, averaging about $1,132."
+      },
+      {
+        "value": "Q1 2028",
+        "label": "Estimated delivery",
+        "note": "Deposit runs 10% at contract, 10% at 90 days, 10% at 180 days, 10% at top off, with the balance at closing. HOA is budgeted at $1.60 per square foot."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "The entry point into new Coral Gables construction",
+        "body": "Cora Merrick Park opens at $900,000 and Ponce Park at $3.1 million. The June 2026 sheet at Seventeen Gables opens at $634,900 and runs to $1,893,900, in a city that produces almost no new condominium supply at any price."
+      },
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "$60M Dwight Mortgage Trust loan closed February 2026",
+        "body": "The facility closed three months ahead of groundbreaking. BAM and Ascendra are self-funding the balance, which is why the schedule does not depend on sales velocity."
+      },
+      {
+        "pill": "Absorption",
+        "pillColor": "gold",
+        "title": "Groundbreaking concurrent with the sales launch",
+        "body": "Most boutique projects wait to clear a pre-sale threshold before going vertical. Starting both at once removes the financing contingency that stalls comparable buildings."
+      },
+      {
+        "pill": "Supply",
+        "pillColor": "gray",
+        "title": "Compact layouts in a large-format submarket",
+        "body": "Coral Gables new construction skews to move-down buyers leaving houses. A 557 square foot one-bedroom has no real competitor in the city."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Douglas Road at the eastern city boundary",
+        "body": "Minutes from Miracle Mile, the Coconut Grove waterfront, and Brickell. The buyer pool runs to Gables renters, University of Miami staff, and workers priced out of a single-family purchase."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gray",
+        "title": "Asprea Studio with Caymares Martin as architect of record",
+        "body": "Karen Asprea's New York studio handles both architecture and interiors. Caymares Martin works inside the Mediterranean Revival vocabulary that governs Coral Gables design review, which lowers approval risk."
+      }
+    ],
+    "thesis": "Seventeen Gables is an access play, not a scarcity play. Coral Gables produces very little new condominium product, and what it does produce is aimed at buyers already living there and moving down from a house: Ponce Park at $3.1 million, Cora Merrick Park at $900,000, both averaging well above 1,500 square feet. Seventeen Gables opens beneath both at $634,900, with 117 compact residences, which puts a new-construction address in the city within reach of a buyer pool that has never had one. The risk in that positioning is absorption, and the developers have addressed it directly. Dwight Mortgage Trust closed a $60 million construction loan in February 2026 and vertical work began in May, concurrent with the sales launch rather than after a pre-sale threshold. That sequencing is unusual and it matters: the delivery date is not a function of how fast the building sells. What buyers are underwriting here is a submarket with structurally thin supply and a schedule that is already funded.",
+    "footnote": "Pricing per developer sheet dated June 2026, subject to change · HOA: $1.60/sq ft · Rental policy: TBD · Delivery: est. Q1 2028 · Deposit: 10% contract, 10% at 90 days, 10% at 180 days, 10% top off, balance at closing · $60M Dwight Mortgage Trust loan closed Feb 2026"
+  },
+  "investmentThesis": "<p>Coral Gables produces very little new condominium supply, and nearly all of it is aimed at the buyer already living there and moving down from a house. Ponce Park opens at $3.1 million; Cora Merrick Park at $900,000. Seventeen Gables opens at $634,900, below both, which makes it the entry point into new construction in the city and the natural landing spot for Gables renters, University of Miami faculty and staff, and Brickell and Coconut Grove workers who want the address and the school district without a single-family price. The site is on Douglas Road at the eastern boundary, minutes from Miracle Mile, the Grove waterfront, and the Brickell financial district.</p><p>The financing is the strongest signal. Dwight Mortgage Trust closed a $60 million construction loan in February 2026 and the developers broke ground in May, concurrent with the sales launch rather than after clearing a pre-sale threshold. That is unusual in a lending market that has grown selective on Miami condominium construction, and it means delivery is not contingent on absorption. BAM Development, founded by Mayer Berkovits, and Ascendra Capital, with David Steinberg as partner and CIO, are self-funding the balance. At 117 residences the building is small enough to sell through without a long absorption tail, and the 10/10/10/10 deposit schedule spreads the pre-closing commitment further than the 20-percent-at-contract structures typical of the ultra-luxury tier.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "$634,900",
+      "label": "Entry price, June 2026 release",
+      "note": "A 557 SF one-bedroom on the third floor. The released sheet runs to $1,893,900 for the 1,428 SF three-bedroom, averaging roughly $1,132 per square foot."
+    },
+    {
+      "value": "$60M",
+      "label": "Dwight Mortgage Trust construction loan",
+      "note": "Closed February 2026. Construction lending for Miami condominiums has grown selective, so a facility at this size is an outside underwriter testing the numbers."
+    },
+    {
+      "value": "May 2026",
+      "label": "Groundbreaking, concurrent with sales launch",
+      "note": "Most boutique projects wait to clear a pre-sale threshold before going vertical. Delivery here is not contingent on absorption."
+    },
+    {
+      "value": "40%",
+      "label": "Deposit before closing",
+      "note": "10% at contract, 10% at 90 days, 10% at 180 days, 10% at top off, balance at closing. HOA is budgeted at $1.60 per square foot."
+    }
+  ],
+  "lat": 25.7550463,
+  "lng": -80.2544829,
+  "locationScore": 45,
+  "maxBath": 2.5,
+  "maxBed": 3,
+  "maxPrice": 1893900,
+  "maxSqft": 1428,
+  "minBath": 1,
+  "minBed": 1,
+  "minPrice": 634900,
+  "minSqft": 557,
+  "name": "Seventeen Gables",
+  "neighborhood": "Coral Gables",
+  "neighborhoodMap": {
+    "pinUrl": "https://maps.app.goo.gl/iYA7AxvhqLCZXDvi9"
+  },
+  "parking": "Assigned parking + 24-hour valet",
+  "percentSold": null,
+  "priceFrom": "$634K+",
+  "pricePerSqft": 1132,
+  "privacyScore": 62,
+  "residenceContent": "<p class=\"prop-residence-intro\">Seven layouts across 557 to 1,428 square feet, from a one-bedroom to a three-bedroom with two and a half baths, with dens available at most sizes. Ceilings run nine feet, walls are floor-to-ceiling impact glass, and every residence has a balcony. At eight stories on the East Gables edge, that outlook runs over the Coral Gables canopy toward the Miami skyline rather than into a neighboring tower. Kitchens pair premium engineered stone counters with European-style cabinetry and a Bosch cooktop and ovens, with the Fisher &amp; Paykel refrigerator and dishwasher paneled to disappear into the millwork. Baths are spa-inspired, with floating vanities and designer fixtures. A Blomberg washer and dryer is integrated in every home, and smart-home control covers lighting and climate.</p>",
+  "salesTeam": "Private appointments available",
+  "seoKeywords": [
+    "Seventeen Gables",
+    "Seventeen Gables Coral Gables",
+    "1715 Douglas Road",
+    "Seventeen Gables prices",
+    "Seventeen Gables floor plans",
+    "Coral Gables pre-construction condos",
+    "Coral Gables new construction",
+    "Ascendra Capital",
+    "BAM Property Development",
+    "Asprea Studio",
+    "East Gables condos"
+  ],
+  "slug": "seventeen-coral-gables",
+  "sqftRange": "557 – 1,428",
+  "stage": "under_construction",
+  "statusRemark": "UNDER CONSTRUCTION · $60M LOAN CLOSED · Q1 2028 DELIVERY",
+  "stories": 8,
+  "tagline": "One hundred seventeen residences on Douglas Road, from $634,900 — the most accessible new construction in Coral Gables.",
+  "units": 117,
+  "unitsLeft": null,
+  "videoTourId": null,
+  "wellnessScore": 70
+}

@@ -1,0 +1,205 @@
+{
+  "address": "1901 Collins Ave, Miami Beach, FL 33139",
+  "amenities": [
+    {
+      "icon": "🏖",
+      "label": "Private Beach Club",
+      "sub": "Cabana service"
+    },
+    {
+      "icon": "🏊",
+      "label": "Multiple Pools",
+      "sub": "Lap, leisure, private"
+    },
+    {
+      "icon": "💆",
+      "label": "Spa & Beauty Atelier",
+      "sub": "World-class wellness"
+    },
+    {
+      "icon": "🍸",
+      "label": "Auberge Service",
+      "sub": "Five-star hotel"
+    },
+    {
+      "icon": "🎾",
+      "label": "Shell Bay Club",
+      "sub": "Racquet & yacht access"
+    },
+    {
+      "icon": "🏋",
+      "label": "Fitness Center",
+      "sub": "Personal training suites"
+    }
+  ],
+  "amenitiesDescription": "<p>The Shore Club Private Collection delivers the rare combination of boutique residential privacy and full five-star hotel service, curated by Auberge Resorts Collection. Residential amenities include lap, leisure, and private pools set in botanical gardens; a world-class spa and beauty atelier; a private residential gym with personal training suites; a residents' beach club with cabana service; library lounge; children's playroom; and a private dining and meeting suite. Residents also receive a Social Membership to the Shell Bay Club, with access to its Racquet Club, Yacht Club, and restaurants.</p><p>Building services cover 24-hour concierge and reception, a dedicated Director of Residences, in-residence butler, housekeeping, dining and catering, spa treatments, valet, laundry, and dry-cleaning. The Auberge food and beverage program adds signature restaurants, poolside dining, a cocktail lounge with grand piano, and a beachside beach club — all steps from your front door.</p>",
+  "architect": "Robert A.M. Stern Architects (RAMSA) · Kobi Karp Architecture",
+  "completion": "2027",
+  "constructionNote": "Miami Beach issued a $97 million phased new-construction permit (job BC2322278) for 481,200 SF at 1901 Collins Avenue, week ending Aug. 5, 2026. Delivery remains 2027.",
+  "constructionUpdateDate": "August 2026",
+  "densityScore": 15,
+  "description": "A Robert A.M. Stern oceanfront masterpiece at the legendary Shore Club site on Collins Avenue. 49 residences with Auberge Resorts Collection service. 90%+ sold. Delivery 2027.",
+  "developer": "Witkoff & Monroe Capital",
+  "height": "18 Stories",
+  "heroImgPosition": "center 75%",
+  "hoa": "TBA",
+  "id": 12,
+  "img": "https://frasermiami.s3.amazonaws.com/shoreclub/hero-beach-view.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/shoreclub/hero-beach-view.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/breezeway.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/pool-sunrise.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/pool2.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/beachview.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/unit.webp",
+    "https://frasermiami.s3.amazonaws.com/shoreclub/unitview.webp"
+  ],
+  "interiorDesigner": "Robert A.M. Stern Architects",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$120M",
+        "label": "Record penthouse contract",
+        "note": "Largest single condo sale in Miami Beach history — establishes pricing ceiling for entire South Beach market"
+      },
+      {
+        "value": "85%+",
+        "label": "Sold — extremely limited inventory",
+        "note": "49 total residences; fewer than 8 remain as of Q1 2026"
+      },
+      {
+        "value": "$3,500+",
+        "label": "Implied avg price / sq ft",
+        "note": "$550M+ in total sales across 49 units; among the highest per-sqft in Miami Beach"
+      },
+      {
+        "value": "$430M",
+        "label": "J.P. Morgan construction loan",
+        "note": "Largest residential construction loan in South Florida history at time of closing — institutional conviction"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "$97M phased construction permit (August 2026)",
+        "body": "Miami Beach issued the week's largest new-building permit for Shore Club's 481,200 SF tower at 1901 Collins. Job filing BC2322278 advances Witkoff and Monroe Capital's active build toward 2027 delivery."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Robert A.M. Stern's first oceanfront residential project",
+        "body": "RAMSA designed 15 Central Park West, 220 Central Park South, and 520 Park Avenue in New York. The Shore Club is their first oceanfront residential tower, with Stern handling both architecture and interiors in one unified vision."
+      },
+      {
+        "pill": "Record pricing",
+        "pillColor": "gold",
+        "title": "Surpassed the 2015 Faena House record",
+        "body": "The flagship penthouse contract surpassed Ken Griffin's $60M Faena House purchase from 2015 — a step-change that signals the depth of demand for top-tier oceanfront product."
+      },
+      {
+        "pill": "Hospitality",
+        "pillColor": "gold",
+        "title": "Auberge Resorts Collection — boutique five-star management",
+        "body": "Auberge operates some of the most exclusive resort properties in the world (Chileno Bay, Esperanza, Stanly Ranch). Residents receive Auberge's full residential services plus a complimentary Shell Bay Golf Club social membership — a Greg Norman-designed championship club with marina, racquet club, and spa."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gray",
+        "title": "49 residences, no two floor plans alike",
+        "body": "The Shore Club spans a 20-story tower, Cromwell House with four historic residences, and a 6,000 SF beach house. At 49 homes on three oceanfront acres, density ranks among Miami Beach's lowest, with no future supply on this Collins stretch."
+      }
+    ],
+    "thesis": "Shore Club Private Collection is the trophy asset of the current Miami Beach cycle. Robert A.M. Stern's first oceanfront project, a $120M record penthouse, Auberge five-star management, and 49 residences on 3 acres of South Beach oceanfront. The $430M J.P. Morgan construction loan confirmed institutional conviction; a $97M phased new-construction permit issued in August 2026 now advances the physical build. At 85%+ sold, the remaining primary units represent one of the last entry points into what is positioned to be the most exclusive delivered address in South Beach when it completes in 2027.",
+    "footnote": "HOA: TBA · Rental policy: Inquire · Delivery: 2027 · $97M phased permit BC2322278 issued week ending Aug. 5, 2026"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$120M",
+        "label": "Record penthouse contract",
+        "note": "Largest single condo sale in Miami Beach history — establishes pricing ceiling for entire South Beach market"
+      },
+      {
+        "value": "85%+",
+        "label": "Sold — extremely limited inventory",
+        "note": "49 total residences; fewer than 8 remain as of Q1 2026"
+      },
+      {
+        "value": "$3,500+",
+        "label": "Implied avg price / sq ft",
+        "note": "$550M+ in total sales across 49 units; among the highest per-sqft in Miami Beach"
+      },
+      {
+        "value": "$430M",
+        "label": "J.P. Morgan construction loan",
+        "note": "Largest residential construction loan in South Florida history at time of closing — institutional conviction"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "$97M phased construction permit (August 2026)",
+        "body": "Miami Beach issued the week's largest new-building permit for Shore Club's 481,200 SF tower at 1901 Collins. Job filing BC2322278 advances Witkoff and Monroe Capital's active build toward 2027 delivery."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Robert A.M. Stern's first oceanfront residential project",
+        "body": "RAMSA designed 15 Central Park West, 220 Central Park South, and 520 Park Avenue in New York. The Shore Club is their first oceanfront residential tower, with Stern handling both architecture and interiors in one unified vision."
+      },
+      {
+        "pill": "Record pricing",
+        "pillColor": "gold",
+        "title": "Surpassed the 2015 Faena House record",
+        "body": "The flagship penthouse contract surpassed Ken Griffin's $60M Faena House purchase from 2015 — a step-change that signals the depth of demand for top-tier oceanfront product."
+      },
+      {
+        "pill": "Hospitality",
+        "pillColor": "gold",
+        "title": "Auberge Resorts Collection — boutique five-star management",
+        "body": "Auberge operates some of the most exclusive resort properties in the world (Chileno Bay, Esperanza, Stanly Ranch). Residents receive Auberge's full residential services plus a complimentary Shell Bay Golf Club social membership — a Greg Norman-designed championship club with marina, racquet club, and spa."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gray",
+        "title": "49 residences, no two floor plans alike",
+        "body": "The Shore Club spans a 20-story tower, Cromwell House with four historic residences, and a 6,000 SF beach house. At 49 homes on three oceanfront acres, density ranks among Miami Beach's lowest, with no future supply on this Collins stretch."
+      }
+    ],
+    "thesis": "Shore Club Private Collection is the trophy asset of the current Miami Beach cycle. Robert A.M. Stern's first oceanfront project, a $120M record penthouse, Auberge five-star management, and 49 residences on 3 acres of South Beach oceanfront. The $430M J.P. Morgan construction loan confirmed institutional conviction; a $97M phased new-construction permit issued in August 2026 now advances the physical build. At 85%+ sold, the remaining primary units represent one of the last entry points into what is positioned to be the most exclusive delivered address in South Beach when it completes in 2027.",
+    "footnote": "HOA: TBA · Rental policy: Inquire · Delivery: 2027 · $97M phased permit BC2322278 issued week ending Aug. 5, 2026"
+  },
+  "investmentThesis": "<p>90%+ sold with very limited inventory remaining. Miami Beach issued a $97 million phased new-construction permit in early August 2026 for 481,200 SF at 1901 Collins (job BC2322278), advancing Witkoff and Monroe Capital's build against the existing $430M J.P. Morgan construction loan. RAMSA's first oceanfront residential project (the firm behind 15 Central Park West and 220 Central Park South) applies its classical residential language to Miami Beach for the first time. Auberge Resorts Collection manages the hotel and residential services, extending the standard set at Esperanza, Chileno Bay, and Goldfield to one of South Beach's most storied addresses. The Shore Club site at 19th and Collins has been a cultural landmark since the 1950s, and the development represents one of the largest oceanfront restoration projects on Collins Avenue in a generation. Every purchaser receives a Social Membership to Shell Bay Club with access to its Racquet Club, Yacht Club, and restaurants, extending the ownership package well beyond the residence itself.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.7949136,
+  "lng": -80.1285919,
+  "maxBed": 6,
+  "maxPrice": 40000000,
+  "maxSqft": 10000,
+  "minBed": 2,
+  "minPrice": 6000000,
+  "minSqft": 2400,
+  "name": "Shore Club Private Collection",
+  "neighborhood": "South Beach",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/shore-club-private-collection.jpg",
+  "priceFrom": "$6M+",
+  "privacyScore": 90,
+  "projectedAppreciation": 35,
+  "residenceContent": "<p class=\"prop-residence-intro\">A reborn oceanfront landmark at 1901 Collins Avenue, with architecture and interiors unified under a single Robert A.M. Stern vision. Three distinct residential offerings: The Tower (18 stories, 2- to 6-bedroom homes from approximately 1,900 to over 10,000 SF), the historic Cromwell House (4 residences including duplex homes and a full-floor penthouse), and The Beach House (a singular 4-bedroom oceanfront residence with private garage and over 2,180 SF of outdoor living). Every home enters through a private residential lobby on 20th Street, separating owners from hotel guests. Finishes include wide-plank European oak floors, custom millwork, Gaggenau appliances, and natural stone throughout. The Tower's flow-through layouts capture both Atlantic and city exposures; lower-floor residences open onto landscaped terraces directly above the historic Shore Club gardens.</p>",
+  "seo": {
+    "title": "Shore Club Private Collection | South Beach Oceanfront Condos",
+    "description": "The legendary Shore Club reborn — Robert A.M. Stern Architects' first oceanfront project. Boutique residences across The Tower, Cromwell House, and Beach House with five-star hotel service. Developed by Witkoff at 1901 Collins Ave. Pricing available."
+  },
+  "slug": "shore-club-private-collection",
+  "stage": "under_construction",
+  "stageLabel": "$97M Construction Permit · 2027 Delivery",
+  "statusRemark": "90%+ SOLD · $97M CONSTRUCTION PERMIT · AUG 2026",
+  "units": 49,
+  "wellnessScore": 75
+}

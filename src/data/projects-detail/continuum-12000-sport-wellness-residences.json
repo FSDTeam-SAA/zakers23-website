@@ -1,0 +1,252 @@
+{
+  "address": "12000 North Bayshore Drive, North Miami, FL 33181",
+  "amenities": [
+    {
+      "icon": "⛵",
+      "label": "20-Slip Private Marina",
+      "sub": "Direct Biscayne Bay"
+    },
+    {
+      "icon": "🏊",
+      "label": "Floating Pools",
+      "sub": "Mermaid Club aquatic park"
+    },
+    {
+      "icon": "🏓",
+      "label": "Indoor Pickleball",
+      "sub": "Multi-sport courts"
+    },
+    {
+      "icon": "🧘",
+      "label": "Spa & Longevity Center",
+      "sub": "Cold plunge, infrared sauna"
+    },
+    {
+      "icon": "💪",
+      "label": "~4,200 SF Fitness Center",
+      "sub": "Booty Builder® equipped"
+    },
+    {
+      "icon": "⛳",
+      "label": "Full Swing Simulators",
+      "sub": "Golf & multi-sport suites"
+    }
+  ],
+  "amenitiesDescription": "<p>The Mermaid Club is the defining amenity — approximately 150,000 square feet of waterfront, sport, and wellness space with direct Biscayne Bay access. Features include a 20-slip private marina, floating pools, paddleboards, water toys, a historic beach deck designed for yoga and relaxation, and superyacht-caliber waterfront infrastructure that is unprecedented in Miami residential development.</p><p>Inland amenities include a roughly 4,200-square-foot fitness center with Booty Builder® equipment, a spa and longevity center with contrast therapy, cold plunges, and infrared saunas, indoor pickleball and multi-sport courts, two Full Swing golf and multi-sport simulator suites, outdoor putting greens, a sports screening room, alfresco bar and lounge, and dining areas with a demonstration kitchen. Residents receive Yacht Club and Beach Club memberships, waterfront and poolside attendants, organic food delivery, and an on-site market.</p>",
+  "architect": "Kobi Karp Architecture",
+  "architectQuote": "North Miami's waterfront has been waiting for a building that actually engages the bay rather than just faces it. This is that building.",
+  "architectQuoteBy": "Kobi Karp Architecture",
+  "badge": "150,000 SF Waterfront Sports Club",
+  "completion": "2029",
+  "densityScore": 55,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking (2027)"
+    },
+    {
+      "percentage": 20,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 50,
+      "milestone": "At Closing (2029)"
+    }
+  ],
+  "description": "The Continuum South Beach legacy comes to North Miami's waterfront. 263 residences on 4.3 acres with 1.5 acres of submerged land. Home of the Mermaid Club. From $1.4M.",
+  "developer": "Continuum Company",
+  "editorialLine": "Where the water is the amenity.",
+  "floorPlans": [
+    {
+      "type": "1-Bedroom Residence",
+      "addlRooms": "Den, Private Terrace",
+      "beds": 1,
+      "baths": 2,
+      "sqft": "1,035–1,143 sq ft",
+      "status": "From $1.4M"
+    },
+    {
+      "type": "2-Bedroom Residence",
+      "addlRooms": "Den, Private Terrace",
+      "beds": 2,
+      "baths": 3,
+      "sqft": "1,380–2,143 sq ft",
+      "status": "Inquire"
+    },
+    {
+      "type": "3-Bedroom Sky Home",
+      "addlRooms": "2 Private Terraces, Home Office, Den",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,418–3,543 sq ft",
+      "status": "Inquire"
+    },
+    {
+      "type": "Waterfront Villa",
+      "addlRooms": "Direct Marina Access",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "3,000+ sq ft",
+      "status": "Inquire"
+    }
+  ],
+  "height": "20 Stories",
+  "heroImgPosition": "48% center",
+  "hoa": "$1.80 / sq ft",
+  "id": 33,
+  "img": "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_Hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_Hero.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_Hero2.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_PrivateMarina.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_PrivateMarina_Sunset.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_SaltwaterPool.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_HistoricSunDeck.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_SunBeds.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_SunBedsSunset.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_OutdoorGolf.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_Spa.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_Lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continumm12000_OwnersBox.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_Kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_Bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/continuum12000/Continuum12000_Bathroom2.webp"
+  ],
+  "interiorDesigner": "Paul Duesing Design Partners",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "Q1 2026",
+        "label": "Sales launched",
+        "note": "Pre-sales / pre-construction; no building permits filed yet — groundbreaking targeted for 2027"
+      },
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Continuum brand proven over 20 years of North/South Tower performance in South Beach"
+      },
+      {
+        "value": "$48.5M",
+        "label": "Bulk land basis",
+        "note": "Former Mariners Bay Condo acquired in full — controls 4.3 acres plus 1.5+ acres of submerged bay bottom for the Mermaid Club"
+      },
+      {
+        "value": "20+ years",
+        "label": "Continuum brand track record",
+        "note": "Original Continuum towers at 100 S. Pointe are among Miami Beach's most valuable resale assets"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand legacy",
+        "pillColor": "gold",
+        "title": "Continuum, South Beach's most enduring luxury address",
+        "body": "Continuum 12000 extends that two-decade brand record to a flagship bayfront site in North Miami — sales open, vertical work still ahead, and the same execution DNA behind it."
+      },
+      {
+        "pill": "Waterfront",
+        "pillColor": "gold",
+        "title": "Irreplaceable submerged land — Mermaid Club & marina",
+        "body": "That submerged bay bottom underpins a waterfront experience effectively impossible to replicate elsewhere in Miami — supporting a 20-slip private marina and a bayfront story that typical tower-on-a-lot product can't match."
+      },
+      {
+        "pill": "Amenities",
+        "pillColor": "gold",
+        "title": "~150,000 SF Mermaid Club as the wedge",
+        "body": "The Mermaid Club is the project's clearest differentiator — floating pools, overwater programming, sport courts, spa & longevity, and yacht-scale waterfront infrastructure at a scale rarely paired with sub–$2M entry points on the water."
+      },
+      {
+        "pill": "Value",
+        "pillColor": "gray",
+        "title": "From $1.4M vs. higher bayfront comps",
+        "body": "Comparable new waterfront inventory in established submarkets often starts materially higher. Continuum 12000 offers Continuum-branded execution and an amenity-led narrative at a lower entry threshold — with delivery risk priced into a multi-year pre-construction timeline (groundbreaking 2027, completion ~2029)."
+      }
+    ],
+    "thesis": "The thesis rests on three layers: (1) a bayfront position that enables the Mermaid Club's overwater programming, (2) Continuum Company brand equity built over two decades in South Beach, and (3) ~150,000 SF of waterfront sport and wellness as the amenity wedge. The $48.5 million bulk buyout of Mariners Bay establishes a clear land basis. Entry from $1.4M is attractive relative to many comparable new bayfront projects where pricing starts higher — with the tradeoff of true pre-construction risk (no permits filed yet; sales launched Q1 2026).",
+    "footnote": "HOA: ~$1.80/sq ft · Rental policy: Min 6-month lease · Delivery: ~2029 · No construction permits filed at sales launch"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "Q1 2026",
+        "label": "Sales launched",
+        "note": "Pre-sales / pre-construction; no building permits filed yet — groundbreaking targeted for 2027"
+      },
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Continuum brand proven over 20 years of North/South Tower performance in South Beach"
+      },
+      {
+        "value": "$48.5M",
+        "label": "Bulk land basis",
+        "note": "Former Mariners Bay Condo acquired in full — controls 4.3 acres plus 1.5+ acres of submerged bay bottom for the Mermaid Club"
+      },
+      {
+        "value": "20+ years",
+        "label": "Continuum brand track record",
+        "note": "Original Continuum towers at 100 S. Pointe are among Miami Beach's most valuable resale assets"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand legacy",
+        "pillColor": "gold",
+        "title": "Continuum, South Beach's most enduring luxury address",
+        "body": "Continuum 12000 extends that two-decade brand record to a flagship bayfront site in North Miami — sales open, vertical work still ahead, and the same execution DNA behind it."
+      },
+      {
+        "pill": "Waterfront",
+        "pillColor": "gold",
+        "title": "Irreplaceable submerged land — Mermaid Club & marina",
+        "body": "That submerged bay bottom underpins a waterfront experience effectively impossible to replicate elsewhere in Miami — supporting a 20-slip private marina and a bayfront story that typical tower-on-a-lot product can't match."
+      },
+      {
+        "pill": "Amenities",
+        "pillColor": "gold",
+        "title": "~150,000 SF Mermaid Club as the wedge",
+        "body": "The Mermaid Club is the project's clearest differentiator — floating pools, overwater programming, sport courts, spa & longevity, and yacht-scale waterfront infrastructure at a scale rarely paired with sub–$2M entry points on the water."
+      },
+      {
+        "pill": "Value",
+        "pillColor": "gray",
+        "title": "From $1.4M vs. higher bayfront comps",
+        "body": "Comparable new waterfront inventory in established submarkets often starts materially higher. Continuum 12000 offers Continuum-branded execution and an amenity-led narrative at a lower entry threshold — with delivery risk priced into a multi-year pre-construction timeline (groundbreaking 2027, completion ~2029)."
+      }
+    ],
+    "thesis": "The thesis rests on three layers: (1) a bayfront position that enables the Mermaid Club's overwater programming, (2) Continuum Company brand equity built over two decades in South Beach, and (3) ~150,000 SF of waterfront sport and wellness as the amenity wedge. The $48.5 million bulk buyout of Mariners Bay establishes a clear land basis. Entry from $1.4M is attractive relative to many comparable new bayfront projects where pricing starts higher — with the tradeoff of true pre-construction risk (no permits filed yet; sales launched Q1 2026).",
+    "footnote": "HOA: ~$1.80/sq ft · Rental policy: Min 6-month lease · Delivery: ~2029 · No construction permits filed at sales launch"
+  },
+  "investmentThesis": "<p>The 1.5 acres of submerged land is the project's most valuable differentiator — an essentially irreplaceable asset in Miami that will be transformed into the Mermaid Club aquatic playground. The Continuum brand carries genuine market weight: Continuum on South Beach remains one of the most successful and desirable residential addresses in Miami, with resale values that have consistently appreciated. The 4.32-acre waterfront site was acquired for $48.5 million. Over 150,000 SF of combined waterfront, sport, and wellness amenities are planned — a ratio that far exceeds comparable projects. Sales launched Q1 2026.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeArchitect": "Urban Robot",
+  "lat": 25.8877918,
+  "lng": -80.1520913,
+  "locationScore": 42,
+  "maxBed": 3,
+  "maxPrice": 12000000,
+  "maxSqft": 3543,
+  "minBed": 1,
+  "minPrice": 1400000,
+  "minSqft": 1035,
+  "name": "Continuum 12000 Sport & Wellness Residences",
+  "neighborhood": "North Miami",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/continuum-12000-sport-wellness-residences.jpg",
+  "priceFrom": "$1.4M+",
+  "pricePerSqft": 1350,
+  "privacyScore": 72,
+  "projectedAppreciation": 38,
+  "rentalPolicy": "Min 6-month lease",
+  "residenceContent": "<p class=\"prop-residence-intro\">The Continuum South Beach legacy extended to North Miami's waterfront, situated on 4.3 acres overlooking Biscayne Bay and Indian Creek, with more than 1.5 acres of submerged land that will become an immersive waterfront experience unlike anything else in Miami. Ian Bruce Eichner acquired the site through a $48.5 million bulk buyout of the former Mariners Bay Condo. One- to three-bedroom residences range from 1,035 to 3,543 SF with 10-foot ceilings, floor-to-ceiling impact glass, private terraces, 48\" x 48\" travertine porcelain flooring, fully integrated Sub-Zero/Wolf kitchens with a built-in Sub-Zero wine fridge, and spa-inspired bathrooms with oversized rain showers. Interiors by Paul Duesing Design Partners balance coastal warmth with contemporary finishes. Every residence faces the water.</p>",
+  "salesTeam": "Continuum Realty",
+  "slug": "continuum-12000-sport-wellness-residences",
+  "stage": "preconstruction",
+  "stageLabel": "Sales Launched Q1 2026",
+  "units": 263,
+  "wellnessScore": 96
+}

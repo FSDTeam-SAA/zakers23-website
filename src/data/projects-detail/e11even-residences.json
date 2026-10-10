@@ -1,0 +1,314 @@
+{
+  "address": "60 NE 11th Street, Miami, FL 33132",
+  "amenities": [
+    {
+      "icon": "🧖",
+      "label": "Chopra Spa & Studio",
+      "sub": "Wellness, meditation, fitness"
+    },
+    {
+      "icon": "🏊",
+      "label": "Resort Pool",
+      "sub": "Private lounge areas, level 9"
+    },
+    {
+      "icon": "🍸",
+      "label": "Rooftop Bar & Lounge",
+      "sub": "Level 64"
+    },
+    {
+      "icon": "🎰",
+      "label": "Sports Lounge",
+      "sub": "Casino-style, LED video wall"
+    },
+    {
+      "icon": "🥂",
+      "label": "The Clayton",
+      "sub": "Members-only social club, level 2"
+    },
+    {
+      "icon": "🚁",
+      "label": "Private Helipad",
+      "sub": "Rooftop, pending FAA approval"
+    },
+    {
+      "icon": "💼",
+      "label": "Executive Office Suites",
+      "sub": "Fully staffed, level 8"
+    },
+    {
+      "icon": "🛎",
+      "label": "Valet & House Car",
+      "sub": "Plus sky bridge to Tower 1"
+    }
+  ],
+  "amenitiesDescription": "<p>The amenity program is built around E11EVEN's hospitality pedigree: a Chopra Spa and Studio, a resort pool with private lounge areas on the ninth level, a rooftop bar and lounge on the 64th floor, and a casino-style sports lounge. The members-only Clayton club sits on the second level, fully staffed executive office suites on the eighth, and a private rooftop helipad crowns the tower, pending FAA approval. A one-way sky bridge connects residents to the amenities of the original E11EVEN Club Hotel and Residences.</p>",
+  "architect": "Sieger Suarez Architects",
+  "badge": "UNDER CONSTRUCTION",
+  "completion": "2027",
+  "densityScore": 92,
+  "depositStructure": [],
+  "description": "E11EVEN Club Residences Beyond is the second of two 65-story E11EVEN Club towers in Downtown Miami's Park West, developed by PMG and E11EVEN Partners with architecture by Sieger Suarez and interiors by AvroKO. Furnished studios through two-bedroom residences, a Presidential Collection, and penthouses sit above a hospitality-driven amenity program, linked to the original E11EVEN tower by a private sky bridge. Delivery is targeted for 2027.",
+  "developer": "Property Markets Group & E11EVEN Partners",
+  "discoveryEngine": {
+    "lifestyle": [
+      "branded",
+      "turnkey-furnished",
+      "nightlife",
+      "investor-friendly"
+    ],
+    "investmentProfile": [
+      "rental-income",
+      "turnkey-managed",
+      "brand-premium",
+      "under-construction"
+    ],
+    "priceCategory": "attainable-luxury",
+    "vibeMatch": [
+      "energetic",
+      "social",
+      "bold"
+    ],
+    "goodFor": [
+      "investor",
+      "pied-a-terre",
+      "young-professional",
+      "international-buyer"
+    ]
+  },
+  "editorialLine": "E11EVEN's 24/11 lifestyle, turned residential.",
+  "floorPlans": [
+    {
+      "type": "Studio",
+      "addlRooms": "Furnished",
+      "beds": 0,
+      "baths": 1,
+      "sqft": "460 - 610 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "1-Bedroom",
+      "addlRooms": "Furnished, French balcony select",
+      "beds": 1,
+      "baths": 1,
+      "sqft": "610 - 1,005 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "2-Bedroom",
+      "addlRooms": "Furnished",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "~1,063 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "Presidential Collection",
+      "addlRooms": "2BR, custom",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "2,724 sq ft",
+      "status": "Inquire"
+    },
+    {
+      "type": "Penthouses",
+      "addlRooms": "Custom layouts",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "By request",
+      "status": "Inquire"
+    }
+  ],
+  "height": "65 Stories",
+  "hoa": null,
+  "id": 55,
+  "img": "https://frasermiami.s3.amazonaws.com/e11even-residences/building-hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/e11even-residences/building-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/e11even-residences/top-aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/e11even-residences/heliport.webp",
+    "https://frasermiami.s3.amazonaws.com/e11even-residences/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/e11even-residences/pool-bar.webp",
+    "https://frasermiami.s3.amazonaws.com/e11even-residences/aerial-helicopter.webp",
+    "https://frasermiami.s3.amazonaws.com/e11even-residences/bridge.webp",
+    "https://frasermiami.s3.amazonaws.com/e11even-residences/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/e11even-residences/lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/e11even-residences/library.webp"
+  ],
+  "interiorDesigner": "AvroKO Hospitality Group",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$810,884",
+        "label": "Starting Price",
+        "note": "Early-2025 public pre-construction figure; confirm current inventory"
+      },
+      {
+        "value": "$17M",
+        "label": "Sister tower Presidential",
+        "note": "Full-floor Presidential Penthouse closed at E11EVEN Hotel & Residences · broker-reported August 2026"
+      },
+      {
+        "value": "469",
+        "label": "Total Residences",
+        "note": "Beyond tower sellable count per developer marketing"
+      },
+      {
+        "value": "2027",
+        "label": "Estimated Delivery",
+        "note": "Topping out as of March 2026"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Comps",
+        "pillColor": "gold",
+        "title": "Sister tower Presidential closed at $17M",
+        "body": "E11EVEN Hotel & Residences closed a full-floor Presidential Penthouse at $17 million, printing the brand's Downtown ceiling as Beyond tops out for 2027."
+      },
+      {
+        "pill": "Turnkey",
+        "pillColor": "gold",
+        "title": "Turnkey, Fully Furnished Delivery",
+        "body": "Residences arrive fully furnished and finished to AvroKO specifications, with a smart-home app and a Home Essentials Package. Owners can rent or occupy from day one with no fit-out."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Built-In Hospitality Brand",
+        "body": "E11EVEN's hospitality brand drives an amenity program of a Chopra Spa, rooftop pool and bar, sports lounge, and members club, supporting rental demand and resale recognition."
+      },
+      {
+        "pill": "Rental flexibility",
+        "pillColor": "gold",
+        "title": "Monthly Rental Flexibility",
+        "body": "The Beyond tower permits monthly rentals under building-managed hosting, a turnkey income path that pairs with furnished delivery and central Downtown demand."
+      },
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Build risk largely retired",
+        "body": "Construction has reached the upper floors, reducing build risk versus earlier pre-construction stages while pricing still reflects pre-delivery levels."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Downtown Transit and Culture Hub",
+        "body": "Park West places residents minutes from Brightline at MiamiCentral, the Kaseya Center, and Museum Park, with Brickell about ten minutes by car."
+      }
+    ],
+    "thesis": "E11EVEN Club Residences Beyond is the larger second tower of PMG and E11EVEN Partners' two-building District 11 in Downtown Miami's Park West. The first tower just closed a full-floor Presidential Penthouse at $17 million, establishing the brand's Downtown ceiling while Beyond still offers turnkey studios from roughly $810,884 with monthly rental flexibility and a hospitality-led amenity program. Delivery is targeted for 2027.",
+    "footnote": "Beyond pricing from public pre-construction sources as of early 2025, subject to change; confirm current inventory. Presidential Penthouse close at E11EVEN Hotel & Residences broker-reported August 2026. Specifications and renderings per developer materials. Sources: developer materials, Florida YIMBY, and trade announcements, 2026."
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$810,884",
+        "label": "Starting Price",
+        "note": "Early-2025 public pre-construction figure; confirm current inventory"
+      },
+      {
+        "value": "$17M",
+        "label": "Sister tower Presidential",
+        "note": "Full-floor Presidential Penthouse closed at E11EVEN Hotel & Residences · broker-reported August 2026"
+      },
+      {
+        "value": "469",
+        "label": "Total Residences",
+        "note": "Beyond tower sellable count per developer marketing"
+      },
+      {
+        "value": "2027",
+        "label": "Estimated Delivery",
+        "note": "Topping out as of March 2026"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Comps",
+        "pillColor": "gold",
+        "title": "Sister tower Presidential closed at $17M",
+        "body": "E11EVEN Hotel & Residences closed a full-floor Presidential Penthouse at $17 million, printing the brand's Downtown ceiling as Beyond tops out for 2027."
+      },
+      {
+        "pill": "Turnkey",
+        "pillColor": "gold",
+        "title": "Turnkey, Fully Furnished Delivery",
+        "body": "Residences arrive fully furnished and finished to AvroKO specifications, with a smart-home app and a Home Essentials Package. Owners can rent or occupy from day one with no fit-out."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Built-In Hospitality Brand",
+        "body": "E11EVEN's hospitality brand drives an amenity program of a Chopra Spa, rooftop pool and bar, sports lounge, and members club, supporting rental demand and resale recognition."
+      },
+      {
+        "pill": "Rental flexibility",
+        "pillColor": "gold",
+        "title": "Monthly Rental Flexibility",
+        "body": "The Beyond tower permits monthly rentals under building-managed hosting, a turnkey income path that pairs with furnished delivery and central Downtown demand."
+      },
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Build risk largely retired",
+        "body": "Construction has reached the upper floors, reducing build risk versus earlier pre-construction stages while pricing still reflects pre-delivery levels."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Downtown Transit and Culture Hub",
+        "body": "Park West places residents minutes from Brightline at MiamiCentral, the Kaseya Center, and Museum Park, with Brickell about ten minutes by car."
+      }
+    ],
+    "thesis": "E11EVEN Club Residences Beyond is the larger second tower of PMG and E11EVEN Partners' two-building District 11 in Downtown Miami's Park West. The first tower just closed a full-floor Presidential Penthouse at $17 million, establishing the brand's Downtown ceiling while Beyond still offers turnkey studios from roughly $810,884 with monthly rental flexibility and a hospitality-led amenity program. Delivery is targeted for 2027.",
+    "footnote": "Beyond pricing from public pre-construction sources as of early 2025, subject to change; confirm current inventory. Presidential Penthouse close at E11EVEN Hotel & Residences broker-reported August 2026. Specifications and renderings per developer materials. Sources: developer materials, Florida YIMBY, and trade announcements, 2026."
+  },
+  "investmentThesis": "<p>Beyond is the larger second tower of PMG and E11EVEN Partners' District 11, now topping out for a 2027 delivery. The sister tower, E11EVEN Hotel &amp; Residences, just closed a full-floor Presidential Penthouse at $17 million, establishing the brand's Downtown ceiling while Beyond still offers turnkey studios from roughly $810,884. Monthly rental flexibility and built-in hospitality management position it as an income-oriented entry minutes from Brightline, the Kaseya Center, and Brickell.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "$17M",
+      "label": "Sister tower Presidential close",
+      "note": "Full-floor Presidential Penthouse at E11EVEN Hotel & Residences · August 2026"
+    },
+    {
+      "value": "$811K+",
+      "label": "Beyond entry pricing",
+      "note": "Studios from roughly $810,884; confirm current inventory"
+    },
+    {
+      "value": "~$375M",
+      "label": "Tower 1 sellout",
+      "note": "E11EVEN Hotel & Residences aggregate per The Real Deal, June 2026"
+    }
+  ],
+  "lat": 25.7845258,
+  "lng": -80.1935368,
+  "maxBed": 2,
+  "maxPrice": 4150000,
+  "maxSqft": 2724,
+  "minBed": 0,
+  "minPrice": 810884,
+  "minSqft": 460,
+  "name": "E11EVEN Club Residences Beyond",
+  "neighborhood": "Downtown Miami",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/e11even-residences.jpg",
+  "percentSold": null,
+  "priceFrom": "$811K+",
+  "pricePerSqft": 1500,
+  "privacyScore": 30,
+  "rentalPolicy": "Monthly rentals permitted",
+  "residenceContent": "<p class=\"prop-residence-intro\">Floor-to-ceiling glass frames the Downtown skyline, Biscayne Bay, and the Atlantic from every residence, each delivered fully furnished and finished to AvroKO specifications. Italkraft cabinetry, Sub-Zero and Wolf appliances, and WaterWorks fixtures sit behind concealed Italian millwork, with polymer wood floors underfoot and a custom app controlling light, sound, and service at a touch. Select homes open to French balconies, and the Presidential Collection adds a midnight bar in the primary suite.</p>",
+  "salesTeam": "PMG / E11EVEN Partners",
+  "shortName": "E11EVEN Beyond",
+  "slug": "e11even-residences",
+  "stage": "under_construction",
+  "stageLabel": "Now Selling · Topping Out",
+  "statusRemark": "Topping out, delivery 2027",
+  "stories": 65,
+  "units": 469,
+  "unitsLeft": null,
+  "wellnessScore": 80
+}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CompareFloatingBar } from "@/src/components/CompareFloatingBar";
 import { ImageFallbackProvider } from "@/src/components/ImageFallbackProvider";
 import LenisProvider from "@/src/components/LenisProvider";
+import { WhatsAppButton } from "@/src/components/WhatsAppButton";
 import { InquiryProvider } from "@/src/features/inquiry/components/inquiry-provider";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./globals.css";
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           </InquiryProvider>
         </LenisProvider>
         <CompareFloatingBar />
+        <WhatsAppButton />
       </body>
     </html>
   );

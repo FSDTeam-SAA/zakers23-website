@@ -2,43 +2,53 @@ import type { HeroSlide } from "@/src/features/Home/HeroSection/types/hero-secti
 
 export const heroSlides: HeroSlide[] = [
   {
-    "image": "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/01-Mansions-on-Fisher-Island-Featured.webp",
-    "eyebrow": "Key Biscayne",
-    "title": "485 W Matheson Drive",
-    "supporting": "MLS #A12005335 · $237M · 5-Bed Luxury Residence",
-    "credit": "BEACHESMLS · ACTIVE · $237M",
-    "slug": "485-w-matheson-drive-a12005335"
+    image: "/images/anantara/aerial-helipad-day.webp",
+    eyebrow: "Edgewater",
+    title: "Anantara Residences Miami",
+    supporting: "North America's first Anantara: branded waterfront living with hotel-caliber service.",
+    credit: "FIRST ANANTARA IN THE U.S. · FROM $1.8M+",
+    slug: "anantara-miami-resort-residences",
+    position: "center 40%"
   },
   {
-    "image": "https://frasermiami.s3.amazonaws.com/perigon/pool2.webp",
-    "eyebrow": "Miami Beach",
-    "title": "1420 W 23rd Street",
-    "supporting": "MLS #A12018167 · $110M · 9-Bed Luxury Residence",
-    "credit": "BEACHESMLS · ACTIVE · $110M",
-    "slug": "1420-w-23rd-street-a12018167"
+    image: "/images/bugatti/evening-unbranded.webp",
+    eyebrow: "Brickell",
+    title: "Bugatti Residences Miami",
+    supporting: "The French marque's first U.S. residential tower on the Miami River.",
+    credit: "PRE-LAUNCH RESERVATIONS · 60 STORIES",
+    slug: "bugatti-residences-miami",
+    position: "center center"
   },
   {
-    "image": "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp",
-    "eyebrow": "Brickell",
-    "title": "3149 Brickell Avenue",
-    "supporting": "MLS #A11972214 · $110M · 7-Bed Luxury Residence",
-    "credit": "BEACHESMLS · ACTIVE · $110M",
-    "slug": "3149-brickell-avenue-a11972214"
+    image: "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp",
+    eyebrow: "Brickell",
+    title: "Cipriani Residences Brickell",
+    supporting: "Cipriani's first ground-up residential tower.",
+    credit: "TOPPED OFF AT 950 FT · JULY 2026",
+    slug: "cipriani-residences-brickell"
   },
   {
-    "image": "https://frasermiami.s3.amazonaws.com/shoreclub/hero-beach-view.webp",
-    "eyebrow": "Miami Beach",
-    "title": "3100 N Bay Road",
-    "supporting": "MLS #A11820623 · $100M · 7-Bed Luxury Residence",
-    "credit": "BEACHESMLS · ACTIVE · $100M",
-    "slug": "3100-n-bay-road-a11820623"
+    image: "https://frasermiami.s3.amazonaws.com/rivage/beachhero.webp",
+    eyebrow: "Bal Harbour",
+    title: "Rivage Bal Harbour",
+    supporting: "Bal Harbour's last true ultra-luxury oceanfront site.",
+    credit: "56 RESIDENCES · DELIVERING 2027",
+    slug: "rivage-bal-harbour"
   },
   {
-    "image": "https://frasermiami.s3.amazonaws.com/rivage/hummingbird.webp",
-    "eyebrow": "Miami Beach",
-    "title": "2901 Collins Avenue 1602",
-    "supporting": "MLS #A12059276 · $80M · 4-Bed Luxury Residence",
-    "credit": "BEACHESMLS · ACTIVE · $80M",
-    "slug": "2901-collins-avenue-1602-a12059276"
+    image: "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/hero2.webp",
+    eyebrow: "Brickell",
+    title: "619 Brickell (Nobu Residences)",
+    supporting: "Chef-led branded living in the center of Brickell.",
+    credit: "PRE-CONSTRUCTION · FROM $2.2M+",
+    slug: "619-brickell-nobu-residences"
+  },
+  {
+    image: "https://frasermiami.s3.amazonaws.com/miamitropic/exterior.webp",
+    eyebrow: "Design District",
+    title: "Jean-Georges Miami Tropic Residences",
+    supporting: "Editorial architecture with a culinary hospitality lens.",
+    credit: "PRIVATE PRESENTATIONS · 2026",
+    slug: "jean-georges-miami-tropic-residences"
   }
 ];

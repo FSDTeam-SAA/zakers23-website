@@ -1,0 +1,269 @@
+{
+  "address": "3611–3621 Collins Ave, Miami Beach, FL 33140",
+  "amenities": [
+    {
+      "icon": "🍽",
+      "label": "Cipriani Restaurant",
+      "sub": "Indoor-outdoor signature dining"
+    },
+    {
+      "icon": "🍸",
+      "label": "Members' Club",
+      "sub": "Exclusive Cipriani private club"
+    },
+    {
+      "icon": "🎵",
+      "label": "Jazz Club",
+      "sub": "Live entertainment venue"
+    },
+    {
+      "icon": "🏊",
+      "label": "Resort Pool",
+      "sub": "Poolside Cipriani F&B service"
+    },
+    {
+      "icon": "🏖",
+      "label": "Direct Beach Access",
+      "sub": "Atlantic oceanfront"
+    },
+    {
+      "icon": "🧖",
+      "label": "Holistic Spa",
+      "sub": "Sauna & treatment rooms"
+    },
+    {
+      "icon": "🏋",
+      "label": "Fitness Center",
+      "sub": "State-of-the-art equipment"
+    },
+    {
+      "icon": "🎬",
+      "label": "Screening Room",
+      "sub": "Private cinema"
+    },
+    {
+      "icon": "📚",
+      "label": "Library",
+      "sub": "Quiet lounge space"
+    },
+    {
+      "icon": "👶",
+      "label": "Children's Playroom",
+      "sub": "Dedicated kids' space"
+    },
+    {
+      "icon": "🛎",
+      "label": "24-Hour Concierge",
+      "sub": "Hotel-level service"
+    },
+    {
+      "icon": "🚗",
+      "label": "Valet Parking",
+      "sub": "Complimentary 24-hour"
+    }
+  ],
+  "amenitiesDescription": "Casa Cipriani brings its private club model to Miami Beach with an amenity depth unmatched on Collins Avenue. The building houses an indoor-outdoor Cipriani restaurant, a garden bar, a jazz club, and a members-only club lounge available to all 23 owners. A resort pool with full poolside food and beverage by Cipriani connects directly to Mid-Beach's Atlantic shoreline. A full-service spa with sauna and treatment rooms, a fitness center, a screening room, and a library round out the program. Services run at hotel standard around the clock: dedicated concierge, in-home Cipriani dining and catering, 24-hour valet, and continuous security.",
+  "architect": "Brandon Haw Architecture",
+  "architectQuote": "Casa Cipriani was designed as a seamless interplay of classic proportions and modern sophistication, echoing the elegance of the grand 1930s-era hotels that line Collins Avenue.",
+  "architectQuoteBy": "Brandon Haw, Brandon Haw Architecture",
+  "badge": "ULTRA-LIMITED · 23 RESIDENCES",
+  "completion": "2028",
+  "constructionImgs": [
+    {
+      "url": "/casa-cipriani/updates/2026-08-site-cleared.webp",
+      "date": "August 2026",
+      "isoDate": "2026-08-11",
+      "alt": "The cleared 1.1-acre Casa Cipriani site on Collins Avenue after hotel demolition",
+      "caption": "The full 1.1-acre site, cleared and levelled after demolition of the Coral Reef and Patrician hotels."
+    },
+    {
+      "url": "/casa-cipriani/updates/2026-08-demolition-loadout.webp",
+      "date": "August 2026",
+      "isoDate": "2026-08-11",
+      "alt": "Excavator loading demolition debris into a dump truck at the Casa Cipriani site",
+      "caption": "Debris load-out still active in August 2026. No shoring or foundation work has begun."
+    }
+  ],
+  "constructionNote": "Demolition of the Coral Reef and Patrician hotels is complete and the 1.1-acre site is cleared and levelled. Debris load-out was still active in August 2026; no shoring, excavation or foundation work has begun. Sales launch still targeted for 2026; delivery 2028.",
+  "constructionUpdateDate": "August 2026",
+  "densityScore": 12,
+  "depositStructure": [],
+  "description": "The third Casa Cipriani worldwide — and the brand's first ground-up residential project in Florida — arrives on Collins Avenue with just 23 oceanfront residences, 36 hotel keys, and a private members' club for all owners. Brandon Haw Architecture's 19-story tower occupies one of the last remaining oceanfront sites on Billionaires Beach, its form channeling the proportions of Miami's grand 1930s hotels while delivering unobstructed Atlantic views from every residence.",
+  "developer": "13th Floor Investments & Midtown Equities",
+  "floorPlans": [
+    {
+      "type": "1-Bedroom Residence",
+      "beds": 1,
+      "baths": 2,
+      "sqft": "—",
+      "status": "Inquire"
+    },
+    {
+      "type": "2-Bedroom Residence",
+      "beds": 2,
+      "baths": 3,
+      "sqft": "—",
+      "status": "Inquire"
+    },
+    {
+      "type": "3-Bedroom Residence",
+      "beds": 3,
+      "baths": 4,
+      "sqft": "—",
+      "status": "Inquire"
+    },
+    {
+      "type": "4-Bedroom Residence",
+      "beds": 4,
+      "baths": 5,
+      "sqft": "—",
+      "status": "Inquire"
+    }
+  ],
+  "height": "19 Stories",
+  "hoa": "—",
+  "id": 36,
+  "img": "/casa-cipriani/hero.webp",
+  "imgs": [
+    "/casa-cipriani/hero.webp",
+    "/casa-cipriani/hero-beach.webp",
+    "/casa-cipriani/hummingbird-miami-beach.webp",
+    "/casa-cipriani/pool-facade.webp",
+    "/casa-cipriani/hero3.webp",
+    "/casa-cipriani/entrance-facade.webp",
+    "/casa-cipriani/hero2.webp",
+    "/casa-cipriani/hummingbird-street.webp"
+  ],
+  "interiorDesigner": "—",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Mid-Beach Billionaires Beach corridor — branded oceanfront delivery comps (Faena District, Perigon, Aman)"
+      },
+      {
+        "value": "~$6,400+",
+        "label": "Implied entry / sq ft",
+        "note": "At ~$25M+ on ~3,900 SF avg residence vs. ~$1,292/sqft Miami Beach luxury resale average (Q3 2025)"
+      },
+      {
+        "value": "$105M",
+        "label": "Site financing — Apr. 2026",
+        "note": "BH3 Management total loan; $49.5M prior Bank OZK outstanding + $55.5M upsize (refinance)"
+      },
+      {
+        "value": "23",
+        "label": "Condo residences",
+        "note": "Plus 36 hotel keys — same scarcity band as Aman Miami Beach (22) on Collins Avenue"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Extreme Scarcity",
+        "pillColor": "gold",
+        "title": "Only 23 residences in the entire building",
+        "body": "In a market defined by density, a 23-unit count is the most exclusive branded offering on the Billionaires Beach corridor — a level of scarcity that commands real pricing power."
+      },
+      {
+        "pill": "Private Club Model",
+        "pillColor": "gold",
+        "title": "Built-in Cipriani members' club for all owners",
+        "body": "New York's Casa Cipriani has become one of the city's most sought-after private institutions since opening in 2021. Miami Beach owners join the same membership — Cipriani dining, athletic facilities, and a screening room run by the same staff."
+      },
+      {
+        "pill": "Billionaires Beach",
+        "pillColor": "green",
+        "title": "Last major oceanfront site on the Collins corridor",
+        "body": "One of the last major development-ready oceanfront sites in Mid-Beach — on a corridor, the Faena District and Billionaires Beach, that holds roughly $2.5B in branded residential development."
+      },
+      {
+        "pill": "Scale",
+        "pillColor": "gray",
+        "title": "342,465 SF of program allocated to 23 owners",
+        "body": "The full mixed-use program delivers the infrastructure of a full-scale tower at the intimacy of 23 owners — an amenity-per-resident ratio without parallel on Collins Avenue."
+      }
+    ],
+    "thesis": "Casa Cipriani represents the convergence of three rare attributes in Miami Beach real estate: an iconic hospitality brand operating under the private club model, an ultra-limited 23-unit residential count, and one of the last remaining oceanfront development sites on Collins Avenue. The project sits at the northern anchor of Billionaires Beach, three blocks from the Faena District, in a corridor that includes Aman, Rosewood, and The Perigon. At an anticipated entry point of $25 million, pricing reflects the extreme scarcity and the value of built-in Cipriani club membership. BH3 Management's April 2026 refinance signals continued lender confidence in the project, but the underlying thesis is the club model: Cipriani residences trade on access to a specific service operation, not square footage.",
+    "footnote": "Developer: 13th Floor Investments & Midtown Equities (Arnaud Karsenti / 13th Floor Homes) · Architect: Brandon Haw Architecture · Hospitality Partner: The Cipriani Family · Site: 3611–3621 Collins Ave (~1.1 acres) · Land: $73M acquisition (2023) · Buildout: 342,465 SF · Financing: $105M BH3 Management loan (Apr. 2026) — $49.5M prior Bank OZK + $55.5M upsize"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Mid-Beach Billionaires Beach corridor — branded oceanfront delivery comps (Faena District, Perigon, Aman)"
+      },
+      {
+        "value": "~$6,400+",
+        "label": "Implied entry / sq ft",
+        "note": "At ~$25M+ on ~3,900 SF avg residence vs. ~$1,292/sqft Miami Beach luxury resale average (Q3 2025)"
+      },
+      {
+        "value": "$105M",
+        "label": "Site financing — Apr. 2026",
+        "note": "BH3 Management total loan; $49.5M prior Bank OZK outstanding + $55.5M upsize (refinance)"
+      },
+      {
+        "value": "23",
+        "label": "Condo residences",
+        "note": "Plus 36 hotel keys — same scarcity band as Aman Miami Beach (22) on Collins Avenue"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Extreme Scarcity",
+        "pillColor": "gold",
+        "title": "Only 23 residences in the entire building",
+        "body": "In a market defined by density, a 23-unit count is the most exclusive branded offering on the Billionaires Beach corridor — a level of scarcity that commands real pricing power."
+      },
+      {
+        "pill": "Private Club Model",
+        "pillColor": "gold",
+        "title": "Built-in Cipriani members' club for all owners",
+        "body": "New York's Casa Cipriani has become one of the city's most sought-after private institutions since opening in 2021. Miami Beach owners join the same membership — Cipriani dining, athletic facilities, and a screening room run by the same staff."
+      },
+      {
+        "pill": "Billionaires Beach",
+        "pillColor": "green",
+        "title": "Last major oceanfront site on the Collins corridor",
+        "body": "One of the last major development-ready oceanfront sites in Mid-Beach — on a corridor, the Faena District and Billionaires Beach, that holds roughly $2.5B in branded residential development."
+      },
+      {
+        "pill": "Scale",
+        "pillColor": "gray",
+        "title": "342,465 SF of program allocated to 23 owners",
+        "body": "The full mixed-use program delivers the infrastructure of a full-scale tower at the intimacy of 23 owners — an amenity-per-resident ratio without parallel on Collins Avenue."
+      }
+    ],
+    "thesis": "Casa Cipriani represents the convergence of three rare attributes in Miami Beach real estate: an iconic hospitality brand operating under the private club model, an ultra-limited 23-unit residential count, and one of the last remaining oceanfront development sites on Collins Avenue. The project sits at the northern anchor of Billionaires Beach, three blocks from the Faena District, in a corridor that includes Aman, Rosewood, and The Perigon. At an anticipated entry point of $25 million, pricing reflects the extreme scarcity and the value of built-in Cipriani club membership. BH3 Management's April 2026 refinance signals continued lender confidence in the project, but the underlying thesis is the club model: Cipriani residences trade on access to a specific service operation, not square footage.",
+    "footnote": "Developer: 13th Floor Investments & Midtown Equities (Arnaud Karsenti / 13th Floor Homes) · Architect: Brandon Haw Architecture · Hospitality Partner: The Cipriani Family · Site: 3611–3621 Collins Ave (~1.1 acres) · Land: $73M acquisition (2023) · Buildout: 342,465 SF · Financing: $105M BH3 Management loan (Apr. 2026) — $49.5M prior Bank OZK + $55.5M upsize"
+  },
+  "investmentThesis": "<p>Casa Cipriani occupies one of the last significant oceanfront development sites on Collins Avenue, at the northern edge of the Faena District on the stretch known as Billionaires Beach. The 19-story tower echoes the proportions and elegance of Miami Beach's Art Deco hotels while delivering a fully modern living experience: soft, curving facade lines and layered terraces that extend the movement of the ocean into the architecture itself. With just 23 residences, density rivals Aman Miami Beach as the most exclusive branded offering on this corridor.</p><p>In April 2026, BH3 Management closed a $105 million refinance on the development site, expanding a prior Bank OZK loan: a capital markets signal on the collateral. As of August 2026 the site is fully cleared — the Coral Reef and Patrician hotels were demolished under Florida's Resiliency and Safe Structures Act, the 2024 law that preempts local historic protection for structures deemed non-compliant with current flood codes — with debris load-out finishing and heavy equipment on site ahead of excavation.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeArchitect": "—",
+  "lat": 25.8098,
+  "lng": -80.123,
+  "maxBed": 4,
+  "maxPrice": 75000000,
+  "minBed": 1,
+  "minPrice": 25000000,
+  "name": "Casa Cipriani Miami Beach",
+  "neighborhood": "Mid-Beach",
+  "parking": "Covered garage with 24-hour complimentary valet",
+  "percentSold": 0,
+  "priceFrom": "$25M+",
+  "privacyScore": 95,
+  "projectedAppreciation": 35,
+  "rentalPolicy": "—",
+  "residenceContent": "Each of the 23 residences averages approximately 3,900 square feet and ranges from one to four bedrooms, with direct oceanfront orientation throughout. Ceiling heights reach 10 feet, and floor-to-ceiling sliding glass doors open onto generous private terraces with panoramic Atlantic views. Open kitchens are anchored by custom Italian cabinetry and outfitted with Wolf and Sub-Zero appliances; imported stone runs through counters and finishes. Primary bathrooms feature sculptural standalone bathtubs, glass-enclosed showers, and backlit stone vanities. A unified smart-home system manages climate, lighting, and building security. Select residences offer direct private elevator access.",
+  "salesTeam": "—",
+  "slug": "casa-cipriani-miami-beach",
+  "stage": "preconstruction",
+  "statusRemark": "Site work underway · Sales launching 2026",
+  "stories": 19,
+  "totalUnits": 23,
+  "units": 23,
+  "wellnessScore": 90
+}

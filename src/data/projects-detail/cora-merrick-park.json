@@ -1,0 +1,290 @@
+{
+  "address": "4241 Aurora Street, Coral Gables, FL 33146",
+  "amenities": [
+    {
+      "icon": "🎾",
+      "label": "Rooftop Padel Court",
+      "sub": "First in Coral Gables"
+    },
+    {
+      "icon": "🏊",
+      "label": "Rooftop Pool",
+      "sub": "Sun shelf + private cabanas"
+    },
+    {
+      "icon": "💆",
+      "label": "Spa · Sauna · Steam",
+      "sub": "Infrared sauna + cold plunge"
+    },
+    {
+      "icon": "❄️",
+      "label": "Hot & Cold Plunges",
+      "sub": "Recovery protocol"
+    },
+    {
+      "icon": "🧘",
+      "label": "Yoga Terrace",
+      "sub": "Outdoor wellness lounge"
+    },
+    {
+      "icon": "💡",
+      "label": "Red Light Therapy",
+      "sub": "Amenities + primary baths"
+    },
+    {
+      "icon": "💪",
+      "label": "Fitness Center",
+      "sub": "State-of-the-art"
+    },
+    {
+      "icon": "🌿",
+      "label": "5,000 SF Park",
+      "sub": "Jaume Plensa sculpture installation"
+    },
+    {
+      "icon": "🛍",
+      "label": "Shops at Merrick Park",
+      "sub": "Direct pedestrian connection"
+    },
+    {
+      "icon": "🍽",
+      "label": "Resident Lounge",
+      "sub": "Catering kitchen + outdoor dining"
+    },
+    {
+      "icon": "🫖",
+      "label": "Tea Lounge",
+      "sub": "Gathering + relaxation"
+    },
+    {
+      "icon": "🎬",
+      "label": "Screening + Media Lounge",
+      "sub": "Private entertainment"
+    }
+  ],
+  "architect": "Arquitectonica",
+  "badge": "UNDER CONSTRUCTION · $67.5M LOAN SECURED",
+  "completion": "2028",
+  "densityScore": 34,
+  "depositStructure": null,
+  "description": "Cora Merrick Park is a boutique 74-residence, 13-story condominium at 4241 Aurora Street in Coral Gables, directly adjacent to Shops at Merrick Park. Developed by Constellation Group and The Boschetti Group, with architecture by Arquitectonica and interiors by Urban Robot, Cora is positioned as one of the first WELL-certified residential buildings in Coral Gables — the wellness program is shaped by Spanish wellness brand Lamarca Well, the team behind the Lamarca building in Madrid and its Tracy Anderson Method flagship. The building's exterior blends Coral Gables' Mediterranean architectural heritage — oolite stone, textured stucco, bronze accents, and traditional columns — with floor-to-ceiling glazing and contemporary refinement. Residences range from 1BR to 3BR with den, spanning 678 to 2,651 SF across 12 unique floorplans, with 10-foot ceilings, expansive private balconies, and extended lanais up to 1,118 SF on select floors. Kitchens feature Italian cabinetry, Sub-Zero/Wolf appliances, and stone countertops; primary bathrooms include red light therapy for enhanced wellness. Amenities include the first rooftop padel court in Coral Gables, a rooftop pool with dedicated cabanas, an infrared sauna, hot and cold plunges, steam room, red light therapy, a yoga terrace, state-of-the-art fitness center, resident lounge with catering kitchen, tea lounge, dedicated boardroom, and a 5,000-square-foot ground-level park featuring a Jaume Plensa sculpture installation that connects directly to Shops at Merrick Park.",
+  "developer": "Constellation Group · The Boschetti Group",
+  "discoveryEngine": {
+    "lifestyle": [
+      "wellness",
+      "boutique",
+      "walkable",
+      "village-luxury"
+    ],
+    "investmentProfile": [
+      "under-construction",
+      "boutique-scarcity",
+      "submarket-first-mover"
+    ],
+    "priceCategory": "luxury",
+    "vibeMatch": [
+      "quiet-luxury",
+      "wellness-first",
+      "residential",
+      "design-forward"
+    ],
+    "goodFor": [
+      "primary-residence",
+      "downsizer",
+      "wellness-buyer",
+      "long-hold"
+    ]
+  },
+  "editorialLine": "Wellness meets home in the heart of Coral Gables.",
+  "height": "13 Stories",
+  "hoa": null,
+  "id": 44,
+  "img": "/cora-merrick-park/hero-dusk.webp",
+  "imgs": [
+    "/cora-merrick-park/hero-dusk.webp",
+    "/cora-merrick-park/aerial.webp",
+    "/cora-merrick-park/amenity-pool.webp",
+    "/cora-merrick-park/pool.webp",
+    "/cora-merrick-park/padel-court.webp",
+    "/cora-merrick-park/yoga-terrace.webp",
+    "/cora-merrick-park/spa.webp",
+    "/cora-merrick-park/lobby-hero.webp",
+    "/cora-merrick-park/lobby.webp",
+    "/cora-merrick-park/lobby2.webp",
+    "/cora-merrick-park/lobby-lounge.webp",
+    "/cora-merrick-park/clubroom.webp",
+    "/cora-merrick-park/clubroom2.webp",
+    "/cora-merrick-park/living-kitchen.webp",
+    "/cora-merrick-park/bedroom.webp"
+  ],
+  "interiorDesigner": "Urban Robot",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "74",
+        "label": "Residences, boutique scale",
+        "note": "Twelve unique floorplans from 1BR to 3BR with den, 678 to 2,651 SF. Flexible unit combinations available for larger customized layouts. Boutique density matches the Coral Gables character."
+      },
+      {
+        "value": "First",
+        "label": "WELL-certified building in Coral Gables",
+        "note": "Lamarca Well, the Spanish wellness brand behind the Lamarca building and Tracy Anderson Method flagship in Madrid, shapes the program. No comparable wellness-first product exists in the submarket at this price tier."
+      },
+      {
+        "value": "~30%",
+        "label": "Pre-sold, under construction",
+        "note": "Sales launched 2025, construction started early 2026, approximately 30% of residences sold. Buyers joining now enter with pricing transparency, visible construction progress, and reduced pre-construction risk."
+      },
+      {
+        "value": "$900K+",
+        "label": "Entry pricing, penthouse tier $4M+",
+        "note": "Entry pricing is competitive against the broader Coral Gables pre-construction tier, well below Four Seasons Coconut Grove and Vita at Grove Isle across the causeway."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "$67.5M construction loan secured, June 2026",
+        "body": "BHI provided $67.5M in construction financing arranged by Berkadia Miami. Lender support at this level in today's selective lending environment validates both the project's location and the developer's track record."
+      },
+      {
+        "pill": "Wellness brand",
+        "pillColor": "gold",
+        "title": "Lamarca Well, first U.S. residential partnership",
+        "body": "Cora is Lamarca Well's first U.S. residential partnership, importing the air, water, recovery, and longevity standards behind the brand's Madrid flagship."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Direct connection to Shops at Merrick Park",
+        "body": "Cora sits directly adjacent to Shops at Merrick Park, Coral Gables' core luxury retail node. A landscaped park with a Jaume Plensa sculpture creates a dedicated pedestrian connection between residences and the shopping district."
+      },
+      {
+        "pill": "Amenity differentiator",
+        "pillColor": "gold",
+        "title": "First rooftop padel court in Coral Gables",
+        "body": "Cora introduces Coral Gables' first rooftop padel court. The program pairs it with infrared sauna, hot-cold plunges, red light therapy, and yoga to create a recovery-led amenity stack."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Arquitectonica, Urban Robot, Mediterranean-contemporary",
+        "body": "Arquitectonica and Urban Robot blend Coral Gables' Mediterranean vocabulary with contemporary glazing and interiors. The architecture preserves neighborhood character while delivering a modern luxury product profile."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Constellation Group and The Boschetti Group",
+        "body": "Constellation Group and The Boschetti Group bring repeat execution in Coral Gables, including nearby Merrick Park projects. Local entitlement and delivery experience reduces location-specific execution risk."
+      },
+      {
+        "pill": "Residence features",
+        "pillColor": "gray",
+        "title": "Red light therapy in primary baths, lanais to 1,118 SF",
+        "body": "Every residence includes built-in red light therapy in the primary bathroom, a rare spec at this price tier. Select plans also include extended lanais up to 1,118 square feet, creating estate-style outdoor living."
+      }
+    ],
+    "thesis": "Cora Merrick Park is Coral Gables' first major wellness-first condo, with Lamarca Well shaping programming at a fraction of Coconut Grove ultra-luxury pricing. Seventy-four residences sit directly adjacent to Shops at Merrick Park, with WELL certification, rooftop padel, and an Arquitectonica and Urban Robot design team. $67.5M in construction financing secured June 2026 with delivery est. 2028 — one of the few boutique Coral Gables condos actively under construction.",
+    "footnote": "HOA: TBD · Rental policy: TBD · Delivery: est. 2028 · ~30% pre-sold · $67.5M construction loan secured Jun 2026 (BHI/Berkadia)"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "74",
+        "label": "Residences, boutique scale",
+        "note": "Twelve unique floorplans from 1BR to 3BR with den, 678 to 2,651 SF. Flexible unit combinations available for larger customized layouts. Boutique density matches the Coral Gables character."
+      },
+      {
+        "value": "First",
+        "label": "WELL-certified building in Coral Gables",
+        "note": "Lamarca Well, the Spanish wellness brand behind the Lamarca building and Tracy Anderson Method flagship in Madrid, shapes the program. No comparable wellness-first product exists in the submarket at this price tier."
+      },
+      {
+        "value": "~30%",
+        "label": "Pre-sold, under construction",
+        "note": "Sales launched 2025, construction started early 2026, approximately 30% of residences sold. Buyers joining now enter with pricing transparency, visible construction progress, and reduced pre-construction risk."
+      },
+      {
+        "value": "$900K+",
+        "label": "Entry pricing, penthouse tier $4M+",
+        "note": "Entry pricing is competitive against the broader Coral Gables pre-construction tier, well below Four Seasons Coconut Grove and Vita at Grove Isle across the causeway."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "$67.5M construction loan secured, June 2026",
+        "body": "BHI provided $67.5M in construction financing arranged by Berkadia Miami. Lender support at this level in today's selective lending environment validates both the project's location and the developer's track record."
+      },
+      {
+        "pill": "Wellness brand",
+        "pillColor": "gold",
+        "title": "Lamarca Well, first U.S. residential partnership",
+        "body": "Cora is Lamarca Well's first U.S. residential partnership, importing the air, water, recovery, and longevity standards behind the brand's Madrid flagship."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Direct connection to Shops at Merrick Park",
+        "body": "Cora sits directly adjacent to Shops at Merrick Park, Coral Gables' core luxury retail node. A landscaped park with a Jaume Plensa sculpture creates a dedicated pedestrian connection between residences and the shopping district."
+      },
+      {
+        "pill": "Amenity differentiator",
+        "pillColor": "gold",
+        "title": "First rooftop padel court in Coral Gables",
+        "body": "Cora introduces Coral Gables' first rooftop padel court. The program pairs it with infrared sauna, hot-cold plunges, red light therapy, and yoga to create a recovery-led amenity stack."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Arquitectonica, Urban Robot, Mediterranean-contemporary",
+        "body": "Arquitectonica and Urban Robot blend Coral Gables' Mediterranean vocabulary with contemporary glazing and interiors. The architecture preserves neighborhood character while delivering a modern luxury product profile."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Constellation Group and The Boschetti Group",
+        "body": "Constellation Group and The Boschetti Group bring repeat execution in Coral Gables, including nearby Merrick Park projects. Local entitlement and delivery experience reduces location-specific execution risk."
+      },
+      {
+        "pill": "Residence features",
+        "pillColor": "gray",
+        "title": "Red light therapy in primary baths, lanais to 1,118 SF",
+        "body": "Every residence includes built-in red light therapy in the primary bathroom, a rare spec at this price tier. Select plans also include extended lanais up to 1,118 square feet, creating estate-style outdoor living."
+      }
+    ],
+    "thesis": "Cora Merrick Park is Coral Gables' first major wellness-first condo, with Lamarca Well shaping programming at a fraction of Coconut Grove ultra-luxury pricing. Seventy-four residences sit directly adjacent to Shops at Merrick Park, with WELL certification, rooftop padel, and an Arquitectonica and Urban Robot design team. $67.5M in construction financing secured June 2026 with delivery est. 2028 — one of the few boutique Coral Gables condos actively under construction.",
+    "footnote": "HOA: TBD · Rental policy: TBD · Delivery: est. 2028 · ~30% pre-sold · $67.5M construction loan secured Jun 2026 (BHI/Berkadia)"
+  },
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeDesigner": "Arquitectonica Geo",
+  "lat": 25.732689,
+  "lng": -80.259125,
+  "maxBath": 3.5,
+  "maxBed": 3,
+  "maxPrice": 4000000,
+  "maxSqft": 2651,
+  "minBath": 1,
+  "minBed": 1,
+  "minPrice": 900000,
+  "minSqft": 678,
+  "name": "Cora Merrick Park",
+  "neighborhood": "Coral Gables",
+  "percentSold": 30,
+  "priceFrom": "$900K+",
+  "pricePerSqft": null,
+  "privacyScore": 82,
+  "salesTeam": "Douglas Elliman Development Marketing (Exclusive)",
+  "slug": "cora-merrick-park",
+  "stage": "under_construction",
+  "statusRemark": "UNDER CONSTRUCTION · $67.5M CONSTRUCTION LOAN SECURED · DELIVERY 2028",
+  "stories": 13,
+  "tagline": "A 74-residence wellness-first condo at the doorstep of Shops at Merrick Park — designed by Arquitectonica with Lamarca Well shaping the program.",
+  "units": 74,
+  "unitsLeft": null,
+  "videoTourId": null,
+  "wellnessScore": 98
+}

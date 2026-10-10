@@ -1,0 +1,207 @@
+{
+  "address": "5 Grove Isle Drive, Coconut Grove, FL 33133",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Bayfront Pool",
+      "sub": "Poolside bar and lounge"
+    },
+    {
+      "icon": "🎾",
+      "label": "Pickleball & Padel",
+      "sub": "Courts on-site"
+    },
+    {
+      "icon": "🏝",
+      "label": "Grove Isle Club",
+      "sub": "Racquet and Yacht Club access"
+    },
+    {
+      "icon": "🍽",
+      "label": "La Sponda",
+      "sub": "Italian restaurant by Gioia (2026)"
+    },
+    {
+      "icon": "🧘",
+      "label": "Fitness & Spa",
+      "sub": "Full-service wellness"
+    }
+  ],
+  "amenitiesDescription": "<p>Amenities are designed by A++ Architecture (Carlo and Paolo Colombo) and scaled to the private-island setting. The bayfront swimming pool, poolside bar, and lounge are reserved exclusively for Vita residents and guests. Padel and pickleball courts are night-lit. The wellness center includes a fitness center, dedicated studio room, and spa with men's and women's locker rooms, saunas, and steam rooms. The Grove Isle Baywalk Promenade encircles the island along the water's edge, creating a nearly one-mile waterfront path.</p><p>Residents receive a house membership to the Grove Isle Racquet and Yacht Club, which has its own bayfront pool, poolside bar, and night-lit tennis courts. Private enclosed garages allow self-parking with provisions for EV charging and an optional lift for a second vehicle. Concierge services cover dining and entertainment reservations, water sports excursions, travel arrangements, and in-residence services including housekeeping, personal training, and private chef. La Sponda, an Italian restaurant by Gioia Hospitality Group, is opening on the property in 2026 for lunch, dinner, and cocktails.</p>",
+  "architect": "Arcadis, S&E Architects",
+  "completion": "2025",
+  "densityScore": 8,
+  "description": "Move-in ready in Coconut Grove on the Biscayne Bay waterfront. 65 boutique residences by Ugo Colombo's CMC Group, completed in 2025. Limited remaining inventory from $8.5M, including penthouses with private rooftop pools.",
+  "developer": "CMC Group",
+  "height": "7 Stories",
+  "heroImgPosition": "center",
+  "hoa": "$1.74 / sq ft",
+  "id": 30,
+  "img": "https://frasermiami.s3.amazonaws.com/vita-grove-isle/hero-aerial.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/hero-aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/hummingbird-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/entrance-carport.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/hummingbird-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/pool2.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/rooftop-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/rooftop-pool2.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/living-kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/living.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/master-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/vita-grove-isle/balcony.webp"
+  ],
+  "interiorDesigner": "A++ Architecture (Carlo & Paolo Colombo)",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+32%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Ugo Colombo's prior Grove projects delivered strong post-delivery gains; island premium intact"
+      },
+      {
+        "value": "$2,000+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,200–1,400/sqft Grove luxury resale avg; island premium commands 40–50% above mainland"
+      },
+      {
+        "value": "65 residences",
+        "label": "Total units — a boutique island community",
+        "note": "Extraordinary land-to-unit ratio; essentially a private island estate community."
+      },
+      {
+        "value": "20 acres",
+        "label": "Private island — gated, with marina",
+        "note": "Grove Isle is a gated private island; new seawall, marina, and guard house rebuilt as part of development"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Island living",
+        "pillColor": "gold",
+        "title": "Private island entry — gated, 2 minutes from Bayshore Drive",
+        "body": "Grove Isle sits two minutes off Bayshore Drive yet lives a world apart — a gated island enclave that, with its rebuilt infrastructure, is more private and self-contained than it has been in decades."
+      },
+      {
+        "pill": "Views",
+        "pillColor": "gold",
+        "title": "Protected bay views — no future obstruction possible",
+        "body": "Grove Isle's island position means views from Vita will never be blocked by new construction. 360° protected bay, city, and Coconut Grove canopy views. In Miami's market, permanent views drive permanent premiums."
+      },
+      {
+        "pill": "Finishes",
+        "pillColor": "gold",
+        "title": "CMC Group finish level — Molteni kitchens, book-matched marble",
+        "body": "Ugo Colombo's CMC Group is known for the highest finish specification in Miami luxury — Molteni kitchens, book-matched marble baths, Miele appliances, Barausse doors. Finish quality drives both primary-residence demand and rent premiums."
+      },
+      {
+        "pill": "Delivery",
+        "pillColor": "green",
+        "title": "Completed Dec 2025 — move-in ready",
+        "body": "Florida YIMBY and local reporting placed completion in December 2025 with TCO and closings underway. Vita is delivered product — buyers can close and occupy on a brand-new island tower without the pre-construction timeline."
+      }
+    ],
+    "thesis": "Grove Isle is one of the most distinctive residential addresses in Miami — a gated private island with boat slips, 360° water views, and the kind of calm that no mainland condo can replicate. Vita is the first new construction on the island in 30+ years. CMC Group's finish standards, the island's inherent land scarcity, and the Grove's chronic primary-market demand create a combination that the David Siddons Group summarizes simply: 'I am bullish about this project.'",
+    "footnote": "HOA: ~$1.74/sq ft (MLS median, Aug 2026) · Rental policy: Min 6-month (annual) · Delivered Dec 2025 — move-in ready"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+32%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Ugo Colombo's prior Grove projects delivered strong post-delivery gains; island premium intact"
+      },
+      {
+        "value": "$2,000+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,200–1,400/sqft Grove luxury resale avg; island premium commands 40–50% above mainland"
+      },
+      {
+        "value": "65 residences",
+        "label": "Total units — a boutique island community",
+        "note": "Extraordinary land-to-unit ratio; essentially a private island estate community."
+      },
+      {
+        "value": "20 acres",
+        "label": "Private island — gated, with marina",
+        "note": "Grove Isle is a gated private island; new seawall, marina, and guard house rebuilt as part of development"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Island living",
+        "pillColor": "gold",
+        "title": "Private island entry — gated, 2 minutes from Bayshore Drive",
+        "body": "Grove Isle sits two minutes off Bayshore Drive yet lives a world apart — a gated island enclave that, with its rebuilt infrastructure, is more private and self-contained than it has been in decades."
+      },
+      {
+        "pill": "Views",
+        "pillColor": "gold",
+        "title": "Protected bay views — no future obstruction possible",
+        "body": "Grove Isle's island position means views from Vita will never be blocked by new construction. 360° protected bay, city, and Coconut Grove canopy views. In Miami's market, permanent views drive permanent premiums."
+      },
+      {
+        "pill": "Finishes",
+        "pillColor": "gold",
+        "title": "CMC Group finish level — Molteni kitchens, book-matched marble",
+        "body": "Ugo Colombo's CMC Group is known for the highest finish specification in Miami luxury — Molteni kitchens, book-matched marble baths, Miele appliances, Barausse doors. Finish quality drives both primary-residence demand and rent premiums."
+      },
+      {
+        "pill": "Delivery",
+        "pillColor": "green",
+        "title": "Completed Dec 2025 — move-in ready",
+        "body": "Florida YIMBY and local reporting placed completion in December 2025 with TCO and closings underway. Vita is delivered product — buyers can close and occupy on a brand-new island tower without the pre-construction timeline."
+      }
+    ],
+    "thesis": "Grove Isle is one of the most distinctive residential addresses in Miami — a gated private island with boat slips, 360° water views, and the kind of calm that no mainland condo can replicate. Vita is the first new construction on the island in 30+ years. CMC Group's finish standards, the island's inherent land scarcity, and the Grove's chronic primary-market demand create a combination that the David Siddons Group summarizes simply: 'I am bullish about this project.'",
+    "footnote": "HOA: ~$1.74/sq ft (MLS median, Aug 2026) · Rental policy: Min 6-month (annual) · Delivered Dec 2025 — move-in ready"
+  },
+  "investmentThesis": "<p>Only 10 residences remained at TCO, making this one of the most limited new luxury offerings in Coconut Grove. Available inventory includes several four-bedroom residences ($8.5M to $10.3M) and two duplex penthouses with private rooftop pools at $22 million each. The buyer profile has been largely domestic, including local Miami residents transitioning from single-family homes in surrounding neighborhoods. Ugo Colombo maintained direct involvement throughout the project, overseeing elements from facade engineering to material selection. His Miami portfolio spans Bristol Tower, Santa Maria, Epic Hotel & Residences, Brickell Flatiron, and Onda Residences. CMC Group has since broken ground on Four Seasons Private Residences Coconut Grove, continuing Colombo's focus on the neighborhood. La Sponda, an Italian restaurant by Gioia Hospitality Group (the team behind Daniel's Miami), is opening on the property in 2026.</p>",
+  "isActive": true,
+  "isFeatured": true,
+  "lat": 25.73684,
+  "lifestyle": [
+    "Waterfront",
+    "Private Island",
+    "Ultra-Luxury",
+    "Boating"
+  ],
+  "lng": -80.2175187,
+  "maxBed": 5,
+  "maxPrice": 22000000,
+  "maxSqft": 6500,
+  "minBed": 3,
+  "minPrice": 8500000,
+  "minSqft": 2500,
+  "name": "Vita at Grove Isle",
+  "neighborhood": "Coconut Grove",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/vita-at-grove-isle-coconut-grove.jpg",
+  "parking": "Private Garages + Valet",
+  "percentSold": 90,
+  "priceFrom": "$8.5M+",
+  "privacyScore": 98,
+  "projectedAppreciation": 30,
+  "rentalPolicy": "6-Month Minimum (Traditional)",
+  "residenceContent": "<p class=\"prop-residence-intro\">The only new luxury condominium delivered in Coconut Grove in 2025, now closing with immediate occupancy available. Three interconnected buildings (Mare, Luce, and Sole) trace the island's shoreline, placing every residence directly on the water with both sunrise and sunset exposures. Homes feature private elevator access with dedicated foyers, open-plan kitchens with fully concealed Miele appliances, and bathrooms finished with Italian cabinetry, European fixtures, and book-matched Venus marble. Ceiling heights reach a minimum of 10 feet, with 13'5\"-deep wraparound terraces. Smart home infrastructure is fully integrated: Crestron control for lighting, climate, and audio; Lutron HomeWorks whole-home lighting; multi-zone HVAC; fiber connectivity with up to 10-gigabit capability; and WiFi 6 access points throughout. The collection of 12 two-story penthouses includes private rooftop terraces with swimming pools, summer kitchens, and 11-foot ceilings with expanded outdoor living areas.</p>",
+  "slug": "vita-grove-isle",
+  "stage": "move_in_ready",
+  "stageLabel": "Completed Dec 2025 · Move-In Ready",
+  "statusRemark": "MOVE-IN READY · CLOSINGS UNDERWAY",
+  "units": 65,
+  "verified": {
+    "hoa": {
+      "date": "2026-08-23",
+      "source": "MLS active listings, Aug 2026 — monthly association fee ÷ interior sq ft (SqFt LA), median. $1.74/sf across 16 active listings — a notably tight cluster; two outliers and one $0-fee listing excluded."
+    }
+  },
+  "views": [
+    "Unobstructed Bay",
+    "Ocean",
+    "Miami Skyline"
+  ],
+  "wellnessScore": 90
+}

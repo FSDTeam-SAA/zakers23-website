@@ -1,0 +1,394 @@
+{
+  "address": "2901 Indian Creek Drive, Miami Beach, FL 33140",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Rooftop Pool Deck",
+      "sub": "Sun shelf + summer kitchen + fire pit"
+    },
+    {
+      "icon": "💪",
+      "label": "Level 3 Wellness Suite",
+      "sub": "Fitness center + infrared sauna + cold plunge"
+    },
+    {
+      "icon": "🛎",
+      "label": "24/7 Attended Lobby",
+      "sub": "Concierge service"
+    },
+    {
+      "icon": "🚗",
+      "label": "Valet + EV Charging",
+      "sub": "Gated 24/7 valet parking"
+    },
+    {
+      "icon": "🏖",
+      "label": "EDITION Beach Club",
+      "sub": "Select-owner membership access"
+    },
+    {
+      "icon": "🍽",
+      "label": "Private Terraces",
+      "sub": "Select townhomes with summer kitchens"
+    }
+  ],
+  "architect": "Urban Robot",
+  "badge": "UNDER CONSTRUCTION · SUMMER 2027 DELIVERY",
+  "completion": "Summer 2027",
+  "constructionImgs": [
+    {
+      "url": "/29-indian-creek/updates/2026-08-site-deco.webp",
+      "date": "August 2026",
+      "isoDate": "2026-08-11",
+      "alt": "Excavator working the cleared pad at the 29 Indian Creek site in Miami Beach",
+      "caption": "Site preparation underway behind the construction fence at 2901 Indian Creek Drive.",
+      "imgPosition": "center 82%"
+    },
+    {
+      "url": "/29-indian-creek/updates/2026-08-site-corner.webp",
+      "date": "August 2026",
+      "isoDate": "2026-08-11",
+      "alt": "29 Indian Creek construction fence and cleared site at the Indian Creek Drive corner",
+      "caption": "The corner frontage. No vertical structure or tower crane yet: still early works against a summer 2027 delivery.",
+      "imgPosition": "center 82%"
+    }
+  ],
+  "constructionNote": "Early site preparation on Indian Creek Drive. Lot cleared with an excavator on site. Perimeter fencing branded Arriving 2027. No vertical structure yet. Delivery targeted for summer 2027.",
+  "constructionUpdateDate": "August 2026",
+  "densityScore": 16,
+  "depositStructure": [
+    {
+      "percentage": 30,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Building Top-Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "Balance Due at Closing"
+    }
+  ],
+  "description": "29 Indian Creek is an intimate collection of fourteen one- and two-bedroom residences and two two-story townhomes at 2901 Indian Creek Drive in Mid-Beach. Designed by Urban Robot (architecture, interiors and landscape from a single studio) for Trinity Southern with JMH Development, the project pairs Art Deco-inspired architecture with a contemporary boutique program: nine-foot ceilings, floor-to-ceiling glass, bone-white lacquered kitchens with fully integrated Miele appliances, and spa-caliber baths finished in Hansgrohe matte copper and limestone. Amenities include a rooftop pool deck, a Level 3 wellness suite with infrared sauna and cold plunge, 24/7 attended lobby concierge, valet with EV charging, and select-owner membership to The Beach Club at The Miami Beach EDITION.",
+  "developer": "Trinity Southern · JMH Development",
+  "discoveryEngine": {
+    "lifestyle": [
+      "boutique",
+      "wellness",
+      "mid-beach",
+      "design-led"
+    ],
+    "investmentProfile": [
+      "under-construction",
+      "boutique-scarcity",
+      "accessible-luxury"
+    ],
+    "priceCategory": "luxury",
+    "vibeMatch": [
+      "intimate",
+      "quiet-luxury",
+      "wellness-forward",
+      "beach-club-lifestyle"
+    ],
+    "goodFor": [
+      "second-home",
+      "primary-residence",
+      "investment",
+      "downsizer"
+    ]
+  },
+  "editorialLine": "Boutique Mid-Beach living with EDITION Beach Club access.",
+  "floorPlans": [
+    {
+      "type": "1 Bedroom Residence",
+      "beds": 1,
+      "baths": 1.5,
+      "sqft": "842–854 sq ft",
+      "startingPrice": 1550000
+    },
+    {
+      "type": "2 Bedroom Residence",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,466 sq ft",
+      "startingPrice": 2822050
+    },
+    {
+      "type": "Townhouse Residence",
+      "floors": "Two-story · 500 sq ft private terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,750 sq ft",
+      "startingPrice": 3650000
+    },
+    {
+      "type": "Combination Residences",
+      "addlRooms": "Three-, four- and five-bedroom plans",
+      "beds": "3 - 5",
+      "baths": null,
+      "sqft": "2,344–3,500 sq ft",
+      "status": "Inquire",
+      "inquireOnly": true,
+      "separateProgram": true
+    }
+  ],
+  "galleryImageAlts": [
+    "29 Indian Creek seen across the Indian Creek waterway in Miami Beach",
+    "Double-height townhome great room with open staircase at 29 Indian Creek",
+    "Great room with floor-to-ceiling glass and skyline views at 29 Indian Creek",
+    "Double-height living room in a two-story townhome at 29 Indian Creek",
+    "Bone-white lacquered kitchen with stone island and integrated Miele appliances at 29 Indian Creek",
+    "Primary bedroom with terrace access at sunset, 29 Indian Creek Miami Beach",
+    "Townhome private terrace with summer kitchen and outdoor dining at 29 Indian Creek",
+    "Attended lobby with natural stone and wood detailing at 29 Indian Creek",
+    "Level 3 fitness center with infrared sauna and cold plunge at 29 Indian Creek",
+    "Rooftop pool deck overlooking the Indian Creek waterway at 29 Indian Creek",
+    "29 Indian Creek illuminated at dusk, reflected in the Indian Creek waterway",
+    "Landscaped porte-cochère arrival on Indian Creek Drive at 29 Indian Creek",
+    "Aerial view of the Indian Creek corridor and Mid-Beach, Miami Beach",
+    "Primary bathroom with freestanding soaking tub and custom wood vanity at 29 Indian Creek",
+    "Powder room with stone accent wall, mirrored niche and pedestal sink at 29 Indian Creek",
+    "Townhome primary bathroom with fluted wall detailing and soaking tub at 29 Indian Creek",
+    "Private beachfront at The Beach Club at The Miami Beach EDITION",
+    "Cabana chairs and umbrellas on the sand at The Beach Club at The Miami Beach EDITION",
+    "Shaded tropical lawn at The Beach Club at The Miami Beach EDITION"
+  ],
+  "height": null,
+  "hoa": null,
+  "id": 45,
+  "img": "/29-indian-creek/hero.webp",
+  "imgPositions": {
+    "14": "center 72%",
+    "18": "center 75%"
+  },
+  "imgPositionsMobile": {
+    "14": "center 78%",
+    "18": "center 80%"
+  },
+  "imgs": [
+    "/29-indian-creek/hero.webp",
+    "/29-indian-creek/unit.webp",
+    "/29-indian-creek/living.webp",
+    "/29-indian-creek/living2.webp",
+    "/29-indian-creek/kitchen.webp",
+    "/29-indian-creek/bedroom.webp",
+    "/29-indian-creek/terrace-dining.webp",
+    "/29-indian-creek/lobby.webp",
+    "/29-indian-creek/gym.webp",
+    "/29-indian-creek/pool.webp",
+    "/29-indian-creek/building-night.webp",
+    "/29-indian-creek/porte-cochere.webp",
+    "/29-indian-creek/neighborhood-aerial.webp",
+    "/29-indian-creek/primary-bath.webp",
+    "/29-indian-creek/powder-room.webp",
+    "/29-indian-creek/townhome-primary-bath.webp",
+    "/29-indian-creek/beach-club-beach.webp",
+    "/29-indian-creek/beach-club-cabanas.webp",
+    "/29-indian-creek/beach-club-garden.webp"
+  ],
+  "interiorDesigner": "Urban Robot",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "16",
+        "label": "Total residences: 14 condos + 2 townhomes",
+        "note": "Among the smallest-scale new-construction buildings currently under construction on Miami Beach; most recent launches have been 80-plus units"
+      },
+      {
+        "value": "$1,977",
+        "label": "Blended asking price / sq ft",
+        "note": "Across the three published types on the developer's 15 August 2026 availability sheet: one-bedrooms near $1,845/SF, the two-bedroom at $1,925/SF, the townhouse at $2,086/SF"
+      },
+      {
+        "value": "$1.55M",
+        "label": "Current entry: 842 sq ft, 1 bed / 1.5 bath",
+        "note": "Launch pricing opened at $1.4M in November 2025; remaining one-bedroom inventory now opens at $1,550,000"
+      },
+      {
+        "value": "Summer 2027",
+        "label": "Targeted delivery: groundbreaking November 2025",
+        "note": "Deposit schedule is 30% at contract, 10% at building top-off, 60% at closing"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Boutique scale",
+        "pillColor": "gold",
+        "title": "A genuinely boutique building in Mid-Beach",
+        "body": "Sixteen homes in total, so resale competition inside the building is effectively near-zero. The scarcity argument here is structural, not narrative, in a corridor where most recent launches have been far larger towers."
+      },
+      {
+        "pill": "Beach Club access",
+        "pillColor": "gold",
+        "title": "Select-owner membership at EDITION Beach Club",
+        "body": "Select owners receive membership to The Beach Club at The Miami Beach EDITION: 70,000 square feet of private beachfront, cabana reservations for the member and two guests, spa and fitness access, and members-only programming. It converts a non-oceanfront site into an oceanfront lifestyle."
+      },
+      {
+        "pill": "Design continuity",
+        "pillColor": "gold",
+        "title": "Urban Robot: architecture, interiors, and landscape from a single firm",
+        "body": "Urban Robot leads all three design disciplines. A single-firm approach produces a more cohesive outcome than the typical developer-architect-interior-designer split, which is visible in projects where signature materials, proportions, and detailing carry consistently from facade through residence interiors to landscape."
+      },
+      {
+        "pill": "Finish level",
+        "pillColor": "gold",
+        "title": "Miele and Hansgrohe standard across every residence",
+        "body": "Every unit includes a Miele suite with wine cooler, bone-white lacquered kitchens with fluted glass uppers, and Hansgrohe matte copper fixtures with limestone baths, standard across the building, not only upper floors."
+      },
+      {
+        "pill": "Townhome rarity",
+        "pillColor": "gray",
+        "title": "Two two-story townhomes, three bedrooms and a 500 sq ft terrace",
+        "body": "Each townhome runs 1,750 sq ft interior as a 3 bed / 3.5 bath with a double-height great room, plus a 500 sq ft private terrace with summer kitchen and wet bar. Asking $3,650,000."
+      },
+      {
+        "pill": "Combination homes",
+        "pillColor": "gray",
+        "title": "Adjacent residences can be combined up to 3,500 sq ft",
+        "body": "The developer draws combination plans for a 2,344 sq ft three-bedroom, a 2,371 sq ft four-bedroom and a 3,500 sq ft five-bedroom townhome. Built to order from adjacent units, not standing inventory."
+      }
+    ],
+    "thesis": "29 Indian Creek is one of the smallest-scale new-construction offerings currently under construction on Miami Beach, which is the strategic distinction. Buyers who have rejected the 200-unit tower experience but still want new construction with hotel-grade service are increasingly looking for under-twenty-unit buildings, and the inventory is genuinely scarce. The EDITION Beach Club tie-in is the most valuable single element in the amenity package: it converts a non-oceanfront address into a de facto oceanfront lifestyle at a fraction of the cost of a true ocean-side residence. Entry pricing of $1.55M and a blended $1,977 per square foot across the three available types place the building in the accessible-luxury band for Miami Beach, a range where boutique inventory at this finish level is hard to find.",
+    "footnote": "HOA: TBA · Rental policy: Inquire · Deposit: 30% at contract, 10% at top-off, 60% at closing · Delivery: Summer 2027 · Developer: Trinity Southern with JMH Development"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "16",
+        "label": "Total residences: 14 condos + 2 townhomes",
+        "note": "Among the smallest-scale new-construction buildings currently under construction on Miami Beach; most recent launches have been 80-plus units"
+      },
+      {
+        "value": "$1,977",
+        "label": "Blended asking price / sq ft",
+        "note": "Across the three published types on the developer's 15 August 2026 availability sheet: one-bedrooms near $1,845/SF, the two-bedroom at $1,925/SF, the townhouse at $2,086/SF"
+      },
+      {
+        "value": "$1.55M",
+        "label": "Current entry: 842 sq ft, 1 bed / 1.5 bath",
+        "note": "Launch pricing opened at $1.4M in November 2025; remaining one-bedroom inventory now opens at $1,550,000"
+      },
+      {
+        "value": "Summer 2027",
+        "label": "Targeted delivery: groundbreaking November 2025",
+        "note": "Deposit schedule is 30% at contract, 10% at building top-off, 60% at closing"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Boutique scale",
+        "pillColor": "gold",
+        "title": "A genuinely boutique building in Mid-Beach",
+        "body": "Sixteen homes in total, so resale competition inside the building is effectively near-zero. The scarcity argument here is structural, not narrative, in a corridor where most recent launches have been far larger towers."
+      },
+      {
+        "pill": "Beach Club access",
+        "pillColor": "gold",
+        "title": "Select-owner membership at EDITION Beach Club",
+        "body": "Select owners receive membership to The Beach Club at The Miami Beach EDITION: 70,000 square feet of private beachfront, cabana reservations for the member and two guests, spa and fitness access, and members-only programming. It converts a non-oceanfront site into an oceanfront lifestyle."
+      },
+      {
+        "pill": "Design continuity",
+        "pillColor": "gold",
+        "title": "Urban Robot: architecture, interiors, and landscape from a single firm",
+        "body": "Urban Robot leads all three design disciplines. A single-firm approach produces a more cohesive outcome than the typical developer-architect-interior-designer split, which is visible in projects where signature materials, proportions, and detailing carry consistently from facade through residence interiors to landscape."
+      },
+      {
+        "pill": "Finish level",
+        "pillColor": "gold",
+        "title": "Miele and Hansgrohe standard across every residence",
+        "body": "Every unit includes a Miele suite with wine cooler, bone-white lacquered kitchens with fluted glass uppers, and Hansgrohe matte copper fixtures with limestone baths, standard across the building, not only upper floors."
+      },
+      {
+        "pill": "Townhome rarity",
+        "pillColor": "gray",
+        "title": "Two two-story townhomes, three bedrooms and a 500 sq ft terrace",
+        "body": "Each townhome runs 1,750 sq ft interior as a 3 bed / 3.5 bath with a double-height great room, plus a 500 sq ft private terrace with summer kitchen and wet bar. Asking $3,650,000."
+      },
+      {
+        "pill": "Combination homes",
+        "pillColor": "gray",
+        "title": "Adjacent residences can be combined up to 3,500 sq ft",
+        "body": "The developer draws combination plans for a 2,344 sq ft three-bedroom, a 2,371 sq ft four-bedroom and a 3,500 sq ft five-bedroom townhome. Built to order from adjacent units, not standing inventory."
+      }
+    ],
+    "thesis": "29 Indian Creek is one of the smallest-scale new-construction offerings currently under construction on Miami Beach, which is the strategic distinction. Buyers who have rejected the 200-unit tower experience but still want new construction with hotel-grade service are increasingly looking for under-twenty-unit buildings, and the inventory is genuinely scarce. The EDITION Beach Club tie-in is the most valuable single element in the amenity package: it converts a non-oceanfront address into a de facto oceanfront lifestyle at a fraction of the cost of a true ocean-side residence. Entry pricing of $1.55M and a blended $1,977 per square foot across the three available types place the building in the accessible-luxury band for Miami Beach, a range where boutique inventory at this finish level is hard to find.",
+    "footnote": "HOA: TBA · Rental policy: Inquire · Deposit: 30% at contract, 10% at top-off, 60% at closing · Delivery: Summer 2027 · Developer: Trinity Southern with JMH Development"
+  },
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "16",
+      "label": "Total residences",
+      "note": "Fourteen one- and two-bedroom homes plus two two-story townhomes"
+    },
+    {
+      "value": "$1.55M – $3.65M",
+      "label": "Current asking range",
+      "note": "Three residence types available on the developer's 15 August 2026 availability sheet"
+    },
+    {
+      "value": "Summer 2027",
+      "label": "Estimated delivery",
+      "note": "Groundbreaking November 2025; site works underway on Indian Creek Drive as of August 2026"
+    }
+  ],
+  "landscapeArchitect": "Urban Robot",
+  "lat": 25.8054635,
+  "lng": -80.1259657,
+  "locationScore": 50,
+  "maxBath": 3.5,
+  "maxBed": 3,
+  "maxPrice": 3650000,
+  "maxSqft": 1750,
+  "minBath": 1.5,
+  "minBed": 1,
+  "minPrice": 1400000,
+  "minSqft": 842,
+  "name": "29 Indian Creek",
+  "neighborhood": "Mid-Beach",
+  "percentSold": null,
+  "priceFrom": "$1.4M+",
+  "pricePerSqft": 1977,
+  "privacyScore": 91,
+  "salesTeam": "Private appointments available",
+  "slug": "29-indian-creek",
+  "stage": "under_construction",
+  "statusRemark": "UNDER CONSTRUCTION · SUMMER 2027 DELIVERY",
+  "stories": null,
+  "tagline": "A 16-residence Mid-Beach boutique project on Indian Creek with Urban Robot design and select-owner EDITION Beach Club access.",
+  "units": 16,
+  "unitsLeft": null,
+  "verified": {
+    "units": {
+      "date": "2026-06-23",
+      "source": "Developer collateral: project brochure (17 Jun 2026), rack brochure (8 Jun 2026) and sales presentation (23 Jun 2026) each state fourteen residences plus two townhomes; supersedes the 22-unit figure carried by Florida YIMBY and the Nov 2025 press cycle"
+    },
+    "priceFrom": {
+      "date": "2025-11-12",
+      "source": "Launch pricing: Florida YIMBY groundbreaking coverage, from $1.4M",
+      "basis": "launch"
+    },
+    "minPrice": {
+      "date": "2025-11-12",
+      "source": "Launch pricing: Florida YIMBY groundbreaking coverage, from $1.4M",
+      "basis": "launch"
+    },
+    "maxPrice": {
+      "date": "2026-08-15",
+      "source": "Developer availability sheet 8.15.26: townhouse residence at $3,650,000"
+    },
+    "pricePerSqft": {
+      "date": "2026-08-15",
+      "source": "Developer availability sheet 8.15.26: $8,036,425 blended across 4,064 sq ft of the three published types"
+    },
+    "completion": {
+      "date": "2026-09-17",
+      "source": "Brett Fraser — Summer 2027"
+    }
+  },
+  "videoTourId": null,
+  "wellnessScore": 90
+}

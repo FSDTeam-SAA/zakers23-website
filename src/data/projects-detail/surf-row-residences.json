@@ -1,0 +1,336 @@
+{
+  "address": "8800 Collins Avenue, Surfside, FL 33154",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Rooftop Pool Deck",
+      "sub": "Resort-style pool, dining area, outdoor grills",
+      "img": "https://frasermiami.s3.amazonaws.com/surf-row/rooftop-pool.webp",
+      "imgPosition": "center 45%"
+    },
+    {
+      "icon": "🧖",
+      "label": "Zen Spa",
+      "sub": "Steam room, sauna, cold plunge, jacuzzi, treatment room",
+      "img": "https://frasermiami.s3.amazonaws.com/surf-row/spa.webp"
+    },
+    {
+      "icon": "🧘",
+      "label": "Wellness Space",
+      "sub": "Private workout studio adjoining the spa",
+      "img": "https://frasermiami.s3.amazonaws.com/surf-row/wellness-space.webp"
+    },
+    {
+      "icon": "🏋",
+      "label": "Fitness Center",
+      "sub": "State-of-the-art equipment, RH-furnished",
+      "img": "https://frasermiami.s3.amazonaws.com/surf-row/fitness-center.webp"
+    },
+    {
+      "icon": "💼",
+      "label": "Resident Lounge & Co-Working",
+      "sub": "Executive board room, RH furnishings",
+      "img": "https://frasermiami.s3.amazonaws.com/surf-row/coworking-lounge.webp"
+    },
+    {
+      "icon": "🏖",
+      "label": "Beach Butler Service",
+      "sub": "Chairs, umbrellas and coolers on request",
+      "img": "https://frasermiami.s3.amazonaws.com/surf-row/beach-service.webp"
+    },
+    {
+      "icon": "🛎",
+      "label": "24/7 Concierge",
+      "sub": "Front desk, recreation butler, housekeeping on request"
+    },
+    {
+      "icon": "🎾",
+      "label": "Private Tennis Lessons",
+      "sub": "Surfside Tennis Center, minutes away"
+    },
+    {
+      "icon": "🏄",
+      "label": "Board & Bike Storage",
+      "sub": "Paddle and surf board storage, dedicated bike room"
+    },
+    {
+      "icon": "📦",
+      "label": "Package Room with Cold Storage",
+      "sub": "Secure delivery, mailroom lounge"
+    }
+  ],
+  "amenitiesDescription": "<p><strong>Wellness &amp; spa:</strong> A Zen spa with steam room, sauna, cold plunge, jacuzzi, and treatment room, alongside a state-of-the-art fitness center with a private workout studio. Roughly 6,500 square feet of amenity space across a 24-home building.</p><p><strong>Rooftop &amp; beach:</strong> A rooftop deck with resort-style pool, dining area, and outdoor grills. Beach lounge chairs, umbrellas, and coolers on request, with paddle and surf board storage and a dedicated bike room at ground level.</p><p><strong>Work &amp; gathering:</strong> A resident lounge with co-working area and executive board room, mailroom lounge, and secure package room with cold storage. All shared spaces are furnished by RH.</p><p><strong>Services:</strong> 24/7 front desk concierge, beach butler and recreation butler service, private tennis lessons, housekeeping on request, building-wide internet and Wi-Fi, and an on-site maintenance technician.</p>",
+  "architect": "Boris Pena Architects (Design Architect)",
+  "architectOfRecord": "Alfonso Jurado Architecture",
+  "avgPsf": "$1,263–$1,979",
+  "badge": "50% SOLD",
+  "completion": "2027",
+  "ctaMicrocopy": "50% sold · 12 residences remain · From $1.3M",
+  "densityScore": 18,
+  "depositStructure": [
+    {
+      "percentage": 30,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Project Top-Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "Balance at Closing (2027)"
+    }
+  ],
+  "description": "Twenty-four residences at 8800 Collins in Surfside. Four stories by Boris Pena Architects with RH-furnished interiors, a 6,500 SF wellness program, and beach butler service. From $1.3M, delivery 2027.",
+  "developer": "LD&D · ONE Capital · IGEQ",
+  "discoveryEngine": {
+    "lifestyle": [
+      "boutique",
+      "walkable",
+      "wellness",
+      "beach-club-lifestyle",
+      "design-forward",
+      "limited-inventory"
+    ],
+    "investmentProfile": [
+      "under-construction",
+      "boutique-scarcity",
+      "low-density",
+      "accessible-luxury",
+      "architectural-pedigree"
+    ],
+    "priceCategory": "luxury",
+    "vibeMatch": [
+      "quiet-luxury",
+      "intimate",
+      "boutique",
+      "wellness-forward",
+      "serene"
+    ],
+    "goodFor": [
+      "second-home",
+      "pied-a-terre",
+      "primary-residence",
+      "end-user",
+      "wellness-buyer",
+      "international-buyer"
+    ]
+  },
+  "dossierImageIndices": {
+    "amenities": 2,
+    "interstitials": [
+      8,
+      13,
+      15,
+      14
+    ]
+  },
+  "editorialLine": "Quiet luxury on Surfside's last low-rise block.",
+  "faq": [
+    {
+      "question": "What are Surf Row Residences prices and floor plans?",
+      "answer": "Surf Row crossed 50% sold in August 2026, leaving roughly 12 of the 24 residences. Released pricing on the May 2026 availability sheet ran from $1,375,000 for a 1 bed + den at 1,089 SF to $3,595,000 for a 3 bed + den at 2,195 SF; the highest contract recorded to date is $4,995,000 for a 2,524 SF residence, or $1,979 per square foot. Not every remaining home is publicly released — request the current sheet."
+    },
+    {
+      "question": "What is the deposit structure?",
+      "answer": "30% at contract, 10% at project top-off, and the 60% balance at closing."
+    },
+    {
+      "question": "When is estimated completion?",
+      "answer": "2027. The project broke ground in late 2025 and closed a $30.5 million construction loan from Maxim Capital Group in March 2026 to fund vertical construction."
+    },
+    {
+      "question": "Are the residences furnished?",
+      "answer": "Residences deliver with LD&D-specified finishes — Miele appliances, Dekton counters, custom cabinetry, and spa-style bathrooms. A complete furnishings package by RH, designed exclusively for Surf Row, is available as an option. All shared amenity spaces are RH-furnished as standard."
+    },
+    {
+      "question": "Is Surf Row Residences oceanfront?",
+      "answer": "No. Surf Row sits at 8800 Collins Avenue, one block west of the sand, with beach butler service and beach equipment provided on request. Surfside's oceanfront parcels are effectively built out; this is a low-rise block within walking distance of both the beach and Bal Harbour Shops."
+    },
+    {
+      "question": "Who is the developer and architect?",
+      "answer": "Developed by LD&D with ONE Capital and IGEQ. Boris Pena Architects is design architect and Alfonso Jurado Architecture is architect of record. Interiors are by LD&D, with furnishings by RH."
+    }
+  ],
+  "featureVideo": {
+    "src": "https://frasermiami.s3.amazonaws.com/surf-row/surf-row-composition.mp4",
+    "poster": "https://frasermiami.s3.amazonaws.com/surf-row/surf-row-poster.webp",
+    "label": "Surf Row Residences",
+    "tagline": "24 residences on the sand — beach, building, and the Row itself.",
+    "uploadDate": "2026-09-03"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "Residence 208",
+      "addlRooms": "1 Bed + Den · North · 95 SF Exterior",
+      "beds": 1,
+      "baths": 2,
+      "sqft": "1,089 SF",
+      "status": "Available",
+      "startingPrice": 1375000
+    },
+    {
+      "type": "Residence 211",
+      "addlRooms": "1 Bed + Den · South · 95 SF Exterior",
+      "beds": 1,
+      "baths": 2,
+      "sqft": "1,089 SF",
+      "status": "Available",
+      "startingPrice": 1598000
+    },
+    {
+      "type": "Residence 301",
+      "addlRooms": "2 Bed + Den · Southeast · 480 SF Exterior",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "1,435 SF",
+      "status": "Available",
+      "startingPrice": 2790000
+    },
+    {
+      "type": "Residence 302",
+      "addlRooms": "3 Bed · Northeast · 573 SF Exterior",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,004 SF",
+      "status": "Available",
+      "startingPrice": 3536000
+    },
+    {
+      "type": "Residence 207",
+      "addlRooms": "3 Bed + Den · South · 190 SF Exterior",
+      "beds": 3,
+      "baths": 4,
+      "sqft": "2,195 SF",
+      "status": "Available",
+      "startingPrice": 3595000
+    }
+  ],
+  "floorPlansDefaultVisible": 5,
+  "height": "4 Stories",
+  "heroImgPosition": "center 60%",
+  "hoa": "TBD",
+  "id": 58,
+  "img": "https://frasermiami.s3.amazonaws.com/surf-row/south-facade-hero.webp",
+  "imgCaptions": {
+    "8": {
+      "kicker": "The Zen Spa",
+      "line": "Steam, sauna, hammam, cold plunge and treatment room — 6,500 square feet of amenity for twenty-four homes."
+    },
+    "13": {
+      "kicker": "Beach Butler Service",
+      "line": "Chairs, umbrellas and coolers set on the sand, one block east of the lobby."
+    },
+    "14": {
+      "kicker": "Surfside",
+      "line": "Between Bal Harbour and Miami Beach — the stretch of coastline zoning will not let anyone build twice."
+    },
+    "15": {
+      "kicker": "Harding Avenue",
+      "line": "Four stories on a low-rise block, with $1M committed to the 88th Street streetscape."
+    }
+  },
+  "imgPositions": {
+    "2": "center 45%",
+    "14": "center 40%"
+  },
+  "imgPositionsMobile": {
+    "0": "center 65%"
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/surf-row/south-facade-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/entrance-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/rooftop-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/living-light.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/kitchen-light.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/primary-bedroom-light.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/spa.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/wellness-space.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/coworking-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/fitness-center.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/beach-service.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/harding-corner.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/living-dark.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/kitchen-dark.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/primary-bedroom-dark.webp",
+    "https://frasermiami.s3.amazonaws.com/surf-row/dining-light.webp"
+  ],
+  "inquiryButtonLabel": "Request Pricing & Availability",
+  "inquirySubject": "Inquiry: Surf Row Residences - Pricing Request",
+  "interiorDesigner": "LD&D · Furnishings by RH",
+  "investmentThesis": "<p>Surfside's oceanfront zoning caps new construction at low-rise, low-density — the same constraint that made The Surf Club campus and Arte Surfside effectively unreplicable. Surf Row is one of the very few new-construction condominiums entitled inside that envelope, and at 24 homes it is a scarcity asset by construction rather than by marketing.</p><p>The price basis is the differentiating argument. Surfside's branded oceanfront trades at $3,500–$5,000+ per square foot; Surf Row has been trading between roughly $1,263 and $1,979 per foot. That is a Surfside address, walking distance to Bal Harbour Shops and the beach, at a fraction of the per-foot cost of the towers that established the submarket — with the trade-off being one block off the sand rather than on it.</p><p>Execution risk has narrowed. The project broke ground in late 2025 and closed a $30.5 million construction loan from Maxim Capital Group in March 2026, funding vertical construction toward a 2027 delivery. LD&D is both co-developer and interior designer, and has committed roughly $1 million to streetscape improvements along 88th Street. Boris Pena brings three decades of practice as design architect, with Alfonso Jurado Architecture as architect of record.</p><p>Absorption is holding at the top of the stack. The building crossed 50 percent sold in August 2026 on a 2,524 SF residence that went under contract at $4,995,000 — $1,979 per square foot, the highest print recorded in the building and roughly 55% above the released one-bedroom basis. With twelve homes left in a 24-unit building and delivery about a year out, the larger plans are clearing first, which is the inverse of how most boutique projects absorb.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "24",
+      "label": "Total residences",
+      "note": "Four stories — among the smallest new-construction condominiums in Miami-Dade"
+    },
+    {
+      "value": "6,500 SF",
+      "label": "Amenity space",
+      "note": "Roughly 270 SF of amenity per residence, far above the boutique norm"
+    },
+    {
+      "value": "50%",
+      "label": "Sold as of August 2026",
+      "note": "Roughly 12 residences remain; vertical construction underway"
+    },
+    {
+      "value": "$1,979",
+      "label": "Per SF on the latest contract",
+      "note": "2,524 SF residence at $4,995,000, under contract August 2026"
+    }
+  ],
+  "lat": 25.8733961,
+  "lng": -80.1215646,
+  "maxBath": 4,
+  "maxBed": 3,
+  "maxPrice": 4995000,
+  "maxSqft": 2524,
+  "minBath": 2,
+  "minBed": 1,
+  "minPrice": 1375000,
+  "minSqft": 888,
+  "name": "Surf Row Residences",
+  "neighborhood": "Surfside",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=25.8733961,-80.1215646"
+  },
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/surf-row-residences.jpg",
+  "parking": "TBD",
+  "priceFrom": "$1.3M+",
+  "primaryCtaModal": "floors",
+  "privacyScore": 88,
+  "projectedAppreciation": 26,
+  "rentalPolicy": "TBD",
+  "residenceContent": "<p class=\"prop-residence-intro\">Surfside is a low-rise town, and Surf Row is built to that scale rather than against it. Four stories on Collins Avenue at 88th Street, arranged around sweeping arches that rise along the entry facade — a deliberate echo of surf cresting on the shoreline a block east. The curves throughout the building take their geometry from seagull wings; the wood grain running through the exterior and lobby reads as windswept sand. Layered glass facades and skylights filter daylight that shifts through the day while keeping the interiors private from the street.</p><p>Twenty-four homes range from 888 to roughly 2,200 interior square feet across one-, two-, and three-bedroom plans, most with a den, and the largest layouts pass 2,500 square feet once terraces are counted. Orientation was the governing constraint: the building's massing and unit placement were set to hold clear view corridors to the ocean, the Miami skyline, and the surrounding tree canopy rather than to maximize count. Chef-inspired kitchens with Dekton counters, full-height backsplashes, Miele appliances, built-in wine refrigeration, and custom cabinetry open into living and dining space; bedroom wings stay separate. Primary bathrooms carry freestanding tubs, rainfall showers, custom vanities with integrated sinks, and a raised wet area in porcelain that reads as wood slats.</p><p>Every residence has a private balcony. Select homes add rooftop terraces with elevated wood-composite decking, plunge pools, summer kitchens, and outdoor grills. Owners may specify a complete furnishings package by RH, designed for the building.</p>",
+  "secondaryDownloadLabel": "Get the Floor Plans",
+  "seoKeywords": [
+    "Surf Row Residences",
+    "Surf Row Residences Surfside",
+    "8800 Collins Avenue Surfside",
+    "Surfside new construction condos",
+    "Surf Row Residences pricing",
+    "Surf Row Residences floor plans",
+    "boutique condos Surfside FL",
+    "RH furnished condo Miami",
+    "Boris Pena Architects Surfside",
+    "LD&D Surfside condo",
+    "Surfside pre-construction 2027"
+  ],
+  "slug": "surf-row-residences",
+  "sqftRange": "888 – 2,524 SF",
+  "stage": "under_construction",
+  "statusRemark": "UNDER CONSTRUCTION · 50% SOLD · $4.995M CONTRACT AUG 2026",
+  "tagline": "Twenty-four homes, steps from the Atlantic.",
+  "units": 24,
+  "unitsLeft": 12,
+  "wellnessScore": 92
+}

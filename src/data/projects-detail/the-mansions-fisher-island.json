@@ -1,0 +1,345 @@
+{
+  "address": "41219 Fisher Island Drive, Miami Beach, FL 33109",
+  "amenities": [
+    {
+      "icon": "🏝",
+      "label": "Private Island",
+      "sub": "Ferry, helicopter, or yacht access"
+    },
+    {
+      "icon": "🏡",
+      "label": "Single-Family Estates",
+      "sub": "Ground-up parcels"
+    },
+    {
+      "icon": "🏊",
+      "label": "Heated Infinity Pools",
+      "sub": "Per residence"
+    },
+    {
+      "icon": "⛳",
+      "label": "Fisher Island Club",
+      "sub": "Golf, beach, spa, marina"
+    },
+    {
+      "icon": "🌿",
+      "label": "Enzo Enea Landscapes",
+      "sub": "Contextual outdoor design"
+    },
+    {
+      "icon": "🚗",
+      "label": "Private Parking",
+      "sub": "Up to 6 vehicles + carts"
+    }
+  ],
+  "amenitiesDescription": "<h4>The Fisher Island Club Access</h4><p>Ownership includes privileged access to the Fisher Island Club amenities. Residents benefit from the Beach Club's imported Bahamian white sand, the historic Vanderbilt Mansion, the 24,000-square-foot Spa Internazionale, a championship golf course, racquet facilities, and deep-water marinas capable of accommodating vessels up to 250 feet.</p>",
+  "architect": "Portuondo Perotti Architects",
+  "completion": "2026–2027",
+  "densityScore": 5,
+  "depositStructure": null,
+  "description": "A limited collection of Mediterranean-inspired single-family estates on Fisher Island. Ground-up homes from 8,500 to 18,000 SF with Enzo Enea landscapes, Ford Interiors, and Fisher Island Club access. From $32M. Delivery 2026–2027.",
+  "developer": "MADAR Group USA & ASR Construction",
+  "discoveryEngine": {
+    "lifestyle": [
+      "private-island",
+      "waterfront",
+      "estate-living",
+      "ultra-luxury",
+      "golf-marina",
+      "limited-inventory"
+    ],
+    "investmentProfile": [
+      "under-construction",
+      "trophy-asset",
+      "scarcity",
+      "single-family",
+      "limited-inventory"
+    ],
+    "priceCategory": "ultra-luxury",
+    "vibeMatch": [
+      "quiet-luxury",
+      "privacy-first",
+      "estate-scale",
+      "club-lifestyle"
+    ],
+    "goodFor": [
+      "primary-residence",
+      "trophy-home",
+      "second-home",
+      "legacy-hold"
+    ],
+    "inventoryAvailable": 3,
+    "totalResidences": 6,
+    "recentTransactions": {
+      "unitsUnderContract": 3,
+      "volumeUnderContract": 105500000,
+      "dateUpdated": "2026-06"
+    }
+  },
+  "dossierImageIndices": {
+    "story": 5,
+    "features": 13,
+    "footer": 2
+  },
+  "editorialLine": "Single-family estates. Private island scale.",
+  "galleryImageAlts": [
+    "Grand exterior elevation of The Mansions on Fisher Island displaying classic Mediterranean architecture.",
+    "Mediterranean estate exterior at The Mansions on Fisher Island.",
+    "Enzo Enea curated landscape architecture and private pool oasis at The Mansions on Fisher Island.",
+    "Estate exterior rendering at The Mansions on Fisher Island.",
+    "Architectural elevation at The Mansions on Fisher Island.",
+    "Formal living room with bespoke finishes at The Mansions on Fisher Island.",
+    "Formal dining room at The Mansions on Fisher Island.",
+    "Chef-caliber kitchen at The Mansions on Fisher Island.",
+    "Primary bedroom suite at The Mansions on Fisher Island.",
+    "Living and dining pavilion at The Mansions on Fisher Island.",
+    "Spa-grade bathroom at The Mansions on Fisher Island.",
+    "Estate exterior at Mansion 7, The Mansions on Fisher Island.",
+    "Living room at Mansion 7, The Mansions on Fisher Island.",
+    "Family room at Mansion 7, The Mansions on Fisher Island.",
+    "Refined interior spaces with hand-selected stone surfaces at The Mansions on Fisher Island.",
+    "Estate exterior at Mansion 9, The Mansions on Fisher Island.",
+    "Interior living room at The Mansions on Fisher Island.",
+    "Aerial master plan of The Mansions on Fisher Island estate collection."
+  ],
+  "height": "Single-Family Estates",
+  "heroImgPosition": "center",
+  "hoa": "TBD",
+  "id": 51,
+  "img": "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/24-Mansions-on-Fisher-Island-Mansions-on-Fisher-Island-Exterior.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/01-Mansions-on-Fisher-Island-Featured.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/02-Mansions-on-Fisher-Island-Mansion-3.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/03-Mansions-on-Fisher-Island-Mansion-3.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/04-Mansions-on-Fisher-Island-Mansion-3-Living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/05-Mansions-on-Fisher-Island-Mansion-3-Dining-room.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/06-Mansions-on-Fisher-Island-Mansion-3-Kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/07-Mansions-on-Fisher-Island-Mansion-3-Bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/08-Mansions-on-Fisher-Island-Mansion-5-Living-and-Dining-room.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/13-Mansions-on-Fisher-Island-Mansion-7.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/14-Mansions-on-Fisher-Island-Mansion-7-Living-Room.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/15-Mansions-on-Fisher-Island-Mansion-7-Family-Room.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/16-Mansions-on-Fisher-Island-Mansion-7-Interiors.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/12-Mansions-on-Fisher-Island-Mansion-5-Bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/20-Mansions-on-Fisher-Island-Mansion-9.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/interior-living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/aerial-map.webp"
+  ],
+  "inquiryButtonLabel": "Request Estate Details & Availability",
+  "inquirySubject": "Inquiry: The Mansions on Fisher Island — Estate Availability",
+  "interiorDesigner": "Ford Interiors",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$32M–$55M",
+        "label": "Single-family estate range",
+        "note": "Ground-up homes on Fisher Island; distinct from island condominium product"
+      },
+      {
+        "value": "8,500–18,000 SF",
+        "label": "Interior scale",
+        "note": "Estate-sized parcels with two rooftop terraces and heated pools per home"
+      },
+      {
+        "value": "3 of 6",
+        "label": "Estates remaining",
+        "note": "Three under contract prior to delivery as of June 2026"
+      },
+      {
+        "value": "2026–2027",
+        "label": "Target delivery",
+        "note": "Under construction; Mediterranean estate collection by MADAR Group USA & ASR Construction, completions phased through Q2 2027"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Absorption",
+        "pillColor": "gold",
+        "title": "Pre-delivery conviction at estate scale",
+        "body": "The estates already under contract represent more than $105 million in consolidated volume ahead of delivery — strong conviction for a six-home collection."
+      },
+      {
+        "pill": "Product type",
+        "pillColor": "gold",
+        "title": "Ground-up single-family estates on a private island",
+        "body": "The Mansions delivers detached estate homes rather than shared-wall condominium inventory — a format rarely offered on Fisher Island at this scale."
+      },
+      {
+        "pill": "Design team",
+        "pillColor": "gold",
+        "title": "Portuondo Perotti, Enzo Enea, and Ford Interiors",
+        "body": "Architecture, landscape, and interiors are led by established names across Mediterranean residential design, European stone sourcing, and calibrated interior specification."
+      },
+      {
+        "pill": "Access",
+        "pillColor": "gray",
+        "title": "Auto-ferry, helicopter, or yacht entry only",
+        "body": "Fisher Island's 216-acre enclave limits access to controlled marine and air corridors — a security and privacy profile mainland estates cannot replicate."
+      },
+      {
+        "pill": "Club",
+        "pillColor": "gray",
+        "title": "Fisher Island Club amenities included",
+        "body": "Beach Club, Vanderbilt Mansion, Spa Internazionale, championship golf, racquet facilities, and deep-water marinas up to 250 feet support daily life without leaving the island."
+      }
+    ],
+    "thesis": "The Mansions on Fisher Island targets buyers who want estate autonomy inside America's most restricted residential island. As of June 2026, half the collection is under contract—more than $105 million in volume—leaving three estates from $32 million in a market with virtually no new ground-up single-family supply. Construction continues toward phased completions through Q2 2027.",
+    "footnote": "Developer: MADAR Group USA & ASR Construction · Architect: Portuondo Perotti · Landscape: Enzo Enea · Interiors: Ford Interiors · Delivery: 2026–2027"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$32M–$55M",
+        "label": "Single-family estate range",
+        "note": "Ground-up homes on Fisher Island; distinct from island condominium product"
+      },
+      {
+        "value": "8,500–18,000 SF",
+        "label": "Interior scale",
+        "note": "Estate-sized parcels with two rooftop terraces and heated pools per home"
+      },
+      {
+        "value": "3 of 6",
+        "label": "Estates remaining",
+        "note": "Three under contract prior to delivery as of June 2026"
+      },
+      {
+        "value": "2026–2027",
+        "label": "Target delivery",
+        "note": "Under construction; Mediterranean estate collection by MADAR Group USA & ASR Construction, completions phased through Q2 2027"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Absorption",
+        "pillColor": "gold",
+        "title": "Pre-delivery conviction at estate scale",
+        "body": "The estates already under contract represent more than $105 million in consolidated volume ahead of delivery — strong conviction for a six-home collection."
+      },
+      {
+        "pill": "Product type",
+        "pillColor": "gold",
+        "title": "Ground-up single-family estates on a private island",
+        "body": "The Mansions delivers detached estate homes rather than shared-wall condominium inventory — a format rarely offered on Fisher Island at this scale."
+      },
+      {
+        "pill": "Design team",
+        "pillColor": "gold",
+        "title": "Portuondo Perotti, Enzo Enea, and Ford Interiors",
+        "body": "Architecture, landscape, and interiors are led by established names across Mediterranean residential design, European stone sourcing, and calibrated interior specification."
+      },
+      {
+        "pill": "Access",
+        "pillColor": "gray",
+        "title": "Auto-ferry, helicopter, or yacht entry only",
+        "body": "Fisher Island's 216-acre enclave limits access to controlled marine and air corridors — a security and privacy profile mainland estates cannot replicate."
+      },
+      {
+        "pill": "Club",
+        "pillColor": "gray",
+        "title": "Fisher Island Club amenities included",
+        "body": "Beach Club, Vanderbilt Mansion, Spa Internazionale, championship golf, racquet facilities, and deep-water marinas up to 250 feet support daily life without leaving the island."
+      }
+    ],
+    "thesis": "The Mansions on Fisher Island targets buyers who want estate autonomy inside America's most restricted residential island. As of June 2026, half the collection is under contract—more than $105 million in volume—leaving three estates from $32 million in a market with virtually no new ground-up single-family supply. Construction continues toward phased completions through Q2 2027.",
+    "footnote": "Developer: MADAR Group USA & ASR Construction · Architect: Portuondo Perotti · Landscape: Enzo Enea · Interiors: Ford Interiors · Delivery: 2026–2027"
+  },
+  "investmentThesis": "<p>As of June 2026, three of six estates are under contract, representing more than $105 million in consolidated transaction volume, with three homes still available in a collection priced from $32 million to $55 million. The Mansions on Fisher Island addresses a format gap on the island: ground-up single-family estates distinct from the condominium inventory at Six Fisher Island and prior deliveries. Fisher Island's ferry-only access and consistently top-tier household wealth profile support long-duration demand for estate-scale product with club infrastructure attached. MADAR Group USA and ASR Construction bring a dedicated estate delivery model; Portuondo Perotti, Enzo Enea, and Ford Interiors align the offering with buyers who expect architectural and landscape pedigree at this price point. Construction is underway, with completions phased from late 2026 through the second quarter of 2027.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "$32M–$55M",
+      "label": "Price range",
+      "note": "Limited single-family estate collection"
+    },
+    {
+      "value": "3 of 6",
+      "label": "Estates remaining",
+      "note": "Three under contract prior to delivery · June 2026"
+    },
+    {
+      "value": "8,500–18,000 SF",
+      "label": "Interior scale",
+      "note": "Estate-sized parcels on Fisher Island"
+    },
+    {
+      "value": "2026–2027",
+      "label": "Delivery",
+      "note": "Under construction; completions phased through Q2 2027"
+    }
+  ],
+  "landscapeArchitect": "Enzo Enea",
+  "lat": 25.7628,
+  "lng": -80.145,
+  "locationScore": 12,
+  "maxBath": 12,
+  "maxBed": 8,
+  "maxPrice": 55000000,
+  "maxSqft": 18000,
+  "minBath": 7,
+  "minBed": 6,
+  "minPrice": 32000000,
+  "minSqft": 8500,
+  "name": "The Mansions on Fisher Island",
+  "neighborhood": "Fisher Island",
+  "neighborhoodMap": {
+    "pinUrl": "https://maps.app.goo.gl/uc6yqpyTStot9PhW6"
+  },
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/the-mansions-fisher-island.jpg",
+  "parking": "Private parking for up to 6 vehicles and golf carts per estate",
+  "percentSold": 50,
+  "priceFrom": "$32M+",
+  "privacyScore": 100,
+  "projectFeatures": [
+    "Expansive Footprints: Floor plans ranging from 8,500 to approximately 18,000 interior square feet on highly coveted, estate-sized parcels.",
+    "Curated Outdoor Living: Contextual landscapes designed by Enzo Enea, complete with infinity-edge heated pools, summer kitchens, and two private rooftop terraces per residence.",
+    "Refined Interiors: 6 to 8 bedroom layouts featuring spa-grade primary suites, formal dining and lounging spaces, and chef-caliber kitchens equipped with Sub-Zero and Wolf appliances.",
+    "Purpose-Built Infrastructure: Private parking for up to 6 vehicles and golf carts, climate-controlled garage storage, and state-of-the-art smart home integration."
+  ],
+  "projectedAppreciation": 35,
+  "rentalPolicy": "TBD",
+  "residenceContent": "<p class=\"prop-residence-intro\">The Mansions on Fisher Island is a limited collection of ground-up, single-family estates on America's most exclusive private island.</p><h4>An Unprecedented Acquisition Opportunity</h4><p>Positioned on America's most exclusive private island, The Mansions on Fisher Island represents a rare offering within Miami's ultra-prime market. This limited collection of ground-up, single-family estates combines the scale and autonomy of traditional residential living with the elite, world-class infrastructure of the Fisher Island Club. Accessible solely by auto-ferry, helicopter, or private yacht, the 216-acre enclave provides absolute security and seclusion for the global elite.</p><h4>Market Positioning &amp; Constrained Inventory</h4><p>The ultra-prime sector of Miami-Dade real estate operates distinctly from broader macroeconomic trends, driven by sustained wealth migration and an absolute scarcity of waterfront single-family assets. The Mansions on Fisher Island recently placed three of its six estates under contract prior to completion—reflecting sustained demand for ground-up architectural pedigree on an island where new inventory is structurally limited.</p><p>Single-family homes have always been a rarity on the 216-acre island, and the three remaining estates—reaching approximately 18,000 interior square feet, the largest single-family residence ever built on Fisher Island—represent one of the last opportunities to secure new-construction, estate-scale living in one of America's most exclusive private-island enclaves.</p><h4>Architectural Pedigree &amp; Design</h4><p>Conceived by Portuondo Perotti Architects and developed by MADAR Group USA in collaboration with ASR Construction, the estates are a study in Mediterranean grandeur and contemporary refinement. Each residence features a Tuscan-inspired facade, soaring ceiling heights, and expansive floor-to-ceiling window systems that optimize natural light. Interior spaces, styled by Ford Interiors, utilize hand-selected stone surfaces from top global quarries, custom European cabinetry, and uncompromised finishes throughout.</p>",
+  "seoKeywords": [
+    "The Mansions on Fisher Island",
+    "Fisher Island",
+    "Fisher Island estates",
+    "Fisher Island single-family homes",
+    "Ultra-Luxury",
+    "Single-Family Homes",
+    "New Development",
+    "Waterfront Estates",
+    "Miami Beach",
+    "Private Island",
+    "Trophy Asset",
+    "Limited Inventory",
+    "Miami Beach ultra-luxury",
+    "Fisher Island new development",
+    "waterfront estates Miami",
+    "private island homes Miami",
+    "Portuondo Perotti Fisher Island",
+    "Enzo Enea Fisher Island",
+    "MADAR Group USA"
+  ],
+  "shortName": "Mansions on Fisher Island",
+  "slug": "the-mansions-fisher-island",
+  "stage": "under_construction",
+  "stageLabel": "3 Estates Remaining · Delivery 2026–2027",
+  "statusRemark": "ONLY 3 ESTATES REMAINING · 50% UNDER CONTRACT",
+  "stickyCtaLabel": "Request Details",
+  "tags": [
+    "fisher-island",
+    "ultra-luxury",
+    "single-family",
+    "waterfront",
+    "new-development",
+    "private-island",
+    "limited-inventory",
+    "trophy-asset"
+  ],
+  "units": 6,
+  "unitsLeft": 3,
+  "wellnessScore": 88
+}

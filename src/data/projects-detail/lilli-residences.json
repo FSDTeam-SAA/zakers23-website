@@ -1,0 +1,337 @@
+{
+  "address": "717 NE 27th Street, Miami, FL 33137",
+  "amenities": [
+    {
+      "icon": "🌊",
+      "label": "Biscayne Bay Frontage",
+      "sub": "Direct Baywalk access"
+    },
+    {
+      "icon": "🏊",
+      "label": "Rooftop Saltwater Pool",
+      "sub": "40 ft pool, Level 52"
+    },
+    {
+      "icon": "🧘",
+      "label": "Aman-Curated Wellness Spa",
+      "sub": "Treatment rooms, infrared saunas, cold plunge"
+    },
+    {
+      "icon": "💪",
+      "label": "Movement Studio",
+      "sub": "Longevity-led programming"
+    },
+    {
+      "icon": "🌿",
+      "label": "Waterfront Garden",
+      "sub": "Movement, nourishment, connection"
+    },
+    {
+      "icon": "🚶",
+      "label": "~350 ft Public Baywalk",
+      "sub": "Design District & Wynwood link"
+    }
+  ],
+  "amenitiesDescription": "<p>Amenity programming is organized around four pillars: movement, recovery, nourishment, and connection. Lower amenity floors are planned around an Aman-curated wellness spa with treatment rooms, infrared saunas, cold plunge pools, and a movement studio, with a rooftop saltwater pool and lounge spaces above. A dedicated lifestyle and wellness director is planned to lead longevity-focused programming. At the waterfront edge, a publicly accessible Baywalk of roughly 350 feet ties residents toward the Design District, Wynwood, and downtown.</p>",
+  "architect": "Adrian Smith + Gordon Gill Architecture",
+  "architectOfRecord": "ODP Architecture & Design",
+  "badge": "COMING SOON · EDGEWATER BAYFRONT · FROM $1.65M",
+  "buyerProfile": [
+    "end-user",
+    "second-home",
+    "wellness-focused",
+    "design-driven"
+  ],
+  "comingSoon": true,
+  "completion": "TBA",
+  "densityScore": 68,
+  "depositStructure": null,
+  "description": "Lilli Residences Edgewater is a rare Miami preconstruction bayfront proposition at 717 NE 27th Street: a fifty-three-story tower by OKO Group with one hundred seventeen private residences from $1.65 million. Adrian Smith + Gordon Gill Architecture shapes a sinuous glass silhouette above Biscayne Bay — terraces, light, and horizon composed for buyers who value restraint and scale. Request a discreet introduction to floor plans, finishes, and the early release program for this limited collection. Qualified interest is sequenced privately ahead of the next broader market release.",
+  "developer": "OKO Group",
+  "discoveryEngine": {
+    "lifestyle": [
+      "wellness",
+      "waterfront",
+      "boutique",
+      "design-forward",
+      "walkable"
+    ],
+    "investmentProfile": [
+      "pre-construction",
+      "coming-soon",
+      "architectural-pedigree"
+    ],
+    "priceCategory": "luxury",
+    "vibeMatch": [
+      "wellness-first",
+      "waterfront",
+      "design-forward",
+      "quiet-luxury",
+      "bayfront"
+    ],
+    "goodFor": [
+      "end-user",
+      "second-home",
+      "wellness-focused",
+      "design-driven"
+    ]
+  },
+  "editorialLine": "Curvilinear glass on the Edgewater bayfront, with 117 residences turned toward the water.",
+  "floorPlans": [
+    {
+      "type": "Residence 03",
+      "floors": "Levels 5–33 · Southwest terrace",
+      "beds": 1,
+      "baths": 1.5,
+      "interiorSF": 1348,
+      "exteriorSF": 265,
+      "status": "Inquire",
+      "inquireOnly": true
+    },
+    {
+      "type": "Residence 02",
+      "floors": "Levels 5–33 · Northwest terrace",
+      "beds": 2,
+      "baths": 2.5,
+      "interiorSF": 2070,
+      "exteriorSF": 265,
+      "status": "Inquire",
+      "inquireOnly": true
+    },
+    {
+      "type": "Residence 02 Half Floor",
+      "floors": "Levels 34–50 · Northwest & southwest terraces",
+      "beds": 3,
+      "baths": 3.5,
+      "interiorSF": 3074,
+      "exteriorSF": 530,
+      "status": "Inquire",
+      "inquireOnly": true
+    },
+    {
+      "type": "Residence 01",
+      "floors": "Levels 5–33 · East bay terrace",
+      "beds": "3 + Den",
+      "baths": 3.5,
+      "interiorSF": 3354,
+      "exteriorSF": 602,
+      "status": "Inquire",
+      "inquireOnly": true
+    },
+    {
+      "type": "Residence 01 Half Floor",
+      "floors": "Levels 34–50 · East bay terraces",
+      "beds": "4 + Den",
+      "baths": 4.5,
+      "interiorSF": 3798,
+      "exteriorSF": 602,
+      "status": "Inquire",
+      "inquireOnly": true
+    },
+    {
+      "type": "Garden Estate",
+      "beds": null,
+      "baths": null,
+      "interiorSF": 6795,
+      "status": "Inquire",
+      "inquireOnly": true
+    },
+    {
+      "type": "Penthouse",
+      "beds": null,
+      "baths": null,
+      "interiorSF": 6849,
+      "status": "Inquire",
+      "inquireOnly": true
+    }
+  ],
+  "floorPlansShowAll": true,
+  "galleryImageAlts": [
+    "Lilli Residences Edgewater exterior rendering with curvilinear glass facade overlooking Biscayne Bay and the Miami skyline",
+    "Lilli Residences Edgewater north facade architectural rendering with bay views",
+    "Lilli Residences Edgewater aerial view of rooftop saltwater pool deck above Biscayne Bay",
+    "Lilli Residences Edgewater arrival lobby and porte-cochère entrance rendering",
+    "Lilli Residences Edgewater aerial skyline view of 53-story bayfront tower in Miami",
+    "Lilli Residences Edgewater facade detail at sunset showing curved balcony slabs and floor-to-ceiling glass",
+    "Lilli Residences Edgewater curved balconies overlooking Biscayne Bay at sunset",
+    "Lilli Residences Edgewater double-height lobby with fluted columns and Biscayne Bay views",
+    "Lilli Residences Edgewater rooftop saltwater pool deck on Level 52 overlooking Biscayne Bay",
+    "Lilli Residences Edgewater fitness center with bay-facing floor-to-ceiling windows",
+    "Lilli Residences Edgewater spa with hot tub and cold plunge pools on the Level 3 wellness floor",
+    "Lilli Residences Edgewater dining area with curved glass overlooking Biscayne Bay",
+    "Lilli Residences Edgewater living room with curved corner windows facing the Miami skyline",
+    "Lilli Residences Edgewater kitchen with marble slab island, custom millwork and Gaggenau appliances",
+    "Lilli Residences Edgewater primary bedroom with curved glass wall and Biscayne Bay views",
+    "Lilli Residences Edgewater primary bathroom with honed marble vanity, freestanding soaking tub and porcelain tile",
+    "Lilli Residences Edgewater private balcony with glass handrails overlooking Biscayne Bay and Miami Beach"
+  ],
+  "height": "53 Stories · 636 ft",
+  "heroImgPosition": "center",
+  "hoa": "TBA",
+  "id": 28,
+  "img": "https://frasermiami.s3.amazonaws.com/lilli-residences/facade-hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/facade-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/north-facade.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/aerial-rooftop-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/entrance.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/aerial-skyline.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/facade-detail.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/facade-bay-sunset.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/rooftop-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/fitness-center.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/spa-plunge.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/living-room-bay.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/living-room-skyline.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/primary-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/primary-bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/lilli-residences/balcony.webp"
+  ],
+  "interiorDesigner": "Adrian Smith + Gordon Gill Architecture",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "53",
+        "label": "Stories",
+        "note": "636 ft"
+      },
+      {
+        "value": "117",
+        "label": "Residences",
+        "note": "1BD–Penthouse"
+      },
+      {
+        "value": "$1.65M+",
+        "label": "Starting Price",
+        "note": "Pricing TBA above"
+      },
+      {
+        "value": "0.527",
+        "label": "Acres",
+        "note": "Bayfront parcel"
+      }
+    ],
+    "signals": [],
+    "thesis": "Lilli is the second phase of OKO Group's multi-phase Biscayne Bay master plan after Missoni Baia, on one of the last undeveloped bayfront parcels in Edgewater. The same OKO and Adrian Smith + Gordon Gill pairing that delivered Una Residences on South Brickell brings architectural-first positioning here. The boutique count of 117 residences across 53 stories signals a scarcity-driven product for the design buyer rather than the brand-name hotel-condo segment.",
+    "footnote": "Project announced May 2026. Aman wellness programming, parking configuration, pricing, delivery, and amenities per public UDRB filings and developer disclosures; subject to change. Verify all details with the developer's sales team before relying on them for investment decisions."
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "53",
+        "label": "Stories",
+        "note": "636 ft"
+      },
+      {
+        "value": "117",
+        "label": "Residences",
+        "note": "1BD–Penthouse"
+      },
+      {
+        "value": "$1.65M+",
+        "label": "Starting Price",
+        "note": "Pricing TBA above"
+      },
+      {
+        "value": "0.527",
+        "label": "Acres",
+        "note": "Bayfront parcel"
+      }
+    ],
+    "signals": [],
+    "thesis": "Lilli is the second phase of OKO Group's multi-phase Biscayne Bay master plan after Missoni Baia, on one of the last undeveloped bayfront parcels in Edgewater. The same OKO and Adrian Smith + Gordon Gill pairing that delivered Una Residences on South Brickell brings architectural-first positioning here. The boutique count of 117 residences across 53 stories signals a scarcity-driven product for the design buyer rather than the brand-name hotel-condo segment.",
+    "footnote": "Project announced May 2026. Aman wellness programming, parking configuration, pricing, delivery, and amenities per public UDRB filings and developer disclosures; subject to change. Verify all details with the developer's sales team before relying on them for investment decisions."
+  },
+  "investmentThesis": "<p>Lilli is the second phase of OKO Group's multi-phase Biscayne Bay master plan, following the delivered Missoni Baia next door. OKO Group (led by Vladislav Doronin) pairs with Adrian Smith + Gordon Gill Architecture, whose Miami portfolio includes the delivered Una Residences on South Brickell. The collaboration signals architectural-first positioning on one of the last undeveloped bayfront lots in Edgewater. The developer publishes the tower at 636 feet across 53 floors with 117 residences, from one-bedrooms of 1,348 square feet to a 6,849-square-foot penthouse; pricing has been announced from about $1.65 million with delivery timing still to be confirmed. Early-cycle buyers are underwriting scarcity of bay frontage, a boutique unit count relative to height, and the same developer–architect DNA that produced a top-of-market South Brickell delivery.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeArchitect": "SWA Group",
+  "lat": 25.8031321,
+  "lng": -80.1857233,
+  "locationScore": 78,
+  "maxBath": 6,
+  "maxBed": 5,
+  "maxPrice": null,
+  "maxSqft": 6849,
+  "minBath": 1,
+  "minBed": 1,
+  "minPrice": 1650000,
+  "minSqft": 1348,
+  "name": "Lilli Residences",
+  "neighborhood": "Edgewater",
+  "neighborhoodMap": {
+    "pinUrl": "https://maps.app.goo.gl/3WmC471RDuR1FBpV9"
+  },
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/lilli-residences.jpg",
+  "parking": "Standalone structure · 527 NE 26th St · ~244 spaces",
+  "percentSold": null,
+  "priceFrom": "From $1.65M",
+  "priceFromDisplay": "From $1.65M",
+  "pricePerSqft": null,
+  "privacyScore": 58,
+  "projectFeatures": [
+    "Sinuous, curvilinear architecture by Adrian Smith + Gordon Gill (Burj Khalifa)",
+    "Direct Biscayne Bay frontage on a 0.527-acre parcel",
+    "Standalone parking at 527 NE 26th Street (no tower podium)",
+    "Ceiling heights from 10 to 12 feet with floor-to-ceiling glass",
+    "Private balconies from 348 to 640 SF with glass handrails and porcelain tile",
+    "15,375 SF of interior amenities and 6,664 SF outdoors across Levels 1, 3 and 52",
+    "Custom millwork, marble finishes, and Gaggenau appliances",
+    "Oversized private terraces engineered as outdoor living rooms",
+    "Rooftop saltwater pool with skyline and bay views",
+    "Aman-curated wellness spa with infrared saunas, cold plunge, and treatment rooms",
+    "Dedicated lifestyle and wellness director with longevity-focused programming",
+    "Publicly accessible ~350 ft Baywalk toward the Design District and Wynwood"
+  ],
+  "rentalPolicy": "TBA",
+  "residenceContent": "<p class=\"prop-residence-intro\">Lilli is planned as a 53-story bayfront tower along Biscayne Bay at 717 NE 27th Street in Edgewater: a sinuous glass silhouette with softly rounded balconies and floor-to-ceiling glass oriented toward the bay, Miami Beach, and the downtown skyline. The curvilinear form reads as movement in the skyline: continuous terraces, deep slab edges for shade, and a vertical rhythm that changes with coastal light from dawn through dusk.</p><p>Residences are expected to span one-bedroom layouts through expansive penthouses approaching 7,000 square feet, with ceiling heights reaching roughly twelve feet, layered stone and millwork, and chef-caliber appliance suites suited to serious entertaining. Interiors are conceived as calm counterweights to the drama of the glass: tactile materials, disciplined daylight, and private outdoor rooms that behave as extensions of the living space rather than shallow Juliet rails.</p><p>Parking is planned on a separate parcel at 527 NE 26th Street rather than in a tower podium, which keeps the bayfront massing slender. At grade, a tall glazed lobby faces the water, and landscaped edges connect residents to the public Baywalk. Delivery timing and final finish packages remain subject to developer release; the narrative here reflects the publicly disclosed design intent for the site.</p>",
+  "salesTeam": "Fraser Miami Private Advisory",
+  "seoKeywords": [
+    "Lilli Residences Edgewater",
+    "Miami preconstruction condos",
+    "new development Edgewater Miami",
+    "luxury condos Edgewater",
+    "OKO Group Edgewater",
+    "Adrian Smith Gordon Gill Miami",
+    "717 NE 27th Street",
+    "Biscayne Bay condos"
+  ],
+  "slug": "lilli-residences",
+  "stage": "coming_soon",
+  "stageLabel": "Coming Soon",
+  "statusRemark": "PUBLICLY ANNOUNCED MAY 2026 · PRICING & DELIVERY TBA",
+  "stories": 53,
+  "tagline": "A sinuous bayfront tower from OKO Group and the architects of the Burj Khalifa.",
+  "tags": [
+    "preconstruction",
+    "waterfront",
+    "wellness",
+    "boutique",
+    "branded-architect"
+  ],
+  "totalUnits": 117,
+  "units": 117,
+  "unitsLeft": null,
+  "verified": {
+    "height": {
+      "date": "2026-09-08",
+      "source": "LILLI developer fact sheet (May 11, 2026): \"636' (53 floors)\". Florida YIMBY UDRB coverage (July 2026) says ~637 ft. Supersedes the earlier ~649 ft press figure."
+    },
+    "minSqft": {
+      "date": "2026-09-08",
+      "source": "LILLI developer fact sheet (May 11, 2026), Residential Types: 1 Bedroom 1,348 SF."
+    },
+    "maxSqft": {
+      "date": "2026-09-08",
+      "source": "LILLI developer fact sheet (May 11, 2026), Residential Types: Penthouse 6,849 SF (Garden Estate 6,795 SF). Supersedes The Real Deal's \"about 7,000 square feet\"."
+    },
+    "floorPlans": {
+      "date": "2026-09-08",
+      "source": "LILLI developer fact sheet (May 11, 2026) Residential Types, plus the five residence floor plan PDFs (May 18, 2026) for interior/exterior SF, level ranges and bath counts. Garden Estate and Penthouse have no published plan — fact sheet interior SF only, inquire-only rows."
+    }
+  },
+  "videoTourId": null,
+  "wellnessScore": 96
+}

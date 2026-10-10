@@ -1,0 +1,254 @@
+{
+  "address": "1250 West Avenue, Miami Beach, FL 33139",
+  "amenities": [
+    {
+      "icon": "🌊",
+      "label": "Bayfront Position",
+      "sub": "Direct Biscayne Bay frontage"
+    },
+    {
+      "icon": "🏊",
+      "label": "Pools",
+      "sub": "Ground-level, rooftop, and two PH decks"
+    },
+    {
+      "icon": "🧘",
+      "label": "Spa",
+      "sub": "Disclosed in Oct 2026 financing release"
+    },
+    {
+      "icon": "🎾",
+      "label": "Padel Court",
+      "sub": "On-site court"
+    },
+    {
+      "icon": "🚶",
+      "label": "Baywalk Access",
+      "sub": "Developer-funded segment"
+    },
+    {
+      "icon": "🌿",
+      "label": "Public Park",
+      "sub": "Bikini Hostel site conversion"
+    }
+  ],
+  "amenitiesDescription": "<p>Disclosed amenities include ground-level and rooftop pools, a spa, a padel court, private rooftop pools and amenity decks for the two penthouses, tropical gardens maintained by pollutant-filtered bioswales, and underground parking. Ground-floor retail anchors the West Avenue frontage. As part of the approval, the development team will fund and construct a portion of the public Baywalk along Biscayne Bay and redevelop the Bikini Hostel property across the street into a city park. Finish packages and full resident programming have not yet been publicly released.</p>",
+  "architect": "ODP Architecture and Design",
+  "avgSqft": 3500,
+  "badge": "$507M FINANCED · SALES 2027",
+  "comingSoon": true,
+  "completion": "TBD",
+  "densityScore": 35,
+  "depositStructure": null,
+  "description": "1250 West Avenue is a boutique 28-story, 330-ft waterfront condominium on Biscayne Bay in South Beach. Terra closed a $507M TYKO Capital construction loan in October 2026 before pre-sales, with partners RG Development, GV Development, and LORE Development. Designed by ODP Architecture and Design. 106 residences averaging nearly 3,500 SF. Sales targeted for 2027.",
+  "developer": "Terra, in partnership with RG Development Group, GV Development, and LORE Development",
+  "discoveryEngine": {
+    "lifestyle": [
+      "bayfront",
+      "south-beach",
+      "boutique",
+      "walkable"
+    ],
+    "investmentProfile": [
+      "coming-soon",
+      "entitlement-story",
+      "boutique-density"
+    ],
+    "priceCategory": "ultra-luxury",
+    "vibeMatch": [
+      "quiet-luxury",
+      "waterfront",
+      "design-driven"
+    ],
+    "goodFor": [
+      "primary-residence",
+      "long-hold",
+      "design-buyer"
+    ]
+  },
+  "editorialLine": "Boutique scale. Bayfront South Beach.",
+  "floorPlans": [],
+  "height": "330 ft",
+  "heroImgPosition": "center",
+  "hoa": "TBD",
+  "id": 48,
+  "img": "https://frasermiami.s3.amazonaws.com/1250-west-avenue/aerial-hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/1250-west-avenue/aerial-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/1250-west-avenue/biscayne-bay-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/1250-west-avenue/marina.webp",
+    "https://frasermiami.s3.amazonaws.com/1250-west-avenue/entrance.webp",
+    "https://frasermiami.s3.amazonaws.com/1250-west-avenue/west-ave-street-view.webp"
+  ],
+  "inquiryButtonLabel": "Request Updates",
+  "interiorDesigner": "TBD",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$507M",
+        "label": "Tyko construction loan",
+        "note": "Closed October 2026 before pre-sales; ~$4.8M debt per residence"
+      },
+      {
+        "value": "106",
+        "label": "Residences",
+        "note": "Down from 238 at Bay Garden Manor; boutique density on ~2 acres"
+      },
+      {
+        "value": "~3,500 SF",
+        "label": "Average unit size",
+        "note": "Larger floor plates than typical Miami Beach new construction"
+      },
+      {
+        "value": "2027",
+        "label": "Sales launch target",
+        "note": "Per Commercial Observer / Terra announcement October 2026; pricing not yet released"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "$507M Tyko loan closed before pre-sales",
+        "body": "Tyko Capital funded the 28-story tower in October 2026, before sales open. About $4.8M of construction debt per residence is unusual for Miami Beach condo lenders, who typically wait for heavy pre-sales."
+      },
+      {
+        "pill": "Density",
+        "pillColor": "gold",
+        "title": "106 homes replace 238 on the same bayfront",
+        "body": "The tower cuts density by 132 residences versus the 1964 Bay Garden Manor it replaces. Average size near 3,500 SF puts it at the boutique end of Miami Beach pre-construction."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Adjacent to Monad Terrace on West Avenue",
+        "body": "Sits next to the JDS-developed Monad Terrace, which set the ultra-luxury waterfront precedent on West Avenue. Walking distance to Lincoln Road and Sunset Harbour."
+      },
+      {
+        "pill": "Approved",
+        "pillColor": "gold",
+        "title": "DRB unanimously approved the 330-ft tower",
+        "body": "Miami Beach Design Review Board signed off May 14, 2026. Approval carried developer-funded Baywalk work and conversion of the Bikini Hostel site into a public park."
+      },
+      {
+        "pill": "Team",
+        "pillColor": "gray",
+        "title": "Terra leads with RG, GV, and LORE",
+        "body": "David Martin's Terra (Five Park, Grand Hyatt Miami Beach) partners with RG Development, Gianluca Vacchi's GV Development, and LORE Development (Leste and Opportunity)."
+      }
+    ],
+    "thesis": "1250 West Avenue is a capital-conviction and density story on a built-out South Beach bayfront. Closing $507M of Tyko construction debt before pre-sales removes the usual financing contingency and prices the site for ultra-luxury absorption at about $4.8M of debt per home. The program drops from 238 aging units to 106 residences averaging near 3,500 SF beside Monad Terrace, with public Baywalk and park obligations baked into the height entitlement. Sales are targeted for 2027; pricing and floor plans are not yet public.",
+    "footnote": "Developer: Terra + RG Development + GV Development + LORE Development · Architect: ODP Architecture and Design · Site: ~2 acres · Address: 1250 West Avenue, Miami Beach, FL 33139 · Sales target: 2027 · Pricing: TBD · Source: Commercial Observer Instagram Oct 9, 2026 (DeRV8dIF7zC) / Julia Echikson"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$507M",
+        "label": "Tyko construction loan",
+        "note": "Closed October 2026 before pre-sales; ~$4.8M debt per residence"
+      },
+      {
+        "value": "106",
+        "label": "Residences",
+        "note": "Down from 238 at Bay Garden Manor; boutique density on ~2 acres"
+      },
+      {
+        "value": "~3,500 SF",
+        "label": "Average unit size",
+        "note": "Larger floor plates than typical Miami Beach new construction"
+      },
+      {
+        "value": "2027",
+        "label": "Sales launch target",
+        "note": "Per Commercial Observer / Terra announcement October 2026; pricing not yet released"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "$507M Tyko loan closed before pre-sales",
+        "body": "Tyko Capital funded the 28-story tower in October 2026, before sales open. About $4.8M of construction debt per residence is unusual for Miami Beach condo lenders, who typically wait for heavy pre-sales."
+      },
+      {
+        "pill": "Density",
+        "pillColor": "gold",
+        "title": "106 homes replace 238 on the same bayfront",
+        "body": "The tower cuts density by 132 residences versus the 1964 Bay Garden Manor it replaces. Average size near 3,500 SF puts it at the boutique end of Miami Beach pre-construction."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gold",
+        "title": "Adjacent to Monad Terrace on West Avenue",
+        "body": "Sits next to the JDS-developed Monad Terrace, which set the ultra-luxury waterfront precedent on West Avenue. Walking distance to Lincoln Road and Sunset Harbour."
+      },
+      {
+        "pill": "Approved",
+        "pillColor": "gold",
+        "title": "DRB unanimously approved the 330-ft tower",
+        "body": "Miami Beach Design Review Board signed off May 14, 2026. Approval carried developer-funded Baywalk work and conversion of the Bikini Hostel site into a public park."
+      },
+      {
+        "pill": "Team",
+        "pillColor": "gray",
+        "title": "Terra leads with RG, GV, and LORE",
+        "body": "David Martin's Terra (Five Park, Grand Hyatt Miami Beach) partners with RG Development, Gianluca Vacchi's GV Development, and LORE Development (Leste and Opportunity)."
+      }
+    ],
+    "thesis": "1250 West Avenue is a capital-conviction and density story on a built-out South Beach bayfront. Closing $507M of Tyko construction debt before pre-sales removes the usual financing contingency and prices the site for ultra-luxury absorption at about $4.8M of debt per home. The program drops from 238 aging units to 106 residences averaging near 3,500 SF beside Monad Terrace, with public Baywalk and park obligations baked into the height entitlement. Sales are targeted for 2027; pricing and floor plans are not yet public.",
+    "footnote": "Developer: Terra + RG Development + GV Development + LORE Development · Architect: ODP Architecture and Design · Site: ~2 acres · Address: 1250 West Avenue, Miami Beach, FL 33139 · Sales target: 2027 · Pricing: TBD · Source: Commercial Observer Instagram Oct 9, 2026 (DeRV8dIF7zC) / Julia Echikson"
+  },
+  "investmentThesis": "<p>Terra closed a $507 million construction loan from TYKO Capital in October 2026 for 1250 West Avenue before offering a single residence for sale, an unusual sequence in South Florida where condo lenders typically wait for heavy pre-sales. At about $4.8 million of construction debt per home across 106 residences, the loan prices in ultra-luxury absorption on the West Avenue bayfront. The tower replaces the 15-story, 238-unit Bay Garden Manor on a nearly 2-acre Biscayne Bay site acquired for approximately $120 million in September 2025 (financed then with a $98 million Northwind loan). Michael Stern of JDS exited earlier; Terra leads with RG Development Group, Gianluca Vacchi's GV Development, and LORE Development. Miami Beach granted the 330-foot height under an overlay zoning district in exchange for developer-funded Baywalk work and conversion of the Bikini Hostel site into a public park. Sales are targeted for 2027; pricing and floor plans are not yet public.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.7837354,
+  "launchState": "coming_soon",
+  "lng": -80.143038,
+  "locationScore": 70,
+  "maxBath": null,
+  "maxBed": null,
+  "maxPrice": null,
+  "maxSqft": null,
+  "minBath": null,
+  "minBed": null,
+  "minPrice": null,
+  "minSqft": null,
+  "name": "1250 West Avenue",
+  "neighborhood": "South Beach",
+  "neighborhoodMap": {
+    "pinUrl": "https://maps.app.goo.gl/CjUe8TEeezrLEEdL7"
+  },
+  "parking": "Underground (publicly disclosed)",
+  "priceFrom": "Pricing TBD",
+  "priceFromDisplay": "TBD",
+  "pricePerSqft": null,
+  "privacyScore": 78,
+  "rentalPolicy": "TBD",
+  "residenceContent": "<p class=\"prop-residence-intro\">A boutique 106-residence waterfront tower on Biscayne Bay in South Beach. Residences average nearly 3,500 square feet, a meaningfully larger floor plate than typical Miami Beach product. The two penthouses each include rooftop pools and a private amenity deck. The disclosed program adds ground-level and rooftop pools, a spa, a padel court, tropical gardens maintained by pollutant-filtered bioswales, and underground parking, with ground-floor retail along West Avenue. Floor plan details, finish packages, and pricing have not yet been publicly released.</p>",
+  "salesTeam": "Fraser Miami Private Advisory",
+  "slug": "1250-west-avenue",
+  "stage": "coming_soon",
+  "stageLabel": "Financed · Sales 2027",
+  "statusRemark": "$507M TYKO loan closed Oct 2026 · Sales launch 2027",
+  "stories": 28,
+  "units": 106,
+  "verified": {
+    "units": {
+      "date": "2026-10-09",
+      "source": "Commercial Observer Instagram (DeRV8dIF7zC) + CO article Oct 8, 2026: 106 residences, 28 stories"
+    },
+    "stage": {
+      "date": "2026-10-09",
+      "source": "Commercial Observer Instagram: construction financed ahead of pre-sales; sales expected next year (2027)"
+    },
+    "statusRemark": {
+      "date": "2026-10-09",
+      "source": "Commercial Observer Instagram (DeRV8dIF7zC) / Julia Echikson: $507M Tyko Capital loan; pre-sales expected next year"
+    },
+    "completion": {
+      "date": "2026-10-09",
+      "source": "No delivery date in Oct 2026 financing coverage; sales targeted 2027"
+    }
+  },
+  "wellnessScore": 78
+}

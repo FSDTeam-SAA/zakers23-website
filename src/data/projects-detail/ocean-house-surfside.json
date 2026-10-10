@@ -1,0 +1,397 @@
+{
+  "address": "9317 Collins Avenue, Surfside, FL 33154",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Rooftop Pool Deck",
+      "sub": "Sundeck, event space and cocktail lounge"
+    },
+    {
+      "icon": "🧖",
+      "label": "Experiential Spa",
+      "sub": "Steam, sauna, hot tub and treatment rooms"
+    },
+    {
+      "icon": "💪",
+      "label": "Wellness Level",
+      "sub": "Fitness studio and private training room"
+    },
+    {
+      "icon": "🏖",
+      "label": "Direct Beach Access",
+      "sub": "Dune walkway from the garden"
+    },
+    {
+      "icon": "💧",
+      "label": "Reflecting Ponds",
+      "sub": "Floating cabanas between building and ocean"
+    },
+    {
+      "icon": "📚",
+      "label": "Club Room",
+      "sub": "Library, lounge and communal dining table"
+    }
+  ],
+  "amenitiesDescription": "<p><strong>Spa and wellness:</strong> A ground-floor spa with steam room, sauna, hot tub, salon, and massage treatment room, opening onto a terrace and a pool set into the planting. One level up, a fitness studio with a private training room, lounge, and locker rooms sits next to a vitality pool on the landscaped deck.</p><p><strong>Rooftop:</strong> A pool deck open on every side, with a sundeck and lounge area. An event space with a cocktail room and outdoor lounge is reservable for private gatherings.</p><p><strong>Ground floor and beach:</strong> Twin reflecting ponds with private floating cabanas sit between the building and the dune, with a recreational lawn, outdoor kitchen, and lawn lounge alongside. The Club Room holds lounge seating, a library, and a communal dining table.</p><p><strong>Services:</strong> Front-desk reception and concierge around the clock, 24-hour valet, an on-site property manager, beach and pool chair service, package receiving, covered bicycle storage, and electric vehicle charging in the garage.</p>",
+  "architect": "Arquitectonica (Bernardo Fort-Brescia)",
+  "completion": "2027",
+  "densityScore": 10,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "Contract Signing"
+    },
+    {
+      "percentage": 20,
+      "milestone": "Six Months After Contract"
+    },
+    {
+      "percentage": 60,
+      "milestone": "Closing"
+    }
+  ],
+  "description": "Twenty-five oceanfront residences at 9317 Collins Avenue in Surfside. Twelve stories by Arquitectonica for Multiplan, with Carla Guilhem interiors, a full spa level, and a rooftop pool. From $5M, delivery 2027.",
+  "developer": "Multiplan Real Estate Asset Management",
+  "editorialLine": "Twenty-five homes on the Surfside sand.",
+  "featureVideo": {
+    "src": "/oceanhouse/ocean-house-film.mp4",
+    "poster": "/oceanhouse/ocean-house-film-poster.webp",
+    "label": "Ocean House Surfside",
+    "tagline": "Twenty-five residences on the Surfside sand, drawn by Arquitectonica with interiors by Carla Guilhem.",
+    "uploadDate": "2026-09-06",
+    "duration": "PT2M51S"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "Residence 02",
+      "floors": "Floors 3–9 · Den / Suite",
+      "beds": 2,
+      "baths": 3,
+      "sqft": "2,093–2,134 ft²",
+      "exteriorSF": 404,
+      "inquireOnly": true,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence 03",
+      "floors": "Floors 3–9 · Terrace",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "2,633 ft²",
+      "exteriorSF": 1095,
+      "inquireOnly": true,
+      "status": "Inquire"
+    },
+    {
+      "type": "Sky West",
+      "floors": "Floors 10–12",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "3,335 ft²",
+      "exteriorSF": 1188,
+      "startingPrice": 10000000,
+      "priceNote": "September 2026 availability",
+      "status": "Available"
+    },
+    {
+      "type": "Residence 01",
+      "floors": "Floors 3–9 · Den / Suite",
+      "beds": 4,
+      "baths": 6.5,
+      "sqft": "4,180 ft²",
+      "exteriorSF": 1322,
+      "startingPrice": 17200000,
+      "priceNote": "September 2026 availability",
+      "status": "Available"
+    },
+    {
+      "type": "Sky East",
+      "floors": "Floors 10–11 · Family Room · Den / Suite · Staff Quarters",
+      "beds": 4,
+      "baths": 7.5,
+      "sqft": "5,333–5,470 ft²",
+      "exteriorSF": 1673,
+      "startingPrice": 24000000,
+      "priceNote": "September 2026 availability",
+      "status": "Available"
+    },
+    {
+      "type": "Penthouse",
+      "floors": "Two Levels · Private Oceanfront Rooftop",
+      "beds": 6,
+      "baths": 7,
+      "sqft": "9,476 ft²",
+      "exteriorSF": 5051,
+      "startingPrice": 70000000,
+      "priceNote": "Revealed January 2026",
+      "status": "Available"
+    }
+  ],
+  "floorPlansShowAll": true,
+  "generalContractor": "Moss Construction",
+  "height": "12 Stories",
+  "hoa": "$2.93 / sq ft",
+  "id": 63,
+  "img": "https://frasermiami.s3.amazonaws.com/oceanhouse/building-ocean.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/building-ocean.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/building-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/living-room.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/rooftop-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/primary-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/vitality-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/club-room.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/club-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/outdoor-kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/fitness-studio.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/spa-cabanas.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/aerial-ponds.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/surfside-aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/building-beach.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/building-cabanas.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/spa-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/oceanhouse/ocean-aerial.webp"
+  ],
+  "interiorDesigner": "Carla Guilhem Design",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "25",
+        "label": "Total residences",
+        "note": "Twelve stories. One of the shortest owner rosters on the Surfside oceanfront."
+      },
+      {
+        "value": "$5M",
+        "label": "Launch entry price",
+        "note": "August 2024 sales launch. Remaining inventory opens at $10M as of September 2026."
+      },
+      {
+        "value": "$70M",
+        "label": "Penthouse ask",
+        "note": "Revealed January 2026, above the $50M to $60M first floated at launch."
+      },
+      {
+        "value": "2027",
+        "label": "Estimated delivery",
+        "note": "Structure topped out August 2026; interiors and facade underway."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Structure topped out in August 2026",
+        "body": "Multiplan broke ground in February 2025 and Moss Construction topped the twelve-story frame out eighteen months later, in August 2026. Vertical risk on a 2027 delivery is largely behind the project."
+      },
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "Penthouse debuted at $70M, above launch guidance",
+        "body": "Multiplan floated $50M to $60M for the top-floor duplex when sales opened in August 2024. It came to market in January 2026 at $70 million."
+      },
+      {
+        "pill": "Supply",
+        "pillColor": "gold",
+        "title": "A 25-home roster on the open ocean",
+        "body": "Hotel-branded towers on this stretch run to several hundred keys. The owner list here is short enough to treat as a private building."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Backed by Brazil's largest listed real estate company",
+        "body": "Jose Isaac Peres founded Multiplan Empreendimentos. The parent has delivered more than 35,000 residences across Brazil."
+      },
+      {
+        "pill": "Positioning",
+        "pillColor": "gray",
+        "title": "The live comps all carry a hotel flag",
+        "body": "Fendi Chateau and the St. Regis sit minutes north. Both attach an operator and a longer owner roster to the same stretch of sand."
+      },
+      {
+        "pill": "Financing",
+        "pillColor": "gray",
+        "title": "Forty percent down before closing",
+        "body": "Twenty percent at contract and twenty percent six months later, with the balance due at closing in late summer 2027. Association budget is $2.93 per square foot."
+      }
+    ],
+    "thesis": "Ocean House has crossed the point where the main uncertainty was whether it would get built. The useful question now is when it delivers and how the residences are finished. That is a more comfortable conversation than the one available at the August 2024 launch, and it is why the building still belongs in an active search.",
+    "footnote": "HOA: $2.93/sf · Rental policy: Not yet published · Delivery: est. late summer 2027 (topped off Aug 2026)"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "25",
+        "label": "Total residences",
+        "note": "Twelve stories. One of the shortest owner rosters on the Surfside oceanfront."
+      },
+      {
+        "value": "$5M",
+        "label": "Launch entry price",
+        "note": "August 2024 sales launch. Remaining inventory opens at $10M as of September 2026."
+      },
+      {
+        "value": "$70M",
+        "label": "Penthouse ask",
+        "note": "Revealed January 2026, above the $50M to $60M first floated at launch."
+      },
+      {
+        "value": "2027",
+        "label": "Estimated delivery",
+        "note": "Structure topped out August 2026; interiors and facade underway."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Structure topped out in August 2026",
+        "body": "Multiplan broke ground in February 2025 and Moss Construction topped the twelve-story frame out eighteen months later, in August 2026. Vertical risk on a 2027 delivery is largely behind the project."
+      },
+      {
+        "pill": "Pricing",
+        "pillColor": "gold",
+        "title": "Penthouse debuted at $70M, above launch guidance",
+        "body": "Multiplan floated $50M to $60M for the top-floor duplex when sales opened in August 2024. It came to market in January 2026 at $70 million."
+      },
+      {
+        "pill": "Supply",
+        "pillColor": "gold",
+        "title": "A 25-home roster on the open ocean",
+        "body": "Hotel-branded towers on this stretch run to several hundred keys. The owner list here is short enough to treat as a private building."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Backed by Brazil's largest listed real estate company",
+        "body": "Jose Isaac Peres founded Multiplan Empreendimentos. The parent has delivered more than 35,000 residences across Brazil."
+      },
+      {
+        "pill": "Positioning",
+        "pillColor": "gray",
+        "title": "The live comps all carry a hotel flag",
+        "body": "Fendi Chateau and the St. Regis sit minutes north. Both attach an operator and a longer owner roster to the same stretch of sand."
+      },
+      {
+        "pill": "Financing",
+        "pillColor": "gray",
+        "title": "Forty percent down before closing",
+        "body": "Twenty percent at contract and twenty percent six months later, with the balance due at closing in late summer 2027. Association budget is $2.93 per square foot."
+      }
+    ],
+    "thesis": "Ocean House has crossed the point where the main uncertainty was whether it would get built. The useful question now is when it delivers and how the residences are finished. That is a more comfortable conversation than the one available at the August 2024 launch, and it is why the building still belongs in an active search.",
+    "footnote": "HOA: $2.93/sf · Rental policy: Not yet published · Delivery: est. late summer 2027 (topped off Aug 2026)"
+  },
+  "investmentThesis": "<p>Surfside holds new construction to low-rise, low-density zoning, the same constraint that makes the Four Seasons Surf Club campus and Arte Surfside effectively unrepeatable. Ocean House is one of very few ground-up condominiums entitled inside that envelope. Scarcity here is a function of the code, not of marketing.</p><p>This is Multiplan's third boutique condominium in the Miami Beach corridor, following 57 Ocean and Ocean Park South Beach. Chief executive Marcelo Kingston runs the Miami arm. Arquitectonica has been building in the city since 1977, and Fort-Brescia took this commission directly.</p><p>The buyer this building is aimed at wants oceanfront square footage and a short owner roster without a hotel operator on the deed. There is no flag and no resort levy. What is here is scaled to twenty-five owners, not to a sales brochure.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "$64M",
+      "label": "Land basis, January 2024",
+      "note": "Collins Avenue oceanfront, acquired before sales launched"
+    },
+    {
+      "value": "0.9 acre",
+      "label": "Oceanfront assemblage",
+      "note": "A single parcel between the dune and Collins"
+    },
+    {
+      "value": "$300M+",
+      "label": "Projected sellout",
+      "note": "Developer figure at the August 2024 sales launch"
+    }
+  ],
+  "landscapeArchitect": "ArquitectonicaGEO",
+  "lat": 25.8820243,
+  "lifestyle": [
+    "Oceanfront",
+    "Boutique",
+    "Ultra-Luxury",
+    "Wellness"
+  ],
+  "lng": -80.1215922,
+  "locationScore": 40,
+  "maxBath": 7.5,
+  "maxBed": 6,
+  "maxPrice": 70000000,
+  "maxSqft": 9476,
+  "minBath": 3,
+  "minBed": 2,
+  "minPrice": 5000000,
+  "minSqft": 2093,
+  "name": "Ocean House Surfside",
+  "neighborhood": "Surfside",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=25.8820243,-80.1215922"
+  },
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/ocean-house-surfside.jpg",
+  "parking": "Garage with 24-hour valet; EV charging stations",
+  "priceFrom": "$5M+",
+  "pricePerSqft": 3956,
+  "privacyScore": 96,
+  "projectedAppreciation": 26,
+  "rentalPolicy": "Not published",
+  "residenceContent": "<p class=\"prop-residence-intro\">Twelve stories of transparent glass on a beachfront parcel where Collins Avenue meets 93rd Street. Bernardo Fort-Brescia drew the building as a set of curves rather than a stack of floor plates. Wraparound balconies do the structural talking: clear glass railings, up to twelve feet deep, with wood-like ceiling accents that carry the eye out over the sand. Arrival is under a covered porte-cochere and through a double-height lobby of wood and stone. A walkway runs from the dune line through a landscaped garden into an outdoor lounge finished in natural stone, and every home is reached by a private keyed elevator opening into its own vestibule.</p><p>Homes run from two bedrooms to five, plus a two-level penthouse on the top floor with its own oceanfront rooftop. Ceilings hold at roughly ten feet through the building and reach twelve in the penthouse. Floor-to-ceiling impact glass slides open onto the terraces, so the living space reads continuously from the interior stone flooring out to the balcony. Views run east to the Atlantic, south down the beach toward Miami Beach, and west across Biscayne Bay to the Downtown skyline.</p><p>Interiors are by Carla Guilhem, whose practice splits between yachts and private homes. The material palette is deliberately short: wood, natural stone, and little else. Kitchens pair custom European cabinetry with Gaggenau appliances and a Silestone island with a waterfall edge. Bathrooms carry double vanities, glass-enclosed rainfall showers, freestanding tubs, and stone floors. The penthouse steps up the specification with Poliform cabinetry and Fantini fixtures, and adds a cinema, a game room, staff quarters with a service kitchen, an ensuite spa with private steam and sauna, and a six-car garage.</p>",
+  "salesTeam": "Gutman Development Marketing",
+  "shortName": "Ocean House",
+  "slug": "ocean-house-surfside",
+  "sqftRange": "2,093 – 9,476 SF interior",
+  "stage": "topped_off",
+  "statusRemark": "TOPPED OFF · AUGUST 2026",
+  "tagline": "A 25-residence oceanfront building on nine-tenths of an acre of Collins Avenue.",
+  "units": 25,
+  "verified": {
+    "minPrice": {
+      "date": "2024-08-15",
+      "source": "The Real Deal, sales launch coverage — prices start at $5 million",
+      "basis": "launch"
+    },
+    "maxPrice": {
+      "date": "2026-01-16",
+      "source": "Multiplan REAM release via Resident — $70 million Penthouse debut"
+    },
+    "units": {
+      "date": "2026-08-28",
+      "source": "DeSimone Consulting Engineering top-out notice — 25 residences, 12 stories"
+    },
+    "completion": {
+      "date": "2026-01-16",
+      "source": "Multiplan REAM release via Resident — slated for completion in 2027"
+    },
+    "stage": {
+      "date": "2026-08-28",
+      "source": "DeSimone Consulting Engineering — Ocean House Surfside topped out"
+    },
+    "statusRemark": {
+      "date": "2026-08-28",
+      "source": "DeSimone Consulting Engineering — Ocean House Surfside topped out"
+    },
+    "hoa": {
+      "date": "2026-09-09",
+      "source": "Multiplan availability + pricing sheet, September 2026 — $2.93 per square foot"
+    },
+    "pricePerSqft": {
+      "date": "2026-09-09",
+      "source": "Blended over the five residences on the September 2026 availability sheet — $80,550,000 across 20,363 SF interior"
+    },
+    "depositStructure": {
+      "date": "2026-09-09",
+      "source": "Multiplan availability + pricing sheet, September 2026 — 20% at contract, 20% at six months, balance at closing"
+    },
+    "floorPlans": {
+      "date": "2026-09-09",
+      "source": "Developer floor plan set (Residence 01 / 02 / 03, Sky West, Sky East floors 10 and 11) with asks from the September 2026 availability sheet"
+    }
+  },
+  "views": [
+    "Atlantic Ocean",
+    "Bal Harbour",
+    "Biscayne Bay",
+    "Miami Skyline"
+  ],
+  "wellnessScore": 88
+}

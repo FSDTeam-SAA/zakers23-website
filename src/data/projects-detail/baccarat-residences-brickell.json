@@ -1,0 +1,293 @@
+{
+  "address": "99 SE 5th St, Miami, FL 33131",
+  "amenities": [
+    {
+      "icon": "⛵",
+      "label": "Private Marina",
+      "sub": "300+ ft dockage, water taxi"
+    },
+    {
+      "icon": "🛳",
+      "label": "Resident Yacht",
+      "sub": "On-demand water taxi"
+    },
+    {
+      "icon": "🍽",
+      "label": "10,000 SF Waterfront Restaurant",
+      "sub": "Signature dining"
+    },
+    {
+      "icon": "🏊",
+      "label": "12th-Floor Resort Deck",
+      "sub": "Zero-entry pool, cabanas"
+    },
+    {
+      "icon": "🧘",
+      "label": "Hammam Spa & Wellness",
+      "sub": "Steam, sauna, yoga"
+    },
+    {
+      "icon": "🚗",
+      "label": "24-Hour Valet & Self-Parking",
+      "sub": "Complimentary valet, optional covered"
+    },
+    {
+      "icon": "🛎",
+      "label": "24-Hour Concierge",
+      "sub": "Baccarat Gold privileges"
+    }
+  ],
+  "amenitiesDescription": "<p>Baccarat Residences Miami spans two dedicated amenity levels plus a lushly landscaped riverfront promenade: the elevated 12th-floor resort deck features a dramatic zero-entry heated saline pool, outdoor spa, private cabanas, summer kitchen, and sun terrace, while a separate waterfront deck offers an infinity pool with unobstructed views across the Miami River and bay.</p><p>The wellness program includes a Hammam spa with treatment rooms, steam room, sauna, yoga and meditation studio, and a state-of-the-art fitness center. Social amenities include a Grand Salon, Baccarat Spa, Clubroom with billiards, private screening room, wine cellar and tasting room, private dining room with chef's kitchen, children's playroom, business center, and private workspaces. The private marina offers over 300 linear feet of dockage with a resident yacht for on-demand water taxi service, plus a planned 10,000 SF signature waterfront restaurant.</p><p>Services include 24-hour concierge, valet, house car, in-residence dining, housekeeping, pet and plant care, personal shopping, and Baccarat Gold Member global privileges. Parking includes 24-hour complimentary valet parking and optional secured, covered self-parking in assigned spaces.</p>",
+  "architect": "Arquitectonica",
+  "badge": "Under Construction",
+  "completion": "2028",
+  "constructionImgs": [
+    "/baccarat/updates/Baccarat-Residences-Miami-1-scaled.webp",
+    "/baccarat/updates/Baccarat-Residences-Miami-3-scaled.webp",
+    "/baccarat/updates/Baccarat-Residences-Miami-5-scaled.webp"
+  ],
+  "constructionNote": "Tower actively rising — visible on Brickell skyline as of March 2026. Glass installation underway on lower floors.",
+  "constructionPct": 62,
+  "constructionUpdateDate": "April 2026",
+  "densityScore": 85,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing (2027)"
+    }
+  ],
+  "description": "Baccarat's first U.S. residential tower. 75 stories where the Miami River meets Biscayne Bay. 360 residences with two centuries of French crystal house craftsmanship. Under construction.",
+  "developer": "Related Group & GTIS Partners",
+  "editorialLine": "Crystal clarity. Riverfront living.",
+  "floorPlans": [
+    {
+      "type": "1-Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 1,
+      "baths": 1.5,
+      "sqft": "1,336–1,800 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "2-Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,800–3,000 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "3-Bedroom",
+      "addlRooms": "Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "3,000–5,000 sq ft",
+      "status": "Limited"
+    },
+    {
+      "type": "4-Bedroom & Penthouse",
+      "addlRooms": "Terrace / Full Floor",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "5,000–7,000+ sq ft",
+      "status": "Inquire"
+    }
+  ],
+  "height": "75 Stories (852 ft)",
+  "hoa": "$1.60 / sq ft",
+  "id": 9,
+  "img": "/baccarat/exterior-hummingbird-sunrise.webp",
+  "imgs": [
+    "/baccarat/exterior-hummingbird-sunrise.webp",
+    "/baccarat/tower-hero.webp",
+    "/baccarat/brickell-panorama.webp",
+    "/baccarat/entry-road.webp",
+    "/baccarat/porte-cochere.webp",
+    "/baccarat/lobby.webp",
+    "/baccarat/lobby-front-desk.webp",
+    "/baccarat/lobby-cafe.webp",
+    "/baccarat/stairs.webp",
+    "/baccarat/grand-salson.webp",
+    "/baccarat/petit-salon.webp",
+    "/baccarat/baccarat-lounge.webp",
+    "/baccarat/living-room.webp",
+    "/baccarat/kitchen.webp",
+    "/baccarat/master-bedroom.webp",
+    "/baccarat/pool.webp",
+    "/baccarat/orangerie.webp",
+    "/baccarat/fitness-by-anatomy.webp",
+    "/baccarat/hammam.webp",
+    "/baccarat/hammam-lounge.webp",
+    "/baccarat/harmonie-room.webp",
+    "/baccarat/billiards-room.webp",
+    "/baccarat/screening-room.webp",
+    "/baccarat/wine-cellar.webp",
+    "/baccarat/wine-tasting-alon.webp",
+    "/baccarat/kids-room.webp"
+  ],
+  "interiorDesigner": "Meyer Davis Studio",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Brickell luxury waterfront comps and crystal brand trajectory"
+      },
+      {
+        "value": "$1,600+",
+        "label": "Launch pricing / sq ft",
+        "note": "vs. $1,500/sqft top-end Brickell resale; riverfront commands premium over interior"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Knight Frank: hotel-branded residences outperform non-branded peers by 31% on average"
+      },
+      {
+        "value": "75",
+        "label": "Total residences",
+        "note": "Among the smallest branded towers in Brickell"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Waterfront",
+        "pillColor": "gold",
+        "title": "Miami River frontage — rarest orientation in Brickell",
+        "body": "Baccarat occupies a direct Miami River position, one of only a handful of buildings in the city with river-to-bay views. Riverfront parcels in Brickell are permanently supply-constrained."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Baccarat — 250 years of crystal craftsmanship brand equity",
+        "body": "Baccarat's crystalline aesthetic is embedded in every surface and material specification. The Baccarat brand occupies the same ultra-luxury tier globally as Four Seasons or Ritz-Carlton, with the added cultural cachet of French craftsmanship heritage."
+      },
+      {
+        "pill": "Marina",
+        "pillColor": "gold",
+        "title": "Private marina with yacht dockage — a Brickell first",
+        "body": "As Miami's boating culture intensifies, direct marina access commands a structural premium. Buyers underwriting a waterfront lifestyle pay up for properties where dockage is deeded rather than nearby."
+      },
+      {
+        "pill": "Hospitality",
+        "pillColor": "gray",
+        "title": "SH Hotels & Resorts management — 1 Hotel / Baccarat operator",
+        "body": "SH Hotels operates 1 Hotel South Beach (one of Miami's top-performing luxury hotels) and the global Baccarat Hotel chain. Their operational track record directly supports rental program credibility and service standards."
+      }
+    ],
+    "thesis": "Baccarat Residences occupies a unique intersection: Brickell's financial district address, Miami River marina access, French crystal brand identity, and SH Hotels hospitality management — in a 75-unit building. At $1,600+/sqft, it is priced to reflect the scarcity of its riverfront position, while comparable Brickell luxury with equivalent amenities trades above $2,000/sqft on the resale market post-delivery.",
+    "footnote": "HOA: ~$1.60/sq ft · Rental policy: Via SH Hotels program · Delivery: 2028"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Brickell luxury waterfront comps and crystal brand trajectory"
+      },
+      {
+        "value": "$1,600+",
+        "label": "Launch pricing / sq ft",
+        "note": "vs. $1,500/sqft top-end Brickell resale; riverfront commands premium over interior"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Knight Frank: hotel-branded residences outperform non-branded peers by 31% on average"
+      },
+      {
+        "value": "75",
+        "label": "Total residences",
+        "note": "Among the smallest branded towers in Brickell"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Waterfront",
+        "pillColor": "gold",
+        "title": "Miami River frontage — rarest orientation in Brickell",
+        "body": "Baccarat occupies a direct Miami River position, one of only a handful of buildings in the city with river-to-bay views. Riverfront parcels in Brickell are permanently supply-constrained."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Baccarat — 250 years of crystal craftsmanship brand equity",
+        "body": "Baccarat's crystalline aesthetic is embedded in every surface and material specification. The Baccarat brand occupies the same ultra-luxury tier globally as Four Seasons or Ritz-Carlton, with the added cultural cachet of French craftsmanship heritage."
+      },
+      {
+        "pill": "Marina",
+        "pillColor": "gold",
+        "title": "Private marina with yacht dockage — a Brickell first",
+        "body": "As Miami's boating culture intensifies, direct marina access commands a structural premium. Buyers underwriting a waterfront lifestyle pay up for properties where dockage is deeded rather than nearby."
+      },
+      {
+        "pill": "Hospitality",
+        "pillColor": "gray",
+        "title": "SH Hotels & Resorts management — 1 Hotel / Baccarat operator",
+        "body": "SH Hotels operates 1 Hotel South Beach (one of Miami's top-performing luxury hotels) and the global Baccarat Hotel chain. Their operational track record directly supports rental program credibility and service standards."
+      }
+    ],
+    "thesis": "Baccarat Residences occupies a unique intersection: Brickell's financial district address, Miami River marina access, French crystal brand identity, and SH Hotels hospitality management — in a 75-unit building. At $1,600+/sqft, it is priced to reflect the scarcity of its riverfront position, while comparable Brickell luxury with equivalent amenities trades above $2,000/sqft on the resale market post-delivery.",
+    "footnote": "HOA: ~$1.60/sq ft · Rental policy: Via SH Hotels program · Delivery: 2028"
+  },
+  "investmentThesis": "<p>95% sold — one of the fastest-absorbing luxury towers in the current Brickell cycle. The confluence of the Miami River and Biscayne Bay creates a unique waterfront position with both river and open-water views. Baccarat Hotels &amp; Residences / SH Hotels &amp; Resorts manages the building, bringing hotel-grade service to a residential address. Landscape by Enzo Enea. Located steps from Brickell City Centre and minutes from Coconut Grove, Downtown, and Miami Beach. Under construction with 2028 delivery targeted.</p>",
+  "isActive": true,
+  "landscapeArchitect": "Enzo Enea",
+  "lat": 25.7696454,
+  "lng": -80.1910809,
+  "maxBath": 5.5,
+  "maxBed": 4,
+  "maxPrice": 15000000,
+  "maxSqft": 7000,
+  "minBath": 1,
+  "minBed": 1,
+  "minPrice": 1100000,
+  "minSqft": 1336,
+  "name": "Baccarat Residences Brickell",
+  "neighborhood": "Brickell",
+  "parking": "24-hour complimentary valet parking and optional secured, covered self-parking in assigned spaces",
+  "percentSold": 95,
+  "priceFrom": "$1.1M+",
+  "pricePerSqft": 1222,
+  "privacyScore": 50,
+  "projectedAppreciation": 26,
+  "rentalPolicy": "30-day minimum",
+  "residenceContent": "<p class=\"prop-residence-intro\">The first development in the United States curated by Baccarat — the legendary French crystal house whose two centuries of precision, artistry, and brilliance now define a residential address. The tower rises where the Miami River meets Biscayne Bay, delivering 324 flow-through tower homes, 8 penthouses, and 28 riverfront flats and duplexes. Interiors by Meyer Davis Studio translate Baccarat's signature language of light and crystal into residential form: custom Baccarat chandeliers illuminate public spaces, while each unit features 10-foot ceilings, floor-to-ceiling glass, wide-plank oak flooring, Italian stone kitchens with Gaggenau appliances, and spa-inspired bathrooms with book-matched marble. The building is managed by Baccarat Hotels &amp; Residences / SH Hotels &amp; Resorts.</p>",
+  "salesTeam": "ONE Sotheby's International Realty",
+  "slug": "baccarat-residences-brickell",
+  "stage": "under_construction",
+  "units": 360,
+  "unitsLeft": 18,
+  "verified": {
+    "completion": {
+      "date": "2026-03-13",
+      "source": "Florida YIMBY — early 2028, vertical past floor 40 of 75"
+    },
+    "units": {
+      "date": "2026-03-13",
+      "source": "Florida YIMBY — 360 residences"
+    },
+    "percentSold": {
+      "date": "2026-03-13",
+      "source": "Florida YIMBY — approximately 95 percent presold"
+    },
+    "minPrice": {
+      "date": "2021-06-01",
+      "basis": "launch",
+      "source": "Launch collateral entry price, per site pricing convention"
+    }
+  },
+  "wellnessScore": 70
+}

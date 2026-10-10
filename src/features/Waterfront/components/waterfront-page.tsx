@@ -7,6 +7,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { AdvisorSection } from "@/src/features/Home/components/advisor-section";
 import { SiteFooter } from "@/src/features/Home/components/site-footer";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
+import waterfrontMlsRaw from "@/src/data/waterfront-mls.json";
+import { handleImageError, getSafeImageUrl, FALLBACK_IMAGE_URL } from "@/src/lib/image-utils";
 
 type Tier = "sovereign" | "ultra-prime" | "prime";
 type BridgeAccess = "no-fixed-bridges" | "bridge-limited";
@@ -371,6 +373,36 @@ export default function WaterfrontPage() {
   const [hoveredSaleId, setHoveredSaleId] = useState<string | null>(null);
   const { openInquiry } = useInquiry();
 
+  // Active MLS Listings State
+  const [mlsSearch, setMlsSearch] = useState<string>("");
+  const [selectedNeighborhood, setSelectedNeighborhood] = useState<string>("All");
+  const [mlsSort, setMlsSort] = useState<string>("price-desc");
+  const [visibleMlsCount, setVisibleMlsCount] = useState<number>(12);
+
+  const filteredMls = useMemo(() => {
+    let list = [...waterfrontMlsRaw];
+    if (selectedNeighborhood !== "All") {
+      list = list.filter((item) => item.neighborhood === selectedNeighborhood);
+    }
+    if (mlsSearch.trim()) {
+      const q = mlsSearch.toLowerCase().trim();
+      list = list.filter(
+        (item) =>
+          item.name?.toLowerCase().includes(q) ||
+          item.mlsId?.toLowerCase().includes(q) ||
+          item.neighborhood?.toLowerCase().includes(q)
+      );
+    }
+    if (mlsSort === "price-desc") {
+      list.sort((a, b) => (b.minPrice || 0) - (a.minPrice || 0));
+    } else if (mlsSort === "price-asc") {
+      list.sort((a, b) => (a.minPrice || 0) - (b.minPrice || 0));
+    } else if (mlsSort === "beds-desc") {
+      list.sort((a, b) => (b.minBed || 0) - (a.minBed || 0));
+    }
+    return list;
+  }, [mlsSearch, selectedNeighborhood, mlsSort]);
+
   const groupedSales = useMemo(
     () =>
       tierConfig.map((group) => ({
@@ -523,10 +555,10 @@ export default function WaterfrontPage() {
             <Link href="/map">Explore Map</Link>
             <Link href="/neighborhood">Neighborhoods</Link>
             <Link className="waterfront-nav-active" href="/waterfront">
-              Waterfront Estates
+              Waterfront Homes
             </Link>
             <Link href="/insights">Insights</Link>
-            <button type="button" className="nav-inquire-btn" onClick={() => openInquiry("Waterfront Estates")}>
+            <button type="button" className="nav-inquire-btn" onClick={() => openInquiry("Waterfront Homes")}>
               Inquire
             </button>
           </nav>
@@ -535,11 +567,10 @@ export default function WaterfrontPage() {
 
       <section className="waterfront-intro">
         <div className="waterfront-intro-inner">
-          <p className="waterfront-kicker">Miami-Dade County · Single Family · $25M+ Ultra-Prime</p>
-          <h1>Waterfront estates in Miami&apos;s most exclusive enclaves.</h1>
+          <p className="waterfront-kicker">Miami-Dade County · Active MLS Waterfront Listings & Ultra-Prime Enclaves</p>
+          <h1>Miami Waterfront Homes & Luxury Estates</h1>
           <p>
-            Closed single-family waterfront sales of $25M and above across Miami-Dade. This is
-            the ultra-prime tier of Miami-Dade&apos;s luxury market.
+            Explore active MLS waterfront single-family listings, gated island estates, and benchmark record sales across Miami-Dade&apos;s most exclusive coastal enclaves.
           </p>
         </div>
       </section>
@@ -621,6 +652,155 @@ export default function WaterfrontPage() {
         </aside>
       </section>
 
+      {/* ACTIVE MLS WATERFRONT LISTINGS SECTION */}
+      <section className="py-20 px-5 md:px-8 max-w-[1340px] mx-auto border-b border-[rgba(255,255,255,0.08)]" id="active-mls-listings">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-6 border-b border-[rgba(255,255,255,0.08)] gap-4">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#10b981] animate-pulse" />
+              <span className="text-[10px] uppercase tracking-[0.24em] text-[#c9a84c] font-semibold">
+                Live MLS Feed · Verified Inventory
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-serif font-normal text-[#fafaf8] m-0">
+              Active MLS Waterfront Listings
+            </h2>
+            <p className="text-xs text-[rgba(250,250,248,0.5)] mt-2 max-w-xl leading-relaxed">
+              Curated luxury single-family homes with deep-water dockage, open bay panoramas, and direct oceanfront access across Miami-Dade County.
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-4">
+            <span className="text-xs font-mono text-[#c9a84c]">
+              {filteredMls.length} Active Waterfront Listings
+            </span>
+            <a
+              href="https://wa.me/13053435371?text=Hi%20Zachary%2C%20I%27d%20like%20to%20inquire%20about%20Miami%20waterfront%20homes."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-semibold px-4 py-2.5 transition-all shadow-sm hover:brightness-105"
+              style={{ backgroundColor: "#25D366", color: "#ffffff" }}
+            >
+              <span style={{ color: "#ffffff" }}>💬 WhatsApp Zachary</span>
+            </a>
+          </div>
+        </div>
+
+        {/* Filters Bar */}
+        <div className="flex flex-col md:flex-row gap-4 mb-8 justify-between items-stretch md:items-center">
+          <div className="flex-1 max-w-md">
+            <input
+              type="text"
+              placeholder="Search by address, MLS #, or neighborhood..."
+              value={mlsSearch}
+              onChange={(e) => setMlsSearch(e.target.value)}
+              className="w-full bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.12)] rounded px-4 py-2.5 text-xs text-[#fafaf8] placeholder:text-[rgba(250,250,248,0.35)] focus:outline-none focus:border-[#c9a84c]"
+            />
+          </div>
+          <div className="flex flex-wrap gap-2 items-center">
+            <select
+              value={mlsSort}
+              onChange={(e) => setMlsSort(e.target.value)}
+              aria-label="Sort waterfront listings"
+              className="bg-[#14171e] border border-[rgba(255,255,255,0.12)] text-[11px] text-[rgba(250,250,248,0.7)] px-3 py-2 rounded focus:outline-none focus:border-[#c9a84c]"
+            >
+              <option value="price-desc">Price: High to Low</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="beds-desc">Bedrooms: Most to Least</option>
+            </select>
+          </div>
+        </div>
+
+        {/* Neighborhood Filter Pills */}
+        <div className="flex flex-wrap gap-2 mb-10 overflow-x-auto pb-2">
+          {["All", "Key Biscayne", "Miami Beach", "Fisher Island", "Brickell", "Coconut Grove", "Bal Harbour", "Surfside", "Sunny Isles Beach"].map((n) => (
+            <button
+              key={n}
+              onClick={() => setSelectedNeighborhood(n)}
+              className={`px-3 py-1.5 text-[10px] uppercase tracking-[0.16em] border transition-all ${
+                selectedNeighborhood === n
+                  ? "border-[#c9a84c] bg-[#c9a84c] text-[#14171e] font-semibold"
+                  : "border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.03)] text-[rgba(250,250,248,0.6)] hover:border-[rgba(255,255,255,0.3)]"
+              }`}
+            >
+              {n}
+            </button>
+          ))}
+        </div>
+
+        {/* MLS Listings Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredMls.slice(0, visibleMlsCount).map((item) => (
+            <article
+              key={item.id}
+              className="group bg-[#181c25] border border-[rgba(255,255,255,0.08)] hover:border-[rgba(201,168,76,0.6)] transition-all duration-300 flex flex-col justify-between overflow-hidden"
+            >
+              <div>
+                <div className="relative aspect-[16/10] overflow-hidden bg-[#10131a]">
+                  <Image
+                    fill
+                    src={getSafeImageUrl(item.img, FALLBACK_IMAGE_URL)}
+                    alt={item.name}
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute top-3 left-3 bg-[rgba(14,16,22,0.88)] backdrop-blur-md px-2.5 py-1 text-[8.5px] uppercase tracking-[0.18em] text-[#c9a84c] border border-[rgba(201,168,76,0.3)]">
+                    {item.badge || "MLS · ACTIVE"}
+                  </div>
+                  <div className="absolute bottom-3 right-3 bg-[rgba(14,16,22,0.92)] backdrop-blur-md px-3 py-1 text-xs font-serif font-medium text-white border border-[rgba(255,255,255,0.1)]">
+                    {item.priceFrom}
+                  </div>
+                </div>
+
+                <div className="p-5">
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#c9a84c] mb-1">
+                    {item.neighborhood}
+                  </div>
+                  <h3 className="text-lg font-serif text-[#fafaf8] m-0 mb-3 truncate">
+                    {item.name}
+                  </h3>
+                  <div className="flex items-center gap-3 text-[11px] text-[rgba(250,250,248,0.5)] border-t border-[rgba(255,255,255,0.06)] pt-3 font-mono">
+                    {item.minBed ? <span>{item.minBed} Beds</span> : null}
+                    {item.baths ? <span>· {item.baths} Baths</span> : null}
+                    {item.sqft ? <span>· {item.sqft.toLocaleString()} SF</span> : null}
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-5 pt-0 flex items-center gap-3">
+                <Link
+                  href={`/property/${item.slug}`}
+                  className="flex-1 text-center py-2.5 bg-[rgba(255,255,255,0.06)] hover:bg-[#c9a84c] hover:text-[#14171e] text-[10px] uppercase tracking-[0.2em] text-[#fafaf8] transition-all"
+                >
+                  View Details
+                </Link>
+                <a
+                  href={`https://wa.me/13053435371?text=Hi%20Zachary%2C%20I%27m%20interested%20in%20${encodeURIComponent(item.name)}%20(${encodeURIComponent(item.badge || '')}).`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-2.5 flex items-center justify-center transition-colors rounded-[2px] hover:brightness-105"
+                  style={{ backgroundColor: "#25D366", color: "#ffffff" }}
+                  title="WhatsApp Zachary"
+                >
+                  <span style={{ color: "#ffffff" }}>💬</span>
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        {/* Load More Pagination */}
+        {visibleMlsCount < filteredMls.length && (
+          <div className="mt-12 text-center">
+            <button
+              onClick={() => setVisibleMlsCount((prev) => prev + 12)}
+              className="px-8 py-3.5 bg-transparent border border-[#c9a84c] text-[#c9a84c] hover:bg-[#c9a84c] hover:text-[#14171e] text-[11px] uppercase tracking-[0.24em] transition-all cursor-pointer"
+            >
+              Load More Waterfront Listings ({filteredMls.length - visibleMlsCount} Remaining)
+            </button>
+          </div>
+        )}
+      </section>
+
       <section className="waterfront-enclaves">
         <div className="waterfront-section-heading">
           <h2>The enclaves</h2>
@@ -674,12 +854,20 @@ export default function WaterfrontPage() {
             <button
               type="button"
               className="waterfront-inquiry-button"
-              onClick={() => openInquiry("Waterfront Estates")}
+              onClick={() => openInquiry("Waterfront Homes")}
             >
               Start the conversation
             </button>
-            <a href="tel:7864758134" className="waterfront-inquiry-link">
-              786.475.8134
+            <a href="tel:3053435371" className="waterfront-inquiry-link">
+              (305) 343-5371
+            </a>
+            <a
+              href="https://wa.me/13053435371?text=Hi%20Zachary%2C%20I%27d%20like%20to%20connect%20regarding%20Miami%20waterfront%20homes."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="waterfront-inquiry-link text-[#25D366] hover:underline"
+            >
+              💬 WhatsApp Zachary
             </a>
           </div>
         </div>

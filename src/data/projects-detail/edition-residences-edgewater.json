@@ -1,0 +1,439 @@
+{
+  "address": "2121 N Bayshore Dr, Miami, FL 33137",
+  "amenities": [
+    {
+      "icon": "🌊",
+      "label": "800 Ft of Bay Frontage",
+      "sub": "Direct Miami Baywalk access"
+    },
+    {
+      "icon": "🏨",
+      "label": "Operated by EDITION Hotels",
+      "sub": "Marriott International privileges"
+    },
+    {
+      "icon": "🏊",
+      "label": "Two Pools",
+      "sub": "Cabana-lined bayfront deck and rooftop",
+      "img": "/edition-residences-edgewater/bayfront-pool.webp"
+    },
+    {
+      "icon": "🧖",
+      "label": "Full Spa & Wellness Floor",
+      "sub": "Fitness centre and yoga studios"
+    },
+    {
+      "icon": "🍽",
+      "label": "On-Site Restaurant",
+      "sub": "Plus club lounge and private dining"
+    },
+    {
+      "icon": "🛏",
+      "label": "Six Guest Suites",
+      "sub": "Reserved for residents' visitors"
+    }
+  ],
+  "amenitiesDescription": "<p>More than 45,000 square feet of indoor and outdoor amenities are operated by EDITION Hotels. Arrival is through a three-story bayfront lobby with 24-hour concierge and valet. The bayfront pool deck is cabana-lined and opens onto secret gardens and 800 linear feet of frontage with direct access to the Miami Baywalk; a second pool and hot tub sit on the roof. The wellness floor holds a full spa, a fitness centre, and yoga and movement studios. Social programming runs through a club lounge, a library, a private dining room, a screening room, a board room, an on-site restaurant, children's and teen rooms, and a dog spa and run. Six guest suites are available to residents' visitors, and parking includes EV charging.</p><p>Following the September 2026 completion of the site's condominium buyout, the developer has stated the project moves forward as designed with an added longevity and wellness component and expanded food and beverage programming.</p>",
+  "architect": "Arquitectonica (Bernardo Fort-Brescia)",
+  "badge": "BAYFRONT · SERVICED BY EDITION HOTELS",
+  "completion": "2029",
+  "densityScore": 65,
+  "description": "EDITION Residences Edgewater is a 55-story, 649-foot glass tower of 185 residences at 2121 N Bayshore Drive, designed by Bernardo Fort-Brescia of Arquitectonica with interiors by Studio Munge. It is the first standalone residential collection for EDITION, the Ian Schrager and Marriott International hospitality brand, which manages the building's amenities and resident services. Homes run from one-bedroom-plus-den to four-bedroom plans across three collections (Bayfront, Signature and Sky) plus three tri-level penthouses with private rooftop pools and gardens, above 45,000 square feet of amenities and 800 linear feet of bay frontage with direct Baywalk access.",
+  "developer": "Two Roads Development",
+  "discoveryEngine": {
+    "lifestyle": [
+      "waterfront",
+      "bayfront",
+      "branded-living",
+      "urban-core",
+      "wellness"
+    ],
+    "investmentProfile": [
+      "pre-construction",
+      "branded-residence",
+      "waterfront-scarcity",
+      "land-basis-story"
+    ],
+    "priceCategory": "ultra-luxury",
+    "vibeMatch": [
+      "design-forward",
+      "bayfront",
+      "hotel-caliber",
+      "serene",
+      "city-energy"
+    ],
+    "goodFor": [
+      "primary-residence",
+      "second-home",
+      "international-buyer"
+    ]
+  },
+  "dossierImageIndices": {
+    "interstitials": [
+      15,
+      8,
+      13,
+      18
+    ]
+  },
+  "editorialLine": "EDITION's first residences, on 800 feet of Biscayne Bay.",
+  "floorPlans": [
+    {
+      "type": "Residence B1 East-South",
+      "floors": "Floors 03–07 · Bayfront",
+      "beds": 1,
+      "baths": 2.5,
+      "interiorSF": 1922,
+      "exteriorSF": 334,
+      "addlRooms": "Den",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence B1 East-North",
+      "floors": "Floors 03–07 · Bayfront",
+      "beds": 1,
+      "baths": 2.5,
+      "interiorSF": 1919,
+      "exteriorSF": 390,
+      "addlRooms": "Den",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence AA South",
+      "floors": "Floors 03–07 · Bayfront",
+      "beds": 3,
+      "baths": 3.5,
+      "interiorSF": 3104,
+      "exteriorSF": 354,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence AA North",
+      "floors": "Floors 03–07 · Bayfront",
+      "beds": 3,
+      "baths": 3.5,
+      "interiorSF": 3104,
+      "exteriorSF": 627,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence B2 East-South",
+      "floors": "Floors 10–40 · Signature",
+      "beds": 2,
+      "baths": 2.5,
+      "interiorSF": 2315,
+      "exteriorSF": 439,
+      "addlRooms": "Den",
+      "priceLabel": "$3,200,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence B2 East-North",
+      "floors": "Floors 10–40 · Signature",
+      "beds": 2,
+      "baths": 2.5,
+      "interiorSF": 2314,
+      "exteriorSF": 542,
+      "addlRooms": "Den",
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence A South",
+      "floors": "Floors 10–40 · Signature",
+      "beds": 3,
+      "baths": 3.5,
+      "interiorSF": 2709,
+      "exteriorSF": 249,
+      "priceLabel": "$4,385,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence A North",
+      "floors": "Floors 10–40 · Signature",
+      "beds": 3,
+      "baths": 3.5,
+      "interiorSF": 2709,
+      "exteriorSF": 440,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence C East",
+      "floors": "Floors 41–54 · Sky",
+      "beds": 2,
+      "baths": 3.5,
+      "interiorSF": 3081,
+      "exteriorSF": 523,
+      "addlRooms": "Study",
+      "priceLabel": "$4,375,000",
+      "status": "Available"
+    },
+    {
+      "type": "Residence AAA North",
+      "floors": "Floors 41–54 · Sky",
+      "beds": 3,
+      "baths": 3.5,
+      "interiorSF": 3205,
+      "exteriorSF": 612,
+      "status": "Inquire"
+    },
+    {
+      "type": "Residence D South",
+      "floors": "Floors 41–54 · Sky",
+      "beds": 4,
+      "baths": 4.5,
+      "interiorSF": 3760,
+      "exteriorSF": 556,
+      "priceLabel": "$6,920,000",
+      "status": "Available"
+    },
+    {
+      "type": "Tri-Level Penthouse",
+      "floors": "Crown · 3 total",
+      "beds": null,
+      "baths": null,
+      "interiorSF": null,
+      "exteriorSF": null,
+      "addlRooms": "Private rooftop pool and garden",
+      "status": "Inquire"
+    }
+  ],
+  "heroImgPosition": "50% 80%",
+  "hoa": "Not published",
+  "id": 62,
+  "img": "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/building-hero.webp",
+  "imgCaptions": {
+    "8": {
+      "kicker": "Bayfront Deck",
+      "line": "Cabanas under the palms, 800 feet of frontage behind them"
+    },
+    "13": {
+      "kicker": "After Six",
+      "line": "The same deck, once the light goes"
+    },
+    "15": {
+      "kicker": "The Great Room",
+      "line": "Ten to fourteen feet of ceiling, and the bay on three sides"
+    },
+    "18": {
+      "kicker": "Southeast",
+      "line": "Miami Beach, the causeways, and everything between"
+    }
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/building-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/arrival.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/bayfront-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/residence-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/great-room.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/primary-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/primary-bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/pool-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/library-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/lobby-salon.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/sky-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/screening-room.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/pool-lounge-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/north-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/great-room-panorama.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/soaking-tub.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/powder-room.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/view-southeast-sunset.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/view-northeast.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/view-south.webp",
+    "https://frasermiami.s3.amazonaws.com/edition-residences-edgewater/view-northwest.webp"
+  ],
+  "interiorDesigner": "Studio Munge (Alessandro Munge)",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "800 ft",
+        "label": "Of Biscayne Bay frontage",
+        "note": "A 3.5-acre bayfront parcel assembled by buying out an entire 1960s condominium, the kind of waterfront site Edgewater no longer produces"
+      },
+      {
+        "value": "First",
+        "label": "Standalone EDITION residences",
+        "note": "EDITION has operated hotels since 2008 across London, Tokyo, New York, Madrid, Dubai and Miami Beach, but has never built a residence-only building until this one"
+      },
+      {
+        "value": "$3.2M",
+        "label": "Current price list opens at",
+        "note": "2 bed / 2.5 bath plus den, 2,315 SF in the Signature collection. Published prices run to $6.92M for the 3,760 SF four-bedroom; the three tri-level penthouses are unpriced"
+      },
+      {
+        "value": "185",
+        "label": "Residences over 55 stories",
+        "note": "A 649-foot glass tower, the first of three planned for the site, with 45,000+ SF of amenities operated by EDITION Hotels"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Site",
+        "pillColor": "gold",
+        "title": "Bayfront land Edgewater cannot replace",
+        "body": "Two Roads paid roughly $150 million in 2022 for the majority of a 3.5-acre bayfront condominium in order to assemble this parcel. Almost no undeveloped waterfront land remains in the neighbourhood."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "EDITION's first residence-only building",
+        "body": "Ian Schrager and Marriott launched EDITION in 2008 and have never delivered a standalone residential product under it. There is no comparable EDITION condominium anywhere to price against."
+      },
+      {
+        "pill": "Status",
+        "pillColor": "gray",
+        "title": "Four-year site buyout closed and recorded",
+        "body": "Two Roads recorded the final $46.19 million deed on September 8, 2026, closing a four-year buyout of the 1960s condominium that stood here. Demolition follows and the developer plans to reopen the sales gallery in Q4 2026."
+      },
+      {
+        "pill": "Masterplan",
+        "pillColor": "gray",
+        "title": "First of three towers on the parcel",
+        "body": "Later phases will price against this building's delivery rather than alongside it. First-phase buyers hold the earliest basis on the assemblage."
+      },
+      {
+        "pill": "Product",
+        "pillColor": "gray",
+        "title": "No small units in the stack",
+        "body": "The smallest plan is a 1,919 SF one-bedroom-plus-den and the largest a 3,760 SF four-bedroom. Every residence enters through a private foyer off a semi-private elevator."
+      }
+    ],
+    "thesis": "The case here rests on two things that are hard to reproduce. The first is the land: a 3.5-acre bayfront parcel with 800 linear feet of frontage, assembled at roughly $150 million by buying out an entire 1960s condominium, in a neighbourhood that has essentially run out of undeveloped waterfront. That cost is now fixed and the site is clear to move. The second is the brand: EDITION has run hotels since 2008 but has never built a residence-only building, which means this product has no direct comparable and will set its own pricing precedent rather than inherit one. The published list opens at $3.2M for a 2,315 SF Signature residence, or roughly $1,380 per square foot, which is below where branded bayfront product in the wider Miami market has been clearing. The offsetting consideration is time: vertical construction has not started, so a buyer here is underwriting a 2029-or-later delivery and should read the contract's completion and outside-date language closely before signing.",
+    "footnote": "185 residences · 55 stories / 649 ft · Interior 1,919–3,760 SF · Published prices $3.2M–$6.92M (launch pricing opened at $1.7M in 2022) · Delivery estimated 2029 · Developer: Two Roads Development · Architecture: Arquitectonica · Interiors: Studio Munge · Amenities and services operated by EDITION Hotels · Site financing: Bank OZK mortgage increased to $151.86M (Sep 2026) · HOA and deposit schedule not published"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "800 ft",
+        "label": "Of Biscayne Bay frontage",
+        "note": "A 3.5-acre bayfront parcel assembled by buying out an entire 1960s condominium, the kind of waterfront site Edgewater no longer produces"
+      },
+      {
+        "value": "First",
+        "label": "Standalone EDITION residences",
+        "note": "EDITION has operated hotels since 2008 across London, Tokyo, New York, Madrid, Dubai and Miami Beach, but has never built a residence-only building until this one"
+      },
+      {
+        "value": "$3.2M",
+        "label": "Current price list opens at",
+        "note": "2 bed / 2.5 bath plus den, 2,315 SF in the Signature collection. Published prices run to $6.92M for the 3,760 SF four-bedroom; the three tri-level penthouses are unpriced"
+      },
+      {
+        "value": "185",
+        "label": "Residences over 55 stories",
+        "note": "A 649-foot glass tower, the first of three planned for the site, with 45,000+ SF of amenities operated by EDITION Hotels"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Site",
+        "pillColor": "gold",
+        "title": "Bayfront land Edgewater cannot replace",
+        "body": "Two Roads paid roughly $150 million in 2022 for the majority of a 3.5-acre bayfront condominium in order to assemble this parcel. Almost no undeveloped waterfront land remains in the neighbourhood."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "EDITION's first residence-only building",
+        "body": "Ian Schrager and Marriott launched EDITION in 2008 and have never delivered a standalone residential product under it. There is no comparable EDITION condominium anywhere to price against."
+      },
+      {
+        "pill": "Status",
+        "pillColor": "gray",
+        "title": "Four-year site buyout closed and recorded",
+        "body": "Two Roads recorded the final $46.19 million deed on September 8, 2026, closing a four-year buyout of the 1960s condominium that stood here. Demolition follows and the developer plans to reopen the sales gallery in Q4 2026."
+      },
+      {
+        "pill": "Masterplan",
+        "pillColor": "gray",
+        "title": "First of three towers on the parcel",
+        "body": "Later phases will price against this building's delivery rather than alongside it. First-phase buyers hold the earliest basis on the assemblage."
+      },
+      {
+        "pill": "Product",
+        "pillColor": "gray",
+        "title": "No small units in the stack",
+        "body": "The smallest plan is a 1,919 SF one-bedroom-plus-den and the largest a 3,760 SF four-bedroom. Every residence enters through a private foyer off a semi-private elevator."
+      }
+    ],
+    "thesis": "The case here rests on two things that are hard to reproduce. The first is the land: a 3.5-acre bayfront parcel with 800 linear feet of frontage, assembled at roughly $150 million by buying out an entire 1960s condominium, in a neighbourhood that has essentially run out of undeveloped waterfront. That cost is now fixed and the site is clear to move. The second is the brand: EDITION has run hotels since 2008 but has never built a residence-only building, which means this product has no direct comparable and will set its own pricing precedent rather than inherit one. The published list opens at $3.2M for a 2,315 SF Signature residence, or roughly $1,380 per square foot, which is below where branded bayfront product in the wider Miami market has been clearing. The offsetting consideration is time: vertical construction has not started, so a buyer here is underwriting a 2029-or-later delivery and should read the contract's completion and outside-date language closely before signing.",
+    "footnote": "185 residences · 55 stories / 649 ft · Interior 1,919–3,760 SF · Published prices $3.2M–$6.92M (launch pricing opened at $1.7M in 2022) · Delivery estimated 2029 · Developer: Two Roads Development · Architecture: Arquitectonica · Interiors: Studio Munge · Amenities and services operated by EDITION Hotels · Site financing: Bank OZK mortgage increased to $151.86M (Sep 2026) · HOA and deposit schedule not published"
+  },
+  "investmentThesis": "<p>Two Roads assembled this site by buying out a 1960s bayfront condominium (roughly $150 million for the majority of Biscayne 21's units in 2022, with the final eight units bought out for $46.19 million in deeds recorded September 2026), which is how a 3.5-acre, 800-linear-foot parcel on Biscayne Bay came available at all. Very little unbuilt waterfront land remains in Edgewater, and the assemblage cost is now fixed rather than open-ended. The tower is the first of three planned for the site, meaning the first building's buyers own into a masterplan whose later phases price against their delivery, not alongside it.</p><p>The brand is the second variable. EDITION operates roughly a dozen hotels globally (London, Tokyo, New York, Madrid, Dubai, Shanghai, Miami Beach) but has never before built a standalone residential product, so there is no comparable EDITION-serviced condominium anywhere to price against. Amenities and resident services are run by EDITION Hotels under Marriott International, which also extends brand privileges across the wider portfolio.</p><p>With the settlement fully funded and the litigation that had clouded the site now resolved, Two Roads has signaled it is moving to full execution. “This outcome reflects the strength of our platform and positions us to focus fully on executing our growth pipeline and creating long-term value in the markets we serve. This has been a long and arduous process, and we’re grateful to our team and partners who remained committed throughout. We’re excited to now turn our full attention to realizing the extraordinary potential of this irreplaceable waterfront site,” said Taylor Collins, Co-Founder & Managing Principal of Two Roads Development.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.7975549,
+  "lng": -80.1864168,
+  "locationScore": 78,
+  "maxBath": 4.5,
+  "maxBed": 4,
+  "maxPrice": 6920000,
+  "maxSqft": 3760,
+  "minBath": 2.5,
+  "minBed": 1,
+  "minPrice": 1700000,
+  "minSqft": 1919,
+  "name": "EDITION Residences Edgewater",
+  "neighborhood": "Edgewater",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=25.7975549%2C-80.1864168"
+  },
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/edition-residences-edgewater.jpg",
+  "parking": "Valet with EV charging; spot count TBD",
+  "priceFrom": "From $1,700,000",
+  "priceFromDisplay": "From $1.7M+",
+  "privacyScore": 68,
+  "rentalPolicy": "Not published",
+  "residenceContent": "<p class=\"prop-residence-intro\">Residences are arranged in three collections: Bayfront on floors 3–7, Signature on 10–40, and Sky on 41–54, with interiors by Studio Munge. Plans run from a 1,919-square-foot one-bedroom-plus-den to a 3,760-square-foot four-bedroom, every one of them delivered through a private foyer reached by semi-private elevator. Ceilings rise from 10 feet in the Bayfront and Signature collections to 14 feet in the Sky residences, behind floor-to-ceiling glass and terraces up to roughly 10 feet deep. Kitchens are custom Italkraft millwork in a European cabinetry program with fully integrated Sub-Zero and Wolf appliances; primary baths are finished in honed natural dolomite with freestanding tubs. Every residence holds a walk-in closet and a dedicated laundry room. Three tri-level penthouses crown the tower with private rooftop pools and gardens.</p>",
+  "salesTeam": "Two Roads Development",
+  "seoKeywords": [
+    "EDITION Residences Edgewater",
+    "EDITION Residences Miami",
+    "2121 N Bayshore Dr",
+    "Two Roads Development Miami",
+    "Edgewater pre-construction condos",
+    "Arquitectonica Edgewater",
+    "Studio Munge Miami",
+    "Biscayne 21 redevelopment",
+    "Miami branded residences",
+    "Edgewater waterfront condos",
+    "Marriott EDITION residences",
+    "Miami bayfront new construction"
+  ],
+  "slug": "edition-residences-edgewater",
+  "stage": "preconstruction",
+  "stageLabel": "Site Clearing 2026 · Delivery 2029",
+  "statusRemark": "Two Roads completed its buyout of the site on September 8, 2026, recording a $46.19 million deed for the last eight units and ending four years of litigation. Demolition of the existing structure follows; the developer plans to reopen the sales gallery in Q4 2026.",
+  "stories": 55,
+  "tagline": "The EDITION brand's first standalone residences: 185 serviced homes on 800 linear feet of Biscayne Bay frontage in Edgewater.",
+  "units": 185,
+  "verified": {
+    "minPrice": {
+      "date": "2026-08-31",
+      "basis": "launch",
+      "source": "The Real Deal, 'Two Roads settles with holdout condo owners' (Aug 31, 2026) and the May 14, 2026 predecessor article, both stating the 55-story, 185-unit tower launched with prices starting at $1.7 million. Per the site's standing rule, priceFrom/minPrice reflect the ORIGINAL LAUNCH price, not the current cheapest available tier — the current developer price list opens at $3.2M (2BR+den, 2,315 SF), which is carried in floorPlans and in the investmentIntelligence stat, not in minPrice."
+    },
+    "maxPrice": {
+      "date": "2026-08-01",
+      "source": "Developer price list ('Price from' sheet) — highest published line item is 4 Bed / 4.5 Bath, 3,760 SF at $6,920,000. The three tri-level penthouses are unpriced and are NOT reflected in maxPrice."
+    },
+    "completion": {
+      "date": "2026-08-31",
+      "source": "Editorial estimate, not a developer figure. The Real Deal (Aug 31, 2026): demolition of the existing building 'could begin in a few weeks' as of that date, i.e. vertical construction on a 55-story tower had not started. Purchase contracts written in 2023 named summer 2028 and MillionLuxury still publishes Q2 2028; both are superseded. 2029 matches what miamiresidential.com now publishes. Re-verify once a groundbreaking date is announced."
+    },
+    "units": {
+      "date": "2026-08-31",
+      "source": "The Real Deal (Aug 31, 2026), Two Roads Development project page, and the developer fact sheet — all agree on 185 residences in a 55-story, 649-ft tower."
+    },
+    "floorPlans": {
+      "date": "2026-08-01",
+      "source": "Developer floor plan set ('EDITION Edgewater — Complete Floor Plans') for the plan roster, collections, floor bands and interior/exterior SF; developer price list for the four published prices. Interior SF is the basis for minSqft/maxSqft (1,919–3,760). Note the marketing range quoted on the developer site and aggregators (1,952–3,864 SF) does not reconcile to the plan set on either end — the dated plan set governs."
+    },
+    "stage": {
+      "date": "2026-09-08",
+      "source": "Traded Miami (Sep 8, 2026), reading the recorded instruments: TRD Biscayne LLC, a Two Roads Development affiliate, paid $46,190,000 for the remaining eight Biscayne 21 units ($5,773,750 per unit), completing the buyout, and increased its Bank OZK mortgage to $151,860,000. Supersedes the Aug 31, 2026 'pending court approval' status. Do NOT reconcile $46.19M against the '~$50 million' total settlement figure in The Real Deal / Commercial Observer / Bisnow — the deeds cover the eight units, the press figure covers the whole settlement. Do NOT take the unit count from this source: the same post says '182-unit', which is wrong (see verified.units — 185 is confirmed by Florida YIMBY, Commercial Observer, The Real Deal and the developer fact sheet)."
+    }
+  },
+  "wellnessScore": 80
+}

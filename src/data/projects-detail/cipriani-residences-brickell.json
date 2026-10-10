@@ -1,0 +1,343 @@
+{
+  "address": "1420 South Miami Avenue, Miami, FL 33131",
+  "amenities": [
+    {
+      "icon": "🍽",
+      "label": "Cipriani Dining",
+      "sub": "In-home & poolside"
+    },
+    {
+      "icon": "🏊",
+      "label": "Dual Pools",
+      "sub": "Resort deck"
+    },
+    {
+      "icon": "💆",
+      "label": "Holistic Spa",
+      "sub": "Sauna & treatments"
+    },
+    {
+      "icon": "🏋",
+      "label": "Four-Level Wellness",
+      "sub": "Skyline views"
+    },
+    {
+      "icon": "🍸",
+      "label": "37th-Floor Speakeasy",
+      "sub": "Sky bar lounge"
+    },
+    {
+      "icon": "🛎",
+      "label": "Cipriani Service",
+      "sub": "24-hour catering"
+    }
+  ],
+  "amenitiesDescription": "<p>Cipriani Residences carries the full weight of the brand's service tradition across every amenity level. The elevated resort deck features two swimming pools, an outdoor spa, private cabanas, and a landscaped sun terrace, all with poolside food and beverage by Cipriani. Private dining rooms are reservable on demand.</p><p>A four-level wellness center and lounge overlooks the Brickell skyline, with a spa with sauna and treatment rooms, a fitness center, pickleball court, and golf simulator. Social amenities include a residents' lounge, library, screening room with premium AV, children's playroom, private salon, and a pet-friendly dog park.</p><p>Services include a dedicated Director of Residences, Cipriani-trained concierge, 24-hour valet, in-residence spa treatments, personal training, pet grooming, and away-from-home maintenance.</p>",
+  "architect": "Arquitectonica",
+  "completion": "July 2027",
+  "densityScore": 90,
+  "description": "Developed by Mast Capital with hospitality by Cipriani. 80 stories and 950 feet, currently the tallest residential tower south of New York. Topped off July 2026. 397 residences carrying four generations of Italian service, from Harry's Bar in Venice to Brickell. Over 75 percent sold.",
+  "developer": "Mast Capital",
+  "factSheetURL": "https://frasermiami.s3.amazonaws.com/ciprianiresidences/factsheet.pdf",
+  "featureVideo": {
+    "src": "/ciprianiresidences/cipriani-top-off.mp4",
+    "poster": "/ciprianiresidences/cipriani-top-off-poster.webp",
+    "label": "Cipriani Residences Brickell",
+    "tagline": "Topped off at 950 feet in July 2026. Currently the tallest residential tower south of New York.",
+    "uploadDate": "2026-07-17",
+    "duration": "PT43S",
+    "mobileObjectFit": "contain"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlanPdf": "https://frasermiami.s3.amazonaws.com/ciprianiresidences/Cipriani-Residences-Complete-Floor-Plans.pdf",
+  "floorPlans": [
+    {
+      "type": "One Bedroom + Den",
+      "floors": "Floors 8–61",
+      "beds": "1 + Den",
+      "baths": "1–2",
+      "sqft": "1,070–1,454 SF Interior",
+      "addlRooms": "172–757 SF Exterior",
+      "status": "From $1,859,900"
+    },
+    {
+      "type": "Two Bedroom + Den",
+      "floors": "Floors 19–61",
+      "beds": "2 + Den",
+      "baths": "2.5–3",
+      "sqft": "1,385–2,171 SF Interior",
+      "addlRooms": "280–834 SF Exterior",
+      "status": "From $2,999,900"
+    },
+    {
+      "type": "Three Bedroom",
+      "floors": "Floors 8–61",
+      "beds": 3,
+      "baths": "2–3.5",
+      "sqft": "1,587–2,056 SF Interior",
+      "addlRooms": "526–657 SF Exterior",
+      "status": "From $3,689,900"
+    },
+    {
+      "type": "Canaletto Two Bedroom + Den",
+      "floors": "Floors 62–78",
+      "beds": "2 + Den",
+      "baths": 3,
+      "sqft": "2,001 SF Interior",
+      "addlRooms": "280 SF Exterior",
+      "status": "From $4,400,900"
+    },
+    {
+      "type": "Canaletto Four Bedroom",
+      "floors": "Floors 62–78",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "3,433–3,436 SF Interior",
+      "addlRooms": "1,112–1,558 SF Exterior",
+      "status": "From $7,191,900"
+    },
+    {
+      "type": "Penthouse Collection",
+      "floors": "Floors 79–82",
+      "beds": "3–5",
+      "baths": "3.5–6.5",
+      "sqft": "3,386–6,093 SF Interior",
+      "addlRooms": "1,373–4,349 SF Exterior",
+      "status": "Inquire"
+    }
+  ],
+  "height": "80 Stories (950 ft)",
+  "hoa": "$1.60/sf",
+  "id": 15,
+  "img": "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/entry.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/street-view.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/dining.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/living.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/rooftop.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/spa-terrace.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/gym.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/penthouse.webp",
+    "https://frasermiami.s3.amazonaws.com/ciprianiresidences/penthouse-dusk.webp"
+  ],
+  "interiorDesigner": "1508 London",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Mast Capital with the Cipriani brand, at a competitive entry into South Brickell ultra-luxury"
+      },
+      {
+        "value": "$1,575",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,500/sqft top-end Brickell resale avg; strong relative value for a branded 80-story tower"
+      },
+      {
+        "value": "75%+ sold",
+        "label": "Absorption to date",
+        "note": "Remaining inventory concentrated in the upper floors and the Canaletto Collection"
+      },
+      {
+        "value": "397 residences",
+        "label": "Total units across 80 stories",
+        "note": "Scale supports a 4-level wellness center, two pools, and a full Cipriani dining and catering program"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand legacy",
+        "pillColor": "gold",
+        "title": "First ground-up Cipriani tower in the Americas",
+        "body": "Since Harry's Bar opened in Venice in 1931, Cipriani has built a global hospitality empire from New York to Hong Kong. This is its first ground-up residential tower in the Americas, with staff trained to Cipriani service standards."
+      },
+      {
+        "pill": "Residential only",
+        "pillColor": "gold",
+        "title": "No hotel component, pure residential ownership",
+        "body": "Unlike hotel-condo hybrids, Cipriani Brickell is 100 percent residential with no transient hotel operations. Residents get the full Cipriani service standard, including 24-hour in-home dining and concierge, without guest traffic. That supports stronger governance, privacy, and long-term value."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "Mast Capital, developer of The Perigon Miami Beach",
+        "body": "Mast Capital developed The Perigon (OMA/Rem Koolhaas), which secured a $390M construction loan and absorbed at $2,800+/sqft. The same execution discipline carries to a more accessible price point in Brickell's most residential corridor."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "South Brickell, more residential and less transient than the core",
+        "body": "1420 South Miami Avenue sits at the quieter southern end of Brickell, a block from the financial core but outside the high-traffic hotel and retail zone. Higher elevation than most Miami lots."
+      }
+    ],
+    "thesis": "At roughly $1,575 per square foot, Cipriani Residences is among the most competitively priced hospitality-branded towers in Brickell, and one of the few where the Cipriani service standard operates inside a 100 percent residential building with no hotel traffic. Mast Capital's track record at The Perigon, where a $390M construction loan and strong absorption preceded delivery, provides meaningful execution assurance. The tower topped off at 950 feet in July 2026, with more than 75 percent sold and delivery in July 2027; remaining inventory sits mostly in the upper floors and the Canaletto Collection. The South Brickell corridor is quieter and more residential than the core, a structural advantage for buyers who want proximity to the financial district without its hotel-zone density.",
+    "footnote": "HOA: ~$1.60/sq ft · Rental policy: Min 30-day, 2x per year · Delivery: July 2027 · Height: 950 ft (topped off July 2026) · Developer: Mast Capital · Architect: Arquitectonica · Interiors: 1508 London"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Mast Capital with the Cipriani brand, at a competitive entry into South Brickell ultra-luxury"
+      },
+      {
+        "value": "$1,575",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,500/sqft top-end Brickell resale avg; strong relative value for a branded 80-story tower"
+      },
+      {
+        "value": "75%+ sold",
+        "label": "Absorption to date",
+        "note": "Remaining inventory concentrated in the upper floors and the Canaletto Collection"
+      },
+      {
+        "value": "397 residences",
+        "label": "Total units across 80 stories",
+        "note": "Scale supports a 4-level wellness center, two pools, and a full Cipriani dining and catering program"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand legacy",
+        "pillColor": "gold",
+        "title": "First ground-up Cipriani tower in the Americas",
+        "body": "Since Harry's Bar opened in Venice in 1931, Cipriani has built a global hospitality empire from New York to Hong Kong. This is its first ground-up residential tower in the Americas, with staff trained to Cipriani service standards."
+      },
+      {
+        "pill": "Residential only",
+        "pillColor": "gold",
+        "title": "No hotel component, pure residential ownership",
+        "body": "Unlike hotel-condo hybrids, Cipriani Brickell is 100 percent residential with no transient hotel operations. Residents get the full Cipriani service standard, including 24-hour in-home dining and concierge, without guest traffic. That supports stronger governance, privacy, and long-term value."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "Mast Capital, developer of The Perigon Miami Beach",
+        "body": "Mast Capital developed The Perigon (OMA/Rem Koolhaas), which secured a $390M construction loan and absorbed at $2,800+/sqft. The same execution discipline carries to a more accessible price point in Brickell's most residential corridor."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "South Brickell, more residential and less transient than the core",
+        "body": "1420 South Miami Avenue sits at the quieter southern end of Brickell, a block from the financial core but outside the high-traffic hotel and retail zone. Higher elevation than most Miami lots."
+      }
+    ],
+    "thesis": "At roughly $1,575 per square foot, Cipriani Residences is among the most competitively priced hospitality-branded towers in Brickell, and one of the few where the Cipriani service standard operates inside a 100 percent residential building with no hotel traffic. Mast Capital's track record at The Perigon, where a $390M construction loan and strong absorption preceded delivery, provides meaningful execution assurance. The tower topped off at 950 feet in July 2026, with more than 75 percent sold and delivery in July 2027; remaining inventory sits mostly in the upper floors and the Canaletto Collection. The South Brickell corridor is quieter and more residential than the core, a structural advantage for buyers who want proximity to the financial district without its hotel-zone density.",
+    "footnote": "HOA: ~$1.60/sq ft · Rental policy: Min 30-day, 2x per year · Delivery: July 2027 · Height: 950 ft (topped off July 2026) · Developer: Mast Capital · Architect: Arquitectonica · Interiors: 1508 London"
+  },
+  "investmentThesis": "<p>Developed by Mast Capital with Cipriani as hospitality partner, this is the brand's first ground-up residential tower in the Americas. The tower topped off at 950 feet in July 2026, currently the tallest residential building south of New York, surpassing Panorama Tower, with delivery scheduled for July 2027 and more than 75 percent of residences already sold. Remaining inventory is concentrated in the upper floors and the Canaletto Collection. At the southern end of Brickell, the address sits a block from the financial corridor without the hotel and retail traffic of the core, a quieter and more residential position in the submarket.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.76014,
+  "lng": -80.1939079,
+  "maxBed": 5,
+  "maxPrice": 20000000,
+  "maxSqft": 6093,
+  "minBed": 1,
+  "minPrice": 2150000,
+  "minSqft": 1070,
+  "name": "Cipriani Residences Brickell",
+  "neighborhood": "Brickell",
+  "neighborhoodMap": {
+    "pinUrl": "https://maps.app.goo.gl/MCzDJYstkBaHcgq97"
+  },
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/cipriani-residences-brickell.jpg",
+  "priceFrom": "$2.15M+",
+  "privacyScore": 45,
+  "projectedAppreciation": 30,
+  "rentalPolicy": "2 times per year, with a minimum lease term of 30 days",
+  "residenceContent": "<p class=\"prop-residence-intro\">A curved, cascading glass tower with an organic facade and nautical detailing drawn from the Italian Riviera. Residences range from one to five bedrooms plus Canaletto penthouse configurations, with 10-foot ceilings, floor-to-ceiling glass, expansive flow-through terraces, Italian stone flooring, custom millwork, and Sub-Zero and Wolf appliances. In-home dining and 24-hour catering by Cipriani are reserved for residents, the same service standard that runs the family's restaurants worldwide, delivered to your door on demand. The Canaletto Collection occupies the top 18 floors: 74 ultra-luxury homes, including six penthouses, with expanded floor plates, elevated finishes, and a private speakeasy.</p>",
+  "salesTeam": "Fortune Development Sales",
+  "siteVisit": {
+    "eyebrow": "Upper penthouse floors",
+    "eyebrowMeta": "July 2026 site visit",
+    "title": "Inside the Canaletto Floors",
+    "intro": "Unfinished Canaletto floors. The views as they stand today.",
+    "credit": "Photographed on-site",
+    "date": "July 2026",
+    "basePath": "https://frasermiami.s3.amazonaws.com/ciprianiresidences/site-visit-2026-07",
+    "hero": {
+      "type": "image",
+      "src": "photos/img_0239.jpg",
+      "caption": "North over Brickell to downtown (~level 80, the tower's crown)",
+      "alt": "View north over the Brickell and downtown Miami skyline from the Canaletto penthouse floors"
+    },
+    "media": [
+      {
+        "type": "image",
+        "src": "photos/img_0238.jpg",
+        "thumb": "thumbs/img_0238.jpg",
+        "caption": "Straight up the tower from the Canaletto floors",
+        "alt": "Looking straight up the Cipriani Residences tower facade under construction"
+      },
+      {
+        "type": "video",
+        "src": "videos/clip-skyline.mp4",
+        "poster": "posters/clip-skyline.jpg",
+        "duration": "0:09",
+        "caption": "Skyline pan"
+      },
+      {
+        "type": "image",
+        "src": "photos/img_0247.jpg",
+        "thumb": "thumbs/img_0247.jpg",
+        "caption": "East across Biscayne Bay",
+        "alt": "View east across Biscayne Bay toward Key Biscayne from the penthouse floors"
+      },
+      {
+        "type": "image",
+        "src": "photos/img_0242.jpg",
+        "thumb": "thumbs/img_0242.jpg",
+        "caption": "West over the Miami neighborhoods",
+        "alt": "Aerial view west over Miami neighborhoods from the Canaletto floors"
+      },
+      {
+        "type": "video",
+        "src": "videos/clip-0244.mp4",
+        "poster": "posters/clip-0244.jpg",
+        "duration": "0:09",
+        "caption": "Across the bay"
+      },
+      {
+        "type": "image",
+        "src": "photos/img_0245.jpg",
+        "thumb": "thumbs/img_0245.jpg",
+        "caption": "Cranes over the downtown cluster",
+        "alt": "Construction cranes with the downtown Miami skyline beyond"
+      },
+      {
+        "type": "image",
+        "src": "photos/img_0251.jpg",
+        "thumb": "thumbs/img_0251.jpg",
+        "caption": "South down Biscayne Bay",
+        "alt": "Open water view south down Biscayne Bay from the penthouse floors"
+      },
+      {
+        "type": "video",
+        "src": "videos/clip-0241.mp4",
+        "poster": "posters/clip-0241.jpg",
+        "duration": "0:17",
+        "caption": "Crane pan across the site"
+      },
+      {
+        "type": "image",
+        "src": "photos/img_0252.jpg",
+        "thumb": "thumbs/img_0252.jpg",
+        "caption": "Structure: the exposed Canaletto slab",
+        "alt": "Exposed concrete slab and structure on the unfinished Canaletto floors"
+      }
+    ]
+  },
+  "slug": "cipriani-residences-brickell",
+  "stage": "topped_off",
+  "stageLabel": "Topped Off · 950 ft",
+  "statusRemark": "TOPPED OFF AT 950 FT · JULY 2026",
+  "units": 397,
+  "wellnessScore": 75
+}

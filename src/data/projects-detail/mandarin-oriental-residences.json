@@ -1,0 +1,467 @@
+{
+  "address": "750 Claughton Island Drive, Miami, FL 33131",
+  "amenities": [
+    {
+      "icon": "🧖",
+      "label": "MO Spa",
+      "sub": "Signature treatments"
+    },
+    {
+      "icon": "🏊",
+      "label": "Ocean & Lagoon Pools",
+      "sub": "Cabanas, private villas"
+    },
+    {
+      "icon": "🍽",
+      "label": "MO Restaurants",
+      "sub": "Fine dining"
+    },
+    {
+      "icon": "⛵",
+      "label": "Water Taxi",
+      "sub": "Private to mainland"
+    },
+    {
+      "icon": "🛎",
+      "label": "MO Concierge",
+      "sub": "Five-star service"
+    },
+    {
+      "icon": "🏋",
+      "label": "Technogym & Wellness",
+      "sub": "Fitness atelier"
+    }
+  ],
+  "amenitiesDescription": "<p>The Residences at Mandarin Oriental, Miami sits atop a 100,000 SF landscaped resort podium, among the most expansive of any Brickell Key new development. South Tower residents access an Ocean Pool with five cabanas, a Lagoon Pool with six private villas (kitchenettes, en-suite baths, sun decks), immersive forest walk, rotating art walk, indoor golf simulator, private screening lounge, game room, kids' club, outdoor Dining Pavilion with grill, Tea Pavilion, glass-encased private dining room with chef's kitchen and wine cellar, and a full business suite. North Tower residents add a 19th-level Residents Lounge with chef's kitchen and private dining, plus complete access to Mandarin Oriental's flagship hotel amenities: signature spa with hammam, saunas, vitality and lap pools, wellness lawn, Technogym fitness atelier, three restaurants, and children's splash pad. All residents receive dedicated concierge service and preferred status across Mandarin Oriental's global hotel portfolio.</p>",
+  "architect": "KPF (Kohn Pedersen Fox)",
+  "architectQuote": "Brickell Key is unlike any site in Miami: entirely surrounded by water. Every decision we made was in service of that extraordinary fact.",
+  "architectQuoteBy": "KPF",
+  "badge": "Broke Ground · Record $50M PHs",
+  "completion": "2030",
+  "densityScore": 68,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "90 Days After Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing (2030)"
+    }
+  ],
+  "description": "Mandarin Oriental's five-star service returns to Brickell Key. Two KPF towers, 326 residences. Swire broke ground October 2026. Record penthouses at ~$50M each. Over $1.7B sold before groundbreaking. Completion 2030.",
+  "developer": "Swire Properties",
+  "dossierImageIndices": {
+    "interstitials": [
+      14,
+      22,
+      12,
+      18
+    ]
+  },
+  "editorialLine": "The island. The legend. Reimagined.",
+  "floorPlans": [
+    {
+      "tower": "South Tower",
+      "type": "Duplex Penthouse",
+      "addlRooms": "66th Floor · Private Lap Pool",
+      "beds": 5,
+      "baths": 5,
+      "sqft": "~8,000 sq ft",
+      "status": "Sold · $50M Record",
+      "priceLabel": "Sold",
+      "priceNote": "Under Contract at $49.9M (March 2026)",
+      "sold": true
+    },
+    {
+      "tower": "South Tower",
+      "type": "2 Bedroom + Library",
+      "beds": "2 + Library",
+      "baths": 2,
+      "sqft": "2,700 sq ft",
+      "status": "From $7.4M"
+    },
+    {
+      "tower": "South Tower",
+      "type": "3 Bedroom",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "2,650–3,900 sq ft",
+      "status": "From $7.6M"
+    },
+    {
+      "tower": "South Tower",
+      "type": "4 Bedroom",
+      "beds": 4,
+      "baths": 4,
+      "sqft": "4,300–4,600 sq ft",
+      "status": "From $14.5M"
+    },
+    {
+      "tower": "South Tower",
+      "type": "5 Bedroom",
+      "beds": 5,
+      "baths": 5,
+      "sqft": "5,700–5,800 sq ft",
+      "status": "From $19.1M"
+    },
+    {
+      "tower": "North Tower",
+      "type": "2 Bedroom",
+      "floors": "Private Residences",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "From 1,577 sq ft",
+      "status": "From $4.1M"
+    },
+    {
+      "tower": "North Tower",
+      "type": "3 Bedroom",
+      "floors": "Private Residences",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "From 2,459 sq ft",
+      "status": "From $5.9M"
+    },
+    {
+      "tower": "North Tower",
+      "type": "4 Bedroom",
+      "floors": "Private Residences",
+      "beds": 4,
+      "baths": 4,
+      "sqft": "From 2,693 sq ft",
+      "status": "From $7M"
+    },
+    {
+      "tower": "North Tower",
+      "type": "Hotel Collection",
+      "floors": "Rental Program",
+      "beds": 3,
+      "baths": 3,
+      "sqft": "Varies",
+      "status": "Inquire",
+      "inquireOnly": true
+    }
+  ],
+  "floorPlansNote": [
+    {
+      "label": "South Tower",
+      "meta": "66 Stories",
+      "body": "Entirely residential. Interiors by Tristan Auer, above a 100,000 square foot resort podium."
+    },
+    {
+      "label": "North Tower",
+      "meta": "33 Stories",
+      "body": "Shared with Mandarin Oriental's new hotel. Residences by Laura Gonzalez, with hotel service, spa and restaurants at the same address."
+    }
+  ],
+  "floorPlansShowAll": true,
+  "galleryImageAlts": [
+    "The Residences at Mandarin Oriental, Miami: the South Tower rising from the southern tip of Brickell Key",
+    "South Tower crown and penthouse level at The Residences at Mandarin Oriental, Miami",
+    "Bay and skyline view from a South Tower residence terrace, The Residences at Mandarin Oriental, Miami",
+    "Terrace pool on the landscaped podium at The Residences at Mandarin Oriental, Miami",
+    "Lagoon pool with private villas on the podium at The Residences at Mandarin Oriental, Miami",
+    "Residential lobby at The Residences at Mandarin Oriental, Miami",
+    "South Tower lobby, interiors by Tristan Auer, The Residences at Mandarin Oriental, Miami",
+    "Private dining room with chef's kitchen at The Residences at Mandarin Oriental, Miami",
+    "Wellness cabana on the podium at The Residences at Mandarin Oriental, Miami",
+    "Wine room at The Residences at Mandarin Oriental, Miami",
+    "Glass-encased private dining room at The Residences at Mandarin Oriental, Miami",
+    "Pool café on the resort podium at The Residences at Mandarin Oriental, Miami",
+    "Technogym fitness atelier on the South Tower podium, The Residences at Mandarin Oriental, Miami",
+    "Primary bedroom in a South Tower residence with Biscayne Bay views, interiors by Tristan Auer",
+    "The South Tower and North Tower of The Residences at Mandarin Oriental, Miami on Brickell Key",
+    "Aerial view of the North Tower at the southern point of Brickell Key, water on three sides",
+    "North Tower porte-cochère and waterfront arrival, The Residences at Mandarin Oriental, Miami",
+    "Dedicated North Tower residents' lobby, The Residences at Mandarin Oriental, Miami",
+    "Living room in a North Tower private residence, interiors by Laura Gonzalez",
+    "Kitchen in a North Tower private residence, warm palette, interiors by Laura Gonzalez",
+    "Terrace of a North Tower private residence at dusk over Biscayne Bay and the Miami skyline",
+    "Primary bathroom in a North Tower private residence, interiors by Laura Gonzalez",
+    "Level 19 residents' lounge with chef's kitchen in the North Tower",
+    "Spa sauna overlooking the Brickell skyline at The Residences at Mandarin Oriental, Miami"
+  ],
+  "height": "66 Stories (850 ft)",
+  "heroImgPosition": "15% center",
+  "hoa": "$2.80 / sq ft",
+  "id": 5,
+  "img": "/mandarin/mandarin-oriental-hero.webp",
+  "imgCaptions": {
+    "12": {
+      "kicker": "South Tower · The Podium",
+      "line": "A 100,000-square-foot landscaped resort deck: ocean and lagoon pools, forest walk, fitness atelier."
+    },
+    "14": {
+      "kicker": "Two Towers, One Island",
+      "line": "The 66-story South Tower and the 33-story North Tower at the southern tip of Brickell Key: two separate collections, priced apart."
+    },
+    "18": {
+      "kicker": "Interiors by Laura Gonzalez",
+      "line": "North Tower residences are designed as their own collection, distinct from Tristan Auer's South Tower."
+    },
+    "22": {
+      "kicker": "North Tower · Level 19",
+      "line": "A residents-only lounge with chef's kitchen and private dining, above the hotel floors."
+    }
+  },
+  "imgs": [
+    "/mandarin/mandarin-oriental-hero.webp",
+    "/mandarin/mandarin-oriental-crown-exterior.webp",
+    "/mandarin/mandarin-oriental-balcony-view.webp",
+    "/mandarin/mandarin-oriental-terrace-pool.webp",
+    "/mandarin/mandarin-oriental-lagoon-pool.webp",
+    "/mandarin/mandarin-oriental-lobby.webp",
+    "/mandarin/south-tower-lobby.webp",
+    "/mandarin/mandarin-oriental-dining-room.webp",
+    "/mandarin/wellness-cabana.webp",
+    "/mandarin/wine-room.webp",
+    "/mandarin/private-dining.webp",
+    "/mandarin/pool-cafe.webp",
+    "/mandarin/south-tower-fitness.webp",
+    "/mandarin/south-tower-primary-bedroom.webp",
+    "/mandarin/mandarin-oriental-two-towers.webp",
+    "/mandarin/north-tower-aerial.webp",
+    "/mandarin/north-tower-arrival.webp",
+    "/mandarin/north-tower-lobby.webp",
+    "/mandarin/north-tower-living-room.webp",
+    "/mandarin/north-tower-kitchen.webp",
+    "/mandarin/north-tower-terrace.webp",
+    "/mandarin/north-tower-primary-bath.webp",
+    "/mandarin/north-tower-residents-lounge.webp",
+    "/mandarin/north-tower-spa-sauna.webp"
+  ],
+  "interiorDesigner": "Tristan Auer (South Tower) / Laura Gonzalez (North Tower)",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+45%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Mandarin Oriental NYC and comparable island-positioned branded builds"
+      },
+      {
+        "value": "$2,900",
+        "label": "Avg asking / sq ft",
+        "note": "South Tower runs $2,700–$3,400/sqft on the current price sheet; vs. $1,500/sqft top-end Brickell Key resale avg"
+      },
+      {
+        "value": "$1.7B+",
+        "label": "Sales before groundbreaking",
+        "note": "South Tower 80% sold; North Tower 25% sold (Bloomberg / Swire Instagram Oct 2026; PROFILEmiami)"
+      },
+      {
+        "value": "326",
+        "label": "Total residences",
+        "note": "228 South Tower + 70 North private + 28 North Hotel Collection, alongside 121 hotel keys"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Permanent scarcity",
+        "pillColor": "gold",
+        "title": "Last buildable site on Brickell Key",
+        "body": "Swire Properties is delivering the final residential chapter on Brickell Key. When The Residences completes in 2030, no new tower can rise on the island."
+      },
+      {
+        "pill": "Protected views",
+        "pillColor": "gold",
+        "title": "360° unobstructed water views, locked in",
+        "body": "On Brickell Key, surrounded by Biscayne Bay, no adjacent development can ever block views. In a city where skyline changes routinely erode condo values, that permanence is a structural premium."
+      },
+      {
+        "pill": "Brand prestige",
+        "pillColor": "gold",
+        "title": "Mandarin Oriental: globally top-rated hotel brand",
+        "body": "Mandarin Oriental ranks among the world's most prestigious hotel brands. Residences tied to operating hotels have outperformed non-branded peers globally, compounded here by island scarcity."
+      },
+      {
+        "pill": "Capital stack",
+        "pillColor": "gold",
+        "title": "Self-financed. No construction lender.",
+        "body": "Swire is funding both towers from Brickell City Centre asset sales and buyer deposits. Bloomberg reported that cash and deposits, not bank construction debt, carry the build."
+      },
+      {
+        "pill": "Momentum",
+        "pillColor": "gold",
+        "title": "Broke ground October 2026",
+        "body": "Swire broke ground less than six months after the April 2026 hotel implosion. Asking prices have risen about 30% since South Tower sales opened in 2024."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gray",
+        "title": "KPF with Tristan Auer and Laura Gonzalez",
+        "body": "Kohn Pedersen Fox on the towers; Tristan Auer (South) and Laura Gonzalez (North / hotel) on interiors; SHMA on landscape. Almost all South Tower homes are corner units."
+      }
+    ],
+    "thesis": "Mandarin Oriental Residences is the most compelling combination of scarcity, brand, and protected views in the Miami market. Swire's long land tenure means pricing is below what a competitor would pay to replicate this island position today. Over $1.7B in sales before groundbreaking, including both ~$50M penthouses, and a largely domestic buyer base keep the 2030 delivery path intact while South Tower primary inventory tightens.",
+    "footnote": "HOA: ~$3.00/sq ft · Rental policy: Via Mandarin Oriental hotel program · Delivery: 2030 · Sitework underway Sep 2026 after April 2026 implosion"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+45%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Mandarin Oriental NYC and comparable island-positioned branded builds"
+      },
+      {
+        "value": "$2,900",
+        "label": "Avg asking / sq ft",
+        "note": "South Tower runs $2,700–$3,400/sqft on the current price sheet; vs. $1,500/sqft top-end Brickell Key resale avg"
+      },
+      {
+        "value": "$1.7B+",
+        "label": "Sales before groundbreaking",
+        "note": "South Tower 80% sold; North Tower 25% sold (Bloomberg / Swire Instagram Oct 2026; PROFILEmiami)"
+      },
+      {
+        "value": "326",
+        "label": "Total residences",
+        "note": "228 South Tower + 70 North private + 28 North Hotel Collection, alongside 121 hotel keys"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Permanent scarcity",
+        "pillColor": "gold",
+        "title": "Last buildable site on Brickell Key",
+        "body": "Swire Properties is delivering the final residential chapter on Brickell Key. When The Residences completes in 2030, no new tower can rise on the island."
+      },
+      {
+        "pill": "Protected views",
+        "pillColor": "gold",
+        "title": "360° unobstructed water views, locked in",
+        "body": "On Brickell Key, surrounded by Biscayne Bay, no adjacent development can ever block views. In a city where skyline changes routinely erode condo values, that permanence is a structural premium."
+      },
+      {
+        "pill": "Brand prestige",
+        "pillColor": "gold",
+        "title": "Mandarin Oriental: globally top-rated hotel brand",
+        "body": "Mandarin Oriental ranks among the world's most prestigious hotel brands. Residences tied to operating hotels have outperformed non-branded peers globally, compounded here by island scarcity."
+      },
+      {
+        "pill": "Capital stack",
+        "pillColor": "gold",
+        "title": "Self-financed. No construction lender.",
+        "body": "Swire is funding both towers from Brickell City Centre asset sales and buyer deposits. Bloomberg reported that cash and deposits, not bank construction debt, carry the build."
+      },
+      {
+        "pill": "Momentum",
+        "pillColor": "gold",
+        "title": "Broke ground October 2026",
+        "body": "Swire broke ground less than six months after the April 2026 hotel implosion. Asking prices have risen about 30% since South Tower sales opened in 2024."
+      },
+      {
+        "pill": "Architecture",
+        "pillColor": "gray",
+        "title": "KPF with Tristan Auer and Laura Gonzalez",
+        "body": "Kohn Pedersen Fox on the towers; Tristan Auer (South) and Laura Gonzalez (North / hotel) on interiors; SHMA on landscape. Almost all South Tower homes are corner units."
+      }
+    ],
+    "thesis": "Mandarin Oriental Residences is the most compelling combination of scarcity, brand, and protected views in the Miami market. Swire's long land tenure means pricing is below what a competitor would pay to replicate this island position today. Over $1.7B in sales before groundbreaking, including both ~$50M penthouses, and a largely domestic buyer base keep the 2030 delivery path intact while South Tower primary inventory tightens.",
+    "footnote": "HOA: ~$2.80–$3.00/sq ft · Rental policy: 6-month min · Delivery: 2030 · Broke ground Oct 2026 (implosion April 2026)"
+  },
+  "investmentIntelligenceFootnote": "HOA: ~$3.00/sq ft · Rental policy: Via Mandarin Oriental hotel program · Delivery: 2030 · Sitework underway Sep 2026 after April 2026 implosion",
+  "investmentThesis": "<p>Mandarin Oriental's first North American flagship in over a decade, and Swire Properties' first branded residential development globally. Total sales surpassed $1.7B before groundbreaking, with the South Tower 80% sold and the North Tower at 25%. Asking prices are up about 30% since the 2024 South Tower launch, and roughly 65% of buyers are domestic. The Wall Street Journal reported two 66th-floor duplex penthouses under contract at $49.9M each. Swire (Brickell City Centre, One Island Drive) broke ground October 2026, less than six months after the April hotel implosion, self-financing construction from City Centre asset sales and buyer deposits, with delivery targeted for 2030. The island is functionally built-out: this site replaces the only hotel parcel, and no comparable land remains.</p>",
+  "isActive": true,
+  "isFeatured": true,
+  "landscapeArchitect": "SHMA",
+  "lat": 25.7651,
+  "lng": -80.1855,
+  "maxBath": 5,
+  "maxBed": 5,
+  "maxPrice": 50000000,
+  "maxSqft": 8000,
+  "minBath": 2,
+  "minBed": 2,
+  "minPrice": 4000000,
+  "minSqft": 1577,
+  "name": "Mandarin Oriental Residences",
+  "neighborhood": "Brickell",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/mandarin-oriental-residences.jpg",
+  "percentSold": 64,
+  "priceFrom": "$4M+",
+  "pricePerSqft": 2900,
+  "privacyScore": 80,
+  "progressVideo": {
+    "url": "/mandarin/mandarin-demolition.mp4",
+    "title": "Demolition Complete",
+    "caption": "The former Mandarin Oriental Miami hotel on Brickell Key has been demolished to make way for two new KPF-designed residential towers.",
+    "date": "April 2026",
+    "credit": "Kolton Bittner"
+  },
+  "projectedAppreciation": 38,
+  "rentalPolicy": "6-month minimum",
+  "residenceContent": "<p class=\"prop-residence-intro\">Brickell Key is the only entirely water-surrounded site in Miami's urban core, and the architecture by KPF is built around that fact. The 66-story South Tower delivers 228 residences from 2 to 5 bedrooms (2,333–5,800 SF), virtually all corner units, with interiors by Parisian designer Tristan Auer. Residences feature 10-to-12-foot ceilings, floor-to-ceiling glass, dual private elevator access, full-depth terraces, Italian stone flooring, Gaggenau appliances, and integrated smart home systems. The 33-story North Tower adds 70 private residences and 28 Hotel Collection residences with interiors by Laura Gonzalez, sitting alongside Mandarin Oriental's new North American flagship hotel (121 guestrooms).</p>",
+  "salesTeam": "Fortune Development Sales",
+  "slug": "mandarin-oriental-residences",
+  "stage": "under_construction",
+  "stageLabel": "Broke Ground · Oct 2026",
+  "statusRemark": "BROKE GROUND OCT 2026 · $1.7B+ BEFORE SHOVEL",
+  "units": 326,
+  "unitsLeft": 119,
+  "unitsSouthTower": 228,
+  "verified": {
+    "units": {
+      "date": "2026-10-05",
+      "source": "PROFILEmiami groundbreaking — 228 South + 70 North private + 28 North Hotel Collection = 326 campus; 121 hotel keys separate"
+    },
+    "stage": {
+      "date": "2026-10-05",
+      "source": "PROFILEmiami — Swire Properties broke ground on Brickell Key"
+    },
+    "percentSold": {
+      "date": "2026-10-05",
+      "source": "PROFILEmiami groundbreaking — South Tower 80% sold, North Tower 25% sold (weighted campus ~64%; ~119 units left)"
+    },
+    "unitsLeft": {
+      "date": "2026-10-05",
+      "source": "Derived from PROFILEmiami tower sell-through: 228×20% + 98×75% ≈ 119 remaining"
+    },
+    "statusRemark": {
+      "date": "2026-10-05",
+      "source": "PROFILEmiami groundbreaking + Swire Properties USA Instagram / Bloomberg exclusive: $1.7B condominium sales secured before groundbreaking"
+    },
+    "height": {
+      "date": "2026-07-16",
+      "source": "City of Miami permit BD23028760001B001 / The American Developer — South Tower 850 ft, 66 stories"
+    },
+    "floorPlans": {
+      "date": "2026-09-08",
+      "source": "Developer email — Rafael Gonzalez, Sales Executive, The Residences at Mandarin Oriental Miami, 2026-09-08: South Tower 2BR+Library 2,700 SF from $7.4M / 3BR 2,650–3,900 SF from $7.6M / 4BR 4,300–4,600 SF from $14.5M / 5BR 5,700–5,800 SF from $19.1M; North Tower 2BR from 1,577 SF $4.1M / 3BR from 2,459 SF $5.9M / 4BR from 2,693 SF $7M"
+    },
+    "depositStructure": {
+      "date": "2026-09-08",
+      "source": "Developer email — Rafael Gonzalez, 2026-09-08: 10% contract, 10% at 90 days, 10% groundbreaking, 10% top off, 60% closing (2030), both towers"
+    },
+    "landscapeArchitect": {
+      "date": "2026-09-08",
+      "source": "Developer email — Rafael Gonzalez, 2026-09-08: Landscape Design SHMA"
+    },
+    "penthousePrice": {
+      "date": "2026-09-09",
+      "source": "Wall Street Journal reporting, via the record's own investmentThesis: two 66th-floor duplex penthouses under contract at $49.9M each. Not a closed sale; delivery is 2030. Corrects an unsourced 'Sold for $49.9 million in March 2026' priceNote."
+    },
+    "minPrice": {
+      "date": "2026-10-05",
+      "source": "Campus launch entry at North Tower from $4M; PROFILEmiami Oct 2026 still quotes North from $4M (South remaining from $7M).",
+      "basis": "launch"
+    },
+    "investmentThesis": {
+      "date": "2026-10-05",
+      "source": "Bloomberg (Cancel/Kaiser) via Insurance Journal + Swire Properties USA Instagram carousel: $1.7B before groundbreaking; self-financed from City Centre asset sales and buyer deposits; ~65% domestic buyers; asking prices up ~30% since 2024 South Tower launch; South 80% / North 25%"
+    }
+  },
+  "wellnessScore": 85
+}

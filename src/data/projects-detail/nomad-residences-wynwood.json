@@ -1,0 +1,506 @@
+{
+  "address": "2700 NW 2nd Avenue, Miami, FL 33127",
+  "amenities": [
+    {
+      "icon": "🍸",
+      "label": "Rooftop NoMad Restaurant and Bar",
+      "sub": "Separate elevator"
+    },
+    {
+      "icon": "🍽",
+      "label": "Casa Tua Cucina",
+      "sub": "13,000 SF, ground floor"
+    },
+    {
+      "icon": "🏊",
+      "label": "Full-service rooftop pool, sun deck and cabanas",
+      "sub": "Resort-style outdoor living"
+    },
+    {
+      "icon": "🛎",
+      "label": "24-hour concierge and building security",
+      "sub": "Round-the-clock service"
+    },
+    {
+      "icon": "🚗",
+      "label": "24/7 valet parking and in-building garage",
+      "sub": "Secure resident parking"
+    },
+    {
+      "icon": "🏛",
+      "label": "Two expansive lobbies and retail spaces",
+      "sub": "Arrival experience"
+    },
+    {
+      "icon": "🏋",
+      "label": "Top-tier fitness and wellness center",
+      "sub": "Outdoor fitness lawns"
+    },
+    {
+      "icon": "🎬",
+      "label": "Grilling area and outdoor cinema",
+      "sub": "Rooftop programming"
+    },
+    {
+      "icon": "📚",
+      "label": "Extensive library and co-working spaces",
+      "sub": "Work and lounge"
+    },
+    {
+      "icon": "🚲",
+      "label": "Bicycle storage",
+      "sub": "Secure bike room"
+    },
+    {
+      "icon": "🥂",
+      "label": "In-residence cuisine delivered on demand",
+      "sub": "Hospitality-led dining"
+    },
+    {
+      "icon": "🔐",
+      "label": "Privately controlled elevator access",
+      "sub": "Resident-keyed floors"
+    },
+    {
+      "icon": "🌡",
+      "label": "Smart climate control",
+      "sub": "In-residence systems"
+    },
+    {
+      "icon": "📦",
+      "label": "Private storage on residential floors",
+      "sub": "Additional storage"
+    },
+    {
+      "icon": "🐾",
+      "label": "Pet-friendly",
+      "sub": "Welcomes residents' pets"
+    },
+    {
+      "icon": "⚡",
+      "label": "Electric car charging stations",
+      "sub": "EV-ready garage"
+    },
+    {
+      "icon": "🎨",
+      "label": "Museum-quality curated artwork",
+      "sub": "Jorge M. Pérez Collection in common spaces"
+    },
+    {
+      "icon": "📶",
+      "label": "Ultra high-speed WiFi",
+      "sub": "Building-wide connectivity"
+    }
+  ],
+  "amenitiesDescription": "<p>The rooftop features a residents-only restaurant and bar by a curated hospitality operator, an outdoor yoga terrace, and a resort-style pool with lounge seating and cabana areas. The fitness center includes cardio, strength, and dedicated studio spaces. Curated social programming — consistent with the NoMad brand's emphasis on cultural community — includes rotating pop-ups, screenings, and events that activate the building's common spaces year-round. The amenity package appeals equally to full-time residents and owners participating in the short-term rental program.</p>",
+  "architect": "Arquitectonica",
+  "brand": "Sydell Group (NoMad)",
+  "ceilingHeight": "9+ ft",
+  "completion": "2026",
+  "densityScore": 95,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At Reservation"
+    },
+    {
+      "percentage": 10,
+      "milestone": "60 Days After Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top-Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing"
+    }
+  ],
+  "description": "NoMad's first-ever residential tower — 329 fully furnished homes in the heart of Wynwood. Delivered 2026 by Related Group, Tricap, and Sydell Group. Designed by Arquitectonica with interiors by DesignAgency.",
+  "developer": "Related Group & Tricap",
+  "floorPlans": [
+    {
+      "type": "Studio",
+      "unit": "Type A",
+      "beds": 0,
+      "baths": 1,
+      "sqft": 479,
+      "units": 70
+    },
+    {
+      "type": "Studio",
+      "unit": "Type A2",
+      "beds": 0,
+      "baths": 1,
+      "sqft": 464,
+      "units": 7
+    },
+    {
+      "type": "Studio",
+      "unit": "Type B",
+      "beds": 0,
+      "baths": 1,
+      "sqft": 624,
+      "units": 21
+    },
+    {
+      "type": "1 Bedroom",
+      "unit": "Type A",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 638,
+      "units": 147
+    },
+    {
+      "type": "1 Bedroom",
+      "unit": "Type B",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 528,
+      "units": 7
+    },
+    {
+      "type": "1 Bedroom",
+      "unit": "Type C",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 806,
+      "units": 7
+    },
+    {
+      "type": "2 Bedrooms",
+      "unit": "Type A",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 830,
+      "units": 7
+    },
+    {
+      "type": "2 Bedrooms",
+      "unit": "Type B",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 931,
+      "units": 7
+    },
+    {
+      "type": "2 Bedrooms",
+      "unit": "Type C",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 804,
+      "units": 14
+    },
+    {
+      "type": "2 Bedrooms",
+      "unit": "Type C2",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 840,
+      "units": 42
+    }
+  ],
+  "floors": 9,
+  "height": "9 Stories",
+  "heroImgPosition": "center",
+  "hoa": "$1.45 / sq ft",
+  "id": 31,
+  "img": "https://frasermiami.s3.amazonaws.com/nomad-wynwood/hero-dusk.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/hero-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/building-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/building-low.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/entrance.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/pool.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/flamingo-bar.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/garden-bar.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/parlor.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/poker-room.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/living.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/living-view.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/nomad-wynwood/gym.webp"
+  ],
+  "interiorDesigner": "DesignAgency",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "NoMad brand extends a global hospitality premium into Miami's arts district"
+      },
+      {
+        "value": "$1,200+",
+        "label": "Avg asking / sq ft",
+        "note": "Competitive entry into Wynwood luxury; comparable Wynwood luxury from ~$900/sqft resale"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Knight Frank: hospitality-branded residences outperform non-branded peers by 31% on average"
+      },
+      {
+        "value": "No restrictions",
+        "label": "Daily rental permitted — Airbnb ready",
+        "note": "One of the few branded luxury buildings in Miami with unrestricted nightly rental; in-house management team available"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "NoMad — hospitality's most design-credible boutique brand",
+        "body": "NoMad Hotels (Major Food Group) operates in NYC, LA, London, and Las Vegas. Their design ethos — art, culture, gastronomy — maps precisely onto Wynwood's identity. This is the right brand for this neighborhood in a way that a traditional hotel brand is not."
+      },
+      {
+        "pill": "Neighborhood",
+        "pillColor": "gold",
+        "title": "Wynwood — Miami's fastest-appreciating arts district",
+        "body": "Wynwood has transformed from a warehouse district into Miami's most visited arts destination. Goldman Properties, Related, and institutional capital have all entered the market. NoMad Residences is the first major branded residential tower in the neighborhood."
+      },
+      {
+        "pill": "Yield",
+        "pillColor": "green",
+        "title": "Top short-term rental yield in Miami",
+        "body": "Wynwood's Art Basel adjacency, street art culture, and restaurant/nightlife density create consistently high short-term rental demand. Miami's broader STR market has a Wynwood occupancy premium vs. comparable neighborhoods."
+      }
+    ],
+    "thesis": "NoMad Wynwood is the arts-district investment thesis: buy the neighborhood's first institutional-quality branded anchor, before the corridor completes its gentrification cycle. NYC's Meatpacking District, LA's Arts District, and London's Shoreditch all followed the same path — the first branded hospitality/residential anchor always captures the most appreciation. Wynwood is 3–5 years into that cycle. At $1,200+/sqft with 6–9% gross yield potential and NoMad's design credibility, the risk/return profile is asymmetric.",
+    "footnote": "HOA: ~$1.45/sq ft (MLS median, Aug 2026) · Rental policy: Short-term via NoMad program · Topped off; delivering Q1 2026"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "NoMad brand extends a global hospitality premium into Miami's arts district"
+      },
+      {
+        "value": "$1,200+",
+        "label": "Avg asking / sq ft",
+        "note": "Competitive entry into Wynwood luxury; comparable Wynwood luxury from ~$900/sqft resale"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Knight Frank: hospitality-branded residences outperform non-branded peers by 31% on average"
+      },
+      {
+        "value": "No restrictions",
+        "label": "Daily rental permitted — Airbnb ready",
+        "note": "One of the few branded luxury buildings in Miami with unrestricted nightly rental; in-house management team available"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "NoMad — hospitality's most design-credible boutique brand",
+        "body": "NoMad Hotels (Major Food Group) operates in NYC, LA, London, and Las Vegas. Their design ethos — art, culture, gastronomy — maps precisely onto Wynwood's identity. This is the right brand for this neighborhood in a way that a traditional hotel brand is not."
+      },
+      {
+        "pill": "Neighborhood",
+        "pillColor": "gold",
+        "title": "Wynwood — Miami's fastest-appreciating arts district",
+        "body": "Wynwood has transformed from a warehouse district into Miami's most visited arts destination. Goldman Properties, Related, and institutional capital have all entered the market. NoMad Residences is the first major branded residential tower in the neighborhood."
+      },
+      {
+        "pill": "Yield",
+        "pillColor": "green",
+        "title": "Top short-term rental yield in Miami",
+        "body": "Wynwood's Art Basel adjacency, street art culture, and restaurant/nightlife density create consistently high short-term rental demand. Miami's broader STR market has a Wynwood occupancy premium vs. comparable neighborhoods."
+      }
+    ],
+    "thesis": "NoMad Wynwood is the arts-district investment thesis: buy the neighborhood's first institutional-quality branded anchor, before the corridor completes its gentrification cycle. NYC's Meatpacking District, LA's Arts District, and London's Shoreditch all followed the same path — the first branded hospitality/residential anchor always captures the most appreciation. Wynwood is 3–5 years into that cycle. At $1,200+/sqft with 6–9% gross yield potential and NoMad's design credibility, the risk/return profile is asymmetric.",
+    "footnote": "HOA: ~$1.45/sq ft (MLS median, Aug 2026) · Rental policy: Short-term via NoMad program · Topped off; delivering Q1 2026"
+  },
+  "investmentThesis": "<p>A delivered, closing-now branded residence in one of Miami's strongest short-term rental submarkets. Of 329 residences, only 9 remain — penthouses and upper-floor units ranging from $670,900 to $1.5M. The fully furnished turnkey product combined with Wynwood's nightly rental demand makes this one of the most compelling income-generating branded residences in the Miami pipeline, and the brand's first residential extension means early-buyer pricing relative to where NoMad will reset on its next project. For buyers seeking yield-bearing branded inventory in a creative-district address, the closing window represents one of the last opportunities to acquire at developer pricing.</p>",
+  "isActive": true,
+  "isFeatured": true,
+  "landscapeArchitect": "Naturalficial",
+  "lat": 25.8023536,
+  "lifestyle": [
+    "Investment",
+    "Nightlife",
+    "Urban",
+    "Short-Term Rental"
+  ],
+  "lng": -80.1994942,
+  "maxBed": 2,
+  "maxPrice": 1509900,
+  "maxSqft": 931,
+  "minBed": 0,
+  "minPrice": 670900,
+  "minSqft": 464,
+  "name": "NoMad Residences Wynwood",
+  "neighborhood": "Wynwood",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/nomad-residences-wynwood.jpg",
+  "parking": "24/7 valet parking and in-building garage",
+  "percentSold": 97,
+  "petPolicy": "Pet-friendly",
+  "priceFrom": "From $670,900",
+  "privacyScore": 35,
+  "projectFeatures": [
+    "329 fully furnished residences curated by NoMad and DesignAgency",
+    "Flexible ownership — no rental restrictions",
+    "9-story building designed by Arquitectonica on a 1.25-acre site",
+    "9+ foot ceilings with floor-to-ceiling sliding glass doors",
+    "Private balconies in all residences",
+    "Bosch appliances with Italian-designed cabinetry and stone countertops",
+    "In-residence washer/dryer and smart climate control",
+    "Rooftop NoMad Restaurant and Bar with dedicated elevator",
+    "Casa Tua Cucina — 13,000 SF Italian eatery on the ground floor",
+    "Full-service rooftop pool, sun deck, and cabanas",
+    "Fitness and wellness center with outdoor fitness lawns",
+    "Library, co-working spaces, outdoor cinema, and grilling area",
+    "24-hour concierge, valet parking, and in-building garage",
+    "Museum-quality curated artwork from the Jorge M. Pérez Collection",
+    "EV charging stations, bicycle storage, and private residential storage",
+    "Pet-friendly"
+  ],
+  "projectedAppreciation": 30,
+  "remainingInventory": {
+    "asOf": "2026-03-27",
+    "units": [
+      {
+        "type": "Studio",
+        "unit": "PH 824",
+        "beds": 0,
+        "baths": 1,
+        "sqft": 464,
+        "price": 670900,
+        "hoa": 648,
+        "orientation": "North",
+        "floorplan": "A2"
+      },
+      {
+        "type": "Studio",
+        "unit": "PH 846",
+        "beds": 0,
+        "baths": 1,
+        "sqft": 479,
+        "price": 695900,
+        "hoa": 673,
+        "orientation": "North",
+        "floorplan": "A"
+      },
+      {
+        "type": "1 Bedroom",
+        "unit": "PH 814",
+        "beds": 1,
+        "baths": 1,
+        "sqft": 638,
+        "price": 845900,
+        "hoa": 898,
+        "orientation": "South",
+        "floorplan": "A"
+      },
+      {
+        "type": "1 Bedroom",
+        "unit": "PH 813",
+        "beds": 1,
+        "baths": 1,
+        "sqft": 638,
+        "price": 850900,
+        "hoa": 898,
+        "orientation": "South",
+        "floorplan": "A"
+      },
+      {
+        "type": "1 Bedroom",
+        "unit": "PH 828",
+        "beds": 1,
+        "baths": 1,
+        "sqft": 638,
+        "price": 858900,
+        "hoa": 898,
+        "orientation": "North",
+        "floorplan": "A"
+      },
+      {
+        "type": "2 Bedrooms",
+        "unit": "736",
+        "beds": 2,
+        "baths": 2,
+        "sqft": 840,
+        "price": 990900,
+        "hoa": 1168,
+        "orientation": "North",
+        "floorplan": "C2"
+      },
+      {
+        "type": "2 Bedrooms",
+        "unit": "726",
+        "beds": 2,
+        "baths": 2,
+        "sqft": 840,
+        "price": 995900,
+        "hoa": 1168,
+        "orientation": "North",
+        "floorplan": "C2"
+      },
+      {
+        "type": "2 Bedrooms",
+        "unit": "222",
+        "beds": 2,
+        "baths": 2,
+        "sqft": 830,
+        "price": 1378900,
+        "hoa": 1160,
+        "orientation": "Southeast",
+        "floorplan": "A"
+      },
+      {
+        "type": "2 Bedrooms",
+        "unit": "423",
+        "beds": 2,
+        "baths": 2,
+        "sqft": 931,
+        "price": 1509900,
+        "hoa": 1323,
+        "orientation": "Northeast",
+        "floorplan": "B"
+      }
+    ]
+  },
+  "rentalPolicy": "No rental restrictions",
+  "residenceContent": "<p class=\"prop-residence-intro\">The first-ever residential concept by the NoMad Hotels brand. Every residence arrives fully furnished and turnkey, styled to reflect NoMad's signature blend of individual character and hotel-level comfort. Interiors by DesignAgency draw on the NoMad aesthetic — warm woods, curated textiles, and layered lighting that feel collected rather than decorated. Artwork from the Jorge M. Pérez Collection runs through the building's common spaces, bringing genuine cultural provenance into the residential experience. Boutique finishes, bespoke millwork, and a level of furnishing detail uncommon at this price point throughout.</p>",
+  "residenceFeatures": [
+    "Fully furnished and creatively curated by NoMad and DesignAgency",
+    "Floor-to-ceiling sliding glass doors",
+    "Private balconies in all residences",
+    "Spacious walk-in closets in most residences",
+    "9+ foot ceilings",
+    "Bosch appliances",
+    "Imported Italian-designed cabinetry and woodwork",
+    "Exquisite stone countertops",
+    "Brass fixtures in bathrooms",
+    "Expansive spa showers",
+    "In-residence washer and dryer"
+  ],
+  "residentialFloors": "2–8",
+  "siteArea": "1.25 Acres",
+  "slug": "nomad-residences-wynwood",
+  "stage": "move_in_ready",
+  "stageLabel": "Delivered — Closings Underway",
+  "statusRemark": "97% SOLD · 9 REMAIN · DELIVERED — CLOSINGS UNDERWAY",
+  "totalUnits": 329,
+  "units": 329,
+  "unitsLeft": 9,
+  "verified": {
+    "hoa": {
+      "date": "2026-08-23",
+      "source": "MLS active listings, Aug 2026 — monthly association fee ÷ interior sq ft (SqFt LA), median. $1.45/sf across 15 active listings; recorded value confirmed within 4%."
+    }
+  },
+  "views": [
+    "Wynwood Art District",
+    "Cityscape"
+  ],
+  "wellnessScore": 65
+}

@@ -1,0 +1,322 @@
+{
+  "address": "1133 SW 2nd Avenue, Miami, FL 33130",
+  "amenities": [
+    {
+      "icon": "🏎",
+      "label": "Custom F1 Race Simulator",
+      "sub": "Mercedes-Benz branded experience"
+    },
+    {
+      "icon": "🏊",
+      "label": "Rooftop Residents Pool",
+      "sub": "Exclusive to building"
+    },
+    {
+      "icon": "🍽",
+      "label": "Two Signature Restaurants",
+      "sub": "Plus cafe, chef's kitchen, private dining"
+    },
+    {
+      "icon": "🎵",
+      "label": "Recording Studio",
+      "sub": "Professional-grade"
+    },
+    {
+      "icon": "🎬",
+      "label": "Screening Room",
+      "sub": "Private cinema"
+    },
+    {
+      "icon": "💆",
+      "label": "Wellness Circuit",
+      "sub": "Onsen, saunas, Himalayan salt, steam, aromatherapy"
+    },
+    {
+      "icon": "🌳",
+      "label": "Southside Park (2 Acres)",
+      "sub": "Field Operations. Padel, basketball, dog run, Underline connection"
+    },
+    {
+      "icon": "🛎",
+      "label": "Concierge, Valet & House Cars",
+      "sub": "Mercedes-Benz fleet · 24/7"
+    }
+  ],
+  "architect": "SHoP Architects · ODP Architecture and Design",
+  "badge": "FIRST MERCEDES-BENZ BRANDED RESIDENCES IN NORTH AMERICA",
+  "brandPartner": "Mercedes-Benz",
+  "completion": "TBD",
+  "constructionPct": 20,
+  "densityScore": 88,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "180 Days from Signed Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Residence Level"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top-Off"
+    },
+    {
+      "percentage": 50,
+      "milestone": "Balance at Closing"
+    }
+  ],
+  "description": "The first Mercedes-Benz branded residences in North America. 791 homes across two 67-story towers in Brickell by JDS Development Group, SHoP Architects, and Field Operations. Over 130,000 SF of amenities including a custom F1 simulator, recording studio, and the reimagined Southside Park.",
+  "developer": "JDS Development Group",
+  "discoveryEngine": {
+    "lifestyle": [
+      "branded",
+      "urban",
+      "walkable",
+      "amenity-rich",
+      "wellness"
+    ],
+    "investmentProfile": [
+      "under-construction",
+      "branded-residences",
+      "high-rise",
+      "institutional-backed"
+    ],
+    "priceCategory": "luxury",
+    "vibeMatch": [
+      "brand-forward",
+      "urban-energy",
+      "design-forward",
+      "resort-amenities",
+      "car-culture"
+    ],
+    "goodFor": [
+      "primary-residence",
+      "investment",
+      "pied-a-terre",
+      "brand-enthusiast",
+      "urban-professional"
+    ]
+  },
+  "featureVideo": {
+    "src": "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/mercedes-benz-places-film.mp4",
+    "poster": "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/mercedes-benz-places-poster.webp",
+    "label": "Mercedes-Benz Places",
+    "tagline": "Engineered like the three-pointed star — Mercedes-Benz's first branded residences in the Americas.",
+    "uploadDate": "2026-09-03"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "Studio",
+      "beds": 0,
+      "baths": 1,
+      "status": "Available",
+      "startingPrice": 675500
+    },
+    {
+      "type": "1 Bedroom",
+      "beds": 1,
+      "baths": 1,
+      "status": "Available"
+    },
+    {
+      "type": "1 Bedroom + Den",
+      "beds": 1,
+      "baths": 1.5,
+      "status": "Available"
+    },
+    {
+      "type": "2 Bedrooms",
+      "beds": 2,
+      "baths": 2,
+      "status": "Available"
+    },
+    {
+      "type": "3 Bedrooms",
+      "beds": 3,
+      "baths": 3,
+      "status": "Available"
+    }
+  ],
+  "height": "67 Stories",
+  "hoa": null,
+  "id": 53,
+  "img": "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/building-hero-east.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/building-hero-east.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/upshot.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/porte-cochere.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/lobby-reception.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/hummingbird.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/vitality-pool-deck.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/rooftop-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/sun-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/great-room-dusk.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/great-room-day.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/chefs-kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/chefs-kitchen2.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/primary-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/primary-bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/primary-bathroom2.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/secondary-bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/powder-room.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/studio-unit.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/cinema.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/f1-simulator.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/recording-studio.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/park-vignette.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/park-foundtain.webp",
+    "https://frasermiami.s3.amazonaws.com/mercedes-benz-places/park-aerial.webp"
+  ],
+  "interiorDesigner": "Woods Bagot",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "791",
+        "label": "Total Residences",
+        "note": "Across two 67-story towers"
+      },
+      {
+        "value": "130,000+",
+        "label": "Amenity SF",
+        "note": "Among the largest programs in Brickell"
+      },
+      {
+        "value": "$675,500",
+        "label": "Entry Price",
+        "note": "Studios available now"
+      },
+      {
+        "value": "$1.06B",
+        "label": "Construction Financing",
+        "note": "BD&T & MSD · Byron Trott / Michael Dell"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand first",
+        "pillColor": "gold",
+        "title": "First Mercedes-Benz Branded Residences in North America",
+        "body": "The only residential project in the hemisphere carrying the Mercedes-Benz name, backed by a formal brand license from Mercedes-Benz Group AG."
+      },
+      {
+        "pill": "Capital stack",
+        "pillColor": "gold",
+        "title": "$1B+ capital stack signals institutional conviction",
+        "body": "The scale and caliber of the capital behind the project reflect top-tier institutional confidence in both the sponsor and Brickell."
+      },
+      {
+        "pill": "Ownership",
+        "pillColor": "gold",
+        "title": "Jeff Soffer joining as equity partner",
+        "body": "Fontainebleau Development's entry brings one of South Florida's most proven luxury hospitality and residential operators into the ownership structure."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gold",
+        "title": "SHoP + Field Operations design pedigree",
+        "body": "Architecture by SHoP (Barclays Center, 111 W 57th) and landscape by Field Operations (NYC High Line) represent a world-class design team with large-scale delivery track records."
+      },
+      {
+        "pill": "Entry point",
+        "pillColor": "gray",
+        "title": "Early pricing still available across both towers",
+        "body": "Current availability spans studios to three-bedrooms across both towers — early positioning in a project that cannot be replicated."
+      }
+    ],
+    "thesis": "Mercedes-Benz Places is the only residential address in North America carrying the Mercedes-Benz name, and it sits on one of the last large-scale Brickell sites with direct park frontage and Underline connectivity. The $2B+ project is backed by a $1.06B institutional financing package with BD&T & MSD as anchor lender and Jeff Soffer's Fontainebleau Development entering as equity partner. JDS's track record (111 West 57th, The Brooklyn Tower, Dolce & Gabbana Brickell), combined with SHoP's architecture and Field Operations' park design, makes this one of the most credentialed teams ever assembled for a Miami project. Buyers contracting now hold early pricing across a branded asset that will be impossible to replicate.",
+    "footnote": "Pricing and availability per developer availability sheet dated 06/08/26. Financing details sourced from public reporting, June 2026. All details subject to change without notice."
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "791",
+        "label": "Total Residences",
+        "note": "Across two 67-story towers"
+      },
+      {
+        "value": "130,000+",
+        "label": "Amenity SF",
+        "note": "Among the largest programs in Brickell"
+      },
+      {
+        "value": "$675,500",
+        "label": "Entry Price",
+        "note": "Studios available now"
+      },
+      {
+        "value": "$1.06B",
+        "label": "Construction Financing",
+        "note": "BD&T & MSD · Byron Trott / Michael Dell"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand first",
+        "pillColor": "gold",
+        "title": "First Mercedes-Benz Branded Residences in North America",
+        "body": "The only residential project in the hemisphere carrying the Mercedes-Benz name, backed by a formal brand license from Mercedes-Benz Group AG."
+      },
+      {
+        "pill": "Capital stack",
+        "pillColor": "gold",
+        "title": "$1B+ capital stack signals institutional conviction",
+        "body": "The scale and caliber of the capital behind the project reflect top-tier institutional confidence in both the sponsor and Brickell."
+      },
+      {
+        "pill": "Ownership",
+        "pillColor": "gold",
+        "title": "Jeff Soffer joining as equity partner",
+        "body": "Fontainebleau Development's entry brings one of South Florida's most proven luxury hospitality and residential operators into the ownership structure."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gold",
+        "title": "SHoP + Field Operations design pedigree",
+        "body": "Architecture by SHoP (Barclays Center, 111 W 57th) and landscape by Field Operations (NYC High Line) represent a world-class design team with large-scale delivery track records."
+      },
+      {
+        "pill": "Entry point",
+        "pillColor": "gray",
+        "title": "Early pricing still available across both towers",
+        "body": "Current availability spans studios to three-bedrooms across both towers — early positioning in a project that cannot be replicated."
+      }
+    ],
+    "thesis": "Mercedes-Benz Places is the only residential address in North America carrying the Mercedes-Benz name, and it sits on one of the last large-scale Brickell sites with direct park frontage and Underline connectivity. The $2B+ project is backed by a $1.06B institutional financing package with BD&T & MSD as anchor lender and Jeff Soffer's Fontainebleau Development entering as equity partner. JDS's track record (111 West 57th, The Brooklyn Tower, Dolce & Gabbana Brickell), combined with SHoP's architecture and Field Operations' park design, makes this one of the most credentialed teams ever assembled for a Miami project. Buyers contracting now hold early pricing across a branded asset that will be impossible to replicate.",
+    "footnote": "Pricing and availability per developer availability sheet dated 06/08/26. Financing details sourced from public reporting, June 2026. All details subject to change without notice."
+  },
+  "investmentThesis": "<p>Mercedes-Benz Places is the only residential address in North America carrying the Mercedes-Benz name, sited on one of the last large-scale Brickell parcels with direct park frontage and Underline connectivity. A $1.06B financing package anchored by BD&T & MSD (backed by Byron Trott and Michael Dell) and the entry of Jeff Soffer's Fontainebleau Development as equity partner reflect institutional conviction at a scale rarely seen in Miami pre-construction. JDS Development Group brings direct Miami precedent (Dolce & Gabbana Residences Brickell) alongside a global track record (111 West 57th, The Brooklyn Tower). SHoP Architects and Field Operations add world-class design credibility that cannot be replicated in Brickell.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeDesigner": "Field Operations",
+  "lat": 25.7629412,
+  "lng": -80.1970299,
+  "maxBed": 3,
+  "maxPrice": 10159050,
+  "maxSqft": null,
+  "minBed": 0,
+  "minPrice": 675500,
+  "minSqft": null,
+  "name": "Mercedes-Benz Places",
+  "neighborhood": "Brickell",
+  "neighborhoodTier": "brickell",
+  "priceFrom": "From $675,500",
+  "priceFromDisplay": "$675K+",
+  "privacyScore": 38,
+  "projectedAppreciation": 22,
+  "residenceContent": "<p class=\"prop-residence-intro\">Two towers rise 67 stories above Brickell, connected by a mid-rise podium that opens to sky on both sides. The silhouette is immediately recognizable from anywhere in the city. Sculpted horizontal fins wrap every floor, catching light and shadow in a rhythm that references the brand without quoting it literally.</p><p>Interiors by Woods Bagot move between crisp blacks and whites and warm red oak, with rose gold fixtures running throughout. Up to 10-foot floor-to-ceiling windows open onto 5-foot deep terraces. Kitchens are fitted with a full Miele suite (induction cooktop, convection oven, refrigerator, dishwasher, wine fridge, and speed oven in select residences), set behind tinted etched mirror backsplashes with integrated technology screens. Baths use Duravit throughout, with black or white stone showers, illuminated ledge reveals, and floating walnut vanities.</p><p>The amenity program spans over 130,000 square feet. Residents have access to a rooftop pool exclusive to the building, a Silver Arrow Lounge with racing heritage decor, a custom Mercedes-Benz F1 simulator, a recording studio, and a full wellness circuit: saunas, an onsen ritual circuit, Himalayan salt room, aromatherapy room, and steam room. At grade, Field Operations (the firm behind the High Line) has reimagined the nearly 2-acre Southside Park with padel courts, a basketball court, a children's playground, and a direct connection to The Underline.</p>",
+  "salesTeam": "Serhant New Development",
+  "slug": "mercedes-benz-places",
+  "stage": "under_construction",
+  "statusRemark": "Under Construction · 791 Residences Across 2 Towers",
+  "stories": 67,
+  "towers": 2,
+  "units": 791,
+  "wellnessScore": 82
+}

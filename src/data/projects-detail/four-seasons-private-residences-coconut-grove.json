@@ -1,0 +1,196 @@
+{
+  "address": "2699 South Bayshore Drive, Miami, FL 33133",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Bayfront Pool Deck",
+      "sub": "Bar lounge, restaurant"
+    },
+    {
+      "icon": "📚",
+      "label": "Library",
+      "sub": "Private event room, children's area"
+    },
+    {
+      "icon": "🧘",
+      "label": "Spa & Wellness",
+      "sub": "Cold plunge, hydromassage, sauna circuit"
+    },
+    {
+      "icon": "🏋",
+      "label": "Fitness Center",
+      "sub": "Yoga, massage rooms"
+    },
+    {
+      "icon": "🛎",
+      "label": "Director of Residences",
+      "sub": "Butler, in-residence dining"
+    }
+  ],
+  "amenitiesDescription": "<p>The Four Seasons amenity program includes a bayfront pool deck and bar lounge, a resident restaurant, library, private event room, and children's area. The wellness offering includes a fitness center, yoga studio, massage treatment rooms, and a full spa with cold plunge, hydromassage pool, horizontal shower, ice fountain, and a sauna circuit inspired by ancient Roman bath chambers.</p><p>Services are managed by a dedicated Director of Residences and Lifestyle Manager. Housekeeping, butler service, in-residence dining, valet, and tailored wellness programming are available on demand. The service model mirrors a Four Seasons hotel but is scaled for 70 residences, creating one of the highest staff-to-resident ratios in any new Miami development. The bayfront setting on South Bayshore Drive places residents within walking distance of Coconut Grove's dining and marina district, with Brickell and Coral Gables minutes away.</p>",
+  "architect": "Luis Revuelta",
+  "avgSqft": 3400,
+  "completion": "Mid-2028",
+  "densityScore": 20,
+  "description": "Florida's first standalone Four Seasons branded residences, without an accompanying hotel. 70 waterfront homes from 2,025 to 3,975 square feet on South Bayshore Drive, plus four penthouses to 9,690 square feet. Construction went vertical in 2026. Mid-2028 delivery.",
+  "developer": "CMC Group & Fort Partners",
+  "height": "20 Stories",
+  "heroImgPosition": "center top",
+  "hoa": "Approx. $2.50 – $3.15/sf",
+  "id": 29,
+  "img": "https://frasermiami.s3.amazonaws.com/four-seasons-coconut-grove/hero.webp",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/four-seasons-coconut-grove/hero.webp",
+    "https://frasermiami.s3.amazonaws.com/four-seasons-coconut-grove/hero2.webp",
+    "https://frasermiami.s3.amazonaws.com/four-seasons-coconut-grove/hummingbird-balcony.webp",
+    "https://frasermiami.s3.amazonaws.com/four-seasons-coconut-grove/living.webp",
+    "https://frasermiami.s3.amazonaws.com/four-seasons-coconut-grove/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/four-seasons-coconut-grove/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/four-seasons-coconut-grove/library.webp",
+    "https://frasermiami.s3.amazonaws.com/four-seasons-coconut-grove/gym.webp",
+    "https://frasermiami.s3.amazonaws.com/four-seasons-coconut-grove/spa.webp",
+    "https://frasermiami.s3.amazonaws.com/four-seasons-coconut-grove/spa2.webp"
+  ],
+  "interiorDesigner": "Michele Bönan",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Four Seasons brand + Coconut Grove primary market + CMC Group track record"
+      },
+      {
+        "value": "$4,000+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,200–1,400/sqft Grove luxury resale avg; Four Seasons brand commands sector-leading premium"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Knight Frank: Four Seasons residences globally delivered 20–25% post-delivery appreciation"
+      },
+      {
+        "value": "70 residences",
+        "label": "Total units",
+        "note": "One of the smallest Four Seasons residential towers in the Americas"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Four Seasons — most recognized luxury hotel brand globally",
+        "body": "The Four Seasons Surfside (Fort Partners) established the model in Miami: small, exclusive, full-hotel-services residential tower. Those units now trade at $3,500–$5,000+/sqft. Coconut Grove Four Seasons imports that standard to the mainland."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "Vertical construction rising after $323.8M loan close",
+        "body": "Public reporting in July 2026 shows the ground floor established and the first elevated level underway, with reinforced concrete columns, shear walls, and the elevator core rising on the bayside footprint."
+      },
+      {
+        "pill": "Views",
+        "pillColor": "gold",
+        "title": "Unobstructed Biscayne Bay panorama — permanent",
+        "body": "Every residence faces Biscayne Bay with protected views. Peacock Park is directly below. The waterfront promenade and park create a public amenity buffer that guarantees the view corridor in perpetuity."
+      },
+      {
+        "pill": "Primary market",
+        "pillColor": "gray",
+        "title": "Coconut Grove: primary-residence buyers — they hold, they don't sell",
+        "body": "The Grove luxury buyer demographic is fundamentally different from investment-focused markets. End-users with families, school-age children, and deep neighborhood ties buy and stay. That hold behavior creates chronic inventory scarcity that supports values through cycles."
+      }
+    ],
+    "thesis": "Four Seasons Coconut Grove is the meeting point of two proven theses: CMC/Fort Partners' track record of delivering Miami's most valuable branded luxury condos, and the Coconut Grove market's chronic scarcity and primary-residence demand. The Four Seasons Surfside demonstrated that hotel-branded boutique residences in this tier hold and appreciate regardless of broader market conditions. Grove adds the additional moat of being the most family-oriented, school-adjacent luxury neighborhood in Miami.",
+    "footnote": "HOA: Approx. $2.50–$3.15/sq ft · Rental policy: Via Four Seasons program · Delivery: 2028 · Vertical construction underway · GC financing closed Jan 2026"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+35%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Four Seasons brand + Coconut Grove primary market + CMC Group track record"
+      },
+      {
+        "value": "$4,000+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. $1,200–1,400/sqft Grove luxury resale avg; Four Seasons brand commands sector-leading premium"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Knight Frank: Four Seasons residences globally delivered 20–25% post-delivery appreciation"
+      },
+      {
+        "value": "70 residences",
+        "label": "Total units",
+        "note": "One of the smallest Four Seasons residential towers in the Americas"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "Four Seasons — most recognized luxury hotel brand globally",
+        "body": "The Four Seasons Surfside (Fort Partners) established the model in Miami: small, exclusive, full-hotel-services residential tower. Those units now trade at $3,500–$5,000+/sqft. Coconut Grove Four Seasons imports that standard to the mainland."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "Vertical construction rising after $323.8M loan close",
+        "body": "Public reporting in July 2026 shows the ground floor established and the first elevated level underway, with reinforced concrete columns, shear walls, and the elevator core rising on the bayside footprint."
+      },
+      {
+        "pill": "Views",
+        "pillColor": "gold",
+        "title": "Unobstructed Biscayne Bay panorama — permanent",
+        "body": "Every residence faces Biscayne Bay with protected views. Peacock Park is directly below. The waterfront promenade and park create a public amenity buffer that guarantees the view corridor in perpetuity."
+      },
+      {
+        "pill": "Primary market",
+        "pillColor": "gray",
+        "title": "Coconut Grove: primary-residence buyers — they hold, they don't sell",
+        "body": "The Grove luxury buyer demographic is fundamentally different from investment-focused markets. End-users with families, school-age children, and deep neighborhood ties buy and stay. That hold behavior creates chronic inventory scarcity that supports values through cycles."
+      }
+    ],
+    "thesis": "Four Seasons Coconut Grove is the meeting point of two proven theses: CMC/Fort Partners' track record of delivering Miami's most valuable branded luxury condos, and the Coconut Grove market's chronic scarcity and primary-residence demand. The Four Seasons Surfside demonstrated that hotel-branded boutique residences in this tier hold and appreciate regardless of broader market conditions. Grove adds the additional moat of being the most family-oriented, school-adjacent luxury neighborhood in Miami.",
+    "footnote": "HOA: Approx. $2.50–$3.15/sq ft · Rental policy: Via Four Seasons program · Delivery: 2028 · Vertical construction underway · GC financing closed Jan 2026"
+  },
+  "investmentThesis": "<p>Construction went vertical in July 2026, with the ground floor established and reinforced concrete columns, shear walls, and the elevator core rising on the bayside footprint, following the $323.8 million Bank OZK construction loan that drew over 10 competing lenders. The developer partnership combines Colombo's track record in Coconut Grove (Vita at Grove Isle, now delivering) with Fort Partners' proven Four Seasons portfolio (Surf Club, Palm Beach, Fort Lauderdale). The no-hotel structure gives owners dedicated amenities and staff without the variable occupancy and foot traffic of a hotel component, resulting in an exceptionally high staff-to-resident ratio across just 70 homes. Sales launched in 2024; the development team cites sustained buyer demand as vertical work advances toward a 2028 completion.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.7296393,
+  "lifestyle": [
+    "Luxury",
+    "Family",
+    "Quiet",
+    "Service-Heavy"
+  ],
+  "lng": -80.2357437,
+  "maxBed": 4,
+  "maxPrice": 20000000,
+  "maxSqft": 9690,
+  "minBed": 2,
+  "minPrice": 4000000,
+  "minSqft": 2025,
+  "name": "Four Seasons Private Residences Coconut Grove",
+  "neighborhood": "Coconut Grove",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/four-seasons-private-residences-coconut-grove.jpg",
+  "parking": "2 Spaces + 24/7 Valet",
+  "priceFrom": "$4M+",
+  "privacyScore": 90,
+  "projectedAppreciation": 35,
+  "rentalPolicy": "Minimum 30-day (Max 4x/year)",
+  "residenceContent": "<p class=\"prop-residence-intro\">This is Florida's first standalone Four Seasons branded residential development without an accompanying hotel, meaning residents receive full Four Seasons service in an exclusively residential setting with no shared hotel guest traffic. Luis Revuelta's gently curving tower is designed to maximize Biscayne Bay views through expansive floor-to-ceiling glazing. Residences range from 2,025 to 3,975 square feet, with four penthouse homes measuring up to 9,690 square feet. Every home features private elevator access to individual foyers, open floor plans, and ceiling heights from 10 to 11 feet. Living rooms open to expansive curved balconies through full-height glass doors, framing unobstructed panoramic views of Biscayne Bay. Kitchens are custom Italian by Molteni&amp;C with Bönan-designed details. Bathrooms are finished with Italian cabinetry and Calacatta and Carrara marble throughout.</p>",
+  "shortName": "Four Seasons Coconut Grove",
+  "slug": "four-seasons-private-residences-coconut-grove",
+  "stage": "under_construction",
+  "stageLabel": "Vertical Construction · Mid-2028 Delivery",
+  "statusRemark": "GOING VERTICAL · 2028 DELIVERY",
+  "units": 70,
+  "views": [
+    "Biscayne Bay",
+    "City Skyline"
+  ],
+  "wellnessScore": 85
+}

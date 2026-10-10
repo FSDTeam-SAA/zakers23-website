@@ -1,0 +1,469 @@
+{
+  "address": "3000 Ponce de Leon Blvd, Coral Gables, FL 33134",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Rooftop Lap Pool",
+      "sub": "Reflection pool, cabanas, sun decks"
+    },
+    {
+      "icon": "🍸",
+      "label": "Rooftop Lounge & Bar",
+      "sub": "Staffed bar, South Gables skyline"
+    },
+    {
+      "icon": "❄️",
+      "label": "Cold Plunge & Jacuzzi",
+      "sub": "Rooftop recovery"
+    },
+    {
+      "icon": "💆",
+      "label": "Wellness Spa",
+      "sub": "Steam, sauna, co-ed hammam, treatment suites"
+    },
+    {
+      "icon": "💪",
+      "label": "Fitness Center",
+      "sub": "Adjoining Zen Garden"
+    },
+    {
+      "icon": "🌿",
+      "label": "Zen Garden",
+      "sub": "Private outdoor retreat"
+    },
+    {
+      "icon": "🍽",
+      "label": "Private Dining Room",
+      "sub": "Intimate gatherings"
+    },
+    {
+      "icon": "🛋",
+      "label": "Lobby Lounge",
+      "sub": "Grand staircase to mezzanine"
+    },
+    {
+      "icon": "🥘",
+      "label": "Quintín Ultramarinos",
+      "sub": "Madrid all-day dining, first US location"
+    },
+    {
+      "icon": "☕",
+      "label": "Café",
+      "sub": "Ground-level, part of the retail paseo"
+    },
+    {
+      "icon": "🛎",
+      "label": "Doorman & Concierge",
+      "sub": "Hospitality-trained, 24-hour security"
+    },
+    {
+      "icon": "🚗",
+      "label": "24/7 Valet",
+      "sub": "Attended lobby"
+    },
+    {
+      "icon": "🐕",
+      "label": "Pet Care & Dog Walking",
+      "sub": "Arranged through concierge"
+    }
+  ],
+  "amenitiesDescription": "<p>The amenity program is arranged by level rather than stacked on one floor. A private lobby lounge sits at grade, with a sculptural staircase rising to the mezzanine, where a wellness spa holds his-and-hers sanctuaries with steam and sauna rooms, a co-ed hammam, and private treatment suites. A private dining room on the same level serves smaller gatherings. The Zen level pairs a fitness center with an adjoining outdoor garden.</p><p>The roof carries the social program: a lap pool, a reflection pool, a cold plunge and Jacuzzi, private cabanas and sun decks, and a rooftop lounge with a staffed bar and terraces looking across the South Gables skyline. Building services include a doorman and hospitality-trained concierge, 24/7 valet and attended lobby, 24-hour security, in-residence mail delivery, laundry and dry cleaning, pet care and dog walking, grocery delivery, and restaurant reservations. Housekeeping, private chefs, and wellness treatments are arranged à la carte through the concierge. Private storage is available for purchase.</p>",
+  "architect": "John Cunningham with Zyscovich",
+  "badge": "UNDER CONSTRUCTION · EARLY 2028",
+  "completion": "Early 2028",
+  "densityScore": 38,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Within 60 Days"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top-Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing (2028)"
+    }
+  ],
+  "description": "Ponce Park is a 58-residence, 11-story condominium at 3000 Ponce de Leon Boulevard in Coral Gables, facing the city-owned Ponce Circle Park. Developed by Allen Morris Company with architecture by John Cunningham of Zyscovich and interiors by Meyer Davis, the building carries Coral Gables' Mediterranean Revival vocabulary into a contemporary neoclassical facade. Residences run from two to five bedrooms across roughly 1,900 to more than 6,500 square feet, with private elevators, ceilings of 11 to 12 feet, and 11-foot-deep terraces fitted with summer kitchens. Ground level holds 25,000 square feet of retail anchored by Quintín Ultramarinos, the first United States outpost of the Madrid all-day dining institution. The 1.2-acre project broke ground in December 2025, with 40 percent of the residences pre-sold at that point, and is expected to complete in early 2028.",
+  "developer": "Allen Morris Company",
+  "discoveryEngine": {
+    "lifestyle": [
+      "walkable",
+      "village-luxury",
+      "boutique",
+      "culinary"
+    ],
+    "investmentProfile": [
+      "under-construction",
+      "boutique-scarcity",
+      "submarket-first-mover"
+    ],
+    "priceCategory": "ultra-luxury",
+    "vibeMatch": [
+      "quiet-luxury",
+      "classical",
+      "residential",
+      "design-forward"
+    ],
+    "goodFor": [
+      "primary-residence",
+      "downsizer",
+      "long-hold",
+      "family"
+    ]
+  },
+  "editorialLine": "European order, brought to Ponce de Leon Boulevard.",
+  "featureVideo": {
+    "src": "/ponce-park/ponce-park-lifestyle.mp4",
+    "poster": "/ponce-park/ponce-park-lifestyle-poster.webp",
+    "label": "Ponce Park",
+    "tagline": "European order, brought to Ponce de Leon Boulevard — the developer's film for Coral Gables' newest address.",
+    "uploadDate": "2026-09-03",
+    "mobileObjectFit": "contain"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "Two-Bedroom + Den",
+      "addlRooms": "Den + Powder + Terrace",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,949–1,977 SF interior · 2,241–2,462 SF total",
+      "status": "Inquire"
+    },
+    {
+      "type": "Two-Bedroom + Study",
+      "addlRooms": "Study + Terrace",
+      "beds": 2,
+      "baths": 3,
+      "sqft": "1,972–2,489 SF interior · 2,293–2,795 SF total",
+      "status": "Inquire"
+    },
+    {
+      "type": "Three-Bedroom",
+      "addlRooms": "Powder + Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,347–2,379 SF interior · 2,641–2,895 SF total",
+      "status": "Inquire"
+    },
+    {
+      "type": "Three-Bedroom + Study",
+      "addlRooms": "Study + Terrace",
+      "beds": 3,
+      "baths": 4,
+      "sqft": "2,523–2,969 SF interior · 2,842–4,234 SF total",
+      "status": "Inquire"
+    },
+    {
+      "type": "Three-Bedroom + Wine Cellar",
+      "addlRooms": "Wine cellar + Powder + Terrace",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,908–3,182 SF interior · 3,542–4,163 SF total",
+      "status": "Inquire"
+    },
+    {
+      "type": "Three-Bedroom + Study + Office",
+      "addlRooms": "Study + Office + Terrace",
+      "beds": 3,
+      "baths": 4,
+      "sqft": "3,392 SF interior · 3,711–3,986 SF total",
+      "status": "Inquire"
+    },
+    {
+      "type": "Penthouse Collection",
+      "addlRooms": "Expanded terraces",
+      "beds": 5,
+      "baths": 5.5,
+      "sqft": "Up to 6,500+ SF total",
+      "status": "Inquire"
+    }
+  ],
+  "generalContractor": "Kast Construction",
+  "height": "11 Stories",
+  "hoa": null,
+  "id": 60,
+  "img": "/ponce-park/hero.webp",
+  "imgs": [
+    "/ponce-park/hero.webp",
+    "/ponce-park/park-view.webp",
+    "/ponce-park/south-arches.webp",
+    "/ponce-park/night.webp",
+    "/ponce-park/aerial.webp",
+    "/ponce-park/birds-eye.webp",
+    "/ponce-park/park-arcos.webp",
+    "/ponce-park/paseo.webp",
+    "/ponce-park/lobby.webp",
+    "/ponce-park/lobby2.webp",
+    "/ponce-park/courtyard.webp",
+    "/ponce-park/rooftop-pool.webp",
+    "/ponce-park/rooftop-bar.webp",
+    "/ponce-park/spa.webp",
+    "/ponce-park/fitness.webp",
+    "/ponce-park/living.webp",
+    "/ponce-park/kitchen.webp",
+    "/ponce-park/bedroom.webp",
+    "/ponce-park/bathroom.webp",
+    "/ponce-park/closet.webp",
+    "/ponce-park/terrace.webp",
+    "/ponce-park/ph-interior.webp",
+    "/ponce-park/ph-view.webp",
+    "/ponce-park/ponce-park-animated-renderings.mp4"
+  ],
+  "interiorDesigner": "Meyer Davis",
+  "interstitialVideoMobileFit": {
+    "A": "contain"
+  },
+  "interstitialVideos": {
+    "A": 0
+  },
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "58",
+        "label": "Residences across 11 stories",
+        "note": "Two to five bedrooms, roughly 1,900 to more than 6,500 square feet. Earlier proposals carried more units; four years of city review cut the count and enlarged the homes."
+      },
+      {
+        "value": "$132.5M",
+        "label": "Bank OZK construction loan",
+        "note": "Closed January 2026, roughly one month after groundbreaking, arranged by Lotus Capital Partners. Construction lending for Miami condominiums has grown selective, which makes a closed loan at this size a meaningful checkpoint."
+      },
+      {
+        "value": "25,000 SF",
+        "label": "Ground-floor retail, restaurant anchored",
+        "note": "Quintín Ultramarinos signed a 5,500 SF anchor lease for its first United States location. The Madrid original has operated in Barrio de Salamanca since 2015 under Grupo Paraguas."
+      },
+      {
+        "value": "Early 2028",
+        "label": "Estimated delivery",
+        "note": "Broke ground December 2025 with Kast Construction as general contractor and 40 percent of residences pre-sold. Sales opened in January 2025 through ONE Sotheby’s International Realty, giving buyers a full construction track record before closing."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "$132.5M Bank OZK loan closed January 2026",
+        "body": "Lotus Capital Partners arranged the facility one month after groundbreaking. Bank OZK is the most active condominium construction lender in South Florida and underwrites selectively."
+      },
+      {
+        "pill": "Culinary anchor",
+        "pillColor": "gold",
+        "title": "Quintín Ultramarinos, first United States location",
+        "body": "Grupo Paraguas brings its Madrid all-day dining institution to the ground floor in 2028. The operator has run the original since 2015, so this is an established brand rather than a launch concept."
+      },
+      {
+        "pill": "Supply",
+        "pillColor": "gold",
+        "title": "Fifty-eight large-format homes in a thin submarket",
+        "body": "Coral Gables delivers very little new condominium product, and almost none averaging above 2,000 square feet. The scale targets buyers relocating within the Gables rather than entering it."
+      },
+      {
+        "pill": "Public realm",
+        "pillColor": "gold",
+        "title": "Developer contributing to $11M Ponce Circle Park renovation",
+        "body": "Allen Morris committed to the city-owned park renovation plus $2 million in public improvements. The city's estimate rose to $11.2 million in 2026 and the split on the funding gap is still being finalized. The park sits directly across from the building."
+      },
+      {
+        "pill": "Entitlement",
+        "pillColor": "gray",
+        "title": "Land use rezoned to high-rise intensity in 2024",
+        "body": "The Coral Gables Commission unanimously approved the intensity change, alley vacation, and district boundary shift after earlier versions were rejected. That approval is not easily replicated on adjacent parcels."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Allen Morris Company, Coral Gables based since 1958",
+        "body": "The firm assembled and entitled this site starting in 2019 and is concurrently building Ziggurat in Coconut Grove on a $138.5 million loan closed two months earlier."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gray",
+        "title": "John Cunningham facade with Meyer Davis interiors",
+        "body": "Cunningham works in the Mediterranean Revival vocabulary that governs Coral Gables design review, which lowers approval risk. Meyer Davis handles interiors and the kitchen program."
+      }
+    ],
+    "thesis": "Ponce Park is a scarcity play on a submarket that rarely produces large new condominiums. Coral Gables' design review and low-rise character have kept new supply thin for a decade, and the 2024 rezoning that permitted this building took four years and two rejected proposals to secure. What buyers get is a 58-home building averaging well above 2,000 square feet, with a private elevator per residence, in a city where comparable product mostly means resale in older Mediterranean buildings. The ground floor is doing real work: Quintín Ultramarinos is an established Madrid operator rather than a speculative tenant, and the $11 million Ponce Circle Park renovation Allen Morris is helping fund improves the building's own frontage. The $132.5 million Bank OZK loan closing one month after groundbreaking is the strongest available signal that an outside underwriter has tested the numbers.",
+    "footnote": "HOA: TBD · Rental policy: TBD · Delivery: est. early 2028 · Deposit: 20% contract, 10% within 60 days, 10% top-off, 60% closing · $132.5M Bank OZK loan closed Jan 2026"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "58",
+        "label": "Residences across 11 stories",
+        "note": "Two to five bedrooms, roughly 1,900 to more than 6,500 square feet. Earlier proposals carried more units; four years of city review cut the count and enlarged the homes."
+      },
+      {
+        "value": "$132.5M",
+        "label": "Bank OZK construction loan",
+        "note": "Closed January 2026, roughly one month after groundbreaking, arranged by Lotus Capital Partners. Construction lending for Miami condominiums has grown selective, which makes a closed loan at this size a meaningful checkpoint."
+      },
+      {
+        "value": "25,000 SF",
+        "label": "Ground-floor retail, restaurant anchored",
+        "note": "Quintín Ultramarinos signed a 5,500 SF anchor lease for its first United States location. The Madrid original has operated in Barrio de Salamanca since 2015 under Grupo Paraguas."
+      },
+      {
+        "value": "Early 2028",
+        "label": "Estimated delivery",
+        "note": "Broke ground December 2025 with Kast Construction as general contractor and 40 percent of residences pre-sold. Sales opened in January 2025 through ONE Sotheby’s International Realty, giving buyers a full construction track record before closing."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Financing",
+        "pillColor": "gold",
+        "title": "$132.5M Bank OZK loan closed January 2026",
+        "body": "Lotus Capital Partners arranged the facility one month after groundbreaking. Bank OZK is the most active condominium construction lender in South Florida and underwrites selectively."
+      },
+      {
+        "pill": "Culinary anchor",
+        "pillColor": "gold",
+        "title": "Quintín Ultramarinos, first United States location",
+        "body": "Grupo Paraguas brings its Madrid all-day dining institution to the ground floor in 2028. The operator has run the original since 2015, so this is an established brand rather than a launch concept."
+      },
+      {
+        "pill": "Supply",
+        "pillColor": "gold",
+        "title": "Fifty-eight large-format homes in a thin submarket",
+        "body": "Coral Gables delivers very little new condominium product, and almost none averaging above 2,000 square feet. The scale targets buyers relocating within the Gables rather than entering it."
+      },
+      {
+        "pill": "Public realm",
+        "pillColor": "gold",
+        "title": "Developer contributing to $11M Ponce Circle Park renovation",
+        "body": "Allen Morris committed to the city-owned park renovation plus $2 million in public improvements. The city's estimate rose to $11.2 million in 2026 and the split on the funding gap is still being finalized. The park sits directly across from the building."
+      },
+      {
+        "pill": "Entitlement",
+        "pillColor": "gray",
+        "title": "Land use rezoned to high-rise intensity in 2024",
+        "body": "The Coral Gables Commission unanimously approved the intensity change, alley vacation, and district boundary shift after earlier versions were rejected. That approval is not easily replicated on adjacent parcels."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gray",
+        "title": "Allen Morris Company, Coral Gables based since 1958",
+        "body": "The firm assembled and entitled this site starting in 2019 and is concurrently building Ziggurat in Coconut Grove on a $138.5 million loan closed two months earlier."
+      },
+      {
+        "pill": "Design",
+        "pillColor": "gray",
+        "title": "John Cunningham facade with Meyer Davis interiors",
+        "body": "Cunningham works in the Mediterranean Revival vocabulary that governs Coral Gables design review, which lowers approval risk. Meyer Davis handles interiors and the kitchen program."
+      }
+    ],
+    "thesis": "Ponce Park is a scarcity play on a submarket that rarely produces large new condominiums. Coral Gables' design review and low-rise character have kept new supply thin for a decade, and the 2024 rezoning that permitted this building took four years and two rejected proposals to secure. What buyers get is a 58-home building averaging well above 2,000 square feet, with a private elevator per residence, in a city where comparable product mostly means resale in older Mediterranean buildings. The ground floor is doing real work: Quintín Ultramarinos is an established Madrid operator rather than a speculative tenant, and the $11 million Ponce Circle Park renovation Allen Morris is helping fund improves the building's own frontage. The $132.5 million Bank OZK loan closing one month after groundbreaking is the strongest available signal that an outside underwriter has tested the numbers.",
+    "footnote": "HOA: TBD · Rental policy: TBD · Delivery: est. early 2028 · Deposit: 20% contract, 10% within 60 days, 10% top-off, 60% closing · $132.5M Bank OZK loan closed Jan 2026"
+  },
+  "investmentThesis": "<p>Coral Gables has very little new condominium supply and almost none at this scale of residence. Fifty-eight homes averaging well over 2,000 square feet is a different product from the compact-unit towers rising in Brickell and Edgewater, and it is aimed at a buyer moving within the Gables rather than into it. Allen Morris Company is Coral Gables-based and has been assembling and entitling this site since 2019, taking it through four years of city review that reduced the unit count and enlarged the homes. Bank OZK closed a $132.5 million construction loan in January 2026, roughly one month after groundbreaking, which is meaningful validation in a lending market that has grown selective on Miami condominium construction. The ground floor is the differentiator: 25,000 square feet of retail anchored by Quintín Ultramarinos, the first United States location for Grupo Paraguas, whose Madrid original has run since 2015. Allen Morris is also contributing to the $11 million renovation of Ponce Circle Park across the street, which upgrades the building's own outlook. The city's estimate has since risen to $11.2 million and the split on the funding gap is still being finalized.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "58",
+      "label": "Residences, 11 stories",
+      "note": "Scaled down from earlier proposals through four years of city review, with average residence size increased in exchange."
+    },
+    {
+      "value": "$132.5M",
+      "label": "Construction loan, January 2026",
+      "note": "Bank OZK, arranged by Lotus Capital Partners. Closed roughly one month after the December 2025 groundbreaking."
+    },
+    {
+      "value": "25,000 SF",
+      "label": "Ground-floor retail",
+      "note": "Anchored by Quintín Ultramarinos, the first United States location for the Madrid original by Grupo Paraguas."
+    },
+    {
+      "value": "$11M+",
+      "label": "Ponce Circle Park enhancement",
+      "note": "Allen Morris is contributing to the renovation of the city-owned park directly across from the site, alongside $2M in public improvements. The city's cost estimate rose to $11.2M in 2026."
+    }
+  ],
+  "landscapeArchitect": "Naturalficial · Andres Arcila",
+  "lat": 25.744653,
+  "lng": -80.258769,
+  "locationScore": 40,
+  "maxBath": 5.5,
+  "maxBed": 5,
+  "maxPrice": null,
+  "maxSqft": 6500,
+  "minBath": 2.5,
+  "minBed": 2,
+  "minPrice": 3100000,
+  "minSqft": 1900,
+  "name": "Ponce Park",
+  "neighborhood": "Coral Gables",
+  "neighborhoodMap": {
+    "image": "/ponce-park/neighborhood-map.webp",
+    "pinUrl": "https://maps.app.goo.gl/RiUBp5KJ6mJFu7XE9",
+    "showEmbed": true,
+    "caption": "The developer's neighborhood guide plots 66 destinations around the site: 22 restaurants, the Miracle Mile and Giralda Plaza retail corridors, Shops at Merrick Park, the Biltmore and Granada golf courses, the Venetian Pool, and the Coconut Grove marinas on Biscayne Bay. Ponce Circle Park, whose $11 million renovation Allen Morris is helping fund, sits directly across Ponce de Leon Boulevard.",
+    "alt": "Illustrated neighborhood guide showing Ponce Park in Coral Gables with numbered dining, shopping, parks, schools, and recreation destinations"
+  },
+  "parking": "24/7 valet with attended lobby",
+  "percentSold": null,
+  "priceFrom": "$3.1M+",
+  "pricePerSqft": null,
+  "privacyScore": 84,
+  "rentalPolicy": null,
+  "residenceContent": "<p class=\"prop-residence-intro\">A neoclassical facade on Ponce de Leon Boulevard, drawn from the Mediterranean Revival vocabulary that has governed Coral Gables since Merrick laid it out. John Cunningham's elevation reads as stone and shadow rather than glass, with deep arcades at street level opening onto Ponce Circle Park. The residences sit above, each reached by a private elevator that opens into a wood-paneled foyer and a set of double doors. Ceilings run 11 to 12 feet. Floors are European oak, with natural stone through the bathrooms and custom Italian cabinetry in the walk-in closets. Terraces run 11 feet deep, finished in tile rather than exposed concrete and fitted with summer kitchens, so the outdoor room works as an extension of the interior rather than a balcony. Kitchens are Meyer Davis: handcrafted Italian wood cabinetry, Italian stone counters with double waterfall edges, a Sub-Zero and Wolf suite built around a 60-inch refrigerator and integrated wine preservation, and La Cornue 60-inch gas ranges in select residences. Full-height pantries and concealed appliance storage keep the room quiet. Smart-home technology is integrated throughout, and select residences add wine cellars, studies, offices, and libraries.</p>",
+  "salesTeam": "ONE Sotheby's International Realty",
+  "slug": "ponce-park-coral-gables",
+  "sqftRange": "1,900 – 6,500+",
+  "stage": "under_construction",
+  "statusRemark": "UNDER CONSTRUCTION · $132.5M LOAN CLOSED · EARLY 2028 DELIVERY",
+  "stories": 11,
+  "tagline": "Fifty-eight residences on Ponce de Leon Boulevard, with Meyer Davis interiors and Madrid's Quintín Ultramarinos on the ground floor.",
+  "units": 58,
+  "unitsLeft": null,
+  "verified": {
+    "priceFrom": {
+      "date": "2025-12-19",
+      "source": "South Florida Business Journal, groundbreaking coverage"
+    },
+    "minPrice": {
+      "date": "2025-12-19",
+      "source": "South Florida Business Journal, groundbreaking coverage"
+    },
+    "units": {
+      "date": "2025-12-19",
+      "source": "South Florida Business Journal, groundbreaking coverage"
+    },
+    "stage": {
+      "date": "2026-07-14",
+      "source": "PROFILEmiami — demolition complete, on-site sales gallery"
+    },
+    "completion": {
+      "date": "2026-03-18",
+      "source": "Developer release via PROFILEmiami — early 2028"
+    },
+    "statusRemark": {
+      "date": "2026-01-20",
+      "source": "The Real Deal — $132.5M Bank OZK construction loan"
+    },
+    "floorPlans": {
+      "date": "2026-08-04",
+      "source": "Developer broker floor plan set (24 unit PDFs)"
+    },
+    "salesTeam": {
+      "date": "2026-07-22",
+      "source": "Developer fact sheet (ENG), Adobe InDesign creation date"
+    },
+    "depositStructure": {
+      "date": "2026-03-12",
+      "source": "Developer Sales Forms — Deposit Structure PDF"
+    }
+  },
+  "videoTourId": null,
+  "wellnessScore": 72
+}

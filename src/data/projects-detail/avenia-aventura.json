@@ -1,0 +1,403 @@
+{
+  "address": "20605 NE 34th Avenue, Aventura, FL 33180",
+  "amenities": [
+    {
+      "icon": "⛵",
+      "label": "Private Marina",
+      "sub": "Fourteen slips for yachts up to eighty feet"
+    },
+    {
+      "icon": "🏊",
+      "label": "Horizon Rooftop",
+      "sub": "Resort pool and spa pool with golf course views"
+    },
+    {
+      "icon": "🧖",
+      "label": "Spa",
+      "sub": "Sauna, steam, cold plunge and a salt wall"
+    },
+    {
+      "icon": "💪",
+      "label": "Technogym Fitness",
+      "sub": "With an alfresco lawn for personal training"
+    },
+    {
+      "icon": "⛳",
+      "label": "Golf Simulator",
+      "sub": "Beside the screening room and games lounge"
+    },
+    {
+      "icon": "🍽",
+      "label": "Private Dining",
+      "sub": "Boardroom, library and wine wall alongside"
+    }
+  ],
+  "amenitiesDescription": "<p><strong>Horizon — the rooftop:</strong> An expansive sun deck with a resort-style pool and a separate spa pool, water, skyline and golf course views from sunrise to sunset, custom FENDI Casa cabanas and poolside loungers, two covered summer kitchens with grills and beverage centres, and two outdoor showers set in signature arched coves.</p><p><strong>Mezzo — level four, recharge:</strong> A Technogym fitness centre for cardio and weight training, an alfresco fitness lawn for personal training, indoor and outdoor yoga and Pilates spaces, a spa with sauna, steam room, cold plunge and salt wall, and a private treatment room with shower and massage beds.</p><p><strong>Mezzo — level four, relax:</strong> A games lounge with card tables and billiards, a bar and lounge with indoor and outdoor seating, a terrace over the golf course, a resident library, a wine wall, an executive room with boardroom table and A/V, a screening room, a golf simulator lounge, and a private dining room with a gourmet kitchen.</p><p><strong>Atrium — the lobby:</strong> Porte-cochère arrival under signature Roman columns, a FENDI Casa arched entryway, private reception with concierge, a reception lounge in FENDI Casa furniture, package and mail rooms, 24/7 security and valet, a marina lounge with coffee bar, a marina paseo over the waterway, and a linear park planted in native South Florida flora.</p>",
+  "architect": "Kobi Karp",
+  "densityScore": 22,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "Contract Signing"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "Top Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "Closing"
+    }
+  ],
+  "description": "Twenty-two residences at 20605 NE 34th Avenue, Aventura. Interiors by FENDI Casa, architecture by Kobi Karp, a private fourteen-slip marina and three levels of amenities. Two homes per floor, from $5M.",
+  "developer": "Vertical Developments",
+  "dossierImageIndices": {
+    "interstitials": [
+      19,
+      24,
+      22,
+      28
+    ]
+  },
+  "editorialLine": "Twenty-two homes, two to a floor.",
+  "floorPlans": [
+    {
+      "type": "East Residence",
+      "floors": "Floors 5–15",
+      "beds": 3,
+      "baths": 4.5,
+      "interiorSF": 3505,
+      "exteriorSF": "1,345 SF Terrace",
+      "inquireOnly": true,
+      "status": "2 Available"
+    },
+    {
+      "type": "West Residence",
+      "floors": "Floors 5–15",
+      "beds": 4,
+      "baths": 4.5,
+      "interiorSF": 3494,
+      "exteriorSF": "1,345 SF Terrace",
+      "inquireOnly": true,
+      "status": "2 Available"
+    },
+    {
+      "type": "Acqua Penthouse",
+      "floors": "Floor 16 · private rooftop with pool",
+      "interiorSF": 3887,
+      "exteriorSF": "1,912 SF Terrace",
+      "inquireOnly": true,
+      "status": "Inquire"
+    },
+    {
+      "type": "Terra Penthouse",
+      "floors": "Floor 16 · private rooftop with pool",
+      "interiorSF": 3876,
+      "exteriorSF": "1,912 SF Terrace",
+      "inquireOnly": true,
+      "status": "Inquire"
+    }
+  ],
+  "galleryImageAlts": [
+    "Avenia Aventura seen from the air, planted terraces stepping up the tower above the canal and the golf course beyond",
+    "The Horizon rooftop pool at Avenia at sunset, loungers along the deck and the fairway stretching west",
+    "The porte-cochère at Avenia, signature Roman columns under a planted green ceiling",
+    "A living area at Avenia in FENDI Casa furnishings, full-height glass opening to the terrace",
+    "The south terrace at Avenia, cane seating under the overhang with the golf course below",
+    "Avenia Aventura from above at the canal edge, the full height of the planted west elevation",
+    "Avenia Aventura from the street, palms across the base of the tower",
+    "The Atrium reception lounge at Avenia, FENDI Casa seating beneath the signature arch",
+    "The front desk at Avenia, a fluted screen behind the concierge position",
+    "The marina lounge at Avenia, glass doors opening onto the paseo above the waterway",
+    "A FENDI Casa kitchen at Avenia with a stone island and integrated panelled appliances",
+    "An open dining and kitchen room at Avenia, pendants over a long stone island",
+    "A dining area at Avenia with the terrace and the waterway beyond the glass",
+    "The kosher kitchen plan at Avenia, warm wood cabinetry with a second full appliance run",
+    "A primary bedroom at Avenia opening to its own private terrace",
+    "A primary bathroom at Avenia with a freestanding soaking tub and a glazed shower",
+    "A FENDI-branded Italian-made walk-in closet at Avenia with built-in fixtures",
+    "A powder room at Avenia in an arched stone alcove",
+    "A residence terrace at Avenia looking north over the waterway to the skyline",
+    "A residence terrace at Avenia looking west across the golf course",
+    "The Technogym fitness centre at Avenia, cardio line along a glazed wall",
+    "The fitness terrace at Avenia, lounge seating on the alfresco training lawn",
+    "The spa at Avenia, sauna and steam rooms behind a patterned screen",
+    "A private treatment room at Avenia with a massage bed and a stone ledge",
+    "The golf simulator lounge at Avenia, a fairway projected across the end wall",
+    "The screening room at Avenia in dark velvet with tiered seating",
+    "The games lounge at Avenia, card tables under an arched ceiling detail",
+    "An indoor lounge at Avenia with curved seating facing full-height glass",
+    "A rooftop summer kitchen at Avenia, dining under a slatted pergola",
+    "The executive room at Avenia, a boardroom table under a skylit ceiling"
+  ],
+  "hoa": "Not published",
+  "id": 67,
+  "imgCaptions": {
+    "19": {
+      "kicker": "THREE EXPOSURES",
+      "line": "Water, city and fairway — from every residence"
+    },
+    "22": {
+      "kicker": "MEZZO · LEVEL FOUR",
+      "line": "Sauna, steam, cold plunge — and a salt wall"
+    },
+    "24": {
+      "kicker": "MEZZO · LEVEL FOUR",
+      "line": "A simulator for the course next door"
+    },
+    "28": {
+      "kicker": "HORIZON · ROOFTOP",
+      "line": "Two summer kitchens under the pergola"
+    }
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/avenia/avenia-aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/rooftop-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/porte-cochere.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/living-area.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/terrace-golf-view.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/tower-aerial.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/tower-street.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/lobby-front-desk.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/marina-lobby.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/dining-kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/dining-area.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/kosher-kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/primary-bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/primary-bath.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/walk-in-closet.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/powder-room.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/balcony-waterway.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/balcony-golf.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/gym.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/gym-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/spa-steam-room.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/massage-room.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/golf-simulator.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/cinema-room.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/game-room.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/indoor-lounge.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/summer-kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/avenia/meeting-room.webp"
+  ],
+  "interiorDesigner": "The One Atelier",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "22",
+        "label": "Total residences",
+        "note": "Two per floor across eleven residential levels. Every home is a half floor."
+      },
+      {
+        "value": "$5M–$5.95M",
+        "label": "Live inventory band",
+        "note": "Across the four available residences, September 2026. No launch price has been published."
+      },
+      {
+        "value": "14",
+        "label": "Private marina slips",
+        "note": "Yachts to 80 feet, plus a dedicated pickup and drop-off slip to 40 feet."
+      },
+      {
+        "value": "40%",
+        "label": "Paid before closing",
+        "note": "20% at contract, 10% at groundbreaking, 10% at top off, 60% at closing."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Four of twenty-two shown available",
+        "body": "The developer's broker portal shows two East and two West residences available as of September 2026."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "FENDI Casa interiors, The One Atelier",
+        "body": "Interiors are curated by FENDI Casa, with The One Atelier as interior architect and Kobi Karp on the building."
+      },
+      {
+        "pill": "Waterfront",
+        "pillColor": "gold",
+        "title": "Fourteen private slips for twenty-two homes",
+        "body": "Yachts to eighty feet on a canal at the edge of the golf course, plus a dedicated pickup and drop-off slip to forty feet."
+      },
+      {
+        "pill": "Density",
+        "pillColor": "gold",
+        "title": "Half-floor homes with three exposures",
+        "body": "Every residence takes half a level and opens off its own private elevator lobby, with water, city and fairway outlooks."
+      },
+      {
+        "pill": "Terms",
+        "pillColor": "gray",
+        "title": "Sixty percent stays with the buyer until closing",
+        "body": "Deposits run 20% at contract, 10% at groundbreaking and 10% at top off. The building has not yet broken ground."
+      }
+    ],
+    "thesis": "Avenia pairs FENDI Casa interiors with a twenty-two-home program: two residences to a floor across eleven levels, and four of the twenty-two shown available on the developer's broker portal as of September 2026. The site is the argument: a canal lot on the edge of a golf course gives every half-floor home three exposures over water, fairway and skyline, and the fourteen-slip private marina takes yachts to eighty feet. Deposits run 20/10/10/60, so sixty percent of the purchase price stays with the buyer until delivery.",
+    "footnote": "Figures from the developer's fact sheet and floor plan set (May 2025) and the developer's broker portal (September 2026). The $5M–$5.95M band is the live ask across the four available residences, not a launch price — no launch figure has been published. Delivery date, storey count, HOA and rental policy are not published by the developer."
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "22",
+        "label": "Total residences",
+        "note": "Two per floor across eleven residential levels. Every home is a half floor."
+      },
+      {
+        "value": "$5M–$5.95M",
+        "label": "Live inventory band",
+        "note": "Across the four available residences, September 2026. No launch price has been published."
+      },
+      {
+        "value": "14",
+        "label": "Private marina slips",
+        "note": "Yachts to 80 feet, plus a dedicated pickup and drop-off slip to 40 feet."
+      },
+      {
+        "value": "40%",
+        "label": "Paid before closing",
+        "note": "20% at contract, 10% at groundbreaking, 10% at top off, 60% at closing."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "Four of twenty-two shown available",
+        "body": "The developer's broker portal shows two East and two West residences available as of September 2026."
+      },
+      {
+        "pill": "Brand",
+        "pillColor": "gold",
+        "title": "FENDI Casa interiors, The One Atelier",
+        "body": "Interiors are curated by FENDI Casa, with The One Atelier as interior architect and Kobi Karp on the building."
+      },
+      {
+        "pill": "Waterfront",
+        "pillColor": "gold",
+        "title": "Fourteen private slips for twenty-two homes",
+        "body": "Yachts to eighty feet on a canal at the edge of the golf course, plus a dedicated pickup and drop-off slip to forty feet."
+      },
+      {
+        "pill": "Density",
+        "pillColor": "gold",
+        "title": "Half-floor homes with three exposures",
+        "body": "Every residence takes half a level and opens off its own private elevator lobby, with water, city and fairway outlooks."
+      },
+      {
+        "pill": "Terms",
+        "pillColor": "gray",
+        "title": "Sixty percent stays with the buyer until closing",
+        "body": "Deposits run 20% at contract, 10% at groundbreaking and 10% at top off. The building has not yet broken ground."
+      }
+    ],
+    "thesis": "Avenia pairs FENDI Casa interiors with a twenty-two-home program: two residences to a floor across eleven levels, and four of the twenty-two shown available on the developer's broker portal as of September 2026. The site is the argument: a canal lot on the edge of a golf course gives every half-floor home three exposures over water, fairway and skyline, and the fourteen-slip private marina takes yachts to eighty feet. Deposits run 20/10/10/60, so sixty percent of the purchase price stays with the buyer until delivery.",
+    "footnote": "Figures from the developer's fact sheet and floor plan set (May 2025) and the developer's broker portal (September 2026). The $5M–$5.95M band is the live ask across the four available residences, not a launch price — no launch figure has been published. Delivery date, storey count, HOA and rental policy are not published by the developer."
+  },
+  "investmentThesis": "<p>Avenia pairs FENDI Casa interiors with a twenty-two-home program: two residences to a floor across eleven levels, and four of the twenty-two shown available on the developer's broker portal as of September 2026.</p><p>The site is the argument. A canal lot on the edge of a golf course gives every half-floor home three exposures over water, fairway and skyline, and the fourteen-slip private marina takes yachts to eighty feet. Two parking spaces come with every residence and three with each penthouse.</p><p>Deposits run twenty percent at contract, ten at groundbreaking, ten at top off and sixty at closing, so sixty percent of the purchase price stays with the buyer until delivery.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "keyMetrics": [
+    {
+      "value": "22",
+      "label": "Residences, two per floor",
+      "note": "Eleven residential levels, each home a half floor with three exposures"
+    },
+    {
+      "value": "14",
+      "label": "Private marina slips",
+      "note": "Yachts to 80 feet, plus a dedicated pickup and drop-off slip to 40 feet"
+    },
+    {
+      "value": "10,000+ SF",
+      "label": "Private amenities",
+      "note": "Across three levels — Atrium lobby, Mezzo on four, Horizon rooftop"
+    }
+  ],
+  "landscapeArchitect": "L&ND Design",
+  "lat": 25.96651,
+  "lifestyle": [
+    "waterfront",
+    "marina",
+    "yachting",
+    "branded-living",
+    "boutique",
+    "limited-inventory",
+    "wellness"
+  ],
+  "lng": -80.133185,
+  "maxBath": 4.5,
+  "maxBed": 4,
+  "maxPrice": 5950000,
+  "maxSqft": 3887,
+  "minBath": 4.5,
+  "minBed": 3,
+  "minPrice": 5000000,
+  "minSqft": 3494,
+  "name": "Avenia Aventura",
+  "neighborhood": "Aventura",
+  "neighborhoodMap": {
+    "pinUrl": "https://www.google.com/maps/search/?api=1&query=25.96651,-80.133185"
+  },
+  "parking": "Two assigned spaces per residence and three per penthouse; secure garage with guest parking, 24/7 valet and bicycle storage",
+  "priceFrom": "$5M+",
+  "pricePerSqft": null,
+  "privacyScore": 92,
+  "rentalPolicy": "Not published",
+  "residenceContent": "<p class=\"prop-residence-intro\">Twenty-two homes on a canal at the edge of a golf course in Aventura, two to a floor across eleven residential levels. Kobi Karp drew the building with planted terraces stepping up each elevation and a porte-cochère carried on signature Roman columns under a green ceiling. Every residence occupies half a floor and opens off its own private elevator lobby, with three exposures — water, city and fairway — and a dedicated service entrance behind.</p><p>Interiors are curated by FENDI Casa with The One Atelier as interior architect, and the maison's signature arch recurs from the entryway through to the residences. Kitchens are FENDI Casa with European stone counters and a Sub-Zero and Wolf suite — panelled refrigeration, wine storage, induction cooktop and convection oven — and a kosher kitchen plan is drawn as an alternative. Primary suites take a private terrace, a spa bathroom with soaking tub and separate water closet, and an Italian-made FENDI-branded walk-in closet with built-in fixtures. Every home carries a full laundry room, integrated smart home control, and pre-wiring for motorised shades.</p><p>Floors five to fifteen hold the East and West Residences at 3,505 and 3,494 square feet of interior space, each with 1,345 square feet of terrace — three bedrooms on the east line, four on the west, four and a half baths either way. Level sixteen is given to two half-floor penthouses, Acqua and Terra, at 3,887 and 3,876 square feet with 1,912 square feet of terrace apiece, eleven-foot ceilings, three assigned parking spaces and a private rooftop with its own pool.</p>",
+  "slug": "avenia-aventura",
+  "sqftRange": "3,494 – 3,887 SF interior",
+  "stage": "preconstruction",
+  "statusRemark": "PRE-CONSTRUCTION · FOUR OF TWENTY-TWO SHOWN AVAILABLE",
+  "tagline": "Twenty-two half-floor residences on an Aventura waterway, with interiors by FENDI Casa and a fourteen-slip private marina.",
+  "units": 22,
+  "unitsLeft": 4,
+  "verified": {
+    "minPrice": {
+      "date": "2026-09-21",
+      "source": "Developer broker portal — live inventory band $5,000,000–$5,950,000 across the four available residences. Current ask, NOT a launch price."
+    },
+    "maxPrice": {
+      "date": "2026-09-21",
+      "source": "Developer broker portal — top of the live inventory band across the four available residences"
+    },
+    "units": {
+      "date": "2025-05-27",
+      "source": "Developer fact sheet and unbranded brochure — 22 residences, two per floor"
+    },
+    "unitsLeft": {
+      "date": "2026-09-21",
+      "source": "Developer broker portal — four residences shown available (two East, two West)"
+    },
+    "minSqft": {
+      "date": "2025-05-27",
+      "source": "Developer floor plan set — West Residence interior 3,494 SF, floors 5–15"
+    },
+    "maxSqft": {
+      "date": "2025-05-27",
+      "source": "Developer floor plan set — Acqua Penthouse interior 3,887 SF, floor 16"
+    },
+    "stage": {
+      "date": "2026-09-21",
+      "source": "Developer deposit schedule bills groundbreaking and top off as future milestones — not yet under construction"
+    }
+  },
+  "vibeMatch": [
+    "quiet-luxury",
+    "waterfront",
+    "brand-prestige",
+    "intimate",
+    "residential",
+    "privacy-first"
+  ],
+  "wellnessScore": 80
+}

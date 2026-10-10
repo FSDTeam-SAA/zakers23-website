@@ -1,0 +1,295 @@
+{
+  "address": "175 SE 25th Road, Miami, FL 33129",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Three Pools + Jacuzzi",
+      "sub": "Lap, family, bayside"
+    },
+    {
+      "icon": "👶",
+      "label": "Family Amenities",
+      "sub": "Splash-pad & kids' room"
+    },
+    {
+      "icon": "💆",
+      "label": "Aman-Group Wellness",
+      "sub": "Full-floor spa & fitness"
+    },
+    {
+      "icon": "🎬",
+      "label": "Theater & Dining",
+      "sub": "Cinema, catering kitchen"
+    },
+    {
+      "icon": "🌴",
+      "label": "Grand Bay Club",
+      "sub": "Key Biscayne access"
+    },
+    {
+      "icon": "🛎",
+      "label": "White-Glove Living",
+      "sub": "Baywalk, storage, concierge"
+    }
+  ],
+  "amenitiesDescription": "<p>Three swimming pools — a lap pool, a family pool, and a bayside pool — plus a Jacuzzi, a kids' splash-pad, and a dedicated kids' room. An entire floor is devoted to health and fitness, curated by the Aman group, with yoga and personal-training areas, his-and-hers dressing rooms, saunas, steam rooms, and indoor and outdoor massage treatment rooms.</p><p>Additional amenities include a movie theater, a catering kitchen and private dining room, indoor and outdoor owners' lounges, exclusive access to the Grand Bay Club in Key Biscayne, white-glove residential services, baywalk access, and private air-conditioned storage areas.</p>",
+  "architect": "Adrian Smith + Gordon Gill Architecture",
+  "completion": "2025",
+  "densityScore": 35,
+  "description": "The last bayfront site in South Brickell. 47-story waterfront tower with a curved glass silhouette inspired by the Italian Riva yacht. 135 luxury residences by Adrian Smith + Gordon Gill. Move-in ready.",
+  "developer": "OKO Group & Cain International",
+  "featureVideo": {
+    "src": "https://frasermiami.s3.amazonaws.com/una/una-showcase.mp4",
+    "poster": "https://frasermiami.s3.amazonaws.com/una/una-poster.webp",
+    "label": "UNA Residences",
+    "tagline": "Waterfront living on Biscayne Bay — every residence framed by water, sky, and skyline.",
+    "uploadDate": "2026-09-03"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlanPdf": "https://frasermiami.s3.amazonaws.com/una/Una-Residences-Full-Key-Plans.pdf",
+  "floorPlans": [
+    {
+      "type": "Residence 4401",
+      "floors": "Upper North Penthouse, levels 44–46",
+      "addlRooms": "Two private pools",
+      "beds": 6,
+      "baths": 7,
+      "sqft": 7084,
+      "exteriorSF": 2871,
+      "status": "Sold",
+      "priceLabel": "$17.9M",
+      "sold": true
+    },
+    {
+      "type": "2-Bedroom Residences",
+      "floors": "Levels 5–16, lines 03–04",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "1,102–1,130",
+      "exteriorSF": "421–440 ft² Exterior",
+      "status": "Inquire"
+    },
+    {
+      "type": "3-Bedroom Residences",
+      "floors": "Levels 5–16 and 19–37",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,946–2,105",
+      "exteriorSF": "313–319 ft² Exterior",
+      "status": "Inquire"
+    },
+    {
+      "type": "4-Bedroom Residences",
+      "floors": "Levels 23–37, lines 01–02",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "2,743–2,752",
+      "exteriorSF": 483,
+      "status": "Inquire"
+    },
+    {
+      "type": "5-Bedroom Penthouses",
+      "floors": "Levels 38–43",
+      "addlRooms": "Den and housekeeping quarters",
+      "beds": 5,
+      "baths": 6.5,
+      "sqft": "4,725–4,735",
+      "exteriorSF": "796–797 ft² Exterior",
+      "status": "Inquire"
+    },
+    {
+      "type": "Vista Residence",
+      "floors": "Levels 19–22, line 01",
+      "addlRooms": "Family room",
+      "beds": 5,
+      "baths": 6.5,
+      "sqft": 5489,
+      "exteriorSF": 966,
+      "status": "Inquire"
+    }
+  ],
+  "floorPlansShowAll": true,
+  "height": "47 Stories",
+  "heroImgPosition": "center 28%",
+  "hoa": "$1.71 / sq ft",
+  "id": 17,
+  "img": "https://frasermiami.s3.amazonaws.com/una/exterior-hero.webp",
+  "imgPositions": {
+    "3": "center center",
+    "4": "center 40%"
+  },
+  "imgPositionsMobile": {
+    "3": "center 35%",
+    "4": "center 38%"
+  },
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/una/exterior-hero.webp",
+    "https://frasermiami.s3.amazonaws.com/una/lap-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/una/bayfront-pool.webp",
+    "https://frasermiami.s3.amazonaws.com/una/living.webp",
+    "https://frasermiami.s3.amazonaws.com/una/kitchen.webp",
+    "https://frasermiami.s3.amazonaws.com/una/indoor-outdoor.webp",
+    "https://frasermiami.s3.amazonaws.com/una/hero-day.webp",
+    "https://frasermiami.s3.amazonaws.com/una/balcony.webp",
+    "https://frasermiami.s3.amazonaws.com/una/bedroom.webp",
+    "https://frasermiami.s3.amazonaws.com/una/bedroom2.webp",
+    "https://frasermiami.s3.amazonaws.com/una/bathroom.webp",
+    "https://frasermiami.s3.amazonaws.com/una/hero.webp"
+  ],
+  "inquiryButtonLabel": "Request Full Fact Sheet & Inventory",
+  "inquirySubject": "Inquiry: UNA Residences - Fact Sheet Request",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "$17.9M",
+        "label": "Residence 4401 closed Aug 2026",
+        "note": "Developer close at 175 SE 25th Road, recorded $17,907,512"
+      },
+      {
+        "value": "$1,912",
+        "label": "Avg price / sq ft",
+        "note": "Waterfront South Brickell, with no comparable delivered product within a mile radius"
+      },
+      {
+        "value": "135 units",
+        "label": "Total residences — boutique for Brickell",
+        "note": "47-story waterfront tower, 135 residences; lower density than any other tower in the Brickell waterfront corridor"
+      },
+      {
+        "value": "Move-in ready",
+        "label": "Delivery: 2025 — immediate occupancy",
+        "note": "Delivered end of 2025. Buyers can close and occupy immediately."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Adrian Smith + Gordon Gill — Burj Khalifa architects",
+        "body": "AS+GG designed the world's tallest building (Burj Khalifa) and Central Park Tower in New York. Una is their first Miami project. The curved glass silhouette, inspired by the Riva yacht, is instantly recognizable on the South Brickell waterfront — a permanent skyline landmark."
+      },
+      {
+        "pill": "Last site",
+        "pillColor": "gold",
+        "title": "Final bayfront parcel in South Brickell",
+        "body": "Una occupies the last direct bayfront development site in the South Brickell enclave — 150 feet of Biscayne Bay frontage that no future construction can obstruct."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "OKO Group (Vladislav Doronin), Aman Group owner",
+        "body": "Vladislav Doronin developed Una and chairs Aman Resorts globally. OKO's luxury track record includes record-setting Aman Miami Beach pre-sales in Surfside. Una was his first Miami residential project and set the OKO standard."
+      },
+      {
+        "pill": "Yield",
+        "pillColor": "gray",
+        "title": "South Brickell's tightest rental corridor — income from closing",
+        "body": "Delivered waterfront product in South Brickell supports net yields of 3–4.5% annually. No construction overlap, no deposit carry — rental income begins the month the buyer closes."
+      }
+    ],
+    "thesis": "Una Residences is the finished product from the same developer behind Aman Miami Beach — delivered, occupiable, and sitting on the last bayfront site in South Brickell. Adrian Smith + Gordon Gill's design pedigree (Burj Khalifa, Central Park Tower) gives the building permanent architectural credibility, and Enzo Enea's landscape connects it to the same aesthetic DNA as the most sought-after towers in Switzerland and the South of France. At 135 residences and $1,912/sqft, Una is the lowest-density waterfront option in Brickell at a price point that still offers meaningful upside as the corridor continues to reprice.",
+    "footnote": "HOA: $1.71/sq ft · Rental policy: 6-month min, 2x/year · Delivery: 2025 (move-in ready)"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "$17.9M",
+        "label": "Residence 4401 closed Aug 2026",
+        "note": "Developer close at 175 SE 25th Road, recorded $17,907,512"
+      },
+      {
+        "value": "$1,912",
+        "label": "Avg price / sq ft",
+        "note": "Waterfront South Brickell, with no comparable delivered product within a mile radius"
+      },
+      {
+        "value": "135 units",
+        "label": "Total residences — boutique for Brickell",
+        "note": "47-story waterfront tower, 135 residences; lower density than any other tower in the Brickell waterfront corridor"
+      },
+      {
+        "value": "Move-in ready",
+        "label": "Delivery: 2025 — immediate occupancy",
+        "note": "Delivered end of 2025. Buyers can close and occupy immediately."
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Adrian Smith + Gordon Gill — Burj Khalifa architects",
+        "body": "AS+GG designed the world's tallest building (Burj Khalifa) and Central Park Tower in New York. Una is their first Miami project. The curved glass silhouette, inspired by the Riva yacht, is instantly recognizable on the South Brickell waterfront — a permanent skyline landmark."
+      },
+      {
+        "pill": "Last site",
+        "pillColor": "gold",
+        "title": "Final bayfront parcel in South Brickell",
+        "body": "Una occupies the last direct bayfront development site in the South Brickell enclave — 150 feet of Biscayne Bay frontage that no future construction can obstruct."
+      },
+      {
+        "pill": "Developer",
+        "pillColor": "gold",
+        "title": "OKO Group (Vladislav Doronin), Aman Group owner",
+        "body": "Vladislav Doronin developed Una and chairs Aman Resorts globally. OKO's luxury track record includes record-setting Aman Miami Beach pre-sales in Surfside. Una was his first Miami residential project and set the OKO standard."
+      },
+      {
+        "pill": "Yield",
+        "pillColor": "gray",
+        "title": "South Brickell's tightest rental corridor — income from closing",
+        "body": "Delivered waterfront product in South Brickell supports net yields of 3–4.5% annually. No construction overlap, no deposit carry — rental income begins the month the buyer closes."
+      }
+    ],
+    "thesis": "Una Residences is the finished product from the same developer behind Aman Miami Beach — delivered, occupiable, and sitting on the last bayfront site in South Brickell. Adrian Smith + Gordon Gill's design pedigree (Burj Khalifa, Central Park Tower) gives the building permanent architectural credibility, and Enzo Enea's landscape connects it to the same aesthetic DNA as the most sought-after towers in Switzerland and the South of France. At 135 residences and $1,912/sqft, Una is the lowest-density waterfront option in Brickell at a price point that still offers meaningful upside as the corridor continues to reprice.",
+    "footnote": "HOA: $1.71/sq ft · Rental policy: 6-month min, 2x/year · Delivery: 2025 (move-in ready)"
+  },
+  "investmentThesis": "<p>The last available bayfront development site in South Brickell — a supply position that will not be replicated, with 150 feet of direct water frontage. AS+GG, the firm behind the Burj Khalifa and Central Park Tower, provides architectural credibility at the highest global tier. Vladislav Doronin's OKO Group (also behind Aman Miami Beach and Aman New York) brings a track record in ultra-luxury delivery. UNA is now move-in ready with immediate occupancy available, eliminating construction risk for buyers — and represents the first waterfront development in this South Brickell enclave in over two decades. The bayfront corridor provides direct access to Coconut Grove, Downtown Miami, and Key Biscayne.</p>",
+  "isActive": true,
+  "isFeatured": true,
+  "landscapeArchitect": "Enzo Enea",
+  "lat": 25.74923,
+  "lng": -80.20116,
+  "maxBed": 6,
+  "maxPrice": 17900000,
+  "maxSqft": 7089,
+  "minBed": 2,
+  "minPrice": 6200000,
+  "minSqft": 1102,
+  "name": "UNA Residences",
+  "neighborhood": "South Brickell",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/una-residences.jpg",
+  "parking": "Three levels of underground parking",
+  "priceFrom": "$6.2M+",
+  "pricePerSqft": 1912,
+  "privacyScore": 75,
+  "projectedAppreciation": 25,
+  "rentalPolicy": "6-month minimum lease, up to 2 rentals per year",
+  "residenceContent": "<p class=\"prop-residence-intro\">A 47-story waterfront tower whose curved glass silhouette is drawn directly from the Italian Riva yacht. Architecture and interiors by AS+GG, with lush gardens by Enzo Enea. 135 luxury residences range from two to five bedrooms and 1,102 to 4,735 square feet, plus two tri-level penthouses of 7,084 and 7,089 interior square feet with 2,871 square feet of terrace and rooftop. Each home offers private elevators with direct entry, expansive ~10-foot-wide terraces with lift-and-glide floor-to-ceiling doors and glass balcony railings, ceiling heights of at least 10'8\", chef's kitchens with Gaggenau ovens, electric induction cooktops, microwaves, dishwashers, and refrigerators/freezers, primary suites with separate his-and-hers closets and bathrooms, and utility rooms with full-sized washers and dryers. Upper-floor flow-through residences capture east-to-west ocean and city exposures. The penthouses each include two private pools, a summer kitchen, sauna and steam room, and ceilings from 11'7\" to 12'4\". Three levels of underground parking. High-efficiency, noise-reducing floor-to-ceiling exterior glass throughout.</p>",
+  "slug": "una-residences",
+  "stage": "move_in_ready",
+  "statusRemark": "DELIVERED 2025 · MOVE-IN READY",
+  "stickyCtaLabel": "Request Fact Sheet",
+  "units": 135,
+  "verified": {
+    "hoa": {
+      "date": "2026-08-23",
+      "source": "MLS active listings, Aug 2026 — monthly association fee ÷ interior sq ft (SqFt LA), median. $1.71/sf across 4 active listings; one listing at $0.83/sf and two showing a $0 fee excluded as data errors."
+    },
+    "maxPrice": {
+      "date": "2026-08-13",
+      "source": "Traded Miami, 175 SE 25th Road #4401 closed $17,907,512"
+    },
+    "completion": {
+      "date": "2026-08-22",
+      "source": "Brett Fraser — delivered end of 2025"
+    },
+    "stage": {
+      "date": "2026-08-22",
+      "source": "Brett Fraser — delivered end of 2025"
+    },
+    "statusRemark": {
+      "date": "2026-08-22",
+      "source": "Brett Fraser — delivered end of 2025"
+    }
+  },
+  "wellnessScore": 65
+}

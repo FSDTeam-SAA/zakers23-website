@@ -1,0 +1,239 @@
+{
+  "address": "7940 West Drive, North Bay Village, FL 33141",
+  "amenities": [
+    {
+      "icon": "🏎",
+      "label": "Pagani Gallery",
+      "sub": "Private automotive art"
+    },
+    {
+      "icon": "🏊",
+      "label": "Ocean Pool",
+      "sub": "Direct beach access"
+    },
+    {
+      "icon": "🍽",
+      "label": "Private Chef",
+      "sub": "On-call dining"
+    },
+    {
+      "icon": "🛎",
+      "label": "Butler Service",
+      "sub": "24/7 dedicated"
+    },
+    {
+      "icon": "🚗",
+      "label": "Concierge Garage",
+      "sub": "Curated vehicle storage"
+    },
+    {
+      "icon": "🎨",
+      "label": "Art Curation",
+      "sub": "Pagani signed works"
+    }
+  ],
+  "amenitiesDescription": "<p>Amenities span four dedicated levels: a ground-floor waterfront lobby with private marina, 240-foot Biscayne Bay boardwalk, pet spa, and butler service; a Level 8 residents' lounge with co-working, media room, library, and meditation garden; a Level 29 Waterfront Wellness floor with fitness center, Pilates and yoga studios, spa with sauna, steam, and private treatment rooms; and a rooftop 360° pool with hot tub, cold plunge, cabanas, and alfresco dining.</p><p>Beyond the building, residents access a branded Private Beach Club at Miami Beach, a Resident Yacht Club with reciprocal privileges in Monaco and Saint-Tropez, and Prestige Auto luxury vehicle management — all through the Pagani Residences mobile app.</p>",
+  "architect": "Revuelta Architecture International",
+  "architectQuote": "Like a Pagani, every detail is resolved at a level most will never see — but everyone will feel.",
+  "architectQuoteBy": "Pagani Arte",
+  "badge": "Construction Underway",
+  "completion": "2027",
+  "densityScore": 30,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At Contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At Top Off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At Closing (2027)"
+    }
+  ],
+  "description": "Construction is underway on the world's first Pagani-branded residential tower. Seventy all-corner waterfront homes in North Bay Village, curated by Horacio Pagani and Pagani Arte, each delivered with bespoke Italian atelier interiors and an exclusive Pagani automotive sculpture.",
+  "developer": "Riviera Horizons",
+  "dossierImageIndices": {
+    "interstitials": []
+  },
+  "editorialLine": "Crafted. Not constructed.",
+  "floorPlans": [
+    {
+      "type": "3-Bedroom Sky Residence",
+      "addlRooms": "Terrace + Study",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "3,000–4,500 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "Duplex Penthouse",
+      "addlRooms": "Private Rooftop Pool + Summer Kitchen",
+      "beds": 5,
+      "baths": 6,
+      "sqft": "Up to 12,200 sq ft (incl. 5,200 outdoor)",
+      "status": "Limited"
+    }
+  ],
+  "height": "30 Stories",
+  "heroImgPosition": "right top",
+  "hoa": "$3.00 / sq ft",
+  "id": 4,
+  "img": "https://frasermiami.s3.amazonaws.com/pagani/pagani-residences-miami-hero.jpg",
+  "imgs": [
+    "https://frasermiami.s3.amazonaws.com/pagani/pagani-tower-waterfront.mp4",
+    "https://frasermiami.s3.amazonaws.com/pagani/pagani-residences-miami-hero.jpg",
+    "https://frasermiami.s3.amazonaws.com/pagani/pagani-lobby-interior.mp4",
+    "https://frasermiami.s3.amazonaws.com/pagani/pagani-luxury-car-gallery.png",
+    "https://frasermiami.s3.amazonaws.com/pagani/pagani-rooftop-pool.mp4",
+    "https://frasermiami.s3.amazonaws.com/pagani/pagani-biscayne-bay-views.jpg",
+    "https://frasermiami.s3.amazonaws.com/pagani/pagani-biscayne-bay-views2.jpg",
+    "https://frasermiami.s3.amazonaws.com/pagani/pagani-residences-kitchen.jpg",
+    "https://frasermiami.s3.amazonaws.com/pagani/pagani-wellness-spa.jpg",
+    "https://frasermiami.s3.amazonaws.com/pagani/pagani-private-marina.jpg",
+    "https://frasermiami.s3.amazonaws.com/pagani/pagani-tower-night-view.jpg"
+  ],
+  "interiorDesigner": "Pagani Arte",
+  "interstitialVideos": {
+    "A": 0,
+    "C": 1,
+    "B": 2
+  },
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "Under Construction",
+        "label": "Project status",
+        "note": "Vertical construction underway as of May 2026; delivery slated for 2027"
+      },
+      {
+        "value": "$3,000+",
+        "label": "Avg asking / sq ft",
+        "note": "North Bay Village waterfront; Pagani brand premium over comparable waterfront product"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Pagani produces fewer than 40 hypercars per year — fewer than the number of residences in this building"
+      },
+      {
+        "value": "4 per floor",
+        "label": "Max residences per level",
+        "note": "All-corner positioning; ultra-boutique canvas amplifies scarcity"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Past the pre-sale risk window",
+        "body": "Riviera Horizons is building in coordination with A++ and Revuelta Architecture — reaching vertical construction removes one of the biggest pre-sale risk variables for buyers."
+      },
+      {
+        "pill": "Pricing record",
+        "pillColor": "gold",
+        "title": "Penthouses set North Bay Village price records at $30M and $28.5M",
+        "body": "The two duplex penthouses crowning floors 28 and 29 establish a new pricing ceiling for the submarket. Residences start at $3.7M."
+      },
+      {
+        "pill": "Category first",
+        "pillColor": "gold",
+        "title": "World's first Pagani-branded residence",
+        "body": "This is the marque's only residential project anywhere — designed for the collector buyer who already owns the cars."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gray",
+        "title": "Collector asset profile — minimal resale supply expected",
+        "body": "With just 70 residences, primary inventory closes once — and Pagani owners are unlikely to sell, so resale velocity historically tracks the brand's scarcity."
+      }
+    ],
+    "thesis": "Pagani Residences is the purest expression of the collector-asset residential thesis: a brand so scarce it makes other luxury brands look mass-market, applied to an ultra-boutique building on Biscayne Bay. With construction now underway and the penthouses setting North Bay Village pricing records, the building has crossed the threshold from concept to certainty. The buyer here is not optimizing for yield — they are securing an address where access closes permanently once primary inventory is gone.",
+    "footnote": "HOA: ~$3.00/sq ft · Rental policy: Min 6-month · Delivery: 2027"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "Under Construction",
+        "label": "Project status",
+        "note": "Vertical construction underway as of May 2026; delivery slated for 2027"
+      },
+      {
+        "value": "$3,000+",
+        "label": "Avg asking / sq ft",
+        "note": "North Bay Village waterfront; Pagani brand premium over comparable waterfront product"
+      },
+      {
+        "value": "+31%",
+        "label": "Branded residence premium",
+        "note": "Pagani produces fewer than 40 hypercars per year — fewer than the number of residences in this building"
+      },
+      {
+        "value": "4 per floor",
+        "label": "Max residences per level",
+        "note": "All-corner positioning; ultra-boutique canvas amplifies scarcity"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Construction",
+        "pillColor": "gold",
+        "title": "Past the pre-sale risk window",
+        "body": "Riviera Horizons is building in coordination with A++ and Revuelta Architecture — reaching vertical construction removes one of the biggest pre-sale risk variables for buyers."
+      },
+      {
+        "pill": "Pricing record",
+        "pillColor": "gold",
+        "title": "Penthouses set North Bay Village price records at $30M and $28.5M",
+        "body": "The two duplex penthouses crowning floors 28 and 29 establish a new pricing ceiling for the submarket. Residences start at $3.7M."
+      },
+      {
+        "pill": "Category first",
+        "pillColor": "gold",
+        "title": "World's first Pagani-branded residence",
+        "body": "This is the marque's only residential project anywhere — designed for the collector buyer who already owns the cars."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gray",
+        "title": "Collector asset profile — minimal resale supply expected",
+        "body": "With just 70 residences, primary inventory closes once — and Pagani owners are unlikely to sell, so resale velocity historically tracks the brand's scarcity."
+      }
+    ],
+    "thesis": "Pagani Residences is the purest expression of the collector-asset residential thesis: a brand so scarce it makes other luxury brands look mass-market, applied to an ultra-boutique building on Biscayne Bay. With construction now underway and the penthouses setting North Bay Village pricing records, the building has crossed the threshold from concept to certainty. The buyer here is not optimizing for yield — they are securing an address where access closes permanently once primary inventory is gone.",
+    "footnote": "HOA: ~$3.00/sq ft · Rental policy: Min 6-month · Delivery: 2027"
+  },
+  "investmentThesis": "<p>The only residential project by Pagani Automobili, whose Huayra and Utopia hypercars are produced in editions of fewer than 100. Construction is now underway, with completion slated for 2027. The building applies the same bespoke philosophy as the cars: every residence is personalized through the Pagani atelier. The two duplex penthouses set North Bay Village pricing records at $30M and $28.5M. Eight purchasable guest suites and eight Pagani Paddock private garages add a collector dimension. Beyond the building, residents access a branded Private Beach Club on Miami Beach, a Resident Yacht Club with reciprocal privileges in Monaco and Saint-Tropez, and Prestige Auto luxury vehicle management — all through the Pagani Residences mobile app. Located in North Bay Village, a private island enclave minutes from Miami Beach, Wynwood, and the Design District.</p>",
+  "isActive": true,
+  "lat": 25.8534,
+  "lng": -80.160308,
+  "maxBath": 6,
+  "maxBed": 5,
+  "maxPrice": 30000000,
+  "maxSqft": 12200,
+  "minBath": 2,
+  "minBed": 3,
+  "minPrice": 3700000,
+  "minSqft": 2000,
+  "name": "Pagani Residences",
+  "neighborhood": "North Bay Village",
+  "percentSold": 30,
+  "priceFrom": "$3.7M+",
+  "pricePerSqft": 2666,
+  "privacyScore": 85,
+  "projectedAppreciation": 40,
+  "residenceContent": "<p class=\"prop-residence-intro\">The first residential development in the world curated by Pagani, the Italian hypercar manufacturer whose obsession with art, science, and craftsmanship now extends to 70 all-corner waterfront homes. Construction is underway on the 30-story tower, which features a 240-foot private Biscayne Bay boardwalk and marina. Two- to four-bedroom residences range from 2,000 to over 3,300 square feet with 11-foot ceilings, ensuite private elevators, and terraces from 800 to 1,040 square feet. Only four residences per floor. Two duplex penthouses crown the 28th and 29th floors, each up to 12,200 square feet with 13-foot ceilings and private rooftop pools. Every home is delivered fully finished and completely bespoke, with owners working directly with Pagani's atelier to personalize finishes, materials, and color palettes. Each residence includes an exclusive Pagani automotive sculpture and furniture from Pagani Arte. Eight purchasable guest suites and eight Pagani Paddock private garages are available for acquisition.</p>",
+  "salesTeam": "Fortune Development Sales",
+  "slug": "pagani-residences",
+  "stage": "under_construction",
+  "units": 70,
+  "unitsLeft": 49,
+  "videoTourId": null,
+  "wellnessScore": 65
+}

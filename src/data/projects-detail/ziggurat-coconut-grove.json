@@ -1,0 +1,251 @@
+{
+  "address": "3101 Grand Avenue, Coconut Grove, FL 33133",
+  "amenities": [
+    {
+      "icon": "🏊",
+      "label": "Rooftop Pool & Cabanas",
+      "sub": "Panoramic Grove & Bay views"
+    },
+    {
+      "icon": "🍽",
+      "label": "Rooftop Restaurant",
+      "sub": "Steel pergola, alfresco dining"
+    },
+    {
+      "icon": "🌿",
+      "label": "Koi Pond Lobby",
+      "sub": "Oppenheim-designed arrival garden"
+    },
+    {
+      "icon": "🔥",
+      "label": "Fire Pit Lounge",
+      "sub": "Bougainvillea courtyard terrace"
+    },
+    {
+      "icon": "🚗",
+      "label": "24-Hour Valet",
+      "sub": "On-site, always staffed"
+    },
+    {
+      "icon": "🛎",
+      "label": "Hospitality Concierge",
+      "sub": "Luxury-trained, 24/7"
+    }
+  ],
+  "amenitiesDescription": "<p>At Ziggurat's core is an open-air paseo — a curated street-level experience featuring cuisine by a Michelin-star chef, couture ateliers, an artisanal café, and an international gourmet market. Residents receive exclusive rooftop membership to the Michelin-starred restaurant, plus access to a resort-style rooftop pool with hydrotherapy circuit, chef's grilling stations, private cabanas, and lounge chairs. A state-of-the-art wellness concept, custom-designed private event spaces, and direct views into the newly renovated Kirk Munroe Park complete the offering.</p><p>Building services include 24-hour valet, a luxury hospitality-trained concierge, mail and package delivery to each residence, dog walking and pet care, and dry-cleaning — setting a new benchmark for boutique new condo development in Coconut Grove.</p>",
+  "architect": "Oppenheim Architecture",
+  "architectQuote": "We were drawn to Coconut Grove for its irreplaceable character — the canopy, the quiet, the sense that nature is always winning. ZIGGURAT is our response to that. Not a building placed in a landscape, but a building that becomes one.",
+  "architectQuoteBy": "Chad Oppenheim · Oppenheim Architecture",
+  "completion": "Early 2028",
+  "densityScore": 10,
+  "description": "Just 19 bespoke homes in a biophilic Oppenheim Architecture sanctuary at the heart of Coconut Grove. Mixed-use with boutique office and curated retail. From $3.5M.",
+  "developer": "Allen Morris Company",
+  "editorialLine": "Where architecture becomes landscape.",
+  "featureVideo": {
+    "src": "/ziggurat/ziggurat-cutaways.mp4",
+    "poster": "/ziggurat/ziggurat-cutaways-poster.webp",
+    "label": "Ziggurat Coconut Grove",
+    "tagline": "Oppenheim Architecture's terraced residences, woven into the banyan canopy of Coconut Grove.",
+    "uploadDate": "2026-09-03"
+  },
+  "featureVideoPlacement": "top",
+  "floorPlans": [
+    {
+      "type": "2-Bedroom Residence",
+      "addlRooms": "Wraparound Terrace",
+      "beds": 2,
+      "baths": 2,
+      "sqft": "1,401–2,130 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "2-Bedroom + Den",
+      "addlRooms": "Den/Office + Terrace",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "2,043–2,842 sq ft",
+      "status": "Available"
+    },
+    {
+      "type": "3-Bedroom Residence",
+      "addlRooms": "Terrace + Service Room",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,800–3,600 sq ft",
+      "status": "Limited"
+    },
+    {
+      "type": "4-Bedroom Sky Home",
+      "addlRooms": "Private Terrace + Plunge Pool",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "3,900–4,800 sq ft",
+      "status": "1 Remaining"
+    },
+    {
+      "type": "5-Bedroom Penthouse",
+      "addlRooms": "Full Rooftop · Private Pool",
+      "beds": 5,
+      "baths": 5.5,
+      "sqft": "4,600–5,443 sq ft",
+      "status": "Inquire"
+    }
+  ],
+  "height": "6 Stories",
+  "heroImgPosition": "56% center",
+  "hoa": "$2.75 / sq ft",
+  "id": 11,
+  "img": "/ziggurat/hero-corner.jpg",
+  "imgs": [
+    "/ziggurat/hero-corner.jpg",
+    "/ziggurat/aerial.jpg",
+    "/ziggurat/moon-facade.jpg",
+    "/ziggurat/rooftop-pool.jpg",
+    "/ziggurat/penthouse-pool.jpg",
+    "/ziggurat/balcony-bay-view.jpg",
+    "/ziggurat/balcony-outdoor-kitchen.jpg",
+    "/ziggurat/koi-pond-lobby.jpg",
+    "/ziggurat/rooftop-restaurant.jpg",
+    "/ziggurat/kitchen-dark.jpg",
+    "/ziggurat/residents-lounge.jpg",
+    "/ziggurat/night-garden.jpg"
+  ],
+  "interiorDesigner": "Collarte Interiors",
+  "investmentIntelligence": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Grove luxury boutique comps (Mr. C, Grove at Grand Bay, Park Grove)"
+      },
+      {
+        "value": "$1,800+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. ~$1,200/sqft Grove luxury resale avg; Oppenheim architecture commands premium"
+      },
+      {
+        "value": "19 residences",
+        "label": "Total units — among smallest in Miami",
+        "note": "Ultra-boutique scale creates extreme resale scarcity and strong hold behavior"
+      },
+      {
+        "value": "Michelin",
+        "label": "Starred chef anchors ground-level culinary paseo",
+        "note": "Food-and-culture amenity drives foot traffic and long-term address prestige"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Chad Oppenheim — Grove's most celebrated architect",
+        "body": "Chad Oppenheim's practice is deeply rooted in Coconut Grove's nature-forward ethos. His work commands the highest per-sqft premiums in the neighborhoods where it appears. Ziggurat is his boldest residential statement — a terraced form that references ancient architecture while sitting inside the Grove's canopy."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "A true house substitute at Grove scale",
+        "body": "In a three-story building, each home has essentially no neighbors and functions as a house substitute — 3–5 bedrooms with outdoor terraces — for buyers who want condo-adjacent privacy, with resale inventory near-zero by historical Grove patterns."
+      },
+      {
+        "pill": "Culinary",
+        "pillColor": "gold",
+        "title": "Michelin-starred culinary paseo + rooftop restaurant",
+        "body": "The paseo weaves Michelin-starred cuisine, couture retail, and a gourmet market around the building, and residents receive exclusive rooftop-restaurant membership."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Grand Ave & Matilda — Grove's most central, walkable address",
+        "body": "Directly opposite Kirk Munroe Park ($6.3M renovation underway). Walkable to CocoWalk, Bayshore Drive, and top Grove schools. The $6.3M park renovation adjacent to the building is a government-funded value-add for buyers."
+      }
+    ],
+    "thesis": "Ziggurat is for the buyer who wants to live in Coconut Grove — really live there, at street level, inside the neighborhood — rather than looking down at it from a tower. At 19 units, it will behave like a private residence with condo services. Oppenheim Architecture ensures this building will be photographed, published, and referenced for decades. Grove boutique luxury at this scale has a near-perfect track record: Mr. C sold out before completion; Grove at Grand Bay and One Park Grove have virtually no resale inventory — owners hold.",
+    "footnote": "HOA: ~$2.75/sq ft · Rental policy: Min 1-month, up to 12x per year · Delivery: 2028"
+  },
+  "investmentIntelligenceData": {
+    "stats": [
+      {
+        "value": "+30%",
+        "label": "Comp trajectory (5yr)",
+        "note": "Based on Grove luxury boutique comps (Mr. C, Grove at Grand Bay, Park Grove)"
+      },
+      {
+        "value": "$1,800+",
+        "label": "Avg asking / sq ft",
+        "note": "vs. ~$1,200/sqft Grove luxury resale avg; Oppenheim architecture commands premium"
+      },
+      {
+        "value": "19 residences",
+        "label": "Total units — among smallest in Miami",
+        "note": "Ultra-boutique scale creates extreme resale scarcity and strong hold behavior"
+      },
+      {
+        "value": "Michelin",
+        "label": "Starred chef anchors ground-level culinary paseo",
+        "note": "Food-and-culture amenity drives foot traffic and long-term address prestige"
+      }
+    ],
+    "signals": [
+      {
+        "pill": "Architecture",
+        "pillColor": "gold",
+        "title": "Chad Oppenheim — Grove's most celebrated architect",
+        "body": "Chad Oppenheim's practice is deeply rooted in Coconut Grove's nature-forward ethos. His work commands the highest per-sqft premiums in the neighborhoods where it appears. Ziggurat is his boldest residential statement — a terraced form that references ancient architecture while sitting inside the Grove's canopy."
+      },
+      {
+        "pill": "Scarcity",
+        "pillColor": "gold",
+        "title": "A true house substitute at Grove scale",
+        "body": "In a three-story building, each home has essentially no neighbors and functions as a house substitute — 3–5 bedrooms with outdoor terraces — for buyers who want condo-adjacent privacy, with resale inventory near-zero by historical Grove patterns."
+      },
+      {
+        "pill": "Culinary",
+        "pillColor": "gold",
+        "title": "Michelin-starred culinary paseo + rooftop restaurant",
+        "body": "The paseo weaves Michelin-starred cuisine, couture retail, and a gourmet market around the building, and residents receive exclusive rooftop-restaurant membership."
+      },
+      {
+        "pill": "Location",
+        "pillColor": "gray",
+        "title": "Grand Ave & Matilda — Grove's most central, walkable address",
+        "body": "Directly opposite Kirk Munroe Park ($6.3M renovation underway). Walkable to CocoWalk, Bayshore Drive, and top Grove schools. The $6.3M park renovation adjacent to the building is a government-funded value-add for buyers."
+      }
+    ],
+    "thesis": "Ziggurat is for the buyer who wants to live in Coconut Grove — really live there, at street level, inside the neighborhood — rather than looking down at it from a tower. At 19 units, it will behave like a private residence with condo services. Oppenheim Architecture ensures this building will be photographed, published, and referenced for decades. Grove boutique luxury at this scale has a near-perfect track record: Mr. C sold out before completion; Grove at Grand Bay and One Park Grove have virtually no resale inventory — owners hold.",
+    "footnote": "HOA: ~$2.75/sq ft · Rental policy: Min 1-month, up to 12x per year · Delivery: 2028"
+  },
+  "investmentThesis": "<p>The only mixed-use boutique residential project in Coconut Grove. Above the residences, Ziggurat houses 100,000 SF of boutique office space across five stories and 40,000 SF of ground-floor retail and dining curated as an open-air paseo — a Michelin-starred chef restaurant, couture ateliers, an artisanal café, and an international gourmet market. The office tenancy activates the building day and night and creates a level of street-life sophistication that no other Grove residential project offers. Allen Morris Company is one of the most established Coconut Grove developers, and Oppenheim Architecture's biophilic language carries unusual collector appeal in this market. With only 19 residences and 65% already sold, Ziggurat is one of two sub-20-unit boutique projects under construction in the Grove, alongside OPUS Coconut Grove.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "landscapeArchitect": "Naturalficial · Andres Arcila",
+  "lat": 25.7283,
+  "lng": -80.2436,
+  "maxBath": 5.5,
+  "maxBed": 5,
+  "maxPrice": 15000000,
+  "maxSqft": 5000,
+  "minBath": 2,
+  "minBed": 2,
+  "minPrice": 3500000,
+  "minSqft": 1254,
+  "name": "Ziggurat Coconut Grove",
+  "neighborhood": "Coconut Grove",
+  "ogImage": "https://frasermiami.s3.amazonaws.com/og/ziggurat-coconut-grove.jpg",
+  "parking": "24-hour secured parking, including valet service",
+  "percentSold": 65,
+  "priceFrom": "$3.5M+",
+  "pricePerSqft": 1800,
+  "privacyScore": 95,
+  "projectedAppreciation": 30,
+  "rentalPolicy": "Up to 12 rentals per year; minimum 1-month stays",
+  "residenceContent": "<p class=\"prop-residence-intro\">One of Miami's most intimate new residential developments — a low-rise biophilic sanctuary where architecture dissolves into living landscape. The building's stepped form and cascading greenery draw from the ancient ziggurats, using oolite stone, natural woods, and tropical plantings to create an environment unlike anything else in Miami new construction. Just 19 residences feature ceilings up to 11 feet, European oak floors, travertine stone, custom Italian kitchens with Miele appliances, and 12-foot-deep terraces designed as outdoor living rooms. Layouts span 2-bedrooms to 5-bedroom penthouses, with sky homes including private plunge pools and the penthouse claiming a full rooftop with private pool. The site sits directly across from Kirk Munroe Park, currently undergoing a $6.3M renovation.</p>",
+  "salesTeam": "ONE Sotheby's International Realty",
+  "slug": "ziggurat-coconut-grove",
+  "sqftRange": "1,254 – 5,000+",
+  "stage": "under_construction",
+  "statusRemark": "65% SOLD · GROUNDBROKEN",
+  "units": 19,
+  "unitsLeft": 7,
+  "wellnessScore": 80
+}

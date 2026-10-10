@@ -1,0 +1,115 @@
+{
+  "address": "1111 Parrot Jungle Trail, Miami, FL 33132",
+  "amenities": [
+    {
+      "icon": "🛎",
+      "label": "Five-Star Global Hospitality Flag",
+      "sub": "Brand to be announced"
+    },
+    {
+      "icon": "🌳",
+      "label": "13.3-Acre Public Waterfront Park",
+      "sub": "Designed and funded by developer partnership"
+    },
+    {
+      "icon": "⛵",
+      "label": "Adjacency to Superyacht Marina",
+      "sub": "Direct access to Island Gardens Marina"
+    },
+    {
+      "icon": "🛍",
+      "label": "Curated Commercial & Retail Promenade",
+      "sub": "Up to 25,000 sq ft planned"
+    }
+  ],
+  "amenitiesDescription": "<p>The full amenity program will be confirmed upon official launch. Publicly disclosed planning points to a five-star global hospitality flag (brand to be announced), a 13.3-acre public waterfront park designed and funded by the developer partnership, adjacency to Island Gardens Marina, and a curated commercial and retail promenade of up to 25,000 square feet.</p>",
+  "architect": "TBD",
+  "badge": "City Agreement Finalized",
+  "comingSoon": true,
+  "comingSoonLayout": "minimal",
+  "completion": "TBD",
+  "densityScore": 35,
+  "depositStructure": null,
+  "description": "Arriving on a highly coveted 18.7-acre waterfront parcel along the MacArthur Causeway, the upcoming Watson Island Luxury Residential Project represents one of the most significant public-private redevelopments in South Florida history. Following an approved November 2024 voter referendum and subsequent City Commission authorization in July 2025, a joint venture between Terra and ESJ Capital Partners finalized the landmark $135 million land acquisition. The master plan introduces two striking 40-story towers slated to deliver between 400 and 600 ultra-luxury estate-level residences. While the elite global hospitality flag chosen to brand and manage the towers is strictly confidential, a formal name announcement is anticipated soon.",
+  "developer": "Terra & ESJ Capital Partners",
+  "discoveryEngine": {
+    "lifestyle": [
+      "waterfront",
+      "marina",
+      "yachting",
+      "park-access"
+    ],
+    "investmentProfile": [
+      "coming-soon",
+      "first-mover",
+      "ultra-luxury"
+    ],
+    "priceCategory": "ultra-luxury",
+    "vibeMatch": [
+      "quiet-luxury",
+      "waterfront",
+      "ground-floor"
+    ],
+    "goodFor": [
+      "long-hold",
+      "trophy-asset",
+      "global-buyer"
+    ]
+  },
+  "editorialLine": "To Be Announced.",
+  "floorPlans": [],
+  "height": "40 Stories (2 Towers)",
+  "heroImgPosition": "center",
+  "hoa": "TBD",
+  "id": 50,
+  "img": "/coming-soon-skyline.webp",
+  "imgs": [
+    "/coming-soon-skyline.webp"
+  ],
+  "inquiryButtonLabel": "Request Early Access",
+  "interiorDesigner": "TBD",
+  "investmentThesis": "<p>This development unlocks the final major waterfront frontier positioned directly between Downtown Miami and Miami Beach. Helmed by Terra—renowned for delivering high-value architectural icons—the development framework includes a massive $37 million commitment to build a 13.3-acre public waterfront park focusing on ecoresiliency and biodiversity. Because the structural plans, floor layouts, and tier-one pricing schedules are not yet publicly released, registering during this unannounced land acquisition phase provides a critical ground-floor position before public sales open.</p>",
+  "isActive": true,
+  "isFeatured": false,
+  "lat": 25.7845,
+  "launchState": "coming_soon",
+  "lng": -80.1781,
+  "locationScore": 32,
+  "maxBed": null,
+  "maxPrice": null,
+  "maxSqft": null,
+  "minBed": null,
+  "minPrice": null,
+  "minSqft": null,
+  "name": "Watson Island Luxury Residential Project (TBA)",
+  "neighborhood": "Watson Island",
+  "neighborhoodMap": {
+    "pinUrl": "https://maps.app.goo.gl/JnxYXEb66kpkjhJFA"
+  },
+  "parking": "TBD",
+  "priceFrom": "Pricing TBD",
+  "priceFromDisplay": "TBD",
+  "pricePerSqft": null,
+  "privacyScore": 82,
+  "rentalPolicy": "TBD",
+  "residenceContent": "<p class=\"prop-residence-intro\">The upcoming Watson Island Luxury Residential Project occupies a highly coveted 18.7-acre waterfront parcel along the MacArthur Causeway, directly between Downtown Miami and Miami Beach. The master plan introduces two striking 40-story towers delivering between 400 and 600 ultra-luxury estate-level residences. While the elite global hospitality flag chosen to brand and manage the towers is strictly confidential, a formal name announcement is anticipated soon.</p>",
+  "salesTeam": "Fraser Miami Private Advisory",
+  "seoKeywords": [
+    "Watson Island Luxury Residential Project",
+    "Watson Island TBA",
+    "Watson Island condos",
+    "1111 Parrot Jungle Trail",
+    "MacArthur Causeway Miami",
+    "Terra Watson Island",
+    "ESJ Capital Partners",
+    "Watson Island new construction"
+  ],
+  "slug": "montage-watson-island",
+  "stage": "coming_soon",
+  "stageLabel": "Coming Soon",
+  "statusRemark": null,
+  "tagline": "Two towers. One landmark waterfront site.",
+  "units": null,
+  "unitsLeft": null,
+  "wellnessScore": 85
+}
