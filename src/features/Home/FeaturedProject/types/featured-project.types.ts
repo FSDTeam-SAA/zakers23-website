@@ -7,4 +7,5 @@ export type Project = {
   cta: string;
   badge?: string;
   slug?: string;
+  listingOffice?: string;
 };

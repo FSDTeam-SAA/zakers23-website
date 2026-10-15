@@ -83,9 +83,9 @@ export function SiteFooter() {
             className="h-auto w-[96px] opacity-70"
           />
           <div className="flex flex-wrap items-center gap-3 text-[#6e7485]">
-            <span>Privacy Policy</span>
-            <span>·</span>
-            <span>Data updated continuously</span>
+            <a href="/privacy" className="hover:text-[#d2b072] transition-colors underline">
+              Privacy Policy
+            </a>
             <span>·</span>
             <span>All figures are estimates</span>
           </div>

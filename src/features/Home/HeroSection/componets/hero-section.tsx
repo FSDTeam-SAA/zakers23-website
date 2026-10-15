@@ -38,7 +38,7 @@ export function HeroSection({ slides }: HeroSectionProps) {
             <div className="hero-gradient hero-gradient-bottom" />
             <div className="hero-copy">
                <p className="hero-eyebrow">{slide.eyebrow}</p>
-               <h1>{slide.title}</h1>
+               {index === 0 ? <h1>{slide.title}</h1> : <h2>{slide.title}</h2>}
                <p className="hero-supporting">{slide.supporting}</p>
              </div>
              <div className="hero-actions">

@@ -1,8 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { getIdxPropertiesWithMeta } from "@/src/lib/server/idx-properties";
 
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
+export const revalidate = 3600; // Hourly automatic revalidation
 
 export async function GET(request: NextRequest) {
   try {
@@ -12,14 +11,17 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(
       {
         source,
+        feedProvider: "BeachesMLS & Miami Association of Realtors (via IDX Broker)",
+        revalidationInterval: "3600s (hourly)",
         totalCount: projects.length,
         refreshedAt: timestamp,
         projects,
       },
       {
         headers: {
-          "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+          "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400",
           "X-Data-Source": source,
+          "X-MLS-Provider": "BeachesMLS / Miami AOR",
         },
       }
     );

@@ -32,6 +32,20 @@ const nextConfig: NextConfig = {
     ]
   },
   outputFileTracingRoot: path.join(__dirname),
+  async redirects() {
+    return [
+      {
+        source: "/neighborhoods/:slug*",
+        destination: "/neighborhood/:slug*",
+        permanent: true,
+      },
+      {
+        source: "/neighborhoods",
+        destination: "/neighborhood",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -8,7 +8,10 @@ import mapboxgl from "mapbox-gl";
 import FindMyProjectModal, { Vt, MatcherPrefs } from "@/src/features/FindMyProject/components/FindMyProjectModal";
 import { Ht } from "@/src/data/neighborhoods";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
-import localPreconProjects from "@/src/data/miami-projects.json";
+import { submitInquiry } from "@/src/lib/inquiry";
+import { toast } from "sonner";
+import { HoneypotField } from "@/src/components/HoneypotField";
+import MobileNavMenu from "@/src/components/MobileNavMenu";
 
 // Map Project Interface matching extracted schema
 export interface MapProject {
@@ -22,8 +25,8 @@ export interface MapProject {
   isFeatured: boolean;
   lat: number;
   lng: number;
-  minPrice: number;
-  maxPrice: number;
+  minPrice: number | null;
+  maxPrice: number | null;
   priceFrom: string;
   completion: string;
   units: string | number;
@@ -40,6 +43,7 @@ export interface MapProject {
   minBed: number | null;
   maxBed: number | null;
   projectedAppreciation?: number;
+  listingOffice?: string;
 }
 
 // Stage Configuration
@@ -140,7 +144,7 @@ function getLuxuryFallbackImage(neighborhood?: string, seed: number = 0): string
 }
 
 function getImageUrl(path: string | null | undefined, neighborhood?: string, seed: number = 0): string {
-  if (!path || path.includes("api.cotality.com")) return getLuxuryFallbackImage(neighborhood, seed);
+  if (!path) return getLuxuryFallbackImage(neighborhood, seed);
   if (path.startsWith("http://") || path.startsWith("https://")) {
     return path;
   }
@@ -246,16 +250,34 @@ const theme = {
 type MapExplorePageProps = {
   projectNames: string[];
   featuredProjects: any[];
+  initialProjects?: MapProject[];
 };
 
-export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePageProps) {
+export function MapExplorePage({ projectNames, featuredProjects, initialProjects }: MapExplorePageProps) {
   const router = useRouter();
   const { openInquiry } = useInquiry();
-  const [allProjects, setAllProjects] = useState<MapProject[]>(localPreconProjects as unknown as MapProject[]);
+  const [allProjects, setAllProjects] = useState<MapProject[]>(initialProjects || []);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [idxError, setIdxError] = useState<string | null>(null);
+  const [isDataLoading, setIsDataLoading] = useState<boolean>(!initialProjects || initialProjects.length === 0);
 
-  const isDataLoading = false;
+  useEffect(() => {
+    if (!initialProjects || initialProjects.length === 0) {
+      setIsDataLoading(true);
+      fetch("/api/idx/properties")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.projects && Array.isArray(data.projects) && data.projects.length > 0) {
+            setAllProjects(data.projects);
+          }
+        })
+        .catch((err) => {
+          console.error("Failed to load live MLS properties", err);
+          setIdxError("Property directory temporarily unavailable");
+        })
+        .finally(() => setIsDataLoading(false));
+    }
+  }, [initialProjects]);
 
   // States
   const [selected, setSelected] = useState<MapProject | null>(null);
@@ -480,6 +502,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
           font-weight: 500;
         ">
           <span style="color: ${m.dot}; margin-right: 6px;">●</span><strong>${proj.name}</strong>${priceText ? ` · <span style="color: #b89354;">${priceText}</span>` : ""}
+          ${proj.listingOffice ? `<div style="font-size: 9.5px; color: #788092; text-transform: none; letter-spacing: normal; margin-top: 2px;">Courtesy: ${proj.listingOffice}</div>` : ""}
         </div>
       `;
 
@@ -825,6 +848,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               Inquire
             </Link>
           </nav>
+          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={true} />
         </div>
       </header>
 
@@ -870,12 +894,13 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     border: "none",
                     background: viewMode === "map" ? theme.white : "transparent",
                     color: viewMode === "map" ? theme.ink : theme.mist,
-                    fontSize: 9,
+                    fontSize: 12,
                     letterSpacing: "0.16em",
                     textTransform: "uppercase",
                     fontFamily: "'DM Sans', sans-serif",
                     fontWeight: viewMode === "map" ? 500 : 400,
-                    padding: "6px 12px",
+                    minHeight: 44,
+                    padding: "10px 16px",
                     cursor: "pointer",
                     display: "inline-flex",
                     alignItems: "center",
@@ -896,12 +921,13 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     border: "none",
                     background: viewMode === "list" ? theme.white : "transparent",
                     color: viewMode === "list" ? theme.ink : theme.mist,
-                    fontSize: 9,
+                    fontSize: 12,
                     letterSpacing: "0.16em",
                     textTransform: "uppercase",
                     fontFamily: "'DM Sans', sans-serif",
                     fontWeight: viewMode === "list" ? 500 : 400,
-                    padding: "6px 12px",
+                    minHeight: 44,
+                    padding: "10px 16px",
                     cursor: "pointer",
                     display: "inline-flex",
                     alignItems: "center",
@@ -927,12 +953,12 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                       display: "inline-flex",
                       alignItems: "center",
                       gap: 8,
-                      height: 26,
-                      padding: "0 10px",
+                      minHeight: 44,
+                      padding: "0 12px",
                       background: theme.bronzA(0.08),
                       border: `1px solid ${theme.bronze}`,
                       color: theme.ink,
-                      fontSize: 9,
+                      fontSize: 12,
                       letterSpacing: "0.14em",
                       textTransform: "uppercase",
                       fontFamily: "'DM Sans', sans-serif",
@@ -951,11 +977,14 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                         border: "none",
                         cursor: "pointer",
                         color: theme.mist,
-                        fontSize: 12,
+                        fontSize: 16,
                         padding: 0,
                         marginLeft: 4,
-                        display: "flex",
+                        minWidth: 44,
+                        minHeight: 44,
+                        display: "inline-flex",
                         alignItems: "center",
+                        justifyContent: "center",
                         lineHeight: 1
                       }}
                       title="Clear matches"
@@ -976,12 +1005,12 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     display: "inline-flex",
                     alignItems: "center",
                     gap: 6,
-                    height: 26,
-                    padding: "0 10px",
+                    minHeight: 44,
+                    padding: "0 14px",
                     border: `1px solid ${stageFilter === "all" ? theme.bronze : theme.dune}`,
                     background: stageFilter === "all" ? theme.bronzA(0.07) : theme.white,
                     color: stageFilter === "all" ? theme.ink : theme.mist,
-                    fontSize: 9,
+                    fontSize: 12,
                     letterSpacing: "0.14em",
                     textTransform: "uppercase",
                     fontFamily: "'DM Sans', sans-serif",
@@ -990,7 +1019,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     whiteSpace: "nowrap"
                   }}
                 >
-                  All <span style={{ fontSize: 8.5, color: stageFilter === "all" ? theme.bronze : theme.fog }}>{isDataLoading ? "···" : stageCounts.all}</span>
+                  All <span style={{ fontSize: 12, color: stageFilter === "all" ? theme.bronze : theme.fog }}>{isDataLoading ? "···" : stageCounts.all}</span>
                 </button>
                 {Object.entries(STAGES).map(([key, config]) => (
                   <button
@@ -1000,12 +1029,12 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                       display: "inline-flex",
                       alignItems: "center",
                       gap: 6,
-                      height: 26,
-                      padding: "0 10px",
+                      minHeight: 44,
+                      padding: "0 14px",
                       border: `1px solid ${stageFilter === key ? theme.bronze : theme.dune}`,
                       background: stageFilter === key ? theme.bronzA(0.07) : theme.white,
                       color: stageFilter === key ? theme.ink : theme.mist,
-                      fontSize: 9,
+                      fontSize: 12,
                       letterSpacing: "0.14em",
                       textTransform: "uppercase",
                       fontFamily: "'DM Sans', sans-serif",
@@ -1016,7 +1045,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   >
                     <span style={{ display: "inline-block", width: 6, height: 6, borderRadius: "50%", background: config.dot }} />
                     {config.label}
-                    <span style={{ fontSize: 8.5, color: stageFilter === key ? theme.bronze : theme.fog }}>{isDataLoading ? "···" : stageCounts[key]}</span>
+                    <span style={{ fontSize: 12, color: stageFilter === key ? theme.bronze : theme.fog }}>{isDataLoading ? "···" : stageCounts[key]}</span>
                   </button>
                 ))}
               </div>
@@ -1028,15 +1057,15 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   onClick={() => setStageDropdownOpen(!stageDropdownOpen)}
                   style={{
                     width: "100%",
-                    height: 26,
-                    padding: "0 10px",
+                    minHeight: 44,
+                    padding: "0 12px",
                     background: stageFilter === "all" ? theme.cream : theme.bronzA(0.07),
                     border: `1px solid ${stageDropdownOpen || stageFilter !== "all" ? theme.bronze : theme.dune}`,
                     color: theme.ink,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
-                    fontSize: 8.5,
+                    fontSize: 12,
                     letterSpacing: "0.14em",
                     textTransform: "uppercase",
                     fontFamily: "'DM Sans', sans-serif",
@@ -1058,7 +1087,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   <div
                     style={{
                       position: "absolute",
-                      top: 30,
+                      top: 32,
                       left: 0,
                       minWidth: 200,
                       background: theme.cream,
@@ -1073,9 +1102,10 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     <button
                       onClick={() => { setStageFilter("all"); setStageDropdownOpen(false); }}
                       style={{
-                        background: "none", border: "none", width: "100%", textAlign: "left", padding: "8px 12px",
-                        fontSize: 9, letterSpacing: "0.12em", textTransform: "uppercase", cursor: "pointer",
-                        color: stageFilter === "all" ? theme.ink : theme.mist, fontWeight: stageFilter === "all" ? 500 : 300
+                        background: "none", border: "none", width: "100%", textAlign: "left", minHeight: 44, padding: "10px 14px",
+                        fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", cursor: "pointer",
+                        color: stageFilter === "all" ? theme.ink : theme.mist, fontWeight: stageFilter === "all" ? 500 : 300,
+                        display: "flex", alignItems: "center"
                       }}
                     >
                       All Stages ({isDataLoading ? "···" : stageCounts.all})
@@ -1085,8 +1115,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                         key={key}
                         onClick={() => { setStageFilter(key); setStageDropdownOpen(false); }}
                         style={{
-                          background: "none", border: "none", width: "100%", textAlign: "left", padding: "8px 12px",
-                          fontSize: 9, letterSpacing: "0.12em", textTransform: "uppercase", cursor: "pointer",
+                          background: "none", border: "none", width: "100%", textAlign: "left", minHeight: 44, padding: "10px 14px",
+                          fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", cursor: "pointer",
                           color: stageFilter === key ? theme.ink : theme.mist, fontWeight: stageFilter === key ? 500 : 300,
                           display: "flex", alignItems: "center", gap: 6
                         }}
@@ -1109,15 +1139,15 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   onClick={() => setSortDropdownOpen(!sortDropdownOpen)}
                   style={{
                     width: "100%",
-                    height: 26,
-                    padding: "0 10px",
+                    minHeight: 44,
+                    padding: "0 12px",
                     background: theme.cream,
                     border: `1px solid ${sortDropdownOpen ? theme.bronze : theme.dune}`,
                     color: theme.ink,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
-                    fontSize: 8.5,
+                    fontSize: 12,
                     letterSpacing: "0.14em",
                     textTransform: "uppercase",
                     fontFamily: "'DM Sans', sans-serif",
@@ -1143,7 +1173,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   <div
                     style={{
                       position: "absolute",
-                      top: 30,
+                      top: 48,
                       left: 0,
                       width: "100%",
                       background: theme.cream,
@@ -1165,9 +1195,10 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                         key={item.key}
                         onClick={() => { setSortBy(item.key); setSortDropdownOpen(false); }}
                         style={{
-                          background: "none", border: "none", width: "100%", textAlign: "left", padding: "8px 12px",
-                          fontSize: 8.5, letterSpacing: "0.14em", textTransform: "uppercase", cursor: "pointer",
-                          color: sortBy === item.key ? theme.ink : theme.mist, fontWeight: sortBy === item.key ? 500 : 300
+                          background: "none", border: "none", width: "100%", textAlign: "left", minHeight: 44, padding: "10px 14px",
+                          fontSize: 12, letterSpacing: "0.14em", textTransform: "uppercase", cursor: "pointer",
+                          color: sortBy === item.key ? theme.ink : theme.mist, fontWeight: sortBy === item.key ? 500 : 300,
+                          display: "flex", alignItems: "center"
                         }}
                       >
                         {item.label}
@@ -1187,7 +1218,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    height: 26,
+                    minHeight: 44,
                     background: theme.cream,
                     border: `1px solid ${searchFocused ? theme.bronze : theme.dune}`,
                     fontFamily: "'DM Sans', sans-serif"
@@ -1210,14 +1241,14 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                       border: "none",
                       outline: "none",
                       color: theme.ink,
-                      fontSize: 10,
+                      fontSize: 12,
                       letterSpacing: "0.08em"
                     }}
                   />
                   {searchQuery && (
                     <button
                       onClick={() => { setSearchQuery(""); setSearchHoverIndex(0); searchInputRef.current?.focus(); }}
-                      style={{ background: "none", border: "none", color: theme.mist, cursor: "pointer", padding: "0 8px", fontSize: 14 }}
+                      style={{ background: "none", border: "none", color: theme.mist, cursor: "pointer", minHeight: 44, minWidth: 36, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 16 }}
                     >
                       ×
                     </button>
@@ -1258,14 +1289,14 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                             style={{ fontFamily: "'Playfair Display', serif", fontSize: 13, color: theme.ink, marginBottom: 2 }}
                             dangerouslySetInnerHTML={{ __html: highlightMatch(proj.name, searchQuery) }}
                           />
-                          <div style={{ fontSize: 10, color: theme.mist, display: "flex", gap: 8 }}>
+                          <div style={{ fontSize: 12, color: theme.mist, display: "flex", gap: 8 }}>
                             <span>{proj.neighborhood}</span>
                             <span>{formatPrice(proj.priceFrom)}</span>
                           </div>
                         </div>
                       ))
                     ) : (
-                      <div style={{ padding: 12, fontSize: 11, color: theme.mist }}>No projects found</div>
+                      <div style={{ padding: 12, fontSize: 12, color: theme.mist }}>No projects found</div>
                     )}
                   </div>
                 )}
@@ -1276,8 +1307,10 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                 <button
                   onClick={() => setMobileSearchOpen(true)}
                   style={{
-                    width: 28,
-                    height: 28,
+                    width: 44,
+                    height: 44,
+                    minWidth: 44,
+                    minHeight: 44,
                     border: `1px solid ${theme.dune}`,
                     background: theme.cream,
                     color: theme.ink,
@@ -1287,7 +1320,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     cursor: "pointer"
                   }}
                 >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
                     <circle cx="11" cy="11" r="6.5" />
                     <path d="M16 16L21 21" />
                   </svg>
@@ -1306,13 +1339,15 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     border: "none",
                     background: "transparent",
                     color: theme.bronze,
-                    fontSize: 9.5,
+                    fontSize: 12,
                     letterSpacing: "0.18em",
                     textTransform: "uppercase",
                     fontFamily: "'DM Sans', sans-serif",
                     fontWeight: 500,
                     cursor: "pointer",
-                    whiteSpace: "nowrap"
+                    whiteSpace: "nowrap",
+                    minHeight: 44,
+                    padding: "0 8px"
                   }}
                 >
                   Speak with Zachary
@@ -1357,7 +1392,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery("")}
-                style={{ border: "none", background: "transparent", fontSize: 18, color: theme.mist, padding: 4 }}
+                style={{ border: "none", background: "transparent", fontSize: 18, color: theme.mist, minWidth: 44, minHeight: 44, display: "inline-flex", alignItems: "center", justifyContent: "center" }}
               >
                 ×
               </button>
@@ -1366,8 +1401,9 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               onClick={() => { setMobileSearchOpen(false); setSearchQuery(""); }}
               style={{
                 border: "none", background: "transparent", cursor: "pointer",
-                fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase",
-                fontFamily: "'DM Sans', sans-serif", color: theme.mist
+                fontSize: 12, letterSpacing: "0.14em", textTransform: "uppercase",
+                fontFamily: "'DM Sans', sans-serif", color: theme.mist,
+                minHeight: 44, padding: "0 12px", display: "inline-flex", alignItems: "center", justifyContent: "center"
               }}
             >
               Cancel
@@ -1387,7 +1423,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                       style={{ fontFamily: "'Playfair Display', serif", fontSize: 15, color: theme.ink, marginBottom: 4 }}
                       dangerouslySetInnerHTML={{ __html: highlightMatch(proj.name, searchQuery) }}
                     />
-                    <div style={{ fontSize: 11, color: theme.mist, display: "flex", gap: 8 }}>
+                    <div style={{ fontSize: 12, color: theme.mist, display: "flex", gap: 8 }}>
                       <span>{proj.neighborhood}</span>
                       <span>{formatPrice(proj.priceFrom)}</span>
                     </div>
@@ -1449,14 +1485,14 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                 <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 300, color: theme.ink, margin: "0 0 8px" }}>
                   No projects match this filter
                 </h3>
-                <p style={{ fontSize: 13, color: theme.mist, maxWidth: 420, margin: "0 auto 20px", lineHeight: 1.6 }}>
+                <p style={{ fontSize: 16, color: theme.mist, maxWidth: 420, margin: "0 auto 20px", lineHeight: 1.6 }}>
                   Pre-construction inventory shifts constantly. Speak with Zachary to find off-market units.
                 </p>
                 <button
                   onClick={() => openInquiry("Discovery Map")}
                   style={{
                     padding: "12px 28px", background: theme.ink, color: theme.cream, border: "none",
-                    fontFamily: "'DM Sans', sans-serif", fontSize: 9.5, letterSpacing: "0.22em",
+                    fontFamily: "'DM Sans', sans-serif", fontSize: 12, letterSpacing: "0.22em",
                     textTransform: "uppercase", cursor: "pointer"
                   }}
                 >
@@ -1548,7 +1584,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                           {proj.name}
                         </div>
                         <div className="map-list-card-meta-row" style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
-                          <span style={{ color: theme.bronze, fontSize: 11, letterSpacing: "0.08em" }}>{proj.neighborhood}</span>
+                          <span style={{ color: theme.bronze, fontSize: 12, letterSpacing: "0.08em" }}>{proj.neighborhood}</span>
                           <div className="map-list-card-price" style={{ fontFamily: "'Playfair Display', serif", color: theme.bronze, fontSize: 13 }}>
                             {formatPrice(proj.priceFrom)}
                           </div>
@@ -1593,16 +1629,16 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
           <div style={{ padding: "10px 18px 6px", borderBottom: `1px solid ${theme.dune}`, flexShrink: 0 }}>
             {isDataLoading ? (
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                <span style={{ fontSize: 9, letterSpacing: "0.2em", color: theme.bronze, textTransform: "uppercase", display: "flex", alignItems: "center", gap: 6 }}>
+                <span style={{ fontSize: 12, letterSpacing: "0.2em", color: theme.bronze, textTransform: "uppercase", display: "flex", alignItems: "center", gap: 6 }}>
                   <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#10b981", display: "inline-block" }} className="luxury-pulse-badge" />
-                  Connecting to Live MLS Feed...
+                  Loading Active Properties...
                 </span>
-                <span style={{ fontSize: 8.5, letterSpacing: "0.14em", color: theme.fog, textTransform: "uppercase" }}>
-                  Real MLS Data
+                <span style={{ fontSize: 12, letterSpacing: "0.14em", color: theme.fog, textTransform: "uppercase" }}>
+                  Active Portfolio
                 </span>
               </div>
             ) : (
-              <span style={{ fontSize: 9, letterSpacing: "0.22em", color: theme.fog, textTransform: "uppercase" }}>
+              <span style={{ fontSize: 12, letterSpacing: "0.22em", color: theme.fog, textTransform: "uppercase" }}>
                 {processedProjects.length} Properties in View
               </span>
             )}
@@ -1649,8 +1685,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                 <button
                   onClick={() => openInquiry("Discovery Map")}
                   style={{
-                    display: "block", marginTop: 12, padding: 0, border: "none", background: "transparent",
-                    color: theme.bronze, fontSize: 10, letterSpacing: "0.16em", textTransform: "uppercase",
+                    display: "inline-flex", alignItems: "center", minHeight: 44, marginTop: 8, padding: "8px 0", border: "none", background: "transparent",
+                    color: theme.bronze, fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase",
                     fontFamily: "'DM Sans', sans-serif", fontWeight: 500, cursor: "pointer", textAlign: "left"
                   }}
                 >
@@ -1716,7 +1752,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                             {proj.name}
                           </div>
                           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginTop: 2 }}>
-                            <span style={{ fontSize: 10.5, color: theme.bronze, letterSpacing: "0.08em" }}>
+                            <span style={{ fontSize: 12, color: theme.bronze, letterSpacing: "0.08em" }}>
                               {proj.neighborhood}
                             </span>
                             <span style={{ fontSize: 12, fontFamily: "'Playfair Display', serif", color: theme.bronze }}>
@@ -1728,11 +1764,26 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                           <div
                             className="status-badge-text"
                             style={{
-                              fontSize: 8.5, letterSpacing: "0.08em", color: m.dot, textTransform: "uppercase",
+                              fontSize: 12, letterSpacing: "0.08em", color: m.dot, textTransform: "uppercase",
                               overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", marginTop: 4
                             }}
                           >
                             {showBadge}
+                          </div>
+                        )}
+                        {proj.listingOffice && (
+                          <div
+                            style={{
+                              fontSize: 11,
+                              color: theme.fog,
+                              overflow: "hidden",
+                              textOverflow: "ellipsis",
+                              whiteSpace: "nowrap",
+                              marginTop: 2
+                            }}
+                            title={`Listing Courtesy of ${proj.listingOffice}`}
+                          >
+                            <span style={{ color: theme.bronze, fontWeight: 500 }}>Courtesy:</span> {proj.listingOffice}
                           </div>
                         )}
                       </div>
@@ -1749,13 +1800,17 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
             className="map-sidebar-connect-mobile"
             style={{
               width: "100%",
+              minHeight: 44,
               padding: "13px 18px",
               background: "transparent",
               border: "none",
               borderTop: `1px solid ${theme.dune}`,
               cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
               textAlign: "center",
-              fontSize: 9,
+              fontSize: 12,
               letterSpacing: "0.22em",
               textTransform: "uppercase",
               color: theme.bronze,
@@ -1816,15 +1871,15 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               </div>
               <div style={{ display: "flex", flexDirection: "column" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9.5, letterSpacing: "0.22em", color: "#1c1f26", fontWeight: 600, textTransform: "uppercase" }}>
-                    Connecting to Live MLS Feed
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 12, letterSpacing: "0.22em", color: "#1c1f26", fontWeight: 600, textTransform: "uppercase" }}>
+                    Loading Active Properties
                   </span>
-                  <span style={{ fontSize: 8.5, letterSpacing: "0.1em", color: "#b89354", background: "rgba(184, 147, 84, 0.12)", padding: "1px 6px", borderRadius: 10, textTransform: "uppercase", fontWeight: 600 }}>
-                    Live
+                  <span style={{ fontSize: 12, letterSpacing: "0.1em", color: "#b89354", background: "rgba(184, 147, 84, 0.12)", padding: "1px 6px", borderRadius: 10, textTransform: "uppercase", fontWeight: 600 }}>
+                    Portfolio
                   </span>
                 </div>
-                <span style={{ fontSize: 9, letterSpacing: "0.06em", color: "#737887", marginTop: 1 }}>
-                  Streaming active Miami developments &amp; GPS coordinates...
+                <span style={{ fontSize: 12, letterSpacing: "0.06em", color: "#737887", marginTop: 1 }}>
+                  Curating active Miami developments &amp; GPS coordinates...
                 </span>
               </div>
             </div>
@@ -1845,7 +1900,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               boxShadow: "0 4px 24px rgba(28,31,38,0.12)"
             }}
           >
-            <div style={{ fontSize: 8, letterSpacing: "0.26em", color: theme.mist, textTransform: "uppercase", marginBottom: 8 }}>
+            <div style={{ fontSize: 12, letterSpacing: "0.26em", color: theme.mist, textTransform: "uppercase", marginBottom: 8 }}>
               Construction Stage
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
@@ -1860,7 +1915,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   }}
                 >
                   <div style={{ width: 10, height: 10, borderRadius: "50%", background: config.dot }} />
-                  <span style={{ fontSize: 9.5, color: theme.ink, fontWeight: stageFilter === key ? 500 : 400 }}>
+                  <span style={{ fontSize: 12, color: theme.ink, fontWeight: stageFilter === key ? 500 : 400 }}>
                     {config.label}
                   </span>
                 </div>
@@ -1879,8 +1934,8 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                 onClick={() => setSelected(null)}
                 style={{
                   position: "absolute", top: 12, right: 12, zIndex: 10, background: "rgba(0,0,0,0.5)",
-                  border: "none", borderRadius: "50%", width: 24, height: 24, cursor: "pointer",
-                  display: "flex", alignItems: "center", justifyItems: "center", justifyContent: "center", color: "#fff"
+                  border: "none", borderRadius: "50%", width: 44, height: 44, minWidth: 44, minHeight: 44, cursor: "pointer",
+                  display: "flex", alignItems: "center", justifyItems: "center", justifyContent: "center", color: "#fff", fontSize: 18
                 }}
               >
                 ×
@@ -1906,7 +1961,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   <div
                     style={{
                       position: "absolute", bottom: 8, right: 12, background: "rgba(0,0,0,0.6)",
-                      padding: "3px 8px", borderRadius: 10, color: "#fff", fontSize: 9, letterSpacing: "0.1em"
+                      padding: "4px 10px", borderRadius: 10, color: "#fff", fontSize: 12, letterSpacing: "0.1em"
                     }}
                   >
                     {activeImageIndex + 1} / {projectImages.length}
@@ -1923,8 +1978,9 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                       }}
                       style={{
                         position: "absolute", left: 8, top: "50%", transform: "translateY(-50%)",
-                        background: "rgba(0,0,0,0.5)", border: "none", color: "#fff", width: 24, height: 24,
-                        borderRadius: "50%", cursor: "pointer"
+                        background: "rgba(0,0,0,0.5)", border: "none", color: "#fff", width: 44, height: 44,
+                        minWidth: 44, minHeight: 44, display: "flex", alignItems: "center", justifyContent: "center",
+                        borderRadius: "50%", cursor: "pointer", fontSize: 18
                       }}
                     >
                       ‹
@@ -1936,8 +1992,9 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                       }}
                       style={{
                         position: "absolute", right: 8, top: "50%", transform: "translateY(-50%)",
-                        background: "rgba(0,0,0,0.5)", border: "none", color: "#fff", width: 24, height: 24,
-                        borderRadius: "50%", cursor: "pointer"
+                        background: "rgba(0,0,0,0.5)", border: "none", color: "#fff", width: 44, height: 44,
+                        minWidth: 44, minHeight: 44, display: "flex", alignItems: "center", justifyContent: "center",
+                        borderRadius: "50%", cursor: "pointer", fontSize: 18
                       }}
                     >
                       ›
@@ -1952,7 +2009,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                     padding: "16px 12px 8px"
                   }}
                 >
-                  <div style={{ fontSize: 9, letterSpacing: "0.22em", textTransform: "uppercase", color: theme.bronze }}>
+                  <div style={{ fontSize: 12, letterSpacing: "0.22em", textTransform: "uppercase", color: theme.bronze }}>
                     {selected.neighborhood}
                   </div>
                   <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 18, color: "#fff", marginTop: 2 }}>
@@ -1973,7 +2030,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   <div style={{ fontSize: 13, fontFamily: "'Playfair Display', serif", color: theme.bronze }}>
                     {formatPrice(selected.priceFrom)}
                   </div>
-                  <div style={{ fontSize: 8.5, letterSpacing: "0.08em", color: theme.mist, textTransform: "uppercase", marginTop: 2 }}>
+                  <div style={{ fontSize: 12, letterSpacing: "0.08em", color: theme.mist, textTransform: "uppercase", marginTop: 2 }}>
                     Price From
                   </div>
                 </div>
@@ -1981,7 +2038,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   <div style={{ fontSize: 13, fontFamily: "'Playfair Display', serif", color: theme.ink }}>
                     {selected.units || "—"}
                   </div>
-                  <div style={{ fontSize: 8.5, letterSpacing: "0.08em", color: theme.mist, textTransform: "uppercase", marginTop: 2 }}>
+                  <div style={{ fontSize: 12, letterSpacing: "0.08em", color: theme.mist, textTransform: "uppercase", marginTop: 2 }}>
                     Total Units
                   </div>
                 </div>
@@ -1989,7 +2046,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   <div style={{ fontSize: 13, fontFamily: "'Playfair Display', serif", color: theme.ink }}>
                     {selected.completion || "TBD"}
                   </div>
-                  <div style={{ fontSize: 8.5, letterSpacing: "0.08em", color: theme.mist, textTransform: "uppercase", marginTop: 2 }}>
+                  <div style={{ fontSize: 12, letterSpacing: "0.08em", color: theme.mist, textTransform: "uppercase", marginTop: 2 }}>
                     Delivery
                   </div>
                 </div>
@@ -1998,7 +2055,7 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               {/* Status & Actions */}
               <div style={{ padding: "12px 16px" }}>
                 {selected.statusRemark && (
-                  <div style={{ fontSize: 9.5, letterSpacing: "0.08em", color: theme.bronze, textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
+                  <div style={{ fontSize: 12, letterSpacing: "0.08em", color: theme.bronze, textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
                     {selected.statusRemark}
                   </div>
                 )}
@@ -2006,9 +2063,9 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   <button
                     onClick={() => openInquiry(`${selected.name} — Pricing`)}
                     style={{
-                      flex: 1, padding: "12px", background: theme.ink, color: "#fff", border: "none",
-                      fontFamily: "'DM Sans', sans-serif", fontSize: 9, letterSpacing: "0.16em", textTransform: "uppercase",
-                      cursor: "pointer"
+                      flex: 1, minHeight: 44, padding: "12px 14px", background: theme.ink, color: "#fff", border: "none",
+                      fontFamily: "'DM Sans', sans-serif", fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase",
+                      cursor: "pointer", display: "inline-flex", alignItems: "center", justifyContent: "center"
                     }}
                   >
                     ✦ Request Pricing
@@ -2016,9 +2073,9 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   <button
                     onClick={() => router.push(`/property/${selected.slug}`)}
                     style={{
-                      flex: 1, padding: "12px", background: "transparent", border: `1px solid ${theme.dune}`,
-                      color: theme.ink, fontFamily: "'DM Sans', sans-serif", fontSize: 9, letterSpacing: "0.16em",
-                      textTransform: "uppercase", cursor: "pointer"
+                      flex: 1, minHeight: 44, padding: "12px 14px", background: "transparent", border: `1px solid ${theme.dune}`,
+                      color: theme.ink, fontFamily: "'DM Sans', sans-serif", fontSize: 12, letterSpacing: "0.16em",
+                      textTransform: "uppercase", cursor: "pointer", display: "inline-flex", alignItems: "center", justifyContent: "center"
                     }}
                   >
                     View Details
@@ -2048,13 +2105,15 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
               onClick={() => setModal(null)}
               style={{
                 position: "absolute", top: 12, right: 12, border: "none", background: "transparent",
-                fontSize: 20, cursor: "pointer", color: theme.mist
+                fontSize: 24, cursor: "pointer", color: theme.mist,
+                width: 44, height: 44, minWidth: 44, minHeight: 44,
+                display: "flex", alignItems: "center", justifyContent: "center"
               }}
             >
               ×
             </button>
 
-            <span style={{ fontSize: 9, letterSpacing: "0.24em", color: theme.bronze, textTransform: "uppercase", display: "block", marginBottom: 6 }}>
+            <span style={{ fontSize: 12, letterSpacing: "0.24em", color: theme.bronze, textTransform: "uppercase", display: "block", marginBottom: 6 }}>
               {modal === "advisor" ? "Fraser Miami Advisors" : modalProject ? modalProject.name : "Request Information"}
             </span>
 
@@ -2066,34 +2125,97 @@ export function MapExplorePage({ projectNames, featuredProjects }: MapExplorePag
                   : "Register Early VIP Access"}
             </h3>
 
-            <p style={{ fontSize: 12, color: theme.mist, lineHeight: 1.5, margin: "0 0 20px" }}>
+            <p style={{ fontSize: 16, color: theme.mist, lineHeight: 1.5, margin: "0 0 20px" }}>
               Get direct priority allocations, private pricing indices, and floor plan layouts sent to you.
             </p>
 
-            {/* Simple Contact Form */}
-            <form onSubmit={(e) => { e.preventDefault(); alert("Inquiry submitted! We will contact you shortly."); setModal(null); }} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {/* Contact Form with submitInquiry and sonner toast */}
+            <form
+              onSubmit={async (e) => {
+                e.preventDefault();
+                const form = e.currentTarget;
+                const formData = new FormData(form);
+                const name = (formData.get("name") as string) || "";
+                const email = (formData.get("email") as string) || "";
+                const phone = (formData.get("phone") as string) || "";
+                const message = (formData.get("message") as string) || "";
+                const website = (formData.get("website") as string) || "";
+                const smsConsent = formData.get("smsConsent") === "on";
+                if (!email) return;
+
+                const submitBtn = form.querySelector("button[type='submit']") as HTMLButtonElement | null;
+                if (submitBtn) {
+                  submitBtn.disabled = true;
+                  submitBtn.innerText = "Submitting...";
+                }
+
+                const ctaLabel = modal === "advisor" ? "Connect with Zachary Akers" : modal === "floors" ? "Floor Plans & Pricing Request" : "VIP Early Access Request";
+                try {
+                  await submitInquiry({
+                    name,
+                    email,
+                    phone,
+                    message,
+                    website,
+                    smsConsent,
+                    source: "Explore Map",
+                    projectName: selected?.name || "Discovery Map",
+                    buttonClicked: ctaLabel,
+                    details: {
+                      Context: ctaLabel,
+                      ...(selected ? { "Selected Project": selected.name } : {}),
+                      "Call & Text Consent": smsConsent ? "Granted (Yes)" : "Not provided (No)",
+                    },
+                  });
+                  toast.success("Inquiry submitted successfully! Zachary will contact you shortly.");
+                  setModal(null);
+                } catch {
+                  toast.error("Failed to submit inquiry. Please try again.");
+                  if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = "Submit Inquiry";
+                  }
+                }
+              }}
+              style={{ display: "flex", flexDirection: "column", gap: 12 }}
+            >
+              <HoneypotField />
               <input
+                name="name"
                 type="text" required placeholder="Full Name"
-                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12 }}
+                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 16 }}
               />
               <input
+                name="email"
                 type="email" required placeholder="Email Address"
-                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12 }}
+                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 16 }}
               />
               <input
+                name="phone"
                 type="tel" placeholder="Phone Number"
-                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12 }}
+                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 16 }}
               />
               <textarea
+                name="message"
                 rows={3} placeholder="Tell us what you're looking for..."
-                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 12, resize: "none" }}
+                style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 16, resize: "none" }}
               />
+              <label style={{ display: "flex", alignItems: "flex-start", gap: 10, cursor: "pointer", fontSize: 12, lineHeight: 1.55, color: theme.mist, marginTop: 4, userSelect: "none" }}>
+                <input
+                  type="checkbox"
+                  name="smsConsent"
+                  style={{ width: 16, height: 16, minWidth: 16, marginTop: 2, accentColor: theme.bronze, cursor: "pointer", flexShrink: 0 }}
+                />
+                <span>
+                  I consent to calls and SMS from Zachary Akers &amp; ONE Sotheby&apos;s regarding real estate updates, including automated messages. Not a condition of purchase. Msg &amp; data rates may apply. Reply STOP to opt out.
+                </span>
+              </label>
               <button
                 type="submit"
                 style={{
-                  width: "100%", padding: "12px", background: theme.ink, color: theme.cream, border: "none",
-                  fontFamily: "'DM Sans', sans-serif", fontSize: 9.5, letterSpacing: "0.18em", textTransform: "uppercase",
-                  cursor: "pointer", marginTop: 8
+                  width: "100%", minHeight: 44, padding: "12px 20px", background: theme.ink, color: theme.cream, border: "none",
+                  fontFamily: "'DM Sans', sans-serif", fontSize: 12, letterSpacing: "0.18em", textTransform: "uppercase",
+                  cursor: "pointer", marginTop: 8, display: "inline-flex", alignItems: "center", justifyContent: "center"
                 }}
               >
                 Submit Inquiry

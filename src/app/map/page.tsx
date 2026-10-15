@@ -1,16 +1,22 @@
-"use client";
-
-import dynamic from "next/dynamic";
+import MapPageWrapper from "@/src/features/Home/DiscoveryEngine/components/MapPageWrapper";
 import { featuredProjects } from "@/src/features/Home/FeaturedProject/data/featured-project.data";
 import { projectNames } from "@/src/features/Home/DiscoveryEngine/data/discovery-engine.data";
+import { getIdxProperties } from "@/src/lib/server/idx-properties";
 
-const MapExplorePage = dynamic(
+export const revalidate = 3600; // Hourly automatic refresh from BeachesMLS & Miami AOR
 
-  () => import("@/src/features/Home/DiscoveryEngine/components/map-explore-page").then((mod) => mod.MapExplorePage),
-  { ssr: false }
-);
+export const metadata = {
+  title: "Interactive Miami Real Estate Discovery Map | Zachary Akers",
+  description: "Live BeachesMLS and Miami Association of Realtors luxury developments map feed.",
+};
 
-export default function MapPage() {
-  return <MapExplorePage projectNames={projectNames} featuredProjects={featuredProjects} />;
+export default async function MapPage() {
+  const properties = await getIdxProperties();
+  return (
+    <MapPageWrapper
+      projectNames={projectNames}
+      featuredProjects={featuredProjects}
+      initialProjects={properties}
+    />
+  );
 }
-

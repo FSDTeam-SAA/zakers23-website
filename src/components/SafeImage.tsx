@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image, { ImageProps } from "next/image";
-import { FALLBACK_IMAGE_URL, getSafeImageUrl } from "@/src/lib/image-utils";
+import { getSafeImageUrl, getDistinctFallback } from "@/src/lib/image-utils";
 
 export interface SafeImageProps extends Omit<ImageProps, "src"> {
   src: string | null | undefined;
@@ -16,32 +16,35 @@ export interface SafeImageProps extends Omit<ImageProps, "src"> {
  */
 export function SafeImage({
   src,
-  fallbackSrc = FALLBACK_IMAGE_URL,
+  fallbackSrc,
   alt = "",
   onError,
   className = "",
   ...rest
 }: SafeImageProps) {
-  const safeInitialSrc = getSafeImageUrl(src, fallbackSrc);
+  const altText = typeof alt === "string" ? alt : "";
+  const resolvedFallback = fallbackSrc || getDistinctFallback(altText || "luxury-estate");
+  const safeInitialSrc = getSafeImageUrl(src, resolvedFallback);
   const [imgSrc, setImgSrc] = useState<string>(safeInitialSrc);
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    const updated = getSafeImageUrl(src, fallbackSrc);
+    const updated = getSafeImageUrl(src, resolvedFallback);
     setImgSrc(updated);
     setHasError(false);
-  }, [src, fallbackSrc]);
+  }, [src, resolvedFallback]);
 
   return (
     <Image
       {...rest}
-      src={hasError ? fallbackSrc : imgSrc}
+      src={hasError ? resolvedFallback : imgSrc}
       alt={alt}
+      data-fallback={resolvedFallback}
       className={`${className} ${hasError ? "fallback-image" : ""}`}
       onError={(event) => {
         if (!hasError) {
           setHasError(true);
-          setImgSrc(fallbackSrc);
+          setImgSrc(resolvedFallback);
         }
         if (onError) {
           onError(event);

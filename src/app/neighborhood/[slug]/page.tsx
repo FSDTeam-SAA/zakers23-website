@@ -1,5 +1,8 @@
 import NeighborhoodDetailWrapper from "@/src/features/Neighborhood/components/NeighborhoodDetailWrapper";
 import { Ht } from "@/src/data/neighborhoods";
+import { getIdxProperties } from "@/src/lib/server/idx-properties";
+
+export const revalidate = 3600; // Hourly automatic refresh from BeachesMLS & Miami AOR
 
 interface PageProps {
   params: Promise<{
@@ -24,5 +27,6 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default async function Page({ params }: PageProps) {
   const { slug } = await params;
-  return <NeighborhoodDetailWrapper slug={slug} />;
+  const properties = await getIdxProperties();
+  return <NeighborhoodDetailWrapper slug={slug} initialProjects={properties} />;
 }

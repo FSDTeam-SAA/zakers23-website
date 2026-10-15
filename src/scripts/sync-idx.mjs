@@ -212,13 +212,16 @@ async function syncIdxData() {
       comingSoon: stage === "preconstruction",
       statusRemark: item.propStatus || "Active",
       badge: `MLS #${listingId} · ACTIVE`,
-      img: getFallback(neighborhood, i),
-      imgs: [
-        getFallback(neighborhood, i),
-        getFallback(neighborhood, i + 1),
-        getFallback(neighborhood, i + 2),
-        getFallback(neighborhood, i + 3),
-      ],
+      img: propertyPhotos[0] || getFallback(neighborhood, i),
+      imgs:
+        propertyPhotos.length > 0
+          ? propertyPhotos
+          : [
+              getFallback(neighborhood, i),
+              getFallback(neighborhood, i + 1),
+              getFallback(neighborhood, i + 2),
+              getFallback(neighborhood, i + 3),
+            ],
       description:
         description ||
         `Exceptional luxury residence located at ${address} in ${neighborhood}. Features ${beds || "spacious"} bedrooms, ${baths || "multiple"} baths, and ${sqft ? sqft.toLocaleString() + " square feet" : "expansive living space"}. Active MLS listing represented via Zachary Akers (ONE Sotheby's International Realty).`,

@@ -9,6 +9,10 @@ import { insightArticles } from "@/src/data/insights";
 import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyProjectModal";
 import { SiteFooter } from "@/src/features/Home/components/site-footer";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
+import { subscribeNewsletter } from "@/src/lib/inquiry";
+import { toast } from "sonner";
+import { HoneypotField } from "@/src/components/HoneypotField";
+import MobileNavMenu from "@/src/components/MobileNavMenu";
 
 interface InsightDetailPageProps {
   slug: string;
@@ -19,6 +23,35 @@ export function InsightDetailPage({ slug }: InsightDetailPageProps) {
   const { openInquiry } = useInquiry();
   const [isMatcherOpen, setIsMatcherOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [newsletterEmail, setNewsletterEmail] = useState("");
+  const [newsletterHoneypot, setNewsletterHoneypot] = useState("");
+  const [newsletterStatus, setNewsletterStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [newsletterError, setNewsletterError] = useState("");
+
+  const handleNewsletterSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const trimmed = newsletterEmail.trim();
+    if (!trimmed || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) {
+      setNewsletterStatus("error");
+      setNewsletterError("Please enter a valid email address.");
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+    setNewsletterStatus("loading");
+    setNewsletterError("");
+    try {
+      await subscribeNewsletter(trimmed, "newsletter_signup", { website: newsletterHoneypot });
+      setNewsletterStatus("success");
+      setNewsletterEmail("");
+      setNewsletterHoneypot("");
+      toast.success("Subscribed to market briefings successfully!");
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "Unable to subscribe. Please try again.";
+      setNewsletterStatus("error");
+      setNewsletterError(msg);
+      toast.error(msg);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -87,6 +120,7 @@ export function InsightDetailPage({ slug }: InsightDetailPageProps) {
               <span className="insights-nav-link-label">Insights</span>
             </Link>
           </nav>
+          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={true} />
         </header>
 
         <section className="insights-hero" style={{ textAlign: "center" }}>
@@ -176,6 +210,7 @@ export function InsightDetailPage({ slug }: InsightDetailPageProps) {
             <span className="insights-weather-temp">81°</span>
           </div>
         </div>
+        <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={true} />
       </header>
 
       <div className="insight-detail-container">
@@ -214,10 +249,41 @@ export function InsightDetailPage({ slug }: InsightDetailPageProps) {
             Zachary Akers&apos;s exclusive list receives pre-launch pricing, off-market inventory, and
             monthly market updates before anything reaches public channels.
           </p>
-          <form className="insights-briefing-form">
-            <input type="email" placeholder="Your email address" aria-label="Email address" />
-            <button type="submit">Join</button>
-          </form>
+          {newsletterStatus === "success" ? (
+            <div className="flex items-center justify-center gap-3 pt-6 text-[13px] text-[#bb9150]">
+              <span aria-hidden="true">✓</span>
+              <span>Thank you for subscribing to market briefings.</span>
+              <button
+                type="button"
+                onClick={() => setNewsletterStatus("idle")}
+                className="ml-2 inline-flex min-h-[44px] items-center text-[12px] uppercase tracking-wider text-white/50 hover:text-white transition-colors"
+              >
+                Reset
+              </button>
+            </div>
+          ) : (
+            <form onSubmit={handleNewsletterSubmit} className="insights-briefing-form">
+              <HoneypotField value={newsletterHoneypot} onChange={setNewsletterHoneypot} />
+              <input
+                type="email"
+                value={newsletterEmail}
+                onChange={(e) => {
+                  setNewsletterEmail(e.target.value);
+                  if (newsletterStatus === "error") setNewsletterStatus("idle");
+                }}
+                disabled={newsletterStatus === "loading"}
+                placeholder="Your email address"
+                aria-label="Email address"
+                required
+              />
+              <button type="submit" disabled={newsletterStatus === "loading"}>
+                {newsletterStatus === "loading" ? "Joining..." : "Join"}
+              </button>
+            </form>
+          )}
+          {newsletterStatus === "error" && (
+            <p className="mt-3 text-[13px] text-[#e06c75]">{newsletterError}</p>
+          )}
         </div>
       </section>
 

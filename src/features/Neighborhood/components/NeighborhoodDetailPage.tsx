@@ -6,12 +6,14 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import mapboxgl from "mapbox-gl";
 import { Ht, getNeighborhoodNames, getNeighborhoodSlug } from "@/src/data/neighborhoods";
-import projectsRaw from "@/src/data/miami-projects.json";
 import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyProjectModal";
 import { SiteFooter } from "@/src/features/Home/components/site-footer";
 import { submitInquiry } from "@/src/lib/inquiry";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 import { handleImageError, FALLBACK_IMAGE_URL, getSafeImageUrl } from "@/src/lib/image-utils";
+import { toast } from "sonner";
+import { HoneypotField } from "@/src/components/HoneypotField";
+import MobileNavMenu from "@/src/components/MobileNavMenu";
 
 // Type definitions
 interface MapProject {
@@ -35,6 +37,8 @@ interface MapProject {
   comingSoon?: boolean;
   badge?: string;
   img: string;
+  listingOffice?: string;
+  salesTeam?: string;
 }
 
 interface StageConfig {
@@ -117,16 +121,30 @@ function calculateStats(projects: MapProject[]) {
 
 // Helper to get project primary image
 function getImageUrl(path: string | null | undefined): string {
-  if (!path || path.includes("api.cotality.com")) return "https://frasermiami.s3.amazonaws.com/perigon/pool2.webp";
-  return getSafeImageUrl(path, FALLBACK_IMAGE_URL);
+  if (!path) return "https://frasermiami.s3.amazonaws.com/perigon/pool2.webp";
+  return getSafeImageUrl(path, "https://frasermiami.s3.amazonaws.com/perigon/pool2.webp");
 }
 
-export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
+export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug: string; initialProjects?: MapProject[] }) {
   const router = useRouter();
   const { openInquiry } = useInquiry();
   const [isMatcherOpen, setIsMatcherOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [stageFilter, setStageFilter] = useState<string>("all");
+  const [projectsList, setProjectsList] = useState<MapProject[]>(initialProjects || []);
+
+  useEffect(() => {
+    if (!initialProjects || initialProjects.length === 0) {
+      fetch("/api/idx/properties")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.projects && Array.isArray(data.projects)) {
+            setProjectsList(data.projects);
+          }
+        })
+        .catch(console.error);
+    }
+  }, [initialProjects]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -141,6 +159,7 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");
   const [formMessage, setFormMessage] = useState("");
+  const [formHoneypot, setFormHoneypot] = useState("");
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
 
   const mapContainerRef = useRef<HTMLDivElement>(null);
@@ -152,8 +171,8 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
   // Get matching projects in this neighborhood
   const allHoodProjects = useMemo(() => {
     const names = getNeighborhoodNames(slug);
-    return (projectsRaw as MapProject[]).filter((p) => names.includes(p.neighborhood));
-  }, [slug]);
+    return projectsList.filter((p) => names.includes(p.neighborhood));
+  }, [slug, projectsList]);
 
   // Compute stats
   const stats = useMemo(() => calculateStats(allHoodProjects), [allHoodProjects]);
@@ -195,15 +214,21 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
         name: formName,
         email: formEmail,
         message: formMessage,
+        website: formHoneypot,
+        projectName: hood.name,
+        buttonClicked: "Request Dossier",
         source: "Website",
         details: { Neighborhood: hood.name },
       });
       setFormStatus("done");
+      toast.success(`Inquiry received for ${hood.name}! Zachary will follow up with private dossier details.`);
       setFormName("");
       setFormEmail("");
       setFormMessage("");
+      setFormHoneypot("");
     } catch {
       setFormStatus("error");
+      toast.error("Failed to submit inquiry. Please try again.");
     }
   };
 
@@ -312,7 +337,7 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
       }
 
       const popup = new mapboxgl.Popup({ offset: diameter / 2 + 5, closeButton: false })
-        .setHTML(`<div class="font-sans text-[11px] tracking-[0.05em] uppercase font-semibold text-[#1c1f26] p-1">${proj.name}</div>`);
+        .setHTML(`<div class="font-sans text-[12px] tracking-[0.05em] uppercase font-semibold text-[#1c1f26] p-1">${proj.name}</div>`);
 
       const marker = new mapboxgl.Marker(markerEl)
         .setLngLat([proj.lng, proj.lat])
@@ -436,6 +461,7 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
               Inquire
             </a>
           </nav>
+          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={true} />
         </div>
       </header>
 
@@ -597,6 +623,9 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
                                   <span className="npc-value">{conf.label}</span>
                                 </div>
                               </div>
+                              <div className="text-[11px] text-[#788092] mt-2 pt-2 border-t border-[#E5E0D8] truncate" title={`Listing Courtesy of ${proj.listingOffice || (proj as any).salesTeam || "ONE Sotheby's International Realty"}`}>
+                                <span className="text-[#B38E36] font-medium">Courtesy:</span> {proj.listingOffice || (proj as any).salesTeam || "ONE Sotheby's International Realty"}
+                              </div>
                             </div>
                           </div>
                         );
@@ -658,6 +687,9 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
                               <span className="npc-value">{conf.label}</span>
                             </div>
                           </div>
+                          <div className="text-[11px] text-[#788092] mt-2 pt-2 border-t border-[#E5E0D8] truncate" title={`Listing Courtesy of ${proj.listingOffice || (proj as any).salesTeam || "ONE Sotheby's International Realty"}`}>
+                            <span className="text-[#B38E36] font-medium">Courtesy:</span> {proj.listingOffice || (proj as any).salesTeam || "ONE Sotheby's International Realty"}
+                          </div>
                         </div>
                       </div>
                     );
@@ -669,6 +701,23 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
                 )}
               </div>
             )}
+            {/* MLS IDX Attribution & Disclaimer */}
+            <div className="mt-12 p-6 bg-[#FAF8F3] border border-[#e8e4db] rounded-[4px] text-[12px] text-[#788092] leading-relaxed">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#e2dcd2] pb-3 mb-3">
+                <span className="text-[11px] uppercase tracking-[0.2em] font-mono text-[#B38E36] font-semibold">
+                  IDX Listing Attribution &amp; Disclaimer
+                </span>
+                <span className="text-[11px] font-mono text-[#8f96ab]">
+                  BeachesMLS / Miami Association of Realtors
+                </span>
+              </div>
+              <p className="m-0 mb-2">
+                Listing information displayed on this page is provided courtesy of participating brokerages via the IDX program of BeachesMLS and the Miami Association of Realtors.
+              </p>
+              <p className="m-0 text-[11px] text-[#8f96ab]">
+                All data deemed reliable but not guaranteed. Properties subject to prior sale, change, or withdrawal. Neither BeachesMLS, Miami Association of Realtors, ONE Sotheby&apos;s International Realty, nor Zachary Akers shall be held responsible for typographical errors or misinformation. Equal Housing Opportunity.
+              </p>
+            </div>
           </div>
         </section>
       )}
@@ -683,10 +732,11 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
             {formStatus === "done" ? (
               <div className="p-6 bg-green-500/10 border border-green-500/20 rounded text-center">
                 <h4 className="text-xl font-serif text-green-600 mb-2">Request Received</h4>
-                <p className="text-xs text-[#535862] leading-relaxed">{contactFormSuccessMsg}</p>
+                <p className="text-[16px] text-[#535862] leading-relaxed">{contactFormSuccessMsg}</p>
               </div>
             ) : (
               <form onSubmit={handleFormSubmit} className="space-y-4">
+                <HoneypotField value={formHoneypot} onChange={setFormHoneypot} />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="form-group-custom">
                     <input
@@ -708,7 +758,7 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
                       className={`form-input-custom ${formStatus === "error" && !formEmail.trim() ? "border-[#C9A84C]" : ""}`}
                     />
                     {formStatus === "error" && !formEmail.trim() && (
-                      <span className="text-[10px] text-[#C9A84C] mt-1">Please enter a valid email address.</span>
+                      <span className="text-[12px] text-[#C9A84C] mt-1">Please enter a valid email address.</span>
                     )}
                   </div>
                 </div>
@@ -739,7 +789,7 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
       {/* Explore other neighborhoods section */}
       <section className="explore-neighborhoods-section">
         <div className="neighborhood-container max-w-[1125px] mx-auto px-6 text-left">
-          <span className="text-[10px] tracking-[0.25em] uppercase text-[#B38E36] font-semibold mb-6 block">
+          <span className="text-[12px] tracking-[0.25em] uppercase text-[#B38E36] font-semibold mb-6 block">
             Explore Other Neighborhoods
           </span>
           
@@ -750,7 +800,7 @@ export default function NeighborhoodDetailPage({ slug }: { slug: string }) {
                 <Link
                   key={s}
                   href={`/neighborhood/${s}`}
-                  className="px-5 py-2.5 bg-[#f1f3f6] hover:bg-[#C9A84C]/10 text-[#5f6575] hover:text-[#C9A84C] rounded-full text-xs font-light tracking-wider transition-all duration-200 border border-transparent hover:border-[#C9A84C]/30"
+                  className="px-5 py-2.5 bg-[#f1f3f6] hover:bg-[#C9A84C]/10 text-[#5f6575] hover:text-[#C9A84C] rounded-full text-[12px] font-medium tracking-wider transition-all duration-200 border border-transparent hover:border-[#C9A84C]/30"
                 >
                   {data.name}
                 </Link>

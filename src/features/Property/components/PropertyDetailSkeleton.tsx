@@ -36,11 +36,11 @@ export default function PropertyDetailSkeleton() {
         <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3 bg-[#FAF8F3]/95 backdrop-blur-md px-6 py-3 rounded-full border border-[#B38E36]/40 shadow-xl">
           <span className="w-2.5 h-2.5 rounded-full bg-[#10b981] luxury-pulse-badge" />
           <div className="flex flex-col">
-            <span className="text-[10px] tracking-[0.2em] uppercase font-semibold text-[#1c1f26]">
-              Loading Live MLS Property Data...
+            <span className="text-[12px] tracking-[0.16em] uppercase font-semibold text-[#1c1f26]">
+              Loading Property Details...
             </span>
-            <span className="text-[8.5px] tracking-[0.08em] text-[#788092]">
-              Connecting to BeachesMLS & Miami AOR Feed
+            <span className="text-[12px] tracking-[0.05em] text-[#788092]">
+              Curating luxury residence specifications...
             </span>
           </div>
         </div>

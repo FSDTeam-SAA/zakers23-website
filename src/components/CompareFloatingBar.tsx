@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import projectsRaw from "@/src/data/miami-projects.json";
 import { handleImageError, getSafeImageUrl } from "@/src/lib/image-utils";
 
 interface Project {
@@ -15,6 +14,18 @@ interface Project {
 
 export function CompareFloatingBar() {
   const [compareIds, setCompareIds] = useState<number[]>([]);
+  const [allProjects, setAllProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    fetch("/api/idx/properties")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.projects && Array.isArray(data.projects)) {
+          setAllProjects(data.projects);
+        }
+      })
+      .catch(console.error);
+  }, []);
 
   const loadCompareIds = () => {
     if (typeof window !== "undefined") {
@@ -39,7 +50,7 @@ export function CompareFloatingBar() {
 
   if (compareIds.length === 0) return null;
 
-  const selectedProjects = (projectsRaw as Project[]).filter((p) =>
+  const selectedProjects = allProjects.filter((p) =>
     compareIds.includes(p.id)
   );
 
@@ -68,7 +79,7 @@ export function CompareFloatingBar() {
         </div>
         <div>
           <h4 className="text-xs uppercase tracking-wider font-semibold text-white/90">Compare Developments</h4>
-          <p className="text-[10px] text-white/50">Compare specifications side-by-side</p>
+          <p className="text-[12px] text-white/50">Compare specifications side-by-side</p>
         </div>
       </div>
 
@@ -83,10 +94,11 @@ export function CompareFloatingBar() {
                 onError={handleImageError}
               />
             </div>
-            <span className="max-w-[100px] truncate text-[11px] font-medium">{p.name}</span>
+            <span className="max-w-[100px] truncate text-[12px] font-medium">{p.name}</span>
             <button
               onClick={() => handleRemove(p.id)}
-              className="text-white/40 hover:text-white/80 text-sm px-1.5 transition-colors"
+              aria-label={`Remove ${p.name} from comparison`}
+              className="text-white/40 hover:text-white/80 text-base min-h-[44px] min-w-[36px] flex items-center justify-center transition-colors"
             >
               &times;
             </button>
@@ -97,13 +109,13 @@ export function CompareFloatingBar() {
       <div className="flex items-center gap-2 border-t border-white/10 pt-3 md:pt-0 md:border-t-0">
         <button
           onClick={handleClearAll}
-          className="text-[10px] uppercase tracking-wider text-white/40 hover:text-white/80 px-2 py-1.5 transition-colors"
+          className="text-[12px] uppercase tracking-wider text-white/40 hover:text-white/80 min-h-[44px] px-3 py-2 inline-flex items-center justify-center transition-colors"
         >
           Clear
         </button>
         <Link
           href="/compare"
-          className="bg-[#b89354] hover:bg-[#a68245] text-white text-[10px] uppercase tracking-widest font-semibold px-4 py-2 transition-colors rounded shadow"
+          className="bg-[#b89354] hover:bg-[#a68245] text-white text-[12px] uppercase tracking-widest font-semibold min-h-[44px] px-5 py-2.5 inline-flex items-center justify-center transition-colors rounded shadow"
         >
           Compare Now
         </Link>

@@ -3,10 +3,13 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import projectsRaw from "@/src/data/miami-projects.json";
 import { Ht } from "@/src/data/neighborhoods";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 import { handleImageError, getSafeImageUrl, FALLBACK_IMAGE_URL } from "@/src/lib/image-utils";
+import { subscribeNewsletter } from "@/src/lib/inquiry";
+import { toast } from "sonner";
+import { HoneypotField } from "@/src/components/HoneypotField";
+import MobileNavMenu from "@/src/components/MobileNavMenu";
 
 interface Project {
   id: number;
@@ -27,6 +30,7 @@ interface Project {
   badge?: string;
   img: string;
   developer?: string;
+  listingOffice?: string;
 }
 
 export default function ComparePage() {
@@ -35,8 +39,48 @@ export default function ComparePage() {
   const [isClient, setIsClient] = useState(false);
   const [replacingSlot, setReplacingSlot] = useState<number | null>(null); // index: 0 or 1
   const [searchQuery, setSearchQuery] = useState("");
+  const [newsletterEmail, setNewsletterEmail] = useState("");
+  const [newsletterHoneypot, setNewsletterHoneypot] = useState("");
+  const [newsletterStatus, setNewsletterStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [newsletterError, setNewsletterError] = useState("");
 
-  const allProjects = projectsRaw as Project[];
+  const handleNewsletterSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const trimmed = newsletterEmail.trim();
+    if (!trimmed || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) {
+      setNewsletterStatus("error");
+      setNewsletterError("Please enter a valid email address.");
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+    setNewsletterStatus("loading");
+    setNewsletterError("");
+    try {
+      await subscribeNewsletter(trimmed, "newsletter_signup", { website: newsletterHoneypot });
+      setNewsletterStatus("success");
+      setNewsletterEmail("");
+      setNewsletterHoneypot("");
+      toast.success("Subscribed to Miami market updates successfully!");
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "Unable to subscribe. Please try again.";
+      setNewsletterStatus("error");
+      setNewsletterError(msg);
+      toast.error(msg);
+    }
+  };
+
+  const [allProjects, setAllProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    fetch("/api/idx/properties")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.projects && Array.isArray(data.projects)) {
+          setAllProjects(data.projects);
+        }
+      })
+      .catch(console.error);
+  }, []);
 
   useEffect(() => {
     setIsClient(true);
@@ -172,6 +216,7 @@ export default function ComparePage() {
               Inquire
             </Link>
           </nav>
+          <MobileNavMenu isLightHeader={true} />
         </div>
       </header>
 
@@ -185,13 +230,13 @@ export default function ComparePage() {
           />
         </div>
         <div className="relative z-10 max-w-[800px] px-6 text-white">
-          <span className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase text-[#b89354] font-semibold block mb-3">
+          <span className="text-[12px] tracking-[0.3em] uppercase text-[#b89354] font-semibold block mb-3">
             Luxury Development Comparison
           </span>
           <h1 className="text-3xl md:text-5xl font-serif font-normal leading-[1.15] mb-4">
             Compare Two Miami Developments
           </h1>
-          <p className="text-xs md:text-sm text-white/70 max-w-[560px] mx-auto leading-relaxed">
+          <p className="text-[16px] text-white/80 max-w-[560px] mx-auto leading-relaxed font-light">
             Compare and contrast the specs of Miami&apos;s most exclusive new residential towers side-by-side.
           </p>
         </div>
@@ -212,36 +257,41 @@ export default function ComparePage() {
                       className="object-cover w-full h-full"
                       onError={handleImageError}
                     />
-                    <span className="absolute top-3 left-3 bg-[#b89354] text-white text-[9px] uppercase tracking-wider font-semibold px-2.5 py-1 rounded shadow-sm">
+                    <span className="absolute top-3 left-3 bg-[#b89354] text-white text-[12px] uppercase tracking-wider font-semibold px-2.5 py-1 rounded shadow-sm">
                       {projA.stage.replace("_", " ")}
                     </span>
                   </div>
-                  <span className="text-[10px] text-[#8f96ab] uppercase tracking-wider block mb-1">
+                  <span className="text-[12px] text-[#8f96ab] uppercase tracking-wider block mb-1 font-medium">
                     Development A
                   </span>
                   <h3 className="text-lg md:text-xl font-serif text-[#1c1f26] mb-1 font-semibold">
                     {projA.name}
                   </h3>
-                  <p className="text-xs text-[#8f96ab] font-light mb-4">
+                  <p className="text-xs text-[#8f96ab] font-light mb-1">
                     {projA.neighborhood}
                   </p>
+                  {projA.listingOffice && (
+                    <p className="text-[11px] text-[#B38E36] truncate mb-3" title={`Listing Courtesy of ${projA.listingOffice}`}>
+                      <span className="font-medium text-[#788092]">Courtesy:</span> {projA.listingOffice}
+                    </p>
+                  )}
                 </div>
                 <div className="flex gap-2">
                   <Link
                     href={`/property/${projA.slug}`}
-                    className="flex-1 text-center py-2.5 border border-[#1c1f26] text-[#1c1f26] text-[9px] uppercase tracking-widest font-semibold hover:bg-[#1c1f26] hover:text-white transition-colors"
+                    className="flex-1 text-center py-2.5 min-h-[44px] inline-flex items-center justify-center border border-[#1c1f26] text-[#1c1f26] text-[12px] uppercase tracking-widest font-semibold hover:bg-[#1c1f26] hover:text-white transition-colors"
                   >
                     View Details
                   </Link>
                   <button
                     onClick={() => setReplacingSlot(0)}
-                    className="flex-1 py-2.5 border border-[#e2dfd8] text-[#1c1f26] text-[9px] uppercase tracking-widest font-semibold hover:bg-[#fafaf8] transition-colors"
+                    className="flex-1 py-2.5 min-h-[44px] inline-flex items-center justify-center border border-[#e2dfd8] text-[#1c1f26] text-[12px] uppercase tracking-widest font-semibold hover:bg-[#fafaf8] transition-colors"
                   >
                     Replace Project
                   </button>
                   <button
                     onClick={() => handleRemoveSlot(0)}
-                    className="px-3 border border-red-200 text-red-500 hover:bg-red-50 transition-colors rounded"
+                    className="px-3 min-h-[44px] min-w-[44px] inline-flex items-center justify-center border border-red-200 text-red-500 hover:bg-red-50 transition-colors rounded"
                     title="Remove"
                   >
                     &times;
@@ -273,36 +323,41 @@ export default function ComparePage() {
                       className="object-cover w-full h-full"
                       onError={handleImageError}
                     />
-                    <span className="absolute top-3 left-3 bg-[#b89354] text-white text-[9px] uppercase tracking-wider font-semibold px-2.5 py-1 rounded shadow-sm">
+                    <span className="absolute top-3 left-3 bg-[#b89354] text-white text-[12px] uppercase tracking-wider font-semibold px-2.5 py-1 rounded shadow-sm">
                       {projB.stage.replace("_", " ")}
                     </span>
                   </div>
-                  <span className="text-[10px] text-[#8f96ab] uppercase tracking-wider block mb-1">
+                  <span className="text-[12px] text-[#8f96ab] uppercase tracking-wider block mb-1 font-medium">
                     Development B
                   </span>
                   <h3 className="text-lg md:text-xl font-serif text-[#1c1f26] mb-1 font-semibold">
                     {projB.name}
                   </h3>
-                  <p className="text-xs text-[#8f96ab] font-light mb-4">
+                  <p className="text-xs text-[#8f96ab] font-light mb-1">
                     {projB.neighborhood}
                   </p>
+                  {projB.listingOffice && (
+                    <p className="text-[11px] text-[#B38E36] truncate mb-3" title={`Listing Courtesy of ${projB.listingOffice}`}>
+                      <span className="font-medium text-[#788092]">Courtesy:</span> {projB.listingOffice}
+                    </p>
+                  )}
                 </div>
                 <div className="flex gap-2">
                   <Link
                     href={`/property/${projB.slug}`}
-                    className="flex-1 text-center py-2.5 border border-[#1c1f26] text-[#1c1f26] text-[9px] uppercase tracking-widest font-semibold hover:bg-[#1c1f26] hover:text-white transition-colors"
+                    className="flex-1 text-center py-2.5 min-h-[44px] inline-flex items-center justify-center border border-[#1c1f26] text-[#1c1f26] text-[12px] uppercase tracking-widest font-semibold hover:bg-[#1c1f26] hover:text-white transition-colors"
                   >
                     View Details
                   </Link>
                   <button
                     onClick={() => setReplacingSlot(1)}
-                    className="flex-1 py-2.5 border border-[#e2dfd8] text-[#1c1f26] text-[9px] uppercase tracking-widest font-semibold hover:bg-[#fafaf8] transition-colors"
+                    className="flex-1 py-2.5 min-h-[44px] inline-flex items-center justify-center border border-[#e2dfd8] text-[#1c1f26] text-[12px] uppercase tracking-widest font-semibold hover:bg-[#fafaf8] transition-colors"
                   >
                     Replace Project
                   </button>
                   <button
                     onClick={() => handleRemoveSlot(1)}
-                    className="px-3 border border-red-200 text-red-500 hover:bg-red-50 transition-colors rounded"
+                    className="px-3 min-h-[44px] min-w-[44px] inline-flex items-center justify-center border border-red-200 text-red-500 hover:bg-red-50 transition-colors rounded"
                     title="Remove"
                   >
                     &times;
@@ -325,7 +380,7 @@ export default function ComparePage() {
 
         {/* The Comparison Table */}
         <div className="mb-20">
-          <span className="text-[9px] tracking-[0.25em] uppercase text-[#b89354] font-semibold text-center block mb-2">
+          <span className="text-[12px] tracking-[0.25em] uppercase text-[#b89354] font-semibold text-center block mb-2">
             Side-by-Side Features
           </span>
           <h2 className="text-2xl md:text-3xl font-serif text-center mb-8 font-normal">
@@ -335,7 +390,7 @@ export default function ComparePage() {
           <div className="overflow-x-auto border border-[#e2dfd8] rounded bg-white shadow-sm">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="bg-[#0C1523] text-white text-[10px] uppercase tracking-[0.2em]">
+                <tr className="bg-[#0C1523] text-white text-[12px] uppercase tracking-[0.2em]">
                   <th className="p-4 pl-6 w-[34%] font-semibold border-b border-[#e2dfd8]">Specification</th>
                   <th className="p-4 w-[33%] font-semibold border-b border-[#e2dfd8]">
                     {projA ? projA.name : "Development A"}
@@ -427,7 +482,7 @@ export default function ComparePage() {
       {/* Related Developments */}
       <section className="bg-[#FAF8F3] border-t border-[#e2dfd8] py-16">
         <div className="max-w-[1140px] mx-auto px-6">
-          <span className="text-[9px] tracking-[0.25em] uppercase text-[#b89354] font-semibold text-center block mb-2">
+          <span className="text-[12px] tracking-[0.25em] uppercase text-[#b89354] font-semibold text-center block mb-2">
             Discover More
           </span>
           <h2 className="text-2xl md:text-3xl font-serif text-center mb-10 font-normal">
@@ -448,24 +503,24 @@ export default function ComparePage() {
                     className="object-cover w-full h-full group-hover:scale-[1.03] transition-transform duration-500"
                     onError={handleImageError}
                   />
-                  <span className="absolute top-3 left-3 bg-[#0C1523]/80 backdrop-blur-sm text-white text-[8px] uppercase tracking-wider font-semibold px-2 py-0.5 rounded">
+                  <span className="absolute top-3 left-3 bg-[#0C1523]/80 backdrop-blur-sm text-white text-[12px] uppercase tracking-wider font-semibold px-2 py-0.5 rounded">
                     {p.stage.replace("_", " ")}
                   </span>
                 </div>
                 <div className="p-5">
-                  <span className="text-[9px] uppercase tracking-widest text-[#b89354] font-semibold block mb-1">
+                  <span className="text-[12px] uppercase tracking-widest text-[#b89354] font-semibold block mb-1">
                     {p.neighborhood}
                   </span>
                   <h4 className="font-serif text-[15px] font-semibold text-[#1c1f26] mb-2 group-hover:text-[#b89354] transition-colors line-clamp-1">
                     {p.name}
                   </h4>
-                  <div className="flex justify-between items-center text-[10px] font-mono text-[#535862] border-t border-[#e2dfd8]/60 pt-3 mt-3">
+                  <div className="flex justify-between items-center text-[12px] font-mono text-[#535862] border-t border-[#e2dfd8]/60 pt-3 mt-3">
                     <div>
-                      <span className="block text-[8px] uppercase tracking-wider text-[#8f96ab] mb-0.5">Starting At</span>
+                      <span className="block text-[12px] uppercase tracking-wider text-[#8f96ab] mb-0.5 font-medium">Starting At</span>
                       <strong className="text-[#1c1f26] font-sans font-semibold">{p.priceFrom}</strong>
                     </div>
                     <div>
-                      <span className="block text-[8px] uppercase tracking-wider text-[#8f96ab] mb-0.5">Completion</span>
+                      <span className="block text-[12px] uppercase tracking-wider text-[#8f96ab] mb-0.5 font-medium">Completion</span>
                       <strong className="text-[#1c1f26] font-sans font-semibold">{p.completion}</strong>
                     </div>
                   </div>
@@ -482,23 +537,48 @@ export default function ComparePage() {
           <h3 className="text-2xl md:text-3xl font-serif font-normal mb-3">
             Receive Miami Market Intelligence
           </h3>
-          <p className="text-xs text-white/60 mb-6 leading-relaxed">
+          <p className="text-[16px] text-white/70 mb-6 leading-relaxed font-light">
             Zachary Akers&apos;s exclusive list receives pre-launch pricing, off-market inventory, and monthly market updates before anything reaches public channels.
           </p>
-          <form className="flex flex-col sm:flex-row gap-2 max-w-[480px] mx-auto">
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="flex-1 bg-white/5 border border-white/10 rounded px-4 py-3 text-xs focus:outline-none focus:border-[#b89354] transition-colors"
-              required
-            />
-            <button
-              type="submit"
-              className="bg-[#b89354] hover:bg-[#a68245] text-white text-[10px] uppercase tracking-widest font-semibold px-6 py-3 transition-colors rounded"
-            >
-              Subscribe
-            </button>
-          </form>
+          {newsletterStatus === "success" ? (
+            <div className="flex items-center justify-center gap-3 text-sm text-[#b89354] py-3">
+              <span aria-hidden="true">✓</span>
+              <span>Thank you for subscribing to Miami market updates.</span>
+              <button
+                type="button"
+                onClick={() => setNewsletterStatus("idle")}
+                className="text-[12px] uppercase tracking-wider text-white/50 hover:text-white transition-colors"
+              >
+                Reset
+              </button>
+            </div>
+          ) : (
+            <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-2 max-w-[480px] mx-auto">
+              <HoneypotField value={newsletterHoneypot} onChange={setNewsletterHoneypot} />
+              <input
+                type="email"
+                value={newsletterEmail}
+                onChange={(e) => {
+                  setNewsletterEmail(e.target.value);
+                  if (newsletterStatus === "error") setNewsletterStatus("idle");
+                }}
+                disabled={newsletterStatus === "loading"}
+                placeholder="Your email address"
+                className="flex-1 bg-white/5 border border-white/10 rounded px-4 py-3 text-[16px] focus:outline-none focus:border-[#b89354] transition-colors disabled:opacity-50"
+                required
+              />
+              <button
+                type="submit"
+                disabled={newsletterStatus === "loading"}
+                className="bg-[#b89354] hover:bg-[#a68245] text-white text-[12px] uppercase tracking-widest font-semibold px-6 py-3 transition-colors rounded disabled:opacity-50"
+              >
+                {newsletterStatus === "loading" ? "Subscribing..." : "Subscribe"}
+              </button>
+            </form>
+          )}
+          {newsletterStatus === "error" && (
+            <p className="mt-2 text-xs text-red-400">{newsletterError}</p>
+          )}
         </div>
       </section>
 
@@ -513,12 +593,12 @@ export default function ComparePage() {
               height={42}
               className="brightness-200 opacity-60 mb-4 h-auto w-[82px]"
             />
-            <p className="text-[10px] leading-relaxed max-w-[200px]">
+            <p className="text-[12px] leading-relaxed max-w-[200px]">
               A curated gateway to Miami&apos;s most ambitious luxury residences.
             </p>
           </div>
           <div>
-            <h5 className="text-[10px] uppercase tracking-wider font-semibold text-white/95 mb-3">Explore</h5>
+            <h5 className="text-[12px] uppercase tracking-wider font-semibold text-white/95 mb-3">Explore</h5>
             <div className="flex flex-col gap-2">
               <Link href="/map" className="hover:text-white transition-colors">Explore Map</Link>
               <Link href="/neighborhood" className="hover:text-white transition-colors">Neighborhoods</Link>
@@ -527,7 +607,7 @@ export default function ComparePage() {
             </div>
           </div>
           <div>
-            <h5 className="text-[10px] uppercase tracking-wider font-semibold text-white/95 mb-3">Neighborhoods</h5>
+            <h5 className="text-[12px] uppercase tracking-wider font-semibold text-white/95 mb-3">Neighborhoods</h5>
             <div className="flex flex-col gap-2">
               <Link href="/neighborhood/brickell" className="hover:text-white transition-colors">Brickell</Link>
               <Link href="/neighborhood/edgewater" className="hover:text-white transition-colors">Edgewater</Link>
@@ -536,7 +616,7 @@ export default function ComparePage() {
             </div>
           </div>
           <div>
-            <h5 className="text-[10px] uppercase tracking-wider font-semibold text-white/95 mb-3">Company</h5>
+            <h5 className="text-[12px] uppercase tracking-wider font-semibold text-white/95 mb-3">Company</h5>
             <div className="flex flex-col gap-2 font-light">
               <span>Zachary Akers luxury Real Estate</span>
               <span>Miami, FL</span>
@@ -552,14 +632,15 @@ export default function ComparePage() {
           <div className="bg-[#FAF8F3] border border-[#e2dfd8] w-full max-w-[500px] rounded-lg shadow-2xl p-6 relative max-h-[90vh] flex flex-col">
             <button
               onClick={() => setReplacingSlot(null)}
-              className="absolute top-4 right-4 text-2xl text-[#8f96ab] hover:text-[#1c1f26] transition-colors"
+              aria-label="Close modal"
+              className="absolute top-3 right-3 w-11 h-11 min-h-[44px] min-w-[44px] flex items-center justify-center text-2xl text-[#8f96ab] hover:text-[#1c1f26] transition-colors"
             >
               &times;
             </button>
             <h3 className="font-serif text-xl font-normal mb-1">
               Select Development
             </h3>
-            <p className="text-[11px] text-[#8f96ab] uppercase tracking-wider mb-4">
+            <p className="text-[12px] text-[#8f96ab] uppercase tracking-wider mb-4 font-medium">
               Choose a project to place in Slot {replacingSlot === 0 ? "A" : "B"}
             </p>
 
@@ -568,7 +649,7 @@ export default function ComparePage() {
               placeholder="Search by name or neighborhood..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-white border border-[#e2dfd8] rounded px-3 py-2 text-xs mb-4 focus:outline-none focus:border-[#b89354]"
+              className="w-full bg-white border border-[#e2dfd8] rounded px-3 py-2 text-[16px] mb-4 focus:outline-none focus:border-[#b89354]"
             />
 
             <div className="overflow-y-auto flex-grow divide-y divide-[#e2dfd8]/60 pr-1">
@@ -589,7 +670,7 @@ export default function ComparePage() {
                       <h4 className="font-semibold text-xs text-[#1c1f26] group-hover:text-[#b89354] transition-colors">
                         {p.name}
                       </h4>
-                      <p className="text-[10px] text-[#8f96ab] font-light">
+                      <p className="text-[12px] text-[#8f96ab] font-light">
                         {p.neighborhood} · {p.priceFrom}
                       </p>
                     </div>
@@ -604,6 +685,11 @@ export default function ComparePage() {
           </div>
         </div>
       )}
+      {/* MLS IDX Attribution Notice */}
+      <footer className="mt-14 pt-6 border-t border-[#e2dfd8] text-center text-[11px] text-[#8f96ab] max-w-[1240px] mx-auto px-6">
+        <p className="m-0 mb-1">Listing information provided courtesy of participating brokerages via BeachesMLS &amp; Miami Association of Realtors IDX.</p>
+        <p className="m-0 font-mono text-[10px] text-[#B38E36]">Equal Housing Opportunity · All Rights Reserved</p>
+      </footer>
     </div>
   );
 }

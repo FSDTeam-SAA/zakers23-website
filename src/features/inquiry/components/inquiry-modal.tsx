@@ -3,18 +3,33 @@
 import React, { useEffect, useRef, useState } from "react";
 import ConsultationSelect from "./consultation-select";
 import { submitInquiry } from "@/src/lib/inquiry";
+import { toast } from "sonner";
+import { TurnstileWidget } from "@/src/components/TurnstileWidget";
+import { HoneypotField } from "@/src/components/HoneypotField";
 
 type InquiryModalProps = {
   isOpen: boolean;
   context?: string;
+  projectName?: string;
+  buttonClicked?: string;
   onClose: () => void;
   onSuccess?: () => void;
   requireForDetails?: boolean;
 };
 
-export default function InquiryModal({ isOpen, context, onClose, onSuccess, requireForDetails = false }: InquiryModalProps) {
+export default function InquiryModal({
+  isOpen,
+  context,
+  projectName,
+  buttonClicked,
+  onClose,
+  onSuccess,
+  requireForDetails = false,
+}: InquiryModalProps) {
   const dialogRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [smsConsent, setSmsConsent] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState("");
 
   useEffect(() => {
     if (!isOpen) return;
@@ -68,6 +83,8 @@ export default function InquiryModal({ isOpen, context, onClose, onSuccess, requ
     const phone = (data.get("phone") as string) || "";
     const budget = (data.get("budget") as string) || "";
     const message = (data.get("message") as string) || "";
+    const website = (data.get("website") as string) || "";
+    const consentGranted = data.get("smsConsent") === "on";
 
     if (!email) {
       setStatus("error");
@@ -82,18 +99,29 @@ export default function InquiryModal({ isOpen, context, onClose, onSuccess, requ
         email,
         phone,
         message,
+        website,
+        turnstileToken,
+        smsConsent: consentGranted,
         source: "Website",
+        projectName: projectName || context || "",
+        buttonClicked: buttonClicked || "Inquire",
         details: {
           ...(context ? { "Interested in": context } : {}),
+          ...(projectName ? { "Project Name": projectName } : {}),
+          ...(buttonClicked ? { "Button Clicked": buttonClicked } : {}),
           ...(budget ? { Budget: budget } : {}),
           ...(data.get("primaryGoal") ? { "Primary goal": String(data.get("primaryGoal")) } : {}),
           ...(data.get("timeline") ? { Timeline: String(data.get("timeline")) } : {}),
+          "Call & Text Consent": consentGranted ? "Granted (Yes)" : "Not provided (No)",
         },
       });
       setStatus("done");
+      toast.success("Inquiry received! Zachary will follow up with tailored options.");
       onSuccess?.();
-    } catch {
+    } catch (err: unknown) {
       setStatus("error");
+      const msg = err instanceof Error ? err.message : "Could not send inquiry. Please check your information and try again.";
+      toast.error(msg);
     }
   };
 
@@ -122,6 +150,7 @@ export default function InquiryModal({ isOpen, context, onClose, onSuccess, requ
             </p>
             {context && <p className="consultation-context">Regarding: {context}</p>}
             <form className="consultation-form" onSubmit={handleSubmit}>
+              <HoneypotField />
               <div className="consultation-fields">
                 <input aria-label="Your name" type="text" name="name" autoComplete="name" placeholder="Your name" required />
                 <input aria-label="Email address" type="email" name="email" autoComplete="email" placeholder="Email address" required />
@@ -131,6 +160,19 @@ export default function InquiryModal({ isOpen, context, onClose, onSuccess, requ
                 <ConsultationSelect name="timeline" label="Timeline" options={["As soon as possible", "Within 6 months", "6–12 months", "1–2 years", "2–3 years", "Flexible / just exploring"]} />
                 <textarea aria-label="Message (optional)" name="message" rows={3} placeholder="Message (optional)" />
               </div>
+              <div className="consultation-consent">
+                <input
+                  id="inquiry-tcpa-consent"
+                  type="checkbox"
+                  name="smsConsent"
+                  checked={smsConsent}
+                  onChange={(e) => setSmsConsent(e.target.checked)}
+                />
+                <label htmlFor="inquiry-tcpa-consent" className="consultation-consent-text">
+                  I consent to calls and SMS from Zachary Akers &amp; ONE Sotheby&apos;s regarding real estate updates, including automated messages. Not a condition of purchase. Msg &amp; data rates may apply. Reply STOP to opt out. See our <a href="/privacy" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#bb9150]">Privacy Policy</a>.
+                </label>
+              </div>
+              <TurnstileWidget onVerify={(token) => setTurnstileToken(token)} onExpire={() => setTurnstileToken("")} />
               <button type="submit" className="consultation-submit" disabled={status === "sending"}>
                 {status === "sending" ? "Sending your request…" : requireForDetails ? "Submit inquiry & view property" : "Request a consultation"}
               </button>

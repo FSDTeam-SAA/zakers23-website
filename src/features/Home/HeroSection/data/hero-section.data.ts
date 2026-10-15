@@ -6,7 +6,7 @@ export const heroSlides: HeroSlide[] = [
     eyebrow: "Edgewater",
     title: "Anantara Residences Miami",
     supporting: "North America's first Anantara: branded waterfront living with hotel-caliber service.",
-    credit: "FIRST ANANTARA IN THE U.S. · FROM $1.8M+",
+    credit: "FIRST ANANTARA IN THE U.S. · FROM $1.8M",
     slug: "anantara-miami-resort-residences",
     position: "center 40%"
   },
@@ -20,7 +20,7 @@ export const heroSlides: HeroSlide[] = [
     position: "center center"
   },
   {
-    image: "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp",
+    image: "/images/cipriani/skyline.webp",
     eyebrow: "Brickell",
     title: "Cipriani Residences Brickell",
     supporting: "Cipriani's first ground-up residential tower.",
@@ -28,7 +28,7 @@ export const heroSlides: HeroSlide[] = [
     slug: "cipriani-residences-brickell"
   },
   {
-    image: "https://frasermiami.s3.amazonaws.com/rivage/beachhero.webp",
+    image: "/images/rivage/beachhero.webp",
     eyebrow: "Bal Harbour",
     title: "Rivage Bal Harbour",
     supporting: "Bal Harbour's last true ultra-luxury oceanfront site.",
@@ -36,7 +36,7 @@ export const heroSlides: HeroSlide[] = [
     slug: "rivage-bal-harbour"
   },
   {
-    image: "https://frasermiami.s3.amazonaws.com/619-brickell-nobu-residences/hero2.webp",
+    image: "/images/nobu/hero2.webp",
     eyebrow: "Brickell",
     title: "619 Brickell (Nobu Residences)",
     supporting: "Chef-led branded living in the center of Brickell.",
@@ -44,7 +44,7 @@ export const heroSlides: HeroSlide[] = [
     slug: "619-brickell-nobu-residences"
   },
   {
-    image: "https://frasermiami.s3.amazonaws.com/miamitropic/exterior.webp",
+    image: "/images/jean-georges/exterior.webp",
     eyebrow: "Design District",
     title: "Jean-Georges Miami Tropic Residences",
     supporting: "Editorial architecture with a culinary hospitality lens.",

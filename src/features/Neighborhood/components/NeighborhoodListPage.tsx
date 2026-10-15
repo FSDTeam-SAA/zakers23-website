@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Ht, getNeighborhoodNames } from "@/src/data/neighborhoods";
-import projectsRaw from "@/src/data/miami-projects.json";
 import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyProjectModal";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 import { handleImageError, getSafeImageUrl, FALLBACK_IMAGE_URL } from "@/src/lib/image-utils";
+import MobileNavMenu from "@/src/components/MobileNavMenu";
 
 // Helper to get image URL
 function getImageUrl(path: string | null | undefined): string {
@@ -16,11 +16,25 @@ function getImageUrl(path: string | null | undefined): string {
   return getSafeImageUrl(path, FALLBACK_IMAGE_URL);
 }
 
-export default function NeighborhoodListPage() {
+export default function NeighborhoodListPage({ initialProjects }: { initialProjects?: any[] }) {
   const router = useRouter();
   const { openInquiry } = useInquiry();
+  const [projects, setProjects] = useState<any[]>(initialProjects || []);
   const [isMatcherOpen, setIsMatcherOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    if (!initialProjects || initialProjects.length === 0) {
+      fetch("/api/idx/properties")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.projects && Array.isArray(data.projects)) {
+            setProjects(data.projects);
+          }
+        })
+        .catch(console.error);
+    }
+  }, [initialProjects]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +48,7 @@ export default function NeighborhoodListPage() {
   // Get active projects count and a representative image for each neighborhood
   const neighborhoods = Object.entries(Ht).map(([slug, data]) => {
     const names = getNeighborhoodNames(slug);
-    const matchedProjects = projectsRaw.filter((p) => names.includes(p.neighborhood));
+    const matchedProjects = projects.filter((p) => names.includes(p.neighborhood));
     const activeCount = matchedProjects.length;
 
     // Use first project's image or a high-end Miami skyline image as fallback
@@ -110,6 +124,7 @@ export default function NeighborhoodListPage() {
               Inquire
             </a>
           </nav>
+          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={isScrolled} />
         </div>
       </header>
 
@@ -149,7 +164,7 @@ export default function NeighborhoodListPage() {
 
               {/* Card Content */}
               <div className="relative z-20 p-6 flex flex-col justify-end">
-                <span className="text-[10px] tracking-[0.2em] uppercase text-[#C9A84C] font-semibold mb-2 block">
+                <span className="text-[12px] tracking-[0.2em] uppercase text-[#C9A84C] font-semibold mb-2 block">
                   {hood.activeCount} {hood.activeCount === 1 ? "Active Project" : "Active Projects"}
                 </span>
                 <h3
@@ -158,7 +173,7 @@ export default function NeighborhoodListPage() {
                 >
                   {hood.name}
                 </h3>
-                <p className="text-xs text-[#A3A8B6] font-light line-clamp-2 leading-relaxed">
+                <p className="text-[16px] text-[#A3A8B6] font-light line-clamp-2 leading-relaxed">
                   {hood.description}
                 </p>
               </div>

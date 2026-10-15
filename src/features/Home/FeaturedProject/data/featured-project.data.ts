@@ -3,74 +3,82 @@ import type { Project } from "@/src/features/Home/FeaturedProject/types/featured
 export const featuredProjects: Project[] = [
   {
     neighborhood: "Edgewater",
-    name: "Anantara Residences Miami",
-    price: "$1.8M+",
+    name: "Anantara Miami Resort & Residences",
+    price: "From $1.8M",
     status: "FIRST IN NORTH AMERICA · PRE-LAUNCH RESERVATIONS",
     image: "/images/anantara/hero-day.webp",
     cta: "View project",
-    slug: "anantara-miami-resort-residences"
+    slug: "anantara-miami-resort-residences",
+    listingOffice: "ONE Sotheby's International Realty"
   },
   {
     neighborhood: "Brickell",
     name: "Bugatti Residences Miami",
-    price: "PRE-LAUNCH",
-    status: "60 STORIES · RIVERFRONT ULTRA-LUXURY",
+    price: "Pricing TBD · Pre-Launch",
+    status: "BUGATTI'S FIRST U.S. TOWER · 60 STORIES",
     image: "/images/bugatti/dusk-unbranded.webp",
     cta: "View project",
-    slug: "bugatti-residences-miami"
+    slug: "bugatti-residences-miami",
+    listingOffice: "ONE Sotheby's International Realty"
   },
   {
     neighborhood: "Brickell",
     name: "St. Regis Brickell Residences",
-    price: "$5M+",
-    status: "80%+ SOLD · 54TH CHARLES PENTHOUSE UNDER CONTRACT",
-    image: "https://frasermiami.s3.amazonaws.com/og/st-regis-brickell-residences.jpg",
+    price: "From $5M",
+    status: "80%+ SOLD · CLEARED FOR PRIVATE MARINA",
+    image: "https://frasermiami.s3.amazonaws.com/srresidences/hero-dusk.webp",
     cta: "View project",
-    slug: "st-regis-brickell-residences"
+    slug: "st-regis-brickell-residences",
+    listingOffice: "Related Realty"
   },
   {
-    neighborhood: "Brickell",
+    neighborhood: "Brickell Key",
     name: "Mandarin Oriental Residences",
-    price: "$4M+",
-    status: "50%+ SOUTH TOWER SOLD · $1.3B+ IN SALES",
-    image: "https://frasermiami.s3.amazonaws.com/og/mandarin-oriental-residences.jpg",
+    price: "From $4M",
+    status: "BROKE GROUND OCT 2026 · $1.7B+ IN SALES",
+    image: "https://frasermiami.s3.amazonaws.com/mandarin/mandarin-oriental-hero.webp",
     cta: "View project",
-    slug: "mandarin-oriental-residences"
+    slug: "mandarin-oriental-residences",
+    listingOffice: "Fortune Development Sales"
   },
   {
     neighborhood: "South Brickell",
     name: "UNA Residences",
-    price: "$6.2M+",
-    status: "DELIVERED · MOVE-IN READY 2026",
+    price: "From $6.2M",
+    status: "DELIVERED 2025 · MOVE-IN READY",
     image: "https://frasermiami.s3.amazonaws.com/una/exterior-hero.webp",
     cta: "View project",
-    slug: "una-residences"
+    slug: "una-residences",
+    listingOffice: "Fortune Development Sales"
   },
   {
     neighborhood: "Coconut Grove",
     name: "Vita at Grove Isle",
-    price: "$8.5M+",
+    price: "From $8.5M",
     status: "MOVE-IN READY · CLOSINGS UNDERWAY",
     image: "https://frasermiami.s3.amazonaws.com/vita-grove-isle/hero-aerial.webp",
     cta: "View project",
-    slug: "vita-grove-isle"
+    slug: "vita-grove-isle",
+    listingOffice: "Cervera Real Estate"
   },
   {
     neighborhood: "Wynwood",
     name: "NoMad Residences Wynwood",
-    price: "$600K+",
-    status: "97% SOLD · REMAIN 4 DELIVERED · CLOSINGS UNDERWAY",
-    image: "https://frasermiami.s3.amazonaws.com/og/nomad-residences-wynwood.jpg",
+    price: "From $670,900",
+    status: "97% SOLD · 9 REMAIN · DELIVERED",
+    image: "https://frasermiami.s3.amazonaws.com/nomad-wynwood/hero-dusk.webp",
     cta: "View project",
-    slug: "nomad-residences-wynwood"
+    slug: "nomad-residences-wynwood",
+    listingOffice: "Related Realty"
   },
   {
     neighborhood: "Sunny Isles Beach",
     name: "St. Regis Residences Sunny Isles Beach",
-    price: "$5.3M+",
-    status: "UNDER CONSTRUCTION · $352.1M FINANCING SECURED",
-    image: "https://frasermiami.s3.amazonaws.com/og/st-regis-residences-sunny-isles-beach.jpg",
+    price: "From $5.1M",
+    status: "SOUTH TOWER FOUNDATION COMPLETE · NORTH TOWER NOW SELLING",
+    image: "https://frasermiami.s3.amazonaws.com/sr-residences-sunny-isles/hero-dusk.webp",
     cta: "View project",
-    slug: "st-regis-residences-sunny-isles-beach"
+    slug: "st-regis-residences-sunny-isles-beach",
+    listingOffice: "Fortune International Group"
   }
 ];

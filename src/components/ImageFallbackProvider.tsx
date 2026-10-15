@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
-import { FALLBACK_IMAGE_URL } from "@/src/lib/image-utils";
+import { getDistinctFallback } from "@/src/lib/image-utils";
 
 /**
  * Global Image Fallback Provider
  * Captures image load errors across the entire application in the capture phase
- * and immediately replaces broken or 404 images with a beautiful fallback image.
+ * and immediately replaces broken or 404 images with a beautiful property-matched fallback image.
  */
 export function ImageFallbackProvider() {
   useEffect(() => {
@@ -28,7 +28,13 @@ export function ImageFallbackProvider() {
       if (img.srcset) {
         img.srcset = "";
       }
-      img.src = FALLBACK_IMAGE_URL;
+
+      const customFallback = img.dataset.fallback;
+      if (customFallback && !customFallback.includes("api.cotality.com") && customFallback !== img.src) {
+        img.src = customFallback;
+      } else {
+        img.src = getDistinctFallback(img.alt || img.src || "luxury-estate");
+      }
       img.classList.add("img-fallback-applied");
     };
 

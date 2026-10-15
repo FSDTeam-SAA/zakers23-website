@@ -26,7 +26,7 @@ export function AdvisorSection() {
           <div>
             <div className="mb-7 flex items-center gap-4">
               <span className="h-px w-6 bg-[#c2a36a]" />
-              <span className="text-[10px] uppercase tracking-[0.34em] text-[#8f96ab]">
+              <span className="text-[12px] uppercase tracking-[0.34em] text-[#8f96ab]">
                 A Different Kind of Advisor
               </span>
             </div>
@@ -46,14 +46,14 @@ export function AdvisorSection() {
               className="mt-8 max-w-[32rem] text-[16px] leading-[1.72] text-[#2d3550]"
               style={{ fontFamily: "var(--font-serif), serif" }}
             >
-Zach, is a veteran of 14 years in the real estate industry working both in sales, as well as luxury new-construction and development. Zach is adept at understanding the relationship between investment and emotional connection to your property. With vast experience working with homeowners from all walks of life and backgrounds, he understands that no home buyer or seller is the same, but they all want results. Zach will help you purchase or sell your property seamlessly and with integrity.
+Zachary is a veteran of 14 years in the real estate industry working both in sales, as well as luxury new-construction and development. Zachary is adept at understanding the relationship between investment and emotional connection to your property. With vast experience working with homeowners from all walks of life and backgrounds, he understands that no home buyer or seller is the same, but they all want results. Zachary will help you purchase or sell your property seamlessly and with integrity.
             </p>
           </div>
 
           <div className="mt-10">
             <div className="mb-6 flex items-center gap-4">
               <span className="h-px w-6 bg-[#c2a36a]" />
-              <span className="text-[10px] uppercase tracking-[0.34em] text-[#8f96ab]">
+              <span className="text-[12px] uppercase tracking-[0.34em] text-[#8f96ab]">
                 ONE Sotheby&apos;s International Realty
               </span>
             </div>
@@ -99,25 +99,32 @@ Zach, is a veteran of 14 years in the real estate industry working both in sales
             <div className="flex flex-col gap-4 border-b border-[#ddd8cd] py-4 text-[14px] text-[#182235] sm:flex-row sm:items-center sm:gap-6">
               <a
                 href="tel:3053435371"
-                className="inline-flex items-center gap-2 transition-colors duration-200 hover:text-[#b89354]"
+                className="inline-flex min-h-[44px] items-center gap-2 transition-colors duration-200 hover:text-[#b89354]"
               >
-                <span className="text-[#b89354]">◌</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#b89354]" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
                 305.343.5371
               </a>
               <a
                 href="mailto:Zakers@onesothebysrealty.com"
-                className="inline-flex items-center gap-2 transition-colors duration-200 hover:text-[#b89354]"
+                className="inline-flex min-h-[44px] items-center gap-2 transition-colors duration-200 hover:text-[#b89354]"
               >
-                <span className="text-[#b89354]">✉</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#b89354]" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
                 Zakers@onesothebysrealty.com
               </a>
               <a
                 href="https://wa.me/13053435371?text=Hi%20Zachary%2C%20I%27d%20like%20to%20connect%20regarding%20Miami%20luxury%20real%20estate."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 font-medium text-[#1c1f26] transition-colors duration-200 hover:text-[#25D366]"
+                className="inline-flex min-h-[44px] items-center gap-1.5 font-medium text-[#1c1f26] transition-colors duration-200 hover:text-[#25D366]"
               >
-                <span className="text-[#25D366]">💬</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-[#25D366]" aria-hidden="true">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1 .587 1.764.883 2.806.883 3.181 0 5.767-2.587 5.768-5.766.001-3.182-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.804 0-3.495-.482-4.962-1.325l-7.038 1.843 1.879-6.862c-.933-1.517-1.479-3.298-1.479-5.206 0-5.514 4.486-10 10-10s10 4.486 10 10z" />
+                </svg>
                 WhatsApp Direct
               </a>
             </div>
@@ -129,7 +136,7 @@ Zach, is a veteran of 14 years in the real estate industry working both in sales
                   event.preventDefault();
                   openInquiry();
                 }}
-                className="inline-flex min-h-11 flex-1 items-center justify-center bg-[#bb9751] px-6 py-4 text-center text-[11px] uppercase tracking-[0.34em] transition-colors duration-200 hover:bg-[#a88543] focus:outline-none"
+                className="inline-flex min-h-11 flex-1 items-center justify-center bg-[#bb9751] px-6 py-4 text-center text-[12px] uppercase tracking-[0.34em] transition-colors duration-200 hover:bg-[#a88543] focus:outline-none"
                 style={{ color: "#ffffff" }}
               >
                 Connect With Zachary
@@ -138,7 +145,7 @@ Zach, is a veteran of 14 years in the real estate industry working both in sales
                 href="https://wa.me/13053435371?text=Hi%20Zachary%2C%20I%27d%20like%20to%20connect%20regarding%20Miami%20luxury%20real%20estate."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center justify-center gap-2 px-6 py-4 text-center text-[11px] uppercase tracking-[0.24em] font-semibold transition-all duration-200 hover:brightness-105"
+                className="inline-flex min-h-11 items-center justify-center gap-2 px-6 py-4 text-center text-[12px] uppercase tracking-[0.24em] font-semibold transition-all duration-200 hover:brightness-105"
                 style={{
                   backgroundColor: "#25D366",
                   color: "#ffffff",

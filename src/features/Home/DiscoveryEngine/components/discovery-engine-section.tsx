@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
-import projectsRaw from "@/src/data/miami-projects.json";
+import { useMemo, useState, useEffect } from "react";
 import { handleImageError } from "@/src/lib/image-utils";
 
 type DiscoveryProject = {
@@ -15,6 +14,7 @@ type DiscoveryProject = {
   priceFrom: string;
   img: string;
   wellnessScore?: number | null;
+  listingOffice?: string;
   discoveryEngine?: {
     lifestyle?: string[];
     investmentProfile?: string[];
@@ -27,9 +27,8 @@ type DiscoveryProject = {
 type DiscoveryEngineSectionProps = {
   projectNames?: string[];
   featuredProjects?: unknown;
+  initialProjects?: DiscoveryProject[];
 };
-
-const projects = projectsRaw as DiscoveryProject[];
 
 // All neighborhoods present in miami-projects.json
 const NEIGHBORHOOD_OPTIONS = [
@@ -97,18 +96,33 @@ function imageUrl(path: string) {
 
 export function DiscoveryEngineSection({
   projectNames: _projectNames,
+  initialProjects,
 }: DiscoveryEngineSectionProps) {
+  const [projectsList, setProjectsList] = useState<DiscoveryProject[]>(initialProjects || []);
   const [selectedNeighborhood, setSelectedNeighborhood] = useState("All");
   const [location, setLocation] = useState(50);
   const [wellness, setWellness] = useState(50);
   const [budget, setBudget] = useState<[number, number]>([0, 50000]);
   const [searchQuery, setSearchQuery] = useState("");
 
+  useEffect(() => {
+    if (!initialProjects || initialProjects.length === 0) {
+      fetch("/api/idx/properties")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.projects && Array.isArray(data.projects)) {
+            setProjectsList(data.projects);
+          }
+        })
+        .catch(console.error);
+    }
+  }, [initialProjects]);
+
   const matches = useMemo(() => {
     const minVal = budget[0] * 1000;
     const maxVal = budget[1] >= 50000 ? Infinity : budget[1] * 1000;
 
-    return projects
+    return projectsList
       .filter((project) => {
         // 1. Neighborhood Filter
         if (selectedNeighborhood !== "All" && project.neighborhood !== selectedNeighborhood) {
@@ -320,7 +334,7 @@ export function DiscoveryEngineSection({
 
         <aside className="match-panel" aria-live="polite">
           <div className="match-header">
-            <span className="text-[11px] uppercase tracking-wider font-semibold text-[#bb9751]">
+            <span className="text-[12px] uppercase tracking-wider font-semibold text-[#bb9751]">
               Top Ranked Matches
             </span>
             <span className="font-mono text-xs text-white/50">
@@ -363,7 +377,7 @@ export function DiscoveryEngineSection({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-3 border-b border-white/10">
           <div className="flex items-center gap-2 text-xs">
             <span className="w-2 h-2 rounded-full bg-[#bb9751] animate-pulse" />
-            <span className="font-mono uppercase tracking-[0.2em] text-[#bb9751] font-semibold text-[11px]">
+            <span className="font-mono uppercase tracking-[0.2em] text-[#bb9751] font-semibold text-[12px]">
               Discovery Index
             </span>
             <span className="text-white/30">|</span>
@@ -402,6 +416,14 @@ export function DiscoveryEngineSection({
                     <span>{project.neighborhood}</span>
                     <span className="opacity-40">·</span>
                     <span className="discovery-item-price">{project.priceFrom}</span>
+                    {project.listingOffice && (
+                      <>
+                        <span className="opacity-40">·</span>
+                        <span className="text-[11px] text-[#bb9751] truncate max-w-[130px]" title={`Listing Courtesy of ${project.listingOffice}`}>
+                          {project.listingOffice}
+                        </span>
+                      </>
+                    )}
                   </div>
                 </Link>
               ))}
@@ -423,6 +445,14 @@ export function DiscoveryEngineSection({
                     <span>{project.neighborhood}</span>
                     <span className="opacity-40">·</span>
                     <span className="discovery-item-price">{project.priceFrom}</span>
+                    {project.listingOffice && (
+                      <>
+                        <span className="opacity-40">·</span>
+                        <span className="text-[11px] text-[#bb9751] truncate max-w-[130px]" title={`Listing Courtesy of ${project.listingOffice}`}>
+                          {project.listingOffice}
+                        </span>
+                      </>
+                    )}
                   </div>
                 </Link>
               ))}
@@ -444,6 +474,14 @@ export function DiscoveryEngineSection({
                     <span>{project.neighborhood}</span>
                     <span className="opacity-40">·</span>
                     <span className="discovery-item-price">{project.priceFrom}</span>
+                    {project.listingOffice && (
+                      <>
+                        <span className="opacity-40">·</span>
+                        <span className="text-[11px] text-[#bb9751] truncate max-w-[130px]" title={`Listing Courtesy of ${project.listingOffice}`}>
+                          {project.listingOffice}
+                        </span>
+                      </>
+                    )}
                   </div>
                 </Link>
               ))}
@@ -457,12 +495,18 @@ export function DiscoveryEngineSection({
             <button
               type="button"
               onClick={handleResetFilters}
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#bb9751] hover:bg-[#a88543] text-[#0c1523] text-xs font-semibold uppercase tracking-wider transition-colors rounded-sm cursor-pointer"
+              className="inline-flex min-h-[44px] items-center justify-center gap-2 px-5 py-2.5 bg-[#bb9751] hover:bg-[#a88543] text-[#0c1523] text-xs font-semibold uppercase tracking-wider transition-colors rounded-sm cursor-pointer"
             >
               Reset Filters
             </button>
           </div>
         )}
+
+        {/* MLS IDX Attribution Notice */}
+        <div className="mt-10 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-[11px] text-white/50 gap-2">
+          <span>Listing data provided courtesy of participating brokerages via BeachesMLS &amp; Miami Association of Realtors IDX.</span>
+          <span className="font-mono text-[#bb9751]">Equal Housing Opportunity · IDX Compliant</span>
+        </div>
       </div>
     </section>
   );

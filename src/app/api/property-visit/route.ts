@@ -2,6 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { createInquiryAccess, INQUIRY_ACCESS_MAX_AGE, INQUIRY_ACCESS_COOKIE, readInquiryAccess } from "../../../lib/server/inquiry-access";
 import projects from "../../../data/miami-projects.json";
 
+let waterfrontListings: Array<{ slug: string; name: string; neighborhood: string; priceFrom: string }> = [];
+try {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  waterfrontListings = require("../../../data/waterfront-mls.json");
+} catch {}
+
 export async function POST(request: NextRequest) {
   const access = readInquiryAccess(request.cookies.get(INQUIRY_ACCESS_COOKIE)?.value);
   if (!access) return NextResponse.json({ error: "Please submit an inquiry first." }, { status: 401 });
@@ -12,7 +18,8 @@ export async function POST(request: NextRequest) {
   if (!body || typeof body !== "object" || !("slug" in body) || typeof body.slug !== "string") {
     return NextResponse.json({ error: "A property slug is required." }, { status: 400 });
   }
-  const project = projects.find((item: { slug: string }) => item.slug === body.slug);
+  const project = projects.find((item: { slug: string }) => item.slug === body.slug) ||
+    waterfrontListings.find((item: { slug: string }) => item.slug === body.slug);
   if (!project) return NextResponse.json({ error: "Property not found." }, { status: 404 });
   const apiKey = process.env.FOLLOWUP_BOSS_API_KEY;
   if (!apiKey) return NextResponse.json({ error: "Visit tracking unavailable." }, { status: 503 });

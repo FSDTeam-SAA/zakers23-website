@@ -9,7 +9,7 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
     <section className="bg-[var(--sand)] px-5 py-14 md:px-7 md:py-20" id="reputation">
       <div className="mx-auto max-w-[1160px] rounded-[18px] bg-[#f4efe5] px-6 py-5 md:px-7 md:py-5">
         <div className="mb-5">
-          <span className="mb-1.5 inline-block text-[10px] uppercase tracking-[0.32em] text-[#b89354]">
+          <span className="mb-1.5 inline-block text-[12px] uppercase tracking-[0.32em] text-[#b89354]">
             Client Feedback
           </span>
           <h2
@@ -30,7 +30,9 @@ export function TestimonialsSection({ testimonials }: TestimonialsSectionProps) 
             >
               <div className="mb-4 flex items-start justify-between gap-4">
                 <div className="text-[13px] tracking-[0.18em] text-[#c6922f]">★★★★★</div>
-                <span className="text-[14px] leading-none text-[#b2ab9e]">◻</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-[#b2ab9e]/70" aria-hidden="true">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
               </div>
 
               <blockquote

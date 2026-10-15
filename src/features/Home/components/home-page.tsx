@@ -18,8 +18,9 @@ import { SiteFooter } from "@/src/features/Home/components/site-footer";
 import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyProjectModal";
 import { Ht } from "@/src/data/neighborhoods";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
+import { MobileNavMenu } from "@/src/components/MobileNavMenu";
 
-export function HomePage() {
+export function HomePage({ initialProjects }: { initialProjects?: any[] }) {
   const router = useRouter();
   const { openInquiry } = useInquiry();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -99,6 +100,7 @@ export function HomePage() {
               Inquire
             </a>
           </nav>
+          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={isScrolled} />
         </div>
       </header>
 
@@ -109,6 +111,7 @@ export function HomePage() {
       <DiscoveryEngineSection
         projectNames={projectNames}
         featuredProjects={featuredProjects}
+        initialProjects={initialProjects}
       />
       <TestimonialsSection testimonials={testimonials} />
 
@@ -117,6 +120,7 @@ export function HomePage() {
 
       {isMatcherOpen && (
         <FindMyProjectModal
+          projects={initialProjects}
           onClose={() => setIsMatcherOpen(false)}
           onDone={(results) => {
             setIsMatcherOpen(false);

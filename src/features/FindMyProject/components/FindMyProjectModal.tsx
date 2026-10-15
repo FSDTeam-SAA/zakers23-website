@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef, useMemo, useCallback } from "react";
-import projectsRaw from "@/src/data/miami-projects.json";
 
 import { MapProject } from "@/src/features/Home/DiscoveryEngine/components/map-explore-page";
 
@@ -25,6 +24,7 @@ export interface MatchResults {
 type FindMyProjectModalProps = {
   onClose: () => void;
   onDone: (results: MatchResults) => void;
+  projects?: MapProject[];
 };
 
 const Qi = [
@@ -315,7 +315,7 @@ const themeColors = {
   bronzA: (alpha: number) => `rgba(184, 147, 84, ${alpha})`
 };
 
-export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectModalProps) {
+export default function FindMyProjectModal({ onClose, onDone, projects: initialProjects }: FindMyProjectModalProps) {
   const [step, setStep] = useState(0);
   const [prefs, setPrefs] = useState<MatcherPrefs>({
     purpose: null,
@@ -328,7 +328,22 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
   const [isAnimating, setIsAnimating] = useState(false);
   const hasAnimatedRef = useRef(false);
 
-  const projects = useMemo(() => projectsRaw as MapProject[], []);
+  const [projectsList, setProjectsList] = useState<MapProject[]>(initialProjects || []);
+
+  useEffect(() => {
+    if (!initialProjects || initialProjects.length === 0) {
+      fetch("/api/idx/properties")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.projects && Array.isArray(data.projects)) {
+            setProjectsList(data.projects);
+          }
+        })
+        .catch(console.error);
+    }
+  }, [initialProjects]);
+
+  const projects = projectsList;
   const activePrefs = useMemo(() => (step < 3 ? { ...prefs, budget: [400000, 30000000] as [number, number] } : prefs), [prefs, step]);
   const matchesCount = useMemo(() => or(activePrefs, projects), [activePrefs, projects]);
 
@@ -510,8 +525,8 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
               <div
                 className="quiz-step-label"
                 style={{
-                  fontSize: 9,
-                  letterSpacing: "0.32em",
+                  fontSize: 12,
+                  letterSpacing: "0.25em",
                   color: themeColors.bronze,
                   textTransform: "uppercase",
                   marginBottom: 9,
@@ -540,7 +555,7 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                 <p
                   className="quiz-selected-count"
                   style={{
-                    fontSize: 11,
+                    fontSize: 12,
                     color: themeColors.bronze,
                     fontWeight: 400,
                     marginTop: 4,
@@ -555,7 +570,7 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                 <p
                   className="quiz-selected-count"
                   style={{
-                    fontSize: 11,
+                    fontSize: 12,
                     color: themeColors.bronze,
                     fontWeight: 400,
                     marginTop: 4,
@@ -579,8 +594,12 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                 fontSize: 24,
                 lineHeight: 1,
                 flexShrink: 0,
-                padding: "4px",
-                marginTop: -4,
+                width: 44,
+                height: 44,
+                minWidth: 44,
+                minHeight: 44,
+                marginTop: -8,
+                marginRight: -8,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center"
@@ -636,7 +655,7 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                       <div style={{ fontSize: 12, fontWeight: 500, color: themeColors.ink, marginBottom: 2, fontFamily: "'DM Sans', sans-serif" }}>
                         {f.label}
                       </div>
-                      <div style={{ fontSize: 11, color: themeColors.mist, fontWeight: 300, fontFamily: "'DM Sans', sans-serif" }}>
+                      <div style={{ fontSize: 12, color: themeColors.mist, fontWeight: 300, fontFamily: "'DM Sans', sans-serif" }}>
                         {f.sub}
                       </div>
                     </div>
@@ -657,7 +676,11 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                     onClick={() => toggleNeighborhood(f)}
                     className={`choice-pill quiz-nhd-pill ${isSelected ? "sel" : ""}`}
                     style={{
-                      padding: "9px 14px",
+                      padding: "10px 16px",
+                      minHeight: 44,
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
                       background: isSelected ? themeColors.bronzA(0.1) : themeColors.cream,
                       border: `1px solid ${isSelected ? themeColors.bronze : themeColors.dune}`,
                       color: isSelected ? themeColors.ink : themeColors.mist,
@@ -686,6 +709,10 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                     className={`choice-pill quiz-bed-pill ${isSelected ? "sel" : ""}`}
                     style={{
                       padding: "11px 22px",
+                      minHeight: 44,
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
                       background: isSelected ? themeColors.bronzA(0.1) : themeColors.cream,
                       border: `1px solid ${isSelected ? themeColors.bronze : themeColors.dune}`,
                       color: isSelected ? themeColors.ink : themeColors.mist,
@@ -717,7 +744,7 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                 }}
               >
                 <div style={{ textAlign: "center", flex: "1 1 0", minWidth: 0 }}>
-                  <div style={{ fontSize: 9, letterSpacing: "0.2em", color: themeColors.fog, textTransform: "uppercase", marginBottom: 5, fontFamily: "'DM Sans', sans-serif" }}>
+                  <div style={{ fontSize: 12, letterSpacing: "0.15em", color: themeColors.fog, textTransform: "uppercase", marginBottom: 5, fontFamily: "'DM Sans', sans-serif" }}>
                     Min
                   </div>
                   <div className="quiz-budget-num" style={{ fontFamily: "'Playfair Display', serif", fontSize: 25, fontWeight: 300, color: themeColors.bronze }}>
@@ -727,7 +754,7 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                 <div
                   className="quiz-budget-connector"
                   style={{
-                    fontSize: 11,
+                    fontSize: 12,
                     color: themeColors.fog,
                     alignSelf: "center",
                     letterSpacing: "0.15em",
@@ -739,7 +766,7 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                   to
                 </div>
                 <div style={{ textAlign: "center", flex: "1 1 0", minWidth: 0 }}>
-                  <div style={{ fontSize: 9, letterSpacing: "0.2em", color: themeColors.fog, textTransform: "uppercase", marginBottom: 5, fontFamily: "'DM Sans', sans-serif" }}>
+                  <div style={{ fontSize: 12, letterSpacing: "0.15em", color: themeColors.fog, textTransform: "uppercase", marginBottom: 5, fontFamily: "'DM Sans', sans-serif" }}>
                     Max
                   </div>
                   <div className="quiz-budget-num" style={{ fontFamily: "'Playfair Display', serif", fontSize: 25, fontWeight: 300, color: themeColors.bronze }}>
@@ -750,7 +777,7 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
 
               {/* Min Input Slider */}
               <div style={{ marginBottom: 18 }}>
-                <div style={{ fontSize: 9.5, letterSpacing: "0.18em", color: themeColors.fog, textTransform: "uppercase", marginBottom: 9, fontFamily: "'DM Sans', sans-serif" }}>
+                <div style={{ fontSize: 12, letterSpacing: "0.15em", color: themeColors.fog, textTransform: "uppercase", marginBottom: 9, fontFamily: "'DM Sans', sans-serif" }}>
                   Minimum
                 </div>
                 <input
@@ -771,7 +798,7 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
 
               {/* Max Input Slider */}
               <div style={{ marginBottom: 18 }}>
-                <div style={{ fontSize: 9.5, letterSpacing: "0.18em", color: themeColors.fog, textTransform: "uppercase", marginBottom: 9, fontFamily: "'DM Sans', sans-serif" }}>
+                <div style={{ fontSize: 12, letterSpacing: "0.15em", color: themeColors.fog, textTransform: "uppercase", marginBottom: 9, fontFamily: "'DM Sans', sans-serif" }}>
                   Maximum
                 </div>
                 <input
@@ -809,12 +836,16 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                       onClick={() => setPrefs(prev => ({ ...prev, budget: [f, C] }))}
                       className={`choice-pill quiz-budget-preset ${isSelected ? "sel" : ""}`}
                       style={{
-                        padding: "7px 12px",
+                        padding: "10px 14px",
+                        minHeight: 44,
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
                         background: isSelected ? themeColors.bronzA(0.1) : themeColors.cream,
                         border: `1px solid ${isSelected ? themeColors.bronze : themeColors.dune}`,
                         color: themeColors.mist,
                         cursor: "pointer",
-                        fontSize: 10.5,
+                        fontSize: 12,
                         fontFamily: "'DM Sans', sans-serif",
                         transition: "all 0.15s"
                       }}
@@ -854,7 +885,7 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                       <div style={{ fontSize: 12, color: themeColors.ink, fontWeight: 400, marginBottom: 2, fontFamily: "'DM Sans', sans-serif" }}>
                         {f.label}
                       </div>
-                      <div style={{ fontSize: 11, color: themeColors.mist, fontWeight: 300, fontFamily: "'DM Sans', sans-serif" }}>
+                      <div style={{ fontSize: 12, color: themeColors.mist, fontWeight: 300, fontFamily: "'DM Sans', sans-serif" }}>
                         {f.sub}
                       </div>
                     </div>
@@ -889,14 +920,14 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
           {step > 0 && (
             <div className="quiz-match-count" style={{ marginBottom: 14, textAlign: "center" }}>
               {matchesCount > 0 ? (
-                <p style={{ fontSize: 11, color: themeColors.mist, letterSpacing: "0.08em", fontFamily: "'DM Sans', sans-serif" }}>
+                <p style={{ fontSize: 13, color: themeColors.mist, letterSpacing: "0.05em", fontFamily: "'DM Sans', sans-serif" }}>
                   <span style={{ color: themeColors.bronze, fontWeight: 500 }}>
                     {matchesCount}
                   </span>{" "}
                   {matchesCount === 1 ? "project matches" : "projects match"} so far
                 </p>
               ) : (
-                <p style={{ fontSize: 11, color: themeColors.bronze, letterSpacing: "0.05em", fontWeight: 400, fontFamily: "'DM Sans', sans-serif" }}>
+                <p style={{ fontSize: 13, color: themeColors.bronze, letterSpacing: "0.03em", fontWeight: 400, fontFamily: "'DM Sans', sans-serif" }}>
                   No exact matches yet — try widening your criteria, or finish to see closest alternatives
                 </p>
               )}
@@ -918,8 +949,8 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                   border: `1px solid ${themeColors.dune}`,
                   color: themeColors.mist,
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 10,
-                  letterSpacing: "0.2em",
+                  fontSize: 12,
+                  letterSpacing: "0.15em",
                   textTransform: "uppercase",
                   cursor: "pointer"
                 }}
@@ -941,8 +972,8 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                     border: "none",
                     color: themeColors.fog,
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 10,
-                    letterSpacing: "0.18em",
+                    fontSize: 12,
+                    letterSpacing: "0.15em",
                     textTransform: "uppercase",
                     cursor: "pointer"
                   }}
@@ -960,8 +991,8 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                     color: themeColors.cream,
                     border: "none",
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 10,
-                    letterSpacing: "0.24em",
+                    fontSize: 12,
+                    letterSpacing: "0.18em",
                     textTransform: "uppercase",
                     cursor: "pointer",
                     transition: "all 0.2s"
@@ -982,8 +1013,8 @@ export default function FindMyProjectModal({ onClose, onDone }: FindMyProjectMod
                   color: themeColors.cream,
                   border: "none",
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 10,
-                  letterSpacing: "0.24em",
+                  fontSize: 12,
+                  letterSpacing: "0.18em",
                   textTransform: "uppercase",
                   cursor: "pointer"
                 }}

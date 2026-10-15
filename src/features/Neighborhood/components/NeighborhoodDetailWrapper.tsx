@@ -7,6 +7,6 @@ const NeighborhoodDetailPageClient = dynamic(
   { ssr: false }
 );
 
-export default function NeighborhoodDetailWrapper({ slug }: { slug: string }) {
-  return <NeighborhoodDetailPageClient slug={slug} />;
+export default function NeighborhoodDetailWrapper({ slug, initialProjects }: { slug: string; initialProjects?: any[] }) {
+  return <NeighborhoodDetailPageClient slug={slug} initialProjects={initialProjects} />;
 }

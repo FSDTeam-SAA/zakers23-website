@@ -10,8 +10,11 @@ import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyPr
 import { Ht } from "@/src/data/neighborhoods";
 import { submitInquiry } from "@/src/lib/inquiry";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
+import { toast } from "sonner";
+import { HoneypotField } from "@/src/components/HoneypotField";
+import MobileNavMenu from "@/src/components/MobileNavMenu";
 import PropertyDetailSkeleton from "./PropertyDetailSkeleton";
-import localProjects from "@/src/data/miami-projects.json";
+import ResalePropertyDetailPage from "./ResalePropertyDetailPage";
 import { handleImageError, FALLBACK_IMAGE_URL, LUXURY_FALLBACK_IMAGE_URL, getSafeImageUrl } from "@/src/lib/image-utils";
 
 interface MapProject {
@@ -62,6 +65,16 @@ interface MapProject {
   editorialLine?: string;
   hoa?: string | null;
   address?: string;
+  listingOffice?: string;
+  listingAgent?: string;
+  isResale?: boolean;
+  propertyType?: string;
+  yearBuilt?: number | string;
+  lotSize?: string;
+  acres?: number | null;
+  daysOnMarket?: number;
+  waterfrontDetails?: string;
+  dockDetails?: string | null;
 }
 
 const STAGES: Record<string, { label: string; dot: string; index: number }> = {
@@ -79,32 +92,29 @@ const STAGE_STEPS = [
 ];
 
 const fallbackImages = [
-  "https://frasermiami.s3.amazonaws.com/ciprianiresidences/skyline.webp",
-  "https://frasermiami.s3.amazonaws.com/perigon/pool2.webp",
   LUXURY_FALLBACK_IMAGE_URL,
-  "https://frasermiami.s3.amazonaws.com/baccarat/exterior-hummingbird-sunrise.webp",
-  "https://frasermiami.s3.amazonaws.com/shoreclub/hero-beach-view.webp",
-  "https://frasermiami.s3.amazonaws.com/rivage/hummingbird.webp",
-  "https://frasermiami.s3.amazonaws.com/the-mansions-on-fisher-island/01-Mansions-on-Fisher-Island-Featured.webp",
-  FALLBACK_IMAGE_URL,
-  "https://frasermiami.s3.amazonaws.com/sixfisher/hero.webp",
-  "https://frasermiami.s3.amazonaws.com/waldorf/waldorf-astoria-hero-twilight.webp",
 ];
 
-function getImageUrl(path: string | null | undefined, index: number = 0): string {
-  if (!path || path.includes("api.cotality.com")) {
-    return fallbackImages[Math.abs(index) % fallbackImages.length];
+function getImageUrl(path: string | null | undefined, _index: number = 0): string {
+  if (!path) {
+    return LUXURY_FALLBACK_IMAGE_URL;
   }
-  return getSafeImageUrl(path, fallbackImages[Math.abs(index) % fallbackImages.length]);
+  return getSafeImageUrl(path, LUXURY_FALLBACK_IMAGE_URL);
 }
 
-function getSafeImage(imgs: string[] | undefined, primaryImg: string, index: number): string {
+function getSafeImage(
+  imgs: string[] | undefined,
+  primaryImg: string,
+  index: number,
+  isWaldorf: boolean = false
+): string {
   const pool = (imgs && imgs.length > 0 ? imgs : [primaryImg])
-    .filter((url) => typeof url === "string" && url.trim().length > 0 && !url.includes("api.cotality.com"));
+    .filter((url): url is string => typeof url === "string" && url.trim().length > 0)
+    .filter((url) => isWaldorf || !url.toLowerCase().includes("waldorf"));
   if (pool.length > 0) {
     return getImageUrl(pool[Math.abs(index) % pool.length], index);
   }
-  return fallbackImages[Math.abs(index) % fallbackImages.length];
+  return LUXURY_FALLBACK_IMAGE_URL;
 }
 
 function formatPriceStr(price: string | number | null | undefined): string {
@@ -125,12 +135,29 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
   const router = useRouter();
   const { openInquiry } = useInquiry();
   const [projects, setProjects] = useState<MapProject[]>(
-    initialProject ? [initialProject] : (localProjects as unknown as MapProject[])
+    initialProject ? [initialProject] : []
   );
   const [projectsLoading, setProjectsLoading] = useState(false);
   const [isMatcherOpen, setIsMatcherOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeImgIdx, setActiveImgIdx] = useState<number | null>(null);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch("/api/idx/properties", { signal: controller.signal })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.projects && Array.isArray(data.projects)) {
+          setProjects(data.projects);
+        }
+      })
+      .catch((error: unknown) => {
+        if ((error as { name?: string })?.name !== "AbortError") {
+          console.error(error);
+        }
+      });
+    return () => controller.abort();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -140,22 +167,6 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Optional background fetch only if initialProject was not provided
-  useEffect(() => {
-    if (initialProject) return;
-    const controller = new AbortController();
-    fetch("/api/idx/properties", { cache: "no-store", signal: controller.signal })
-      .then(async (response) => {
-        const body = await response.json();
-        if (!response.ok) throw new Error(body.error || "Could not load property.");
-        if (Array.isArray(body.projects) && body.projects.length > 0) {
-          setProjects(body.projects as MapProject[]);
-        }
-      })
-      .catch((error: unknown) => { if ((error as { name?: string }).name !== "AbortError") console.error(error); });
-    return () => controller.abort();
-  }, [initialProject]);
 
   const project = useMemo(() => {
     if (initialProject) {
@@ -207,6 +218,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");
   const [formMessage, setFormMessage] = useState("");
+  const [formHoneypot, setFormHoneypot] = useState("");
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
 
   // Compare state
@@ -256,14 +268,23 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
 
-  // Gallery images array
+  const isWaldorf = useMemo(() => {
+    if (!project) return false;
+    return Boolean(
+      (project.slug || "").includes("waldorf") ||
+      (project.name || "").toLowerCase().includes("waldorf")
+    );
+  }, [project]);
+
+  // Gallery images array: each listing shows strictly its own photos
   const galleryImgs = useMemo(() => {
     if (!project) return [];
     const pool = (project.imgs && project.imgs.length > 0 ? project.imgs : [project.img])
-      .filter((img) => img && typeof img === "string" && !img.includes("api.cotality.com"));
+      .filter((img): img is string => typeof img === "string" && img.trim().length > 0)
+      .filter((img) => isWaldorf || !img.toLowerCase().includes("waldorf"));
     if (pool.length > 0) return pool;
-    return fallbackImages.slice(0, 4);
-  }, [project]);
+    return [LUXURY_FALLBACK_IMAGE_URL];
+  }, [project, isWaldorf]);
 
   // Related projects list
   const relatedProjects = useMemo(() => {
@@ -367,7 +388,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
     markerEl.appendChild(innerDot);
 
     const popup = new mapboxgl.Popup({ offset: 15, closeButton: false })
-      .setHTML(`<div class="font-sans text-[11px] tracking-[0.05em] uppercase font-semibold text-[#1c1f26] p-1">${project.name}</div>`);
+      .setHTML(`<div class="font-sans text-[12px] tracking-[0.05em] uppercase font-semibold text-[#1c1f26] p-1">${project.name}</div>`);
 
     const marker = new mapboxgl.Marker(markerEl)
       .setLngLat([project.lng, project.lat])
@@ -403,15 +424,21 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
         name: formName,
         email: formEmail,
         message: formMessage,
+        website: formHoneypot,
+        projectName: project.name,
+        buttonClicked: "Submit Request",
         source: "Website",
         details: { Property: project.name },
       });
       setFormStatus("done");
+      toast.success(`Inquiry received for ${project.name}! Zachary will follow up with pricing & floor plans.`);
       setFormName("");
       setFormEmail("");
       setFormMessage("");
+      setFormHoneypot("");
     } catch {
       setFormStatus("error");
+      toast.error("Failed to submit inquiry. Please try again.");
     }
   };
 
@@ -437,7 +464,12 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
   // Authentic property description from BeachesMLS / Miami AOR
   const paragraphs = useMemo(() => {
     if (!project) return [];
-    const realDesc = (project as any).description;
+    const rawDesc = (project as any).description;
+    const realDesc = rawDesc
+      ? String(rawDesc)
+          .replace(/(["'“‘]?Winter White House["'”’]?\s+of)\s*,/gi, '“Winter White House” of President Richard Nixon,')
+          .replace(/(["'“‘]?Winter White House["'”’]?\s+of)\s+(?!President|Richard)/gi, '“Winter White House” of President Richard Nixon, ')
+      : "";
     if (realDesc && realDesc.length > 30) {
       const rawParas = realDesc.split(/\n\s*\n/).filter((p: string) => p.trim().length > 0);
       if (rawParas.length >= 2) return rawParas;
@@ -450,13 +482,24 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
     }
 
     return [
-      `Featuring spacious living areas in ${project.neighborhood}, this premier residence is an active listing on BeachesMLS and Miami Association of Realtors.`,
+      `Featuring spacious living areas in ${project.neighborhood}, this premier residence offers exceptional finishes, panoramic views, and refined architecture.`,
       `Offering an elite luxury lifestyle in South Florida, represented by Zachary Akers (ONE Sotheby's International Realty).`
     ];
   }, [project]);
 
   if (!project) {
     return <PropertyDetailSkeleton />;
+  }
+
+  // If this project is a resale home, delegate to dedicated Resale template
+  const isResale = Boolean(
+    project.isResale ||
+    project.propertyType === "resale" ||
+    (project.mlsId && !project.depositStructure && !project.floorPlans && !project.developer)
+  );
+
+  if (isResale) {
+    return <ResalePropertyDetailPage slug={slug} initialProject={project as any} />;
   }
 
   return (
@@ -520,6 +563,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               Inquire
             </a>
           </nav>
+          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={true} projectName={project?.name} />
         </div>
       </header>
 
@@ -531,7 +575,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               <Image
                 fill
                 priority
-                src={getSafeImage(project.imgs, project.img, 0)}
+                src={getSafeImage(project.imgs, project.img, 0, isWaldorf)}
                 alt={project.name}
                 className="object-cover transition-transform duration-700 hover:scale-[1.02]"
                 onError={handleImageError}
@@ -540,7 +584,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               {/* Status Badge */}
               <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm px-3.5 py-1.5 rounded-full flex items-center gap-2 z-20">
                 <span className="w-2 h-2 rounded-full bg-[#10b981] luxury-pulse-badge" />
-                <span className="text-[9px] text-white font-mono tracking-[0.14em] uppercase font-semibold">
+                <span className="text-[12px] text-white font-mono tracking-[0.14em] uppercase font-semibold">
                   {project.statusRemark || `${stageConfig.label} · Built ${project.completion}`}
                 </span>
               </div>
@@ -552,7 +596,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                   e.stopPropagation();
                   setActiveImgIdx(0);
                 }}
-                className="md:hidden absolute bottom-4 right-4 bg-black/85 hover:bg-black text-white text-[10px] font-mono tracking-[0.14em] uppercase px-4 py-2 rounded-full z-20 cursor-pointer transition-all flex items-center gap-2 shadow-xl border border-white/20"
+                className="md:hidden absolute bottom-4 right-4 bg-black/85 hover:bg-black text-white text-[12px] font-mono tracking-[0.14em] uppercase min-h-[44px] px-4 py-2.5 rounded-full z-20 cursor-pointer transition-all flex items-center gap-2 shadow-xl border border-white/20"
               >
                 <span>📷 View Photos ({galleryImgs.length})</span>
               </button>
@@ -562,7 +606,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               <div className="relative h-full w-full overflow-hidden cursor-pointer" onClick={() => setActiveImgIdx(1)}>
                 <Image
                   fill
-                  src={getSafeImage(project.imgs, project.img, 1)}
+                  src={getSafeImage(project.imgs, project.img, 1, isWaldorf)}
                   alt={`${project.name} Photo 2`}
                   className="object-cover transition-transform duration-700 hover:scale-[1.02]"
                   onError={handleImageError}
@@ -571,7 +615,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               <div className="relative h-full w-full overflow-hidden cursor-pointer" onClick={() => setActiveImgIdx(2)}>
                 <Image
                   fill
-                  src={getSafeImage(project.imgs, project.img, 2)}
+                  src={getSafeImage(project.imgs, project.img, 2, isWaldorf)}
                   alt={`${project.name} Photo 3`}
                   className="object-cover transition-transform duration-700 hover:scale-[1.02]"
                   onError={handleImageError}
@@ -585,7 +629,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                   e.stopPropagation();
                   setActiveImgIdx(0);
                 }}
-                className="absolute bottom-4 right-4 bg-black/85 hover:bg-black text-white text-[10px] font-mono tracking-[0.14em] uppercase px-4 py-2.5 rounded-full z-20 cursor-pointer transition-all flex items-center gap-2 shadow-xl border border-white/20 hover:scale-105"
+                className="absolute bottom-4 right-4 bg-black/85 hover:bg-black text-white text-[12px] font-mono tracking-[0.14em] uppercase min-h-[44px] px-4 py-2.5 rounded-full z-20 cursor-pointer transition-all flex items-center gap-2 shadow-xl border border-white/20 hover:scale-105"
               >
                 <span>📷 View All Photos ({galleryImgs.length})</span>
               </button>
@@ -600,14 +644,14 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
         <div className="flex justify-between items-center mb-6">
           <button
             onClick={() => router.back()}
-            className="text-[#8f96ab] hover:text-[#1c1f26] text-[10px] tracking-[0.2em] uppercase transition-colors flex items-center gap-1"
+            className="text-[#8f96ab] hover:text-[#1c1f26] text-[12px] tracking-[0.2em] uppercase transition-colors min-h-[44px] px-3 inline-flex items-center gap-1 font-medium"
           >
             &larr; Back
           </button>
           
           <button
             onClick={handleToggleCompare}
-            className={`text-[9px] tracking-[0.25em] uppercase transition-all px-4 py-2.5 border flex items-center gap-2 font-semibold ${
+            className={`text-[12px] tracking-[0.25em] uppercase transition-all min-h-[44px] px-4 py-2.5 border inline-flex items-center justify-center gap-2 font-semibold ${
               isCompared
                 ? "bg-[#B38E36] border-[#B38E36] text-white"
                 : "border-[#1c1f26] text-[#1c1f26] hover:bg-[#1c1f26] hover:text-white"
@@ -618,13 +662,13 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
         </div>
 
         {/* Kicker & Title */}
-        <span className="text-[10px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
-          {project.neighborhood} &middot; New Construction
+        <span className="text-[12px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
+          {project.neighborhood} &middot; {stageConfig.label || "Pre-Construction"}
         </span>
         <h1 className="text-3xl md:text-5xl font-serif font-normal text-[#1c1f26] leading-[1.1] mb-2">
           {project.name}
         </h1>
-        <p className="text-xs text-[#8f96ab] tracking-[0.05em] font-light mb-8">
+        <p className="text-sm text-[#8f96ab] tracking-[0.05em] font-light mb-8">
           {projectAddress}
         </p>
 
@@ -632,7 +676,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
         {project.featureVideo?.src && (
           <div className="mb-14">
             <div className="mb-3">
-              <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
+              <span className="text-[12px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
                 CINEMATIC PREVIEW
               </span>
               <h3 className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
@@ -668,7 +712,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                   <button
                     type="button"
                     onClick={() => openInquiry(`${project.name} Video Tour`)}
-                    className="text-[9px] uppercase tracking-[0.25em] font-semibold px-4 py-2.5 bg-[#1c1f26] text-white hover:bg-[#b89354] transition-colors self-start sm:self-auto cursor-pointer"
+                    className="text-[12px] uppercase tracking-[0.25em] font-semibold min-h-[44px] px-4 py-2.5 bg-[#1c1f26] text-white hover:bg-[#b89354] transition-colors self-start sm:self-auto cursor-pointer inline-flex items-center justify-center"
                   >
                     Request Private Tour
                   </button>
@@ -683,7 +727,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
             {project.keyMetrics.map((metric: any, idx: number) => (
               <div key={idx} className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
-                <span className="text-[9px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1">
+                <span className="text-[12px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1 font-medium">
                   {metric.label}
                 </span>
                 <strong className="text-2xl font-serif font-normal text-[#1c1f26] block">
@@ -702,31 +746,61 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
         {/* Core Stats Cards - 4 Column Flagship Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
-            <span className="text-[9px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Price From</span>
+            <span className="text-[12px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Price From</span>
             <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
               {formatPriceStr(project.minPrice || project.priceFrom)}
             </strong>
           </div>
 
           <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
-            <span className="text-[9px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Delivery</span>
+            <span className="text-[12px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Delivery</span>
             <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
               {project.completion || "TBD"}
             </strong>
           </div>
 
           <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
-            <span className="text-[9px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Total Residences</span>
+            <span className="text-[12px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Total Residences</span>
             <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
               {project.units || "—"}
             </strong>
           </div>
 
           <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
-            <span className="text-[9px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Stories / Height</span>
+            <span className="text-[12px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Stories / Height</span>
             <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
               {project.stories ? `${project.stories} Stories` : (project.height ? `${project.height} FT` : (project.pricePerSqft ? `$${project.pricePerSqft.toLocaleString()}/SF` : "Luxury Tower"))}
             </strong>
+          </div>
+        </div>
+
+        {/* Listing Brokerage Attribution Banner */}
+        <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 mb-12 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="flex items-start md:items-center gap-3.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#10b981] mt-1 md:mt-0 shrink-0" />
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-[11px] font-mono uppercase tracking-[0.22em] text-[#B38E36] font-semibold">
+                  Listing Brokerage Office
+                </span>
+                {project.mlsId && (
+                  <span className="text-[11px] font-mono text-[#8f96ab]">
+                    · MLS® #{project.mlsId}
+                  </span>
+                )}
+              </div>
+              <p className="text-[17px] font-serif font-medium text-[#1c1f26] m-0 mt-0.5">
+                {project.listingOffice || project.salesTeam || "ONE Sotheby's International Realty"}
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 text-xs font-mono text-[#8f96ab] border-t md:border-t-0 border-[#f0ece1] pt-3 md:pt-0">
+            <span className="px-3 py-1 bg-[#FAF8F3] border border-[#e8e4db] rounded-[2px] text-[#1c1f26] font-semibold tracking-wider uppercase text-[11px]">
+              {project.statusRemark || "Active Listing"}
+            </span>
+            <span className="text-[11px] uppercase tracking-wider text-[#8f96ab]">
+              BeachesMLS / Miami AOR
+            </span>
           </div>
         </div>
 
@@ -735,7 +809,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           <div className="mb-14">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-4">
               <div>
-                <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
+                <span className="text-[12px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
                   RESIDENCES &amp; PRICING
                 </span>
                 <h3 className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
@@ -751,7 +825,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                   href={project.floorPlanPdf}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 border border-[#B38E36] text-[#B38E36] hover:bg-[#B38E36] hover:text-white transition-colors text-[10px] uppercase tracking-[0.2em] font-semibold self-start sm:self-auto rounded-[2px]"
+                  className="inline-flex items-center gap-2 min-h-[44px] px-5 py-2.5 border border-[#B38E36] text-[#B38E36] hover:bg-[#B38E36] hover:text-white transition-colors text-[12px] uppercase tracking-[0.2em] font-semibold self-start sm:self-auto rounded-[2px]"
                 >
                   <span>📄 Download Complete Floor Plans (PDF)</span>
                 </a>
@@ -763,7 +837,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
             <div className="overflow-x-auto bg-white border border-[#e8e4db] rounded-[4px] shadow-sm">
               <table className="w-full text-left border-collapse min-w-[620px]">
                 <thead>
-                  <tr className="border-b border-[#e8e4db] bg-[#fafaf8] text-[9.5px] uppercase tracking-[0.2em] text-[#8c8376]">
+                  <tr className="border-b border-[#e8e4db] bg-[#fafaf8] text-[12px] uppercase tracking-[0.2em] text-[#8c8376]">
                     <th className="py-4 px-6 font-semibold">Residence Type</th>
                     <th className="py-4 px-6 font-semibold">Beds / Baths</th>
                     <th className="py-4 px-6 font-semibold">Square Feet</th>
@@ -786,7 +860,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                             {plan.type}
                           </div>
                           {plan.floors && (
-                            <span className="text-[11px] text-[#8f96ab] font-light block mt-0.5">
+                            <span className="text-[12px] text-[#8f96ab] font-light block mt-0.5">
                               {plan.floors}
                             </span>
                           )}
@@ -797,7 +871,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                         <td className="py-4 px-6 text-[#535862]">
                           <div>{plan.sqft || "—"}</div>
                           {plan.addlRooms && (
-                            <span className="text-[10.5px] text-[#8f96ab] block">{plan.addlRooms}</span>
+                            <span className="text-[12px] text-[#8f96ab] block">{plan.addlRooms}</span>
                           )}
                         </td>
                         <td className="py-4 px-6 font-mono font-medium text-[#B38E36]">
@@ -807,7 +881,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                           <button
                             type="button"
                             onClick={() => openInquiry(`${project.name} — ${plan.type}`)}
-                            className="inline-flex items-center px-3.5 py-1.5 bg-[#1c1f26] text-white hover:bg-[#B38E36] transition-colors text-[9px] uppercase tracking-[0.16em] font-semibold rounded-[2px] cursor-pointer"
+                            className="inline-flex items-center justify-center px-4 py-2.5 min-h-[44px] bg-[#1c1f26] text-white hover:bg-[#B38E36] transition-colors text-[12px] uppercase tracking-[0.16em] font-semibold rounded-[2px] cursor-pointer"
                           >
                             Request Pricing
                           </button>
@@ -825,7 +899,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
         {project.amenities && project.amenities.length > 0 && (
           <div className="mb-14">
             <div className="mb-4">
-              <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
+              <span className="text-[12px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
                 LIFESTYLE &amp; AMENITIES
               </span>
               <h3 className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
@@ -848,7 +922,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                       {amenity.label}
                     </h4>
                     {amenity.sub && (
-                      <p className="text-[11px] text-[#788092] mt-1 font-light leading-relaxed">
+                      <p className="text-[12px] text-[#788092] mt-1 font-light leading-relaxed">
                         {amenity.sub}
                       </p>
                     )}
@@ -870,7 +944,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
         {(project.developer || project.architect || project.interiorDesigner || project.landscapeArchitect) && (
           <div className="mb-14">
             <div className="mb-4">
-              <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
+              <span className="text-[12px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
                 THE VISIONARIES
               </span>
               <h3 className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
@@ -882,7 +956,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {project.developer && (
                 <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
-                  <span className="text-[9px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5">
+                  <span className="text-[12px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5 font-medium">
                     Developer
                   </span>
                   <strong className="text-base font-serif font-normal text-[#1c1f26] block">
@@ -892,7 +966,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               )}
               {project.architect && (
                 <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
-                  <span className="text-[9px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5">
+                  <span className="text-[12px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5 font-medium">
                     Architect
                   </span>
                   <strong className="text-base font-serif font-normal text-[#1c1f26] block">
@@ -902,7 +976,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               )}
               {project.interiorDesigner && (
                 <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
-                  <span className="text-[9px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5">
+                  <span className="text-[12px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5 font-medium">
                     Interior Design
                   </span>
                   <strong className="text-base font-serif font-normal text-[#1c1f26] block">
@@ -912,7 +986,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               )}
               {project.landscapeArchitect && (
                 <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
-                  <span className="text-[9px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5">
+                  <span className="text-[12px] uppercase tracking-[0.22em] text-[#8f96ab] block mb-1.5 font-medium">
                     Landscape Architecture
                   </span>
                   <strong className="text-base font-serif font-normal text-[#1c1f26] block">
@@ -928,7 +1002,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
         {project.depositStructure && (
           <div className="mb-14">
             <div className="mb-4">
-              <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
+              <span className="text-[12px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold block mb-1">
                 PAYMENT MILESTONES
               </span>
               <h3 className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
@@ -955,7 +1029,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                           {milestone}
                         </span>
                         {desc && (
-                          <p className="text-[11px] text-[#788092] mt-1 font-light leading-relaxed">
+                          <p className="text-[12px] text-[#788092] mt-1 font-light leading-relaxed">
                             {desc}
                           </p>
                         )}
@@ -974,7 +1048,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
 
         {/* Real MLS Specs Grid */}
         <div className="mb-14">
-          <h4 className="text-[10px] uppercase tracking-[0.25em] text-[#8c8376] font-semibold">
+          <h4 className="text-[12px] uppercase tracking-[0.25em] text-[#8c8376] font-semibold">
             Property Specifications &amp; Overview
           </h4>
           <div className="border-b border-[#ddd8cd] mt-2 mb-6" />
@@ -987,7 +1061,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               </div>
               <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
                 <span className="text-[#8f96ab] font-light">Listing Status</span>
-                <span className="text-[#10b981] font-semibold uppercase tracking-wider text-[11px]">
+                <span className="text-[#10b981] font-semibold uppercase tracking-wider text-[12px]">
                   {project.statusRemark || "Active"}
                 </span>
               </div>
@@ -1022,16 +1096,16 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
 
         {/* Momentum / Construction Progress */}
         <div className="mb-14">
-          <h4 className="text-[10px] uppercase tracking-[0.25em] text-[#8c8376] font-semibold">
+          <h4 className="text-[12px] uppercase tracking-[0.25em] text-[#8c8376] font-semibold">
             Status &amp; Timeline
           </h4>
           <div className="border-b border-[#ddd8cd] mt-2 mb-6" />
 
           <div className="flex justify-between items-end mb-4">
-            <span className="text-[9px] uppercase tracking-[0.18em] text-[#8f96ab]">
+            <span className="text-[12px] uppercase tracking-[0.18em] text-[#8f96ab] font-medium">
               MLS STATUS &middot; {stageConfig.label.toUpperCase()}
             </span>
-            <span className="text-[10px] font-mono font-medium text-[#1c1f26]">
+            <span className="text-[12px] font-mono font-medium text-[#1c1f26]">
               Built / Delivery: {project.completion}
             </span>
           </div>
@@ -1057,7 +1131,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                         : "bg-white border-[#d9d3c5]"
                         }`}
                     />
-                    <span className={`mt-3 text-[9px] tracking-[0.05em] uppercase font-mono ${isActive ? "text-[#1c1f26] font-medium" : "text-[#8f96ab] font-light"}`}>
+                    <span className={`mt-3 text-[12px] tracking-[0.05em] uppercase font-mono ${isActive ? "text-[#1c1f26] font-medium" : "text-[#8f96ab] font-light"}`}>
                       {step.label}
                     </span>
                   </div>
@@ -1078,7 +1152,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           <button
             type="button"
             onClick={() => openInquiry(project?.name)}
-            className="px-8 py-4 bg-[#1c1f26] !text-[#f6f4f0] hover:bg-[#b79255] hover:!text-[#1c1f26] text-[10px] uppercase tracking-[0.25em] font-semibold text-center transition-colors rounded-[2px] cursor-pointer"
+            className="px-8 py-4 bg-[#1c1f26] !text-[#f6f4f0] hover:bg-[#b79255] hover:!text-[#1c1f26] text-[12px] uppercase tracking-[0.25em] font-semibold text-center transition-colors rounded-[2px] cursor-pointer"
           >
             INQUIRE ABOUT THIS PROPERTY
           </button>
@@ -1086,7 +1160,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
             href={`https://wa.me/13053435371?text=${encodeURIComponent(`Hi Zachary, I'm interested in ${project.name} (${project.neighborhood}) and would like more details.`)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 font-semibold text-[10px] uppercase tracking-[0.25em] text-center transition-all duration-200 rounded-[2px] cursor-pointer flex items-center justify-center gap-2 hover:brightness-105"
+            className="px-8 py-4 font-semibold text-[12px] uppercase tracking-[0.25em] text-center transition-all duration-200 rounded-[2px] cursor-pointer flex items-center justify-center gap-2 hover:brightness-105"
             style={{ backgroundColor: "#25D366", color: "#ffffff" }}
           >
             <span className="flex items-center justify-center" style={{ color: "#ffffff" }}>
@@ -1099,7 +1173,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           <button
             type="button"
             onClick={() => setActiveImgIdx(0)}
-            className="px-8 py-4 border border-[#1c1f26] !text-[#1c1f26] hover:bg-[#1c1f26] hover:!text-[#f6f4f0] text-[10px] uppercase tracking-[0.25em] font-semibold text-center transition-colors rounded-[2px] cursor-pointer flex items-center justify-center gap-2"
+            className="px-8 py-4 border border-[#1c1f26] !text-[#1c1f26] hover:bg-[#1c1f26] hover:!text-[#f6f4f0] text-[12px] uppercase tracking-[0.25em] font-semibold text-center transition-colors rounded-[2px] cursor-pointer flex items-center justify-center gap-2"
           >
             <span>VIEW ALL PHOTOS ({galleryImgs.length})</span>
             <span>&rarr;</span>
@@ -1114,7 +1188,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
             <div>
               <div className="mb-6 flex items-center gap-4">
                 <span className="h-px w-6 bg-[#B38E36]" />
-                <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold">
+                <span className="text-[12px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold">
                   THE STORY
                 </span>
               </div>
@@ -1129,7 +1203,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
             <div className="relative aspect-[0.74/1] w-full max-w-[420px] mx-auto bg-[#f6f4f0] rounded-[3px] overflow-hidden shadow-xl border border-[#e2e8f0]">
               <Image
                 fill
-                src={getSafeImage(project.imgs, project.img, 3)}
+                src={getSafeImage(project.imgs, project.img, 3, isWaldorf)}
                 alt="Luxury Lounge Space"
                 className="object-cover"
                 onError={handleImageError}
@@ -1146,7 +1220,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
             <div className="relative aspect-[16/10] w-full bg-[#f6f4f0] rounded-[3px] overflow-hidden shadow-lg border border-[#ddd8cd] order-2 lg:order-1">
               <Image
                 fill
-                src={getSafeImage(project.imgs, project.img, 4)}
+                src={getSafeImage(project.imgs, project.img, 4, isWaldorf)}
                 alt="Luxury Dining Space"
                 className="object-cover"
                 onError={handleImageError}
@@ -1155,7 +1229,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
             <div className="order-1 lg:order-2">
               <div className="mb-6 flex items-center gap-4">
                 <span className="h-px w-6 bg-[#B38E36]" />
-                <span className="text-[10px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold">
+                <span className="text-[12px] uppercase tracking-[0.3em] text-[#B38E36] font-semibold">
                   THE LIFE
                 </span>
               </div>
@@ -1169,15 +1243,15 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               {/* Stats Mini Dashboard */}
               <div className="grid grid-cols-3 border-t border-[#ddd8cd] pt-8">
                 <div>
-                  <span className="text-[9px] uppercase tracking-[0.15em] text-[#8f96ab] block mb-1">Status</span>
+                  <span className="text-[12px] uppercase tracking-[0.15em] text-[#8f96ab] block mb-1 font-medium">Status</span>
                   <strong className="text-sm font-serif text-[#1c1f26]">{project.statusRemark || stageConfig.label}</strong>
                 </div>
                 <div>
-                  <span className="text-[9px] uppercase tracking-[0.15em] text-[#8f96ab] block mb-1">Built / Delivery</span>
+                  <span className="text-[12px] uppercase tracking-[0.15em] text-[#8f96ab] block mb-1 font-medium">Built / Delivery</span>
                   <strong className="text-sm font-serif text-[#1c1f26]">{project.completion}</strong>
                 </div>
                 <div>
-                  <span className="text-[9px] uppercase tracking-[0.15em] text-[#8f96ab] block mb-1">Price / SF</span>
+                  <span className="text-[12px] uppercase tracking-[0.15em] text-[#8f96ab] block mb-1 font-medium">Price / SF</span>
                   <strong className="text-sm font-serif text-[#B38E36]">{project.pricePerSqft ? `$${project.pricePerSqft.toLocaleString()}/SF` : (project.units || "Active MLS")}</strong>
                 </div>
               </div>
@@ -1190,7 +1264,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       <section className="relative h-[300px] md:h-[450px] bg-[#0c1523] w-full">
         <Image
           fill
-          src={getSafeImage(project.imgs, project.img, 5)}
+          src={getSafeImage(project.imgs, project.img, 5, isWaldorf)}
           alt={`${project.name} Wide View`}
           className="object-cover opacity-95"
           onError={handleImageError}
@@ -1203,7 +1277,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
         <div className="property-container max-w-[1140px] mx-auto px-6">
           <div className="mb-12 flex justify-between items-end">
             <div>
-              <span className="text-[10px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
+              <span className="text-[12px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
                 OFFICIAL MLS PHOTOGRAPHY
               </span>
               <h2 className="text-3xl font-serif font-normal text-[#1c1f26]">
@@ -1231,11 +1305,12 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                   src={getImageUrl(imgUrl)}
                   alt={`${project.name} - Photo ${idx + 1}`}
                   loading="lazy"
+                  referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                   onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-[#0C1523]/35 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white text-[9px] uppercase tracking-[0.2em] font-semibold bg-[#B38E36] px-3.5 py-1.5 rounded-[1px] shadow-lg">
+                  <span className="text-white text-[12px] uppercase tracking-[0.2em] font-semibold bg-[#B38E36] px-3.5 py-1.5 rounded-[1px] shadow-lg">
                     Expand Photo
                   </span>
                 </div>
@@ -1249,7 +1324,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       <section className="relative h-[300px] md:h-[450px] bg-[#0c1523] w-full">
         <Image
           fill
-          src={getSafeImage(project.imgs, project.img, 6)}
+          src={getSafeImage(project.imgs, project.img, 6, isWaldorf)}
           alt={`${project.name} Panoramic View`}
           className="object-cover opacity-90"
           onError={handleImageError}
@@ -1261,7 +1336,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       <section className="property-location bg-[#FAF8F3] py-20 text-[#1c1f26] border-b border-[#ddd8cd] relative z-0">
         <div className="property-container max-w-[1140px] mx-auto px-6">
           <div className="mb-10 text-left">
-            <span className="text-[10px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
+            <span className="text-[12px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
               NEIGHBORHOOD SETTING
             </span>
             <h2 className="text-3xl font-serif font-normal text-[#1c1f26]">
@@ -1289,17 +1364,17 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
 
               <div className="flex flex-col justify-between h-full text-left">
                 <div>
-                  <span className="text-[9px] uppercase tracking-[0.28em] text-[#8f96ab] font-semibold block mb-2">
+                  <span className="text-[12px] uppercase tracking-[0.28em] text-[#8f96ab] font-semibold block mb-2">
                     LUXURY REAL ESTATE ADVISOR
                   </span>
                   <h3 className="text-3xl md:text-4xl font-serif font-normal text-[#1c1f26] mb-3">
                     Zachary Akers
                   </h3>
-                  <p className="text-[11px] uppercase tracking-[0.2em] text-[#7c8498] font-light mb-6">
+                  <p className="text-[12px] uppercase tracking-[0.2em] text-[#7c8498] font-medium mb-6">
                     ONE SOTHEBY&apos;S INTERNATIONAL REALTY
                   </p>
-                  <p className="text-xs md:text-sm font-light leading-relaxed text-[#535862] max-w-[580px] mb-8">
-                    Zach, is a veteran of 14 years in the real estate industry working both in sales, as well as luxury new-construction and development. Zach is adept at understanding the relationship between investment and emotional connection to your property. With vast experience working with homeowners from all walks of life and backgrounds, he understands that no home buyer or seller is the same, but they all want results. Zach will help you purchase or sell your property seamlessly and with integrity.
+                  <p className="text-[16px] font-light leading-relaxed text-[#535862] max-w-[580px] mb-8">
+                    Zachary is a veteran of 14 years in the real estate industry working both in sales, as well as luxury new-construction and development. Zachary is adept at understanding the relationship between investment and emotional connection to your property. With vast experience working with homeowners from all walks of life and backgrounds, he understands that no home buyer or seller is the same, but they all want results. Zachary will help you purchase or sell your property seamlessly and with integrity.
                   </p>
                 </div>
 
@@ -1307,15 +1382,15 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 <div className="grid grid-cols-3 border-y border-[#ddd8cd] py-6 mb-8 max-w-[640px]">
                   <div>
                     <strong className="block text-2xl font-serif font-normal text-[#1c1f26]">14+</strong>
-                    <span className="text-[9px] uppercase tracking-[0.15em] text-[#8c8376] mt-1 block">Years Experience</span>
+                    <span className="text-[12px] uppercase tracking-[0.15em] text-[#8c8376] mt-1 block font-medium">Years Experience</span>
                   </div>
                   <div>
                     <strong className="block text-2xl font-serif font-normal text-[#1c1f26]">$1B+</strong>
-                    <span className="text-[9px] uppercase tracking-[0.15em] text-[#8c8376] mt-1 block">Closed Sales</span>
+                    <span className="text-[12px] uppercase tracking-[0.15em] text-[#8c8376] mt-1 block font-medium">Closed Sales</span>
                   </div>
                   <div>
                     <strong className="block text-2xl font-serif font-normal text-[#1c1f26]">2026</strong>
-                    <span className="text-[9px] uppercase tracking-[0.15em] text-[#8c8376] mt-1 block">Top Producer</span>
+                    <span className="text-[12px] uppercase tracking-[0.15em] text-[#8c8376] mt-1 block font-medium">Top Producer</span>
                   </div>
                 </div>
 
@@ -1323,7 +1398,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
                   <a
                     href="#contact-section"
-                    className="px-6 py-3.5 bg-[#bb9751] hover:bg-[#a88543] text-white text-[10px] uppercase tracking-[0.2em] font-semibold text-center transition-colors rounded-[2px]"
+                    className="px-6 py-3.5 bg-[#bb9751] hover:bg-[#a88543] text-white text-[12px] uppercase tracking-[0.2em] font-semibold text-center transition-colors rounded-[2px]"
                   >
                     SCHEDULE PRIVATE PRESENTATION
                   </a>
@@ -1353,13 +1428,13 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       {/* 14. INQUIRY INTAKE FORM */}
       <section className="property-inquiry bg-[#ffffff] py-20 text-[#1c1f26] border-b border-[#ddd8cd]" id="contact-section">
         <div className="property-container max-w-[800px] mx-auto px-6 text-center">
-          <span className="text-[10px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
+          <span className="text-[12px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
             PRIVATE INTAKE
           </span>
           <h2 className="contact-info-title text-[#1c1f26] mb-2 text-3xl font-serif font-normal">
             Request Availability &amp; Presentation
           </h2>
-          <p className="contact-info-desc text-[#5f6575] mb-8 font-light text-sm max-w-[540px] mx-auto">
+          <p className="contact-info-desc text-[#5f6575] mb-8 font-light text-[16px] max-w-[540px] mx-auto">
             Schedule a private virtual presentation or receive unit-level availability, floor plans, and incentives for {project.name}.
           </p>
 
@@ -1373,6 +1448,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               </div>
             ) : (
               <form onSubmit={handleInquirySubmit} className="space-y-5">
+                <HoneypotField value={formHoneypot} onChange={setFormHoneypot} />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="form-group-custom">
                     <input
@@ -1394,7 +1470,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                       className={`form-input-custom ${formStatus === "error" && !formEmail.trim() ? "border-[#C9A84C]" : ""}`}
                     />
                     {formStatus === "error" && !formEmail.trim() && (
-                      <span className="text-[10px] text-[#C9A84C] mt-1">Please enter a valid email address.</span>
+                      <span className="text-[12px] text-[#C9A84C] mt-1">Please enter a valid email address.</span>
                     )}
                   </div>
                 </div>
@@ -1428,7 +1504,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       <section className="property-related bg-[#FAF8F3] py-20 text-[#1c1f26] border-t border-[#e2e8f0]">
         <div className="property-container max-w-[1140px] mx-auto px-6">
           <div className="mb-12 text-left">
-            <span className="text-[10px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
+            <span className="text-[12px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
               DISCOVER MORE
             </span>
             <h2 className="text-3xl font-serif font-normal text-[#1c1f26]">
@@ -1475,17 +1551,17 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                         <h4 className="npc-name text-[16px] font-serif font-normal text-[#1c1f26] truncate max-w-[85%]">{proj.name}</h4>
                         <span className="npc-dot w-2 h-2 rounded-full" style={{ background: conf.dot }} />
                       </div>
-                      <span className="npc-meta text-[10px] text-[#8f96ab] font-light block">{displayMeta}</span>
+                      <span className="npc-meta text-[12px] text-[#8f96ab] font-medium block">{displayMeta}</span>
                     </div>
 
                     <div className="npc-footer flex justify-between items-center mt-auto">
                       <div className="npc-price-block">
-                        <span className="npc-label text-[8px] uppercase text-[#8f96ab]">Price From</span>
-                        <span className="npc-value font-mono text-[11px] font-medium text-[#1c1f26]">{formatPriceStr(proj.priceFrom)}</span>
+                        <span className="npc-label text-[12px] uppercase text-[#8f96ab] font-medium">Price From</span>
+                        <span className="npc-value font-mono text-[12px] font-medium text-[#1c1f26]">{formatPriceStr(proj.priceFrom)}</span>
                       </div>
                       <div className="npc-stage-block text-right">
-                        <span className="npc-label text-[8px] uppercase text-[#8f96ab]">Stage</span>
-                        <span className="npc-value font-mono text-[11px] font-medium text-[#1c1f26] block">{conf.label}</span>
+                        <span className="npc-label text-[12px] uppercase text-[#8f96ab] font-medium">Stage</span>
+                        <span className="npc-value font-mono text-[12px] font-medium text-[#1c1f26] block">{conf.label}</span>
                       </div>
                     </div>
                   </div>
@@ -1508,8 +1584,8 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex flex-col">
-              <span className="text-[10px] uppercase tracking-[0.25em] text-[#B38E36] font-semibold">
-                {project.neighborhood} &middot; {project.badge || "BEACHESMLS ACTIVE"}
+              <span className="text-[12px] uppercase tracking-[0.25em] text-[#B38E36] font-semibold">
+                {project.neighborhood} &middot; {project.listingOffice ? `Courtesy of ${project.listingOffice}` : (project.badge || "ACTIVE PORTFOLIO")}
               </span>
               <h3 className="font-serif text-lg md:text-xl text-white font-normal tracking-wide">
                 {project.name}
@@ -1527,7 +1603,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               <button
                 type="button"
                 onClick={() => setActiveImgIdx(null)}
-                className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-[#B38E36] text-white hover:text-[#0c1523] text-xs uppercase tracking-[0.15em] font-semibold transition-all duration-200 border border-white/15 cursor-pointer"
+                className="flex items-center gap-2 min-h-[44px] px-4 py-2 rounded-full bg-white/10 hover:bg-[#B38E36] text-white hover:text-[#0c1523] text-xs uppercase tracking-[0.15em] font-semibold transition-all duration-200 border border-white/15 cursor-pointer"
                 aria-label="Close modal"
               >
                 <span>Close</span>
@@ -1561,6 +1637,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               <img
                 src={getImageUrl(galleryImgs[activeImgIdx % galleryImgs.length])}
                 alt={`${project.name} photo ${(activeImgIdx % galleryImgs.length) + 1}`}
+                referrerPolicy="no-referrer"
                 className="max-w-full max-h-full object-contain select-none shadow-[0_20px_50px_rgba(0,0,0,0.8)] rounded-[4px] border border-white/10"
                 onError={handleImageError}
               />
@@ -1604,6 +1681,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                     <img
                       src={getImageUrl(thumbUrl)}
                       alt={`Thumbnail ${idx + 1}`}
+                      referrerPolicy="no-referrer"
                       className="w-full h-full object-cover"
                       onError={handleImageError}
                     />
@@ -1612,12 +1690,53 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               })}
             </div>
 
-            <div className="text-white/50 font-mono text-[11px] tracking-widest sm:hidden">
+            <div className="text-white/50 font-mono text-[12px] tracking-widest sm:hidden">
               {activeImgIdx + 1} / {galleryImgs.length}
             </div>
           </div>
         </div>
       )}
+
+      {/* MLS / IDX RULES COMPLIANCE ATTRIBUTION & DISCLAIMER */}
+      <section className="bg-[#FAF8F3] py-14 px-6 border-t border-[#e2e8f0] text-[#535862]">
+        <div className="max-w-[1140px] mx-auto">
+          <div className="border border-[#e8e4db] rounded-[4px] p-6 md:p-8 bg-white shadow-xs">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#ddd8cd] pb-4 mb-4">
+              <div>
+                <span className="text-[11px] uppercase tracking-[0.2em] font-mono text-[#B38E36] font-semibold block mb-1">
+                  IDX Listing Attribution
+                </span>
+                <p className="text-[16px] font-serif font-medium text-[#1c1f26] m-0">
+                  Listing Courtesy of {project.listingOffice || project.salesTeam || "ONE Sotheby's International Realty"}
+                </p>
+              </div>
+              <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-[#8f96ab]">
+                {project.mlsId && (
+                  <span className="px-2.5 py-1 bg-[#FAF8F3] border border-[#e8e4db] rounded-[2px] text-[#1c1f26]">
+                    MLS® #{project.mlsId}
+                  </span>
+                )}
+                <span>BeachesMLS / Miami Association of Realtors</span>
+              </div>
+            </div>
+
+            <p className="text-[12px] leading-relaxed text-[#788092] mb-3">
+              The data relating to real estate for sale on this website comes in part from the Internet Data Exchange (IDX) program of BeachesMLS and the Miami Association of Realtors. All real estate listings held by brokerage firms other than Zachary Akers / ONE Sotheby&apos;s International Realty are marked with the listing brokerage office name.
+            </p>
+            <p className="text-[11px] leading-relaxed text-[#8f96ab] mb-4">
+              All information provided is deemed reliable but is not guaranteed accurate and should be independently verified. Properties are subject to prior sale, change, or withdrawal. Neither BeachesMLS, Miami Association of Realtors, ONE Sotheby&apos;s International Realty, nor Zachary Akers shall be responsible for any typographical errors, misinformation, or misprints, and shall be held totally harmless.
+            </p>
+
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-3 border-t border-[#e8e4db] text-[11px] font-mono text-[#8f96ab] uppercase tracking-wider">
+              <span>© {new Date().getFullYear()} BeachesMLS &amp; Miami Association of Realtors®. All rights reserved.</span>
+              <span className="flex items-center gap-2 text-[#1c1f26]">
+                <span>Equal Housing Opportunity</span>
+                <span aria-hidden="true">🏠</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Global Footer */}
       <SiteFooter />
