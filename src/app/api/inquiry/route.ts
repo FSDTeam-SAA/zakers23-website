@@ -66,7 +66,6 @@ export async function POST(request: NextRequest) {
         body: JSON.stringify({
           secret: turnstileSecret,
           response: turnstileToken.trim(),
-          ...(clientIp ? { remoteip: clientIp } : {}),
         }),
         signal: AbortSignal.timeout(10000),
       });
@@ -77,12 +76,17 @@ export async function POST(request: NextRequest) {
       };
 
       if (!verifyData || verifyData.success !== true) {
+        console.error("Cloudflare Turnstile verification failed:", verifyData);
         return NextResponse.json(
-          { error: "Security check failed. Please verify you are human and try again." },
+          {
+            error: "Security check failed. Please verify you are human and try again.",
+            details: verifyData?.["error-codes"]?.join(", ") || "verification_rejected",
+          },
           { status: 400 }
         );
       }
-    } catch {
+    } catch (err) {
+      console.error("Cloudflare Turnstile siteverify fetch error:", err);
       return NextResponse.json(
         { error: "Security verification could not be completed. Please try again." },
         { status: 502 }
