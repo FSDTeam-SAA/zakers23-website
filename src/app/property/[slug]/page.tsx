@@ -15,13 +15,13 @@ export async function generateMetadata({ params }: PageProps) {
   const project = await getIdxPropertyBySlug(slug);
   if (!project) {
     return {
-      title: "Property Not Found | Zachary Akers Luxury Real Estate",
+      title: "Property Not Found | Luxury Real Estate",
       description: "Explore Miami's finest luxury waterfront estates and pre-construction developments.",
     };
   }
   const isResale = Boolean(project.isResale || project.propertyType === "resale");
   const title = isResale
-    ? `${project.name} | Pricing, Photos & Waterfront Details | Zachary Akers`
+    ? `${project.name} | Pricing, Photos & Waterfront Details`
     : `${project.name} | Pricing, Floor Plans & Availability`;
   const description = isResale
     ? `Explore pricing, photos, waterfront specifications, and details for ${project.name} in ${project.neighborhood}.`

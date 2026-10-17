@@ -6,7 +6,7 @@ import { getIdxProperties } from "@/src/lib/server/idx-properties";
 export const revalidate = 3600; // Hourly automatic refresh from BeachesMLS & Miami AOR
 
 export const metadata = {
-  title: "Interactive Miami Real Estate Discovery Map | Zachary Akers",
+  title: "Interactive Miami Real Estate Discovery Map",
   description: "Live BeachesMLS and Miami Association of Realtors luxury developments map feed.",
 };
 

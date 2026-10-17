@@ -60,7 +60,7 @@ export function MobileNavMenu({ onOpenMatcher, className = "", isLightHeader = f
   const handleInquireClick = useCallback(() => {
     setIsOpen(false);
     openInquiry({
-      context: projectName ? `Mobile Navigation Menu (${projectName})` : "Mobile Navigation Menu",
+      context: projectName || "General Inquiry",
       buttonClicked: "Mobile Menu Inquire",
       projectName: projectName || undefined,
     });
@@ -69,7 +69,7 @@ export function MobileNavMenu({ onOpenMatcher, className = "", isLightHeader = f
   const handleStickyInquireClick = useCallback(() => {
     setIsOpen(false);
     openInquiry({
-      context: projectName ? `Mobile Sticky Header (${projectName})` : "Mobile Sticky Header",
+      context: projectName || "General Inquiry",
       buttonClicked: "Mobile Sticky Inquire",
       projectName: projectName || undefined,
     });

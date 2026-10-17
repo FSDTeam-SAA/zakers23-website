@@ -103,7 +103,7 @@ export default function InquiryModal({
         turnstileToken,
         smsConsent: consentGranted,
         source: "Website",
-        projectName: projectName || context || "",
+        projectName: projectName || (context && context !== "General Inquiry" ? context : "") || "",
         buttonClicked: buttonClicked || "Inquire",
         details: {
           ...(context ? { "Interested in": context } : {}),

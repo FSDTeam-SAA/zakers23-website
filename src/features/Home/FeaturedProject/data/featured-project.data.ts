@@ -26,7 +26,7 @@ export const featuredProjects: Project[] = [
     name: "St. Regis Brickell Residences",
     price: "From $5M",
     status: "80%+ SOLD · CLEARED FOR PRIVATE MARINA",
-    image: "https://frasermiami.s3.amazonaws.com/srresidences/hero-dusk.webp",
+    image: "/images/featured/st-regis-brickell.webp",
     cta: "View project",
     slug: "st-regis-brickell-residences",
     listingOffice: "Related Realty"
@@ -36,7 +36,7 @@ export const featuredProjects: Project[] = [
     name: "Mandarin Oriental Residences",
     price: "From $4M",
     status: "BROKE GROUND OCT 2026 · $1.7B+ IN SALES",
-    image: "https://frasermiami.s3.amazonaws.com/mandarin/mandarin-oriental-hero.webp",
+    image: "/images/featured/mandarin-oriental.webp",
     cta: "View project",
     slug: "mandarin-oriental-residences",
     listingOffice: "Fortune Development Sales"
@@ -46,7 +46,7 @@ export const featuredProjects: Project[] = [
     name: "UNA Residences",
     price: "From $6.2M",
     status: "DELIVERED 2025 · MOVE-IN READY",
-    image: "https://frasermiami.s3.amazonaws.com/una/exterior-hero.webp",
+    image: "/images/featured/una-residences.webp",
     cta: "View project",
     slug: "una-residences",
     listingOffice: "Fortune Development Sales"
@@ -56,7 +56,7 @@ export const featuredProjects: Project[] = [
     name: "Vita at Grove Isle",
     price: "From $8.5M",
     status: "MOVE-IN READY · CLOSINGS UNDERWAY",
-    image: "https://frasermiami.s3.amazonaws.com/vita-grove-isle/hero-aerial.webp",
+    image: "/images/featured/vita-grove-isle.webp",
     cta: "View project",
     slug: "vita-grove-isle",
     listingOffice: "Cervera Real Estate"
@@ -66,7 +66,7 @@ export const featuredProjects: Project[] = [
     name: "NoMad Residences Wynwood",
     price: "From $670,900",
     status: "97% SOLD · 9 REMAIN · DELIVERED",
-    image: "https://frasermiami.s3.amazonaws.com/nomad-wynwood/hero-dusk.webp",
+    image: "/images/featured/nomad-wynwood.webp",
     cta: "View project",
     slug: "nomad-residences-wynwood",
     listingOffice: "Related Realty"
@@ -76,7 +76,7 @@ export const featuredProjects: Project[] = [
     name: "St. Regis Residences Sunny Isles Beach",
     price: "From $5.1M",
     status: "SOUTH TOWER FOUNDATION COMPLETE · NORTH TOWER NOW SELLING",
-    image: "https://frasermiami.s3.amazonaws.com/sr-residences-sunny-isles/hero-dusk.webp",
+    image: "/images/featured/st-regis-sunny-isles.webp",
     cta: "View project",
     slug: "st-regis-residences-sunny-isles-beach",
     listingOffice: "Fortune International Group"

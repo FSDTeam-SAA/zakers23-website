@@ -36,15 +36,17 @@ export function InquiryProvider({ children }: { children: React.ReactNode }) {
         buttonClicked: "Inquire",
       });
     } else if (options && typeof options === "object") {
+      const isGeneral =
+        options.context === "General Inquiry" || options.projectName === "General Inquiry";
       setInquiryOptions({
-        context: options.context || options.projectName || "",
-        projectName: options.projectName || options.context || "",
+        context: options.context || options.projectName || "General Inquiry",
+        projectName: options.projectName || (isGeneral ? "" : options.context || ""),
         buttonClicked: options.buttonClicked || "Inquire",
         requireForDetails: options.requireForDetails,
       });
     } else {
       setInquiryOptions({
-        context: "",
+        context: "General Inquiry",
         projectName: "",
         buttonClicked: "Inquire",
       });

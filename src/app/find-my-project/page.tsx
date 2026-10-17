@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SiteFooter } from "@/src/features/Home/components/site-footer";
 
 export const metadata: Metadata = {
-  title: "List Your Property | Seller Valuation & Advisory | Zachary Akers",
+  title: "List Your Property | Seller Valuation & Advisory",
   description:
     "Request a confidential property valuation or contract assignment consultation for your luxury Miami residence with Zachary Akers, ONE Sotheby's International Realty.",
 };

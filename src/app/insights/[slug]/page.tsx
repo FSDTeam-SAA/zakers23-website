@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
   return {
-    title: `${article.title} | newdev.miami`,
+    title: article.title,
     description: article.excerpt,
   };
 }
