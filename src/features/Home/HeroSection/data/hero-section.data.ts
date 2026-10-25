@@ -28,12 +28,13 @@ export const heroSlides: HeroSlide[] = [
     slug: "cipriani-residences-brickell"
   },
   {
-    image: "/images/rivage/beachhero.webp",
-    eyebrow: "Bal Harbour",
-    title: "Rivage Bal Harbour",
-    supporting: "Bal Harbour's last true ultra-luxury oceanfront site.",
-    credit: "56 RESIDENCES · DELIVERING 2027",
-    slug: "rivage-bal-harbour"
+    image: "/images/faena/hero.webp",
+    eyebrow: "Brickell / Miami River",
+    title: "Faena Residences Miami",
+    supporting: "Two 68-story towers by Rafael Viñoly connected by the 45,000 SF Faena Rose sky bridge.",
+    credit: "FIRST STANDALONE RESIDENTIAL · FROM $1.3M",
+    slug: "faena-residences-miami",
+    position: "center center"
   },
   {
     image: "/images/nobu/hero2.webp",

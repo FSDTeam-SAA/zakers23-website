@@ -339,22 +339,17 @@ export default function ResalePropertyDetailPage({
         <div className="site-header-inner">
           <Link href="/" className="brand">
             <Image
-              src="/images/logo.png"
+              src="/images/mcs-symbol.svg"
               alt="Miami New Development"
-              width={220}
-              height={58}
-              className="site-logo h-auto w-[68px] md:w-[76px]"
+              width={56}
+              height={56}
+              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
               priority
             />
           </Link>
           <nav className="nav-links" aria-label="Primary">
             <Link href="/map">Explore Map</Link>
-            <button
-              type="button"
-              onClick={() => setIsMatcherOpen(true)}
-            >
-              Find My Match
-            </button>
+            <Link href="/find-my-project">Find My Project</Link>
             <div className="relative group">
               <button
                 type="button"

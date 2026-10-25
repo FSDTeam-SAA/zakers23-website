@@ -35,8 +35,67 @@
   "amenitiesDescription": "<h4>The Fisher Island Club Access</h4><p>Ownership includes privileged access to the Fisher Island Club amenities. Residents benefit from the Beach Club's imported Bahamian white sand, the historic Vanderbilt Mansion, the 24,000-square-foot Spa Internazionale, a championship golf course, racquet facilities, and deep-water marinas capable of accommodating vessels up to 250 feet.</p>",
   "architect": "Portuondo Perotti Architects",
   "completion": "2026–2027",
-  "densityScore": 5,
-  "depositStructure": null,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At contract execution"
+    },
+    {
+      "percentage": 20,
+      "milestone": "At foundation completion"
+    },
+    {
+      "percentage": 20,
+      "milestone": "At structural framing"
+    },
+    {
+      "percentage": 40,
+      "milestone": "At closing (Est. 2026–2027)"
+    }
+  ],
+  "floorPlans": [
+    {
+      "type": "Villa Paloma Estate",
+      "beds": 5,
+      "baths": 6.5,
+      "sqft": "8,500 SF",
+      "startingPrice": 32000000,
+      "status": "Available"
+    },
+    {
+      "type": "Villa Isabella Grand Estate",
+      "beds": 6,
+      "baths": 7.5,
+      "sqft": "12,200 SF",
+      "startingPrice": 44000000,
+      "status": "Available"
+    },
+    {
+      "type": "The Sovereign Trophy Mansion",
+      "beds": 7,
+      "baths": 9.5,
+      "sqft": "18,000 SF",
+      "startingPrice": 65000000,
+      "status": "Inquire"
+    }
+  ],
+  "keyMetrics": [
+    {
+      "label": "ISLAND PRIVACY",
+      "value": "Ferry & Helipad Only",
+      "note": "America's wealthiest zip code with ultra-exclusive private island access"
+    },
+    {
+      "label": "ESTATE SCALE",
+      "value": "8,500 – 18,000 SF",
+      "note": "Mediterranean custom estates with private pools and Enzo Enea gardens"
+    },
+    {
+      "label": "ISLAND CLUB",
+      "value": "Vanderbilt Membership",
+      "note": "Private golf course, mega-yacht marina, tennis center, and Bahamian sand beach"
+    }
+  ],
   "description": "A limited collection of Mediterranean-inspired single-family estates on Fisher Island. Ground-up homes from 8,500 to 18,000 SF with Enzo Enea landscapes, Ford Interiors, and Fisher Island Club access. From $32M. Delivery 2026–2027.",
   "developer": "MADAR Group USA & ASR Construction",
   "discoveryEngine": {

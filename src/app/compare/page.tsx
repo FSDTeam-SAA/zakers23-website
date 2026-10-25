@@ -175,17 +175,17 @@ export default function ComparePage() {
         <div className="site-header-inner">
           <Link className="brand" href="/">
             <Image
-              src="/images/logo.png"
+              src="/images/mcs-symbol.svg"
               alt="Miami New Development"
-              width={220}
-              height={58}
-              className="site-logo h-auto w-[68px] md:w-[76px]"
+              width={56}
+              height={56}
+              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
               priority
             />
           </Link>
           <nav className="nav-links" aria-label="Primary">
             <Link href="/map">Explore Map</Link>
-            <Link href="/#contact">Find My Project</Link>
+            <Link href="/find-my-project">Find My Project</Link>
             <div className="relative group">
               <Link href="/neighborhood" className="nav-dropdown flex items-center gap-1">
                 Neighborhoods
@@ -587,11 +587,11 @@ export default function ComparePage() {
         <div className="max-w-[1140px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Image
-              src="/images/logo.png"
+              src="/images/mcs-symbol.svg"
               alt="Logo"
-              width={160}
-              height={42}
-              className="brightness-200 opacity-60 mb-4 h-auto w-[82px]"
+              width={48}
+              height={48}
+              className="h-10 w-10 object-contain brightness-200 opacity-60 mb-4"
             />
             <p className="text-[12px] leading-relaxed max-w-[200px]">
               A curated gateway to Miami&apos;s most ambitious luxury residences.

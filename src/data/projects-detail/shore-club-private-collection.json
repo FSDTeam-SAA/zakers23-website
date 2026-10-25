@@ -37,7 +37,79 @@
   "completion": "2027",
   "constructionNote": "Miami Beach issued a $97 million phased new-construction permit (job BC2322278) for 481,200 SF at 1901 Collins Avenue, week ending Aug. 5, 2026. Delivery remains 2027.",
   "constructionUpdateDate": "August 2026",
-  "densityScore": 15,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At contract execution"
+    },
+    {
+      "percentage": 10,
+      "milestone": "90 days after contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At building top-off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At closing (Est. 2027)"
+    }
+  ],
+  "floorPlans": [
+    {
+      "type": "2 Bedroom Oceanfront Residence",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "2,400 - 2,850 SF",
+      "startingPrice": 6200000,
+      "status": "Available"
+    },
+    {
+      "type": "3 Bedroom Oceanfront Estate",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "3,200 - 3,900 SF",
+      "startingPrice": 10500000,
+      "status": "Available"
+    },
+    {
+      "type": "4 Bedroom Tower Residence",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "4,400 - 5,100 SF",
+      "startingPrice": 16800000,
+      "status": "Available"
+    },
+    {
+      "type": "The Crown Penthouse at The Cromwell",
+      "beds": 5,
+      "baths": 6.5,
+      "sqft": "8,200+ SF",
+      "startingPrice": 38000000,
+      "status": "Available"
+    }
+  ],
+  "keyMetrics": [
+    {
+      "label": "ARCHITECTURAL ICON",
+      "value": "Robert A.M. Stern",
+      "note": "Iconic RAMSA oceanfront tower in the heart of South Beach"
+    },
+    {
+      "label": "OCEANFRONT PRIVACY",
+      "value": "49 Boutique Homes",
+      "note": "90%+ sold with unprecedented Atlantic frontage"
+    },
+    {
+      "label": "HOSPITALITY SERVICE",
+      "value": "Auberge Resorts",
+      "note": "World-class 5-star service, beach club, and Shell Bay membership"
+    }
+  ],
   "description": "A Robert A.M. Stern oceanfront masterpiece at the legendary Shore Club site on Collins Avenue. 49 residences with Auberge Resorts Collection service. 90%+ sold. Delivery 2027.",
   "developer": "Witkoff & Monroe Capital",
   "height": "18 Stories",

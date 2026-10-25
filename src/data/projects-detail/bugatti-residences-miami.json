@@ -40,7 +40,28 @@
   "completion": "TBD",
   "ctaMicrocopy": "Pricing to be announced",
   "densityScore": 62,
-  "depositStructure": null,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At reservation"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At contract execution"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At building top-off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At closing"
+    }
+  ],
   "description": "Bugatti Residences Miami is the French automotive marque's first U.S. residential tower: 183 bespoke residences, including four ultra-exclusive penthouses, rising 60 stories on the Miami River. Developed by Prosper Group and Belgium's Versluys Group with architecture by Brandon Haw and interiors by Yabu Pushelberg. While sales have not yet officially launched, select project renderings and early reservation allocations are now open for qualified clients through Zachary Akers.",
   "developer": "Prosper Group & Versluys Group (joint venture)",
   "dossierImageIndices": {
@@ -51,7 +72,57 @@
     ]
   },
   "editorialLine": "Bugatti's first residences in the United States.",
-  "floorPlans": [],
+  "floorPlans": [
+    {
+      "type": "Riviera Collection 2 Bed",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,850 - 2,240 SF",
+      "startingPrice": 3800000,
+      "status": "Reservation"
+    },
+    {
+      "type": "La Voiture Noire 3 Bed",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,780 - 3,350 SF",
+      "startingPrice": 5900000,
+      "status": "Reservation"
+    },
+    {
+      "type": "Centodieci Sky Villa 4 Bed",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "4,150 - 5,200 SF",
+      "startingPrice": 9500000,
+      "status": "Reservation"
+    },
+    {
+      "type": "Signature Sky Penthouse with Car Lift",
+      "beds": 5,
+      "baths": 6.5,
+      "sqft": "8,800+ SF",
+      "startingPrice": 18500000,
+      "status": "Available"
+    }
+  ],
+  "keyMetrics": [
+    {
+      "label": "TOWER HEIGHT",
+      "value": "60 Stories",
+      "note": "Sculptural tower by Brandon Haw along the Miami River"
+    },
+    {
+      "label": "RESIDENTIAL COLLECTION",
+      "value": "183 Bespoke Homes",
+      "note": "Interiors by Yabu Pushelberg with signature Bugatti aerodynamic curves"
+    },
+    {
+      "label": "WATERFRONT FOOTPRINT",
+      "value": "300+ Linear Feet",
+      "note": "Miami River frontage with direct boat access to Biscayne Bay"
+    }
+  ],
   "galleryImageAlts": [
     "Bugatti Residences Miami - Dusk tower view on the Miami River",
     "Bugatti Residences Miami - Wide dusk skyline perspective",

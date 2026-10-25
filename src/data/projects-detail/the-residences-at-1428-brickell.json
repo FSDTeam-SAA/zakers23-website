@@ -39,6 +39,79 @@
   "constructionPct": 36,
   "constructionUpdateDate": "July 2026",
   "densityScore": 50,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At contract execution"
+    },
+    {
+      "percentage": 10,
+      "milestone": "90 days after contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At top-off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At closing (Est. 2028)"
+    }
+  ],
+  "floorPlans": [
+    {
+      "type": "2 Bedroom + Den Residence",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,800 - 2,150 SF",
+      "startingPrice": 3200000,
+      "status": "Available"
+    },
+    {
+      "type": "3 Bedroom + Den Residence",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,850 - 3,400 SF",
+      "startingPrice": 5400000,
+      "status": "Available"
+    },
+    {
+      "type": "4 Bedroom Sky Residence",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "4,000 - 4,800 SF",
+      "startingPrice": 7900000,
+      "status": "Available"
+    },
+    {
+      "type": "Lower Penthouse Collection",
+      "beds": 5,
+      "baths": 5.5,
+      "sqft": "6,500+ SF",
+      "startingPrice": 14000000,
+      "status": "Available"
+    }
+  ],
+  "keyMetrics": [
+    {
+      "label": "TOWER HEIGHT",
+      "value": "70 Stories · 861 FT",
+      "note": "Soaring architectural profile on prestigious Brickell Avenue"
+    },
+    {
+      "label": "SOLAR INTEGRATION",
+      "value": "500+ Photovoltaic Panels",
+      "note": "World's first residential high-rise with building-integrated solar backbone"
+    },
+    {
+      "label": "AMENITY SUITE",
+      "value": "80,000 SF",
+      "note": "Dedicated purely to 195 residences with zero public or hotel access"
+    }
+  ],
   "description": "The world's first high-rise partially powered by solar energy. 70 stories at 1428 Brickell Ave. 195 private residences, LEED-certified. Level 25 as of September 2026, over 70% sold. No hotel, no outside memberships. Delivery 2028.",
   "developer": "Ytech",
   "height": "70 Stories (861 ft)",

@@ -12,11 +12,11 @@ export default function PropertyDetailSkeleton() {
         <div className="site-header-inner">
           <Link href="/" className="opacity-70">
             <Image
-              src="/images/logo.png"
+              src="/images/mcs-symbol.svg"
               alt="Miami New Development"
-              width={96}
-              height={28}
-              className="site-logo h-auto w-[68px] md:w-[76px]"
+              width={56}
+              height={56}
+              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
               priority
             />
           </Link>

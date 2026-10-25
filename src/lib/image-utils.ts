@@ -46,6 +46,10 @@ export function getSafeImageUrl(
     return fallback;
   }
 
+  if (trimmed.includes("api.cotality.com")) {
+    return fallback || getDistinctFallback(trimmed);
+  }
+
   if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
     return trimmed;
   }

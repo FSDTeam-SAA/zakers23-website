@@ -71,11 +71,11 @@ export function InsightsPage() {
       <header className={isScrolled ? "site-header insights-header insights-header-scrolled" : "site-header insights-header"}>
         <Link href="/" className="logo-link" aria-label="Miami New Development home">
           <Image
-            src="/images/logo.png"
+            src="/images/mcs-symbol.svg"
             alt="Miami New Development"
-            width={220}
-            height={58}
-            className="site-logo h-auto w-[68px] md:w-[76px]"
+            width={56}
+            height={56}
+            className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
             priority
           />
         </Link>

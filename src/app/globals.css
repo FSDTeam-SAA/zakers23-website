@@ -1548,6 +1548,9 @@ input[type="range"] {
     border-right: none !important;
     border-bottom: 1px solid var(--dune) !important;
   }
+}
+
+@media (max-width: 1340px) {
   .stage-pills-desktop {
     display: none !important;
   }
@@ -1555,7 +1558,7 @@ input[type="range"] {
     display: block !important;
   }
 }
-@media (min-width: 1101px) {
+@media (min-width: 1341px) {
   .stage-pills-desktop {
     display: flex !important;
   }

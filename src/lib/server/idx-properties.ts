@@ -228,6 +228,10 @@ function normalizeFraserUrl(url: unknown): string {
   return `https://frasermiami.s3.amazonaws.com/${trimmed.replace(/^\//, "")}`;
 }
 
+function isBlockedHost(url: unknown): boolean {
+  return typeof url === "string" && (url.includes("api.cotality.com") || url.includes("cotality.com"));
+}
+
 function extractImage(record: Record<string, unknown>, neighborhood: string, index: number): { primary: string; gallery: string[] } {
   let primary = "";
   const gallery: string[] = [];
@@ -236,7 +240,7 @@ function extractImage(record: Record<string, unknown>, neighborhood: string, ind
   if (Array.isArray(record.imgs)) {
     for (const item of record.imgs) {
       const u = normalizeFraserUrl(item);
-      if (u && !gallery.includes(u)) gallery.push(u);
+      if (u && !isBlockedHost(u) && !gallery.includes(u)) gallery.push(u);
     }
   }
 
@@ -246,33 +250,36 @@ function extractImage(record: Record<string, unknown>, neighborhood: string, ind
       if (k === "totalCount") continue;
       if (v && typeof v === "object" && "url" in v && typeof (v as any).url === "string") {
         const u = normalizeFraserUrl((v as any).url);
-        if (u && !gallery.includes(u)) gallery.push(u);
+        if (u && !isBlockedHost(u) && !gallery.includes(u)) gallery.push(u);
       } else if (typeof v === "string") {
         const u = normalizeFraserUrl(v);
-        if (u && !gallery.includes(u)) gallery.push(u);
+        if (u && !isBlockedHost(u) && !gallery.includes(u)) gallery.push(u);
       }
     }
     if (typeof imgObj["0"] === "object" && imgObj["0"] !== null) {
       const zeroObj = imgObj["0"] as Record<string, unknown>;
-      if (typeof zeroObj.url === "string") primary = zeroObj.url;
-    } else if (typeof imgObj.url === "string") {
+      if (typeof zeroObj.url === "string" && !isBlockedHost(zeroObj.url)) primary = zeroObj.url;
+    } else if (typeof imgObj.url === "string" && !isBlockedHost(imgObj.url)) {
       primary = imgObj.url;
     }
   }
 
   if (!primary) {
-    primary = text(record.img, record.imageURL, record.photo, record.primaryPhoto, record.photoURL);
+    const candidate = text(record.img, record.imageURL, record.photo, record.primaryPhoto, record.photoURL);
+    if (!isBlockedHost(candidate)) {
+      primary = candidate;
+    }
   }
 
   if (Array.isArray(record.images)) {
     for (const item of record.images) {
       const u = normalizeFraserUrl(item);
-      if (u && !gallery.includes(u)) gallery.push(u);
+      if (u && !isBlockedHost(u) && !gallery.includes(u)) gallery.push(u);
     }
   }
 
   const normalizedPrimary = normalizeFraserUrl(primary);
-  const safePrimary = normalizedPrimary || gallery[0] || fallback;
+  const safePrimary = (!isBlockedHost(normalizedPrimary) && normalizedPrimary) || gallery[0] || fallback;
   if (safePrimary && !gallery.includes(safePrimary)) {
     gallery.unshift(safePrimary);
   }
@@ -443,15 +450,28 @@ function normalize(record: Record<string, unknown>, index: number): IdxProject |
   const neighborhoodFallback = getLuxuryFallback(neighborhood, index);
   const fallbackImg = localCuratedImg || localCuratedGallery[0] || neighborhoodFallback;
 
-  if (rawImg && rawImgs.length > 0 && (Array.isArray(record.imgs) || record.img || record.image)) {
+  if (rawImg && rawImgs.length > 0 && !isBlockedHost(rawImg) && (Array.isArray(record.imgs) || record.img || record.image)) {
     img = rawImg;
-    imgs = rawImgs;
-  } else if (localCuratedImg) {
+    imgs = rawImgs.filter((u) => !isBlockedHost(u));
+  } else if (localCuratedImg && !isBlockedHost(localCuratedImg)) {
     img = localCuratedImg;
-    imgs = localCuratedGallery.length > 0 ? localCuratedGallery : [localCuratedImg];
+    imgs = localCuratedGallery.length > 0 ? localCuratedGallery.filter((u) => !isBlockedHost(u)) : [localCuratedImg];
   } else {
-    img = rawImg || fallbackImg;
-    imgs = rawImgs.length > 0 ? rawImgs : (img ? [img] : []);
+    img = (!isBlockedHost(rawImg) && rawImg) ? rawImg : fallbackImg;
+    const cleanRaw = rawImgs.filter((u) => !isBlockedHost(u));
+    imgs = cleanRaw.length > 0 ? cleanRaw : (img ? [img] : []);
+  }
+
+  if (!img || isBlockedHost(img)) {
+    img = fallbackImg;
+  }
+  if (!Array.isArray(imgs) || imgs.length === 0) {
+    imgs = [img];
+  } else {
+    imgs = imgs.filter((u) => !isBlockedHost(u));
+    if (imgs.length === 0) {
+      imgs = [img];
+    }
   }
   const beds = number(record.bedrooms ?? record.beds);
   const baths = number(record.totalBaths ?? record.baths ?? record.fullBaths);
@@ -859,4 +879,8 @@ export async function getIdxPropertyBySlug(slug: string): Promise<IdxProject | n
   if (byName) return enrichProjectGallery(byName);
 
   return null;
+}
+
+export function getPreconstructionProjects(): IdxProject[] {
+  return (localProjects as unknown as IdxProject[]).filter((p) => p.isActive !== false);
 }

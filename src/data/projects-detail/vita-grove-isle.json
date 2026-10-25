@@ -30,7 +30,59 @@
   "amenitiesDescription": "<p>Amenities are designed by A++ Architecture (Carlo and Paolo Colombo) and scaled to the private-island setting. The bayfront swimming pool, poolside bar, and lounge are reserved exclusively for Vita residents and guests. Padel and pickleball courts are night-lit. The wellness center includes a fitness center, dedicated studio room, and spa with men's and women's locker rooms, saunas, and steam rooms. The Grove Isle Baywalk Promenade encircles the island along the water's edge, creating a nearly one-mile waterfront path.</p><p>Residents receive a house membership to the Grove Isle Racquet and Yacht Club, which has its own bayfront pool, poolside bar, and night-lit tennis courts. Private enclosed garages allow self-parking with provisions for EV charging and an optional lift for a second vehicle. Concierge services cover dining and entertainment reservations, water sports excursions, travel arrangements, and in-residence services including housekeeping, personal training, and private chef. La Sponda, an Italian restaurant by Gioia Hospitality Group, is opening on the property in 2026 for lunch, dinner, and cocktails.</p>",
   "architect": "Arcadis, S&E Architects",
   "completion": "2025",
-  "densityScore": 8,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At contract execution"
+    },
+    {
+      "percentage": 80,
+      "milestone": "At closing (Topped off)"
+    }
+  ],
+  "floorPlans": [
+    {
+      "type": "3 Bedroom Bayfront Residence",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "3,450 SF",
+      "startingPrice": 8500000,
+      "status": "Available"
+    },
+    {
+      "type": "4 Bedroom Island Estate Residence",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "4,200 SF",
+      "startingPrice": 11200000,
+      "status": "Available"
+    },
+    {
+      "type": "Signature Rooftop Pool Penthouse",
+      "beds": 4,
+      "baths": 5.5,
+      "sqft": "5,500 SF",
+      "startingPrice": 17500000,
+      "status": "Available"
+    }
+  ],
+  "keyMetrics": [
+    {
+      "label": "ISLAND EXCLUSIVITY",
+      "value": "20-Acre Grove Isle",
+      "note": "Guard-gated private island with bridge connection to mainland Coconut Grove"
+    },
+    {
+      "label": "BOUTIQUE SCALE",
+      "value": "65 Waterfront Residences",
+      "note": "Designed by Carlo and Paolo Colombo (A++ Architecture) for CMC Group"
+    },
+    {
+      "label": "PRIVATE AMENITIES",
+      "value": "Racquet & Yacht Club",
+      "note": "Baywalk promenade, padel courts, deep-water dockage, and La Sponda dining"
+    }
+  ],
   "description": "Move-in ready in Coconut Grove on the Biscayne Bay waterfront. 65 boutique residences by Ugo Colombo's CMC Group, completed in 2025. Limited remaining inventory from $8.5M, including penthouses with private rooftop pools.",
   "developer": "CMC Group",
   "height": "7 Stories",
@@ -188,7 +240,7 @@
   "rentalPolicy": "6-Month Minimum (Traditional)",
   "residenceContent": "<p class=\"prop-residence-intro\">The only new luxury condominium delivered in Coconut Grove in 2025, now closing with immediate occupancy available. Three interconnected buildings (Mare, Luce, and Sole) trace the island's shoreline, placing every residence directly on the water with both sunrise and sunset exposures. Homes feature private elevator access with dedicated foyers, open-plan kitchens with fully concealed Miele appliances, and bathrooms finished with Italian cabinetry, European fixtures, and book-matched Venus marble. Ceiling heights reach a minimum of 10 feet, with 13'5\"-deep wraparound terraces. Smart home infrastructure is fully integrated: Crestron control for lighting, climate, and audio; Lutron HomeWorks whole-home lighting; multi-zone HVAC; fiber connectivity with up to 10-gigabit capability; and WiFi 6 access points throughout. The collection of 12 two-story penthouses includes private rooftop terraces with swimming pools, summer kitchens, and 11-foot ceilings with expanded outdoor living areas.</p>",
   "slug": "vita-grove-isle",
-  "stage": "move_in_ready",
+  "stage": "topped_off",
   "stageLabel": "Completed Dec 2025 · Move-In Ready",
   "statusRemark": "MOVE-IN READY · CLOSINGS UNDERWAY",
   "units": 65,

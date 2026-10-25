@@ -53,7 +53,7 @@ export function MobileNavMenu({ onOpenMatcher, className = "", isLightHeader = f
     if (onOpenMatcher) {
       onOpenMatcher();
     } else {
-      router.push("/#contact");
+      router.push("/find-my-project");
     }
   }, [onOpenMatcher, router]);
 

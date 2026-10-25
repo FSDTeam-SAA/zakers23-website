@@ -34,8 +34,45 @@
   ],
   "amenitiesDescription": "<p>Cipriani Residences carries the full weight of the brand's service tradition across every amenity level. The elevated resort deck features two swimming pools, an outdoor spa, private cabanas, and a landscaped sun terrace, all with poolside food and beverage by Cipriani. Private dining rooms are reservable on demand.</p><p>A four-level wellness center and lounge overlooks the Brickell skyline, with a spa with sauna and treatment rooms, a fitness center, pickleball court, and golf simulator. Social amenities include a residents' lounge, library, screening room with premium AV, children's playroom, private salon, and a pet-friendly dog park.</p><p>Services include a dedicated Director of Residences, Cipriani-trained concierge, 24-hour valet, in-residence spa treatments, personal training, pet grooming, and away-from-home maintenance.</p>",
   "architect": "Arquitectonica",
-  "completion": "July 2027",
-  "densityScore": 90,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At contract execution"
+    },
+    {
+      "percentage": 10,
+      "milestone": "90 days after contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At top-off (Completed July 2026)"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At closing (Est. July 2027)"
+    }
+  ],
+  "keyMetrics": [
+    {
+      "label": "TALLEST TOWER",
+      "value": "80 Stories · 950 FT",
+      "note": "Currently the tallest residential tower in the American South"
+    },
+    {
+      "label": "ITALIAN HERITAGE",
+      "value": "Cipriani Hospitality",
+      "note": "Four generations of Venetian elegance and service tradition"
+    },
+    {
+      "label": "EXCLUSIVE DINING",
+      "value": "Private Cipriani Club",
+      "note": "Residents-only restaurant, poolside bellinis, and in-residence catering"
+    }
+  ],
   "description": "Developed by Mast Capital with hospitality by Cipriani. 80 stories and 950 feet, currently the tallest residential tower south of New York. Topped off July 2026. 397 residences carrying four generations of Italian service, from Harry's Bar in Venice to Brickell. Over 75 percent sold.",
   "developer": "Mast Capital",
   "factSheetURL": "https://frasermiami.s3.amazonaws.com/ciprianiresidences/factsheet.pdf",

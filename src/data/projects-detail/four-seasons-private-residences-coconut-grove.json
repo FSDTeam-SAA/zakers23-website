@@ -31,7 +31,79 @@
   "architect": "Luis Revuelta",
   "avgSqft": 3400,
   "completion": "Mid-2028",
-  "densityScore": 20,
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At contract execution"
+    },
+    {
+      "percentage": 10,
+      "milestone": "90 days after contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At building top-off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At closing (Est. Mid-2028)"
+    }
+  ],
+  "floorPlans": [
+    {
+      "type": "2 Bedroom Bayfront Residence",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "2,025 - 2,450 SF",
+      "startingPrice": 5800000,
+      "status": "Available"
+    },
+    {
+      "type": "3 Bedroom Coconut Grove Estate",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,950 - 3,400 SF",
+      "startingPrice": 8200000,
+      "status": "Available"
+    },
+    {
+      "type": "4 Bedroom Grand Bay Residence",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "3,975 SF",
+      "startingPrice": 11500000,
+      "status": "Available"
+    },
+    {
+      "type": "Signature Four Seasons Sky Penthouse",
+      "beds": 5,
+      "baths": 6.5,
+      "sqft": "9,690 SF",
+      "startingPrice": 26000000,
+      "status": "Available"
+    }
+  ],
+  "keyMetrics": [
+    {
+      "label": "FIRST STANDALONE",
+      "value": "Pure Residential",
+      "note": "Florida's only standalone Four Seasons tower with zero hotel component"
+    },
+    {
+      "label": "RESIDENTIAL BOUTIQUE",
+      "value": "70 Total Homes",
+      "note": "Architect Luis Revuelta and interior designer Tara Bernerd on South Bayshore"
+    },
+    {
+      "label": "FOUR SEASONS STAFF",
+      "value": "Dedicated On-Site Team",
+      "note": "Highest staff-to-resident ratio in any new South Florida development"
+    }
+  ],
   "description": "Florida's first standalone Four Seasons branded residences, without an accompanying hotel. 70 waterfront homes from 2,025 to 3,975 square feet on South Bayshore Drive, plus four penthouses to 9,690 square feet. Construction went vertical in 2026. Mid-2028 delivery.",
   "developer": "CMC Group & Fort Partners",
   "height": "20 Stories",

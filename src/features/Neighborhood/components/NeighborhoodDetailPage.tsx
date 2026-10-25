@@ -134,15 +134,8 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
   const [projectsList, setProjectsList] = useState<MapProject[]>(initialProjects || []);
 
   useEffect(() => {
-    if (!initialProjects || initialProjects.length === 0) {
-      fetch("/api/idx/properties")
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.projects && Array.isArray(data.projects)) {
-            setProjectsList(data.projects);
-          }
-        })
-        .catch(console.error);
+    if (initialProjects && initialProjects.length > 0) {
+      setProjectsList(initialProjects);
     }
   }, [initialProjects]);
 
@@ -236,36 +229,18 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
   useEffect(() => {
     if (!mapContainerRef.current || allHoodProjects.length === 0) return;
 
-    const token = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
+    const token =
+      process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN ||
+      process.env.NEXT_PUBLIC_MAPBOX_TOKEN ||
+      "";
+
     if (!token) {
-      mapContainerRef.current.innerHTML = `
-        <div style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          height: 100%;
-          background: #10131a;
-          color: #ffffff;
-          padding: 20px;
-          text-align: center;
-          font-family: var(--font-sans), sans-serif;
-        ">
-          <p style="font-family: var(--font-serif), serif; font-size: 18px; margin-bottom: 8px; color: #f3e7c4;">Map Preview</p>
-          <p style="font-size: 11px; color: rgba(250, 250, 248, 0.44); max-width: 320px; line-height: 1.5; letter-spacing: 0.05em; text-transform: uppercase;">
-            Please add your Mapbox Access Token to <code>.env.local</code> to activate the interactive map.
-          </p>
-          <div style="margin-top: 16px; font-size: 10px; color: #c9a84c; font-weight: 500; letter-spacing: 0.1em;">
-            [ NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN ]
-          </div>
-        </div>
-      `;
+      console.warn("NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN is missing");
       return;
     }
 
     mapboxgl.accessToken = token;
 
-    // Remove existing map if it was initialized
     if (mapRef.current) {
       mapRef.current.remove();
       mapRef.current = null;
@@ -274,13 +249,17 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
     // Determine center
     let center: [number, number] = [-80.19179, 25.761681]; // Brickell fallback
     if (slug === "south-of-fifth") center = [-80.134, 25.767];
-    
-    if (allHoodProjects.length > 0) {
-      const lats = allHoodProjects.map(p => p.lat);
-      const lngs = allHoodProjects.map(p => p.lng);
+
+    const validCoordProjects = allHoodProjects.filter(
+      (p) => typeof p.lat === "number" && typeof p.lng === "number" && !isNaN(p.lat) && !isNaN(p.lng) && p.lat !== 0
+    );
+
+    if (validCoordProjects.length > 0) {
+      const lats = validCoordProjects.map((p) => p.lat);
+      const lngs = validCoordProjects.map((p) => p.lng);
       center = [
         lngs.reduce((a, b) => a + b, 0) / lngs.length,
-        lats.reduce((a, b) => a + b, 0) / lats.length
+        lats.reduce((a, b) => a + b, 0) / lats.length,
       ];
     }
 
@@ -288,93 +267,93 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
       container: mapContainerRef.current,
       style: "mapbox://styles/mapbox/dark-v11",
       center: center,
-      zoom: 12.5,
+      zoom: 13,
       scrollZoom: false,
-      attributionControl: true
+      attributionControl: true,
     });
 
     mapRef.current = map;
-
     map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "bottom-right");
 
-    // Circle markers setup
-    const prices = allHoodProjects.map((p) => p.maxPrice ?? p.minPrice).filter((v): v is number => v != null && v > 0);
-    const minP = prices.length ? Math.min(...prices) : null;
-    const maxP = prices.length ? Math.max(...prices) : null;
+    map.on("load", () => {
+      map.resize();
 
-    const bounds = new mapboxgl.LngLatBounds();
+      const prices = validCoordProjects
+        .map((p) => p.maxPrice ?? p.minPrice)
+        .filter((v): v is number => v != null && v > 0);
+      const minP = prices.length ? Math.min(...prices) : null;
+      const maxP = prices.length ? Math.max(...prices) : null;
 
-    allHoodProjects.forEach((proj) => {
-      const priceVal = proj.maxPrice ?? proj.minPrice;
-      
-      // Radius calculation mapping between 12px and 28px (diameter)
-      let diameter = 18;
-      if (priceVal && minP && maxP && minP !== maxP) {
-        diameter = 12 + Math.min(1, Math.max(0, (priceVal - minP) / (maxP - minP))) * 16;
+      const bounds = new mapboxgl.LngLatBounds();
+
+      validCoordProjects.forEach((proj) => {
+        const priceVal = proj.maxPrice ?? proj.minPrice;
+        let diameter = 18;
+        if (priceVal && minP && maxP && minP !== maxP) {
+          diameter = 12 + Math.min(1, Math.max(0, (priceVal - minP) / (maxP - minP))) * 16;
+        }
+
+        const isTrophy = priceVal != null && maxP != null && priceVal >= maxP * 0.85;
+
+        const markerEl = document.createElement("div");
+        markerEl.className = "cursor-pointer group relative";
+        markerEl.style.width = `${diameter}px`;
+        markerEl.style.height = `${diameter}px`;
+        markerEl.style.borderRadius = "50%";
+        markerEl.style.backgroundColor = isTrophy ? "rgba(201, 168, 76, 0.45)" : "rgba(201, 168, 76, 0.2)";
+        markerEl.style.border = "2px solid #C9A84C";
+        markerEl.style.display = "flex";
+        markerEl.style.alignItems = "center";
+        markerEl.style.justifyContent = "center";
+        markerEl.style.boxShadow = "0 0 10px rgba(201, 168, 76, 0.3)";
+        markerEl.style.transition = "transform 0.2s ease, background-color 0.2s ease";
+
+        if (isTrophy) {
+          const dot = document.createElement("div");
+          dot.style.width = "6px";
+          dot.style.height = "6px";
+          dot.style.backgroundColor = "#C9A84C";
+          dot.style.borderRadius = "50%";
+          markerEl.appendChild(dot);
+        }
+
+        const popup = new mapboxgl.Popup({ offset: diameter / 2 + 6, closeButton: false }).setHTML(
+          `<div style="font-family: 'DM Sans', sans-serif; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: #1c1f26; padding: 4px 6px;">
+            ${proj.name}
+            <div style="font-size: 10px; color: #b89354; font-weight: 400; margin-top: 2px;">${formatPriceStr(proj.priceFrom)}</div>
+          </div>`
+        );
+
+        new mapboxgl.Marker(markerEl)
+          .setLngLat([proj.lng, proj.lat])
+          .setPopup(popup)
+          .addTo(map);
+
+        markerEl.addEventListener("click", () => {
+          router.push(`/property/${proj.slug}`);
+        });
+
+        bounds.extend([proj.lng, proj.lat]);
+      });
+
+      if (validCoordProjects.length > 1) {
+        map.fitBounds(bounds, { padding: 50, maxZoom: 15 });
       }
-
-      const isTrophy = priceVal != null && maxP != null && priceVal >= maxP * 0.85;
-
-      const markerEl = document.createElement("div");
-      markerEl.className = "cursor-pointer group relative";
-      markerEl.style.width = `${diameter}px`;
-      markerEl.style.height = `${diameter}px`;
-      markerEl.style.borderRadius = "50%";
-      markerEl.style.backgroundColor = isTrophy ? "rgba(201, 168, 76, 0.45)" : "rgba(201, 168, 76, 0.15)";
-      markerEl.style.border = "2.5px solid #C9A84C";
-      markerEl.style.display = "flex";
-      markerEl.style.alignItems = "center";
-      markerEl.style.justifyContent = "center";
-      markerEl.style.transition = "transform 0.2s ease, background-color 0.2s ease";
-
-      if (isTrophy) {
-        const dot = document.createElement("div");
-        dot.style.width = "6px";
-        dot.style.height = "6px";
-        dot.style.backgroundColor = "#C9A84C";
-        dot.style.borderRadius = "50%";
-        markerEl.appendChild(dot);
-      }
-
-      const popup = new mapboxgl.Popup({ offset: diameter / 2 + 5, closeButton: false })
-        .setHTML(`<div class="font-sans text-[12px] tracking-[0.05em] uppercase font-semibold text-[#1c1f26] p-1">${proj.name}</div>`);
-
-      const marker = new mapboxgl.Marker(markerEl)
-        .setLngLat([proj.lng, proj.lat])
-        .setPopup(popup)
-        .addTo(map);
-
-      // Interactivity
-      markerEl.addEventListener("click", () => {
-        router.push(`/property/${proj.slug}`);
-      });
-
-      markerEl.addEventListener("mouseenter", () => {
-        markerEl.style.transform = "scale(1.15)";
-        markerEl.style.backgroundColor = "rgba(201, 168, 76, 0.75)";
-        popup.addTo(map);
-      });
-
-      markerEl.addEventListener("mouseleave", () => {
-        markerEl.style.transform = "scale(1)";
-        markerEl.style.backgroundColor = isTrophy ? "rgba(201, 168, 76, 0.45)" : "rgba(201, 168, 76, 0.15)";
-        popup.remove();
-      });
-
-      bounds.extend([proj.lng, proj.lat]);
     });
 
-    // Fit map bounds to encompass all project locations
-    if (allHoodProjects.length > 1) {
-      map.fitBounds(bounds, { padding: 48, maxZoom: 15 });
-    } else if (allHoodProjects.length === 1) {
-      map.setCenter([allHoodProjects[0].lng, allHoodProjects[0].lat]);
-      map.setZoom(14);
-    }
+    // Handle container resize
+    const resizeTimer = setTimeout(() => {
+      if (mapRef.current) {
+        mapRef.current.resize();
+      }
+    }, 250);
 
     return () => {
-      map.remove();
-      mapRef.current = null;
+      clearTimeout(resizeTimer);
+      if (mapRef.current) {
+        mapRef.current.remove();
+        mapRef.current = null;
+      }
     };
   }, [allHoodProjects, slug, router]);
 
@@ -407,22 +386,17 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
         <div className="site-header-inner">
           <Link href="/" className="brand">
             <Image
-              src="/images/logo.png"
+              src="/images/mcs-symbol.svg"
               alt="Miami New Development"
-              width={220}
-              height={58}
-              className="site-logo h-auto w-[68px] md:w-[76px]"
+              width={56}
+              height={56}
+              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
               priority
             />
           </Link>
           <nav className="nav-links" aria-label="Primary">
             <Link href="/map">Explore Map</Link>
-            <button
-              type="button"
-              onClick={() => setIsMatcherOpen(true)}
-            >
-              Find My Project
-            </button>
+            <Link href="/find-my-project">Find My Project</Link>
             <div className="relative group">
               <button
                 type="button"

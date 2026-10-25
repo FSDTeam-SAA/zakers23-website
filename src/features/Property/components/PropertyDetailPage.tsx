@@ -509,22 +509,17 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
         <div className="site-header-inner">
           <Link href="/" className="brand">
             <Image
-              src="/images/logo.png"
+              src="/images/mcs-symbol.svg"
               alt="Miami New Development"
-              width={220}
-              height={58}
-              className="site-logo h-auto w-[68px] md:w-[76px]"
+              width={56}
+              height={56}
+              className="site-logo h-auto w-[52px]"
               priority
             />
           </Link>
           <nav className="nav-links" aria-label="Primary">
             <Link href="/map">Explore Map</Link>
-            <button
-              type="button"
-              onClick={() => setIsMatcherOpen(true)}
-            >
-              Find My Project
-            </button>
+            <Link href="/find-my-project">Find My Project</Link>
             <div className="relative group">
               <button
                 type="button"
@@ -847,10 +842,11 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 </thead>
                 <tbody className="divide-y divide-[#f0ece1] text-xs">
                   {project.floorPlans.map((plan: any, idx: number) => {
-                    const priceDisplay = plan.startingPrice
-                      ? (typeof plan.startingPrice === "number"
-                          ? `$${plan.startingPrice.toLocaleString("en-US")}`
-                          : plan.startingPrice)
+                    const rawPrice = plan.startingPrice ?? plan.price;
+                    const priceDisplay = rawPrice
+                      ? (typeof rawPrice === "number"
+                          ? `$${rawPrice.toLocaleString("en-US")}`
+                          : rawPrice)
                       : (plan.priceNote || "Inquire for Pricing");
 
                     return (
@@ -1016,7 +1012,12 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                   {project.depositStructure.map((item: any, idx: number) => {
                     const milestone = typeof item === "string" ? item : (item.milestone || item.label || `Milestone ${idx + 1}`);
-                    const percent = typeof item === "object" ? (item.percentage || item.value || "") : "";
+                    const rawPercent = typeof item === "object" ? (item.percentage ?? item.value ?? "") : "";
+                    const percent = typeof rawPercent === "number"
+                      ? `${rawPercent}%`
+                      : typeof rawPercent === "string" && rawPercent && !rawPercent.endsWith("%") && !isNaN(Number(rawPercent))
+                        ? `${rawPercent}%`
+                        : rawPercent;
                     const desc = typeof item === "object" ? (item.description || item.note || "") : "";
                     return (
                       <div key={idx} className="border-l-2 border-[#B38E36] pl-4 py-1">

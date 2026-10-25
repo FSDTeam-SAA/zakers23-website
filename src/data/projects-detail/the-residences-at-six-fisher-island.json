@@ -53,6 +53,37 @@
   "constructionPct": 88,
   "constructionUpdateDate": "August 2026",
   "densityScore": 5,
+  "depositStructure": [
+    {
+      "percentage": 20,
+      "milestone": "At contract execution"
+    },
+    {
+      "percentage": 20,
+      "milestone": "At top-off (Completed)"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At closing (Est. 2026–2027)"
+    }
+  ],
+  "keyMetrics": [
+    {
+      "label": "FINAL DEVELOPMENT",
+      "value": "Last Fisher Island Parcel",
+      "note": "The historic final chapter of residential development on America's richest island"
+    },
+    {
+      "label": "ESTATE SCALE",
+      "value": "50 Private Homes",
+      "note": "Residences spanning 3,872 to 15,570 SF with private pools and deep terraces"
+    },
+    {
+      "label": "CLUB PRIVILEGES",
+      "value": "Lifetime Equity Membership",
+      "note": "Full Fisher Island Club equity membership included at closing with Stephen Starr dining"
+    }
+  ],
   "description": "The final new development on Fisher Island. 50 estate homes from 3,872 to 15,570 SF, with a lifetime Fisher Island Club membership included at closing.",
   "developer": "Related Group, BH Group & Globe Invest",
   "featureVideo": {

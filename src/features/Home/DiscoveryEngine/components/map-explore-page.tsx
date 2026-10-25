@@ -38,6 +38,7 @@ export interface MapProject {
   badge?: string;
   img: string;
   imgs: string[];
+  fallbackImg?: string;
   logo?: string;
   wellnessScore?: number | null;
   minBed: number | null;
@@ -143,12 +144,23 @@ function getLuxuryFallbackImage(neighborhood?: string, seed: number = 0): string
   return pool[Math.abs(seed) % pool.length];
 }
 
-function getImageUrl(path: string | null | undefined, neighborhood?: string, seed: number = 0): string {
-  if (!path) return getLuxuryFallbackImage(neighborhood, seed);
-  if (path.startsWith("http://") || path.startsWith("https://")) {
-    return path;
+function getImageUrl(
+  path: string | null | undefined,
+  neighborhood?: string,
+  seed: number = 0,
+  fallbackImg?: string
+): string {
+  if (!path || typeof path !== "string") {
+    return fallbackImg || getLuxuryFallbackImage(neighborhood, seed);
   }
-  return `https://frasermiami.s3.amazonaws.com/${path.replace(/^\//, "")}`;
+  const trimmed = path.trim();
+  if (!trimmed || trimmed.includes("api.cotality.com") || trimmed.includes("cotality.com")) {
+    return fallbackImg || getLuxuryFallbackImage(neighborhood, seed);
+  }
+  if (trimmed.startsWith("http://") || trimmed.startsWith("https://") || trimmed.startsWith("/images/")) {
+    return trimmed;
+  }
+  return `https://frasermiami.s3.amazonaws.com/${trimmed.replace(/^\//, "")}`;
 }
 
 function getSlug(name: string): string {
@@ -791,25 +803,17 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
         <div className="site-header-inner">
           <Link className="brand" href="/">
             <Image
-              src="/images/logo.png"
+              src="/images/mcs-symbol.svg"
               alt="Miami New Development"
-              width={220}
-              height={58}
-              className="site-logo h-auto w-[68px] md:w-[76px]"
+              width={56}
+              height={56}
+              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
               priority
             />
           </Link>
           <nav className="nav-links" aria-label="Primary">
             <Link href="/map">Explore Map</Link>
-            <Link
-              href="/#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                setIsMatcherOpen(true);
-              }}
-            >
-              Find My Project
-            </Link>
+            <Link href="/find-my-project">Find My Project</Link>
             <div className="relative group">
               <button
                 type="button"
@@ -873,10 +877,10 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
         <div style={{ padding: "0 16px", boxSizing: "border-box" }}>
           <div
             className="map-controls-bar-inner"
-            style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: 50, gap: 12 }}
+            style={{ display: "flex", alignItems: "center", justifyContent: "space-between", minHeight: 52, padding: "6px 0", gap: 10, flexWrap: "wrap" }}
           >
             {/* View Mode Toggle & Filters */}
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
               {/* Map/List Switch */}
               <div
                 style={{
@@ -899,8 +903,8 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                     textTransform: "uppercase",
                     fontFamily: "'DM Sans', sans-serif",
                     fontWeight: viewMode === "map" ? 500 : 400,
-                    minHeight: 44,
-                    padding: "10px 16px",
+                    minHeight: 40,
+                    padding: "8px 14px",
                     cursor: "pointer",
                     display: "inline-flex",
                     alignItems: "center",
@@ -926,8 +930,8 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                     textTransform: "uppercase",
                     fontFamily: "'DM Sans', sans-serif",
                     fontWeight: viewMode === "list" ? 500 : 400,
-                    minHeight: 44,
-                    padding: "10px 16px",
+                    minHeight: 40,
+                    padding: "8px 14px",
                     cursor: "pointer",
                     display: "inline-flex",
                     alignItems: "center",
@@ -953,7 +957,7 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                       display: "inline-flex",
                       alignItems: "center",
                       gap: 8,
-                      minHeight: 44,
+                      minHeight: 40,
                       padding: "0 12px",
                       background: theme.bronzA(0.08),
                       border: `1px solid ${theme.bronze}`,
@@ -980,8 +984,8 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                         fontSize: 16,
                         padding: 0,
                         marginLeft: 4,
-                        minWidth: 44,
-                        minHeight: 44,
+                        minWidth: 32,
+                        minHeight: 32,
                         display: "inline-flex",
                         alignItems: "center",
                         justifyContent: "center",
@@ -1005,8 +1009,8 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                     display: "inline-flex",
                     alignItems: "center",
                     gap: 6,
-                    minHeight: 44,
-                    padding: "0 14px",
+                    minHeight: 40,
+                    padding: "0 12px",
                     border: `1px solid ${stageFilter === "all" ? theme.bronze : theme.dune}`,
                     background: stageFilter === "all" ? theme.bronzA(0.07) : theme.white,
                     color: stageFilter === "all" ? theme.ink : theme.mist,
@@ -1029,8 +1033,8 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                       display: "inline-flex",
                       alignItems: "center",
                       gap: 6,
-                      minHeight: 44,
-                      padding: "0 14px",
+                      minHeight: 40,
+                      padding: "0 12px",
                       border: `1px solid ${stageFilter === key ? theme.bronze : theme.dune}`,
                       background: stageFilter === key ? theme.bronzA(0.07) : theme.white,
                       color: stageFilter === key ? theme.ink : theme.mist,
@@ -1051,13 +1055,13 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
               </div>
 
               {/* Stage dropdown for responsive smaller widths */}
-              <div className="stage-dropdown-inline" style={{ position: "relative", minWidth: 132 }}>
+              <div className="stage-dropdown-inline" style={{ position: "relative", minWidth: 140 }}>
                 <button
                   ref={stageDropdownRef}
                   onClick={() => setStageDropdownOpen(!stageDropdownOpen)}
                   style={{
                     width: "100%",
-                    minHeight: 44,
+                    minHeight: 40,
                     padding: "0 12px",
                     background: stageFilter === "all" ? theme.cream : theme.bronzA(0.07),
                     border: `1px solid ${stageDropdownOpen || stageFilter !== "all" ? theme.bronze : theme.dune}`,
@@ -1087,7 +1091,7 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                   <div
                     style={{
                       position: "absolute",
-                      top: 32,
+                      top: "calc(100% + 4px)",
                       left: 0,
                       minWidth: 200,
                       background: theme.cream,
@@ -1102,7 +1106,7 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                     <button
                       onClick={() => { setStageFilter("all"); setStageDropdownOpen(false); }}
                       style={{
-                        background: "none", border: "none", width: "100%", textAlign: "left", minHeight: 44, padding: "10px 14px",
+                        background: "none", border: "none", width: "100%", textAlign: "left", minHeight: 40, padding: "8px 14px",
                         fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", cursor: "pointer",
                         color: stageFilter === "all" ? theme.ink : theme.mist, fontWeight: stageFilter === "all" ? 500 : 300,
                         display: "flex", alignItems: "center"
@@ -1115,7 +1119,7 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                         key={key}
                         onClick={() => { setStageFilter(key); setStageDropdownOpen(false); }}
                         style={{
-                          background: "none", border: "none", width: "100%", textAlign: "left", minHeight: 44, padding: "10px 14px",
+                          background: "none", border: "none", width: "100%", textAlign: "left", minHeight: 40, padding: "8px 14px",
                           fontSize: 12, letterSpacing: "0.12em", textTransform: "uppercase", cursor: "pointer",
                           color: stageFilter === key ? theme.ink : theme.mist, fontWeight: stageFilter === key ? 500 : 300,
                           display: "flex", alignItems: "center", gap: 6
@@ -1131,15 +1135,15 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
             </div>
 
             {/* Sort & Search Actions */}
-            <div style={{ display: "flex", alignItems: "center", gap: 6, flex: 1, justifyContent: "flex-end", minWidth: 0 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8, flex: "1 1 auto", justifyContent: "flex-end", minWidth: 0, flexWrap: "wrap" }}>
               {/* Sort Dropdown */}
-              <div className="map-controls-sort-wrap" style={{ position: "relative", minWidth: 130 }}>
+              <div className="map-controls-sort-wrap" style={{ position: "relative", minWidth: 140 }}>
                 <button
                   ref={sortDropdownRef}
                   onClick={() => setSortDropdownOpen(!sortDropdownOpen)}
                   style={{
                     width: "100%",
-                    minHeight: 44,
+                    minHeight: 40,
                     padding: "0 12px",
                     background: theme.cream,
                     border: `1px solid ${sortDropdownOpen ? theme.bronze : theme.dune}`,
@@ -1161,7 +1165,7 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                     </svg>
                     <span style={{ color: theme.fog, flexShrink: 0 }}>Sort:</span>
                     <span style={{ fontWeight: 500, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                      {sortBy === "featured" ? "Featured" : sortBy === "price_low" ? "Price: Low to High" : sortBy === "price_high" ? "Price: High to Low" : "Stage"}
+                      {sortBy === "featured" ? "Featured" : sortBy === "price_low" ? "Price: Low" : sortBy === "price_high" ? "Price: High" : "Stage"}
                     </span>
                   </span>
                   <svg width="9" height="6" viewBox="0 0 9 6" fill="none" style={{ transform: sortDropdownOpen ? "rotate(180deg)" : "none" }}>
@@ -1173,9 +1177,9 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                   <div
                     style={{
                       position: "absolute",
-                      top: 48,
-                      left: 0,
-                      width: "100%",
+                      top: "calc(100% + 4px)",
+                      right: 0,
+                      minWidth: 180,
                       background: theme.cream,
                       border: `1px solid ${theme.dune}`,
                       boxShadow: "0 8px 24px rgba(28,31,38,0.12)",
@@ -1195,7 +1199,7 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                         key={item.key}
                         onClick={() => { setSortBy(item.key); setSortDropdownOpen(false); }}
                         style={{
-                          background: "none", border: "none", width: "100%", textAlign: "left", minHeight: 44, padding: "10px 14px",
+                          background: "none", border: "none", width: "100%", textAlign: "left", minHeight: 40, padding: "8px 14px",
                           fontSize: 12, letterSpacing: "0.14em", textTransform: "uppercase", cursor: "pointer",
                           color: sortBy === item.key ? theme.ink : theme.mist, fontWeight: sortBy === item.key ? 500 : 300,
                           display: "flex", alignItems: "center"
@@ -1212,13 +1216,13 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
               <div
                 ref={searchContainerRef}
                 className="map-controls-search-inline"
-                style={{ position: "relative", flex: "0 1 240px", minWidth: 160, maxWidth: 320 }}
+                style={{ position: "relative", flex: "1 1 200px", minWidth: 160, maxWidth: 280 }}
               >
                 <div
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    minHeight: 44,
+                    minHeight: 40,
                     background: theme.cream,
                     border: `1px solid ${searchFocused ? theme.bronze : theme.dune}`,
                     fontFamily: "'DM Sans', sans-serif"
@@ -1248,7 +1252,7 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                   {searchQuery && (
                     <button
                       onClick={() => { setSearchQuery(""); setSearchHoverIndex(0); searchInputRef.current?.focus(); }}
-                      style={{ background: "none", border: "none", color: theme.mist, cursor: "pointer", minHeight: 44, minWidth: 36, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 16 }}
+                      style={{ background: "none", border: "none", color: theme.mist, cursor: "pointer", minHeight: 40, minWidth: 32, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 16 }}
                     >
                       ×
                     </button>
@@ -1261,7 +1265,7 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                     ref={searchResultsRef}
                     style={{
                       position: "absolute",
-                      top: 30,
+                      top: "calc(100% + 4px)",
                       left: 0,
                       width: "100%",
                       background: theme.white,
@@ -1534,15 +1538,17 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                       {/* Image Hero */}
                       <div className="map-list-card-hero" style={{ overflow: "hidden", position: "relative", aspectRatio: "3/2", background: theme.ink }}>
                         <img
-                          src={getImageUrl(proj.img, proj.neighborhood, proj.id)}
+                          src={getImageUrl(proj.img, proj.neighborhood, proj.id, proj.fallbackImg)}
                           alt={proj.name}
                           loading="lazy"
                           referrerPolicy="no-referrer"
+                          data-fallback={proj.fallbackImg || getLuxuryFallbackImage(proj.neighborhood, proj.id)}
                           onError={(e) => {
-                            const fallback = getLuxuryFallbackImage(proj.neighborhood, proj.id);
-                            if (e.currentTarget.src !== fallback) {
-                              e.currentTarget.src = fallback;
-                            }
+                            const img = e.currentTarget;
+                            if (img.dataset.fallbackApplied === "true") return;
+                            img.dataset.fallbackApplied = "true";
+                            const fb = img.dataset.fallback || getLuxuryFallbackImage(proj.neighborhood, proj.id);
+                            img.src = fb;
                           }}
                           style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                         />
@@ -1719,15 +1725,17 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                       {/* Thumbnail */}
                       <div className="map-proj-row-thumb" style={{ position: "relative", width: 72, height: 72, flexShrink: 0, background: theme.ink }}>
                         <img
-                          src={getImageUrl(proj.img, proj.neighborhood, proj.id)}
-                          alt=""
+                          src={getImageUrl(proj.img, proj.neighborhood, proj.id, proj.fallbackImg)}
+                          alt={proj.name || ""}
                           loading="lazy"
                           referrerPolicy="no-referrer"
+                          data-fallback={proj.fallbackImg || getLuxuryFallbackImage(proj.neighborhood, proj.id)}
                           onError={(e) => {
-                            const fallback = getLuxuryFallbackImage(proj.neighborhood, proj.id);
-                            if (e.currentTarget.src !== fallback) {
-                              e.currentTarget.src = fallback;
-                            }
+                            const img = e.currentTarget;
+                            if (img.dataset.fallbackApplied === "true") return;
+                            img.dataset.fallbackApplied = "true";
+                            const fb = img.dataset.fallback || getLuxuryFallbackImage(proj.neighborhood, proj.id);
+                            img.src = fb;
                           }}
                           style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                         />
@@ -1944,14 +1952,15 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
               {/* Slider / Image Gallery */}
               <div className="map-popup-image" style={{ position: "relative", height: 160, background: theme.ink }}>
                 <img
-                  src={projectImages[activeImageIndex]}
+                  src={projectImages[activeImageIndex] || selected.fallbackImg || getLuxuryFallbackImage(selected.neighborhood, selected.id)}
                   alt={selected.name}
                   referrerPolicy="no-referrer"
+                  data-fallback={selected.fallbackImg || getLuxuryFallbackImage(selected.neighborhood, selected.id)}
                   onError={(e) => {
-                    const fallback = getLuxuryFallbackImage(selected.neighborhood, selected.id);
-                    if (e.currentTarget.src !== fallback) {
-                      e.currentTarget.src = fallback;
-                    }
+                    const img = e.currentTarget;
+                    if (img.dataset.fallbackApplied === "true") return;
+                    img.dataset.fallbackApplied = "true";
+                    img.src = selected.fallbackImg || getLuxuryFallbackImage(selected.neighborhood, selected.id);
                   }}
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />

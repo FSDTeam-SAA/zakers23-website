@@ -14,7 +14,7 @@ export default function PropertyInquiryGate({ name }: { name: string }) {
   return (
     <main className="min-h-screen bg-[#fafaf8] flex items-center justify-center px-6 py-16">
       <div className="max-w-md text-center">
-        <Link href="/" className="inline-block mb-10"><img src="/images/logo.png" alt="Miami New Development" width={110} height={60} /></Link>
+        <Link href="/" className="inline-block mb-10"><img src="/images/mcs-symbol.svg" alt="Miami New Development" width={56} height={56} className="mx-auto h-12 w-12 object-contain" /></Link>
         <p className="consultation-kicker">Private property access</p>
         <h1 className="text-3xl text-[#1c1f26] mb-4" style={{ fontFamily: "var(--font-serif), serif" }}>{name}</h1>
         <p className="text-sm text-[#788092] leading-7">

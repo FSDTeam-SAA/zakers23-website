@@ -7,14 +7,15 @@ export function AdvisorSection() {
   const { openInquiry } = useInquiry();
   return (
     <section className="bg-[var(--sand)] px-5 py-14 md:px-7 md:py-20" id="advisor">
-      <div className="mx-auto grid max-w-[1140px] grid-cols-1 gap-10 lg:grid-cols-[454px_minmax(0,1fr)] lg:gap-14">
-        <div className="relative overflow-hidden rounded-[10px]">
-          <div className="relative aspect-[0.8/1] min-h-[420px] bg-[#d9d1c5]">
+      <div className="mx-auto grid max-w-[1140px] grid-cols-1 items-start gap-10 lg:grid-cols-[340px_minmax(0,1fr)] lg:gap-16">
+        <div className="relative mx-auto w-full max-w-[340px] overflow-hidden rounded-[8px] shadow-sm lg:mx-0">
+          <div className="relative aspect-[0.82/1] bg-[#d9d1c5]">
             <Image
               fill
               src="/images/imagereader.webp"
               alt="Zachary Akers"
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, 340px"
             />
           </div>
           {/* <div className="absolute bottom-4 left-4 bg-[rgba(22,30,48,0.92)] px-4 py-2">
@@ -51,49 +52,20 @@ Zachary is a veteran of 14 years in the real estate industry working both in sal
           </div>
 
           <div className="mt-10">
-            <div className="mb-6 flex items-center gap-4">
+            <div className="mb-4 flex items-center gap-4">
               <span className="h-px w-6 bg-[#c2a36a]" />
               <span className="text-[12px] uppercase tracking-[0.34em] text-[#8f96ab]">
-                ONE Sotheby&apos;s International Realty
+                Proven Performance
               </span>
             </div>
 
-            <div className="grid grid-cols-1 border-y border-[#ddd8cd] py-7 sm:grid-cols-3">
-              <div className="px-4 text-center sm:border-r sm:border-[#ddd8cd]">
-                <strong
-                  className="block text-[28px] font-normal leading-none text-[#182235]"
-                  style={{ fontFamily: "var(--font-serif), serif" }}
-                >
-                  $1B+
-                </strong>
-                <span className="mt-2 block text-[12px] uppercase tracking-[0.22em] text-[#8c8376]">
-                  Closed Transactions
-                </span>
-              </div>
-
-              <div className="px-4 pt-6 text-center sm:border-r sm:border-[#ddd8cd] sm:pt-0">
-                <strong
-                  className="block text-[28px] font-normal leading-none text-[#182235]"
-                  style={{ fontFamily: "var(--font-serif), serif" }}
-                >
-                  $225M+
-                </strong>
-                <span className="mt-2 block text-[12px] uppercase tracking-[0.22em] text-[#8c8376]">
-                  Sold Off-Market
-                </span>
-              </div>
-
-              <div className="px-4 pt-6 text-center sm:pt-0">
-                <strong
-                  className="block text-[28px] font-normal leading-none text-[#182235]"
-                  style={{ fontFamily: "var(--font-serif), serif" }}
-                >
-                  2026
-                </strong>
-                <span className="mt-2 block text-[12px] uppercase tracking-[0.22em] text-[#8c8376]">
-                  Top Producers ONE Sotheby&apos;s
-                </span>
-              </div>
+            <div className="border-y border-[#ddd8cd] py-5">
+              <p
+                className="m-0 text-[22px] font-normal tracking-[-0.01em] text-[#182235] md:text-[26px]"
+                style={{ fontFamily: "var(--font-serif), serif" }}
+              >
+                Hundreds of millions sold.
+              </p>
             </div>
 
             <div className="flex flex-col gap-4 border-b border-[#ddd8cd] py-4 text-[14px] text-[#182235] sm:flex-row sm:items-center sm:gap-6">

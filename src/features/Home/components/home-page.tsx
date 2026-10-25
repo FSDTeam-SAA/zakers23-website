@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { heroSlides } from "@/src/features/Home/HeroSection/data/hero-section.data";
@@ -15,7 +16,6 @@ import { TestimonialsSection } from "@/src/features/Home/Testimonials/components
 import { NewsletterSection } from "@/src/features/Home/components/newsletter-section";
 import { SubscriberSection } from "@/src/features/Home/components/subscriber-section";
 import { SiteFooter } from "@/src/features/Home/components/site-footer";
-import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyProjectModal";
 import { Ht } from "@/src/data/neighborhoods";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 import { MobileNavMenu } from "@/src/components/MobileNavMenu";
@@ -24,7 +24,6 @@ export function HomePage({ initialProjects }: { initialProjects?: any[] }) {
   const router = useRouter();
   const { openInquiry } = useInquiry();
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMatcherOpen, setIsMatcherOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,25 +42,17 @@ export function HomePage({ initialProjects }: { initialProjects?: any[] }) {
         <div className="site-header-inner">
           <a className="brand" href="#top">
             <Image
-              src="/images/logo.png"
+              src="/images/mcs-symbol.svg"
               alt="Miami New Development"
-              width={220}
-              height={58}
-              className="site-logo h-auto w-[68px] md:w-[76px]"
+              width={56}
+              height={56}
+              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
               priority
             />
           </a>
           <nav className="nav-links" aria-label="Primary">
-            <a href="/map">Explore Map</a>
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                setIsMatcherOpen(true);
-              }}
-            >
-              Find My Project
-            </a>
+            <Link href="/map">Explore Map</Link>
+            <Link href="/find-my-project">Find My Project</Link>
             <div className="relative group">
               <button
                 type="button"
@@ -87,8 +78,8 @@ export function HomePage({ initialProjects }: { initialProjects?: any[] }) {
                 ))}
               </div>
             </div>
-            <a href="/waterfront">Waterfront Homes</a>
-            <a href="/insights">Insights</a>
+            <Link href="/waterfront">Waterfront Homes</Link>
+            <Link href="/insights">Insights</Link>
             <a
               href="#contact"
               onClick={(event) => {
@@ -100,7 +91,7 @@ export function HomePage({ initialProjects }: { initialProjects?: any[] }) {
               Inquire
             </a>
           </nav>
-          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={isScrolled} />
+          <MobileNavMenu onOpenMatcher={() => router.push("/find-my-project")} isLightHeader={isScrolled} />
         </div>
       </header>
 
@@ -117,18 +108,6 @@ export function HomePage({ initialProjects }: { initialProjects?: any[] }) {
 
       <SubscriberSection />
       <SiteFooter />
-
-      {isMatcherOpen && (
-        <FindMyProjectModal
-          projects={initialProjects}
-          onClose={() => setIsMatcherOpen(false)}
-          onDone={(results) => {
-            setIsMatcherOpen(false);
-            localStorage.setItem("map-matcher-prefs", JSON.stringify(results.prefs));
-            router.push("/map");
-          }}
-        />
-      )}
     </main>
   );
 }

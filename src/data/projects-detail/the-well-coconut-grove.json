@@ -175,6 +175,79 @@
     "description": "THE WELL's first fully integrated residential community — 194 residences by Terra and Arquitectonica with Meyer Davis interiors. 13,000 SF wellness club, rooftop pool, holistic health programming. 1–4 BR from $1.4M, delivery 2028. Pricing available."
   },
   "slug": "the-well-coconut-grove",
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At contract execution"
+    },
+    {
+      "percentage": 10,
+      "milestone": "90 days after contract"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At groundbreaking (Completed)"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At building top-off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At closing (Est. Q1 2028)"
+    }
+  ],
+  "floorPlans": [
+    {
+      "type": "1 Bedroom Wellness Suite",
+      "beds": 1,
+      "baths": 1.5,
+      "sqft": "960 - 1,120 SF",
+      "startingPrice": 1500000,
+      "status": "Available"
+    },
+    {
+      "type": "2 Bedroom Residence",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,450 - 1,850 SF",
+      "startingPrice": 2400000,
+      "status": "Available"
+    },
+    {
+      "type": "3 Bedroom Grove Estate",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "2,200 - 2,800 SF",
+      "startingPrice": 3800000,
+      "status": "Available"
+    },
+    {
+      "type": "4 Bedroom Penthouse",
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": "3,500 - 4,200 SF",
+      "startingPrice": 5900000,
+      "status": "Available"
+    }
+  ],
+  "keyMetrics": [
+    {
+      "label": "WELLNESS PIONEER",
+      "value": "Category First",
+      "note": "THE WELL brand's first residential address with holistic medical integration"
+    },
+    {
+      "label": "WELLNESS CLUB",
+      "value": "13,000 SF",
+      "note": "Dedicated holistic healing club, rooftop pool, and tailored longevity routines"
+    },
+    {
+      "label": "SUPPLY SCARCITY",
+      "value": "50% Sold",
+      "note": "The only new luxury residential development in the core Coconut Grove pipeline"
+    }
+  ],
   "stage": "under_construction",
   "statusRemark": "50% SOLD · GROUNDBROKEN",
   "units": 194,

@@ -39,12 +39,82 @@
   "comingSoon": true,
   "completion": "2031",
   "ctaMicrocopy": "Pricing to be announced",
-  "densityScore": 80,
-  "depositStructure": [],
+  "depositStructure": [
+    {
+      "percentage": 10,
+      "milestone": "At reservation"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At contract execution"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At groundbreaking"
+    },
+    {
+      "percentage": 10,
+      "milestone": "At building top-off"
+    },
+    {
+      "percentage": 60,
+      "milestone": "At closing (Est. 2031)"
+    }
+  ],
+  "floorPlans": [
+    {
+      "type": "1 Bedroom Chronomat Collection",
+      "beds": 1,
+      "baths": 1.5,
+      "sqft": "750 - 920 SF",
+      "startingPrice": 1600000,
+      "status": "Reservation"
+    },
+    {
+      "type": "2 Bedroom Navitimer Suite",
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": "1,250 - 1,580 SF",
+      "startingPrice": 2500000,
+      "status": "Reservation"
+    },
+    {
+      "type": "3 Bedroom Superocean Residence",
+      "beds": 3,
+      "baths": 3.5,
+      "sqft": "1,850 - 2,400 SF",
+      "startingPrice": 3800000,
+      "status": "Reservation"
+    },
+    {
+      "type": "Double-Height Sky Penthouse with Pool",
+      "beds": 4,
+      "baths": 5,
+      "sqft": "4,500+ SF",
+      "startingPrice": 9500000,
+      "status": "Reservation"
+    }
+  ],
+  "keyMetrics": [
+    {
+      "label": "FIRST WATCH TOWER",
+      "value": "Breitling Debut",
+      "note": "Iconic Swiss watchmaker's inaugural global residential tower"
+    },
+    {
+      "label": "PRIME BRICKELL",
+      "value": "~70 Stories",
+      "note": "Architectural tower by Arquitectonica near Brickell City Centre"
+    },
+    {
+      "label": "B SOCIAL CLUB",
+      "value": "45,000 SF",
+      "note": "Two-level private social club with rooftop pools and wellness terraces"
+    }
+  ],
   "description": "B Residences is the flagship of Breitling's new branded residence collection and the watchmaker's first move into for-sale real estate. Rising approximately 70 stories in the heart of Brickell, the tower brings more than 300 condominiums to one of the district's last large prime parcels, near Brickell City Centre. Designed by Arquitectonica, the building pairs floor-to-ceiling glass and bronze-toned framing with a curved podium of landscaped amenity terraces. The collection culminates in penthouses with double-height living areas and private pools. At its center is a 45,000 square foot, two-level B Social Club, alongside rooftop pools, a private fitness center, concierge service, and indoor and outdoor social spaces. Partners Group, which owns Breitling, is investing approximately $220 million in the project alongside Empira Group, whose Miami team leads development. Construction is expected to begin in late 2028 with completion targeted for 2031.",
   "developer": "Partners Group, in partnership with Empira Group",
   "editorialLine": "Breitling's flagship branded residences, rising in Brickell.",
-  "floorPlans": [],
   "galleryMosaicHeight": "clamp(520px, 65vh, 720px)",
   "height": "~70 Stories",
   "heroImgPosition": "center",
