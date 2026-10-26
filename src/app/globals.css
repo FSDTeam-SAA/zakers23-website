@@ -1017,6 +1017,29 @@ input {
   font-weight: 600;
 }
 
+.neighborhood-scroll-track {
+  scrollbar-width: thin;
+  scrollbar-color: #bb9751 rgba(255, 255, 255, 0.08);
+}
+
+.neighborhood-scroll-track::-webkit-scrollbar {
+  height: 5px;
+}
+
+.neighborhood-scroll-track::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+.neighborhood-scroll-track::-webkit-scrollbar-thumb {
+  background: #bb9751;
+  border-radius: 4px;
+}
+
+.neighborhood-scroll-track::-webkit-scrollbar-thumb:hover {
+  background: #d4b068;
+}
+
 .discovery-empty {
   margin: 0;
   font-size: 12px;

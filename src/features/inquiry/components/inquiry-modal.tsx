@@ -86,8 +86,13 @@ export default function InquiryModal({
     const website = (data.get("website") as string) || "";
     const consentGranted = data.get("smsConsent") === "on";
 
-    if (!email) {
+    if (!email || !phone) {
       setStatus("error");
+      if (!email) {
+        toast.error("Please enter your email address.");
+      } else if (!phone) {
+        toast.error("Please enter your phone number.");
+      }
       return;
     }
 
@@ -154,10 +159,10 @@ export default function InquiryModal({
               <div className="consultation-fields">
                 <input aria-label="Your name" type="text" name="name" autoComplete="name" placeholder="Your name" required />
                 <input aria-label="Email address" type="email" name="email" autoComplete="email" placeholder="Email address" required />
-                <input aria-label="Phone (optional)" type="tel" name="phone" autoComplete="tel" placeholder="Phone (optional)" />
-                <ConsultationSelect name="budget" label="Price range" options={["Under $1M", "$1M to $3M", "$3M to $5M", "$5M to $10M", "$10M to $25M", "$25M to $50M", "$50M to $100M", "$100M and above", "Not sure yet"]} />
-                <ConsultationSelect name="primaryGoal" label="Primary goal" options={["Primary residence", "Vacation home", "Investment / rental", "Portfolio expansion", "Selling / assigning a property", "Just exploring"]} />
-                <ConsultationSelect name="timeline" label="Timeline" options={["As soon as possible", "Within 6 months", "6–12 months", "1–2 years", "2–3 years", "Flexible / just exploring"]} />
+                <input aria-label="Phone number" type="tel" name="phone" autoComplete="tel" placeholder="Phone number" required />
+                <ConsultationSelect name="budget" label="Price range (optional)" options={["Under $1M", "$1M to $3M", "$3M to $5M", "$5M to $10M", "$10M to $25M", "$25M to $50M", "$50M to $100M", "$100M and above", "Not sure yet"]} required={false} />
+                <ConsultationSelect name="primaryGoal" label="Primary goal" options={["Primary residence", "Vacation home", "Investment / rental", "Portfolio expansion", "Selling / assigning a property", "Just exploring"]} required={false} />
+                <ConsultationSelect name="timeline" label="Timeline" options={["As soon as possible", "Within 6 months", "6–12 months", "1–2 years", "2–3 years", "Flexible / just exploring"]} required={false} />
                 <textarea aria-label="Message (optional)" name="message" rows={3} placeholder="Message (optional)" />
               </div>
               <div className="consultation-consent">

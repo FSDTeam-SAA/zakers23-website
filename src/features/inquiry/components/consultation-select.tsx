@@ -2,9 +2,9 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 
-type Props = { name: string; label: string; options: string[] };
+type Props = { name: string; label: string; options: string[]; required?: boolean };
 
-export default function ConsultationSelect({ name, label, options }: Props) {
+export default function ConsultationSelect({ name, label, options, required = false }: Props) {
   const id = useId();
   const rootRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -58,15 +58,15 @@ export default function ConsultationSelect({ name, label, options }: Props) {
   return (
     <div ref={rootRef} className={`consultation-select ${open ? "is-open" : ""}`}
       onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false); }}>
-      <select className="consultation-native-select" name={name} value={value} required tabIndex={-1} aria-hidden="true"
+      <select className="consultation-native-select" name={name} value={value} required={required} tabIndex={-1} aria-hidden="true"
         onChange={(event) => choose(event.target.value)}
-        onInvalid={(event) => { event.preventDefault(); setInvalid(true); triggerRef.current?.focus(); }}>
-        <option value="" disabled>{label}</option>
+        onInvalid={(event) => { event.preventDefault(); if (required) { setInvalid(true); triggerRef.current?.focus(); } }}>
+        <option value="" disabled={required}>{label}</option>
         {options.map((option) => <option key={option}>{option}</option>)}
       </select>
       <button ref={triggerRef} type="button" className={`consultation-select-trigger ${value ? "has-value" : ""}`}
         role="combobox" aria-label={label} aria-expanded={open} aria-controls={`${id}-list`}
-        aria-haspopup="listbox" aria-required="true" aria-invalid={invalid}
+        aria-haspopup="listbox" aria-required={required ? "true" : "false"} aria-invalid={invalid}
         aria-describedby={invalid ? `${id}-error` : undefined}
         aria-activedescendant={open ? `${id}-${active}` : undefined}
         onClick={() => open ? setOpen(false) : expand()}
@@ -94,6 +94,14 @@ export default function ConsultationSelect({ name, label, options }: Props) {
       {invalid && <span className="consultation-select-error" id={`${id}-error`}>Please select an option.</span>}
       {open && <div className={`consultation-select-menu ${above ? "opens-above" : ""}`} style={{ maxHeight: height }}
         id={`${id}-list`} role="listbox" aria-label={label}>
+        {!required && value && (
+          <div role="option" aria-selected={false}
+            className="consultation-select-option"
+            style={{ color: "#8f96ab", fontStyle: "italic" }}
+            onPointerMove={() => setActive(-1)} onMouseDown={(event) => event.preventDefault()} onClick={() => choose("")}>
+            <span>Clear selection</span>
+          </div>
+        )}
         {options.map((option, index) => (
           <div key={option} id={`${id}-${index}`} role="option" aria-selected={value === option}
             className={`consultation-select-option ${active === index ? "is-active" : ""}`}

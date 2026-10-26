@@ -71,9 +71,6 @@ export function FeaturedProjectsSection({ projects }: FeaturedProjectsSectionPro
                   >
                     {project.price}
                   </p>
-                  <p className="mt-1.5 pt-1.5 border-t border-[#dfd8cb] text-[11px] text-[#7f7a70] truncate m-0" title={`Listing Courtesy of ${project.listingOffice || "ONE Sotheby's International Realty"}`}>
-                    <span className="text-[#b79255] font-medium">Courtesy:</span> {project.listingOffice || "ONE Sotheby's International Realty"}
-                  </p>
                 </div>
               </Link>
             </article>

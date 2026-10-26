@@ -514,7 +514,6 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
           font-weight: 500;
         ">
           <span style="color: ${m.dot}; margin-right: 6px;">●</span><strong>${proj.name}</strong>${priceText ? ` · <span style="color: #b89354;">${priceText}</span>` : ""}
-          ${proj.listingOffice ? `<div style="font-size: 9.5px; color: #788092; text-transform: none; letter-spacing: normal; margin-top: 2px;">Courtesy: ${proj.listingOffice}</div>` : ""}
         </div>
       `;
 
@@ -1779,21 +1778,6 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                             {showBadge}
                           </div>
                         )}
-                        {proj.listingOffice && (
-                          <div
-                            style={{
-                              fontSize: 11,
-                              color: theme.fog,
-                              overflow: "hidden",
-                              textOverflow: "ellipsis",
-                              whiteSpace: "nowrap",
-                              marginTop: 2
-                            }}
-                            title={`Listing Courtesy of ${proj.listingOffice}`}
-                          >
-                            <span style={{ color: theme.bronze, fontWeight: 500 }}>Courtesy:</span> {proj.listingOffice}
-                          </div>
-                        )}
                       </div>
                     </div>
                   </div>
@@ -2150,7 +2134,7 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                 const message = (formData.get("message") as string) || "";
                 const website = (formData.get("website") as string) || "";
                 const smsConsent = formData.get("smsConsent") === "on";
-                if (!email) return;
+                if (!email || !phone) return;
 
                 const submitBtn = form.querySelector("button[type='submit']") as HTMLButtonElement | null;
                 if (submitBtn) {
@@ -2201,7 +2185,7 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
               />
               <input
                 name="phone"
-                type="tel" placeholder="Phone Number"
+                type="tel" required placeholder="Phone Number"
                 style={{ width: "100%", padding: "10px 12px", border: `1px solid ${theme.dune}`, background: "#fff", fontSize: 16 }}
               />
               <textarea

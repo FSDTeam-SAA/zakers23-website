@@ -428,9 +428,6 @@ export default function WaterfrontPage({ initialListings }: { initialListings?: 
                         {item.baths ? <span>· {item.baths} Baths</span> : null}
                         {item.sqft ? <span>· {item.sqft.toLocaleString()} SF</span> : null}
                       </div>
-                      <div className="text-[12px] text-[rgba(250,250,248,0.65)] mt-2 pt-2 border-t border-[rgba(255,255,255,0.06)] truncate" title={`Listing Courtesy of ${item.listingOffice || "ONE Sotheby's International Realty"}`}>
-                        <span className="text-[#c9a84c] font-medium">Listing Office:</span> {item.listingOffice || "ONE Sotheby's International Realty"}
-                      </div>
                     </div>
                   </div>
 

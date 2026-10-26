@@ -597,9 +597,6 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
                                   <span className="npc-value">{conf.label}</span>
                                 </div>
                               </div>
-                              <div className="text-[11px] text-[#788092] mt-2 pt-2 border-t border-[#E5E0D8] truncate" title={`Listing Courtesy of ${proj.listingOffice || (proj as any).salesTeam || "ONE Sotheby's International Realty"}`}>
-                                <span className="text-[#B38E36] font-medium">Courtesy:</span> {proj.listingOffice || (proj as any).salesTeam || "ONE Sotheby's International Realty"}
-                              </div>
                             </div>
                           </div>
                         );
@@ -660,9 +657,6 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
                               <span className="npc-label">Construction Stage</span>
                               <span className="npc-value">{conf.label}</span>
                             </div>
-                          </div>
-                          <div className="text-[11px] text-[#788092] mt-2 pt-2 border-t border-[#E5E0D8] truncate" title={`Listing Courtesy of ${proj.listingOffice || (proj as any).salesTeam || "ONE Sotheby's International Realty"}`}>
-                            <span className="text-[#B38E36] font-medium">Courtesy:</span> {proj.listingOffice || (proj as any).salesTeam || "ONE Sotheby's International Realty"}
                           </div>
                         </div>
                       </div>

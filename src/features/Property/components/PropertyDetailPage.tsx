@@ -769,36 +769,6 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           </div>
         </div>
 
-        {/* Listing Brokerage Attribution Banner */}
-        <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 mb-12 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="flex items-start md:items-center gap-3.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#10b981] mt-1 md:mt-0 shrink-0" />
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="text-[11px] font-mono uppercase tracking-[0.22em] text-[#B38E36] font-semibold">
-                  Listing Brokerage Office
-                </span>
-                {project.mlsId && (
-                  <span className="text-[11px] font-mono text-[#8f96ab]">
-                    · MLS® #{project.mlsId}
-                  </span>
-                )}
-              </div>
-              <p className="text-[17px] font-serif font-medium text-[#1c1f26] m-0 mt-0.5">
-                {project.listingOffice || project.salesTeam || "ONE Sotheby's International Realty"}
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center gap-4 text-xs font-mono text-[#8f96ab] border-t md:border-t-0 border-[#f0ece1] pt-3 md:pt-0">
-            <span className="px-3 py-1 bg-[#FAF8F3] border border-[#e8e4db] rounded-[2px] text-[#1c1f26] font-semibold tracking-wider uppercase text-[11px]">
-              {project.statusRemark || "Active Listing"}
-            </span>
-            <span className="text-[11px] uppercase tracking-wider text-[#8f96ab]">
-              BeachesMLS / Miami AOR
-            </span>
-          </div>
-        </div>
-
         {/* Residences & Floor Plans Table */}
         {project.floorPlans && project.floorPlans.length > 0 && (
           <div className="mb-14">
@@ -1586,7 +1556,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           >
             <div className="flex flex-col">
               <span className="text-[12px] uppercase tracking-[0.25em] text-[#B38E36] font-semibold">
-                {project.neighborhood} &middot; {project.listingOffice ? `Courtesy of ${project.listingOffice}` : (project.badge || "ACTIVE PORTFOLIO")}
+                {project.neighborhood} &middot; {project.badge || "ACTIVE PORTFOLIO"}
               </span>
               <h3 className="font-serif text-lg md:text-xl text-white font-normal tracking-wide">
                 {project.name}

@@ -267,14 +267,9 @@ export default function ComparePage() {
                   <h3 className="text-lg md:text-xl font-serif text-[#1c1f26] mb-1 font-semibold">
                     {projA.name}
                   </h3>
-                  <p className="text-xs text-[#8f96ab] font-light mb-1">
+                  <p className="text-xs text-[#8f96ab] font-light mb-3">
                     {projA.neighborhood}
                   </p>
-                  {projA.listingOffice && (
-                    <p className="text-[11px] text-[#B38E36] truncate mb-3" title={`Listing Courtesy of ${projA.listingOffice}`}>
-                      <span className="font-medium text-[#788092]">Courtesy:</span> {projA.listingOffice}
-                    </p>
-                  )}
                 </div>
                 <div className="flex gap-2">
                   <Link
@@ -333,14 +328,9 @@ export default function ComparePage() {
                   <h3 className="text-lg md:text-xl font-serif text-[#1c1f26] mb-1 font-semibold">
                     {projB.name}
                   </h3>
-                  <p className="text-xs text-[#8f96ab] font-light mb-1">
+                  <p className="text-xs text-[#8f96ab] font-light mb-3">
                     {projB.neighborhood}
                   </p>
-                  {projB.listingOffice && (
-                    <p className="text-[11px] text-[#B38E36] truncate mb-3" title={`Listing Courtesy of ${projB.listingOffice}`}>
-                      <span className="font-medium text-[#788092]">Courtesy:</span> {projB.listingOffice}
-                    </p>
-                  )}
                 </div>
                 <div className="flex gap-2">
                   <Link
