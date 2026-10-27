@@ -75,7 +75,11 @@ export function MobileNavMenu({ onOpenMatcher, className = "", isLightHeader = f
     });
   }, [openInquiry, projectName]);
 
-  const menuItems = [
+  type MenuItem =
+    | { label: string; href: string; isAction?: false; action?: never }
+    | { label: string; action: () => void; isAction: true; href?: string };
+
+  const menuItems: MenuItem[] = [
     { label: "Find My Project", href: "/find-my-project", isAction: false },
     { label: "Neighborhoods", href: "/neighborhood", isAction: false },
     { label: "Waterfront Homes", href: "/waterfront", isAction: false },
