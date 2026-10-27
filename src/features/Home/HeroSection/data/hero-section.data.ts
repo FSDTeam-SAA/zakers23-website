@@ -20,12 +20,13 @@ export const heroSlides: HeroSlide[] = [
     position: "center center"
   },
   {
-    image: "/images/cipriani/skyline.webp",
-    eyebrow: "Brickell",
-    title: "Cipriani Residences Brickell",
-    supporting: "Cipriani's first ground-up residential tower.",
-    credit: "TOPPED OFF AT 950 FT · JULY 2026",
-    slug: "cipriani-residences-brickell"
+    image: "/images/fouquets/hero.webp",
+    eyebrow: "Design District",
+    title: "Miami Design Residences by Fouquet's",
+    supporting: "Chipperfield architecture. Fouquet's hospitality. The Design District's first luxury address.",
+    credit: "SALES NOW OPEN · FROM $1.8M+",
+    slug: "miami-design-residences-fouquets",
+    position: "center center"
   },
   {
     image: "/images/faena/hero.webp",

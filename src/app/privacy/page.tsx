@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter } from "@/src/features/Home/components/site-footer";
 
+import { Navbar } from "@/src/components/Navbar";
+
 export const metadata: Metadata = {
   title: "Privacy Policy | ONE Sotheby's International Realty",
   description:
@@ -11,19 +13,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-[#faf8f5] text-[#1c1f26] flex flex-col justify-between">
-      <header className="border-b border-[#e2dcd0] bg-white/90 backdrop-blur-md px-6 py-4 sticky top-0 z-40">
-        <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <Link href="/" className="font-serif text-xl tracking-tight text-[#1c1f26] font-semibold">
-            Zachary Akers <span className="text-[#a87b31] font-light">| Privacy</span>
-          </Link>
-          <Link
-            href="/"
-            className="text-xs uppercase tracking-[0.2em] bg-[#1c1f26] text-white px-4 py-2 rounded-[2px] hover:bg-[#a87b31] transition-colors"
-          >
-            Back to Home
-          </Link>
-        </div>
-      </header>
+      <Navbar variant="light" />
 
       <div className="max-w-4xl mx-auto px-6 py-12 md:py-16">
         <span className="inline-block text-xs uppercase tracking-[0.28em] text-[#a87b31] font-medium mb-3">

@@ -10,6 +10,7 @@ import { subscribeNewsletter } from "@/src/lib/inquiry";
 import { toast } from "sonner";
 import { HoneypotField } from "@/src/components/HoneypotField";
 import MobileNavMenu from "@/src/components/MobileNavMenu";
+import { Navbar } from "@/src/components/Navbar";
 
 interface Project {
   id: number;
@@ -109,10 +110,10 @@ export default function ComparePage() {
     if (replacingSlot === null) return;
     const updated = [...compareIds];
     updated[replacingSlot] = project.id;
-    
+
     // Remove duplicates if same project selected in both slots
     const unique = Array.from(new Set(updated));
-    
+
     localStorage.setItem("zakers23-compare-projects", JSON.stringify(unique));
     setCompareIds(unique);
     setReplacingSlot(null);
@@ -160,8 +161,8 @@ export default function ComparePage() {
   // Filter projects for modal selection
   const filteredProjectsForSelect = allProjects.filter((p) => {
     const isAlreadySelected = compareIds.includes(p.id);
-    const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          p.neighborhood.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      p.neighborhood.toLowerCase().includes(searchQuery.toLowerCase());
     return !isAlreadySelected && matchesSearch;
   });
 
@@ -170,55 +171,8 @@ export default function ComparePage() {
 
   return (
     <div className="min-h-screen bg-[#FAF8F3] text-[#1c1f26] flex flex-col font-sans">
-      {/* Site Header Navbar */}
-      <header className="site-header site-header-scrolled map-site-header">
-        <div className="site-header-inner">
-          <Link className="brand" href="/">
-            <Image
-              src="/images/mcs-symbol.svg"
-              alt="Miami New Development"
-              width={56}
-              height={56}
-              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
-              priority
-            />
-          </Link>
-          <nav className="nav-links" aria-label="Primary">
-            <Link href="/map">Explore Map</Link>
-            <Link href="/find-my-project">Find My Project</Link>
-            <div className="relative group">
-              <Link href="/neighborhood" className="nav-dropdown flex items-center gap-1">
-                Neighborhoods
-                <span aria-hidden="true">⌄</span>
-              </Link>
-              <div className="nav-dropdown-menu">
-                {Object.entries(Ht).map(([slug, data]) => (
-                  <Link
-                    key={slug}
-                    href={`/neighborhood/${slug}`}
-                    className="nav-dropdown-item"
-                  >
-                    {data.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <Link href="/waterfront">Waterfront Homes</Link>
-            <Link href="/insights">Insights</Link>
-            <Link
-              href="/#contact"
-              onClick={(event) => {
-                event.preventDefault();
-                openInquiry();
-              }}
-              className="nav-inquire-btn"
-            >
-              Inquire
-            </Link>
-          </nav>
-          <MobileNavMenu isLightHeader={true} />
-        </div>
-      </header>
+      {/* Unified Navbar */}
+      <Navbar variant="dark" />
 
       {/* Hero Section */}
       <section className="relative h-[320px] md:h-[400px] flex items-center justify-center text-center overflow-hidden">
@@ -577,11 +531,11 @@ export default function ComparePage() {
         <div className="max-w-[1140px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Image
-              src="/images/mcs-symbol.svg"
+              src="/images/MCS_Stacked_DarkBackground.png"
               alt="Logo"
-              width={48}
-              height={48}
-              className="h-10 w-10 object-contain brightness-200 opacity-60 mb-4"
+              width={144}
+              height={32}
+              className="h-7 w-auto object-contain opacity-85 mb-4"
             />
             <p className="text-[12px] leading-relaxed max-w-[200px]">
               A curated gateway to Miami&apos;s most ambitious luxury residences.
@@ -590,7 +544,7 @@ export default function ComparePage() {
           <div>
             <h5 className="text-[12px] uppercase tracking-wider font-semibold text-white/95 mb-3">Explore</h5>
             <div className="flex flex-col gap-2">
-              <Link href="/map" className="hover:text-white transition-colors">Explore Map</Link>
+              {/* <Link href="/map" className="hover:text-white transition-colors">Explore Map</Link> */}
               <Link href="/neighborhood" className="hover:text-white transition-colors">Neighborhoods</Link>
               <Link href="/waterfront" className="hover:text-white transition-colors">Waterfront Homes</Link>
               <Link href="/insights" className="hover:text-white transition-colors">Insights</Link>

@@ -12,6 +12,7 @@ import { submitInquiry } from "@/src/lib/inquiry";
 import { toast } from "sonner";
 import { HoneypotField } from "@/src/components/HoneypotField";
 import MobileNavMenu from "@/src/components/MobileNavMenu";
+import { Navbar } from "@/src/components/Navbar";
 
 // Map Project Interface matching extracted schema
 export interface MapProject {
@@ -797,63 +798,8 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
       className={`nav-bar-offset map-view-page ${viewMode === "list" ? "map-view-page--list" : ""}`}
       style={{ display: "flex", flexDirection: "column", height: "100dvh", minHeight: 0, overflow: "hidden" }}
     >
-      {/* Site Header Navbar */}
-      <header className="site-header site-header-scrolled map-site-header">
-        <div className="site-header-inner">
-          <Link className="brand" href="/">
-            <Image
-              src="/images/mcs-symbol.svg"
-              alt="Miami New Development"
-              width={56}
-              height={56}
-              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
-              priority
-            />
-          </Link>
-          <nav className="nav-links" aria-label="Primary">
-            <Link href="/map">Explore Map</Link>
-            <Link href="/find-my-project">Find My Project</Link>
-            <div className="relative group">
-              <button
-                type="button"
-                className="nav-dropdown flex items-center gap-1"
-                onClick={() => router.push("/neighborhood")}
-              >
-                Neighborhoods
-                <span aria-hidden="true">⌄</span>
-              </button>
-              <div className="nav-dropdown-menu">
-                {Object.entries(Ht).map(([slug, data]) => (
-                  <button
-                    key={slug}
-                    type="button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      router.push(`/neighborhood/${slug}`);
-                    }}
-                    className="nav-dropdown-item"
-                  >
-                    {data.name}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <Link href="/waterfront">Waterfront Homes</Link>
-            <Link href="/insights">Insights</Link>
-            <Link
-              href="/#contact"
-              onClick={(event) => {
-                event.preventDefault();
-                openInquiry();
-              }}
-              className="nav-inquire-btn"
-            >
-              Inquire
-            </Link>
-          </nav>
-          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={true} />
-        </div>
-      </header>
+      {/* Unified Navbar */}
+      <Navbar variant="dark" />
 
       {idxError && (
         <div role="alert" style={{ position: "relative", zIndex: 1200, padding: "10px 18px", background: "#fff4e5", borderBottom: "1px solid #e6c994", color: theme.ink, fontSize: 12 }}>

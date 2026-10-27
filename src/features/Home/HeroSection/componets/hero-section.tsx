@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { HeroSlide } from "@/src/features/Home/HeroSection/types/hero-section.types";
 import { useHeroSlider } from "@/src/features/Home/HeroSection/hooks/use-hero-slider";
+import { handleImageError } from "@/src/lib/image-utils";
 
 type HeroSectionProps = {
   slides: HeroSlide[];
@@ -33,6 +34,7 @@ export function HeroSection({ slides }: HeroSectionProps) {
               alt={slide.title}
               className="hero-image"
               style={{ objectPosition: slide.position || "center center" }}
+              onError={handleImageError}
             />
             <div className="hero-gradient hero-gradient-top" />
             <div className="hero-gradient hero-gradient-bottom" />

@@ -13,6 +13,7 @@ import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 import { toast } from "sonner";
 import { HoneypotField } from "@/src/components/HoneypotField";
 import MobileNavMenu from "@/src/components/MobileNavMenu";
+import { Navbar } from "@/src/components/Navbar";
 import { handleImageError, LUXURY_FALLBACK_IMAGE_URL, getSafeImageUrl } from "@/src/lib/image-utils";
 
 export interface ResaleProperty {
@@ -334,63 +335,8 @@ export default function ResalePropertyDetailPage({
 
   return (
     <main className="min-h-screen bg-[#FAF8F3] text-[#1c1f26] font-sans antialiased selection:bg-[#B38E36]/20">
-      {/* Premium Header/Navbar */}
-      <header className={`site-header site-header-light ${isScrolled ? "site-header-scrolled" : ""}`}>
-        <div className="site-header-inner">
-          <Link href="/" className="brand">
-            <Image
-              src="/images/mcs-symbol.svg"
-              alt="Miami New Development"
-              width={56}
-              height={56}
-              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
-              priority
-            />
-          </Link>
-          <nav className="nav-links" aria-label="Primary">
-            <Link href="/map">Explore Map</Link>
-            <Link href="/find-my-project">Find My Project</Link>
-            <div className="relative group">
-              <button
-                type="button"
-                className="nav-dropdown flex items-center gap-1"
-                onClick={() => router.push("/neighborhood")}
-              >
-                Neighborhoods
-                <span aria-hidden="true">⌄</span>
-              </button>
-              <div className="nav-dropdown-menu">
-                {Object.entries(Ht).map(([slug, data]) => (
-                  <button
-                    key={slug}
-                    type="button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      router.push(`/neighborhood/${slug}`);
-                    }}
-                    className="nav-dropdown-item"
-                  >
-                    {data.name}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <Link href="/waterfront">Waterfront Homes</Link>
-            <Link href="/insights">Insights</Link>
-            <a
-              href="/#contact"
-              onClick={(event) => {
-                event.preventDefault();
-                openInquiry(`Resale Inquiry — ${property.name}`);
-              }}
-              className="nav-inquire-btn"
-            >
-              Inquire
-            </a>
-          </nav>
-          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={true} projectName={property?.name} />
-        </div>
-      </header>
+      {/* Unified Navbar */}
+      <Navbar variant="light" projectName={property?.name} />
 
       {/* Hero Showcase Photography Section - Rounded Grid Collage */}
       <section className="max-w-[1140px] mx-auto px-6 pt-28 pb-8">
@@ -490,8 +436,8 @@ export default function ResalePropertyDetailPage({
                 ? "Waterfront Penthouse Residence"
                 : property.propertySubtype === "condo" ||
                   /[\s#]+(?:unit|apt|ph)?\s*[0-9]+[a-z]?$/i.test((property.name || "").trim())
-                ? "Waterfront Condominium Residence"
-                : "Single-Family Waterfront Estate")}
+                  ? "Waterfront Condominium Residence"
+                  : "Single-Family Waterfront Estate")}
           </span>
           <h2 className="text-3xl md:text-5xl font-serif font-normal text-[#1c1f26] leading-[1.1] mb-2">
             {property.name}
@@ -1081,11 +1027,10 @@ export default function ResalePropertyDetailPage({
                     key={idx}
                     type="button"
                     onClick={() => setActiveImgIdx(idx)}
-                    className={`relative w-16 h-12 md:w-20 md:h-14 flex-shrink-0 rounded-[2px] overflow-hidden transition-all duration-200 cursor-pointer ${
-                      isActive
+                    className={`relative w-16 h-12 md:w-20 md:h-14 flex-shrink-0 rounded-[2px] overflow-hidden transition-all duration-200 cursor-pointer ${isActive
                         ? "ring-2 ring-[#B38E36] ring-offset-2 ring-offset-[#070b12] scale-105 opacity-100"
                         : "opacity-45 hover:opacity-100"
-                    }`}
+                      }`}
                   >
                     <img
                       src={getSafeImageUrl(thumbUrl, LUXURY_FALLBACK_IMAGE_URL)}

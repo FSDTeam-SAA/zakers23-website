@@ -13,6 +13,7 @@ import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 import { toast } from "sonner";
 import { HoneypotField } from "@/src/components/HoneypotField";
 import MobileNavMenu from "@/src/components/MobileNavMenu";
+import { Navbar } from "@/src/components/Navbar";
 import PropertyDetailSkeleton from "./PropertyDetailSkeleton";
 import ResalePropertyDetailPage from "./ResalePropertyDetailPage";
 import { handleImageError, FALLBACK_IMAGE_URL, LUXURY_FALLBACK_IMAGE_URL, getSafeImageUrl } from "@/src/lib/image-utils";
@@ -467,8 +468,8 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
     const rawDesc = (project as any).description;
     const realDesc = rawDesc
       ? String(rawDesc)
-          .replace(/(["'“‘]?Winter White House["'”’]?\s+of)\s*,/gi, '“Winter White House” of President Richard Nixon,')
-          .replace(/(["'“‘]?Winter White House["'”’]?\s+of)\s+(?!President|Richard)/gi, '“Winter White House” of President Richard Nixon, ')
+        .replace(/(["'“‘]?Winter White House["'”’]?\s+of)\s*,/gi, '“Winter White House” of President Richard Nixon,')
+        .replace(/(["'“‘]?Winter White House["'”’]?\s+of)\s+(?!President|Richard)/gi, '“Winter White House” of President Richard Nixon, ')
       : "";
     if (realDesc && realDesc.length > 30) {
       const rawParas = realDesc.split(/\n\s*\n/).filter((p: string) => p.trim().length > 0);
@@ -504,63 +505,8 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
 
   return (
     <main className="property-page bg-[#FAF8F3] min-h-screen text-[#1c1f26]">
-      {/* Premium Header/Navbar */}
-      <header className={`site-header site-header-light ${isScrolled ? "site-header-scrolled" : ""}`}>
-        <div className="site-header-inner">
-          <Link href="/" className="brand">
-            <Image
-              src="/images/mcs-symbol.svg"
-              alt="Miami New Development"
-              width={56}
-              height={56}
-              className="site-logo h-auto w-[52px]"
-              priority
-            />
-          </Link>
-          <nav className="nav-links" aria-label="Primary">
-            <Link href="/map">Explore Map</Link>
-            <Link href="/find-my-project">Find My Project</Link>
-            <div className="relative group">
-              <button
-                type="button"
-                className="nav-dropdown flex items-center gap-1"
-                onClick={() => router.push("/neighborhood")}
-              >
-                Neighborhoods
-                <span aria-hidden="true">⌄</span>
-              </button>
-              <div className="nav-dropdown-menu">
-                {Object.entries(Ht).map(([slug, data]) => (
-                  <button
-                    key={slug}
-                    type="button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      router.push(`/neighborhood/${slug}`);
-                    }}
-                    className="nav-dropdown-item"
-                  >
-                    {data.name}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <Link href="/waterfront">Waterfront Homes</Link>
-            <Link href="/insights">Insights</Link>
-            <a
-              href="/#contact"
-              onClick={(event) => {
-                event.preventDefault();
-                openInquiry(project?.name);
-              }}
-              className="nav-inquire-btn"
-            >
-              Inquire
-            </a>
-          </nav>
-          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={true} projectName={project?.name} />
-        </div>
-      </header>
+      {/* Unified Navbar */}
+      <Navbar variant="light" projectName={project?.name} />
 
       {/* Hero Container - Rounded Grid Collage */}
       <section className="max-w-[1140px] mx-auto px-6 pt-28 pb-8">
@@ -643,14 +589,13 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           >
             &larr; Back
           </button>
-          
+
           <button
             onClick={handleToggleCompare}
-            className={`text-[12px] tracking-[0.25em] uppercase transition-all min-h-[44px] px-4 py-2.5 border inline-flex items-center justify-center gap-2 font-semibold ${
-              isCompared
+            className={`text-[12px] tracking-[0.25em] uppercase transition-all min-h-[44px] px-4 py-2.5 border inline-flex items-center justify-center gap-2 font-semibold ${isCompared
                 ? "bg-[#B38E36] border-[#B38E36] text-white"
                 : "border-[#1c1f26] text-[#1c1f26] hover:bg-[#1c1f26] hover:text-white"
-            }`}
+              }`}
           >
             {isCompared ? "✓ Compared" : "+ Compare Development"}
           </button>
@@ -815,8 +760,8 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                     const rawPrice = plan.startingPrice ?? plan.price;
                     const priceDisplay = rawPrice
                       ? (typeof rawPrice === "number"
-                          ? `$${rawPrice.toLocaleString("en-US")}`
-                          : rawPrice)
+                        ? `$${rawPrice.toLocaleString("en-US")}`
+                        : rawPrice)
                       : (plan.priceNote || "Inquire for Pricing");
 
                     return (
@@ -1643,11 +1588,10 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                     key={idx}
                     type="button"
                     onClick={() => setActiveImgIdx(idx)}
-                    className={`relative w-16 h-12 md:w-20 md:h-14 flex-shrink-0 rounded-[2px] overflow-hidden transition-all duration-200 cursor-pointer ${
-                      isActive
+                    className={`relative w-16 h-12 md:w-20 md:h-14 flex-shrink-0 rounded-[2px] overflow-hidden transition-all duration-200 cursor-pointer ${isActive
                         ? "ring-2 ring-[#B38E36] ring-offset-2 ring-offset-[#070b12] scale-105 opacity-100"
                         : "opacity-45 hover:opacity-100"
-                    }`}
+                      }`}
                   >
                     <img
                       src={getImageUrl(thumbUrl)}

@@ -14,6 +14,7 @@ import { handleImageError, FALLBACK_IMAGE_URL, getSafeImageUrl } from "@/src/lib
 import { toast } from "sonner";
 import { HoneypotField } from "@/src/components/HoneypotField";
 import MobileNavMenu from "@/src/components/MobileNavMenu";
+import { Navbar } from "@/src/components/Navbar";
 
 // Type definitions
 interface MapProject {
@@ -97,17 +98,17 @@ function calculateStats(projects: MapProject[]) {
   const count = projects.length;
   const mins = projects.map((o) => o.minPrice).filter((o): o is number => o != null && o > 0);
   const maxs = projects.map((o) => o.maxPrice).filter((o): o is number => o != null && o > 0);
-  
+
   const minVal = mins.length ? Math.min(...mins) : null;
   const maxVal = maxs.length ? Math.max(...maxs) : minVal;
   const priceLabel = minVal != null && maxVal != null ? `${formatPriceNum(minVal)} – ${formatPriceNum(maxVal)}` : "Contact for pricing";
-  
+
   const psfList = projects
     .map((o) => o.pricePerSqft)
     .filter((o): o is number => typeof o === "number" && !Number.isNaN(o));
   const avgSqft = psfList.length > 0 ? Math.round(psfList.reduce((sum, val) => sum + val, 0) / psfList.length) : null;
   const avgPsfLabel = avgSqft != null ? `$${avgSqft.toLocaleString()}/sf` : "—";
-  
+
   const years = projects.flatMap((o) => extractYears(o.completion));
   let deliveryLabel = "—";
   if (years.length) {
@@ -115,7 +116,7 @@ function calculateStats(projects: MapProject[]) {
     const maxYear = Math.max(...years);
     deliveryLabel = minYear === maxYear ? `${minYear}` : `${minYear}–${maxYear}`;
   }
-  
+
   return { count, priceLabel, avgPsfLabel, deliveryLabel };
 }
 
@@ -381,63 +382,8 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
 
   return (
     <main className="neighborhood-page">
-      {/* Premium Header/Navbar */}
-      <header className={`site-header site-header-light ${isScrolled ? "site-header-scrolled" : ""}`}>
-        <div className="site-header-inner">
-          <Link href="/" className="brand">
-            <Image
-              src="/images/mcs-symbol.svg"
-              alt="Miami New Development"
-              width={56}
-              height={56}
-              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
-              priority
-            />
-          </Link>
-          <nav className="nav-links" aria-label="Primary">
-            <Link href="/map">Explore Map</Link>
-            <Link href="/find-my-project">Find My Project</Link>
-            <div className="relative group">
-              <button
-                type="button"
-                className="nav-dropdown flex items-center gap-1"
-                onClick={() => router.push("/neighborhood")}
-              >
-                Neighborhoods
-                <span aria-hidden="true">⌄</span>
-              </button>
-              <div className="nav-dropdown-menu">
-                {Object.entries(Ht).map(([s, data]) => (
-                  <button
-                    key={s}
-                    type="button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      router.push(`/neighborhood/${s}`);
-                    }}
-                    className="nav-dropdown-item"
-                  >
-                    {data.name}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <Link href="/waterfront">Waterfront Homes</Link>
-            <Link href="/insights">Insights</Link>
-            <a
-              href="/#contact"
-              onClick={(event) => {
-                event.preventDefault();
-                openInquiry();
-              }}
-              className="nav-inquire-btn"
-            >
-              Inquire
-            </a>
-          </nav>
-          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={true} />
-        </div>
-      </header>
+      {/* Unified Navbar */}
+      <Navbar variant="light" inquiryContext={`Neighborhood — ${hood.name}`} />
 
       {/* Main Neighborhood Banner & Intro */}
       <section className="neighborhood-header">
@@ -449,7 +395,7 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
             <span className="mx-2">&middot;</span>
             <span className="text-[#1c1f26]">{hood.name}</span>
           </nav>
-          
+
           <h1 className="neighborhood-title">{hood.headline}</h1>
           <p className="neighborhood-lead">{hood.description}</p>
 
@@ -510,7 +456,7 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
               <span className="inventory-count-text">
                 {filteredProjects.length} {filteredProjects.length === 1 ? "Project" : "Projects"} in {hood.name}
               </span>
-              
+
               {/* Construction stage filter pills */}
               <div className="stage-tabs">
                 <button
@@ -545,7 +491,7 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
                   <div key={tier.key}>
                     <h3 className="project-tier-title">{tier.label}</h3>
                     {tier.description && <p className="project-tier-description">{tier.description}</p>}
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                       {tier.projects.map((proj) => {
                         const conf = getStageConfig(proj.stage);
@@ -577,7 +523,7 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
                                 <span className="npc-badge">{proj.badge}</span>
                               )}
                             </div>
-                            
+
                             <div className="npc-details">
                               <div className="npc-header">
                                 <div className="npc-title-row">
@@ -586,7 +532,7 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
                                 </div>
                                 <span className="npc-meta">{displayMeta}</span>
                               </div>
-                              
+
                               <div className="npc-footer">
                                 <div className="npc-price-block">
                                   <span className="npc-label">Price From</span>
@@ -638,7 +584,7 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
                             <span className="npc-badge">{proj.badge}</span>
                           )}
                         </div>
-                        
+
                         <div className="npc-details">
                           <div className="npc-header">
                             <div className="npc-title-row">
@@ -647,7 +593,7 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
                             </div>
                             <span className="npc-meta">{displayMeta}</span>
                           </div>
-                          
+
                           <div className="npc-footer">
                             <div className="npc-price-block">
                               <span className="npc-label">Price From</span>
@@ -695,7 +641,7 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
         <div className="neighborhood-container max-w-[800px] mx-auto px-6 text-center">
           <h2 className="contact-info-title text-[#1c1f26] mb-2">Considering {hood.name}?</h2>
           <p className="contact-info-desc text-[#5f6575] mb-8">{contactFormSubtitle}</p>
-          
+
           <div className="max-w-[640px] mx-auto text-left">
             {formStatus === "done" ? (
               <div className="p-6 bg-green-500/10 border border-green-500/20 rounded text-center">
@@ -715,7 +661,7 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
                       className="form-input-custom"
                     />
                   </div>
-                  
+
                   <div className="form-group-custom">
                     <input
                       type="email"
@@ -730,7 +676,7 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
                     )}
                   </div>
                 </div>
-                
+
                 <div className="form-group-custom">
                   <textarea
                     placeholder="What are you looking for? (optional)"
@@ -760,7 +706,7 @@ export default function NeighborhoodDetailPage({ slug, initialProjects }: { slug
           <span className="text-[12px] tracking-[0.25em] uppercase text-[#B38E36] font-semibold mb-6 block">
             Explore Other Neighborhoods
           </span>
-          
+
           <div className="flex flex-wrap gap-3">
             {Object.entries(Ht)
               .filter(([s]) => s !== slug)

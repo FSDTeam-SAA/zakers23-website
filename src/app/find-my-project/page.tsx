@@ -5,9 +5,9 @@ import { getPreconstructionProjects } from "@/src/lib/server/idx-properties";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Find My Project | Interactive Pre-Construction Discovery Map",
+  title: "Find My Project | Miami Pre-Construction Developments Directory",
   description:
-    "Interactive Miami pre-construction condo map. Zoom and explore active luxury development towers across South Florida with Zachary Akers.",
+    "Explore Miami's premier pre-construction condominium developments, branded residences, and luxury waterfront towers across South Florida with Zachary Akers.",
 };
 
 export default function FindMyProjectPage() {

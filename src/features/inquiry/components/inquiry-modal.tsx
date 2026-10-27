@@ -122,6 +122,10 @@ export default function InquiryModal({
       });
       setStatus("done");
       toast.success("Inquiry received! Zachary will follow up with tailored options.");
+      try {
+        localStorage.setItem("has_submitted_registration_modal", "true");
+        sessionStorage.setItem("has_submitted_registration_modal", "true");
+      } catch {}
       onSuccess?.();
     } catch (err: unknown) {
       setStatus("error");

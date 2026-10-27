@@ -9,6 +9,7 @@ import FindMyProjectModal from "@/src/features/FindMyProject/components/FindMyPr
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 import { handleImageError, getSafeImageUrl, FALLBACK_IMAGE_URL } from "@/src/lib/image-utils";
 import MobileNavMenu from "@/src/components/MobileNavMenu";
+import { Navbar } from "@/src/components/Navbar";
 
 // Helper to get image URL
 function getImageUrl(path: string | null | undefined): string {
@@ -65,63 +66,8 @@ export default function NeighborhoodListPage({ initialProjects }: { initialProje
 
   return (
     <main className="min-h-screen bg-[#0C1523] text-[#FAF9F6] font-sans selection:bg-[#C9A84C]/30">
-      {/* Premium Header/Navbar */}
-      <header className={`site-header ${isScrolled ? "site-header-scrolled" : ""}`}>
-        <div className="site-header-inner">
-          <Link href="/" className="brand">
-            <Image
-              src="/images/mcs-symbol.svg"
-              alt="Miami New Development"
-              width={56}
-              height={56}
-              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
-              priority
-            />
-          </Link>
-          <nav className="nav-links" aria-label="Primary">
-            <Link href="/map">Explore Map</Link>
-            <Link href="/find-my-project">Find My Project</Link>
-            <div className="relative group">
-              <button
-                type="button"
-                className="nav-dropdown flex items-center gap-1"
-                onClick={() => router.push("/neighborhood")}
-              >
-                Neighborhoods
-                <span aria-hidden="true">⌄</span>
-              </button>
-              <div className="nav-dropdown-menu">
-                {Object.entries(Ht).map(([slug, data]) => (
-                  <button
-                    key={slug}
-                    type="button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      router.push(`/neighborhood/${slug}`);
-                    }}
-                    className="nav-dropdown-item"
-                  >
-                    {data.name}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <Link href="/waterfront">Waterfront Homes</Link>
-            <Link href="/insights">Insights</Link>
-            <a
-              href="/#contact"
-              onClick={(event) => {
-                event.preventDefault();
-                openInquiry();
-              }}
-              className="nav-inquire-btn"
-            >
-              Inquire
-            </a>
-          </nav>
-          <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={isScrolled} />
-        </div>
-      </header>
+      {/* Unified Navbar */}
+      <Navbar variant="dark" />
 
       {/* Hero Header */}
       <section className="pt-32 pb-16 px-6 md:px-12 max-w-[1200px] mx-auto text-center md:text-left">

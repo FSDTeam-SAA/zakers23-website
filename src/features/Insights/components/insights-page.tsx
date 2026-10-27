@@ -13,6 +13,7 @@ import { subscribeNewsletter } from "@/src/lib/inquiry";
 import { toast } from "sonner";
 import { HoneypotField } from "@/src/components/HoneypotField";
 import MobileNavMenu from "@/src/components/MobileNavMenu";
+import { Navbar } from "@/src/components/Navbar";
 
 export function InsightsPage() {
   const router = useRouter();
@@ -68,77 +69,8 @@ export function InsightsPage() {
 
   return (
     <main className="insights-page">
-      <header className={isScrolled ? "site-header insights-header insights-header-scrolled" : "site-header insights-header"}>
-        <Link href="/" className="logo-link" aria-label="Miami New Development home">
-          <Image
-            src="/images/mcs-symbol.svg"
-            alt="Miami New Development"
-            width={56}
-            height={56}
-            className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
-            priority
-          />
-        </Link>
-        <nav className="nav-links" aria-label="Primary">
-          <Link href="/map">
-            <span className="insights-nav-link-label">Explore Map</span>
-          </Link>
-          <button type="button" className="insights-nav-button" onClick={() => setIsMatcherOpen(true)}>
-            <span className="insights-nav-link-label">Find My Project</span>
-          </button>
-          <div className="relative group">
-            <button
-              type="button"
-              className="nav-dropdown insights-nav-button flex items-center gap-1"
-              onClick={() => router.push("/neighborhood")}
-            >
-              <span className="insights-nav-link-label">Neighborhoods</span>
-              <span aria-hidden="true">⌄</span>
-            </button>
-            <div className="nav-dropdown-menu">
-              {Object.entries(Ht).map(([slug, data]) => (
-                <button
-                  key={slug}
-                  type="button"
-                  onClick={(event) => {
-                    event.stopPropagation();
-                    router.push(`/neighborhood/${slug}`);
-                  }}
-                  className="nav-dropdown-item"
-                >
-                  {data.name}
-                </button>
-              ))}
-            </div>
-          </div>
-          <Link href="/waterfront">
-            <span className="insights-nav-link-label">Waterfront Homes</span>
-          </Link>
-          <Link href="/insights" className="insights-nav-active">
-            <span className="insights-nav-link-label">Insights</span>
-          </Link>
-        </nav>
-        <div className="insights-header-tools">
-          <a
-            href="#insights-briefing"
-            onClick={(event) => {
-              event.preventDefault();
-              openInquiry();
-            }}
-            style={{ cursor: "pointer" }}
-            className="insights-header-inquire"
-          >
-            <span className="insights-nav-link-label">Inquire</span>
-          </a>
-          <div className="insights-weather-widget" aria-label="Miami weather">
-            <span className="insights-weather-icon" aria-hidden="true">
-              ☁
-            </span>
-            <span className="insights-weather-temp">81°</span>
-          </div>
-        </div>
-        <MobileNavMenu onOpenMatcher={() => setIsMatcherOpen(true)} isLightHeader={true} />
-      </header>
+      {/* Unified Navbar */}
+      <Navbar variant="light" inquiryContext="Market Insights" />
 
       <section className="insights-hero">
         <div className="insights-shell">

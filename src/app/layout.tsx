@@ -46,6 +46,26 @@ export const metadata: Metadata = {
     description: "Miami's finest luxury waterfront estates and pre-construction developments.",
     images: ["/images/anantara/aerial-helipad-day.webp"],
   },
+  icons: {
+    icon: [
+      { url: "/images/Favicon/favicon.ico" },
+      { url: "/images/Favicon/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/images/Favicon/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/Favicon/favicon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/images/Favicon/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/images/Favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "icon",
+        url: "/images/Favicon/icon-512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

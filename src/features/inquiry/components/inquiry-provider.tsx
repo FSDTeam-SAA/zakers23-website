@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useCallback, useContext, useMemo, useState } from "react";
+import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import InquiryModal from "./inquiry-modal";
 
 export type InquiryOptions = {
@@ -20,8 +20,20 @@ const InquiryContext = createContext<InquiryContextValue>({
   closeInquiry: () => {},
 });
 
+const SUBMITTED_KEY = "has_submitted_registration_modal";
+const AUTO_DELAY_MS = 30 * 1000; // 30 seconds
+
 export function InquiryProvider({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    try {
+      return localStorage.getItem(SUBMITTED_KEY) === "true";
+    } catch {
+      return false;
+    }
+  });
+
   const [inquiryOptions, setInquiryOptions] = useState<InquiryOptions>({
     context: "",
     projectName: "",
@@ -56,6 +68,52 @@ export function InquiryProvider({ children }: { children: React.ReactNode }) {
 
   const closeInquiry = useCallback(() => setIsOpen(false), []);
 
+  const handleSuccess = useCallback(() => {
+    setIsSubmitted(true);
+    try {
+      localStorage.setItem(SUBMITTED_KEY, "true");
+      sessionStorage.setItem(SUBMITTED_KEY, "true");
+    } catch {}
+  }, []);
+
+  // 30-second recurring timer:
+  // Opens after 30s. If user closes without submitting, re-opens after another 30s.
+  // If user submits even once, it never shows again.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (isSubmitted) return;
+
+    try {
+      if (localStorage.getItem(SUBMITTED_KEY) === "true") {
+        setIsSubmitted(true);
+        return;
+      }
+    } catch {}
+
+    // When modal is currently open, do not schedule another timer
+    if (isOpen) return;
+
+    const timerId = setTimeout(() => {
+      try {
+        if (localStorage.getItem(SUBMITTED_KEY) === "true") {
+          setIsSubmitted(true);
+          return;
+        }
+      } catch {}
+
+      setInquiryOptions({
+        context: "VIP Registration",
+        projectName: "",
+        buttonClicked: "30-Second Auto Modal",
+      });
+      setIsOpen(true);
+    }, AUTO_DELAY_MS);
+
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [isOpen, isSubmitted]);
+
   const value = useMemo(() => ({ openInquiry, closeInquiry }), [openInquiry, closeInquiry]);
 
   return (
@@ -68,6 +126,7 @@ export function InquiryProvider({ children }: { children: React.ReactNode }) {
         buttonClicked={inquiryOptions.buttonClicked}
         requireForDetails={inquiryOptions.requireForDetails}
         onClose={closeInquiry}
+        onSuccess={handleSuccess}
       />
     </InquiryContext.Provider>
   );

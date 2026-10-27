@@ -7,7 +7,7 @@ import { AdvisorSection } from "@/src/features/Home/components/advisor-section";
 import { SiteFooter } from "@/src/features/Home/components/site-footer";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 import { getSafeImageUrl, getDistinctFallback, LUXURY_FALLBACK_IMAGE_URL } from "@/src/lib/image-utils";
-import MobileNavMenu from "@/src/components/MobileNavMenu";
+import { Navbar } from "@/src/components/Navbar";
 
 type Enclave = {
   name: string;
@@ -209,34 +209,8 @@ export default function WaterfrontPage({ initialListings }: { initialListings?: 
 
   return (
     <main className="waterfront-page">
-      {/* Header */}
-      <header className="waterfront-header">
-        <div className="site-header-inner">
-          <Link href="/" aria-label="Miami New Development home" className="brand">
-            <Image
-              src="/images/mcs-symbol.svg"
-              alt="Miami New Development"
-              width={56}
-              height={56}
-              priority
-              className="site-logo h-auto w-[52px]"
-            />
-          </Link>
-          <nav className="waterfront-nav" aria-label="Primary">
-            <Link href="/map">Explore Map</Link>
-            <Link href="/find-my-project">Find My Project</Link>
-            <Link href="/neighborhood">Neighborhoods</Link>
-            <Link className="waterfront-nav-active" href="/waterfront">
-              Waterfront Homes
-            </Link>
-            <Link href="/insights">Insights</Link>
-            <button type="button" className="nav-inquire-btn" onClick={() => openInquiry("Waterfront Homes")}>
-              Inquire
-            </button>
-          </nav>
-          <MobileNavMenu />
-        </div>
-      </header>
+      {/* Unified Navbar */}
+      <Navbar variant="dark" inquiryContext="Waterfront Homes" />
 
       {/* Hero Intro */}
       <section className="waterfront-intro">
@@ -295,19 +269,17 @@ export default function WaterfrontPage({ initialListings }: { initialListings?: 
             <button
               key={tab.id}
               onClick={() => setPropertyTypeFilter(tab.id)}
-              className={`min-h-[40px] px-4 py-1.5 inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.16em] border transition-all rounded-[2px] cursor-pointer ${
-                propertyTypeFilter === tab.id
+              className={`min-h-[40px] px-4 py-1.5 inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.16em] border transition-all rounded-[2px] cursor-pointer ${propertyTypeFilter === tab.id
                   ? "border-[#c9a84c] bg-[#c9a84c] text-[#14171e] font-semibold shadow-md"
                   : "border-[rgba(255,255,255,0.12)] bg-[rgba(255,255,255,0.04)] text-[rgba(250,250,248,0.7)] hover:border-[rgba(255,255,255,0.3)]"
-              }`}
+                }`}
             >
               <span>{tab.label}</span>
               <span
-                className={`text-[11px] px-1.5 py-0.5 rounded-full ${
-                  propertyTypeFilter === tab.id
+                className={`text-[11px] px-1.5 py-0.5 rounded-full ${propertyTypeFilter === tab.id
                     ? "bg-[#14171e] text-[#c9a84c]"
                     : "bg-[rgba(255,255,255,0.1)] text-[rgba(250,250,248,0.6)]"
-                }`}
+                  }`}
               >
                 {tab.count}
               </span>
@@ -346,11 +318,10 @@ export default function WaterfrontPage({ initialListings }: { initialListings?: 
             <button
               key={n}
               onClick={() => setSelectedNeighborhood(n)}
-              className={`min-h-[40px] px-3.5 py-1.5 inline-flex items-center justify-center text-[12px] uppercase tracking-[0.14em] border transition-all rounded-[2px] cursor-pointer ${
-                selectedNeighborhood === n
+              className={`min-h-[40px] px-3.5 py-1.5 inline-flex items-center justify-center text-[12px] uppercase tracking-[0.14em] border transition-all rounded-[2px] cursor-pointer ${selectedNeighborhood === n
                   ? "border-[#c9a84c] bg-[#c9a84c] text-[#14171e] font-semibold"
                   : "border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.03)] text-[rgba(250,250,248,0.6)] hover:border-[rgba(255,255,255,0.3)]"
-              }`}
+                }`}
             >
               {n}
             </button>

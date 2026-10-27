@@ -7,11 +7,11 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 gap-10 border-b border-[rgba(91,97,111,0.3)] pb-10 md:grid-cols-[1.08fr_0.84fr_1.45fr]">
           <div>
             <Image
-              src="/images/mcs-symbol.svg"
+              src="/images/MCS_Stacked_DarkBackground.png"
               alt="Miami New Development"
-              width={56}
-              height={56}
-              className="mb-4 h-12 w-12 object-contain"
+              width={162}
+              height={36}
+              className="mb-4 h-8 w-auto object-contain opacity-95"
             />
             <div className="border-t border-[rgba(210,176,114,0.5)] pt-5 text-[14px] leading-[1.55] text-[#596071]">
               <p className="m-0">Designed, Developed, and Presented by</p>
@@ -76,11 +76,11 @@ export function SiteFooter() {
 
         <div className="flex flex-col gap-4 pt-5 text-[13px] leading-[1.5] md:flex-row md:items-center md:justify-between">
           <Image
-            src="/images/mcs-symbol.svg"
+            src="/images/MCS_Stacked_DarkBackground.png"
             alt="Miami New Development"
-            width={48}
-            height={48}
-            className="h-10 w-10 object-contain opacity-70"
+            width={135}
+            height={30}
+            className="h-6 w-auto object-contain opacity-75"
           />
           <div className="flex flex-wrap items-center gap-3 text-[#6e7485]">
             <a href="/privacy" className="hover:text-[#d2b072] transition-colors underline">

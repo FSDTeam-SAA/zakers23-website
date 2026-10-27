@@ -1,32 +1,12 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { Navbar } from "@/src/components/Navbar";
 
 export default function PropertyDetailSkeleton() {
   return (
     <main className="property-page bg-[#FAF8F3] min-h-screen text-[#1c1f26]">
-      {/* Luxury Header Skeleton */}
-      <header className="site-header site-header-light">
-        <div className="site-header-inner">
-          <Link href="/" className="opacity-70">
-            <Image
-              src="/images/mcs-symbol.svg"
-              alt="Miami New Development"
-              width={56}
-              height={56}
-              className="site-logo h-10 w-10 md:h-12 md:w-12 object-contain"
-              priority
-            />
-          </Link>
-          <div className="flex items-center gap-6">
-            <div className="luxury-shimmer w-20 h-4 rounded-sm hidden md:block" />
-            <div className="luxury-shimmer w-24 h-4 rounded-sm hidden md:block" />
-            <div className="luxury-shimmer w-28 h-8 rounded-full" />
-          </div>
-        </div>
-      </header>
+      {/* Unified Navbar */}
+      <Navbar variant="light" />
 
       {/* Hero Section Skeleton */}
       <section className="relative w-full h-[480px] md:h-[600px] bg-[#1c1f26] overflow-hidden flex flex-col justify-end p-6 md:p-14">
