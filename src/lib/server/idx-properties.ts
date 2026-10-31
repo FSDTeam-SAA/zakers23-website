@@ -91,8 +91,13 @@ let inFlightRequest: Promise<{
 }> | null = null;
 
 const number = (value: unknown): number | null => {
+  if (value === null || value === undefined) return null;
   if (typeof value === "number" && Number.isFinite(value)) return value;
-  const parsed = Number(String(value ?? "").replace(/[^0-9.-]/g, ""));
+  const rawStr = String(value).trim();
+  if (!rawStr) return null;
+  const cleaned = rawStr.replace(/[^0-9.-]/g, "");
+  if (!cleaned || cleaned === "-" || cleaned === ".") return null;
+  const parsed = Number(cleaned);
   return Number.isFinite(parsed) ? parsed : null;
 };
 
@@ -569,9 +574,9 @@ function normalize(record: Record<string, unknown>, index: number): IdxProject |
     isFeatured: Boolean(record.isFeatured || (record.featured === "y") || index < 6),
     lat: latitude,
     lng: longitude,
-    minPrice: (number(record.minPrice) ?? price),
-    maxPrice: (number(record.maxPrice) ?? price),
-    priceFrom: text(record.priceFrom) || (price ? `$${price.toLocaleString("en-US")}` : "Pricing on request"),
+    minPrice: (number(record.minPrice) ?? price ?? (localMatch ? number(localMatch.minPrice) : null)),
+    maxPrice: (number(record.maxPrice) ?? price ?? (localMatch ? number(localMatch.maxPrice) : null)),
+    priceFrom: text(record.priceFrom) || (price ? `$${price.toLocaleString("en-US")}` : (localMatch && typeof localMatch.priceFrom === "string" ? localMatch.priceFrom : "Pricing on request")),
     completion: text(record.completion, record.completionDate) || (yearBuilt ? String(yearBuilt) : "Contact for details"),
     statusRemark: text(record.statusRemark, status),
     badge: text(record.badge) || `MLS #${listingId} · ACTIVE`,
@@ -579,10 +584,10 @@ function normalize(record: Record<string, unknown>, index: number): IdxProject |
     img,
     imgs,
     fallbackImg,
-    minBed: number(record.minBed) ?? beds,
-    maxBed: number(record.maxBed) ?? beds,
-    baths: baths ?? (number(record.baths) ?? undefined),
-    sqft: sqft ?? (number(record.sqft) ?? undefined),
+    minBed: number(record.minBed) ?? beds ?? (localMatch ? number(localMatch.minBed) : null),
+    maxBed: number(record.maxBed) ?? beds ?? (localMatch ? number(localMatch.maxBed) : null),
+    baths: (baths ?? number(record.baths) ?? (localMatch ? number(localMatch.baths) : null)) || undefined,
+    sqft: (sqft ?? number(record.sqft) ?? (localMatch ? number(localMatch.sqft) : null)) || undefined,
     pricePerSqft,
     description: text(record.description, description),
     fullDetailsURL,
