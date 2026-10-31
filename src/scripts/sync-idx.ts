@@ -229,7 +229,7 @@ async function syncIdxData() {
     });
   }
 
-  const outputPath = path.join(process.cwd(), "src/data/miami-projects.json");
+  const outputPath = path.join(process.cwd(), "src/data/waterfront-mls.json");
   fs.writeFileSync(outputPath, JSON.stringify(projects, null, 2), "utf8");
   console.log(`\nSuccessfully saved ${projects.length} real IDX listings to ${outputPath}!`);
 }

@@ -287,69 +287,10 @@ async function syncIdxData() {
     return p[Math.abs(seed) % p.length];
   };
 
-  // Save projects to miami-projects.json
-  const outputPath = path.join(process.cwd(), "src/data/miami-projects.json");
+  // Save projects to waterfront-mls.json (used as fallback for MLS waterfront queries)
+  const outputPath = path.join(process.cwd(), "src/data/waterfront-mls.json");
   fs.writeFileSync(outputPath, JSON.stringify(projects, null, 2), "utf8");
   console.log(`\nSuccessfully saved ${projects.length} real IDX listings to ${outputPath}!`);
-
-  // Update featured projects with reliable luxury visuals
-  const topFeatured = projects.slice(0, 6).map((p, idx) => ({
-    neighborhood: p.neighborhood,
-    name: p.name,
-    price: p.priceFrom,
-    status: `MLS #${p.mlsId} · ACTIVE`,
-    image: getFallback(p.neighborhood, idx),
-    cta: "View listing",
-    slug: p.slug,
-  }));
-
-  const featuredFile = path.join(process.cwd(), "src/features/Home/FeaturedProject/data/featured-project.data.ts");
-  fs.writeFileSync(
-    featuredFile,
-    `import type { Project } from "@/src/features/Home/FeaturedProject/types/featured-project.types";\n\nexport const featuredProjects: Project[] = ${JSON.stringify(
-      topFeatured,
-      null,
-      2
-    )};\n`,
-    "utf8"
-  );
-  console.log("Updated featured-project.data.ts with live IDX listings!");
-
-  // Update hero slides with reliable luxury visuals
-  const heroSlides = projects.slice(0, 5).map((p, idx) => ({
-    image: getFallback(p.neighborhood, idx),
-    eyebrow: p.neighborhood,
-    title: p.name,
-    supporting: `MLS #${p.mlsId} · ${p.priceFrom} · ${p.minBed ? p.minBed + "-Bed " : ""}Luxury Residence`,
-    credit: `BEACHESMLS · ACTIVE · ${p.priceFrom}`,
-    slug: p.slug,
-  }));
-
-  const heroFile = path.join(process.cwd(), "src/features/Home/HeroSection/data/hero-section.data.ts");
-  fs.writeFileSync(
-    heroFile,
-    `import type { HeroSlide } from "@/src/features/Home/HeroSection/types/hero-section.types";\n\nexport const heroSlides: HeroSlide[] = ${JSON.stringify(
-      heroSlides,
-      null,
-      2
-    )};\n`,
-    "utf8"
-  );
-  console.log("Updated hero-section.data.ts with live IDX listings!");
-
-  // Update discovery engine project names
-  const projectNames = projects.map((p) => p.name);
-  const discoveryFile = path.join(process.cwd(), "src/features/Home/DiscoveryEngine/data/discovery-engine.data.ts");
-  fs.writeFileSync(
-    discoveryFile,
-    `import type { ProjectName } from "@/src/features/Home/DiscoveryEngine/types/discovery-engine.types";\n\nexport const projectNames: ProjectName[] = ${JSON.stringify(
-      projectNames,
-      null,
-      2
-    )};\n`,
-    "utf8"
-  );
-  console.log("Updated discovery-engine.data.ts with live IDX listings!");
 }
 
 syncIdxData().catch((err) => {
