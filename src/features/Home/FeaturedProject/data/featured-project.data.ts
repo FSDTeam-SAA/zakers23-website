@@ -2,6 +2,16 @@ import type { Project } from "@/src/features/Home/FeaturedProject/types/featured
 
 export const featuredProjects: Project[] = [
   {
+    neighborhood: "Brickell Bay",
+    name: "ATMA Miami by Aman",
+    price: "Pricing TBD · Coming Soon",
+    status: "NEWLY ANNOUNCED · 1,049-FT BAYFRONT TOWER",
+    image: "/images/atma/skyline-hero.webp",
+    cta: "View project",
+    slug: "atma-miami-by-aman",
+    listingOffice: "OKO Group & Oak Row Equities"
+  },
+  {
     neighborhood: "Edgewater",
     name: "Anantara Miami Resort & Residences",
     price: "From $1.8M",

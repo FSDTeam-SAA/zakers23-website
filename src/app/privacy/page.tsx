@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   title: "Privacy Policy | ONE Sotheby's International Realty",
   description:
     "Privacy Policy and Communication Terms for Zachary Akers and ONE Sotheby's International Realty, including TCPA compliance, SMS terms, and data protection practices.",
+  alternates: { canonical: "/privacy" },
+  openGraph: { url: "/privacy" },
 };
 
 export default function PrivacyPolicyPage() {

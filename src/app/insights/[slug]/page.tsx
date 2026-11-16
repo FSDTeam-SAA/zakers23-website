@@ -1,5 +1,6 @@
 import { InsightDetailPage } from "@/src/features/Insights/components/insight-detail-page";
 import { insightArticles } from "@/src/data/insights";
+import { SITE_URL } from "@/src/lib/site-url";
 
 interface PageProps {
   params: Promise<{
@@ -19,10 +20,36 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title: article.title,
     description: article.excerpt,
+    alternates: { canonical: `/insights/${slug}` },
+    openGraph: { url: `/insights/${slug}` },
   };
 }
 
 export default async function Page({ params }: PageProps) {
   const { slug } = await params;
-  return <InsightDetailPage slug={slug} />;
+  const article = insightArticles.find((item) => item.slug === slug);
+  return (
+    <>
+      {article && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: article.title,
+              description: article.excerpt,
+              datePublished: new Date(article.date).toISOString(),
+              dateModified: new Date(article.date).toISOString(),
+              mainEntityOfPage: `${SITE_URL}/insights/${article.slug}`,
+              image: article.heroImage,
+              author: { "@type": "Person", name: "Zachary Akers" },
+              publisher: { "@type": "Organization", name: "The Miami Condo Source" },
+            }),
+          }}
+        />
+      )}
+      <InsightDetailPage slug={slug} />
+    </>
+  );
 }

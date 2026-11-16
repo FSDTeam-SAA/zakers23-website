@@ -4,15 +4,15 @@ import { ImageFallbackProvider } from "@/src/components/ImageFallbackProvider";
 import LenisProvider from "@/src/components/LenisProvider";
 import { WhatsAppButton } from "@/src/components/WhatsAppButton";
 import { ContactClickTracker } from "@/src/components/ContactClickTracker";
+import { GoogleTag } from "@/src/components/GoogleTag";
 import { InquiryProvider } from "@/src/features/inquiry/components/inquiry-provider";
 import { Toaster } from "sonner";
+import { isPreviewDeployment, SITE_URL } from "@/src/lib/site-url";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://zakers23-website-2t4d.vercel.app";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   referrer: "no-referrer",
   title: {
     default: "Miami New Development | Pre-Construction Condos & Luxury Waterfront Estates",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Miami New Development & Luxury Waterfront Estates | Zachary Akers",
     description:
       "Explore Miami's best pre-construction condos and luxury waterfront estates. Pricing, floor plans, and private presentations with Zachary Akers, ONE Sotheby's International Realty.",
-    url: siteUrl,
+    url: "/",
     siteName: "Miami New Development | Zachary Akers",
     locale: "en_US",
     type: "website",
@@ -46,6 +46,7 @@ export const metadata: Metadata = {
     description: "Miami's finest luxury waterfront estates and pre-construction developments.",
     images: ["/images/anantara/aerial-helipad-day.webp"],
   },
+  robots: isPreviewDeployment ? { index: false, follow: false } : undefined,
   icons: {
     icon: [
       { url: "/images/Favicon/favicon.ico" },
@@ -72,6 +73,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body>
+        <GoogleTag />
         <ImageFallbackProvider />
         <LenisProvider>
           <InquiryProvider>
@@ -86,6 +88,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           richColors
           closeButton
           theme="light"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["RealEstateAgent", "Organization"],
+              name: "Zachary Akers | The Miami Condo Source",
+              url: SITE_URL,
+              email: "Zakers@onesothebysrealty.com",
+              telephone: "+1-305-343-5371",
+              areaServed: "Miami, Florida",
+              parentOrganization: { "@type": "Organization", name: "ONE Sotheby's International Realty" },
+            }),
+          }}
         />
       </body>
     </html>

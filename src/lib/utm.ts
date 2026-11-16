@@ -4,6 +4,7 @@ export interface UtmParams {
   utm_campaign?: string;
   utm_term?: string;
   utm_content?: string;
+  gclid?: string;
 }
 
 const UTM_STORAGE_KEY = "zakers_utm_attribution";
@@ -23,6 +24,7 @@ export function captureUtmParameters(): UtmParams {
       "utm_campaign",
       "utm_term",
       "utm_content",
+      "gclid",
     ];
 
     const currentUtm: UtmParams = {};

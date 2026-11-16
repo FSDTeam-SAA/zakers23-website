@@ -799,7 +799,7 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
       style={{ display: "flex", flexDirection: "column", height: "100dvh", minHeight: 0, overflow: "hidden" }}
     >
       {/* Unified Navbar */}
-      <Navbar variant="dark" />
+      <Navbar variant="light" className="map-site-header" />
 
       {idxError && (
         <div role="alert" style={{ position: "relative", zIndex: 1200, padding: "10px 18px", background: "#fff4e5", borderBottom: "1px solid #e6c994", color: theme.ink, fontSize: 12 }}>
@@ -2107,6 +2107,10 @@ export function MapExplorePage({ projectNames, featuredProjects, initialProjects
                     },
                   });
                   toast.success("Inquiry submitted successfully! Zachary will contact you shortly.");
+                  try {
+                    localStorage.setItem("has_submitted_registration_modal", "true");
+                    sessionStorage.setItem("has_submitted_registration_modal", "true");
+                  } catch {}
                   setModal(null);
                 } catch {
                   toast.error("Failed to submit inquiry. Please try again.");

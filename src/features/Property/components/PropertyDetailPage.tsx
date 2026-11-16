@@ -36,6 +36,8 @@ interface MapProject {
   stories?: number | null;
   height?: number | null;
   pricePerSqft: number | null;
+  minSqft?: number | null;
+  maxSqft?: number | null;
   mlsId?: string;
   comingSoon?: boolean;
   badge?: string;
@@ -118,6 +120,19 @@ function getSafeImage(
   return LUXURY_FALLBACK_IMAGE_URL;
 }
 
+function getGalleryAlt(project: MapProject, imageUrl: string, index: number): string {
+  const fileName = imageUrl.split("/").pop()?.replace(/\.[a-z0-9]+(?:\?.*)?$/i, "") || "";
+  const description = fileName
+    .replace(/[-_]+/g, " ")
+    .replace(/\bhero\b/gi, "tower exterior")
+    .replace(/\bhero2\b/gi, "tower exterior")
+    .replace(/\bimg\d*\b/gi, "residence view")
+    .trim();
+  return description
+    ? `${project.name} — ${description}`
+    : `${project.name} — property view ${index + 1}`;
+}
+
 function formatPriceStr(price: string | number | null | undefined): string {
   if (price === null || price === undefined) return "—";
   const str = String(price).trim();
@@ -130,6 +145,26 @@ function formatPriceStr(price: string | number | null | undefined): string {
     return `$${num}`;
   }
   return str;
+}
+
+function formatPlanBedsBaths(plan: any): React.ReactNode {
+  const rawBed = plan.beds;
+  const rawBath = plan.baths;
+  const hasBed = rawBed !== null && rawBed !== undefined && rawBed !== "" && rawBed !== "—";
+  const hasBath = rawBath !== null && rawBath !== undefined && rawBath !== "" && rawBath !== "—";
+
+  if (!hasBed && !hasBath) {
+    return <span className="text-[#8f96ab] italic">Inquire</span>;
+  }
+
+  const bedLabel = hasBed
+    ? `${rawBed} ${typeof rawBed === "number" && rawBed === 1 ? "Bed" : "Beds"}`
+    : null;
+  const bathLabel = hasBath
+    ? `${rawBath} ${typeof rawBath === "number" && rawBath === 1 ? "Bath" : "Baths"}`
+    : null;
+
+  return [bedLabel, bathLabel].filter(Boolean).join(" · ");
 }
 
 export default function PropertyDetailPage({ slug, initialProject }: { slug: string; initialProject?: MapProject }) {
@@ -218,6 +253,10 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
   // Form intake state
   const [formName, setFormName] = useState("");
   const [formEmail, setFormEmail] = useState("");
+  const [formPhone, setFormPhone] = useState("");
+  const [formBudget, setFormBudget] = useState("");
+  const [formTimeline, setFormTimeline] = useState("");
+  const [formPurchasePurpose, setFormPurchasePurpose] = useState("");
   const [formMessage, setFormMessage] = useState("");
   const [formHoneypot, setFormHoneypot] = useState("");
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
@@ -277,15 +316,25 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
     );
   }, [project]);
 
+  // ATMA's supplied lead rendering is a panoramic skyline composition.
+  // Preserve it as one uninterrupted hero while retaining this shared detail template below.
+  const usePanoramicHero = project?.slug === "atma-miami-by-aman";
+
   // Gallery images array: each listing shows strictly its own photos
   const galleryImgs = useMemo(() => {
     if (!project) return [];
     const pool = (project.imgs && project.imgs.length > 0 ? project.imgs : [project.img])
       .filter((img): img is string => typeof img === "string" && img.trim().length > 0)
       .filter((img) => isWaldorf || !img.toLowerCase().includes("waldorf"));
-    if (pool.length > 0) return pool;
+    const uniquePool = pool.filter(
+      (image, index, images) =>
+        images.findIndex((candidate) => candidate.split("?")[0].toLowerCase() === image.split("?")[0].toLowerCase()) === index
+    );
+    if (uniquePool.length > 0) return uniquePool;
     return [LUXURY_FALLBACK_IMAGE_URL];
   }, [project, isWaldorf]);
+
+  const isPreconstruction = Boolean(project && !project.isResale && project.propertyType !== "resale");
 
   // Related projects list
   const relatedProjects = useMemo(() => {
@@ -424,17 +473,22 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       await submitInquiry({
         name: formName,
         email: formEmail,
+        phone: formPhone,
         message: formMessage,
         website: formHoneypot,
         projectName: project.name,
         buttonClicked: "Submit Request",
         source: "Website",
-        details: { Property: project.name },
+        details: { Property: project.name, Budget: formBudget, Timeline: formTimeline, "Purchase purpose": formPurchasePurpose },
       });
       setFormStatus("done");
       toast.success(`Inquiry received for ${project.name}! Zachary will follow up with pricing & floor plans.`);
       setFormName("");
       setFormEmail("");
+      setFormPhone("");
+      setFormBudget("");
+      setFormTimeline("");
+      setFormPurchasePurpose("");
       setFormMessage("");
       setFormHoneypot("");
     } catch {
@@ -488,6 +542,123 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
     ];
   }, [project]);
 
+  // Derived bedroom range (e.g. "1 to 5 bedrooms" or "3 bedrooms")
+  const bedroomText = useMemo(() => {
+    if (!project) return null;
+    let min = project.minBed ?? null;
+    let max = project.maxBed ?? null;
+
+    if (min === null && project.floorPlans && project.floorPlans.length > 0) {
+      const planBeds = project.floorPlans
+        .map((p: any) => (typeof p.beds === "number" ? p.beds : parseInt(String(p.beds), 10)))
+        .filter((n: number) => !isNaN(n) && n > 0);
+      if (planBeds.length > 0) {
+        min = Math.min(...planBeds);
+        max = Math.max(...planBeds);
+      }
+    }
+
+    if (min !== null && max !== null && min !== max) {
+      return `${min} to ${max} bedrooms`;
+    }
+    if (min !== null) {
+      return `${min} ${min === 1 ? "bedroom" : "bedrooms"}`;
+    }
+    if (max !== null) {
+      return `Up to ${max} bedrooms`;
+    }
+    return null;
+  }, [project?.minBed, project?.maxBed, project?.floorPlans]);
+
+  // Derived bathroom range (e.g. "1.5 to 6.5 bathrooms" or "2 bathrooms")
+  const bathroomText = useMemo(() => {
+    if (!project) return null;
+    if (project.baths) {
+      return `${project.baths} ${project.baths === 1 ? "bath" : "bathrooms"}`;
+    }
+    if (project.floorPlans && project.floorPlans.length > 0) {
+      const planBaths = project.floorPlans
+        .map((p: any) => (typeof p.baths === "number" ? p.baths : parseFloat(String(p.baths))))
+        .filter((n: number) => !isNaN(n) && n > 0);
+      if (planBaths.length > 0) {
+        const min = Math.min(...planBaths);
+        const max = Math.max(...planBaths);
+        if (min !== max) {
+          return `${min} to ${max} bathrooms`;
+        }
+        return `${min} ${min === 1 ? "bathroom" : "bathrooms"}`;
+      }
+    }
+    return null;
+  }, [project?.baths, project?.floorPlans]);
+
+  // Derived living area range (e.g. "1,160 to 5,526 SF" or "3,200 SF")
+  const livingAreaText = useMemo(() => {
+    if (!project) return null;
+    const minSq = (project as any).minSqft ?? null;
+    const maxSq = (project as any).maxSqft ?? null;
+    if (minSq && maxSq && minSq !== maxSq) {
+      return `${minSq.toLocaleString()} to ${maxSq.toLocaleString()} SF`;
+    }
+    if (project.sqft) {
+      return `${project.sqft.toLocaleString()} SF`;
+    }
+    if (minSq) {
+      return `From ${minSq.toLocaleString()} SF`;
+    }
+    if (project.floorPlans && project.floorPlans.length > 0) {
+      const planSqfts: number[] = [];
+      project.floorPlans.forEach((p: any) => {
+        if (typeof p.sqft === "number") {
+          planSqfts.push(p.sqft);
+        } else if (typeof p.sqft === "string") {
+          const numbers = p.sqft.replace(/,/g, "").match(/\d+/g);
+          if (numbers) {
+            numbers.forEach((n: string) => {
+              const parsed = parseInt(n, 10);
+              if (parsed >= 300 && parsed <= 50000) planSqfts.push(parsed);
+            });
+          }
+        }
+      });
+      if (planSqfts.length > 0) {
+        const min = Math.min(...planSqfts);
+        const max = Math.max(...planSqfts);
+        if (min !== max) {
+          return `${min.toLocaleString()} to ${max.toLocaleString()} SF`;
+        }
+        return `${min.toLocaleString()} SF`;
+      }
+    }
+    return null;
+  }, [(project as any)?.minSqft, (project as any)?.maxSqft, project?.sqft, project?.floorPlans]);
+
+  // Derived formatted stories / height (e.g. "68 stories", "75 stories")
+  const storiesHeightText = useMemo(() => {
+    if (!project) return "Luxury Tower";
+    if (project.stories) {
+      return `${project.stories} stories`;
+    }
+    const rawHeight = (project as any).height;
+    if (typeof rawHeight === "number") {
+      if (rawHeight <= 120) {
+        return `${rawHeight} stories`;
+      }
+      return `${rawHeight} ft`;
+    }
+    if (typeof rawHeight === "string" && rawHeight.trim()) {
+      if (/stories|story/i.test(rawHeight)) {
+        const match = rawHeight.match(/\d+/);
+        return match ? `${match[0]} stories` : rawHeight;
+      }
+      return rawHeight;
+    }
+    if (project.pricePerSqft) {
+      return `$${project.pricePerSqft.toLocaleString()}/SF`;
+    }
+    return "Luxury Tower";
+  }, [project?.stories, project?.height, project?.pricePerSqft]);
+
   if (!project) {
     return <PropertyDetailSkeleton />;
   }
@@ -511,13 +682,13 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       {/* Hero Container - Rounded Grid Collage */}
       <section className="max-w-[1140px] mx-auto px-6 pt-28 pb-8">
         <div className="relative overflow-hidden rounded-[8px] bg-[#FAF8F3]">
-          <div className="property-hero-collage grid grid-cols-1 md:grid-cols-[2.1fr_1fr] gap-[4px] h-[340px] md:h-[450px] bg-[#FAF8F3]">
+          <div className={`property-hero-collage grid grid-cols-1 ${usePanoramicHero ? "h-[340px] md:h-[640px]" : "md:grid-cols-[2.1fr_1fr] h-[340px] md:h-[450px]"} gap-[4px] bg-[#FAF8F3]`}>
             <div className="relative h-full w-full overflow-hidden cursor-pointer" onClick={() => setActiveImgIdx(0)}>
               <Image
                 fill
                 priority
                 src={getSafeImage(project.imgs, project.img, 0, isWaldorf)}
-                alt={project.name}
+                alt={getGalleryAlt(project, galleryImgs[0] || project.img, 0)}
                 className="object-cover transition-transform duration-700 hover:scale-[1.02]"
                 onError={handleImageError}
               />
@@ -543,12 +714,12 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               </button>
             </div>
 
-            <div className="hidden md:grid grid-rows-2 gap-[4px] h-full relative">
+            <div className={`${usePanoramicHero ? "hidden" : "hidden md:grid"} grid-rows-2 gap-[4px] h-full relative`}>
               <div className="relative h-full w-full overflow-hidden cursor-pointer" onClick={() => setActiveImgIdx(1)}>
                 <Image
                   fill
                   src={getSafeImage(project.imgs, project.img, 1, isWaldorf)}
-                  alt={`${project.name} Photo 2`}
+                  alt={getGalleryAlt(project, galleryImgs[1] || project.img, 1)}
                   className="object-cover transition-transform duration-700 hover:scale-[1.02]"
                   onError={handleImageError}
                 />
@@ -557,7 +728,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 <Image
                   fill
                   src={getSafeImage(project.imgs, project.img, 2, isWaldorf)}
-                  alt={`${project.name} Photo 3`}
+                  alt={getGalleryAlt(project, galleryImgs[2] || project.img, 2)}
                   className="object-cover transition-transform duration-700 hover:scale-[1.02]"
                   onError={handleImageError}
                 />
@@ -582,7 +753,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       {/* Main content metadata & Spec layout */}
       <section className="max-w-[1140px] mx-auto px-6 pb-20">
         {/* Back Button & Compare trigger */}
-        <div className="flex justify-between items-center mb-6">
+        <div className="flex flex-wrap justify-between items-center gap-3 mb-6">
           <button
             onClick={() => router.back()}
             className="text-[#8f96ab] hover:text-[#1c1f26] text-[12px] tracking-[0.2em] uppercase transition-colors min-h-[44px] px-3 inline-flex items-center gap-1 font-medium"
@@ -699,17 +870,28 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
             </strong>
           </div>
 
-          <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
-            <span className="text-[12px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Total Residences</span>
-            <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
-              {project.units || "—"}
-            </strong>
-          </div>
+          {project.units ? (
+            <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
+              <span className="text-[12px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Total Residences</span>
+              <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
+                {typeof project.units === "number" || /^\d+$/.test(String(project.units).trim())
+                  ? `${project.units} Residences`
+                  : String(project.units)}
+              </strong>
+            </div>
+          ) : livingAreaText ? (
+            <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
+              <span className="text-[12px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Living Area</span>
+              <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
+                {livingAreaText}
+              </strong>
+            </div>
+          ) : null}
 
           <div className="bg-white border border-[#e8e4db] rounded-[4px] p-5 shadow-sm">
             <span className="text-[12px] uppercase tracking-[0.2em] text-[#8f96ab] block mb-1.5 font-medium">Stories / Height</span>
             <strong className="text-2xl md:text-3xl font-serif font-normal text-[#1c1f26]">
-              {project.stories ? `${project.stories} Stories` : (project.height ? `${project.height} FT` : (project.pricePerSqft ? `$${project.pricePerSqft.toLocaleString()}/SF` : "Luxury Tower"))}
+              {storiesHeightText}
             </strong>
           </div>
         </div>
@@ -777,7 +959,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                           )}
                         </td>
                         <td className="py-4 px-6 font-mono text-[#535862]">
-                          {plan.beds !== undefined ? `${plan.beds} Bed` : "—"} · {plan.baths !== undefined ? `${plan.baths} Bath` : "—"}
+                          {formatPlanBedsBaths(plan)}
                         </td>
                         <td className="py-4 px-6 text-[#535862]">
                           <div>{plan.sqft || "—"}</div>
@@ -971,10 +1153,12 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0">
             <div>
-              <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
-                <span className="text-[#8f96ab] font-light">MLS Listing ID</span>
-                <span className="text-[#1c1f26] font-mono font-medium">{project.mlsId || "—"}</span>
-              </div>
+              {project.mlsId && !isPreconstruction ? (
+                <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
+                  <span className="text-[#8f96ab] font-light">MLS Listing ID</span>
+                  <span className="text-[#1c1f26] font-mono font-medium">{project.mlsId}</span>
+                </div>
+              ) : null}
               <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
                 <span className="text-[#8f96ab] font-light">Listing Status</span>
                 <span className="text-[#10b981] font-semibold uppercase tracking-wider text-[12px]">
@@ -985,21 +1169,37 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 <span className="text-[#8f96ab] font-light">Neighborhood</span>
                 <span className="text-[#1c1f26] font-medium">{project.neighborhood}</span>
               </div>
+              {project.units ? (
+                <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
+                  <span className="text-[#8f96ab] font-light">Total Residences</span>
+                  <span className="text-[#1c1f26] font-mono font-medium">
+                    {typeof project.units === "number" || /^\d+$/.test(String(project.units).trim())
+                      ? `${project.units} Residences`
+                      : String(project.units)}
+                  </span>
+                </div>
+              ) : null}
             </div>
 
             <div>
-              <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
-                <span className="text-[#8f96ab] font-light">Bedrooms</span>
-                <span className="text-[#1c1f26] font-mono font-medium">{project.minBed ? `${project.minBed} Beds` : "—"}</span>
-              </div>
-              <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
-                <span className="text-[#8f96ab] font-light">Bathrooms</span>
-                <span className="text-[#1c1f26] font-mono font-medium">{project.baths ? `${project.baths} Baths` : "—"}</span>
-              </div>
-              <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
-                <span className="text-[#8f96ab] font-light">Living Area (Sq Ft)</span>
-                <span className="text-[#1c1f26] font-mono font-medium">{project.sqft ? `${project.sqft.toLocaleString()} SF` : (project.units || "—")}</span>
-              </div>
+              {bedroomText ? (
+                <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
+                  <span className="text-[#8f96ab] font-light">Bedrooms</span>
+                  <span className="text-[#1c1f26] font-mono font-medium">{bedroomText}</span>
+                </div>
+              ) : null}
+              {bathroomText ? (
+                <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
+                  <span className="text-[#8f96ab] font-light">Bathrooms</span>
+                  <span className="text-[#1c1f26] font-mono font-medium">{bathroomText}</span>
+                </div>
+              ) : null}
+              {livingAreaText ? (
+                <div className="flex justify-between items-center py-3 border-b border-[#ddd8cd]/60 text-xs">
+                  <span className="text-[#8f96ab] font-light">Living Area</span>
+                  <span className="text-[#1c1f26] font-mono font-medium">{livingAreaText}</span>
+                </div>
+              ) : null}
               {project.pricePerSqft ? (
                 <div className="flex justify-between items-center py-3 border-b-0 text-xs">
                   <span className="text-[#8f96ab] font-light">Price / Sq Ft</span>
@@ -1153,7 +1353,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 The Residence &amp; Lifestyle
               </h2>
               <div className="text-base font-light leading-[1.8] text-[#535862] flex flex-col gap-6 mb-10">
-                <p>{paragraphs[1] || paragraphs[0]}</p>
+                {paragraphs[2] && <p>{paragraphs[2]}</p>}
               </div>
 
               {/* Stats Mini Dashboard */}
@@ -1168,7 +1368,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 </div>
                 <div>
                   <span className="text-[12px] uppercase tracking-[0.15em] text-[#8f96ab] block mb-1 font-medium">Price / SF</span>
-                  <strong className="text-sm font-serif text-[#B38E36]">{project.pricePerSqft ? `$${project.pricePerSqft.toLocaleString()}/SF` : (project.units || "Active MLS")}</strong>
+                  <strong className="text-sm font-serif text-[#B38E36]">{project.pricePerSqft ? `$${project.pricePerSqft.toLocaleString()}/SF` : "Inquire"}</strong>
                 </div>
               </div>
             </div>
@@ -1194,7 +1394,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
           <div className="mb-12 flex justify-between items-end">
             <div>
               <span className="text-[12px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
-                OFFICIAL MLS PHOTOGRAPHY
+                  {isPreconstruction ? "ARTIST RENDERINGS" : "OFFICIAL MLS PHOTOGRAPHY"}
               </span>
               <h2 className="text-3xl font-serif font-normal text-[#1c1f26]">
                 Property Gallery
@@ -1219,7 +1419,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               >
                 <img
                   src={getImageUrl(imgUrl)}
-                  alt={`${project.name} - Photo ${idx + 1}`}
+                  alt={getGalleryAlt(project, imgUrl, idx)}
                   loading="lazy"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
@@ -1281,7 +1481,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
               <div className="flex flex-col justify-between h-full text-left">
                 <div>
                   <span className="text-[12px] uppercase tracking-[0.28em] text-[#8f96ab] font-semibold block mb-2">
-                    LUXURY REAL ESTATE ADVISOR
+                    GLOBAL REAL ESTATE ADVISOR
                   </span>
                   <h3 className="text-3xl md:text-4xl font-serif font-normal text-[#1c1f26] mb-3">
                     Zachary Akers
@@ -1389,6 +1589,14 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                       <span className="text-[12px] text-[#C9A84C] mt-1">Please enter a valid email address.</span>
                     )}
                   </div>
+                  <div className="form-group-custom">
+                    <input type="tel" required placeholder="Phone number with country code" value={formPhone} onChange={(e) => setFormPhone(e.target.value)} className="form-input-custom" />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                  <select required aria-label="Purchase budget" value={formBudget} onChange={(e) => setFormBudget(e.target.value)} className="form-input-custom"><option value="">Purchase budget</option><option>$2M to $5M</option><option>$5M to $10M</option><option>$10M to $20M</option><option>$20M+</option></select>
+                  <select required aria-label="Purchase timeline" value={formTimeline} onChange={(e) => setFormTimeline(e.target.value)} className="form-input-custom"><option value="">Purchase timeline</option><option>As soon as possible</option><option>Within 6 months</option><option>6–12 months</option><option>1–2 years</option></select>
+                  <select required aria-label="Purchase purpose" value={formPurchasePurpose} onChange={(e) => setFormPurchasePurpose(e.target.value)} className="form-input-custom"><option value="">Primary or second home</option><option>Primary home</option><option>Second home</option></select>
                 </div>
 
                 <div className="form-group-custom">
@@ -1417,7 +1625,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       </section>
 
       {/* 15. EXPLORE OTHER PROPERTIES */}
-      <section className="property-related bg-[#FAF8F3] py-20 text-[#1c1f26] border-t border-[#e2e8f0]">
+      {relatedProjects.length >= 3 && <section className="property-related bg-[#FAF8F3] py-20 text-[#1c1f26] border-t border-[#e2e8f0]">
         <div className="property-container max-w-[1140px] mx-auto px-6">
           <div className="mb-12 text-left">
             <span className="text-[12px] tracking-[0.3em] uppercase text-[#B38E36] font-semibold block mb-2">
@@ -1486,7 +1694,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
             })}
           </div>
         </div>
-      </section>
+      </section>}
 
       {/* Global Luxury Lightbox Slider Modal */}
       {activeImgIdx !== null && (
@@ -1595,7 +1803,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                   >
                     <img
                       src={getImageUrl(thumbUrl)}
-                      alt={`Thumbnail ${idx + 1}`}
+                      alt={getGalleryAlt(project, thumbUrl, idx)}
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover"
                       onError={handleImageError}
@@ -1626,7 +1834,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-[#8f96ab]">
-                {project.mlsId && (
+                {project.mlsId && !isPreconstruction && (
                   <span className="px-2.5 py-1 bg-[#FAF8F3] border border-[#e8e4db] rounded-[2px] text-[#1c1f26]">
                     MLS® #{project.mlsId}
                   </span>

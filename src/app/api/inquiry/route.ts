@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
 
   if (
     !isRecord(body) ||
-    ["name", "email", "phone", "message", "source", "pageUrl", "tag", "consentTimestamp", "website", "honeypot", "turnstileToken", "cf-turnstile-response", "projectName", "buttonClicked", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"].some(
+    ["name", "email", "phone", "message", "source", "pageUrl", "tag", "consentTimestamp", "website", "honeypot", "turnstileToken", "cf-turnstile-response", "projectName", "buttonClicked", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid"].some(
       (key) => body[key] !== undefined && typeof body[key] !== "string"
     ) ||
     (body.tags !== undefined &&
@@ -117,6 +117,7 @@ export async function POST(request: NextRequest) {
   const utmCampaign = ((body.utm_campaign as string) || "").trim();
   const utmTerm = ((body.utm_term as string) || "").trim();
   const utmContent = ((body.utm_content as string) || "").trim();
+  const gclid = ((body.gclid as string) || "").trim();
   const details = (body.details || {}) as Record<string, unknown>;
 
   const rawConsent = body.smsConsent ?? body.sms_consent;
@@ -145,6 +146,7 @@ export async function POST(request: NextRequest) {
   if (utmCampaign && !tags.includes(utmCampaign)) {
     tags.push(utmCampaign);
   }
+  if (gclid && !tags.includes("google-ads")) tags.push("google-ads");
 
   if (hasConsent && !tags.includes("sms-consent")) {
     tags.push("sms-consent");
@@ -170,6 +172,7 @@ export async function POST(request: NextRequest) {
       ...(utmCampaign ? { "UTM Campaign": utmCampaign } : {}),
       ...(utmTerm ? { "UTM Term": utmTerm } : {}),
       ...(utmContent ? { "UTM Content": utmContent } : {}),
+      ...(gclid ? { GCLID: gclid } : {}),
     },
   };
 
@@ -214,6 +217,7 @@ export async function POST(request: NextRequest) {
     if (utmTerm) lines.push(`  utm_term: ${utmTerm}`);
     if (utmContent) lines.push(`  utm_content: ${utmContent}`);
   }
+  if (gclid) lines.push(`Google Click ID (GCLID): ${gclid}`);
 
   try {
     // FUB's website-lead endpoint records the inquiry and deduplicates contacts.
@@ -238,6 +242,7 @@ export async function POST(request: NextRequest) {
         ...(utmSource ? { utm_source: utmSource } : {}),
         ...(utmMedium ? { utm_medium: utmMedium } : {}),
         ...(utmCampaign ? { utm_campaign: utmCampaign } : {}),
+        ...(gclid ? { gclid } : {}),
       }),
       signal: AbortSignal.timeout(15000),
       cache: "no-store",

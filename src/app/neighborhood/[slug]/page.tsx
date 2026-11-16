@@ -22,6 +22,8 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title: data.seo.title,
     description: data.seo.description,
+    alternates: { canonical: `/neighborhood/${slug}` },
+    openGraph: { url: `/neighborhood/${slug}` },
   };
 }
 

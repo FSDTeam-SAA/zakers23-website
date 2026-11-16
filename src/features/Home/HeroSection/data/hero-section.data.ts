@@ -2,10 +2,19 @@ import type { HeroSlide } from "@/src/features/Home/HeroSection/types/hero-secti
 
 export const heroSlides: HeroSlide[] = [
   {
+    image: "/images/atma/skyline-hero.webp",
+    eyebrow: "Brickell Bay · Newly Announced",
+    title: "ATMA Miami by Aman",
+    supporting: "A 1,049-foot bayfront wellness landmark with Aman Group's first ATMA residences.",
+    credit: "COMING 2031 · PRICING TO BE RELEASED",
+    slug: "atma-miami-by-aman",
+    position: "center 42%"
+  },
+  {
     image: "/images/anantara/aerial-helipad-day.webp",
     eyebrow: "Edgewater",
     title: "Anantara Residences Miami",
-    supporting: "North America's first Anantara: branded waterfront living with hotel-caliber service.",
+    supporting: "The first Anantara in the U.S.: branded waterfront living with hotel-caliber service.",
     credit: "FIRST ANANTARA IN THE U.S. · FROM $1.8M",
     slug: "anantara-miami-resort-residences",
     position: "center 40%"
@@ -17,6 +26,24 @@ export const heroSlides: HeroSlide[] = [
     supporting: "The French marque's first U.S. residential tower on the Miami River.",
     credit: "PRE-LAUNCH RESERVATIONS · 60 STORIES",
     slug: "bugatti-residences-miami",
+    position: "center center"
+  },
+  {
+    image: "/images/cipriani/skyline.webp",
+    eyebrow: "Brickell",
+    title: "Cipriani Residences Miami",
+    supporting: "Waterfront residences with the service and design language of Cipriani.",
+    credit: "BRICKELL WATERFRONT · PRIVATE PRESENTATIONS",
+    slug: "cipriani-residences-brickell",
+    position: "center center"
+  },
+  {
+    image: "/images/rivage/beachhero.webp",
+    eyebrow: "Bal Harbour",
+    title: "Rivage Bal Harbour",
+    supporting: "Oceanfront residences shaped for a private, service-led coastal life.",
+    credit: "BAL HARBOUR OCEANFRONT · PRIVATE PRESENTATIONS",
+    slug: "rivage-bal-harbour",
     position: "center center"
   },
   {

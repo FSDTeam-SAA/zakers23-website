@@ -127,6 +127,11 @@ export default function InquiryModal({
         sessionStorage.setItem("has_submitted_registration_modal", "true");
       } catch {}
       onSuccess?.();
+      if (requireForDetails) {
+        setTimeout(() => {
+          onClose();
+        }, 1500);
+      }
     } catch (err: unknown) {
       setStatus("error");
       const msg = err instanceof Error ? err.message : "Could not send inquiry. Please check your information and try again.";
@@ -163,10 +168,10 @@ export default function InquiryModal({
               <div className="consultation-fields">
                 <input aria-label="Your name" type="text" name="name" autoComplete="name" placeholder="Your name" required />
                 <input aria-label="Email address" type="email" name="email" autoComplete="email" placeholder="Email address" required />
-                <input aria-label="Phone number" type="tel" name="phone" autoComplete="tel" placeholder="Phone number" required />
-                <ConsultationSelect name="budget" label="Price range (optional)" options={["Under $1M", "$1M to $3M", "$3M to $5M", "$5M to $10M", "$10M to $25M", "$25M to $50M", "$50M to $100M", "$100M and above", "Not sure yet"]} required={false} />
-                <ConsultationSelect name="primaryGoal" label="Primary goal" options={["Primary residence", "Vacation home", "Investment / rental", "Portfolio expansion", "Selling / assigning a property", "Just exploring"]} required={false} />
-                <ConsultationSelect name="timeline" label="Timeline" options={["As soon as possible", "Within 6 months", "6–12 months", "1–2 years", "2–3 years", "Flexible / just exploring"]} required={false} />
+                <input aria-label="Phone number including country code" type="tel" name="phone" autoComplete="tel" placeholder="Phone number with country code" required />
+                <ConsultationSelect name="budget" label="Purchase budget" options={["$2M to $5M", "$5M to $10M", "$10M to $20M", "$20M+", "Not sure yet"]} required />
+                <ConsultationSelect name="primaryGoal" label="Purchase purpose" options={["Primary home", "Second home"]} required />
+                <ConsultationSelect name="timeline" label="Purchase timeline" options={["As soon as possible", "Within 6 months", "6–12 months", "1–2 years", "Flexible / just exploring"]} required />
                 <textarea aria-label="Message (optional)" name="message" rows={3} placeholder="Message (optional)" />
               </div>
               <div className="consultation-consent">

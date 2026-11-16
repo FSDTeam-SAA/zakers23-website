@@ -104,11 +104,7 @@ export function AdvisorSection() {
 
             <div className="flex flex-col sm:flex-row gap-3 pt-1">
               <a
-                href="#contact"
-                onClick={(event) => {
-                  event.preventDefault();
-                  openInquiry();
-                }}
+                href="#advisor"
                 className="inline-flex min-h-[44px] flex-1 items-center justify-center bg-[#bb9751] px-6 py-3.5 text-center text-[12px] uppercase tracking-[0.25em] font-medium text-white transition-colors duration-200 hover:bg-[#a88543] focus:outline-none rounded-[2px]"
               >
                 Connect With Zachary

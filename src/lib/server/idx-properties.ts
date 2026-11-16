@@ -29,6 +29,8 @@ export type IdxProject = {
   maxBed: number | null;
   baths?: number;
   sqft?: number;
+  minSqft?: number | null;
+  maxSqft?: number | null;
   pricePerSqft?: number | null;
   description?: string;
   fullDetailsURL?: string;
@@ -520,7 +522,11 @@ function normalize(record: Record<string, unknown>, index: number): IdxProject |
   );
 
   let pricePerSqft: number | null = number(record.pricePerSqft);
-  if (!pricePerSqft && price && sqft && sqft > 0) {
+  const minPriceVal = number(record.minPrice) ?? price;
+  const minSqftVal = number(record.minSqft) ?? sqft;
+  if (!pricePerSqft && minPriceVal && minSqftVal && minSqftVal > 0) {
+    pricePerSqft = Math.round(minPriceVal / minSqftVal);
+  } else if (!pricePerSqft && price && sqft && sqft > 0) {
     pricePerSqft = Math.round(price / sqft);
   }
 
@@ -580,7 +586,15 @@ function normalize(record: Record<string, unknown>, index: number): IdxProject |
     completion: text(record.completion, record.completionDate) || (yearBuilt ? String(yearBuilt) : "Contact for details"),
     statusRemark: text(record.statusRemark, status),
     badge: text(record.badge) || `MLS #${listingId} · ACTIVE`,
-    units: text(record.units) || (sqft ? `${sqft.toLocaleString("en-US")} SF` : "—"),
+    units: (() => {
+      const rawUnits = record.units ?? (record as any).residences ?? (record as any).totalUnits ?? localMatch?.units;
+      if (rawUnits != null && String(rawUnits).trim() !== "" && String(rawUnits).trim() !== "—") {
+        return typeof rawUnits === "number" || /^\d+$/.test(String(rawUnits).trim())
+          ? `${rawUnits} Residences`
+          : String(rawUnits).trim();
+      }
+      return sqft ? `${sqft.toLocaleString("en-US")} SF` : "";
+    })(),
     img,
     imgs,
     fallbackImg,
@@ -588,14 +602,31 @@ function normalize(record: Record<string, unknown>, index: number): IdxProject |
     maxBed: number(record.maxBed) ?? beds ?? (localMatch ? number(localMatch.maxBed) : null),
     baths: (baths ?? number(record.baths) ?? (localMatch ? number(localMatch.baths) : null)) || undefined,
     sqft: (sqft ?? number(record.sqft) ?? (localMatch ? number(localMatch.sqft) : null)) || undefined,
+    minSqft: number(record.minSqft) ?? (localMatch ? number(localMatch.minSqft) : null),
+    maxSqft: number(record.maxSqft) ?? (localMatch ? number(localMatch.maxSqft) : null),
     pricePerSqft,
     description: text(record.description, description),
     fullDetailsURL,
     address: text(record.address, record.addressFull),
     tagline: text(record.tagline),
     editorialLine: text(record.editorialLine),
-    stories: number(record.stories),
-    height: number(record.height),
+    stories: (() => {
+      const rawHeightStr = text(record.height) || (typeof record.height === "string" ? record.height : "");
+      const rawStories = number(record.stories);
+      const heightHasStories = /stories|story/i.test(rawHeightStr);
+      const storiesFromHeight = heightHasStories ? number(rawHeightStr) : null;
+      return rawStories ?? storiesFromHeight ?? (localMatch ? number(localMatch.stories) : null);
+    })(),
+    height: (() => {
+      const rawHeightStr = text(record.height) || (typeof record.height === "string" ? record.height : "");
+      if (/stories|story/i.test(rawHeightStr)) {
+        // If height string contains feet like "100 Stories / 1,049 ft", extract feet
+        const ftMatch = rawHeightStr.match(/(\d[\d,]*)\s*(?:ft|feet)/i);
+        if (ftMatch) return number(ftMatch[1]);
+        return null;
+      }
+      return number(record.height);
+    })(),
     hoa: text(record.hoa),
     developer: text(record.developer),
     architect: text(record.architect),

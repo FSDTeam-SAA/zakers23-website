@@ -13,16 +13,16 @@ export type InquiryOptions = {
 interface InquiryContextValue {
   openInquiry: (options?: string | InquiryOptions) => void;
   closeInquiry: () => void;
+  isSubmitted: boolean;
 }
 
 const InquiryContext = createContext<InquiryContextValue>({
   openInquiry: () => {},
   closeInquiry: () => {},
+  isSubmitted: false,
 });
 
 const SUBMITTED_KEY = "has_submitted_registration_modal";
-const AUTO_DELAY_MS = 30 * 1000; // 30 seconds
-
 export function InquiryProvider({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState<boolean>(() => {
@@ -33,6 +33,15 @@ export function InquiryProvider({ children }: { children: React.ReactNode }) {
       return false;
     }
   });
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      if (localStorage.getItem(SUBMITTED_KEY) === "true") {
+        setIsSubmitted(true);
+      }
+    } catch {}
+  }, []);
 
   const [inquiryOptions, setInquiryOptions] = useState<InquiryOptions>({
     context: "",
@@ -76,45 +85,10 @@ export function InquiryProvider({ children }: { children: React.ReactNode }) {
     } catch {}
   }, []);
 
-  // 30-second recurring timer:
-  // Opens after 30s. If user closes without submitting, re-opens after another 30s.
-  // If user submits even once, it never shows again.
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    if (isSubmitted) return;
-
-    try {
-      if (localStorage.getItem(SUBMITTED_KEY) === "true") {
-        setIsSubmitted(true);
-        return;
-      }
-    } catch {}
-
-    // When modal is currently open, do not schedule another timer
-    if (isOpen) return;
-
-    const timerId = setTimeout(() => {
-      try {
-        if (localStorage.getItem(SUBMITTED_KEY) === "true") {
-          setIsSubmitted(true);
-          return;
-        }
-      } catch {}
-
-      setInquiryOptions({
-        context: "VIP Registration",
-        projectName: "",
-        buttonClicked: "30-Second Auto Modal",
-      });
-      setIsOpen(true);
-    }, AUTO_DELAY_MS);
-
-    return () => {
-      clearTimeout(timerId);
-    };
-  }, [isOpen, isSubmitted]);
-
-  const value = useMemo(() => ({ openInquiry, closeInquiry }), [openInquiry, closeInquiry]);
+  const value = useMemo(
+    () => ({ openInquiry, closeInquiry, isSubmitted }),
+    [openInquiry, closeInquiry, isSubmitted]
+  );
 
   return (
     <InquiryContext.Provider value={value}>

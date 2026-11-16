@@ -32,8 +32,9 @@ export function HoneypotField({
       }}
       aria-hidden="true"
       tabIndex={-1}
+      data-honeypot="true"
     >
-      <label htmlFor={`hp-${fieldName}`}>Leave this field blank</label>
+      <label htmlFor={`hp-${fieldName}`} aria-hidden="true">Leave this field blank</label>
       <input
         id={`hp-${fieldName}`}
         type="text"
@@ -41,6 +42,7 @@ export function HoneypotField({
         value={value}
         onChange={onChange ? (e) => onChange(e.target.value) : undefined}
         tabIndex={-1}
+        aria-hidden="true"
         autoComplete="off"
       />
     </div>

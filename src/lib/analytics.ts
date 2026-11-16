@@ -8,6 +8,35 @@ export interface ContactClickEvent {
   metadata?: Record<string, unknown>;
 }
 
+async function sha256(value: string): Promise<string | undefined> {
+  if (!value || typeof window === "undefined" || !window.crypto?.subtle) return undefined;
+  const bytes = new TextEncoder().encode(value.trim().toLowerCase());
+  const digest = await window.crypto.subtle.digest("SHA-256", bytes);
+  return Array.from(new Uint8Array(digest)).map((byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
+/** Fires an optional Google Ads lead conversion, including hashed enhanced-conversion data. */
+export async function trackLeadConversion(email: string, phone?: string) {
+  if (typeof window === "undefined") return;
+  const conversionId = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID;
+  const conversionLabel = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL;
+  if (!conversionId || !conversionLabel) return;
+
+  const windowObj = window as unknown as { gtag?: (command: string, action: string, params: Record<string, unknown>) => void };
+  if (typeof windowObj.gtag !== "function") return;
+  const [hashedEmail, hashedPhone] = await Promise.all([
+    sha256(email),
+    sha256((phone || "").replace(/[^+\d]/g, "")),
+  ]);
+  windowObj.gtag("event", "conversion", {
+    send_to: `${conversionId}/${conversionLabel}`,
+    enhanced_conversion_data: {
+      ...(hashedEmail ? { email: hashedEmail } : {}),
+      ...(hashedPhone ? { phone_number: hashedPhone } : {}),
+    },
+  });
+}
+
 /**
  * Tracks off-form contact clicks (WhatsApp, Phone, Email)
  * Sends events to Google Analytics (GA4 / dataLayer) and Follow Up Boss.

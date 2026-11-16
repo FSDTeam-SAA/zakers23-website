@@ -12,19 +12,6 @@ export default function PropertyDetailSkeleton() {
       <section className="relative w-full h-[480px] md:h-[600px] bg-[#1c1f26] overflow-hidden flex flex-col justify-end p-6 md:p-14">
         <div className="absolute inset-0 luxury-shimmer-dark opacity-35" />
 
-        {/* Floating Live Indicator Pill */}
-        <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3 bg-[#FAF8F3]/95 backdrop-blur-md px-6 py-3 rounded-full border border-[#B38E36]/40 shadow-xl">
-          <span className="w-2.5 h-2.5 rounded-full bg-[#10b981] luxury-pulse-badge" />
-          <div className="flex flex-col">
-            <span className="text-[12px] tracking-[0.16em] uppercase font-semibold text-[#1c1f26]">
-              Loading Property Details...
-            </span>
-            <span className="text-[12px] tracking-[0.05em] text-[#788092]">
-              Curating luxury residence specifications...
-            </span>
-          </div>
-        </div>
-
         <div className="relative z-10 max-w-[1140px] w-full mx-auto flex flex-col gap-4">
           <div className="luxury-shimmer w-36 h-4 rounded-sm opacity-80" />
           <div className="luxury-shimmer w-3/4 max-w-[580px] h-10 md:h-14 rounded-sm" />

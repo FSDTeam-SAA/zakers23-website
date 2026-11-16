@@ -93,16 +93,20 @@ export function Navbar({
     <header className={headerClasses}>
       <div className="site-header-inner">
         {/* Brand Logo */}
-        <Link href="/" className="brand" aria-label="Miami New Development Home">
+        <Link href="/" className="brand shrink-0" aria-label="Miami New Development Home">
           <Image
             src={isLight ? "/images/MCS_Stacked_LightBackground.png" : "/images/MCS_Stacked_DarkBackground.png"}
             alt="Miami New Development"
             width={210}
             height={46}
-            className="site-logo h-11 md:h-12 w-auto object-contain"
+            className="site-logo h-10 sm:h-11 md:h-12 w-auto object-contain shrink-0"
             priority
           />
         </Link>
+        {/* <p className={`hidden xl:block border-l pl-4 text-[10px] leading-[1.45] uppercase tracking-[0.12em] ${isLight ? "text-[#535862] border-[#d8d5cd]" : "text-white/75 border-white/30"}`}>
+          Zachary Akers<br />
+          ONE Sotheby&apos;s International Realty
+        </p> */}
 
         {/* Primary Desktop Navigation Links */}
         <nav className="nav-links" aria-label="Primary Navigation">

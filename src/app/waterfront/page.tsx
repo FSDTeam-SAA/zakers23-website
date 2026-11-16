@@ -7,6 +7,8 @@ export const metadata = {
   title: "Waterfront Homes & Estates | Miami-Dade Luxury Homes",
   description:
     "Explore Miami-Dade's active MLS waterfront listings, ultra-prime waterfront enclaves, vessel access, and private estate opportunities.",
+  alternates: { canonical: "/waterfront" },
+  openGraph: { url: "/waterfront" },
 };
 
 export default async function WaterfrontPage() {

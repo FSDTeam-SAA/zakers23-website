@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   title: "Find My Project | Miami Pre-Construction Developments Directory",
   description:
     "Explore Miami's premier pre-construction condominium developments, branded residences, and luxury waterfront towers across South Florida with Zachary Akers.",
+  alternates: { canonical: "/find-my-project" },
+  openGraph: { url: "/find-my-project" },
 };
 
 export default function FindMyProjectPage() {

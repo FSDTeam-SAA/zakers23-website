@@ -63,8 +63,11 @@ export function InsightsPage() {
   }, []);
 
   const filteredArticles = useMemo(() => {
-    if (activeCategory === "All") return insightArticles;
-    return insightArticles.filter((article) => article.category === activeCategory);
+    const articles = activeCategory === "All"
+      ? insightArticles
+      : insightArticles.filter((article) => article.category === activeCategory);
+
+    return [...articles].sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
   }, [activeCategory]);
 
   return (

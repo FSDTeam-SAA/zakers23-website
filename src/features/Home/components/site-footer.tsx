@@ -14,9 +14,8 @@ export function SiteFooter() {
               className="mb-4 h-8 w-auto object-contain opacity-95"
             />
             <div className="border-t border-[rgba(210,176,114,0.5)] pt-5 text-[14px] leading-[1.55] text-[#596071]">
-              <p className="m-0">Designed, Developed, and Presented by</p>
-              <p className="m-0 mt-2">Zachary Akers</p>
-              <p className="m-0 mt-2">Global Real Estate Advisor</p>
+              <p className="m-0">Presented by</p>
+              <p className="m-0 mt-2">Zachary Akers, Global Real Estate Advisor</p>
               <p className="m-0 mt-2">ONE Sotheby&apos;s International Realty</p>
             </div>
           </div>
@@ -68,9 +67,8 @@ export function SiteFooter() {
             to change without notice and are not guaranteed. Renderings are artist conceptions.
           </p>
           <p className="m-0">
-            Conceptions may differ from final construction. All information is provided by
-            developers and third-party sources and should be independently verified before
-            making any purchasing decision.
+            All information is provided by developers and third-party sources and should be
+            independently verified before making any purchasing decision.
           </p>
         </div>
 

@@ -35,6 +35,21 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/property/atma-miami-by-aman",
+        destination: "/atma",
+        permanent: true,
+      },
+      {
+        source: "/property/faena-residences-miami",
+        destination: "/faena",
+        permanent: true,
+      },
+      {
+        source: "/property/619-brickell-nobu-residences",
+        destination: "/619-brickell",
+        permanent: true,
+      },
+      {
         source: "/neighborhoods/:slug*",
         destination: "/neighborhood/:slug*",
         permanent: true,

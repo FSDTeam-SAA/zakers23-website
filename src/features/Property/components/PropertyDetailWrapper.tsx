@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import PropertyDetailSkeleton from "./PropertyDetailSkeleton";
+import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 
 const PropertyDetailPageClient = dynamic(
   () => import("./PropertyDetailPage"),
@@ -33,8 +34,33 @@ export default function PropertyDetailWrapper({
   hasAccess?: boolean;
   initialProject?: any;
 }) {
+  const { openInquiry, isSubmitted } = useInquiry();
+  const lastPromptedSlug = useRef<string | null>(null);
   const lastTrackedSlug = useRef<string | null>(null);
   const [sessionDeadline, setSessionDeadline] = useState<number | null>(expiresAt ?? null);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    // Check if user has already submitted the inquiry/registration modal
+    try {
+      const alreadySubmitted =
+        isSubmitted || localStorage.getItem("has_submitted_registration_modal") === "true";
+      if (alreadySubmitted) return;
+    } catch {}
+
+    // Only prompt once per property slug per visit to avoid repeated popups on same page
+    if (lastPromptedSlug.current === slug) return;
+    lastPromptedSlug.current = slug;
+
+    const projectName = _name || initialProject?.name || "";
+    openInquiry({
+      context: projectName || "Property Details",
+      projectName: projectName,
+      buttonClicked: "View Details",
+      requireForDetails: true,
+    });
+  }, [slug, _name, initialProject?.name, isSubmitted, openInquiry]);
 
   useEffect(() => {
     setSessionDeadline(expiresAt ?? null);

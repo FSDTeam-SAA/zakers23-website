@@ -752,7 +752,7 @@ export default function ResalePropertyDetailPage({
             <div className="flex flex-col justify-between text-left">
               <div>
                 <span className="text-[12px] uppercase tracking-[0.28em] text-[#8f96ab] font-semibold block mb-2">
-                  LUXURY REAL ESTATE ADVISOR
+                  GLOBAL REAL ESTATE ADVISOR
                 </span>
                 <h3 className="text-3xl md:text-4xl font-serif font-normal text-[#1c1f26] mb-2">
                   Zachary Akers

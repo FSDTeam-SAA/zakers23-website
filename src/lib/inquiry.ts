@@ -1,4 +1,5 @@
 import { captureUtmParameters } from "./utm";
+import { trackLeadConversion } from "./analytics";
 
 export interface InquiryPayload {
   name?: string;
@@ -14,6 +15,7 @@ export interface InquiryPayload {
   utm_campaign?: string;
   utm_term?: string;
   utm_content?: string;
+  gclid?: string;
   tag?: string;
   tags?: string[] | string;
   smsConsent?: boolean;
@@ -43,6 +45,8 @@ export async function submitInquiry(payload: InquiryPayload) {
   if (!res.ok || data.success !== true) {
     throw new Error(data.error || "Submission failed. Please try again.");
   }
+
+  void trackLeadConversion(payload.email, payload.phone);
 
   return data;
 }
