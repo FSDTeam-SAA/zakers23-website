@@ -12,6 +12,7 @@ import { submitInquiry } from "@/src/lib/inquiry";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 import { toast } from "sonner";
 import { HoneypotField } from "@/src/components/HoneypotField";
+import { TurnstileWidget } from "@/src/components/TurnstileWidget";
 import MobileNavMenu from "@/src/components/MobileNavMenu";
 import { Navbar } from "@/src/components/Navbar";
 import PropertyDetailSkeleton from "./PropertyDetailSkeleton";
@@ -259,6 +260,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
   const [formPurchasePurpose, setFormPurchasePurpose] = useState("");
   const [formMessage, setFormMessage] = useState("");
   const [formHoneypot, setFormHoneypot] = useState("");
+  const [formTurnstileToken, setFormTurnstileToken] = useState("");
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
 
   // Compare state
@@ -467,6 +469,11 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       setFormStatus("error");
       return;
     }
+    if (process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !formTurnstileToken) {
+      setFormStatus("error");
+      toast.error("Please complete the security verification before submitting.");
+      return;
+    }
     setFormStatus("sending");
 
     try {
@@ -476,6 +483,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
         phone: formPhone,
         message: formMessage,
         website: formHoneypot,
+        turnstileToken: formTurnstileToken,
         projectName: project.name,
         buttonClicked: "Submit Request",
         source: "Website",
@@ -491,6 +499,7 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
       setFormPurchasePurpose("");
       setFormMessage("");
       setFormHoneypot("");
+      setFormTurnstileToken("");
     } catch {
       setFormStatus("error");
       toast.error("Failed to submit inquiry. Please try again.");
@@ -1608,6 +1617,12 @@ export default function PropertyDetailPage({ slug, initialProject }: { slug: str
                     className="form-input-custom resize-none"
                   />
                 </div>
+
+                <TurnstileWidget
+                  onVerify={setFormTurnstileToken}
+                  onExpire={() => setFormTurnstileToken("")}
+                  onError={() => setFormTurnstileToken("")}
+                />
 
                 <div className="text-center pt-2">
                   <button
