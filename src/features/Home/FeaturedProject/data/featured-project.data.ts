@@ -12,6 +12,26 @@ export const featuredProjects: Project[] = [
     listingOffice: "OKO Group & Oak Row Equities"
   },
   {
+    neighborhood: "Coconut Grove",
+    name: "Raffles Residences Coconut Grove",
+    price: "From $4.5M+",
+    status: "SALES LAUNCHING · 35 PRIVATE RESIDENCES",
+    image: "/images/raffles/bayshore.webp",
+    cta: "View project",
+    slug: "raffles-residences-coconut-grove",
+    listingOffice: "Mast Capital & BH Group"
+  },
+  {
+    neighborhood: "Brickell",
+    name: "75 Broadway Brickell",
+    price: "From $2.98M+",
+    status: "SALES OPEN · 106 RESIDENCES · KPF",
+    image: "/images/75-broadway/tower-simpson-park.webp",
+    cta: "View project",
+    slug: "75-broadway-brickell",
+    listingOffice: "Ytech"
+  },
+  {
     neighborhood: "Edgewater",
     name: "Anantara Miami Resort & Residences",
     price: "From $1.8M",

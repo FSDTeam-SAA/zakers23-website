@@ -1,0 +1,37 @@
+{
+  "id": 1003, "slug": "75-broadway-brickell", "name": "75 Broadway Brickell", "shortName": "75 Broadway",
+  "neighborhood": "Brickell", "stage": "preconstruction", "isActive": true, "isFeatured": true,
+  "lat": 25.759306, "lng": -80.194628, "minPrice": 2980000, "maxPrice": null, "priceFrom": "From $2.98M+",
+  "completion": "Late 2029", "badge": "SALES OPEN · 106 RESIDENCES · KPF",
+  "statusRemark": "52 stories · private elevator foyers · across from Simpson Park", "units": 106,
+  "address": "75 SW 15th Road, Miami, FL 33129", "img": "/images/75-broadway/tower-simpson-park.webp",
+  "imgs": ["/images/75-broadway/tower-simpson-park.webp", "/images/75-broadway/terraces-dusk.webp", "/images/75-broadway/rooftop-pool-deck.webp", "/images/75-broadway/residence-a-great-room.webp", "/images/75-broadway/residence-a-kitchen.webp", "/images/75-broadway/tower-from-canopy.webp", "/images/75-broadway/crown-dusk.webp", "/images/75-broadway/lobby.webp", "/images/75-broadway/owners-club-bar.webp", "/images/75-broadway/wellness-level.webp", "/images/75-broadway/meditation-garden.webp", "/images/75-broadway/residence-a-bedroom.webp", "/images/75-broadway/residence-c-bath.webp", "/images/75-broadway/penthouse-living.webp", "/images/75-broadway/penthouse-bath.webp", "/images/75-broadway/arrival-canopy.webp"],
+  "minBed": 1, "maxBed": 3, "minSqft": 1640, "maxSqft": 2621,
+  "description": "75 Broadway is a 52-story residential tower by Ytech and Kohn Pedersen Fox on SW 15th Road, directly across from Simpson Park. Its 106 residences are deliberately limited to no more than three on a typical floor, with private elevator foyers, curved floor-to-ceiling glass, and views over the protected park canopy, Biscayne Bay and the Miami skyline. ACPV Architects designed the finished interiors, including a custom Arclinea kitchen with Gaggenau appliances.",
+  "editorialLine": "Park, bay and skyline — at most three residences per floor.",
+  "developer": "Ytech", "architect": "Kohn Pedersen Fox (KPF)",
+  "interiorDesigner": "ACPV Architects (Antonio Citterio & Patricia Viel)",
+  "landscapeArchitect": "Enea Landscape Architecture", "height": "52 Stories", "stories": 52, "hoa": "Not published",
+  "amenities": [
+    { "icon": "🧘", "label": "Wellness & longevity floor", "sub": "Level 8: hyperbaric, cryotherapy, red light therapy and cold plunge" },
+    { "icon": "🏊", "label": "Rooftop garden & pool", "sub": "Level 52: pool, jacuzzi and bar" },
+    { "icon": "🥂", "label": "Owners Club", "sub": "Level 51 lounge, bar and dining room" },
+    { "icon": "🌿", "label": "Meditation garden", "sub": "Level 8, overlooking Simpson Park" },
+    { "icon": "🛎", "label": "Residential butler service", "sub": "Developed with the British Butler Institute" },
+    { "icon": "🔒", "label": "Residents only", "sub": "No hotel and no public access" }
+  ],
+  "amenitiesDescription": "<p>More than 42,000 square feet is set aside for residents. Level 8 is dedicated to wellness and longevity, with hyperbaric oxygen therapy, cryotherapy, red light therapy, a cold plunge, gym, yoga studio, and a meditation and exercise garden overlooking Simpson Park.</p><p>The Owners Club on Level 51 provides a private lounge, bar and dining room. Level 52 is a rooftop garden and pool with a jacuzzi and bar above the bay. 75 Broadway is purely residential, with butler service developed in collaboration with the British Butler Institute.</p>",
+  "floorPlans": [
+    { "type": "Residence B", "addlRooms": "Glass-paneled den · Private balcony · 110 SF exterior", "beds": "1 + Den", "baths": 2.5, "sqft": "1,640 SF Interior", "startingPrice": "$2.98M", "priceNote": "$1,820/SF · Launch pricing, Nov 2026" },
+    { "type": "Residence C", "addlRooms": "Curved-glass great room · Split bedrooms · 105 SF exterior", "beds": 2, "baths": 2.5, "sqft": "2,223 SF Interior", "startingPrice": "$4.40M", "priceNote": "$1,980/SF · Launch pricing, Nov 2026" },
+    { "type": "Residence A", "addlRooms": "Wraparound glass · Bay & park views · 190 SF exterior", "beds": 3, "baths": 3.5, "sqft": "2,621 SF Interior", "startingPrice": "$6.29M", "priceNote": "$2,400/SF · Launch pricing, Nov 2026" },
+    { "type": "Penthouses", "addlRooms": "Seven residences", "beds": "Not published", "baths": "Not published", "sqft": "Not published", "priceNote": "Pricing upon request" }
+  ],
+  "depositStructure": [
+    { "percentage": 5, "milestone": "Reservation" }, { "percentage": 5, "milestone": "Contract" },
+    { "percentage": 10, "milestone": "Groundbreaking (est. Q2 2027)" }, { "percentage": 10, "milestone": "120 days after groundbreaking" },
+    { "percentage": 10, "milestone": "Top-off (est. June 2028)" }, { "percentage": 60, "milestone": "Closing (est. December 2029)" }
+  ],
+  "inquiryButtonLabel": "Schedule a Tour", "listingOffice": "Ytech",
+  "keyMetrics": [{ "value": "3", "label": "Residences per typical floor" }, { "value": "106", "label": "Residences" }, { "value": "$1,820", "label": "Launch price / SF" }, { "value": "Late 2029", "label": "Expected completion" }]
+}

@@ -11,6 +11,24 @@ export const heroSlides: HeroSlide[] = [
     position: "center 42%"
   },
   {
+    image: "/images/raffles/bayshore.webp",
+    eyebrow: "Coconut Grove · Sales Launching",
+    title: "Raffles Residences Coconut Grove",
+    supporting: "Thirty-five private homes on Biscayne Bay — Raffles' first standalone residential address.",
+    credit: "OPENING 2029 · FROM $4.5M+",
+    slug: "raffles-residences-coconut-grove",
+    position: "center center"
+  },
+  {
+    image: "/images/75-broadway/tower-simpson-park.webp",
+    eyebrow: "Brickell · Sales Open",
+    title: "75 Broadway Brickell",
+    supporting: "A 52-story KPF tower with private elevator foyers, framed by Simpson Park and Biscayne Bay.",
+    credit: "LATE 2029 · FROM $2.98M+",
+    slug: "75-broadway-brickell",
+    position: "center center"
+  },
+  {
     image: "/images/anantara/aerial-helipad-day.webp",
     eyebrow: "Edgewater",
     title: "Anantara Residences Miami",

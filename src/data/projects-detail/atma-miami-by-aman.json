@@ -1,14 +1,14 @@
 {
   "id": 1001, "slug": "atma-miami-by-aman", "name": "ATMA Miami by Aman", "shortName": "ATMA Miami",
   "neighborhood": "Brickell", "stage": "preconstruction", "isActive": true, "isFeatured": true,
-  "lat": 25.7641, "lng": -80.1896, "minPrice": null, "maxPrice": null, "priceFrom": "Pricing TBD",
+  "lat": 25.7641, "lng": -80.1896, "minPrice": 1500000, "maxPrice": 26600000, "priceFrom": "From $1.5M",
   "completion": "2031", "badge": "NEWLY ANNOUNCED · COMING 2031",
   "statusRemark": "A 1,049-foot Brickell Bay landmark by Aman Group's ATMA brand.", "units": "TBD",
   "address": "1111 Brickell Bay Drive, Miami, FL 33131", "img": "/images/atma/skyline-hero.webp",
   "heroImgPosition": "center center",
   "imgs": ["/images/atma/skyline-hero.webp", "/images/atma/crown-hero.webp", "/images/atma/pool-deck.webp", "/images/atma/kitchen.webp", "/images/atma/primary-bedroom.webp", "/images/atma/baywalk-marina.webp", "/images/atma/facade-balconies.webp", "/images/atma/sunset-palms.webp", "/images/atma/facade-looking-up.webp", "/images/atma/bay-skyline.webp", "/images/atma/tennis-court.webp", "/images/atma/padel-court.webp", "/images/atma/baywalk-podium.webp", "/images/atma/facade-bw.webp"],
-  "minBed": 1, "maxBed": 6, "minSqft": null, "maxSqft": null,
-  "description": "ATMA Miami is a 1,049-foot residential tower planned for the Brickell bayfront at 1111 Brickell Bay Drive. The project introduces Aman Group's performance-led ATMA wellness brand with one- through five-bedroom residences, six-bedroom penthouses, a planned 120,000-square-foot wellness center and a nine-court racquet club.",
+  "minBed": 1, "maxBed": 5, "minSqft": 813, "maxSqft": 7200,
+  "description": "ATMA Miami is a 1,049-foot residential tower planned for the Brickell bayfront at 1111 Brickell Bay Drive. The project introduces Aman Group's performance-led ATMA wellness brand with one- through five-bedroom residences ranging from 813 to 7,200 square feet, a planned 120,000-square-foot wellness center and a nine-court racquet club.",
   "editorialLine": "A new standard for wellness on Brickell Bay.", "developer": "OKO Group & Oak Row Equities",
   "architect": "SHoP Architects", "interiorDesigner": "Studio Paolo Ferrari", "height": "1,049 ft",
   "stories": null, "hoa": "TBD",
@@ -22,9 +22,11 @@
   ],
   "amenitiesDescription": "<p>ATMA Miami is planned around a 120,000-square-foot spa and wellness center, with training floors, mobility and conditioning labs, medical wellness and recovery suites. Residents will have access to a pool, fitness and training studio, coworking and lounge spaces, concierge and valet.</p><p>The racquet and aquatic program includes a nine-court club for indoor tennis and padel overlooking Biscayne Bay, plus an adjacent marina. The development also plans six dining and entertaining destinations, including a mixology bar and events space.</p>",
   "floorPlans": [
-    { "type": "One- to Two-Bedroom Residences", "beds": "1–2", "baths": "TBD", "sqft": "TBD", "status": "Coming soon" },
-    { "type": "Three- to Five-Bedroom Residences", "beds": "3–5", "baths": "TBD", "sqft": "TBD", "status": "Coming soon" },
-    { "type": "Penthouses", "beds": "6", "baths": "TBD", "sqft": "TBD", "status": "Coming soon" }
+    { "type": "One-Bedroom Residences", "beds": 1, "baths": "TBD", "sqft": "813–TBD SF", "startingPrice": "$1.5M" },
+    { "type": "Two-Bedroom Residences", "beds": 2, "baths": "TBD", "sqft": "TBD", "startingPrice": "$4.2M–$6.5M" },
+    { "type": "Three-Bedroom Residences", "beds": 3, "baths": "TBD", "sqft": "TBD", "startingPrice": "$6.5M–$10.5M" },
+    { "type": "Four-Bedroom Residences", "beds": 4, "baths": "TBD", "sqft": "TBD", "startingPrice": "$12.3M" },
+    { "type": "Five-Bedroom Residences", "beds": 5, "baths": "TBD", "sqft": "Up to 7,200 SF", "startingPrice": "$26.6M" }
   ],
   "depositStructure": [], "inquiryButtonLabel": "Request Early Access", "listingOffice": "OKO Group & Oak Row Equities",
   "keyMetrics": [{ "value": "1,049 ft", "label": "Tower height" }, { "value": "2031", "label": "Expected delivery" }, { "value": "120,000 SF", "label": "Wellness center" }, { "value": "9", "label": "Racquet club courts" }]

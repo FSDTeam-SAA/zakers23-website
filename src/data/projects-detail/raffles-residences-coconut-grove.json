@@ -1,0 +1,59 @@
+{
+  "id": 1002,
+  "slug": "raffles-residences-coconut-grove",
+  "name": "Raffles Residences Coconut Grove",
+  "shortName": "Raffles Coconut Grove",
+  "neighborhood": "Coconut Grove",
+  "stage": "preconstruction",
+  "isActive": true,
+  "isFeatured": true,
+  "lat": 25.7278,
+  "lng": -80.2375,
+  "minPrice": 4500000,
+  "maxPrice": null,
+  "priceFrom": "From $4.5M+",
+  "completion": "2029",
+  "badge": "SALES LAUNCHING · 2029 OPENING",
+  "statusRemark": "Biscayne Bay · First standalone Raffles residences",
+  "units": 35,
+  "address": "2545 South Bayshore Drive, Miami, FL 33133",
+  "img": "/images/raffles/bayshore.webp",
+  "imgs": [
+    "/images/raffles/bayshore.webp",
+    "/images/raffles/marina-bay.webp",
+    "/images/raffles/terrace.webp"
+  ],
+  "minBed": 2,
+  "maxBed": 4,
+  "minSqft": null,
+  "maxSqft": null,
+  "description": "Raffles Residences Coconut Grove is an intimate collection of 35 private homes on Biscayne Bay at 2545 South Bayshore Drive. Developed by Mast Capital and BH Group, it is Raffles' first standalone residential building: no hotel and no overnight guests. Brandon Haw Architecture has designed curved balconies and deep terraces oriented to the bay, the Grove canopy and the Miami skyline. The collection runs from two- to four-bedroom residences, crowned by a limited penthouse offering.",
+  "editorialLine": "Raffles without a hotel. Thirty-five homes on Biscayne Bay.",
+  "developer": "Mast Capital & BH Group",
+  "architect": "Brandon Haw Architecture",
+  "interiorDesigner": "Not published",
+  "height": "Not published",
+  "hoa": "Not published",
+  "amenities": [
+    { "icon": "🍽", "label": "Resident restaurant", "sub": "Announced at launch" },
+    { "icon": "🧖", "label": "Spa and fitness center", "sub": "Resident-focused wellness" },
+    { "icon": "🏊", "label": "Rooftop pool deck and bar", "sub": "Bay and skyline outlooks" },
+    { "icon": "🏡", "label": "Private penthouse pools", "sub": "Limited penthouse offering" },
+    { "icon": "🛎", "label": "Raffles service standards", "sub": "No hotel or overnight guests" },
+    { "icon": "✦", "label": "Accor Ownership Benefits", "sub": "Elite ALL recognition and preferred rates" }
+  ],
+  "amenitiesDescription": "<p>Launch materials name a resident restaurant, spa and fitness center, and a rooftop with a pool deck and bar. The limited penthouses are planned with private pools. A complete amenity schedule and floor-by-floor program have not yet been published.</p><p>Accor One Living supports the development, design and operation of the residential community. Through Accor Ownership Benefits, owners receive Elite recognition in the ALL Accor loyalty program and preferred rates across the Accor portfolio.</p>",
+  "floorPlans": [
+    { "type": "Two- to Four-Bedroom Residences", "beds": "2–4", "baths": "Not published", "sqft": "Not published", "startingPrice": "From $4.5M+" },
+    { "type": "Limited Penthouses", "beds": "Not published", "baths": "Not published", "sqft": "Not published", "priceNote": "Pricing upon request" }
+  ],
+  "depositStructure": [],
+  "inquiryButtonLabel": "Request Raffles Pricing",
+  "listingOffice": "Mast Capital & BH Group",
+  "keyMetrics": [
+    { "value": "35", "label": "Private residences" },
+    { "value": "$4.5M+", "label": "Launch pricing from" },
+    { "value": "2029", "label": "Targeted opening" },
+    { "value": "1st", "label": "Standalone Raffles residences" }
+  ]
+}

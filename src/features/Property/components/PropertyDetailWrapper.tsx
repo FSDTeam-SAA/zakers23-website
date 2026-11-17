@@ -21,6 +21,8 @@ const ResalePropertyDetailPageClient = dynamic(
   }
 );
 
+const INQUIRY_MODAL_DELAY_MS = 2 * 60 * 1000;
+
 export default function PropertyDetailWrapper({
   slug,
   name: _name,
@@ -49,17 +51,21 @@ export default function PropertyDetailWrapper({
       if (alreadySubmitted) return;
     } catch {}
 
-    // Only prompt once per property slug per visit to avoid repeated popups on same page
+    // Only prompt once per property slug per visit to avoid repeated popups on same page.
     if (lastPromptedSlug.current === slug) return;
-    lastPromptedSlug.current = slug;
 
     const projectName = _name || initialProject?.name || "";
-    openInquiry({
-      context: projectName || "Property Details",
-      projectName: projectName,
-      buttonClicked: "View Details",
-      requireForDetails: true,
-    });
+    const timer = window.setTimeout(() => {
+      lastPromptedSlug.current = slug;
+      openInquiry({
+        context: projectName || "Property Details",
+        projectName,
+        buttonClicked: "View Details",
+        requireForDetails: true,
+      });
+    }, INQUIRY_MODAL_DELAY_MS);
+
+    return () => window.clearTimeout(timer);
   }, [slug, _name, initialProject?.name, isSubmitted, openInquiry]);
 
   useEffect(() => {
