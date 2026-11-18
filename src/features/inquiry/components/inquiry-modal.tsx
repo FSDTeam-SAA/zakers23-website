@@ -38,6 +38,7 @@ export default function InquiryModal({
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [smsConsent, setSmsConsent] = useState(true);
   const [turnstileToken, setTurnstileToken] = useState("");
+  const [turnstileResetCount, setTurnstileResetCount] = useState(0);
   const [nameInput, setNameInput] = useState("");
   const [emailInput, setEmailInput] = useState("");
 
@@ -204,6 +205,8 @@ export default function InquiryModal({
       }
     } catch (err: unknown) {
       setStatus("error");
+      setTurnstileToken("");
+      setTurnstileResetCount((prev) => prev + 1);
       const msg = err instanceof Error ? err.message : "Could not send inquiry. Please check your information and try again.";
       toast.error(msg);
     }
@@ -355,6 +358,7 @@ export default function InquiryModal({
               <div className="consultation-turnstile-wrapper">
                 <TurnstileWidget
                   size="flexible"
+                  resetTrigger={turnstileResetCount}
                   onVerify={(token) => setTurnstileToken(token)}
                   onExpire={() => setTurnstileToken("")}
                 />

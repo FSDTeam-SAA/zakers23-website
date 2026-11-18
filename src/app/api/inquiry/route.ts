@@ -60,14 +60,22 @@ export async function POST(request: NextRequest) {
           request.headers.get("x-forwarded-for")?.split(",")[0]?.trim())) ||
       undefined;
 
-    const host = (request.headers?.get && request.headers.get("host")) || "";
-    const isLocalhost =
-      request.nextUrl?.hostname === "localhost" ||
-      request.nextUrl?.hostname === "127.0.0.1" ||
-      host.includes("localhost") ||
-      host.includes("127.0.0.1");
+    const host =
+      (request.headers?.get &&
+        (request.headers.get("x-forwarded-host") || request.headers.get("host"))) ||
+      "";
 
-    const secretToUse = isLocalhost ? "1x00000000000000000000AA" : turnstileSecret;
+    // In production, always use the real configured Turnstile secret key.
+    // In local dev only (NODE_ENV !== "production" and accessed via localhost),
+    // fallback to Cloudflare's universal test secret key (1x0000000000000000000000000000000AA).
+    const isLocalDev =
+      process.env.NODE_ENV !== "production" &&
+      (host.includes("localhost") || host.includes("127.0.0.1") || !turnstileSecret || turnstileSecret.startsWith("1x"));
+
+    const secretToUse =
+      isLocalDev && (!turnstileSecret || turnstileSecret.startsWith("1x"))
+        ? "1x0000000000000000000000000000000AA"
+        : turnstileSecret;
 
     try {
       const verifyRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
@@ -76,6 +84,7 @@ export async function POST(request: NextRequest) {
         body: JSON.stringify({
           secret: secretToUse,
           response: turnstileToken.trim(),
+          ...(clientIp ? { remoteip: clientIp } : {}),
         }),
         signal: AbortSignal.timeout(10000),
       });

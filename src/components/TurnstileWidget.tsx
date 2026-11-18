@@ -31,6 +31,7 @@ interface TurnstileWidgetProps {
   size?: "normal" | "compact" | "flexible" | "invisible";
   invisible?: boolean;
   className?: string;
+  resetTrigger?: number;
 }
 
 export function TurnstileWidget({
@@ -41,6 +42,7 @@ export function TurnstileWidget({
   size,
   invisible = false,
   className = "",
+  resetTrigger,
 }: TurnstileWidgetProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<string | null>(null);
@@ -65,6 +67,16 @@ export function TurnstileWidget({
   onExpireRef.current = onExpire;
   const onErrorRef = useRef(onError);
   onErrorRef.current = onError;
+
+  useEffect(() => {
+    if (resetTrigger && widgetIdRef.current && window.turnstile) {
+      try {
+        window.turnstile.reset(widgetIdRef.current);
+      } catch {
+        // ignore
+      }
+    }
+  }, [resetTrigger]);
 
   useEffect(() => {
     if (!siteKey) return;
