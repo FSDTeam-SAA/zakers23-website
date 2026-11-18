@@ -27,7 +27,23 @@ function setup(response, apiKey = 'test-key', envOverrides = {}) {
   vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/lib/server/inquiry-access.ts', 'utf8'), {
     compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
   }).outputText, access);
-  sandbox.require = (name) => name === '../../../lib/server/inquiry-access' ? access.exports : require(name);
+
+  const phoneValidation = { ...sandbox, exports: {} };
+  vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/lib/phone-validation.ts', 'utf8'), {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText, phoneValidation);
+
+  const phoneLookup = { ...sandbox, exports: {} };
+  phoneLookup.require = (name) => name === '../phone-validation' ? phoneValidation.exports : require(name);
+  vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/lib/server/phone-lookup.ts', 'utf8'), {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText, phoneLookup);
+
+  sandbox.require = (name) => {
+    if (name === '../../../lib/server/inquiry-access') return access.exports;
+    if (name === '../../../lib/server/phone-lookup') return phoneLookup.exports;
+    return require(name);
+  };
   vm.runInNewContext(source, sandbox);
   return { calls, post: (body) => sandbox.exports.POST({ json: async () => body }) };
 }

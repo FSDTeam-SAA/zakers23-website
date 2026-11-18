@@ -2781,7 +2781,7 @@ input[type="range"] {
 
 
 /* Shared private consultation dialog. */
-.consultation-backdrop { position: fixed; inset: 0; z-index: 11000; display: flex; align-items: center; justify-content: center; padding: 20px 16px; background: rgba(28,31,38,.7); backdrop-filter: blur(8px); }
+.consultation-backdrop { position: fixed; inset: 0; z-index: 11000; display: flex; align-items: center; justify-content: center; padding: 20px 16px; background: rgba(18,22,30,.45); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
 .consultation-modal { position: relative; width: 540px; max-width: 100%; max-height: calc(100dvh - 40px); overflow-y: auto; overscroll-behavior: contain; padding: 38px 40px 30px; background: #fafaf8; color: #1c1f26; box-shadow: 0 24px 90px #0003; font-family: var(--font-sans), sans-serif; }
 .consultation-close { position: absolute; top: 20px; right: 24px; width: 44px; height: 44px; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; border: 0; background: transparent; color: #737887; font-size: 24px; cursor: pointer; }
 .consultation-kicker { display: block; margin-bottom: 18px; padding-right: 32px; color: #b89354; font-size: 12px; letter-spacing: .3em; text-transform: uppercase; }
@@ -2792,9 +2792,41 @@ input[type="range"] {
 .consultation-description, .consultation-success p { margin: 5px 0 0; color: #788092; font-size: 16px; line-height: 1.6; }
 .consultation-context { margin: 10px 0 0; color: #9a7947; font-size: 14px; }
 .consultation-form { margin-top: 26px; }
-.consultation-fields { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); column-gap: 14px; row-gap: 20px; }
-.consultation-fields input, .consultation-fields select, .consultation-fields textarea { width: 100%; min-width: 0; height: 46px; padding: 12px 0; border: 0; border-bottom: 1px solid #e1ddd6; border-radius: 0; background: transparent; color: #343944; font: inherit; font-size: 16px; outline: none; transition: border-color .2s; }
-.consultation-fields input::placeholder, .consultation-fields textarea::placeholder { color: #a5a19b; opacity: 1; }
+.consultation-fields { display: flex; flex-direction: column; gap: 16px; width: 100%; }
+.consultation-fields > input { width: 100%; min-width: 0; height: 46px; padding: 12px 0; border: 0; border-bottom: 1px solid #e1ddd6; border-radius: 0; background: transparent; color: #343944; font: inherit; font-size: 16px; outline: none; transition: border-color .2s; }
+.consultation-fields > input:focus { border-bottom-color: #b89354; }
+.consultation-fields > input::placeholder { color: #a5a19b; opacity: 1; }
+.consultation-phone-wrapper { position: relative; width: 100%; }
+.consultation-phone-row { position: relative; display: flex; align-items: center; width: 100%; min-height: 46px; border-bottom: 1px solid #e1ddd6; transition: border-color .2s; }
+.consultation-phone-row:focus-within, .consultation-phone-row.is-focused { border-bottom-color: #b89354; }
+.consultation-phone-row.has-error { border-bottom-color: #b91c1c !important; }
+.consultation-country-btn { display: inline-flex; align-items: center; gap: 6px; height: 46px; padding: 0 4px 0 0; border: 0; background: transparent; color: #343944; font: inherit; font-size: 15px; font-weight: 500; cursor: pointer; flex-shrink: 0; outline: none; transition: color .15s ease; }
+.consultation-country-btn:hover { color: #b89354; }
+.consultation-flag-container { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 15px; flex-shrink: 0; overflow: hidden; border-radius: 2px; box-shadow: 0 0 1px rgba(0,0,0,.4); }
+.consultation-flag-img { width: 22px; height: 15px; object-fit: cover; display: block; }
+.consultation-flag-badge { display: inline-flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; line-height: 1; padding: 2px 3px; background: #e8e4dc; color: #343944; border-radius: 2px; }
+.consultation-dial-code { font-size: 15px; color: #343944; font-weight: 500; letter-spacing: -0.01em; }
+.consultation-dropdown-arrow { color: #8c887b; transition: transform .2s ease; flex-shrink: 0; }
+.consultation-dropdown-arrow.is-open { transform: rotate(180deg); }
+.consultation-phone-divider { width: 1px; height: 20px; background: #e1ddd6; margin: 0 10px 0 6px; flex-shrink: 0; }
+.consultation-phone-input { flex: 1 1 auto; min-width: 0; width: 100%; height: 46px; padding: 12px 0 !important; border: 0 !important; border-radius: 0; background: transparent !important; color: #343944 !important; font: inherit; font-size: 16px; outline: none !important; box-shadow: none !important; }
+.consultation-phone-input::placeholder { color: #a5a19b; opacity: 1; }
+.consultation-country-popover { position: absolute; top: calc(100% + 4px); left: 0; width: 100%; max-width: 320px; background: #ffffff; border: 1px solid #e1ddd6; border-radius: 6px; box-shadow: 0 12px 36px rgba(28,31,38,.16); z-index: 12000; overflow: hidden; animation: consultationDropdownFadeIn .16s ease-out; }
+@keyframes consultationDropdownFadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+.consultation-country-search-box { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-bottom: 1px solid #eeebe5; background: #fafaf8; }
+.consultation-country-search-input { flex: 1; min-width: 0; height: 30px !important; padding: 4px 0 !important; border: 0 !important; border-radius: 0; background: transparent !important; color: #343944 !important; font: inherit; font-size: 13px !important; outline: none !important; box-shadow: none !important; }
+.consultation-country-search-input::placeholder { color: #9a968f; font-size: 13px; }
+.consultation-search-clear { border: 0; background: transparent; color: #8c887b; font-size: 16px; line-height: 1; padding: 0 4px; cursor: pointer; }
+.consultation-search-clear:hover { color: #1c1f26; }
+.consultation-country-list { max-height: 210px; overflow-y: auto; overscroll-behavior: contain; padding: 4px 0; }
+.consultation-country-option { display: flex; align-items: center; gap: 10px; width: 100%; padding: 8px 12px; border: 0; background: transparent; color: #343944; font: inherit; font-size: 13.5px; text-align: left; cursor: pointer; transition: background-color .15s ease; }
+.consultation-country-option:hover { background: #f4efe6; }
+.consultation-country-option.is-active { background: #ebe3d3; font-weight: 600; }
+.consultation-option-flag { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 14px; flex-shrink: 0; border-radius: 2px; overflow: hidden; box-shadow: 0 0 1px rgba(0,0,0,.3); }
+.consultation-option-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #1c1f26; }
+.consultation-option-dial { color: #8c887b; font-size: 12.5px; flex-shrink: 0; }
+.consultation-country-empty { padding: 16px 12px; text-align: center; font-size: 13px; color: #8c887b; }
+.consultation-field-error { display: block; margin-top: 6px; color: #b91c1c; font-size: 12px; font-weight: 500; text-align: left; }
 .consultation-fields select { appearance: none; padding-right: 22px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='m3 4.5 3 3 3-3' fill='none' stroke='%23a5a19b' stroke-width='1.2'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 2px center; cursor: pointer; }
 .consultation-fields select:invalid { color: #a5a19b; }
 .consultation-fields select option { color: #343944; background: #fafaf8; }
@@ -2803,6 +2835,8 @@ input[type="range"] {
 .consultation-consent { display: flex; align-items: flex-start; gap: 12px; margin-top: 20px; text-align: left; cursor: pointer; user-select: none; }
 .consultation-consent input[type="checkbox"] { width: 18px; height: 18px; min-width: 18px; margin-top: 2px; accent-color: #b89354; cursor: pointer; flex-shrink: 0; border-radius: 3px; }
 .consultation-consent-text { font-size: 12px; line-height: 1.6; color: #555b6a; font-family: var(--font-sans), sans-serif; cursor: pointer; }
+.consultation-turnstile-wrapper { margin: -2px 0 0; display: flex; justify-content: center; align-items: center; width: 100%; height: 48px; }
+.consultation-turnstile-wrapper .turnstile-container { display: flex; justify-content: center; align-items: center; transform: scale(0.68); transform-origin: center center; }
 .consultation-submit { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; margin-top: 20px; padding: 12px; border: 0; border-radius: 1px; background: #1c1f26; color: #fff; font-size: 12px; letter-spacing: .22em; text-transform: uppercase; cursor: pointer; transition: background .2s; }
 .consultation-submit:hover { background: #343944; }
 .consultation-submit:disabled { opacity: .6; cursor: wait; }
@@ -2916,3 +2950,140 @@ img[src*="no-image.svg"] {
 .luxury-pulse-badge {
   animation: luxury-pulse-beacon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+/* --- Property Details Gated Blur & Lock Overlay --- */
+.property-details-wrapper {
+  position: relative;
+  width: 100%;
+}
+.property-details-wrapper.is-gated {
+  max-height: 100vh;
+  max-height: 100dvh;
+  overflow: hidden;
+}
+.property-details-inner {
+  transition: filter 0.45s ease;
+}
+.property-details-inner.property-details-blurred {
+  filter: blur(14px) brightness(0.92);
+  -webkit-filter: blur(14px) brightness(0.92);
+  pointer-events: none;
+  user-select: none;
+  max-height: 100vh;
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
+.property-gate-lock-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(18, 22, 30, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  animation: fadeIn 0.25s ease-out;
+}
+.property-gate-lock-card {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  background: rgba(250, 250, 248, 0.98);
+  border: 1px solid rgba(225, 221, 214, 0.9);
+  padding: 42px 36px 34px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+}
+.property-gate-kicker {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #b89354;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.property-gate-lock-title {
+  font-family: var(--font-serif), serif;
+  font-size: 28px;
+  line-height: 1.25;
+  color: #1c1f26;
+  margin: 0 0 14px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.property-gate-lock-desc {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #697082;
+  margin: 0 0 24px;
+}
+.property-gate-lock-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 24px;
+  background: #1c1f26;
+  color: #fafaf8;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.property-gate-lock-btn:hover {
+  background: #343944;
+  transform: translateY(-1px);
+}
+.property-gate-footer {
+  margin-top: 18px;
+}
+.property-gate-back-link {
+  font-size: 12px;
+  color: #788092;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.15s;
+}
+.property-gate-back-link:hover {
+  color: #1c1f26;
+}
+.property-gate-sothebys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e1ddd6;
+  font-size: 11px;
+  color: #8c887b;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.property-gate-sothebys > span {
+  font-size: 13px;
+  font-weight: 300;
+}
+.property-gate-sothebys > div {
+  border-left: 1px solid #d2d2ce;
+  padding-left: 8px;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: left;
+}
+.property-gate-sothebys small {
+  display: block;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+}
+

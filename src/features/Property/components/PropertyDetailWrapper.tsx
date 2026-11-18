@@ -1,8 +1,9 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import PropertyDetailSkeleton from "./PropertyDetailSkeleton";
+import InquiryModal from "@/src/features/inquiry/components/inquiry-modal";
 import { useInquiry } from "@/src/features/inquiry/components/inquiry-provider";
 
 const PropertyDetailPageClient = dynamic(
@@ -21,8 +22,6 @@ const ResalePropertyDetailPageClient = dynamic(
   }
 );
 
-const INQUIRY_MODAL_DELAY_MS = 2 * 60 * 1000;
-
 export default function PropertyDetailWrapper({
   slug,
   name: _name,
@@ -36,56 +35,62 @@ export default function PropertyDetailWrapper({
   hasAccess?: boolean;
   initialProject?: any;
 }) {
-  const { openInquiry, isSubmitted } = useInquiry();
-  const lastPromptedSlug = useRef<string | null>(null);
+  const { isSubmitted } = useInquiry();
+  const [unlocked, setUnlocked] = useState(hasAccess);
+  const [modalOpen, setModalOpen] = useState(!hasAccess);
   const lastTrackedSlug = useRef<string | null>(null);
   const [sessionDeadline, setSessionDeadline] = useState<number | null>(expiresAt ?? null);
+
+  const projectName = _name || initialProject?.name || "Property Details";
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    // Check if user has already submitted the inquiry/registration modal
     try {
       const alreadySubmitted =
-        isSubmitted || localStorage.getItem("has_submitted_registration_modal") === "true";
-      if (alreadySubmitted) return;
+        hasAccess ||
+        isSubmitted ||
+        localStorage.getItem("has_submitted_registration_modal") === "true" ||
+        sessionStorage.getItem("has_submitted_registration_modal") === "true";
+
+      if (alreadySubmitted) {
+        setUnlocked(true);
+        setModalOpen(false);
+      } else {
+        setUnlocked(false);
+        setModalOpen(true);
+      }
     } catch {}
-
-    // Only prompt once per property slug per visit to avoid repeated popups on same page.
-    if (lastPromptedSlug.current === slug) return;
-
-    const projectName = _name || initialProject?.name || "";
-    const timer = window.setTimeout(() => {
-      lastPromptedSlug.current = slug;
-      openInquiry({
-        context: projectName || "Property Details",
-        projectName,
-        buttonClicked: "View Details",
-        requireForDetails: true,
-      });
-    }, INQUIRY_MODAL_DELAY_MS);
-
-    return () => window.clearTimeout(timer);
-  }, [slug, _name, initialProject?.name, isSubmitted, openInquiry]);
+  }, [hasAccess, isSubmitted]);
 
   useEffect(() => {
     setSessionDeadline(expiresAt ?? null);
   }, [expiresAt]);
 
+  const handleUnlockSuccess = useCallback(() => {
+    setUnlocked(true);
+    setModalOpen(false);
+    try {
+      localStorage.setItem("has_submitted_registration_modal", "true");
+      sessionStorage.setItem("has_submitted_registration_modal", "true");
+    } catch {}
+  }, []);
+
+  const handleModalClose = useCallback(() => {
+    setModalOpen(false);
+  }, []);
+
   useEffect(() => {
     // Only track returning visitors who have an active inquiry access session.
-    // Anonymous visitors have no contact session; calling property-visit would 401.
-    if (!hasAccess || !sessionDeadline || Date.now() >= sessionDeadline) {
+    if (!unlocked || !hasAccess || !sessionDeadline || Date.now() >= sessionDeadline) {
       return;
     }
 
-    // Ensure we track at most once per property slug in this session.
     if (lastTrackedSlug.current === slug) {
       return;
     }
     lastTrackedSlug.current = slug;
 
-    // Track returning visitor inquiry
     void fetch("/api/property-visit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -94,11 +99,8 @@ export default function PropertyDetailWrapper({
     })
       .then(async (response) => {
         if (response.status === 401) {
-          // Contact session is expired or revoked on server; do not retry or refresh.
           setSessionDeadline(null);
-        } else if (!response.ok) {
-          console.warn("Property visit tracking was not accepted.");
-        } else {
+        } else if (response.ok) {
           const result = await response.json();
           if (typeof result.expiresAt === "number") {
             setSessionDeadline(result.expiresAt);
@@ -108,7 +110,7 @@ export default function PropertyDetailWrapper({
       .catch(() => {
         console.warn("Property visit could not be recorded.");
       });
-  }, [slug, hasAccess, sessionDeadline]);
+  }, [slug, hasAccess, unlocked, sessionDeadline]);
 
   const isResale = Boolean(
     initialProject?.isResale ||
@@ -116,10 +118,51 @@ export default function PropertyDetailWrapper({
     (initialProject?.mlsId && !initialProject?.depositStructure && !initialProject?.floorPlans && !initialProject?.developer)
   );
 
-  if (isResale) {
-    return <ResalePropertyDetailPageClient slug={slug} initialProject={initialProject} />;
-  }
+  const pageContent = isResale ? (
+    <ResalePropertyDetailPageClient slug={slug} initialProject={initialProject} />
+  ) : (
+    <PropertyDetailPageClient slug={slug} initialProject={initialProject} />
+  );
 
-  return <PropertyDetailPageClient slug={slug} initialProject={initialProject} />;
+  return (
+    <div className={`property-details-wrapper ${!unlocked ? "is-gated" : ""}`}>
+      {/* Real property details rendered behind the modal; blurred until unlocked */}
+      <div className={`property-details-inner ${!unlocked ? "property-details-blurred" : ""}`}>
+        {pageContent}
+      </div>
+
+      {/* When gated and modal is closed, show luxury floating card over the blurred property view */}
+      {!unlocked && !modalOpen && (
+        <div className="property-gate-lock-overlay" aria-modal="true" role="dialog">
+          <div className="property-gate-lock-card">
+            <span className="property-gate-kicker">Exclusive Developer Access</span>
+            <h2 className="property-gate-lock-title">Unlock {projectName} Details</h2>
+            <p className="property-gate-lock-desc">
+              Submit your inquiry to view private developer pricing, floor plans, and full specifications for {projectName}.
+            </p>
+            <button
+              type="button"
+              className="property-gate-lock-btn"
+              onClick={() => setModalOpen(true)}
+            >
+              Unlock Details &amp; Pricing
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Inquiry modal pops up over blurred property details */}
+      {!unlocked && (
+        <InquiryModal
+          isOpen={modalOpen}
+          context={projectName}
+          projectName={projectName}
+          buttonClicked="Unlock Details"
+          onClose={handleModalClose}
+          onSuccess={handleUnlockSuccess}
+          requireForDetails
+        />
+      )}
+    </div>
+  );
 }
-

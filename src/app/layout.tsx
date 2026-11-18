@@ -3,6 +3,7 @@ import { CompareFloatingBar } from "@/src/components/CompareFloatingBar";
 import { ImageFallbackProvider } from "@/src/components/ImageFallbackProvider";
 import LenisProvider from "@/src/components/LenisProvider";
 import { WhatsAppButton } from "@/src/components/WhatsAppButton";
+import { PostUnlockBudgetBar } from "@/src/components/PostUnlockBudgetBar";
 import { ContactClickTracker } from "@/src/components/ContactClickTracker";
 import { GoogleTag } from "@/src/components/GoogleTag";
 import { InquiryProvider } from "@/src/features/inquiry/components/inquiry-provider";
@@ -84,6 +85,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </LenisProvider>
         <CompareFloatingBar />
         <WhatsAppButton />
+        <PostUnlockBudgetBar />
         <ContactClickTracker />
         <Toaster
           position="top-right"

@@ -13,7 +13,7 @@ declare global {
           "error-callback"?: (error?: unknown) => void;
           "expired-callback"?: () => void;
           theme?: "light" | "dark" | "auto";
-          size?: "normal" | "compact" | "flexible";
+          size?: "normal" | "compact" | "flexible" | "invisible";
         }
       ) => string;
       reset: (widgetId?: string) => void;
@@ -28,6 +28,8 @@ interface TurnstileWidgetProps {
   onExpire?: () => void;
   onError?: () => void;
   theme?: "light" | "dark" | "auto";
+  size?: "normal" | "compact" | "flexible" | "invisible";
+  invisible?: boolean;
   className?: string;
 }
 
@@ -36,11 +38,25 @@ export function TurnstileWidget({
   onExpire,
   onError,
   theme = "auto",
+  size,
+  invisible = false,
   className = "",
 }: TurnstileWidgetProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<string | null>(null);
-  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+
+  // If testing on localhost/127.0.0.1, use Cloudflare's official universal test key
+  // so the widget renders cleanly without "Unable to connect to website" domain error
+  const isLocalhost =
+    typeof window !== "undefined" &&
+    (window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1" ||
+      window.location.hostname.endsWith(".local"));
+
+  const siteKey = isLocalhost
+    ? "1x00000000000000000000AA"
+    : (process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "1x00000000000000000000AA");
+
   const [scriptLoaded, setScriptLoaded] = useState(false);
 
   const onVerifyRef = useRef(onVerify);
@@ -106,7 +122,7 @@ export function TurnstileWidget({
           onErrorRef.current?.();
         },
         theme,
-        size: "flexible",
+        size: invisible ? "invisible" : (size || "flexible"),
       });
       widgetIdRef.current = id;
     } catch (e) {
@@ -123,7 +139,7 @@ export function TurnstileWidget({
         widgetIdRef.current = null;
       }
     };
-  }, [siteKey, scriptLoaded, theme]);
+  }, [siteKey, scriptLoaded, theme, size, invisible]);
 
   if (!siteKey) {
     return null;
@@ -133,7 +149,15 @@ export function TurnstileWidget({
     <div
       ref={containerRef}
       className={`turnstile-container ${className}`}
-      style={{ minHeight: 65, display: "flex", justifyContent: "center" }}
+      style={
+        invisible
+          ? { display: "none", width: 0, height: 0 }
+          : {
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }
+      }
     />
   );
 }

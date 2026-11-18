@@ -5,28 +5,95 @@ import { useCallback, useState } from "react";
 import { useRouter } from "next/navigation";
 import InquiryModal from "@/src/features/inquiry/components/inquiry-modal";
 
-export default function PropertyInquiryGate({ name }: { name: string }) {
+interface PropertyInquiryGateProps {
+  name: string;
+  project?: any;
+  onUnlock?: () => void;
+}
+
+export default function PropertyInquiryGate({ name, project, onUnlock }: PropertyInquiryGateProps) {
   const router = useRouter();
   const [open, setOpen] = useState(true);
   const [submitted, setSubmitted] = useState(false);
   const close = useCallback(() => setOpen(false), []);
 
+  const handleSuccess = () => {
+    setSubmitted(true);
+    setOpen(false);
+    onUnlock?.();
+    router.refresh();
+  };
+
+  const bgImage = project?.img || project?.imgs?.[0] || "/images/anantara/aerial-helipad-day.webp";
+
   return (
-    <main className="min-h-screen bg-[#fafaf8] flex items-center justify-center px-6 py-16">
-      <div className="max-w-md text-center">
-        <Link href="/" className="inline-block mb-10"><img src="/images/MCS_Stacked_DarkBackground.png" alt="Miami New Development" width={162} height={36} className="mx-auto h-9 w-auto object-contain brightness-0" /></Link>
-        <p className="consultation-kicker">Private property access</p>
-        <h1 className="text-3xl text-[#1c1f26] mb-4" style={{ fontFamily: "var(--font-serif), serif" }}>{name}</h1>
-        <p className="text-sm text-[#788092] leading-7">
-          {submitted ? "Your inquiry has been received. Your property details are ready." : "Submit an inquiry to explore the full property details, pricing and floor plans."}
+    <main className="property-gate-container">
+      {/* Background with luxury blur & dark gradient overlay */}
+      <div
+        className="property-gate-bg"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      />
+      <div className="property-gate-overlay" />
+
+      <div className="property-gate-card">
+        <Link href="/" className="property-gate-logo" aria-label="Home">
+          <img
+            src="/images/latest-logo.png"
+            alt="The Miami Condo Source"
+            width={180}
+            height={40}
+            className="property-gate-logo-img"
+          />
+        </Link>
+
+        <span className="property-gate-kicker">Exclusive Property Access</span>
+
+        <h1 className="property-gate-title">{name}</h1>
+
+        <p className="property-gate-description">
+          {submitted
+            ? "Your inquiry has been received. Your property details are unlocked."
+            : "Complete registration to unlock private developer pricing, floor plans, specifications, and availability."}
         </p>
-        <button type="button" className="consultation-submit" onClick={() => submitted ? router.refresh() : setOpen(true)}>
-          {submitted ? "View property details" : "Submit inquiry to view details"}
+
+        <button
+          type="button"
+          className="property-gate-btn"
+          onClick={() => {
+            if (submitted) {
+              onUnlock?.();
+              router.refresh();
+            } else {
+              setOpen(true);
+            }
+          }}
+        >
+          {submitted ? "View Property Details" : "Unlock Details & Pricing"}
         </button>
-        <Link href="/map" className="inline-block mt-6 text-xs text-[#788092] underline underline-offset-4">Back to properties</Link>
+
+        <div className="property-gate-footer">
+          <Link href="/map" className="property-gate-back-link">
+            ← Explore other properties
+          </Link>
+        </div>
+
+        <div className="property-gate-sothebys">
+          <span>ONE</span>
+          <div>
+            Sotheby&apos;s<small>International Realty</small>
+          </div>
+        </div>
       </div>
-      <InquiryModal isOpen={open} context={name} onClose={close} requireForDetails
-        onSuccess={() => { setSubmitted(true); setOpen(false); router.refresh(); }} />
+
+      <InquiryModal
+        isOpen={open}
+        context={name}
+        projectName={name}
+        buttonClicked="Unlock Details (Property Gate)"
+        onClose={close}
+        requireForDetails
+        onSuccess={handleSuccess}
+      />
     </main>
   );
 }

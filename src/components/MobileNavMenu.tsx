@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
@@ -28,9 +29,14 @@ export function MobileNavMenu({
   projectName,
 }: MobileNavMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const { openInquiry } = useInquiry();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Close menu on route change
   useEffect(() => {
@@ -158,26 +164,29 @@ export function MobileNavMenu({
         )}
       </div>
 
-      {/* Full-Screen Mobile Drawer */}
-      {isOpen && (
-        <div
-          id="mobile-nav-drawer"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Navigation Menu"
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 1000,
-            background: "rgba(10, 15, 26, 0.98)",
-            backdropFilter: "blur(24px)",
-            WebkitBackdropFilter: "blur(24px)",
-            display: "flex",
-            flexDirection: "column",
-            overflowY: "auto",
-            animation: "mobileNavFadeIn 0.22s ease-out",
-          }}
-        >
+      {/* Full-Screen Mobile Drawer portaled to document.body so it escapes header stacking context, position:relative, and backdrop-filter */}
+      {isOpen && mounted && typeof document !== "undefined"
+        ? createPortal(
+            <div
+              id="mobile-nav-drawer"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Navigation Menu"
+              style={{
+                position: "fixed",
+                inset: 0,
+                width: "100vw",
+                height: "100dvh",
+                zIndex: 99999,
+                background: "rgba(10, 15, 26, 0.98)",
+                backdropFilter: "blur(24px)",
+                WebkitBackdropFilter: "blur(24px)",
+                display: "flex",
+                flexDirection: "column",
+                overflowY: "auto",
+                animation: "mobileNavFadeIn 0.22s ease-out",
+              }}
+            >
           {/* Top Bar inside Drawer */}
           <div
             style={{
@@ -455,8 +464,10 @@ export function MobileNavMenu({
               </div>
             </div>
           </nav>
-        </div>
-      )}
+        </div>,
+        document.body
+      )
+    : null}
     </>
   );
 }
